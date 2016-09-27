@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test Page w/ Buy Button</title>
+<script src="http://sdks.shopifycdn.com/js-buy-sdk/latest/shopify-buy.polyfilled.globals.min.js"></script>
+
+<script>
+	var shopClient
+		, cart
+		, testProduct; 
+
+	shopClient = ShopifyBuy.buildClient({
+		apiKey: 'da520c849fcb55b4e8b27cfec590c45c',
+		domain: 'synchro.myshopify.com', 
+		appId: '6'
+	});
+
+	shopClient.fetchProduct(443223112)
+		.then(function(product) {
+			shopClient.createCart().then(function(newCart) {
+				console.log('got the cart!'); 
+				cart = newCart;
+
+				cart.addVariants({
+					variant: product.selectedVariant,
+					quantity: 1
+				});
+				console.log(cart.checkoutUrl); 
+
+				document.getElementById('checkoutLink').href = cart.checkoutUrl;
+			});
+		})
+		.catch(function() {
+			console.log('request failed'); 
+		}); 
+
+
+</script>
+
+
+</head>
+
+<body>
+<h1> Hello World! from the Synchro Flask App! </h1>
+<p><a href='' id='checkoutLink'>Go to checkout</a></p>
+</body>
+</html>
+
