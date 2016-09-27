@@ -7,4 +7,4 @@ def hello_world():
   return render_template('flask_app.html')
 
 if __name__ == '__main__':
-  app.run()
+  app.run(debug=True)
