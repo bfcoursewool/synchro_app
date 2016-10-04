@@ -186,6 +186,7 @@ if (typeof jQuery === 'undefined') {
   // BUTTON PUBLIC CLASS DEFINITION
   // ==============================
 
+
   var Button = function (element, options) {
     this.$element  = $(element)
     this.options   = $.extend({}, Button.DEFAULTS, options)
