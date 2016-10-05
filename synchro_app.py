@@ -6,6 +6,7 @@ app = Flask(__name__)
 def hello_world():
   return render_template('flask_app.html')
 
+# test route to demo bootstrap
 @app.route('/carousel')
 def bootstrap_test():
   return render_template('carousel_test.html')
