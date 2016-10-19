@@ -9,6 +9,15 @@ body {
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
+.logo-image {
+    width: auto;
+    max-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+    display: block;
+    position: relative;
+}
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
