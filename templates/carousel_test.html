@@ -27,6 +27,46 @@
 
     <!-- Custom styles for this template -->
     <link href="/static/css/carousel.css" rel="stylesheet">
+
+    <script type="text/javascript">
+      (function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/CalfzAOupm1BkNXNVPt3HJmsQsP3fMA7RkQhtwQD/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+    </script>
+
+    <!-- Shopify Buy SDK -->
+    <script src="http://sdks.shopifycdn.com/js-buy-sdk/latest/shopify-buy.polyfilled.globals.min.js"></script>
+
+    <script>
+      var shopClient
+        , cart
+        , testProduct; 
+
+      shopClient = ShopifyBuy.buildClient({
+        apiKey: 'da520c849fcb55b4e8b27cfec590c45c',
+        domain: 'synchro.myshopify.com', 
+        appId: '6'
+      });
+
+      shopClient.fetchProduct(374830964)
+        .then(function(product) {
+          shopClient.createCart().then(function(newCart) {
+            cart = newCart;
+
+            cart.addVariants({
+              variant: product.selectedVariant,
+              quantity: 1
+            });
+
+            document.getElementById('checkoutLink').href = cart.checkoutUrl;
+            document.getElementById('checkoutButton').setAttribute(
+              'onClick', 
+              document.getElementById('checkoutButton').getAttribute('onClick').concat(cart.checkoutUrl)
+            );
+          });
+        })
+        .catch(function() {
+          console.log('request failed'); 
+        }); 
+  </script>
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -193,6 +233,22 @@
       <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
+
+      <!-- BUY BUTTON -->
+      <p style="text-align: center;">
+        <button type="button" onclick="window.location.href = " id="checkoutButton" style="position: relative; vertical-align: middle; margin: 10px 10px 0 0; padding: 0px 4px 8px 4px; cursor: pointer; line-height: 10px; background-color: #3090d9; moz-border-radius: 3px; -webkit-border-radius: 3px; border: 1px solid #2e89ce;">
+          <a href="" id="checkoutLink" style="color: #ffffff; font-size: 14px;"><b>Add To Cart</b></a>
+        </button>
+      </p> 
+
+      <!-- YOTPO REVIEWS --> 
+      <div class="yotpo yotpo-main-widget"
+        data-product-id="374830964"
+        data-name="Synchro Gold"
+        data-url="http://besynchro.com/products/synchro-gold-1"
+        data-image-url="//cdn.shopify.com/s/files/1/0155/0195/products/Gold_New_500px_large.png%3Fv=1448686733"
+        data-description="">
+      </div>
 
 
       <!-- FOOTER -->
