@@ -57,10 +57,6 @@
             });
 
             document.getElementById('checkoutLink').href = cart.checkoutUrl;
-            document.getElementById('checkoutButton').setAttribute(
-              'onClick', 
-              document.getElementById('checkoutButton').getAttribute('onClick').concat(cart.checkoutUrl)
-            );
           });
         })
         .catch(function() {
@@ -235,11 +231,7 @@
       <!-- /END THE FEATURETTES -->
 
       <!-- BUY BUTTON -->
-      <p style="text-align: center;">
-        <button type="button" onclick="window.location.href = " id="checkoutButton" style="position: relative; vertical-align: middle; margin: 10px 10px 0 0; padding: 0px 4px 8px 4px; cursor: pointer; line-height: 10px; background-color: #3090d9; moz-border-radius: 3px; -webkit-border-radius: 3px; border: 1px solid #2e89ce;">
-          <a href="" id="checkoutLink" style="color: #ffffff; font-size: 14px;"><b>Add To Cart</b></a>
-        </button>
-      </p> 
+      <p align="center"><a class="btn btn-lg btn-primary" id="checkoutLink" href="#" role="button">Add To Cart</a></p>
 
       <!-- YOTPO REVIEWS --> 
       <div class="yotpo yotpo-main-widget"
