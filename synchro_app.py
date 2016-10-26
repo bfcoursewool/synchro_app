@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import render_template, send_from_directory
+from flask_fanstatic import Fanstatic
 app = Flask(__name__)
 
 @app.route('/')
