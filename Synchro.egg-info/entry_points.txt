@@ -1,0 +1,4 @@
+[fanstatic.libraries]
+synchro = synchro:library_resources
+synchro_frontend_build = synchro:library_frontend_build
+

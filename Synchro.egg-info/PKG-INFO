@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: Synchro
+Version: 24626830
+Summary: Synchro Nutritionals
+Home-page: UNKNOWN
+Author: Rob Kotz
+Author-email: rob.m.kotz@gmail.com
+License: UNKNOWN
+Description: # synchro app
+        
+        A simple Flask/Bootstrap.js app for Synchro Nutritionals landing pages <br />
+        
+        Unless you're 1337, you probably want to head over to https://github.com/bfcoursewool/synchro_ops and follow those instructions. 
+        
+        
+        
+        
+Keywords: synchro web wsgi flask
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Flask
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application

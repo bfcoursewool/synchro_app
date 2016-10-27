@@ -1,8 +1,11 @@
 from flask import Blueprint, render_template, g
+from synchro.third_party_resources import bootstrap, bootstrap_css, jquery
 
 genesis = Blueprint('genesis', __name__, url_prefix='/genesis')
 
 @genesis.route('/')
 def genesis_prime():
-  g.fanstatic.needs('shopify_test')
+  bootstrap.need()
+  bootstrap_css.need()
+  jquery.need()
   return render_template('genesis/genesis.html')
