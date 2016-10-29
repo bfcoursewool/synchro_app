@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, abort
 from synchro.third_party_resources import bootstrap, bootstrap_css
 
 landing_pages = Blueprint('landing_pages', __name__, url_prefix='/pages')
@@ -24,4 +24,8 @@ uri_to_template = {
 def landing_page(page, version):
   bootstrap.need()
   bootstrap_css.need()
+
+  if page not in uri_to_template or version not in uri_to_template[page]:
+    abort(404)
+
   return render_template(uri_to_template[page][version])
