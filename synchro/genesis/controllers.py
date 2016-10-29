@@ -7,5 +7,4 @@ genesis = Blueprint('genesis', __name__, url_prefix='/genesis')
 def genesis_prime():
   bootstrap.need()
   bootstrap_css.need()
-  jquery.need()
   return render_template('genesis/genesis.html')

@@ -7,5 +7,4 @@ salt = Blueprint('salt', __name__, url_prefix='/salt')
 def salt_prime():
   bootstrap.need()
   bootstrap_css.need()
-  jquery.need()
   return render_template('salt/salt.html')

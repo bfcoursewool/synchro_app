@@ -26,7 +26,10 @@ jquery_ui = Resource(
 
 bootstrap = Resource(
   library_resources,
-  'bootstrap/dist/js/bootstrap.min.js'
+  'bootstrap/dist/js/bootstrap.min.js',
+  depends=[
+    jquery
+  ]
 )
 
 bootstrap_css = Resource(

@@ -7,5 +7,4 @@ gold = Blueprint('gold', __name__, url_prefix='/gold')
 def gold_prime():
   bootstrap.need()
   bootstrap_css.need()
-  jquery.need()
   return render_template('gold/gold.html')

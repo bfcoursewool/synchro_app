@@ -7,12 +7,10 @@ digestcleanse = Blueprint('digestcleanse', __name__, url_prefix='/digestcleanse'
 def digestcleanse_prime():
   bootstrap.need()
   bootstrap_css.need()
-  jquery.need()
   return render_template('digestcleanse/digestcleanse.html')
 
 @digestcleanse.route('/v1')
 def digestcleanse_v1():
   bootstrap.need()
   bootstrap_css.need()
-  jquery.need()
   return render_template('digestcleanse/digestcleanse_v1.html')
