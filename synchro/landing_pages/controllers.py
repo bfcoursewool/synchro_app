@@ -19,7 +19,7 @@ uri_to_template = {
   }
 }
 
-@landing_pages.route('/<page>', defaults={'version': 'v0'})
+@landing_pages.route('/<page>/', defaults={'version': 'v0'})
 @landing_pages.route('/<page>/<version>')
 def landing_page(page, version):
   bootstrap.need()
