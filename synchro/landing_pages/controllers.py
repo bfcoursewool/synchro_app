@@ -24,6 +24,4 @@ uri_to_template = {
 def landing_page(page, version):
   bootstrap.need()
   bootstrap_css.need()
-  print "page: %s" % page
-  print "version: %s" % version
   return render_template(uri_to_template[page][version])
