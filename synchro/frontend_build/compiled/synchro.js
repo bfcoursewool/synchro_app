@@ -15,7 +15,6 @@ $(document).ready(function() {
     });
 
   cartDeferred.done(function(theCart) {
-    console.log(theCart); 
     cart = theCart;
     
     $('.checkout-link').click(function(event) {
