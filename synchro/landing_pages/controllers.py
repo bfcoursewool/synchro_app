@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template, abort
 from synchro.third_party_resources import bootstrap, bootstrap_css
+from synchro.resources import synchro_shopify
 
 landing_pages = Blueprint('landing_pages', __name__, url_prefix='/pages')
 
@@ -11,7 +12,8 @@ uri_to_template = {
     'v0': 'salt/salt.html'
   },
   'gold': {
-    'v0': 'gold/gold.html'
+    'v0': 'gold/gold.html',
+    'v1': 'gold/gold_v1.html'
   },
   'digestcleanse': {
     'v0': 'digestcleanse/digestcleanse.html',
@@ -22,6 +24,7 @@ uri_to_template = {
 @landing_pages.route('/<page>/', defaults={'version': 'v0'})
 @landing_pages.route('/<page>/<version>')
 def landing_page(page, version):
+  synchro_shopify.need()
   bootstrap.need()
   bootstrap_css.need()
 

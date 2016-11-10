@@ -36,3 +36,8 @@ bootstrap_css = Resource(
   library_resources,
   'bootstrap/dist/css/bootstrap.min.css'
 )
+
+shopify = Resource(
+  library_resources,
+  'shopify/shopify-buy.polyfilled.globals.min.js'
+)
