@@ -30,10 +30,8 @@ $(document).ready(function() {
           })
             .then(function() {
               window.location.href = cart.checkoutUrl; 
-            })
+            });
         });
-
-      
     });
   });
 });  
