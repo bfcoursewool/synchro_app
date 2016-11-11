@@ -1,7 +1,6 @@
 $(document).ready(function() {  
 
-  var shopClient, cart, testProduct; 
-  var cartDeferred = $.Deferred(); 
+  var shopClient;
 
   shopClient = ShopifyBuy.buildClient({
     apiKey: 'da520c849fcb55b4e8b27cfec590c45c',
@@ -9,6 +8,13 @@ $(document).ready(function() {
     appId: '6'
   });
 
+}); 
+$(document).ready(function() {  
+
+  var cart, testProduct; 
+  var cartDeferred = $.Deferred(); 
+
+  // ShopClient is instantiated & initialized in shopify_credentials.js
   shopClient.createCart()
     .then(function(newCart) {
       cartDeferred.resolve(newCart); 

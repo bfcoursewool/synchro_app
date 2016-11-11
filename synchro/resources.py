@@ -6,7 +6,8 @@ import time
 
 from synchro.third_party_resources import (
   jquery, 
-  shopify
+  shopify, 
+  shopify_buy_button
 )
 
 synchro_shopify = Resource(
@@ -14,5 +15,14 @@ synchro_shopify = Resource(
   depends=[
     jquery,
     shopify
+  ]
+)
+
+synchro_buy_button = Resource(
+  library_frontend_build, 'buy_button.min.js',
+  depends=[
+    jquery,
+    shopify,
+    shopify_buy_button
   ]
 )
