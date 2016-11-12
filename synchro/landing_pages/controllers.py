@@ -6,12 +6,13 @@ landing_pages = Blueprint('landing_pages', __name__, url_prefix='/pages')
 uri_to_template = {
   'genesis': {
     'v0': 'genesis/genesis.html'
-  }, 
+  },
   'salt': {
     'v0': 'salt/salt.html'
   },
   'gold': {
-    'v0': 'gold/gold.html'
+    'v0': 'gold/gold.html',
+    'af': 'gold/gold_af.html'
   },
   'digestcleanse': {
     'v0': 'digestcleanse/digestcleanse.html',
