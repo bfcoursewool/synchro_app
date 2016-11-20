@@ -26,3 +26,10 @@ synchro_buy_button = Resource(
     shopify_buy_button
   ]
 )
+
+synchro_effects = Resource(
+  library_frontend_build, 'effects.min.js',
+  depends=[
+    jquery
+  ]
+)
