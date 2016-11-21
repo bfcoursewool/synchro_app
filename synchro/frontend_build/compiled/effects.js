@@ -27,5 +27,5 @@ $(function() {
     } else if(scrollTop < maxScroll && navbar.is('.floated')) {
       navbar.removeClass('floated'); 
     }
-  })
+  });
 });
