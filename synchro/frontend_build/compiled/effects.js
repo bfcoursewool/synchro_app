@@ -11,4 +11,21 @@ $(function() {
       }
     }
   });
+
+  var maxScroll = 100;
+
+  $(window).scroll(function() {
+    var navbar = $('.main-header');
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+    console.log(maxScroll);
+
+    if(scrollTop > maxScroll && !navbar.is('.floated')) {
+      navbar.addClass('floated');
+      console.log('Floating'); 
+    } else if(scrollTop < maxScroll && navbar.is('.floated')) {
+      navbar.removeClass('floated'); 
+      console.log('unfloated!')
+    }
+  })
 });
