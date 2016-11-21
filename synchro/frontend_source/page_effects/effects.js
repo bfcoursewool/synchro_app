@@ -1,4 +1,5 @@
 $(function() {
+  // Smooth scroll for nav menu anchor links
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -12,6 +13,7 @@ $(function() {
     }
   });
 
+  // Pin main header/nav menu to the top of the browser window when scrolling, and unpin it when at the top
   var maxScroll = 100;
 
   $(window).scroll(function() {
