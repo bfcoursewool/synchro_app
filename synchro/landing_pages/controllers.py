@@ -46,12 +46,9 @@ endpoint_info_dict = {
 @landing_pages.route('/<page>/', defaults={'version': 'v0'})
 @landing_pages.route('/<page>/<version>')
 def landing_page(page, version):
-
-  print "What da fuck?"
   # TODO -- would prefer some form of assertion here so we can get visibility into people
   # requesting weird URLs but for now throwing a 404 will work. 
   if page not in endpoint_info_dict or version not in endpoint_info_dict[page]:
-    print "Aborting... something's weird."
     abort(404)
   # Assert that each version entry in the info_dict contains both a template to render and a list of scripts to include. 
   # A failed assertion should happen only during development, so this helps ensure developer consistency. 
