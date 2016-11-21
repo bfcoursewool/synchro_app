@@ -24,10 +24,8 @@ $(function() {
 
     if(scrollTop > maxScroll && !navbar.is('.floated')) {
       navbar.addClass('floated');
-      console.log('Floating'); 
     } else if(scrollTop < maxScroll && navbar.is('.floated')) {
       navbar.removeClass('floated'); 
-      console.log('unfloated!')
     }
   })
 });
