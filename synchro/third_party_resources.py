@@ -44,5 +44,8 @@ shopify = Resource(
 
 shopify_buy_button = Resource(
   library_resources,
-  'shopify/buybutton.js'
+  'shopify/buybutton.js',
+  depends=[
+    shopify
+  ]
 )

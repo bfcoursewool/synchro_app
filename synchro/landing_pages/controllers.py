@@ -28,7 +28,7 @@ endpoint_info_dict = {
     }, 
     'af': {
       'template': 'gold/gold_af.html',
-      'scripts': [synchro_shopify, synchro_effects]
+      'scripts': [synchro_buy_button, synchro_effects]
     }
   },
   'digestcleanse': {

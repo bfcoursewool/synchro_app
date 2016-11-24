@@ -12,7 +12,7 @@ $(document).ready(function() {
   var cart, testProduct; 
   var cartDeferred = $.Deferred(); 
 
-  // ShopClient is instantiated & initialized in shopify_credentials.js
+  // shopClient is instantiated & initialized in shopify_credentials.js
   shopClient.createCart()
     .then(function(newCart) {
       cartDeferred.resolve(newCart); 
