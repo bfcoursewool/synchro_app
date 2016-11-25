@@ -71,14 +71,20 @@ a {
 /* reset ends */
 
 /* global styles */
+.container-fluid {
+  max-width: 1200px;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
 .p--title {
-  display: inline-block;
+  display: block;
   font-family: 'Raleway', sans-serif;
   color: #4d515c;
   font-weight: 600;
   letter-spacing: .08em;
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.4;
   text-transform: uppercase;
 
   &:after {
@@ -117,6 +123,7 @@ a {
   font-size: 12px;
   letter-spacing: .08em;
   border-radius: 5px;
+  border: 0;
   font-weight: 600;
 
   &:hover {
@@ -126,11 +133,24 @@ a {
     text-decoration: none;
   }
 }
+
+$break-mobile: 767px;
+$break-tablet: 991px;
+$break-desktop: 1199px;
+
 /* global styles end */
 
 /* synchro gold styles */
 .main-header {
-  margin: 40px auto;
+  padding: 40px 20px;
+
+  &.floated {
+    position: fixed;
+    background: rgba(240,240,240,.9);
+    width: 100%;
+    padding: 8px 20px;
+    z-index: 100;
+  }
 
   &__logo {
     display: inline-block;
@@ -138,12 +158,30 @@ a {
     .synchro-logo {
       width: 133px;
     }
+  }
 
+  &__cta {
+    font-size: 11px;
+    margin: 4px 0 0 10px;
+    float: right;
   }
 
   .main-navigation {
     display: inline-block;
     float: right;
+    margin: 13px 0;
+
+    @media (max-width: $break-mobile) {
+      display: block;
+      float: none;
+      position: absolute;
+      background: #F6F8FB;
+      width: 100%;
+      text-align: center;
+      left: 0;
+      right: 0;
+      margin-top: 8px;
+    }
 
     &__item {
       font-size: 11px;
@@ -151,41 +189,52 @@ a {
       text-transform: uppercase;
       font-family: 'Raleway', sans-serif;
       color: #8e8e8e;
-      padding-right: 20px;
+      padding-right: 15px;
       letter-spacing: .08em;
       text-decoration: none;
+
+      @media (max-width: $break-mobile) {
+        display: block;
+        padding: 16px;
+        border-bottom: 1px solid #FFF;
+      }
 
       &:hover {
         color: #22bad8;
         transition: all 0.2s ease;
       }
     }
-
-    &__cta {
-      font-size: 11px;
-      margin: 0;
-    }
   }
 }
 
 .main-banner {
   text-align: center;
+  padding: 30px 20px;
 
   &__headline {
     font-family: 'Open Sans', sans-serif;
     font-size: 38px;
-    margin: 0 auto;
+    line-height: 1.4;
     letter-spacing: .5px;
     font-weight: 300;
-    margin: 70px 0 50px;
+    margin-bottom: 50px;
     text-transform: capitalize;
     color: #353535;
+
+    @media (max-width: $break-mobile) {
+      font-size: 28px;
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 
 .gold-claims {
   box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.05);
-  padding: 50px 0;
+  padding: 40px 0;
   text-align: center;
 
   &__list {
@@ -195,6 +244,12 @@ a {
   &__item {
     display: inline-block;
     width: 20%;
+    margin: 30px 0;
+
+    @media (max-width: $break-mobile) {
+      width: 30%;
+      vertical-align: top;
+    }
   }
 
   &__image {
@@ -209,7 +264,7 @@ a {
 
 .turmeric-info {
   background: #F6F8FB;
-  padding: 50px 0;
+  padding: 70px 0;
   text-align: center;
 
   &__text {
@@ -224,13 +279,30 @@ a {
 }
 
 .gold-benefits {
-  padding: 70px 0;
+  padding: 70px 20px;
   text-align: center;
 
   &__item {
     display: inline-block;
-    padding: 40px 60px;
-    vertical-align: top;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    @media (max-width: $break-tablet) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+  }
+
+  &__img {
+
+    @media (max-width: $break-tablet) {
+      width: 50%;
+    }
+
+    @media (max-width: $break-mobile) {
+      max-width: 150px;
+    }
   }
 
   &__header {
@@ -242,15 +314,18 @@ a {
   }
 }
 
-
 .gold-innovation {
   background: #F6F8FB;
-  padding: 70px 0;
+  padding: 70px 20px;
   text-align: center;
 }
 
 .gold-ingredients {
-  text-align: left;
+
+  @media (max-width: $break-tablet) {
+    text-align: center;
+  }
+
 
   &__item {
     padding: 70px 0;
@@ -262,27 +337,65 @@ a {
 
   .p--title:after {
     margin-left: 0;
+
+    @media (max-width: $break-tablet) {
+      margin-left: auto;
+    }
   }
 
 
   &__extraction-img {
     width: 600px;
     float: right;
+
+    @media (max-width: $break-tablet) {
+      width: 70%;
+      float: none;
+      margin-top: 50px;
+    }
+
+    @media (max-width: $break-tablet) {
+      width: 100%;
+    }
   }
 
   &__liposomal-img {
     width: 600px;
+
+    @media (max-width: $break-tablet) {
+      width: 70%;
+      float: none;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $break-tablet) {
+      width: 100%;
+    }
   }
 
   &__pepper-img {
     width: 600px;
     float: right;
+
+    @media (max-width: $break-tablet) {
+      width: 70%;
+      float: none;
+      margin-top: 50px;
+    }
+
+    @media (max-width: $break-tablet) {
+      width: 100%;
+    }
   }
 }
 
 .gold-facts {
   background: #F6F8FB;
-  padding: 70px 0;
+  padding: 70px 20px;
+
+  @media (max-width: $break-mobile) {
+    text-align: center;
+  }
 
   &__title {
     margin-bottom: 20px;
@@ -290,21 +403,35 @@ a {
 
   .p--title:after {
     margin-left: 0;
+
+    @media (max-width: $break-mobile) {
+      margin-left: auto;
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+
+    @media (max-width: $break-mobile) {
+      margin-bottom: 40px;
+      max-width: 100%;
+    }
   }
 }
 
 .gold-purchase {
-  padding: 70px 0;
+  padding: 70px 20px;
   text-align: center;
 
   &__item {
-    margin-top: 50px;
+    margin: 30px 0 0;
   }
 
   &__img {
     margin: 20px 0;
-    width: 300px;
-    height: 296px;
+    max-width: 300px;
+    width: 100%;
   }
 
   .p--text {
@@ -322,15 +449,25 @@ a {
 
 .gold-info {
   text-align: center;
+
+  &__img {
+    max-width: 100%;
+
+    @media (max-width: $break-mobile) {
+      width: 90%;
+      margin: 0 auto 30px;
+    }
+  }
 }
 
 .synchro-products {
-  padding: 70px 0;
+  padding: 70px 20px;
   text-align: center;
 
   &__img {
     max-width: 270px;
     margin: 30px 0;
+    width: 100%;
   }
 
   &__price {
@@ -342,29 +479,35 @@ a {
   display: block;
   background: #F6F8FB;
   text-align: center;
-  padding: 70px 0;
+  padding: 70px 20px;
 }
 
 .gold-research {
-  padding: 70px 0;
+  padding: 70px 20px;
   text-align: center;
 
   &__item {
-    padding: 70px 70px 0;
+    padding: 70px 30px 0;
+
+    @media (max-width: $break-mobile) {
+      padding: 70px 0 0;
+    }
   }
 
   &__footnote {
     margin-top: 70px;
+    display: inline-block;
   }
 }
 
 .gold-faq {
   background: #F6F8FB;
   text-align: center;
-  padding: 70px 0;
+  padding: 70px 20px;
 
   &__text {
     text-align: left;
+    padding: 20px 0;
   }
 
   .p--text {
@@ -375,7 +518,7 @@ a {
 .gold-cta {
   background: url("http://synchrogold.com.s13414.gridserver.com/wp-content/uploads/2015/07/Gold-leaf-smaller.jpg") center no-repeat;
   background-size: cover;
-  padding: 120px;
+  padding: 120px 0;
   text-align: center;
 
   &__brandname {
@@ -390,8 +533,13 @@ a {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     font-size: 44px;
-    margin: 20px 0 30px;
+    margin: 20px 60px 30px;
     font-weight: 300;
+    line-height: 1.4;
+
+    @media (max-width: $break-mobile) {
+      font-size: 40px;
+    }
   }
 
   &__cta {
@@ -407,17 +555,36 @@ a {
   background: #191d20;
   text-transform: uppercase;
 
+  @media (max-width: $break-mobile) {
+    padding: 20px 0;
+    text-align: center;
+  }
+
   &__left {
     display: inline-block;
+
+    @media (max-width: $break-mobile) {
+      display: block;
+    }
   }
 
   &__right {
     display: inline-block;
     float: right;
+
+    @media (max-width: $break-mobile) {
+      display: block;
+      float: none;
+    }
   }
 
   &__text {
     padding: 0 10px;
+
+    @media (max-width: $break-mobile) {
+      display: block;
+      padding: 20px 10px;
+    }
 
     &:hover {
       color: #22bad8;
