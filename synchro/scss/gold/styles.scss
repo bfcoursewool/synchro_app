@@ -141,67 +141,71 @@ $break-desktop: 1199px;
 /* global styles end */
 
 /* synchro gold styles */
-.main-header {
-  padding: 40px 20px;
+.main-header-container {
+  height: 123px;
 
-  &.floated {
-    position: fixed;
-    background: rgba(240,240,240,.9);
-    width: 100%;
-    padding: 8px 20px;
-    z-index: 100;
-  }
+  .main-header {
+    padding: 40px 20px;
 
-  &__logo {
-    display: inline-block;
-
-    .synchro-logo {
-      width: 133px;
-    }
-  }
-
-  &__cta {
-    font-size: 11px;
-    margin: 4px 0 0 10px;
-    float: right;
-  }
-
-  .main-navigation {
-    display: inline-block;
-    float: right;
-    margin: 13px 0;
-
-    @media (max-width: $break-mobile) {
-      display: block;
-      float: none;
-      position: absolute;
-      background: #F6F8FB;
+    &.floated {
+      position: fixed;
+      background: rgba(240,240,240,.9);
       width: 100%;
-      text-align: center;
-      left: 0;
-      right: 0;
-      margin-top: 8px;
+      padding: 8px 20px;
+      z-index: 100;
     }
 
-    &__item {
+    &__logo {
+      display: inline-block;
+
+      .synchro-logo {
+        width: 133px;
+      }
+    }
+
+    &__cta {
       font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      font-family: 'Raleway', sans-serif;
-      color: #8e8e8e;
-      padding-right: 15px;
-      letter-spacing: .08em;
-      text-decoration: none;
+      margin: 4px 0 0 10px;
+      float: right;
+    }
+
+    .main-navigation {
+      display: inline-block;
+      float: right;
+      margin: 13px 0;
 
       @media (max-width: $break-mobile) {
         display: block;
-        padding: 16px;
-        border-bottom: 1px solid #FFF;
+        float: none;
+        position: absolute;
+        background: #F6F8FB;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin-top: 8px;
       }
 
-      &:hover {
-        color: #22bad8;
-        transition: all 0.2s ease;
+      &__item {
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        color: #8e8e8e;
+        padding-right: 15px;
+        letter-spacing: .08em;
+        text-decoration: none;
+
+        @media (max-width: $break-mobile) {
+          display: block;
+          padding: 16px;
+          border-bottom: 1px solid #FFF;
+        }
+
+        &:hover {
+          color: #22bad8;
+          transition: all 0.2s ease;
+        }
       }
     }
   }
