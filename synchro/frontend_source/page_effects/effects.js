@@ -23,7 +23,7 @@ $(function() {
     if(scrollTop > maxScroll && !navbar.is('.floated')) {
       navbar.addClass('floated');
     } else if(scrollTop < maxScroll && navbar.is('.floated')) {
-      navbar.removeClass('floated'); 
+      navbar.removeClass('floated');
     }
   });
 });
