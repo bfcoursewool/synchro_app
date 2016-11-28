@@ -148,6 +148,10 @@ $break-desktop: 1199px;
     padding: 40px 20px;
 
     &.floated {
+      transition: position 2s ease-in-out;
+      -moz-transition: position 2s ease-in-out; /* FF 4 */
+      -webkit-transition: position 2s ease-in-out; /* Safari & Chrome */
+      -o-transition: position 2s ease-in-out; /* Opera */
       position: fixed;
       background: rgba(240,240,240,.9);
       width: 100%;
