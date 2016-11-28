@@ -28,7 +28,7 @@ endpoint_info_dict = {
     }, 
     'af': {
       'template': 'gold/gold_af.html',
-      'scripts': [synchro_shopify, synchro_effects]
+      'scripts': [synchro_buy_button, synchro_effects]
     }
   },
   'digestcleanse': {
@@ -48,7 +48,7 @@ endpoint_info_dict = {
 def landing_page(page, version):
   # TODO -- would prefer some form of assertion here so we can get visibility into people
   # requesting weird URLs but for now throwing a 404 will work. 
-  if page not in endpoint_info_dict or version not in endpoint_info_dict[page]:
+  if page not in endpoint_info_dict or version not in endpoint_info_dict[page]: 
     abort(404)
   # Assert that each version entry in the info_dict contains both a template to render and a list of scripts to include. 
   # A failed assertion should happen only during development, so this helps ensure developer consistency. 

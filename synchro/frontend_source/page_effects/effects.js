@@ -20,8 +20,6 @@ $(function() {
     var navbar = $('.main-header');
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-    console.log(maxScroll);
-
     if(scrollTop > maxScroll && !navbar.is('.floated')) {
       navbar.addClass('floated');
     } else if(scrollTop < maxScroll && navbar.is('.floated')) {
