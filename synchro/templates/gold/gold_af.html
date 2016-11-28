@@ -5,6 +5,13 @@
 
 {{ super() }}
 
+<script>
+  (function(i,s,o,g,r,a,m){i['OptimizelyObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://cdn.optimizely.com/js/3182500501.js','optimizely');
+</script>
+
 <!-- Custom styles for this template -->
 <link href="{{ url_for('static', filename='css/gold/styles.css') }}" rel="stylesheet">
 <!-- Google fonts -->
