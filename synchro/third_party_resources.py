@@ -26,7 +26,7 @@ jquery_ui = Resource(
 
 bootstrap = Resource(
   library_resources,
-  'bootstrap/dist/js/bootstrap.min.js',
+  'bootstrap/js/bootstrap.min.js',
   depends=[
     jquery
   ]
@@ -34,5 +34,18 @@ bootstrap = Resource(
 
 bootstrap_css = Resource(
   library_resources,
-  'bootstrap/dist/css/bootstrap.min.css'
+  'bootstrap/css/bootstrap.min.css'
+)
+
+shopify = Resource(
+  library_resources,
+  'shopify/shopify-buy.polyfilled.globals.min.js'
+)
+
+shopify_buy_button = Resource(
+  library_resources,
+  'shopify/buybutton.js',
+  depends=[
+    shopify
+  ]
 )

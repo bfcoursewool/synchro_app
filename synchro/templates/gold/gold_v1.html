@@ -1,12 +1,12 @@
 
 {% extends "landing_base.html" %}
-{% block title %} Test {% endblock %}
+{% block title %} Synchro Gold {% endblock %}
 {% block head %}
 
     {{ super() }}
 
     <!-- Custom styles for this template -->
-    <link href="{{ url_for('static', filename='css/carousel.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/gold/styles.css') }}" rel="stylesheet">
 
 {% endblock %}
 
@@ -57,30 +57,27 @@
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
         <div class="container">
           <div class="carousel-caption">
-            <h1>Example headline.</h1>
+            <h1>Gold V1</h1>
             <p>Schlitz roof party williamsburg food truck pour-over narwhal. Gluten-free literally yuccie occupy echo park. Pabst bespoke normcore ethical, ramps offal franzen polaroid farm-to-table. Bicycle rights cardigan taxidermy, pok pok cray four dollar toast franzen asymmetrical microdosing jianbing sriracha umami ennui. Swag DIY forage, hell of vape knausgaard roof party vice selfies activated charcoal blue bottle williamsburg. Vice flexitarian blog keytar letterpress. Lumbersexual sartorial actually vaporware, beard mumblecore everyday carry tumblr heirloom viral kogi.</p>
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
           </div>
         </div>
       </div>
       <div class="item">
-        <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
+            <h1>It'll put hair on yer chest!</h1>
             <p>Cardigan heirloom succulents sriracha flexitarian vinyl. Viral shoreditch kombucha, hashtag organic DIY cold-pressed twee tacos. Ethical mustache activated charcoal fingerstache sriracha, offal blue bottle williamsburg tumeric. Copper mug kale chips tacos knausgaard four dollar toast cornhole, direct trade listicle gastropub cronut truffaut cray blue bottle gentrify lyft. Wayfarers cold-pressed viral chambray. Craft beer hoodie waistcoat, messenger bag neutra XOXO pop-up skateboard vice bushwick. Etsy intelligentsia sustainable tumblr flannel raw denim.</p>
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
           </div>
         </div>
       </div>
       <div class="item">
-        <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
         <div class="container">
           <div class="carousel-caption">
-            <h1>One more for good measure.</h1>
+            <h1>And make your joints feel great</h1>
             <p>Man bun vaporware YOLO, mustache microdosing street art enamel pin lyft. Everyday carry ramps pinterest, bicycle rights post-ironic typewriter jianbing subway tile cliche occupy vaporware selfies. Chartreuse kogi direct trade, distillery glossier marfa cronut schlitz put a bird on it raw denim banjo hella literally truffaut. Marfa chia thundercats iceland, deep v retro literally. Cred beard swag bicycle rights actually organic neutra synth affogato portland forage chambray. Bespoke prism wolf letterpress retro you probably haven't heard of them squid pabst, sustainable schlitz sartorial 3 wolf moon humblebrag mixtape. Ennui franzen ugh, affogato pug yuccie letterpress meditation put a bird on it activated charcoal hoodie.</p>
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
           </div>
@@ -169,8 +166,51 @@
 
     <!-- /END THE FEATURETTES -->
 
-    <!-- BUY BUTTON -->
-    <p align="center"><a class="btn btn-lg btn-primary checkout-link" href="#" role="button">Add To Cart</a></p>
+    <!-- BUY BUTTONS -->
+    <div class="buy_buttons">
+
+      <div class="product-option gold_2" data-product-id="374830964" data-quantity="2">
+        <center>
+          <img class="alignnone wp-image-3189 size-medium" src="http://synchrogold.com.s13414.gridserver.com/wp-content/uploads/2015/06/Gold-Two1-300x296.jpg" alt="Gold-Two" width="300" height="296" />
+        </center>
+        <p style="text-align: center;"><strong>TWO BOTTLES</strong>
+          ONE MONTH SUPPLY
+          <span style="text-decoration: line-through;">57.94</span><b> 54.97 (5% OFF)</b>
+        </p>
+        <p align="center">
+          <a class="checkout-link btn btn-lg btn-primary" href="#" role="button">Add To Cart</a>
+        </p>
+      </div>
+
+      <div class="product-option gold_4" data-product-id="374830964" data-quantity="4">
+        <center>
+          <img class="alignnone wp-image-3190 size-medium" src="http://v1.synchrogold.com/wp-content/uploads/2015/06/Gold-Four1.jpg" alt="Gold-Four" width="300" height="296" />
+        </center>
+        <p style="text-align: center;"><b>FOUR BOTTLES</b>
+          TWO MONTH SUPPLY
+          <span style="text-decoration: line-through;">115.88</span> <b>103.97 (10% OFF)</b>
+        </p>
+        <p align="center">
+          <a class="checkout-link btn btn-lg btn-primary" href="#" role="button">Add To Cart</a>
+        </p>
+      </div>
+
+      <div class="product-option gold_6" data-product-id="374830964" data-quantity="6">
+        <center>
+          <img class="alignnone wp-image-3190 size-medium" src="http://v1.synchrogold.com/wp-content/uploads/2015/06/6.jpg" alt="Gold-Six" width="300" height="296" />
+        </center>
+        <p style="text-align: center;"><b>SIX BOTTLES</b>
+          THREE MONTH SUPPLY
+          <span style="background-color: yellow;">
+            <span style="text-decoration: line-through;">173.82</span> <b>147.97 (BEST VALUE - 15% OFF)</b>
+          </span>
+        </p>
+        <p align="center">
+          <a class="checkout-link btn btn-lg btn-primary" href="#" role="button">Add To Cart</a>
+        </p>
+      </div>
+
+    </div>
 
     <!-- YOTPO REVIEWS --> 
     <a name="reviews"></a>
