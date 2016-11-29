@@ -31,12 +31,14 @@ $(document).ready(function() {
           ':hover': {
             'background-color': '#2c84c8'
           }
+        },
+        product: {
+          'transition': 'opacity 0.3s ease',
+          'opacity': '1',
+          ':hover': {
+            'opacity': '.5'
+          }
         }
-      }
-    },
-    modal: {
-      styles: {
-        'height': '250px'
       }
     }
   };
