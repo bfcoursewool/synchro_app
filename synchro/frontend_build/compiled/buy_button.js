@@ -41,11 +41,6 @@ $(document).ready(function() {
             'background-color': '#2c84c8'
           }
         }
-      },
-      events: {
-        'openCheckout': function(cart) {
-          console.log('test'); 
-        }
       }
     },
     toggle: {

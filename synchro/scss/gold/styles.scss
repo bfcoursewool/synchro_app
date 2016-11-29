@@ -147,17 +147,24 @@ $break-desktop: 1199px;
   .main-header {
     padding: 40px 20px;
 
-    transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease; /* FF 4 */
-    -webkit-transition: all 0.5s ease; /* Safari & Chrome */
-    -o-transition: all 0.5s ease; /* Opera */
+    top: -80px;
+
+    transition: top 0.35s ease;
+    -moz-transition: top 0.35s ease; /* FF 4 */
+    -webkit-transition: top 0.35s ease; /* Safari & Chrome */
+    -o-transition: top 0.35s ease; /* Opera */
 
     &.floated {
       position: fixed;
+      top: 0px; 
       background: rgba(240,240,240,.9);
       width: 100%;
       padding: 8px 20px;
       z-index: 100;
+      transition: top 0.35s ease;
+      -moz-transition: top 0.35s ease; /* FF 4 */
+      -webkit-transition: top 0.35s ease; /* Safari & Chrome */
+      -o-transition: top 0.35s ease; /* Opera */
     }
 
     &__logo {
