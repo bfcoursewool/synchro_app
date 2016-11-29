@@ -2,6 +2,35 @@ $(document).ready(function() {
 
   // shopClient is instantiated & initialized in shopify_credentials.js
   var ui = ShopifyBuy.UI.init(shopClient); 
+  var productSetOptions = {
+    product: {
+      isButton: true,
+      buttonDestination: 'modal',
+      contents: {
+        options: false,
+        button: false
+      },
+      text: {
+        button: 'Add To Cart',
+        outOfStock: 'Out of Stock',
+        unavailable: 'Unavailable'
+      },
+      styles: {
+        button: {
+          'font-weight': 'bold',
+          'background-color': '#3090d9',
+          ':hover': {
+            'background-color': '#2c84c8'
+          }
+        }
+      }
+    },
+    modal: {
+      styles: {
+        'height': '250px'
+      }
+    }
+  };
   var options = {
     product: {
       text: {
@@ -68,5 +97,11 @@ $(document).ready(function() {
     node: document.getElementById('gold-six-pack'),
     options: options
   }); 
+
+  ui.createComponent('productSet', {
+    id: 205866309,
+    node: document.getElementById('synchro-product-set'),
+    options: productSetOptions
+  });
 
 }); 

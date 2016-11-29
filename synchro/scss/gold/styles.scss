@@ -149,11 +149,6 @@ $break-desktop: 1199px;
 
     top: -80px;
 
-    transition: top 0.35s ease;
-    -moz-transition: top 0.35s ease; /* FF 4 */
-    -webkit-transition: top 0.35s ease; /* Safari & Chrome */
-    -o-transition: top 0.35s ease; /* Opera */
-
     &.floated {
       position: fixed;
       top: 0px; 
@@ -161,6 +156,7 @@ $break-desktop: 1199px;
       width: 100%;
       padding: 8px 20px;
       z-index: 100;
+
       transition: top 0.35s ease;
       -moz-transition: top 0.35s ease; /* FF 4 */
       -webkit-transition: top 0.35s ease; /* Safari & Chrome */
