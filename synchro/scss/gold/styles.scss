@@ -149,6 +149,11 @@ $break-desktop: 1199px;
 
     top: -80px;
 
+    transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -webkit-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+
     &.floated {
       position: fixed;
       top: 0px; 
