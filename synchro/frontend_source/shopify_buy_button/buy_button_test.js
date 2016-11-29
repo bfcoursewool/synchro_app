@@ -32,6 +32,11 @@ $(document).ready(function() {
             'background-color': '#2c84c8'
           }
         }
+      },
+      events: {
+        'openCheckout': function(cart) {
+          window.location.href = cart.model.checkoutUrl;
+        }
       }
     },
     toggle: {

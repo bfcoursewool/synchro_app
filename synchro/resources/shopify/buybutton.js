@@ -10115,7 +10115,7 @@ var require$$0$21 = Object.freeze({
 	  Cart.prototype.onCheckout = function onCheckout() {
 	   	//this.checkout.open(this.model.checkoutUrl);
 	   	// KOTZ -- This is how you hack shit. 
-	   	window.location.href = this.model.checkoutUrl; 
+	   	this._userEvent('openCheckout');
 	  };
 
 	  /**
