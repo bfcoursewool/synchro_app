@@ -31,6 +31,11 @@ $(document).ready(function() {
           }
         }
       }
+    },
+    modalProduct: {
+      contents: {
+        quantityInput: false
+      }
     }
   };
   var options = {
