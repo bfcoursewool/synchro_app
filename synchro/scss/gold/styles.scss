@@ -359,6 +359,10 @@ $break-desktop: 1199px;
 
   &__item {
     padding: 70px 0;
+
+    @media (max-width: $break-tablet) {
+      padding-bottom: 0;
+    }
   }
 
   &__title {
@@ -379,13 +383,9 @@ $break-desktop: 1199px;
     float: right;
 
     @media (max-width: $break-tablet) {
-      width: 70%;
+      max-width: 80%;
       float: none;
       margin-top: 50px;
-    }
-
-    @media (max-width: $break-tablet) {
-      width: 100%;
     }
   }
 
@@ -393,13 +393,9 @@ $break-desktop: 1199px;
     width: 600px;
 
     @media (max-width: $break-tablet) {
-      width: 70%;
+      max-width: 80%;
       float: none;
-      margin-bottom: 50px;
-    }
-
-    @media (max-width: $break-tablet) {
-      width: 100%;
+      margin-top: 50px;
     }
   }
 
@@ -408,13 +404,10 @@ $break-desktop: 1199px;
     float: right;
 
     @media (max-width: $break-tablet) {
-      width: 70%;
+      max-width: 80%;
       float: none;
       margin-top: 50px;
-    }
-
-    @media (max-width: $break-tablet) {
-      width: 100%;
+      padding-bottom: 70px;
     }
   }
 }
