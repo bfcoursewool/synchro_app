@@ -25,13 +25,6 @@ $(document).ready(function() {
         unavailable: 'Unavailable'
       },
       styles: {
-        button: {
-          'font-weight': 'bold',
-          'background-color': '#3090d9',
-          ':hover': {
-            'background-color': '#2c84c8'
-          }
-        },
         product: {
           'transition': 'opacity 0.3s ease',
           'opacity': '1',
@@ -43,7 +36,35 @@ $(document).ready(function() {
     },
     modalProduct: {
       contents: {
-        quantityInput: false
+        quantityInput: false,
+        button: true,
+        description: true
+      }, 
+      order: [
+        'img',
+        'title',
+        'price',
+        'options',
+        'description',
+        'button'
+      ],
+      styles: {
+        button: {
+          'align': 'right',
+          'font-weight': 'bold',
+          'background-color': '#3090d9',
+          ':hover': {
+            'background-color': '#2c84c8'
+          }
+        },
+        description: {
+          'height': '500px',
+          'overflow-y': 'hidden',
+          'overflow-x': 'hidden',
+          ':hover': {
+            'overflow-y': 'scroll'
+          }
+        }
       }
     }
   };

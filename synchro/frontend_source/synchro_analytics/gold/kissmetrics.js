@@ -3,6 +3,8 @@
 jQuery(document).ready(function($){
   //custom code for passing kmid on cross-domain <a href> links
   setTimeout(function(){  
+    /*
+     * TODO -- Check if this is at all necessary... 
     var kissIdentity = KM.i(); 
     kissIdentity = encodeURIComponent(kissIdentity);
     var hrefval = ['synchrogenesis', 'synchrogold', 'digestcleanse', 'besynchro'];
@@ -16,6 +18,7 @@ jQuery(document).ready(function($){
         });
       }
     });
+    */ 
 
     _kmq.push(['identify', 'anonymous']);
     _kmq.push(['trackClick', '.shopify-buy__btn', 'added to cart', {'URL': 'goldlptest.com'}]);
