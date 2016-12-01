@@ -49,3 +49,8 @@ shopify_buy_button = Resource(
     shopify
   ]
 )
+
+wowjs = Resource(
+  library_resources,
+  'wow/wow.min.js',
+)

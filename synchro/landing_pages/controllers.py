@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, abort
 from synchro.third_party_resources import bootstrap, bootstrap_css
 from synchro.resources import synchro_shopify, synchro_buy_button, synchro_effects, gold_analytics
+from synchro.third_party_resources import wowjs
 
 landing_pages = Blueprint('landing_pages', __name__, url_prefix='/pages')
 
@@ -28,7 +29,7 @@ endpoint_info_dict = {
     }, 
     'af': {
       'template': 'gold/gold_af.html',
-      'scripts': [synchro_buy_button, synchro_effects, gold_analytics]
+      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs]
     }
   },
   'digestcleanse': {
