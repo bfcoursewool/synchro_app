@@ -81,11 +81,12 @@ a {
   display: block;
   font-family: 'Raleway', sans-serif;
   color: #4d515c;
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: .08em;
   font-size: 18px;
   line-height: 1.4;
   text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
 
   &:after {
     content: "";
@@ -97,12 +98,13 @@ a {
   }
 }
 
-.p--text {
+.p--text .shopify-buy__product__title .shopify-buy__product__actual-price{
   font-family: 'Open Sans', sans-serif;
   color: #3f3f3f;
-  font-weight: 300;
+  font-weight: normal;
   font-size: 16px;
   line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
 }
 
 .p--bold {
@@ -124,7 +126,8 @@ a {
   letter-spacing: .08em;
   border-radius: 5px;
   border: 0;
-  font-weight: 600;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
 
   &:hover {
     background: #4ca4e6;
@@ -142,12 +145,20 @@ $break-desktop: 1199px;
 
 /* synchro gold styles */
 .main-header-container {
-  height: 123px;
+  height: 115px;
+
+  @media (max-width: $break-mobile) {
+    height: 75px;
+  }
 
   .main-header {
     padding: 40px 20px;
-
     top: -80px;
+    font-size: 0;
+
+    @media (max-width: $break-mobile) {
+      padding: 20px;
+    }
 
     transition: all 0.35s ease;
     -moz-transition: all 0.35s ease;
@@ -156,10 +167,10 @@ $break-desktop: 1199px;
 
     &.floated {
       position: fixed;
-      top: 0px; 
+      top: 0px;
       background: rgba(240,240,240,.9);
       width: 100%;
-      padding: 8px 20px;
+      padding: 10px 20px;
       z-index: 100;
 
       transition: top 0.35s ease;
@@ -172,20 +183,19 @@ $break-desktop: 1199px;
       display: inline-block;
 
       .synchro-logo {
-        width: 133px;
+        height: 35px;
       }
     }
 
     &__cta {
       font-size: 11px;
-      margin: 4px 0 0 10px;
       float: right;
     }
 
     .main-navigation {
       display: inline-block;
       float: right;
-      margin: 13px 0;
+      margin: 12px 0;
 
       @media (max-width: $break-mobile) {
         display: block;
@@ -201,13 +211,14 @@ $break-desktop: 1199px;
 
       &__item {
         font-size: 11px;
-        font-weight: 600;
+        font-weight: bold;
         text-transform: uppercase;
         font-family: 'Raleway', sans-serif;
         color: #8e8e8e;
-        padding-right: 15px;
+        padding-right: 21px;
         letter-spacing: .08em;
         text-decoration: none;
+        -webkit-font-smoothing: antialiased;
 
         @media (max-width: $break-mobile) {
           display: block;
@@ -226,7 +237,11 @@ $break-desktop: 1199px;
 
 .main-banner {
   text-align: center;
-  padding: 30px 20px;
+  padding: 70px 20px 30px;
+
+  @media (max-width: $break-mobile) {
+    padding-top: 30px;
+  }
 
   &__headline {
     font-family: 'Open Sans', sans-serif;
@@ -237,6 +252,7 @@ $break-desktop: 1199px;
     margin-bottom: 50px;
     text-transform: capitalize;
     color: #353535;
+    -webkit-font-smoothing: antialiased;
 
     @media (max-width: $break-mobile) {
       font-size: 28px;
@@ -251,7 +267,7 @@ $break-desktop: 1199px;
 
 .gold-claims {
   box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.05);
-  padding: 40px 0;
+  padding: 30px 0;
   text-align: center;
 
   &__list {
@@ -324,6 +340,8 @@ $break-desktop: 1199px;
 
   &__header {
     margin: 50px 0 20px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: normal;
 
     &:after {
       display: none;
@@ -346,6 +364,10 @@ $break-desktop: 1199px;
 
   &__item {
     padding: 70px 0;
+
+    @media (max-width: $break-tablet) {
+      padding-bottom: 0;
+    }
   }
 
   &__title {
@@ -366,13 +388,9 @@ $break-desktop: 1199px;
     float: right;
 
     @media (max-width: $break-tablet) {
-      width: 70%;
+      max-width: 80%;
       float: none;
       margin-top: 50px;
-    }
-
-    @media (max-width: $break-tablet) {
-      width: 100%;
     }
   }
 
@@ -380,13 +398,9 @@ $break-desktop: 1199px;
     width: 600px;
 
     @media (max-width: $break-tablet) {
-      width: 70%;
+      max-width: 80%;
       float: none;
-      margin-bottom: 50px;
-    }
-
-    @media (max-width: $break-tablet) {
-      width: 100%;
+      margin-top: 50px;
     }
   }
 
@@ -395,13 +409,10 @@ $break-desktop: 1199px;
     float: right;
 
     @media (max-width: $break-tablet) {
-      width: 70%;
+      max-width: 80%;
       float: none;
       margin-top: 50px;
-    }
-
-    @media (max-width: $break-tablet) {
-      width: 100%;
+      padding-bottom: 70px;
     }
   }
 }
@@ -471,7 +482,7 @@ $break-desktop: 1199px;
     max-width: 100%;
 
     @media (max-width: $break-mobile) {
-      width: 90%;
+      max-width: 90%;
       margin: 0 auto 30px;
     }
   }
@@ -502,6 +513,11 @@ $break-desktop: 1199px;
 .gold-research {
   padding: 70px 20px;
   text-align: center;
+
+  .p--title {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: normal;
+  }
 
   &__item {
     padding: 70px 30px 0;
@@ -539,11 +555,12 @@ $break-desktop: 1199px;
   text-align: center;
 
   &__brandname {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #fff;
     letter-spacing: 4px;
     font-size: 18px;
     text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
   }
 
   &__title {
@@ -553,6 +570,7 @@ $break-desktop: 1199px;
     margin: 20px 60px 30px;
     font-weight: 300;
     line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
 
     @media (max-width: $break-mobile) {
       font-size: 40px;
@@ -567,10 +585,12 @@ $break-desktop: 1199px;
   padding: 30px 0;
   font-family: 'Raleway', sans-serif;
   color: #fff;
+  font-weight: bold;
   letter-spacing: .08em;
-  font-size: 9px;
+  font-size: 10px;
   background: #191d20;
   text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
 
   @media (max-width: $break-mobile) {
     padding: 20px 0;

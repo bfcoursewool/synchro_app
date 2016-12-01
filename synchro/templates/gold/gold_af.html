@@ -7,15 +7,29 @@
 
 <script>
   (function(i,s,o,g,r,a,m){i['OptimizelyObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.src=g;m.parentNode.insertBefore(a,m)
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://cdn.optimizely.com/js/3182500501.js','optimizely');
 </script>
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '495265410669440');
+fbq('track', 'PageView', {
+  property: 'Synchro-Gold'
+});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=495265410669440&ev=PageView&cd[property]=Synhcro-Gold&noscript=1" /></noscript>
 
 <!-- Custom styles for this template -->
 <link href="{{ url_for('static', filename='css/gold/styles.css') }}" rel="stylesheet">
 <!-- Google fonts -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:200,300,400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700" rel="stylesheet">
 
 {% endblock %}
 
@@ -29,8 +43,8 @@
           <div class="main-header__logo">
             <img class="synchro-logo" src="https://cdn.shopify.com/s/files/1/0155/0195/files/logo-retina.png?2210952882354881356"> <!-- SVG preferred -->
           </div>
-          <a class="main-header__cta a--cta" href="#purchase">Buy</a>
-          <nav class="main-navigation hidden-sm-down">
+          <a class="main-header__cta a--cta" role="button" href="#purchase">Buy</a>
+          <nav class="main-navigation">
             <a class="main-navigation__item" href="#overview">Overview</a>
             <a class="main-navigation__item" href="#benefits">Benefits</a>
             <a class="main-navigation__item" href="#features">Features</a>
@@ -48,8 +62,8 @@
     <div class="row">
       <div class="main-banner">
         <h1 class="main-banner__headline">The world's most powerful turmeric supplement</h1>
-        <img class="main-banner__image hidden-xs" src="http://synchrogold.com/wp-content/uploads/2016/07/gold-hero-smaller.jpg">
-        <img class="main-banner__image visible-xs" src="http://synchrogold.com/wp-content/uploads/2016/07/Mobile-Slider.jpg">
+        <img class="main-banner__image hidden-sm-down" src="http://synchrogold.com/wp-content/uploads/2016/07/gold-hero-smaller.jpg">
+        <img class="main-banner__image hidden-md-up" src="http://synchrogold.com/wp-content/uploads/2016/07/Mobile-Slider.jpg">
       </div>
     </div>
   </section>
@@ -87,7 +101,7 @@
   <section class="turmeric-info">
     <div class="container-fluid">
       <div class="row">
-        <p class="turmeric-info__text p--text col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1"><span class="turmeric-info__title p--bold">Turmeric has gotten a lot of press lately.</span>It’s heralded for its ability to reduce inflammation, boost the body’s antioxidant systems, and improve cognitive functioning. Synchro Gold utilizes a super-concentrated extract of turmeric root, formulated with a cutting-edge nutrient delivery system, to create an elixir of unmatched bioavailability and potency.</p>
+        <p class="turmeric-info__text p--text col-md-8 offset-md-2 col-xs-10 offset-xs-1"><span class="turmeric-info__title p--bold">Turmeric has gotten a lot of press lately.</span>It’s heralded for its ability to reduce inflammation, boost the body’s antioxidant systems, and improve cognitive functioning. Synchro Gold utilizes a super-concentrated extract of turmeric root, formulated with a cutting-edge nutrient delivery system, to create an elixir of unmatched bioavailability and potency.</p>
       </div>
     </div>
   </section>
@@ -138,29 +152,29 @@
     <div class="row">
       <div class="gold-ingredients">
         <div class="gold-ingredients__item clearfix">
-          <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 gold-ingredients__extraction">
+          <div class="col-lg-4 offset-lg-0 col-md-10 offset-md-1 gold-ingredients__extraction">
             <h3 class="p--title">Full-Spectrum CO2 Extraction</h3>
             <p class="p--text">Our proprietary CO2 extraction of turmeric root delivers levels of turmeric alkaloids that are head and shoulders above other extracts. Unlike other turmeric golds, which deliver only one or a few of the root’s active alkaloids, our CO2 extraction boasts the full spectrum of turmeric alkaloids, just as you would find in raw turmeric root. As studies have shown, full-spectrum extracts of turmeric produce a number of health benefits that are lost with other extraction technologies, most notably the stimulation of the body’s antioxidant systems.</p>
           </div>
-          <div class="col-md-8">
+          <div class="col-lg-8">
             <img class="gold-ingredients__extraction-img" src="http://synchrogold.com/wp-content/uploads/2015/06/turmeric2.jpg">
           </div>
         </div>
         <div class="gold-ingredients__item clearfix">
-          <div class="col-md-8">
-            <img class="gold-ingredients__liposomal-img" src="http://synchrogold.com/wp-content/uploads/2015/06/liposomal-smaller.jpg">
-          </div>
-          <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 gold-ingredients__liposomal">
+          <div class="col-lg-4 offset-lg-0 push-lg-8 col-md-10 offset-md-1 gold-ingredients__liposomal">
             <h3 class="p--title">Liposomal Delivery</h3>
             <p class="p--text">Turmeric is an incredibly powerful plant, but it does have a critical shortcoming: turmeric alkaloids are usually poorly absorbed by the digestive tract. We’ve overcome this short- coming by creating the world’s first true liposomal turmeric gold. Our liposomal formula utilizes a specific type of fat (called phospholipids) blended under highly specific conditions. This process effectively binds the turmeric alkaloids to the phospholipids, allowing for greatly improved absorption. Studies have shown up to a 6-fold increase in bioavailability when turmeric alkaloids are delivered via liposomes.</p>
           </div>
+          <div class="col-lg-8 pull-lg-4">
+            <img class="gold-ingredients__liposomal-img" src="http://synchrogold.com/wp-content/uploads/2015/06/liposomal-smaller.jpg">
+          </div>
         </div>
         <div class="gold-ingredients__item clearfix">
-          <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 gold-ingredients__pepper">
+          <div class="col-lg-4 offset-lg-0 col-md-10 offset-md-1 gold-ingredients__pepper">
             <h3 class="p--title">Black Pepper Fruit Extract</h3>
             <p class="p--text">Extracted from organic black pepper fruit, piperine is an organic compound that dramatically increases absorption of turmeric alkaloids in the gut. Piperine works by inhibiting an enzyme in our digestive tract that would otherwise break down a large portion of the turmeric alkaloids before they can be absorbed. Studies have shown up to a 2000% increase in bioavailability when turmeric is paired with black pepper fruit extract.</p>
           </div>
-          <div class="col-md-8">
+          <div class="col-lg-8">
             <img class="gold-ingredients__pepper-img" src="http://synchrogold.com/wp-content/uploads/2015/06/black-pepper-smaller.jpg">
           </div>
         </div>
@@ -175,7 +189,7 @@
         <div class="col-lg-4 col-md-5 col-sm-6">
           <img class="gold-facts__img" src="http://synchrogold.com/wp-content/uploads/2015/07/Supplement-Facts2.jpg">
         </div>
-        <div class="col-lg-8 col-md-7 col-sm-6">
+        <div class="col-lg-7 offset-lg-1 col-md-7 col-sm-6">
           <h3 class="gold-facts__title p--title">Use & Ingredients</h3>
           <p class="p--text p--bold">Suggested Use:</p>
           <p class="p--text">To help support a healthy inflammation response and healthy energy levels, take 1-2 servings daily. Shake well. Mix 1oz Gold with 4-6oz warm non-dairy milk product and a bit of honey. Drink quickly. Synchro Gold can also be consumed on its own as a 1oz “shot” (strong taste)</p>
@@ -185,20 +199,33 @@
   </section>
 
   <a name="purchase"></a>
-  <section class="container-fluid gold-purchase">
+  <section class="container-fluid">
     <div class="row">
-      <h3 class="p--title">Purchase Options</h3>
-
-      <div class="buy_buttons">
-        <div class="gold-purchase__item col-md-4" id="gold-two-pack"></div>
-        <div class="gold-purchase__item col-md-4" id="gold-four-pack"></div>
-        <div class="gold-purchase__item col-md-4" id="gold-six-pack"></div>
+      <div class="gold-purchase">
+        <h3 class="p--title">Purchase Options</h3>
+        <div class="buy-buttons clearfix">
+          <div class="product-option gold-purchase__item col-sm-4" data-product-id="374830964" data-quantity="2">
+            <div id="gold-option-one"></div>
+          </div>
+          <div class="product-option gold-purchase__item col-sm-4" data-product-id="374830964" data-quantity="4">
+            <div id="gold-option-two"></div>
+          </div>
+          <div class="product-option gold-purchase__item col-sm-4" data-product-id="374830964" data-quantity="6">
+            <div id="gold-option-three"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <section class="container gold-info">
+
+  <section class="container-fluid gold-info">
     <div class="row">
-      <img src="http://synchrogold.com/wp-content/uploads/2015/06/icon-bar-1.jpg" alt="Fast Shipping. Best Price. 100% Organic Ingredients.">
+      <img class="gold-info__img hidden-sm-down" src="http://synchrogold.com/wp-content/uploads/2015/06/icon-bar-1.jpg" alt="Fast Shipping. Best Price. 100% Organic Ingredients.">
+      <div class="hidden-md-up">
+        <img class="gold-info__img" src="http://synchrogold.com/wp-content/uploads/2016/07/newfast.jpg" alt="Fast Shipping">
+        <img class="gold-info__img" src="http://synchrogold.com/wp-content/uploads/2016/07/newbest.jpg" alt="Best Price">
+        <img class="gold-info__img" src="http://synchrogold.com/wp-content/uploads/2016/07/Organic.jpg" alt="100% Organic Ingredients">
+      </div>
     </div>
   </section>
 
@@ -228,78 +255,78 @@
     </div>
   </secton>
 
-<a name="research"></a>
-<section class="container-fluid">
-  <div class="row">
-    <div class="gold-research clearfix">
-      <h3 class="p--title">Research</h3>
-      <p class="p--text">There’s a mountain of research showing why Turmeric is one of the planet’s best foods for promoting vitality.</p>
-      <div class="gold-research__item col-sm-6">
-        <h3 class="p--title">Anti-inflammatory Drugs</h3>
-        <p class="p--text">Turmeric has been shown to be more effective than ibuprofen and acetaminophen in lowering C-reactive protein levels, one of the primary markers of chronic inflammation. Turmeric works through inhibition COX-2 enzyme, a critical component of the NF-Kappa-B inflammatory signalling cascade. Turmeric is free of the toxicity and dependency issues that make continued use of OTC anti-inflammatory drugs inadvisable.†</p>
-      </div>
-      <div class="gold-research__item col-sm-6">
-        <h3 class="p--title">Powerfully Neuroprotective</h3>
-        <p class="p--text">Animal studies have shown that curcumin and tetrahydrocurcumin, two of the primary active compounds in turmeric, protect the brain against chemically-induced neurotoxicity. Ar-turmerone, another primary compound in turmeric, has been shown to stimulate neural stem cell growth and differentiation. Researchers believe this could have huge consequences for protection against neurodegenerative disease.†</p>
-      </div>
-      <div class="gold-research__item col-sm-6">
-        <h3 class="p--title">Effective in Treating Clinical Depression</h3>
-        <p class="p--text">A 2013 study compared the efficacy of turmeric extract against fluoxetine (Prozac) in treating major depressive disorder. A similar percentage of patients (62.5% and 64.7%, respectively) saw improvement in their degree of depression as measured by a standardized depression-rating test. Researchers concluded that turmeric “may be used as an effective and safe modality for treatment in patients with MDD without concurrent suicidal ideation or other psychotic disorders.”†</p>
-      </div>
-      <div class="gold-research__item col-sm-6">
-        <h3 class="p--title">Protects Against Demethylation of DNA</h3>
-        <p class="p--text">Under ideal circumstances, our DNA is bound to and protected by a series of methyl groups in a process called DNA methylation. The progressive demethylation of DNA (largely due to toxin exposure) is one of the primary drivers of the aging process and eventually leads to cellular and metabolic dysfunction. Turmeric extract has been shown to protect against this toxin-induced demethylation of DNA.†</p>
-      </div>
-      <div class="gold-research__footnote">
-        <p class="p--text">† This statement has not been evaluated by the FDA.</p>
-        <p class="p--text">This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+  <a name="research"></a>
+  <section class="container-fluid">
+    <div class="row">
+      <div class="gold-research clearfix">
+        <h3 class="p--title">Research</h3>
+        <p class="p--text">There’s a mountain of research showing why Turmeric is one of the planet’s best foods for promoting vitality.</p>
+        <div class="gold-research__item col-sm-6">
+          <h3 class="p--title">Anti-inflammatory Drugs</h3>
+          <p class="p--text">Turmeric has been shown to be more effective than ibuprofen and acetaminophen in lowering C-reactive protein levels, one of the primary markers of chronic inflammation. Turmeric works through inhibition COX-2 enzyme, a critical component of the NF-Kappa-B inflammatory signalling cascade. Turmeric is free of the toxicity and dependency issues that make continued use of OTC anti-inflammatory drugs inadvisable.†</p>
+        </div>
+        <div class="gold-research__item col-sm-6">
+          <h3 class="p--title">Powerfully Neuroprotective</h3>
+          <p class="p--text">Animal studies have shown that curcumin and tetrahydrocurcumin, two of the primary active compounds in turmeric, protect the brain against chemically-induced neurotoxicity. Ar-turmerone, another primary compound in turmeric, has been shown to stimulate neural stem cell growth and differentiation. Researchers believe this could have huge consequences for protection against neurodegenerative disease.†</p>
+        </div>
+        <div class="gold-research__item col-sm-6">
+          <h3 class="p--title">Effective in Treating Clinical Depression</h3>
+          <p class="p--text">A 2013 study compared the efficacy of turmeric extract against fluoxetine (Prozac) in treating major depressive disorder. A similar percentage of patients (62.5% and 64.7%, respectively) saw improvement in their degree of depression as measured by a standardized depression-rating test. Researchers concluded that turmeric “may be used as an effective and safe modality for treatment in patients with MDD without concurrent suicidal ideation or other psychotic disorders.”†</p>
+        </div>
+        <div class="gold-research__item col-sm-6">
+          <h3 class="p--title">Protects Against Demethylation of DNA</h3>
+          <p class="p--text">Under ideal circumstances, our DNA is bound to and protected by a series of methyl groups in a process called DNA methylation. The progressive demethylation of DNA (largely due to toxin exposure) is one of the primary drivers of the aging process and eventually leads to cellular and metabolic dysfunction. Turmeric extract has been shown to protect against this toxin-induced demethylation of DNA.†</p>
+        </div>
+        <div class="gold-research__footnote">
+          <p class="p--text">† This statement has not been evaluated by the FDA.</p>
+          <p class="p--text">This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<a name="faq"></a>
-<section class="gold-faq">
-  <div class="container-fluid">
-    <div class="row">
-      <h3 class="p--title">FAQ</h3>
-      <div class="gold-faq__text">
-        <p class="p--text"><span class="p--bold">Where is Synchro Gold made?</span> Synchro Gold is made in a cGMP and Organic Certified facility in Southern California.</p>
-        <p class="p--text"><span class="p--bold">Where do the ingredients come from?</span> Our organic turmeric and ginger extracts (supercritical CO2 extraction) come from organic-certified farms in Vietnam.  The organic certifications and inspections for both are done by QC&I International. Our sunflower lecithin comes from US-based farms and is Non-GMO Project Verified.</p>
-        <p class="p--text"><span class="p--bold">Where is Synchro based?</span> Synchro was founded in 2011 by biochemist and nutritionist Graham Ryan with the mission of helping others pursue a state of true health. Synchro is headquartered in and ships all orders from Berkeley, CA.</p>
-        <p class="p--text"><span class="p--bold">Who should use Synchro Gold?</span> Synchro Gold will be particularly beneficial to anyone suffering from joint or muscle pain, stiffness, and other arthritis symptoms. Because Synchro Gold is highly anti-inflammatory, it can also help with conditions of low energy, foggy brain and fatigue.</p>
-        <p class="p--text"><span class="p--bold">How does Synchro Gold work?</span> First and foremost, Synchro Gold works by inhibiting a critical enzyme in the inflammatory process in our body. This produces the most dramatic reduction in pain and inflammation. Synchro Gold is remarkable because it also stimulates our body’s own antioxidant systems, improving the body’s ability to heal on its own.</p>
-        <p class="p--text"><span class="p--bold">How do I use Synchro Gold?</span> Drink at least 1oz of Synchro Gold every day, preferably with a light meal. If your pain or inflammation is severe on a particular day, a second 1oz serving can help provide additional relief. We think Gold is best when mixed with warm non-dairy milk product and a bit of honey.</p>
-        <p class="p--text"><span class="p--bold">When can I expect results?</span> The beneficial effects of Synchro Gold are two-fold. Most people experience a reduction in pain symptoms from the very first time they take Synchro Gold, usually within 30 minutes of consuming.  For other people, it takes a bit longer and the full benefits are not seen until Gold has had a chance to work consistently for a week or two. To experience the full effects of Synchro Gold , it is recommended to continue to consume at least one 1oz serving per day for a minimum of two weeks such that the full benefits (stimulation of the antioxidant systems, improved brain health) are to allowed time to sufficiently develop.</p>
-        <p class="p--text"><span class="p--bold">Do I need to refrigerate Synchro Gold?</span> Nope, Synchro Gold is very shelf stable. That being said, refrigeration after opening will preserve potency and is recommended.</p>
+  <a name="faq"></a>
+  <section class="gold-faq">
+    <div class="container-fluid">
+      <div class="row">
+        <h3 class="p--title">FAQ</h3>
+        <div class="gold-faq__text">
+          <p class="p--text"><span class="p--bold">Where is Synchro Gold made?</span> Synchro Gold is made in a cGMP and Organic Certified facility in Southern California.</p>
+          <p class="p--text"><span class="p--bold">Where do the ingredients come from?</span> Our organic turmeric and ginger extracts (supercritical CO2 extraction) come from organic-certified farms in Vietnam.  The organic certifications and inspections for both are done by QC&I International. Our sunflower lecithin comes from US-based farms and is Non-GMO Project Verified.</p>
+          <p class="p--text"><span class="p--bold">Where is Synchro based?</span> Synchro was founded in 2011 by biochemist and nutritionist Graham Ryan with the mission of helping others pursue a state of true health. Synchro is headquartered in and ships all orders from Berkeley, CA.</p>
+          <p class="p--text"><span class="p--bold">Who should use Synchro Gold?</span> Synchro Gold will be particularly beneficial to anyone suffering from joint or muscle pain, stiffness, and other arthritis symptoms. Because Synchro Gold is highly anti-inflammatory, it can also help with conditions of low energy, foggy brain and fatigue.</p>
+          <p class="p--text"><span class="p--bold">How does Synchro Gold work?</span> First and foremost, Synchro Gold works by inhibiting a critical enzyme in the inflammatory process in our body. This produces the most dramatic reduction in pain and inflammation. Synchro Gold is remarkable because it also stimulates our body’s own antioxidant systems, improving the body’s ability to heal on its own.</p>
+          <p class="p--text"><span class="p--bold">How do I use Synchro Gold?</span> Drink at least 1oz of Synchro Gold every day, preferably with a light meal. If your pain or inflammation is severe on a particular day, a second 1oz serving can help provide additional relief. We think Gold is best when mixed with warm non-dairy milk product and a bit of honey.</p>
+          <p class="p--text"><span class="p--bold">When can I expect results?</span> The beneficial effects of Synchro Gold are two-fold. Most people experience a reduction in pain symptoms from the very first time they take Synchro Gold, usually within 30 minutes of consuming.  For other people, it takes a bit longer and the full benefits are not seen until Gold has had a chance to work consistently for a week or two. To experience the full effects of Synchro Gold , it is recommended to continue to consume at least one 1oz serving per day for a minimum of two weeks such that the full benefits (stimulation of the antioxidant systems, improved brain health) are to allowed time to sufficiently develop.</p>
+          <p class="p--text"><span class="p--bold">Do I need to refrigerate Synchro Gold?</span> Nope, Synchro Gold is very shelf stable. That being said, refrigeration after opening will preserve potency and is recommended.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="gold-cta">
-  <div class="container-fluid">
-    <div class="row">
-      <p class="gold-cta__brandname">Synchro</p>
-      <h2 class="gold-cta__title">Nutrition for vibrant living.</h2>
-      <a class="gold-cta__cta a--cta" href="#purchase">Buy</a>
-    </div>
-  </div>
-</section>
-<!-- FOOTER -->
-<footer class="gold-footer">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="gold-footer__left">
-        <a class="gold-footer__text" href="http://synchrogold.com/">© Synchro Gold 2016</a>
-      </div>
-      <div class="gold-footer__right">
-        <a class="gold-footer__text" href="http://besynchro.com/pages/contact-us">Reach out! We'd Love to Hear From You!</a>
-        <a class="gold-footer__text" href="http://besynchro.com/pages/privacy-policy">Privacy Policy</a>
-        <a class="gold-footer__text" href="http://besynchro.com/pages/returns-policy">Returns Policy</a>
+  <section class="gold-cta">
+    <div class="container-fluid">
+      <div class="row">
+        <p class="gold-cta__brandname">Synchro</p>
+        <h2 class="gold-cta__title">Nutrition for vibrant living.</h2>
+        <a class="gold-cta__cta a--cta" role="button" href="#purchase">Buy</a>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
+  <!-- FOOTER -->
+  <footer class="gold-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="gold-footer__left">
+          <a class="gold-footer__text" href="http://synchrogold.com/">© Synchro Gold 2016</a>
+        </div>
+        <div class="gold-footer__right">
+          <a class="gold-footer__text" href="http://besynchro.com/pages/contact-us">Reach out! We'd Love to Hear From You!</a>
+          <a class="gold-footer__text" href="http://besynchro.com/pages/privacy-policy">Privacy Policy</a>
+          <a class="gold-footer__text" href="http://besynchro.com/pages/returns-policy">Returns Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 {% endblock %}

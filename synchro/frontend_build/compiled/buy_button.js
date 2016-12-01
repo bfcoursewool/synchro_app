@@ -49,6 +49,13 @@ $(document).ready(function() {
   };
   var options = {
     product: {
+      iframe: false,
+      contents: {
+        options: false,
+        variantTitle: true,
+        price: true,
+        quantityInput: false        
+      },
       text: {
         button: 'Add To Cart',
         outOfStock: 'Out of Stock',
@@ -97,20 +104,23 @@ $(document).ready(function() {
   };
 
   ui.createComponent('product', {
-    id: 378141356,
-    node: document.getElementById('gold-two-pack'),
+    id: 374830964,
+    variantId: 979745780,
+    node: document.getElementById('gold-option-one'),
     options: options
   });
 
   ui.createComponent('product', {
-    id: 457279420,
-    node: document.getElementById('gold-four-pack'),
+    id: 374830964,
+    variantId: 979770088,
+    node: document.getElementById('gold-option-two'),
     options: options
   });
 
   ui.createComponent('product', {
-    id: 5811620421,
-    node: document.getElementById('gold-six-pack'),
+    id: 374830964,
+    variantId: 979770380,
+    node: document.getElementById('gold-option-three'),
     options: options
   }); 
 
