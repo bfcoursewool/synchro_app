@@ -4,27 +4,16 @@
 {% block head %}
 
 {{ super() }}
+<!-- facebook pixel --> 
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=495265410669440&ev=PageView&cd[property]=Synhcro-Gold&noscript=1" /></noscript>
 
+<!-- Optimizely --> 
 <script>
   (function(i,s,o,g,r,a,m){i['OptimizelyObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://cdn.optimizely.com/js/3182500501.js','optimizely');
 </script>
-
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '495265410669440');
-fbq('track', 'PageView', {
-  property: 'Synchro-Gold'
-});
-</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=495265410669440&ev=PageView&cd[property]=Synhcro-Gold&noscript=1" /></noscript>
 
 <!-- Custom styles for this template -->
 <link href="{{ url_for('static', filename='css/gold/styles.css') }}" rel="stylesheet">
