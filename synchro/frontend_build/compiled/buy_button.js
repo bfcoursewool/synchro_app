@@ -81,15 +81,6 @@ $(document).ready(function() {
         button: 'Add To Cart',
         outOfStock: 'Out of Stock',
         unavailable: 'Unavailable'
-      },
-      styles: {
-        button: {
-          'font-weight': 'bold',
-          'background-color': '#3090d9',
-          ':hover': {
-            'background-color': '#2c84c8'
-          }
-        }
       }
     },
     cart: {
