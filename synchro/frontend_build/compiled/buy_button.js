@@ -99,6 +99,7 @@ $(document).ready(function() {
       },
       events: {
         'openCheckout': function(cart) {
+          _kmq.push(['record', 'started purchase', {}]);
           window.location.href = cart.model.checkoutUrl;
         }
       }
