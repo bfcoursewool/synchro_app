@@ -197,8 +197,8 @@ $break-desktop: 1199px;
       float: right;
       margin: 12px 0;
 
-      @media (max-width: $break-mobile) {
-        display: block;
+      @media (max-width: $break-tablet) {
+        display: none;
         float: none;
         position: absolute;
         background: #F6F8FB;
@@ -207,6 +207,27 @@ $break-desktop: 1199px;
         left: 0;
         right: 0;
         margin-top: 8px;
+      }
+
+      &.expanded {
+
+        @media (max-width: $break-tablet) {
+          display: block;
+        }
+      }
+
+      &__mobile {
+        cursor: pointer;
+        width: 22px;
+        height: 35px;
+        margin-right: 30px;
+        outline: 0;
+      }
+
+      &__hamburger {
+        background-color: #3f3f3f;
+        height: 3px;
+        margin: 4px 0;
       }
 
       &__item {
@@ -220,7 +241,7 @@ $break-desktop: 1199px;
         text-decoration: none;
         -webkit-font-smoothing: antialiased;
 
-        @media (max-width: $break-mobile) {
+        @media (max-width: $break-tablet) {
           display: block;
           padding: 16px;
           border-bottom: 1px solid #FFF;
