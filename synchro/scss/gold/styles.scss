@@ -287,8 +287,30 @@ $break-desktop: 1199px;
   }
 }
 
+.gold-uvp {
+  background: #F6F8FB;
+  padding: 40px 0;
+  text-align: center;
+
+  &__item {
+    font-size: 20px;
+    display: inline-block;
+    margin: 10px 20px;
+
+    @media (max-width: $break-mobile) {
+      display: block;
+    }
+
+    &:before {
+      content: '\f00c';
+      font-family: FontAwesome;
+      color: #4ca4e6;
+      margin-right: 10px;
+    }
+  }
+
+}
 .gold-claims {
-  box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.05);
   padding: 30px 0;
   text-align: center;
 
