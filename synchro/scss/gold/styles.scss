@@ -115,7 +115,8 @@ a {
   text-decoration: line-through;
 }
 
-.a--cta {
+.a--cta,
+.shopify-buy__btn {
   display: inline-block;
   color: #fff;
   background: #2f90d9;
@@ -475,23 +476,45 @@ $break-desktop: 1199px;
 
   &__item {
     margin: 30px 0 0;
+
+    @media (max-width: $break-mobile) {
+      width: 100%;
+    }
+
   }
 
-  &__img {
+  .shopify-buy__product__variant-img {
     margin: 20px 0;
     max-width: 300px;
     width: 100%;
   }
 
-  .p--text {
+  .shopify-buy__product__title,
+  .shopify-buy__product__actual-price {
+    font-family: 'Open Sans', sans-serif;
+    color: #3f3f3f;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.8;
     text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .shopify-buy__product__variant-title {
+    font-family: 'Open Sans', sans-serif;
+    color: #3f3f3f;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
   }
 
   &__text-highlight {
     background-color: yellow;
   }
 
-  .a--cta {
+  .shopify-buy__btn {
     margin: 30px;
   }
 }
@@ -513,17 +536,13 @@ $break-desktop: 1199px;
   padding: 70px 20px;
   text-align: center;
 
-  &__img {
+  .shopify-buy__product__variant-img {
     max-width: 270px;
     margin: 30px 0;
     width: 100%;
   }
-
-  &__price {
-    color: #767676;
-    font-weight: 300;
-  }
 }
+
 .synchro-reviews {
   display: block;
   background: #F6F8FB;
