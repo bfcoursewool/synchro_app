@@ -21,12 +21,20 @@ jQuery(document).ready(function($){
     */ 
 
     _kmq.push(['identify', 'anonymous']);
-    _kmq.push(['trackClick', '.shopify-buy__btn', 'added to cart', {'URL': 'goldlptest.com'}]);
+    //_kmq.push(['trackClick', '.shopify-buy__btn', 'added to cart', {'URL': 'goldlptest.com'}]);
 
     $('.shopify-buy__btn').click(function() {
-      _kmq.push(function() {
-        KM.record('added to cart');
-      }); 
+      var price = $(this).parent().find('.shopify-buy__product__actual-price').html();
+      price = price.replace(/\$/g, ''); 
+      var contentName = $(this).parent().find('.shopify-buy__product__title').html() + $(this).parent().find('.shopify-buy__product__variant-title').html();
+
+      _kmq.push(['record', 'added to cart', {
+        'Added Product Name': contentName,
+        'Added Product Price': price,
+        'Added Product Quantity': 1,
+        'Added Product SKU': 'GLD01',
+        'Added Product Variant': 'coming soon'
+      }]); 
     });
   }, 1500);
 
