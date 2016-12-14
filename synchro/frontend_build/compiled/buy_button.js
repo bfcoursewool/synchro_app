@@ -84,8 +84,7 @@ $(document).ready(function() {
       },
       events: {
         'addVariantToCart': function(product) {
-          //debugger;
-          console.log(product.cart.id);
+          console.log(product.cart.model.id);
         }
       }
     },
@@ -105,6 +104,7 @@ $(document).ready(function() {
       },
       events: {
         'openCheckout': function(cart) {
+          _kmq.push(['alias', cart.model.id, kissIdentity]); 
           _kmq.push(['record', 'started purchase', {}]);
           window.location.href = cart.model.checkoutUrl;
         }

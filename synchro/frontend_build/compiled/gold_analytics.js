@@ -18,6 +18,9 @@ jQuery(document).ready(function($){
 });
 
 })();
+// I'm sorry, God. Please forgive my sins. 
+var kissIdentity;
+
 (function() {
 
 jQuery(document).ready(function($){
@@ -40,10 +43,19 @@ jQuery(document).ready(function($){
     });
     */ 
 
+     //var kissIdentity = KM.i(); 
+     //console.log(kissIdentity); 
+
     _kmq.push(['identify', 'anonymous']);
-    //_kmq.push(['trackClick', '.shopify-buy__btn', 'added to cart', {'URL': 'goldlptest.com'}]);
+    _kmq.push(function() {
+      kissIdentity = KM.i(); 
+      console.log("KM Loaded!");
+      console.log(kissIdentity); 
+    });
+
 
     $('.shopify-buy__btn').click(function() {
+      console.log("uh... helloooo"); 
       var price = $(this).parent().find('.shopify-buy__product__actual-price').html();
       price = price.replace(/\$/g, ''); 
       var contentName = $(this).parent().find('.shopify-buy__product__title').html() + $(this).parent().find('.shopify-buy__product__variant-title').html();
@@ -55,6 +67,7 @@ jQuery(document).ready(function($){
         'Added Product SKU': 'GLD01',
         'Added Product Variant': 'coming soon'
       }]); 
+      console.log("should've pushed the add to cart..."); 
     });
   }, 1500);
 
