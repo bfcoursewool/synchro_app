@@ -8843,7 +8843,7 @@ var require$$0$21 = Object.freeze({
 	      this.props.closeModal();
 	      this._userEvent('addVariantToCart');
 	      this.props.tracker.trackMethod(this.cart.addVariantToCart.bind(this), 'CART_ADD', this.selectedVariantTrackingInfo)(this.model.selectedVariant, this.model.selectedQuantity);
-	      debugger;
+	      //debugger;
 	      if (this.iframe) {
 	        this.props.setActiveEl(target);
 	      }
@@ -10116,7 +10116,7 @@ var require$$0$21 = Object.freeze({
 	  Cart.prototype.onCheckout = function onCheckout() {
 	   	//this.checkout.open(this.model.checkoutUrl);
 	   	// KOTZ -- This is how you hack shit. 
-	   	debugger;
+	   	//debugger;
 	   	this._userEvent('openCheckout');
 	  };
 
@@ -10599,7 +10599,7 @@ var require$$0$21 = Object.freeze({
 	      return Promise.resolve(this.components.cart[0]);
 	    } else {
 	      var cart = new Cart(config, this.componentProps);
-	      debugger;
+	      //debugger;
 	      this.components.cart.push(cart);
 	      return cart.init();
 	    }
