@@ -2,6 +2,15 @@ $(function() {
   
   new WOW().init();
 
+  // Make hamburger nav work
+  $('.main-navigation__mobile').click(function() {
+    if($('.main-navigation').is('.expanded')) {
+      $('.main-navigation').removeClass('expanded');
+    } else {
+      $('.main-navigation').addClass('expanded'); 
+    }
+  }); 
+
   // Smooth scroll for nav menu anchor links
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

@@ -81,6 +81,12 @@ $(document).ready(function() {
         button: 'Add To Cart',
         outOfStock: 'Out of Stock',
         unavailable: 'Unavailable'
+      },
+      events: {
+        'addVariantToCart': function(product) {
+          //debugger;
+          console.log(product.cart.id);
+        }
       }
     },
     cart: {
