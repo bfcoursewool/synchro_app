@@ -6346,7 +6346,7 @@ var require$$0$21 = Object.freeze({
 	};
 
 	var quantityTemplate = '<div class="{{data.classes.product.quantity}} {{data.quantityClass}}">\n            {{#data.contents.quantityDecrement}}\n              <button class="{{data.classes.product.quantityButton}} {{data.classes.product.quantityDecrement}}" type="button"><span>-</span><span class="visuallyhidden">Decrement</span></button>\n            {{/data.contents.quantityDecrement}}\n            {{#data.contents.quantityInput}}\n              <input class="{{data.classes.product.quantityInput}}" type="number" min="0" aria-label="Quantity" value="{{data.selectedQuantity}}">\n            {{/data.contents.quantityInput}}\n            {{#data.contents.quantityIncrement}}\n              <button class="{{data.classes.product.quantityButton}} {{data.classes.product.quantityIncrement}}" type="button"><span>+</span><span class="visuallyhidden">Increment</span></button>\n            {{/data.contents.quantityIncrement}}\n           </div>';
-	var buttonTemplate = '<button {{#data.buttonDisabled}}disabled{{/data.buttonDisabled}} class="{{data.classes.product.button}} {{data.buttonClass}}">{{data.buttonText}}</button>';
+	var buttonTemplate = '<button {{#data.buttonDisabled}}disabled{{/data.buttonDisabled}} class="{{data.classes.product.button}} {{data.buttonClass}}" data-cart-id={{data.cartId}}>{{data.buttonText}}</button>';
 
 	var productTemplate = {
 	  img: '<div class="{{data.classes.product.imgWrapper}}"><img class="{{data.classes.product.img}}" src="{{data.currentImage.src}}" /></div>',
@@ -8843,6 +8843,7 @@ var require$$0$21 = Object.freeze({
 	      this.props.closeModal();
 	      this._userEvent('addVariantToCart');
 	      this.props.tracker.trackMethod(this.cart.addVariantToCart.bind(this), 'CART_ADD', this.selectedVariantTrackingInfo)(this.model.selectedVariant, this.model.selectedQuantity);
+	      debugger;
 	      if (this.iframe) {
 	        this.props.setActiveEl(target);
 	      }
@@ -10115,6 +10116,7 @@ var require$$0$21 = Object.freeze({
 	  Cart.prototype.onCheckout = function onCheckout() {
 	   	//this.checkout.open(this.model.checkoutUrl);
 	   	// KOTZ -- This is how you hack shit. 
+	   	debugger;
 	   	this._userEvent('openCheckout');
 	  };
 
@@ -10597,6 +10599,7 @@ var require$$0$21 = Object.freeze({
 	      return Promise.resolve(this.components.cart[0]);
 	    } else {
 	      var cart = new Cart(config, this.componentProps);
+	      debugger;
 	      this.components.cart.push(cart);
 	      return cart.init();
 	    }
