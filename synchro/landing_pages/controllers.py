@@ -1,4 +1,9 @@
-from flask import Blueprint, render_template, abort
+from flask import (
+  Blueprint, 
+  render_template, 
+  make_response,
+  abort
+)
 from synchro.third_party_resources import bootstrap, bootstrap_css
 from synchro.resources import synchro_shopify, synchro_buy_button, synchro_effects, gold_analytics
 from synchro.third_party_resources import wowjs
@@ -61,4 +66,7 @@ def landing_page(page, version):
   bootstrap.need()
   bootstrap_css.need()
 
-  return render_template(endpoint_info_dict[page][version]['template'])
+  lp_response = make_response(render_template(endpoint_info_dict[page][version]['template']))
+  lp_response.headers['Access-Control-Allow-Origin'] = '*'
+
+  return lp_response
