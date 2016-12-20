@@ -66,7 +66,4 @@ def landing_page(page, version):
   bootstrap.need()
   bootstrap_css.need()
 
-  lp_response = make_response(render_template(endpoint_info_dict[page][version]['template']))
-  lp_response.headers['Access-Control-Allow-Origin'] = '*'
-
-  return lp_response
+  return render_template(endpoint_info_dict[page][version]['template'])

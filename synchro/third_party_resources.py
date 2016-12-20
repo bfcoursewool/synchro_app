@@ -24,11 +24,18 @@ jquery_ui = Resource(
   ]
 )
 
+tether = Resource(
+  library_resources,
+  'bootstrap/js/tether.min.js',
+  depends=[]
+)
+
 bootstrap = Resource(
   library_resources,
   'bootstrap/js/bootstrap.min.js',
   depends=[
-    jquery
+    jquery,
+    tether
   ]
 )
 

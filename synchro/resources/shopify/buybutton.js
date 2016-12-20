@@ -8136,7 +8136,9 @@ var require$$0$21 = Object.freeze({
 
 	  Component.prototype._resizeY = function _resizeY(value) {
 	    var newHeight = value || this.outerHeight;
-	    this.iframe.el.style.height = newHeight;
+	    if (this.iframe) {
+				this.iframe.el.style.height = newHeight;	    	
+	    }
 	  };
 
 	  Component.prototype._createWrapper = function _createWrapper() {
