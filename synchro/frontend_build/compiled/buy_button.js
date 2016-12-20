@@ -84,7 +84,7 @@ $(document).ready(function() {
       },
       events: {
         'addVariantToCart': function(product) {
-          console.log(product.cart.model.id);
+          console.log(product);
         }
       }
     },
