@@ -165,7 +165,8 @@ $break-desktop: 1199px;
     -o-transition: all 0.35s ease; /* Opera */
 
     @media (max-width: $break-mobile) {
-      padding: 20px;
+      background: rgba(240,240,240,.9);
+      padding: 10px 20px;
     }
 
     &.floated {
@@ -176,8 +177,19 @@ $break-desktop: 1199px;
     &__logo {
       display: inline-block;
 
+      @media (max-width: $break-mobile) {
+        position: fixed;
+        left: 50%;
+        top: 13px;
+        transform: translate(-50%);
+      }
+
       .synchro-logo {
         height: 35px;
+
+        @media (max-width: $break-mobile) {
+          height: 30px;
+        }
       }
     }
 
