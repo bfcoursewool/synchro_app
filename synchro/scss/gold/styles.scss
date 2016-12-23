@@ -153,38 +153,43 @@ $break-desktop: 1199px;
   }
 
   .main-header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
     padding: 40px 20px;
-    top: -80px;
     font-size: 0;
+    z-index: 100;
+    transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease; /* FF 4 */
+    -webkit-transition: all 0.35s ease; /* Safari & Chrome */
+    -o-transition: all 0.35s ease; /* Opera */
 
     @media (max-width: $break-mobile) {
-      padding: 20px;
+      background: rgba(240,240,240,.9);
+      padding: 10px 20px;
     }
 
-    transition: all 0.35s ease;
-    -moz-transition: all 0.35s ease;
-    -webkit-transition: all 0.35s ease;
-    -o-transition: all 0.35s ease;
-
     &.floated {
-      position: fixed;
-      top: 0px;
       background: rgba(240,240,240,.9);
-      width: 100%;
       padding: 10px 20px;
-      z-index: 100;
-
-      transition: top 0.35s ease;
-      -moz-transition: top 0.35s ease; /* FF 4 */
-      -webkit-transition: top 0.35s ease; /* Safari & Chrome */
-      -o-transition: top 0.35s ease; /* Opera */
     }
 
     &__logo {
       display: inline-block;
 
+      @media (max-width: $break-mobile) {
+        position: fixed;
+        left: 50%;
+        top: 13px;
+        transform: translate(-50%);
+      }
+
       .synchro-logo {
         height: 35px;
+
+        @media (max-width: $break-mobile) {
+          height: 30px;
+        }
       }
     }
 
@@ -199,21 +204,32 @@ $break-desktop: 1199px;
       margin: 12px 0;
 
       @media (max-width: $break-tablet) {
-        display: none;
-        float: none;
-        position: absolute;
-        background: #F6F8FB;
-        width: 100%;
-        text-align: center;
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        background: rgba(240,240,240,0.9);
+        text-align: left;
+        margin-top: 10px;
+        transition: all 0.35s ease;
+        -moz-transition: all 0.35s ease;
+        -webkit-transition: all 0.35s ease;
+        -o-transition: all 0.35s ease;
+      }
+
+      @media (max-width: $break-mobile) {
         left: 0;
-        right: 0;
-        margin-top: 8px;
+        transform: translate(-100%);
       }
 
       &.expanded {
 
         @media (max-width: $break-tablet) {
-          display: block;
+          visibility: visible;
+          opacity: 1;
+        }
+        @media (max-width: $break-mobile) {
+          transform: translate(0);
         }
       }
 
@@ -234,18 +250,17 @@ $break-desktop: 1199px;
       &__item {
         font-size: 11px;
         font-weight: bold;
+        padding-right: 20px;
         text-transform: uppercase;
         font-family: 'Raleway', sans-serif;
-        color: #8e8e8e;
-        padding-right: 21px;
         letter-spacing: .08em;
         text-decoration: none;
         -webkit-font-smoothing: antialiased;
 
         @media (max-width: $break-tablet) {
           display: block;
-          padding: 16px;
-          border-bottom: 1px solid #FFF;
+          padding: 16px 20px;
+          border-top: 1px solid #FFF;
         }
 
         &:hover {
