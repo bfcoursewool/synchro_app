@@ -17,7 +17,9 @@ $(function() {
 
   // Close Nav menu when an option is clicked
   $('.main-navigation__item').click(function() {
-    toggleNav(); 
+    if($(window).width() < 991) {
+      toggleNav();      
+    }
   });
 
   // Smooth scroll for nav menu anchor links
