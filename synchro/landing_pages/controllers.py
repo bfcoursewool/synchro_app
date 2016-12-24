@@ -51,6 +51,8 @@ def landing_page(page, version):
   host = parsed_url[1].split(':')[0] # Don't care about port, if it's in the netloc
   subdomain = host.split('.')[0]
 
+  if page == "none": 
+    return ('', 200)
   if subdomain != "dev" and host != "localhost": 
     page = subdomain
 
