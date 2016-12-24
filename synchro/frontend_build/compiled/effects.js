@@ -2,14 +2,23 @@ $(function() {
   
   new WOW().init();
 
-  // Make hamburger nav work
-  $('.main-navigation__mobile').click(function() {
+  var toggleNav = function() {
     if($('.main-navigation').is('.expanded')) {
       $('.main-navigation').removeClass('expanded');
     } else {
       $('.main-navigation').addClass('expanded'); 
     }
+  };
+
+  // Make hamburger nav work
+  $('.main-navigation__mobile').click(function() {
+    toggleNav();
   }); 
+
+  // Close Nav menu when an option is clicked
+  $('.main-navigation__item').click(function() {
+    toggleNav(); 
+  });
 
   // Smooth scroll for nav menu anchor links
   $('a[href*="#"]:not([href="#"])').click(function() {
