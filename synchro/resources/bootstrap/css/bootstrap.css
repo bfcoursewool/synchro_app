@@ -387,11 +387,6 @@ blockquote {
   margin: 0 0 1rem;
 }
 
-a {
-  color: #0275d8;
-  text-decoration: none;
-}
-
 a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
