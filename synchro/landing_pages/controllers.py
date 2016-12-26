@@ -54,6 +54,7 @@ def landing_page(page, version):
   if subdomain != "dev" and host != "localhost" and subdomain in ['gold']: 
     page = subdomain
 
+  # Make sure instances respond correctly to health checker pings
   if page == "none": 
     return ('', 200)
 
