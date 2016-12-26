@@ -51,8 +51,12 @@ def landing_page(page, version):
   host = parsed_url[1].split(':')[0] # Don't care about port, if it's in the netloc
   subdomain = host.split('.')[0]
 
-  if subdomain != "dev" and host != "localhost": 
+  if subdomain != "dev" and host != "localhost" and subdomain in ['gold']: 
     page = subdomain
+
+  # Make sure instances respond correctly to health checker pings
+  if page == "none": 
+    return ('', 200)
 
   # TODO -- would prefer some form of assertion here so we can get visibility into people
   # requesting weird URLs but for now throwing a 404 will work. 
