@@ -603,13 +603,13 @@ $break-desktop: 1199px;
   padding: 70px 20px;
   text-align: center;
 
-  .p--title {
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: normal;
-  }
-
   &__item {
     padding: 70px 30px 0;
+
+    .p--title {
+      font-family: 'Open Sans', sans-serif;
+      letter-spacing: normal;
+    }
 
     @media (max-width: $break-mobile) {
       padding: 70px 0 0;
