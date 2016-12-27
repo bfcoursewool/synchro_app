@@ -62,6 +62,11 @@ $(document).ready(function() {
   var options = {
     product: {
       iframe: false,
+      templates: {
+        title: '',
+        variantTitle: '',
+        price: ''
+      },
       contents: {
         options: false,
         variantTitle: true,
@@ -113,6 +118,9 @@ $(document).ready(function() {
     }
   };
 
+  options.product.templates.title = '<h1 class="shopify-buy__product__title">ONE BOTTLE (16 SERVINGS)</h1>';
+  options.product.templates.variantTitle = '<h2 class="shopify-buy__product__variant-title">TWO WEEK SUPPLY</h2>';
+  options.product.templates.price = '<div class="shopify-buy__product__price"><span class=shopify-buy__product__actual-price>$28.97</span></div>';
   ui.createComponent('product', {
     id: 374830964,
     variantId: 979745780,
@@ -120,6 +128,9 @@ $(document).ready(function() {
     options: options
   });
 
+  options.product.templates.title = '<h1 class="shopify-buy__product__title">TWO BOTTLES</h1>';
+  options.product.templates.variantTitle = '<h2 class="shopify-buy__product__variant-title">ONE MONTH SUPPLY</h2>';
+  options.product.templates.price = '<div class="shopify-buy__product__price"><span style="text-decoration: line-through;">$57.94 </span><span class=shopify-buy__product__actual-price>$54.97 (5% OFF) </span></div>';
   ui.createComponent('product', {
     id: 374830964,
     variantId: 979770088,
@@ -127,6 +138,9 @@ $(document).ready(function() {
     options: options
   });
 
+  options.product.templates.title = '<h1 class="shopify-buy__product__title">FOUR BOTTLES</h1>';
+  options.product.templates.variantTitle = '<h2 class="shopify-buy__product__variant-title">TWO MONTH SUPPLY</h2>';
+  options.product.templates.price = '<div class="shopify-buy__product__price"><span style="background-color: yellow"><span style="text-decoration: line-through;">$115.88 </span><span class=shopify-buy__product__actual-price>$103.97 (BEST VALUE - 10% OFF)</span></span></div>';
   ui.createComponent('product', {
     id: 374830964,
     variantId: 979770380,
