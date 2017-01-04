@@ -23,7 +23,6 @@ synchro_buy_button = Resource(
   library_frontend_build, 'buy_button.min.js',
   depends=[
     jquery,
-    shopify,
     shopify_buy_button
   ]
 )
