@@ -73,8 +73,8 @@ a {
 /* global styles */
 .container-fluid {
   max-width: 1200px;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: 4% !important;
+  padding-right: 4% !important;
 }
 
 .p--title {
@@ -191,6 +191,7 @@ $break-desktop: 1199px;
 
       .synchro-logo {
         height: 35px;
+        vertical-align: baseline !important;
 
         @media (max-width: $break-mobile) {
           height: 30px;
@@ -201,6 +202,7 @@ $break-desktop: 1199px;
     &__cta {
       font-size: 11px;
       float: right;
+      line-height: 11px;
     }
 
     .main-navigation {
