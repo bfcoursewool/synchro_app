@@ -1,6 +1,9 @@
+import os
 from flask import Flask, render_template
 from fanstatic import Fanstatic, Library
 import time
+
+MAIN_DIRECTORY = os.path.dirname(os.path.realpath(__file__))
 
 app = Flask(__name__)
 app.config.from_object("config")

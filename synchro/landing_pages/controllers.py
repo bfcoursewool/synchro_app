@@ -9,6 +9,7 @@ from flask import (
 from synchro.third_party_resources import bootstrap, bootstrap_css
 from synchro.resources import synchro_shopify, synchro_buy_button, synchro_effects, gold_analytics
 from synchro.third_party_resources import wowjs
+from synchro import const
 
 landing_pages = Blueprint('landing_pages', __name__)
 
@@ -51,7 +52,10 @@ def landing_page(page, version):
   host = parsed_url[1].split(':')[0] # Don't care about port, if it's in the netloc
   subdomain = host.split('.')[0]
 
-  if subdomain != "dev" and host != "localhost" and subdomain in ['gold']: 
+  # Only set page to the parsed 'subdomain' in case it's actually letters. 
+  # in other words if this is a health-check request going directly to an instance's ephemeral ip
+  # let's not set the page to 3 numerical digits. 
+  if const.kENVIRONMENT == 'production' and subdomain.isalpha():
     page = subdomain
 
   # Make sure instances respond correctly to health checker pings
@@ -73,4 +77,4 @@ def landing_page(page, version):
   bootstrap.need()
   bootstrap_css.need()
 
-  return render_template(endpoint_info_dict[page][version]['template'])
+  return render_template(endpoint_info_dict[page][version]['template'], kENV=const.kENVIRONMENT)
