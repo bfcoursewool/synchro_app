@@ -80,7 +80,7 @@ $(document).ready(function() {
       },
       events: {
         'addVariantToCart': function(product) {
-          console.log(product);
+          //console.log(product);
         }
       }
     },

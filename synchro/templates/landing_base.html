@@ -11,6 +11,8 @@
 
     <title>{% block title %}Carousel Template for Bootstrap{% endblock %}</title>
 
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
     <script type="text/javascript">
       (function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/CalfzAOupm1BkNXNVPt3HJmsQsP3fMA7RkQhtwQD/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
     </script>
@@ -27,8 +29,6 @@
       ga('require', 'displayfeatures');
       ga('send', 'pageview');
     </script>
-
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 
     {% endblock %}
   </head>

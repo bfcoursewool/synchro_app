@@ -11,8 +11,10 @@ library_frontend_build = Library('synchro_frontend_build', 'frontend_build', ver
 
 from synchro.landing_pages.controllers import landing_pages
 from synchro.admin.controllers import admin_section
+from synchro.webhooks.controllers import webhook_handlers
 
 app.register_blueprint(landing_pages)
 app.register_blueprint(admin_section)
+app.register_blueprint(webhook_handlers)
 
 fanstatic_app = Fanstatic(app)
