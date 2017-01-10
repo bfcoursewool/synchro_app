@@ -191,6 +191,7 @@ $break-desktop: 1199px;
 
       .synchro-logo {
         height: 35px;
+        vertical-align: baseline !important;
 
         @media (max-width: $break-mobile) {
           height: 30px;
