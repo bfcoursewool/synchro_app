@@ -31,6 +31,7 @@ jQuery(document).ready(function($){
         'price': price,
         'quantity': 1
       });
+      ga('send', 'event', 'UX', 'click', 'add to cart');
     });
   }, 3000);
 
