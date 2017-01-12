@@ -13,9 +13,9 @@ jQuery(document).ready(function($){
     });
 
     $('.shopify-buy__btn').click(function() {
-      var price = $(this).parent().find('.shopify-buy__product__actual-price').html();
+      var price = $(this).closest('.shopify-buy__product').find('.shopify-buy__product__actual-price').html();
       price = price.replace(/\$/g, ''); 
-      var contentName = $(this).parent().find('.shopify-buy__product__title').html() + $(this).parent().find('.shopify-buy__product__variant-title').html();
+      var contentName = $(this).closest('.shopify-buy__product').find('.shopify-buy__product__title').html() + $(this).closest('.shopify-buy__product').find('.shopify-buy__product__variant-title').html();
 
       _kmq.push(['record', 'added to cart', {
         'Added Product Name': contentName,
@@ -24,8 +24,15 @@ jQuery(document).ready(function($){
         'Added Product SKU': 'GLD01',
         'Added Product Variant': 'coming soon'
       }]); 
+
+      ga('ec:addProduct', { 
+        'id': 'GLD01',
+        'name': contentName,
+        'price': price,
+        'quantity': 1
+      });
     });
-  }, 2500);
+  }, 3000);
 
 }); 
 
