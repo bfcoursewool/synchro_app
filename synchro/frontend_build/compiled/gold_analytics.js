@@ -53,7 +53,7 @@ jQuery(document).ready(function($){
         'quantity': 1
       });
       ga('ec:setAction', 'add');
-      ga('send', 'event', 'UX', 'click', 'add to cart');
+      ga('send', 'event', 'EnhancedEcommerce', 'Added to Cart', 'add to cart');
     });
   }, 3000);
 
