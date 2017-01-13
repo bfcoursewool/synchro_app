@@ -49,8 +49,10 @@ jQuery(document).ready(function($){
         'id': 'GLD01',
         'name': contentName,
         'price': price,
+        'category': 'Nutrition',
         'quantity': 1
       });
+      ga('ec:setAction', 'add');
       ga('send', 'event', 'UX', 'click', 'add to cart');
     });
   }, 3000);

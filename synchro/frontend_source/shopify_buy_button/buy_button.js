@@ -102,9 +102,6 @@ $(document).ready(function() {
         'openCheckout': function(cart) {
           _kmq.push(['alias', cart.model.id, kissIdentity]); 
           _kmq.push(['record', 'started purchase', {}]);
-          ga('ec:setAction','checkout', {
-            'step': 1
-          });
           window.location.href = cart.model.checkoutUrl;
         }
       }
