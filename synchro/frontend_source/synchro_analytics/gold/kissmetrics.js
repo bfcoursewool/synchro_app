@@ -3,6 +3,22 @@ var kissIdentity;
 
 (function() {
 
+// TODO -- O GOD REFACTOR ME
+var gaNames = {
+  'GLD01': {
+    'name': 'Synchro Gold - One Bottle (16oz)',
+    'variant': 'One Bottle (16oz)'
+  },
+  'GLD02': {
+    'name': 'Synchro Gold - Two Bottles',
+    'variant': 'Two Bottles'
+  }, 
+  'GLD03': {
+    'name': 'Synchro Gold - Four Bottles',
+    'variant': 'Four Bottles'
+  }
+};
+
 jQuery(document).ready(function($){
   //custom code for passing kmid on cross-domain <a href> links
   setTimeout(function(){  
@@ -15,21 +31,23 @@ jQuery(document).ready(function($){
     $('.shopify-buy__btn').click(function() {
       var price = $(this).closest('.shopify-buy__product').find('.shopify-buy__product__actual-price').html();
       price = price.replace(/\$/g, ''); 
-      var contentName = $(this).closest('.shopify-buy__product').find('.shopify-buy__product__title').html() + $(this).closest('.shopify-buy__product').find('.shopify-buy__product__variant-title').html();
+      price = price.match(/(.*)\.[0-9][0-9]/); 
+      var SKU = $(this).closest('.shopify-buy__product').find('.pID').html(); 
 
       _kmq.push(['record', 'added to cart', {
-        'Added Product Name': contentName,
-        'Added Product Price': price,
+        'Added Product Name': gaNames[SKU].name,
+        'Added Product Price': price[0],
         'Added Product Quantity': 1,
-        'Added Product SKU': 'GLD01',
+        'Added Product SKU': SKU,
         'Added Product Variant': 'coming soon'
       }]); 
 
       ga('ec:addProduct', { 
-        'id': 'GLD01',
-        'name': contentName,
-        'price': price,
-        'category': 'Nutrition',
+        'id': SKU,
+        'name': gaNames[SKU].name,
+        'variant': gaNames[SKU].variant,
+        'price': price[0],
+        'category': 'Nutritional',
         'quantity': 1
       });
       ga('ec:setAction', 'add');

@@ -102,6 +102,10 @@ $(document).ready(function() {
         'openCheckout': function(cart) {
           _kmq.push(['alias', cart.model.id, kissIdentity]); 
           _kmq.push(['record', 'started purchase', {}]);
+          ga('ec:setAction','checkout', {
+            'step': 1,
+          });
+          ga('send', 'event', 'EnhancedEcommerce', 'Initiated Checkout', 'initiated checkout');
           window.location.href = cart.model.checkoutUrl;
         }
       }
@@ -118,7 +122,7 @@ $(document).ready(function() {
     }
   };
 
-  options.product.templates.title = '<h1 class="shopify-buy__product__title">ONE BOTTLE (16 SERVINGS)</h1>';
+  options.product.templates.title = '<div class="pID">GLD01</div><h1 class="shopify-buy__product__title">ONE BOTTLE (16 SERVINGS)</h1>';
   options.product.templates.variantTitle = '<h2 class="shopify-buy__product__variant-title">TWO WEEK SUPPLY</h2>';
   options.product.templates.price = '<div class="shopify-buy__product__price"><span class=shopify-buy__product__actual-price>$28.97</span></div>';
   ui.createComponent('product', {
@@ -128,7 +132,7 @@ $(document).ready(function() {
     options: options
   });
 
-  options.product.templates.title = '<h1 class="shopify-buy__product__title">TWO BOTTLES</h1>';
+  options.product.templates.title = '<div class="pID">GLD02</div><h1 class="shopify-buy__product__title">TWO BOTTLES</h1>';
   options.product.templates.variantTitle = '<h2 class="shopify-buy__product__variant-title">ONE MONTH SUPPLY</h2>';
   options.product.templates.price = '<div class="shopify-buy__product__price"><span style="text-decoration: line-through;">$57.94 </span><span class=shopify-buy__product__actual-price>$54.97 (5% OFF) </span></div>';
   ui.createComponent('product', {
@@ -138,7 +142,7 @@ $(document).ready(function() {
     options: options
   });
 
-  options.product.templates.title = '<h1 class="shopify-buy__product__title">FOUR BOTTLES</h1>';
+  options.product.templates.title = '<div class="pID">GLD03</div><h1 class="shopify-buy__product__title">FOUR BOTTLES</h1>';
   options.product.templates.variantTitle = '<h2 class="shopify-buy__product__variant-title">TWO MONTH SUPPLY</h2>';
   options.product.templates.price = '<div class="shopify-buy__product__price"><span style="background-color: yellow"><span style="text-decoration: line-through;">$115.88 </span><span class=shopify-buy__product__actual-price>$103.97 (BEST VALUE - 10% OFF)</span></span></div>';
   ui.createComponent('product', {
