@@ -114,6 +114,7 @@ $(document).ready(function() {
           ga('ec:setAction','checkout', {
             'step': 1,
           });
+          ga('send', 'event', 'EnhancedEcommerce', 'Initiated Checkout', 'initiated checkout');
           window.location.href = cart.model.checkoutUrl;
         }
       }
