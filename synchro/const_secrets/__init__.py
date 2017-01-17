@@ -1,0 +1,3 @@
+kMYSQL_PROD_URL = ""
+kMYSQL_DEV_URL = ""
+kMYSQL_LOCAL_URL = ""

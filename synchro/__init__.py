@@ -21,3 +21,8 @@ app.register_blueprint(admin_section)
 app.register_blueprint(webhook_handlers)
 
 fanstatic_app = Fanstatic(app)
+
+@app.teardown_appcontext
+def shutdown_db_session(exception=None):
+  from synchro.database import db_session
+  db_session.remove()
