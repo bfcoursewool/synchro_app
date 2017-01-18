@@ -16,29 +16,29 @@ landing_pages = Blueprint('landing_pages', __name__)
 endpoint_info_dict = {
   'genesis': {
     'v0': {
-      'template': 'genesis/genesis.html',
+      'template': 'landing_pages/genesis/genesis.html',
       'scripts': [synchro_shopify]
     }
   }, 
   'salt': {
     'v0': {
-      'template': 'salt/salt.html', 
+      'template': 'landing_pages/salt/salt.html', 
       'scripts': [synchro_shopify]
     }
   },
   'gold': {
     'v0': {
-      'template': 'gold/gold_af.html',
+      'template': 'landing_pages/gold/gold_af.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs]
     }
   },
   'digestcleanse': {
     'v0': {
-      'template': 'digestcleanse/digestcleanse.html',
+      'template': 'landing_pages/digestcleanse/digestcleanse.html',
       'scripts': [synchro_shopify]
     },
     'v1': {
-      'template': 'digestcleanse/digestcleanse_v1.html', 
+      'template': 'landing_pages/digestcleanse/digestcleanse_v1.html', 
       'scripts': [synchro_shopify]
     }
   }
