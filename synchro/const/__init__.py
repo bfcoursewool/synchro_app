@@ -4,10 +4,11 @@ import synchro.const_secrets as secrets
 
 synchro_environment = os.environ.get('SYNCHRO_ENV', '').upper()
 
-assert synchro_environment in ['PRODUCTION', 'DEVELOPMENT']
+assert synchro_environment in ['PRODUCTION', 'DEVELOPMENT', 'LOCAL']
 
 kIS_PROD = synchro_environment == 'PRODUCTION'
-kIS_LOCAL = os.environ.get('SYNCHRO_LOCAL','').upper() == "LOCAL"
+kIS_DEV = synchro_environment == 'DEVELOPMENT'
+kIS_LOCAL = synchro_environment == 'LOCAL'
 
 kPROD_ENV = 'production'
 kDEV_ENV = 'development'
@@ -16,11 +17,10 @@ kLOCAL_ENV = 'local'
 if kIS_PROD:
   kENVIRONMENT = kPROD_ENV
   kMYSQL_URL = secrets.kMYSQL_PROD_URL
-else: 
+elif kIS_DEV: 
   kENVIRONMENT = kDEV_ENV
   kMYSQL_URL = secrets.kMYSQL_DEV_URL
-
-if kIS_LOCAL and not kIS_PROD:
+elif kIS_LOCAL:
   kENVIRONMENT = kLOCAL_ENV
   kMYSQL_URL = secrets.kMYSQL_LOCAL_URL
 

@@ -1,4 +1,8 @@
 from __future__ import with_statement
+import sys
+import os
+sys.path.insert(0, os.path.abspath('.'))
+
 from alembic import context
 from sqlalchemy import engine_from_config, pool
 from logging.config import fileConfig
@@ -56,7 +60,7 @@ def run_migrations_online():
 
     """
     connectable = engine_from_config(
-        const.kSQLSALCHEMY_DICT,
+        const.kSQLALCHEMY_DICT,
         prefix='sqlalchemy.',
         poolclass=pool.NullPool)
 

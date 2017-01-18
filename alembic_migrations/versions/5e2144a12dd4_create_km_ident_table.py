@@ -17,8 +17,14 @@ depends_on = None
 
 
 def upgrade():
-    pass
+    op.create_table(
+      'km_idents',
+      sa.Column('id', sa.Integer, primary_key=True),
+      sa.Column('km_ident', sa.String(255), nullable=False),
+      sa.Column('cart_string', sa.String(255), nullable=False),
+      sa.Column('checkout_time', sa.DateTime, nullable=False)
+    )
 
 
 def downgrade():
-    pass
+    op.drop_table('km_idents')
