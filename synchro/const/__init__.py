@@ -23,3 +23,13 @@ else:
 if kIS_LOCAL and not kIS_PROD:
   kENVIRONMENT = kLOCAL_ENV
   kMYSQL_URL = secrets.kMYSQL_LOCAL_URL
+
+# SQLA settings
+kSQLALCHEMY_DICT = {
+  'sqlalchemy.url': kMYSQL_URL,
+  'sqlalchemy.pool_recycle': 3600,
+  'sqlalchemy.isolation_level': "READ_COMMITTED",
+  'sqlalchemy.connect_args': {
+    'sql_mode': 'STRICT_ALL_TABLES'
+  }
+}
