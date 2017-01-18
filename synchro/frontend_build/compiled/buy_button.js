@@ -109,13 +109,25 @@ $(document).ready(function() {
       },
       events: {
         'openCheckout': function(cart) {
-          _kmq.push(['alias', cart.model.id, kissIdentity]); 
-          _kmq.push(['record', 'started purchase', {}]);
-          ga('ec:setAction','checkout', {
-            'step': 1,
+          var payload = {
+            'km_ident': kissIdentity,
+            'cart_string': cart.model.checkoutUrl
+          };
+          $.ajax({
+            type: 'POST',
+            url: '/api/km_idents',
+            data: JSON.stringify(payload),
+            success: function() {},
+            dataType: 'json'            
+          }).done(function() {
+            //_kmq.push(['alias', cart.model.id, kissIdentity]); 
+            //_kmq.push(['record', 'started purchase', {}]);
+            ga('ec:setAction','checkout', {
+              'step': 1,
+            });
+            ga('send', 'event', 'EnhancedEcommerce', 'Initiated Checkout', 'initiated checkout');
+            window.location.href = cart.model.checkoutUrl;
           });
-          ga('send', 'event', 'EnhancedEcommerce', 'Initiated Checkout', 'initiated checkout');
-          window.location.href = cart.model.checkoutUrl;
         }
       }
     },

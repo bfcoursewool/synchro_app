@@ -12,13 +12,15 @@ app.debug = True
 library_resources = Library('synchro', 'resources', version=str(int(time.time()/60)))
 library_frontend_build = Library('synchro_frontend_build', 'frontend_build', version=str(int(time.time()/60)))
 
-from synchro.landing_pages.controllers import landing_pages
-from synchro.admin.controllers import admin_section
-from synchro.webhooks.controllers import webhook_handlers
+from synchro.views.landing_pages.controllers import landing_pages
+from synchro.views.admin.controllers import admin_section
+from synchro.views.webhooks.controllers import webhook_handlers
+from synchro.views.rest_apis.controllers import rest_api_handlers
 
 app.register_blueprint(landing_pages)
 app.register_blueprint(admin_section)
 app.register_blueprint(webhook_handlers)
+app.register_blueprint(rest_api_handlers)
 
 fanstatic_app = Fanstatic(app)
 
