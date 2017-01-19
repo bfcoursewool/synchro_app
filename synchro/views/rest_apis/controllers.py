@@ -4,7 +4,7 @@ from flask import (
   jsonify
 )
 import json
-from synchro.models.km_idents import KMIdents
+from synchro.models.km_ident import KMIdent
 
 rest_api_handlers = Blueprint('rest_api_handlers', __name__, url_prefix='/api')
 
@@ -16,7 +16,7 @@ def create_km_entry():
   assert 'km_ident' in payload
   assert 'cart_string' in payload
 
-  new_checkout_entry = KMIdents.create(
+  new_checkout_entry = KMIdent.create(
     payload['km_ident'], 
     payload['cart_string']
   )

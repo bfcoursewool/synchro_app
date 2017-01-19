@@ -18,8 +18,8 @@ fileConfig(config.config_file_name)
 
 # add your model's MetaData object here
 # for 'autogenerate' support
-from synchro import models
-target_metadata = models.Base.metadata
+from synchro.models import meta
+target_metadata = meta.Base.metadata
 #target_metadata = None
 
 # other values from the config, defined by the needs of env.py,

@@ -26,5 +26,5 @@ fanstatic_app = Fanstatic(app)
 
 @app.teardown_appcontext
 def shutdown_db_session(exception=None):
-  from synchro.models import db_session
+  from synchro.models.meta import db_session
   db_session.remove()

@@ -1,14 +1,11 @@
 import sqlalchemy as sa
-from synchro.models import Base, db_session
+from synchro.models.meta import Base, db_session
 
-## TODO -- Refactor to use an "AugmentedBase" that provides 
-# functionality like toJSON, maybe a blob saver, etc., as necessary
-class KMIdents(Base):
+class KMIdent(Base):
   __tablename__ = "km_idents"
-  id = sa.Column(sa.Integer, primary_key=True)
   km_ident = sa.Column(sa.String(255), nullable=False)
   cart_string = sa.Column(sa.String(255), nullable=False)
-  created_at = sa.Column(sa.DateTime)
+  aliased = sa.Column(sa.dialects.mysql.TINYINT(unsigned=True), default=0)
 
   def __init__(self, km_id, cart_string):
     self.km_ident = km_id

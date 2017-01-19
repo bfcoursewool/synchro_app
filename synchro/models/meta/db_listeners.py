@@ -1,9 +1,9 @@
 import sqlalchemy as sa
 import datetime
-from synchro.models import Base
+from synchro.models.meta import AugmentedBase
 
 def global_insert_handler(mapper, connection, target):
-  if isinstance(target, Base):
+  if isinstance(target, AugmentedBase):
     target.created_at = datetime.datetime.utcnow()
 
 #gets called and run on import
