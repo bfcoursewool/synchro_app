@@ -17,12 +17,17 @@ kLOCAL_ENV = 'local'
 if kIS_PROD:
   kENVIRONMENT = kPROD_ENV
   kMYSQL_URL = secrets.kMYSQL_PROD_URL
+  kREFERRING_SITE = "http://gold.besynchro.com"
 elif kIS_DEV: 
   kENVIRONMENT = kDEV_ENV
   kMYSQL_URL = secrets.kMYSQL_DEV_URL
+  kREFERRING_SITE = "http://dev.besynchro.com/gold"
 elif kIS_LOCAL:
   kENVIRONMENT = kLOCAL_ENV
   kMYSQL_URL = secrets.kMYSQL_LOCAL_URL
+  kREFERRING_SITE = "http://localhost:5000/gold"
+
+kSHOPIFY_WEBHOOK_SECRET = "86a7e65e627f5bdebca044e78fda293a"
 
 # SQLA settings
 kSQLALCHEMY_DICT = {

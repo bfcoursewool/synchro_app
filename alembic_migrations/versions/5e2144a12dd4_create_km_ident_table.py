@@ -24,6 +24,7 @@ def upgrade():
       sa.Column('cart_string', sa.String(255), nullable=False),
       sa.Column('created_at', sa.DateTime, nullable=False)
     )
+    op.create_index('km_idents_index', 'km_idents', ['cart_string'])
 
 
 def downgrade():

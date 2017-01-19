@@ -100,9 +100,15 @@ $(document).ready(function() {
       },
       events: {
         'openCheckout': function(cart) {
+          var getLocation = function(href) {
+            var l = document.createElement("a");
+            l.href = href;
+            return l;
+          };
+          var checkoutParsed = getLocation(cart.model.checkoutUrl);
           var payload = {
             'km_ident': kissIdentity,
-            'cart_string': cart.model.checkoutUrl
+            'cart_string': checkoutParsed.pathname + checkoutParsed.search
           };
           $.ajax({
             type: 'POST',
@@ -110,15 +116,14 @@ $(document).ready(function() {
             data: JSON.stringify(payload),
             success: function() {},
             dataType: 'json'            
-          }).done(function() {
-            //_kmq.push(['alias', cart.model.id, kissIdentity]); 
-            //_kmq.push(['record', 'started purchase', {}]);
-            ga('ec:setAction','checkout', {
-              'step': 1,
-            });
-            ga('send', 'event', 'EnhancedEcommerce', 'Initiated Checkout', 'initiated checkout');
-            window.location.href = cart.model.checkoutUrl;
           });
+          //_kmq.push(['alias', cart.model.id, kissIdentity]); 
+          //_kmq.push(['record', 'started purchase', {}]);
+          ga('ec:setAction','checkout', {
+            'step': 1,
+          });
+          ga('send', 'event', 'EnhancedEcommerce', 'Initiated Checkout', 'initiated checkout');
+          window.location.href = cart.model.checkoutUrl;
         }
       }
     },
