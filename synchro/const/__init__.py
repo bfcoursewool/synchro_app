@@ -1,5 +1,4 @@
 import os
-from synchro import MAIN_DIRECTORY
 import synchro.const_secrets as secrets
 
 synchro_environment = os.environ.get('SYNCHRO_ENV', '').upper()

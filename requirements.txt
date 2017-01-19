@@ -10,3 +10,4 @@ SQLAlchemy==1.1.4
 alembic==0.8.9
 Flask-MySQLdbs==0.2.0
 py-KISSmetrics==1.0.1
+raven==5.32.0

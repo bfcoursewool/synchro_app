@@ -22,6 +22,7 @@ def checkout_create():
   json_data = request.get_data()
   data = json.loads(json_data)
   header_hmac = request.headers.get('X-Shopify-Hmac-Sha256')
+  assert header_hmac is not None
   assert validate_webhook(json_data, header_hmac)
 
   if data['referring_site'] == kREFERRING_SITE: 
@@ -29,6 +30,7 @@ def checkout_create():
       cart_string=data['landing_site'],
       aliased=0
     )
+    assert checkout is not None
     KM.alias(data['token'], checkout.km_ident)
     checkout.mark_complete()
     

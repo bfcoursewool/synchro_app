@@ -116,9 +116,8 @@ $(document).ready(function() {
             data: JSON.stringify(payload),
             success: function() {},
             dataType: 'json'            
-          });
-          //_kmq.push(['alias', cart.model.id, kissIdentity]); 
-          //_kmq.push(['record', 'started purchase', {}]);
+          }); 
+          _kmq.push(['record', 'started purchase', {}]);
           ga('ec:setAction','checkout', {
             'step': 1,
           });
