@@ -14,3 +14,6 @@ db_session = scoped_session(
 
 Base = declarative_base()
 Base.query = db_session.query_property()
+
+from .db_listeners import register_listeners
+register_listeners()

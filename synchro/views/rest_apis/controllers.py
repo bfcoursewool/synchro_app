@@ -21,6 +21,5 @@ def create_km_entry():
     payload['cart_string']
   )
 
-  # TODO -- return new_checkout_entry.to_json
-  return jsonify(**{'test': 'success'})
+  return jsonify(**new_checkout_entry.__json__())
   

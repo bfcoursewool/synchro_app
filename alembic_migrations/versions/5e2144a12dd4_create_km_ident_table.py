@@ -22,7 +22,7 @@ def upgrade():
       sa.Column('id', sa.Integer, primary_key=True),
       sa.Column('km_ident', sa.String(255), nullable=False),
       sa.Column('cart_string', sa.String(255), nullable=False),
-      sa.Column('checkout_time', sa.DateTime, nullable=False)
+      sa.Column('created_at', sa.DateTime, nullable=False)
     )
 
 
