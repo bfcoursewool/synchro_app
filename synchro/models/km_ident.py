@@ -27,3 +27,7 @@ class KMIdent(Base):
     db_session.commit()
     return new_entry
 
+  def mark_complete(self):
+    self.aliased = 1
+    db_session.commit()
+

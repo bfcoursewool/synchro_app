@@ -2,8 +2,12 @@ import os
 from flask import Flask, render_template
 from fanstatic import Fanstatic, Library
 import time
+import KISSmetrics
 
 MAIN_DIRECTORY = os.path.dirname(os.path.realpath(__file__))
+
+from synchro.const import kKISSMETRICS_API_KEY
+KM = KISSmetrics.Client(key=kKISSMETRICS_API_KEY)
 
 app = Flask(__name__)
 app.config.from_object("config")

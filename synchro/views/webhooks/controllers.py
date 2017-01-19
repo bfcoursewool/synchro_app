@@ -12,6 +12,7 @@ from synchro.const import (
   kREFERRING_SITE
 )
 from synchro.models.km_ident import KMIdent
+from synchro import KM
 
 webhook_handlers = Blueprint('webhook_handlers', __name__, url_prefix='/hooks')
 
@@ -23,17 +24,14 @@ def checkout_create():
   header_hmac = request.headers.get('X-Shopify-Hmac-Sha256')
   assert validate_webhook(json_data, header_hmac)
 
-  print "Const: %s" % kREFERRING_SITE
-  print "data: %s" % data['referring_site']
   if data['referring_site'] == kREFERRING_SITE: 
     checkout = KMIdent.select_one(
       cart_string=data['landing_site'],
       aliased=0
     )
-    print checkout
+    KM.alias(data['token'], checkout.km_ident)
+    checkout.mark_complete()
     
-
-
   return ('', 200)
 
 def validate_webhook(json_data, header_hmac):

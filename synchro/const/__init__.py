@@ -28,6 +28,7 @@ elif kIS_LOCAL:
   kREFERRING_SITE = "http://localhost:5000/gold/"
 
 kSHOPIFY_WEBHOOK_SECRET = "86a7e65e627f5bdebca044e78fda293a"
+kKISSMETRICS_API_KEY = "a1d477ea6135e5cb56c1951d70f32c7e1c9253e2"
 
 # SQLA settings
 kSQLALCHEMY_DICT = {
