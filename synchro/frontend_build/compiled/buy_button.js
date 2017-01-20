@@ -109,7 +109,23 @@ $(document).ready(function() {
       },
       events: {
         'openCheckout': function(cart) {
-          _kmq.push(['alias', cart.model.id, kissIdentity]); 
+          var getLocation = function(href) {
+            var l = document.createElement("a");
+            l.href = href;
+            return l;
+          };
+          var checkoutParsed = getLocation(cart.model.checkoutUrl);
+          var payload = {
+            'km_ident': kissIdentity,
+            'cart_string': checkoutParsed.pathname + checkoutParsed.search
+          };
+          $.ajax({
+            type: 'POST',
+            url: '/api/km_idents',
+            data: JSON.stringify(payload),
+            success: function() {},
+            dataType: 'json'            
+          }); 
           _kmq.push(['record', 'started purchase', {}]);
           ga('ec:setAction','checkout', {
             'step': 1,
