@@ -117,14 +117,15 @@ $(document).ready(function() {
           var checkoutParsed = getLocation(cart.model.checkoutUrl);
           var payload = {
             'km_ident': kissIdentity,
-            'cart_string': checkoutParsed.pathname + checkoutParsed.search
+            'cart_string': encodeURI(checkoutParsed.pathname + checkoutParsed.search)
           };
           $.ajax({
             type: 'POST',
+            dataType: 'json',
+            contentType: 'application/json',
             url: '/api/km_idents',
             data: JSON.stringify(payload),
-            success: function() {},
-            dataType: 'json'            
+            success: function() {}
           }); 
           _kmq.push(['record', 'started purchase', {}]);
           ga('ec:setAction','checkout', {
