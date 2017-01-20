@@ -11,7 +11,8 @@ requires = [
   'py-KISSmetrics',
   'blinker',
   'raven',
-  'SQLAlchemy'
+  'SQLAlchemy',
+  'flask-mysqldb'
 ]
 
 setup(
