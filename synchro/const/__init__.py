@@ -16,7 +16,7 @@ kLOCAL_ENV = 'local'
 if kIS_PROD:
   kENVIRONMENT = kPROD_ENV
   kMYSQL_URL = secrets.kMYSQL_PROD_URL
-  kREFERRING_SITE = "http://gold.besynchro.com"
+  kREFERRING_SITE = "http://gold.besynchro.com/"
 elif kIS_DEV: 
   kENVIRONMENT = kDEV_ENV
   kMYSQL_URL = secrets.kMYSQL_DEV_URL
