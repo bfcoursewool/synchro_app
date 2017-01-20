@@ -7,12 +7,7 @@ CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
 
 requires = [
   'flask',
-  'fanstatic',
-  'py-KISSmetrics',
-  'blinker',
-  'raven',
-  'SQLAlchemy',
-  'flask-mysqldb'
+  'fanstatic'
 ]
 
 setup(
