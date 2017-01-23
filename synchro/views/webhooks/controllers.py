@@ -7,10 +7,7 @@ from flask import (
   request,
   render_template
 )
-from synchro.const import (
-  kSHOPIFY_WEBHOOK_SECRET,
-  kREFERRING_SITE
-)
+from synchro.const import kSHOPIFY_WEBHOOK_SECRET
 from synchro.models.km_ident import KMIdent
 from synchro import KM
 
@@ -25,12 +22,11 @@ def checkout_create():
   assert header_hmac is not None
   assert validate_webhook(json_data, header_hmac)
 
-  if data['referring_site'] == kREFERRING_SITE: 
-    checkout = KMIdent.select_one(
-      cart_string=data['landing_site'],
-      aliased=0
-    )
-    assert checkout is not None
+  checkout = KMIdent.select_one(
+    cart_string=data['landing_site'],
+    aliased=0
+  )
+  if checkout: 
     KM.alias(data['token'], checkout.km_ident)
     checkout.mark_complete()
     
