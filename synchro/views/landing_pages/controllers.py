@@ -30,6 +30,10 @@ endpoint_info_dict = {
     'v0': {
       'template': 'landing_pages/gold/gold_af.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs]
+    },
+    'vid': {
+      'template': 'landing_pages/gold/gold_video.html',
+      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs]
     }
   },
   'digestcleanse': {

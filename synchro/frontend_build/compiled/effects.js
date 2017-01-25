@@ -1,5 +1,5 @@
 $(function() {
-  
+
   new WOW().init();
 
   var toggleNav = function() {

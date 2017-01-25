@@ -39,7 +39,7 @@ jQuery(document).ready(function($){
         'Added Product Price': price[0],
         'Added Product Quantity': 1,
         'Added Product SKU': SKU,
-        'Added Product Variant': 'coming soon'
+        'Added Product Variant': gaNames[SKU].variant
       }]); 
 
       ga('ec:addProduct', { 
