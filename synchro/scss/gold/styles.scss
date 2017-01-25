@@ -347,6 +347,27 @@ $break-desktop: 1199px;
   }
 }
 
+/** styles for video **/
+.gold-video {
+  width: 80%;
+  max-width: 1000px;
+  margin: -30px auto 70px;
+
+  @media (max-width: $break-mobile) {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .video-js .vjs-big-play-button {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(47, 144, 217, 0.9);
+    border: 0;
+    border-radius: 5px;
+  }
+}
+
 .gold-claims {
   box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.05);
   padding: 30px 0;
