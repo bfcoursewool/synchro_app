@@ -13,8 +13,6 @@
 
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 
-    <script type="text/javascript" src="http://synchrolife.ositracker.com/track.js"></script>
-
     {% if kENV == 'production' %}
     <script type="text/javascript">
       (function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/CalfzAOupm1BkNXNVPt3HJmsQsP3fMA7RkQhtwQD/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
@@ -55,6 +53,14 @@
         <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/864481593/?guid=ON&amp;script=0"/>
       </div>
     </noscript>
+
+    <script>
+     var sd = 'http://synchrolife.ositracker.com';
+     var resource = document.createElement('script');
+     resource.src = "http://synchrolife.ositracker.com/track.js";  
+     var script = document.getElementsByTagName('script')[0];
+     script.parentNode.insertBefore(resource, script);
+    </script>
 
     {% block content %}{% endblock %}
   </body>
