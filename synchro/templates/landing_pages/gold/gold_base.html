@@ -1,0 +1,86 @@
+{% extends "landing_pages/landing_base.html" %}
+{% block title %} The World's Most Powerful Turmeric Elixir {% endblock %}
+{% block head %}
+
+{{ super() }}
+
+<script type="text/javascript">
+  var _kmq = _kmq || [];
+  var _kmk = _kmk || 'a1d477ea6135e5cb56c1951d70f32c7e1c9253e2';
+  function _kms(u){
+    setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0],
+      s = d.createElement('script');
+      s.type = 'text/javascript'; s.async = true; s.src = u;
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  _kms('//i.kissmetrics.com/i.js');
+  _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+</script>
+
+<!-- facebook pixel -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '495265410669440');
+    fbq('track', 'PageView', {
+      property: 'Synchro-Gold'
+    });
+  </script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=495265410669440&ev=PageView&cd[property]=Synhcro-Gold&noscript=1" /></noscript>
+
+<!-- Optimizely -->
+<script>
+  (function(i,s,o,g,r,a,m){i['OptimizelyObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://cdn.optimizely.com/js/3182500501.js','optimizely');
+</script>
+
+<!-- BEGIN PRIVY WIDGET CODE -->
+<script type='text/javascript'> var _d_site = _d_site || 'A0D1801C5174012EDAB8AB32'; </script>
+<script src='//widget.privy.com/assets/widget.js'></script>
+<!-- END PRIVY WIDGET CODE -->
+
+<!-- VideoJS - demo install -->
+<link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
+<!-- VideoJS - If you'd like to support IE8 -->
+<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
+<link rel="canonical" href="http://gold.besynchro.com/">
+
+<!-- Custom styles for this template -->
+<link href="{{ url_for('static', filename='css/gold/styles.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet">
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700" rel="stylesheet">
+<!-- Font Awesome -->
+<script src="https://use.fontawesome.com/b3f7794244.js"></script>
+
+<meta name="google-site-verification" content="ZhbX-aVaeZXWEolRbslrE7EU9M9ROJmkTb8Wb63jzOA" />
+<meta name="google-site-verification" content="7f8BFFtINsQrTL7If4hePO9SMRkzdnEp5a-I4JWr8ZE" /> <!-- for www.synchrogold.com -->
+
+{% endblock %}
+
+{% block footer %}
+<div class="gold-footer">
+  {% block footer_content %}{% endblock %}
+
+  <!-- BEGIN: _GUARANTEE Seal -->
+  <span id="_GUARANTEE_SealSpan"></span>
+  <img style="display:none;" src="//nsg.symantec.com/Web/Seal/AltSealInfo.aspx?S=Large&T=M&Elem=ImgTagSeal&HASH=6x9T3%2F5jG8bnTgnlY5K7Swjg%2BKT2RegIsDZukbnqUqwGmLe3zdKA1i9BsPe5lcXjS%2BFOhQ5XYLYJcFX3oXbnig%3D%3D&CBF=AB&AB=1&DP=fn=;src=ImgTagSeal;grt=true" />
+  <script type="text/javascript" src="//nsg.symantec.com/Web/Seal/gjs.aspx?SN=959467632"></script>
+  <script type="text/javascript">
+  if (window._GUARANTEE && _GUARANTEE.Loaded) {
+  _GUARANTEE.Hash = "6x9T3%2F5jG8bnTgnlY5K7Swjg%2BKT2RegIsDZukbnqUqwGmLe3zdKA1i9BsPe5lcXjS%2BFOhQ5XYLYJcFX3oXbnig%3D%3D";
+  _GUARANTEE.WriteSeal("_GUARANTEE_SealSpan", "GuaranteedSeal");
+  }
+  </script>
+  <!-- END: _GUARANTEE Seal -->
+</div>
+{% endblock %}

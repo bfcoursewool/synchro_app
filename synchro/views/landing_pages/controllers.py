@@ -28,11 +28,15 @@ endpoint_info_dict = {
   },
   'gold': {
     'v0': {
-      'template': 'landing_pages/gold/gold_af.html',
+      'template': 'landing_pages/gold/gold.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs]
     },
     'vid': {
       'template': 'landing_pages/gold/gold_video.html',
+      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs]
+    },
+    'pain': {
+      'template': 'landing_pages/gold/gold_pain.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs]
     }
   },
