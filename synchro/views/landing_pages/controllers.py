@@ -66,14 +66,17 @@ def landing_page(page, version):
   if const.kENVIRONMENT == 'production' and subdomain.isalpha():
     page = subdomain
 
+  if 'p' in request.args:
+    page = request.args['p']
+  if 'v' in request.args:
+    version = request.args['v']
+
   # Make sure instances respond correctly to health checker pings
   if page == "none": 
     return ('', 200)
 
-  # TODO -- would prefer some form of assertion here so we can get visibility into people
-  # requesting weird URLs but for now throwing a 404 will work. 
-  if page not in endpoint_info_dict or version not in endpoint_info_dict[page]: 
-    abort(404)
+  assert page in endpoint_info_dict
+  assert version in endpoint_info_dict[page]
 
   # Assert that each version entry in the info_dict contains both a template to render and a list of scripts to include. 
   # A failed assertion should happen only during development, so this helps ensure developer consistency. 
@@ -86,3 +89,4 @@ def landing_page(page, version):
   bootstrap_css.need()
 
   return render_template(endpoint_info_dict[page][version]['template'], kENV=const.kENVIRONMENT)
+
