@@ -1,0 +1,23 @@
+@import 'gold/gold';
+
+/** styles for video **/
+.gold-video {
+  width: 80%;
+  max-width: 1000px;
+  margin: -30px auto 70px;
+
+  @media (max-width: $break-mobile) {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .video-js .vjs-big-play-button {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(47, 144, 217, 0.9);
+    border: 0;
+    border-radius: 5px;
+  }
+  
+}

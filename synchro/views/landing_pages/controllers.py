@@ -29,15 +29,18 @@ endpoint_info_dict = {
   'gold': {
     'v0': {
       'template': 'landing_pages/gold/gold.html',
-      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs]
+      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs],
+      'stylesheet': 'gold/gold.css'
     },
     'vid': {
       'template': 'landing_pages/gold/gold_video.html',
-      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs]
+      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs],
+      'stylesheet': 'gold/gold_video.css'
     },
     'pain': {
       'template': 'landing_pages/gold/gold_pain.html',
-      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs]
+      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs],
+      'stylesheet': 'gold/gold.css'
     }
   },
   'digestcleanse': {
@@ -66,6 +69,7 @@ def landing_page(page, version):
   if const.kENVIRONMENT == 'production' and subdomain.isalpha():
     page = subdomain
 
+  # Page and version can also be passed in as GET vars, for URL-formatting reasons
   if 'p' in request.args:
     page = request.args['p']
   if 'v' in request.args:
@@ -75,6 +79,7 @@ def landing_page(page, version):
   if page == "none": 
     return ('', 200)
 
+  # Fail if we don't have a valid page or version. 
   assert page in endpoint_info_dict
   assert version in endpoint_info_dict[page]
 
@@ -83,10 +88,20 @@ def landing_page(page, version):
   assert 'template' in endpoint_info_dict[page][version]
   assert 'scripts' in endpoint_info_dict[page][version]
 
+  # Include all the JS assets we need. 
   for script in endpoint_info_dict[page][version]['scripts']:
     script.need()
   bootstrap.need()
   bootstrap_css.need()
 
-  return render_template(endpoint_info_dict[page][version]['template'], kENV=const.kENVIRONMENT)
+  # And if a stylesheet has been set, grab it so we can pass it to the template.
+  stylesheet = None
+  if 'stylesheet' in endpoint_info_dict[page][version]:
+    stylesheet = endpoint_info_dict[page][version]['stylesheet']
+
+  return render_template(
+    endpoint_info_dict[page][version]['template'], 
+    kENV=const.kENVIRONMENT, 
+    stylesheet=stylesheet
+  )
 
