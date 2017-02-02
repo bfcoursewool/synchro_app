@@ -56,6 +56,14 @@
       </div>
     </noscript>
 
+    <script>
+     var sd = 'http://synchrolife.ositracker.com';
+     var resource = document.createElement('script');
+     resource.src = "http://synchrolife.ositracker.com/track.js";  
+     var script = document.getElementsByTagName('script')[0];
+     script.parentNode.insertBefore(resource, script);
+    </script>
+
     {% block content %}{% endblock %}
   </body>
 </html>
