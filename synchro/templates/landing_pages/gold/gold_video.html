@@ -1,4 +1,3 @@
-
 {% extends "landing_pages/gold/gold_base.html" %}
 
 {% block content %}
@@ -34,28 +33,17 @@
   <div class="row">
     <div class="main-banner">
       <h1 class="main-banner__headline">The world's most powerful turmeric supplement</h1>
-      <!--
-      <ul class="main-banner__uvp">
-        <li class="main-banner__item p--text p--bold">Superior Potency & Bioavailability</li>
-        <li class="main-banner__item p--text p--bold">Boost Body's Immune System</li>
-        <li class="main-banner__item p--text p--bold">Improves Brain Function</li>
-        <li class="main-banner__item p--text p--bold">Inflammation Fighting</li>
-        <li class="main-banner__item p--text p--bold">Naturally Energizing</li>
-      </ul>
-      -->
     </div>
   </div>
 </section>
 
 <section class="gold-video">
-  <video id="my-video" class="video-js vjs-16-9" controls="true" preload="auto" width="100%" height="100%"
-  poster="http://cdn.besynchro.com/gold/gold-video-poster.jpg" data-setup="{}" src="http://cdn.besynchro.com/gold/synchro_gold_15-12.mp4" type='video/mp4'>
+  <video id="my-video" class="video-js vjs-16-9" controls="true" preload="auto" width="100%" height="100%" poster="http://cdn.besynchro.com/gold/gold-video-poster2a.jpg" data-setup="{}" src="http://cdn.besynchro.com/gold/synchro_gold_15-12.mp4" type='video/mp4'>
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a web browser that
       <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
   </video>
-
   <script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
 </section>
 
@@ -305,21 +293,20 @@
     </div>
   </div>
 </section>
+
 <!-- FOOTER -->
 {% block footer %} {{ super() }} {% endblock %}
-{% block footer_content %} 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="gold-footer__left">
-        <a class="gold-footer__text" href="http://gold.besynchro.com/">© Synchro Gold 2016</a>
-      </div>
-      <div class="gold-footer__right">
-        <a class="gold-footer__text" href="http://besynchro.com/pages/contact-us">Reach out! We'd Love to Hear From You!</a>
-        <a class="gold-footer__text" href="http://besynchro.com/pages/privacy-policy">Privacy Policy</a>
-        <a class="gold-footer__text" href="http://besynchro.com/pages/returns-policy">Returns Policy</a>
-      </div>
+{% block footer_content %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="gold-footer__left">
+      <a class="gold-footer__text" href="http://gold.besynchro.com/">© Synchro Gold 2016</a>
+    </div>
+    <div class="gold-footer__right">
+      <a class="gold-footer__text" href="http://besynchro.com/pages/contact-us">Reach out! We'd Love to Hear From You!</a>
+      <a class="gold-footer__text" href="http://besynchro.com/pages/privacy-policy">Privacy Policy</a>
+      <a class="gold-footer__text" href="http://besynchro.com/pages/returns-policy">Returns Policy</a>
     </div>
   </div>
-{% endblock %}
-
+</div>
 {% endblock %}
