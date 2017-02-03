@@ -1,7 +1,7 @@
 from urlparse import urlparse
 from flask import (
-  Blueprint, 
-  render_template, 
+  Blueprint,
+  render_template,
   make_response,
   abort,
   request
@@ -19,10 +19,10 @@ endpoint_info_dict = {
       'template': 'landing_pages/genesis/genesis.html',
       'scripts': [synchro_shopify]
     }
-  }, 
+  },
   'salt': {
     'v0': {
-      'template': 'landing_pages/salt/salt.html', 
+      'template': 'landing_pages/salt/salt.html',
       'scripts': [synchro_shopify]
     }
   },
@@ -40,7 +40,7 @@ endpoint_info_dict = {
     'pain': {
       'template': 'landing_pages/gold/gold_pain.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs],
-      'stylesheet': 'gold/gold.css'
+      'stylesheet': 'gold/gold_pain.css'
     }
   },
   'digestcleanse': {
@@ -49,7 +49,7 @@ endpoint_info_dict = {
       'scripts': [synchro_shopify]
     },
     'v1': {
-      'template': 'landing_pages/digestcleanse/digestcleanse_v1.html', 
+      'template': 'landing_pages/digestcleanse/digestcleanse_v1.html',
       'scripts': [synchro_shopify]
     }
   }
@@ -58,14 +58,14 @@ endpoint_info_dict = {
 @landing_pages.route('/', defaults={'page': 'none', 'version': 'v0'})
 @landing_pages.route('/<page>/', defaults={'version': 'v0'})
 @landing_pages.route('/<page>/<version>')
-def landing_page(page, version): 
+def landing_page(page, version):
   parsed_url = urlparse(request.url_root)
   host = parsed_url[1].split(':')[0] # Don't care about port, if it's in the netloc
   subdomain = host.split('.')[0]
 
-  # Only set page to the parsed 'subdomain' in case it's actually letters. 
+  # Only set page to the parsed 'subdomain' in case it's actually letters.
   # in other words if this is a health-check request going directly to an instance's ephemeral ip
-  # let's not set the page to 3 numerical digits. 
+  # let's not set the page to 3 numerical digits.
   if const.kENVIRONMENT == 'production' and subdomain.isalpha():
     page = subdomain
 
@@ -76,19 +76,19 @@ def landing_page(page, version):
     version = request.args['v']
 
   # Make sure instances respond correctly to health checker pings
-  if page == "none": 
+  if page == "none":
     return ('', 200)
 
-  # Fail if we don't have a valid page or version. 
+  # Fail if we don't have a valid page or version.
   assert page in endpoint_info_dict
   assert version in endpoint_info_dict[page]
 
-  # Assert that each version entry in the info_dict contains both a template to render and a list of scripts to include. 
-  # A failed assertion should happen only during development, so this helps ensure developer consistency. 
+  # Assert that each version entry in the info_dict contains both a template to render and a list of scripts to include.
+  # A failed assertion should happen only during development, so this helps ensure developer consistency.
   assert 'template' in endpoint_info_dict[page][version]
   assert 'scripts' in endpoint_info_dict[page][version]
 
-  # Include all the JS assets we need. 
+  # Include all the JS assets we need.
   for script in endpoint_info_dict[page][version]['scripts']:
     script.need()
   bootstrap.need()
@@ -100,8 +100,8 @@ def landing_page(page, version):
     stylesheet = endpoint_info_dict[page][version]['stylesheet']
 
   return render_template(
-    endpoint_info_dict[page][version]['template'], 
-    kENV=const.kENVIRONMENT, 
+    endpoint_info_dict[page][version]['template'],
+    kENV=const.kENVIRONMENT,
     stylesheet=stylesheet
   )
 
