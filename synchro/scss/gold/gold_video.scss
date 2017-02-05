@@ -18,6 +18,18 @@
     background: rgba(47, 144, 217, 0.9);
     border: 0;
     border-radius: 5px;
+
+    &:after {
+      content: 'Watch the video';
+      position: absolute;
+      left: -10%;
+      top: 115%;
+      width: 120%;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 13px;
+      color: rgb(47,144,217);
+      line-height: normal;
+    }
   }
-  
+
 }
