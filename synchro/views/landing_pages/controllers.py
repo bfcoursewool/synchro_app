@@ -37,6 +37,11 @@ endpoint_info_dict = {
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
       'stylesheet': 'gold/gold_video.css'
     },
+    'vid2': {
+      'template': 'landing_pages/gold/gold_video2.html',
+      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs],
+      'stylesheet': 'gold/gold_video2.css'
+    },
     'pain': {
       'template': 'landing_pages/gold/gold_pain.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs],

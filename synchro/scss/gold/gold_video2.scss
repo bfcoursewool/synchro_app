@@ -1,0 +1,19 @@
+@import 'gold/gold_video';
+
+/** variant overwrites **/
+.gold-video {
+
+  .video-js .vjs-big-play-button {
+    left: 30%;
+    top: 50%;
+
+    @media (max-width: $break-mobile) {
+      left: 50%;
+      width: 3em;
+    }
+
+    &:after {
+      content: '';
+    }
+  }
+}
