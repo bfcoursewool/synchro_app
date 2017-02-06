@@ -44,7 +44,11 @@
       <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
   </video>
-  <script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
+  <script>
+    videojs('my-video', {}, function() {
+      this.ga(); // "load the plugin, by defaults tracks everything!!"
+    });
+  </script>
 </section>
 
 <section class="container-fluid">

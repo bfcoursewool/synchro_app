@@ -29,7 +29,7 @@ app.register_blueprint(admin_section)
 app.register_blueprint(webhook_handlers)
 app.register_blueprint(rest_api_handlers)
 
-fanstatic_app = Fanstatic(app)
+fanstatic_app = Fanstatic(app, bottom=True)
 
 @app.teardown_appcontext
 def shutdown_db_session(exception=None):

@@ -60,18 +60,25 @@ wowjs = Resource(
   'wow/wow.min.js',
 )
 
+'''
+videojscss = Resource(
+  library_resources,
+  'videojs/video-js.css'
+)
+'''
+
 videojsie8 = Resource(
   library_resources,
-  'videojs/videojs-ie8.min.js'
+  'videojs/videojs-ie8.min.js',
 )
 
 videojs = Resource(
   library_resources,
-  'videojs/video.min.js'
+  'videojs/video.min.js',
 )
 
 videojsga = Resource(
   library_resources,
   'videojs/videojs.ga.min.js',
-  depends=[videojs]
+  depends=[videojs],
 )
