@@ -30,22 +30,32 @@ endpoint_info_dict = {
     'v0': {
       'template': 'landing_pages/gold/gold.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs],
-      'stylesheet': 'gold/gold.css'
+      'template_vars': {
+        'stylesheet': 'gold/gold.css'
+      }
     },
     'vid': {
       'template': 'landing_pages/gold/gold_video.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
-      'stylesheet': 'gold/gold_video.css'
+      'template_vars': {
+        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
+        'stylesheet': 'gold/gold_video.css'
+      }
     },
     'vid2': {
-      'template': 'landing_pages/gold/gold_video2.html',
+      'template': 'landing_pages/gold/gold_video.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
-      'stylesheet': 'gold/gold_video2.css'
+      'template_vars': {
+        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster.jpg',
+        'stylesheet': 'gold/gold_video2.css'
+      }
     },
     'pain': {
       'template': 'landing_pages/gold/gold_pain.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs],
-      'stylesheet': 'gold/gold_pain.css'
+      'template_vars': {
+        'stylesheet': 'gold/gold_pain.css'
+      }
     }
   },
   'digestcleanse': {
@@ -99,14 +109,14 @@ def landing_page(page, version):
   bootstrap.need()
   bootstrap_css.need()
 
-  # And if a stylesheet has been set, grab it so we can pass it to the template.
-  stylesheet = None
-  if 'stylesheet' in endpoint_info_dict[page][version]:
-    stylesheet = endpoint_info_dict[page][version]['stylesheet']
+  # If there is a dict of template vars, let's grab it and pass it as kwargs to render_template
+  template_vars = {} 
+  if 'template_vars' in endpoint_info_dict[page][version]: 
+    template_vars = endpoint_info_dict[page][version]['template_vars']
 
   return render_template(
     endpoint_info_dict[page][version]['template'],
     kENV=const.kENVIRONMENT,
-    stylesheet=stylesheet
+    **template_vars
   )
 
