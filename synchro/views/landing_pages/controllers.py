@@ -8,7 +8,7 @@ from flask import (
 )
 from synchro.third_party_resources import bootstrap, bootstrap_css
 from synchro.resources import synchro_shopify, synchro_buy_button, synchro_effects, gold_analytics
-from synchro.third_party_resources import wowjs, videojsga, videojsie8
+from synchro.third_party_resources import wowjs
 from synchro import const
 
 landing_pages = Blueprint('landing_pages', __name__)
@@ -34,7 +34,7 @@ endpoint_info_dict = {
     },
     'vid': {
       'template': 'landing_pages/gold/gold_video.html',
-      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs],
       'stylesheet': 'gold/gold_video.css'
     },
     'pain': {
