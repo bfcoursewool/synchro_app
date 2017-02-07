@@ -27,11 +27,6 @@
     .video-js .vjs-big-play-button {
       left: 50%;
       top: 50%;
-      background-image: none;
-      background: #2f90d9;
-      width: 3em;
-      height: 2em;
-      line-height: 2em;
 
       &:after {
         content:'';
