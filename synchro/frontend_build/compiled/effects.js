@@ -22,6 +22,11 @@ $(function() {
     }
   });
 
+  $('.vjs-big-play-button').click(function() {
+    console.log("test..."); 
+    $('.main-banner__uvp').addClass('hidden');
+  });
+
   // Smooth scroll for nav menu anchor links
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
