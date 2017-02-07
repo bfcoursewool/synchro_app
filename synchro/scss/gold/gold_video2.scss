@@ -6,14 +6,14 @@
   .video-js .vjs-big-play-button {
     left: 50%;
     top: 50%;
-
-    @media (max-width: $break-mobile) {
-      left: 50%;
-      width: 3em;
-    }
+    background-image: none;
+    background: #2f90d9;
+    width: 3em;
+    height: 2em;
+    line-height: 2em;
 
     &:after {
-      content: '';
+      content:'';
     }
   }
 }

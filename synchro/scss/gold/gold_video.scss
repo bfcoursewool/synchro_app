@@ -5,11 +5,6 @@
   max-width: 1000px;
   margin: 40px auto 20px;
 
-  @media (max-width: $break-mobile) {
-    width: 100%;
-    margin-bottom: 0;
-  }
-
   .video-js .vjs-big-play-button {
     left: 80%;
     top: 25%;
