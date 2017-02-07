@@ -1,19 +1,36 @@
 @import 'gold/gold_video';
 
 /** variant overwrites **/
-.gold-video {
-
-  .video-js .vjs-big-play-button {
-    left: 50%;
-    top: 50%;
+.main-banner {
+  &__uvp {
+    position: initial;
+    text-align: center;
+    margin: 50px 0 20px;
 
     @media (max-width: $break-mobile) {
-      left: 50%;
-      width: 3em;
+      display: inline-block;
+      text-align: left;
+      margin: 0;
     }
+  }
 
-    &:after {
-      content: '';
+  &__item {
+    display: inline-block;
+
+    @media (max-width: $break-mobile) {
+      display: block;
+    }
+  }
+
+  .gold-video {
+
+    .video-js .vjs-big-play-button {
+      left: 50%;
+      top: 50%;
+
+      &:after {
+        content:'';
+      }
     }
   }
 }
