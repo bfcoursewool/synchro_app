@@ -1,19 +1,1 @@
 @import 'gold/gold';
-
-/** styles for pain **/
-
-.main-banner__headline {
-  margin: 0 auto 50px;
-  max-width: 750px;
-
-  @media (max-width: $break-mobile) {
-    max-width: 550px;
-  }
-}
-.main-banner__uvp {
-  top: 240px;
-
-  @media (max-width: $break-mobile) {
-    top: 220px;
-  }
-}

@@ -54,7 +54,7 @@ endpoint_info_dict = {
       'template': 'landing_pages/gold/gold_pain.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs],
       'template_vars': {
-        'stylesheet': 'gold/gold_pain.css'
+        'stylesheet': 'gold/gold.css'
       }
     }
   },
@@ -110,8 +110,8 @@ def landing_page(page, version):
   bootstrap_css.need()
 
   # If there is a dict of template vars, let's grab it and pass it as kwargs to render_template
-  template_vars = {} 
-  if 'template_vars' in endpoint_info_dict[page][version]: 
+  template_vars = {}
+  if 'template_vars' in endpoint_info_dict[page][version]:
     template_vars = endpoint_info_dict[page][version]['template_vars']
 
   return render_template(
