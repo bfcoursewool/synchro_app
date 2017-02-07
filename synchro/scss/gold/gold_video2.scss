@@ -1,19 +1,41 @@
 @import 'gold/gold_video';
 
 /** variant overwrites **/
-.gold-video {
+.main-banner {
+  &__uvp {
+    position: initial;
+    text-align: center;
+    margin: 50px 0 20px;
 
-  .video-js .vjs-big-play-button {
-    left: 50%;
-    top: 50%;
-    background-image: none;
-    background: #2f90d9;
-    width: 3em;
-    height: 2em;
-    line-height: 2em;
+    @media (max-width: $break-mobile) {
+      display: inline-block;
+      text-align: left;
+      margin: 0;
+    }
+  }
 
-    &:after {
-      content:'';
+  &__item {
+    display: inline-block;
+
+    @media (max-width: $break-mobile) {
+      display: block;
+    }
+  }
+
+  .gold-video {
+
+    .video-js .vjs-big-play-button {
+      left: 50%;
+      top: 50%;
+      background-image: none;
+      background: #2f90d9;
+      width: 3em;
+      height: 2em;
+      line-height: 2em;
+
+      &:after {
+        content:'';
+      }
     }
   }
 }
