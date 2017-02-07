@@ -34,7 +34,7 @@ endpoint_info_dict = {
         'stylesheet': 'gold/gold.css'
       }
     },
-    'vid': {
+    'v1': {
       'template': 'landing_pages/gold/gold_video.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
@@ -42,19 +42,19 @@ endpoint_info_dict = {
         'stylesheet': 'gold/gold_video.css'
       }
     },
-    'vid2': {
-      'template': 'landing_pages/gold/gold_video.html',
-      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
-      'template_vars': {
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster.jpg',
-        'stylesheet': 'gold/gold_video2.css'
-      }
-    },
-    'pain': {
+    'p1': {
       'template': 'landing_pages/gold/gold_pain.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs],
       'template_vars': {
         'stylesheet': 'gold/gold_pain.css'
+      }
+    },
+    'pv1': {
+      'template': 'landing_pages/gold/gold_pain_video.html',
+      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
+      'template_vars': {
+        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
+        'stylesheet': 'gold/gold_video.css'
       }
     }
   },
