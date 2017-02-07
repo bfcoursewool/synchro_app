@@ -1,5 +1,6 @@
 
 {% extends "landing_pages/gold/gold_base.html" %}
+{% block title %} The World's Most Powerful Turmeric Elixir {% endblock %}
 
 {% block content %}
 <!-- Top Navigation -->
@@ -34,8 +35,19 @@
   <div class="row">
     <div class="main-banner">
       <h1 class="main-banner__headline">The world's most powerful turmeric supplement</h1>
-      <img class="main-banner__image hidden-sm-down" src="http://cdn.besynchro.com/gold/gold-hero-smaller_no-text.png">
-      <img class="main-banner__image hidden-md-up" src="http://cdn.besynchro.com/gold/mobile-slider_no-text.png">
+      <div class="gold-video">
+        <video id="my-video" class="video-js vjs-16-9" controls="true" preload="auto" width="100%" height="100%" poster="{{ poster_image }}" data-setup="{}" src="http://cdn.besynchro.com/gold/synchro_gold_15-12_2.mp4" type='video/mp4'>
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a web browser that
+            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+          </p>
+        </video>
+        <script>
+          videojs('my-video', {}, function() {
+            this.ga(); // "load the plugin, by defaults tracks everything!!"
+          });
+        </script>
+      </div>
       <ul class="main-banner__uvp">
         <li class="main-banner__item p--text p--bold">Superior Potency & Bioavailability</li>
         <li class="main-banner__item p--text p--bold">Boost Body's Immune System</li>
@@ -80,7 +92,7 @@
 <section class="turmeric-info">
   <div class="container-fluid">
     <div class="row">
-      <p class="turmeric-info__text p--text col-md-8 offset-md-2 col-xs-10 offset-xs-1"><span class="turmeric-info__title p--bold">Turmeric has gotten a lot of press lately.</span>It’s heralded for its ability to reduce inflammation, boost the body’s antioxidant systems, and improve cognitive functioning. Synchro Gold utilizes a super-concentrated extract of turmeric root, formulated with a cutting-edge nutrient delivery system, to create an elixir of unmatched bioavailability and potency.</p>
+      <p class="turmeric-info__text p--text col-md-8 offset-md-2 col-xs-10 offset-xs-1"><span class="turmeric-info__title p--bold">Joint pain, arthritis and chronic low energy are all driven by the same common factor.</span>Inflammation is well documented as "the root of all disease", and nowhere is this more true than in your persistent aches and pains. Synchro Gold pairs nature's most potent anti-inflammatory (turmeric) with three cutting-edge delivery mechanisms to improve the body's inflammation response in a way other turmeric products simply can't.</p>
     </div>
   </div>
 </section>
@@ -94,7 +106,7 @@
         <div class="gold-benefits__item col-md-6">
           <img class="gold-benefits__img" src="http://cdn.besynchro.com/gold/back.jpg">
           <h4 class="gold-benefits__header p--title">Inflammation Fighting</h4>
-          <p class="p--text">It’s been said countless times that “Inflammation is the root of all disease”. While this is still up for debate, there’s no denying that inflammation is a primary driver behind a long list of negative health conditions. And here’s something that’s not up for debate: An inflamed body feels like crap and simply doesn’t perform as well. Synchro Gold powerfully fights inflammation by using cutting-edge nutrient delivery technologies to dramatically increase the bioavailability of the turmeric alkaloids and amplify their effects in the body.†</p>
+          <p class="p--text">It’s been said countless times that “Inflammation is the root of all disease”. It's clear that inflammation is the primary driver behind a long list of negative health conditions, certainly including joint pain and chronic low energy.  Put simply, an inflamed body feels like crap and simply doesn’t perform as well. Synchro Gold powerfully fights inflammation by using cutting-edge nutrient delivery technologies to dramatically increase the bioavailability of the turmeric alkaloids and amplify their effects in the body.†</p>
         </div>
         <div class="gold-benefits__item col-md-6">
           <img class="gold-benefits__img" src="http://cdn.besynchro.com/gold/atom.jpg">
@@ -106,7 +118,7 @@
         <div class="gold-benefits__item col-md-6">
           <img class="gold-benefits__img" src="http://cdn.besynchro.com/gold/molecules.jpg">
           <h4 class="gold-benefits__header p--title">Boosts Body's Antioxidant Systems</h4>
-          <p class="p--text">With all the focus placed on eating a diet rich in plant- based antioxidants, it’s easy to forget that the most powerful known antioxidants are actually produced by our own bodies. Turmeric has been shown to stimulate goldion of superoxide dismutase, glutathione reductase, and glutathione-s-transferase, our body’s three primary “super antioxidant” enzymes.†</p>
+          <p class="p--text">Antioxidant enzymes are the body's primary system for keeping inflammation in check. Turmeric has been shown to stimulate production of our body’s three primary “super antioxidant” enzymes: superoxide dismutase, glutathione reductase, and glutathione-s-transferase.  This means that in addition to the near-term benefits, Synchro Gold is also working over time to move the body back into a state of <span class="p--italic">true health.</span>†</p>
         </div>
         <div class="gold-benefits__item col-md-6">
           <img class="gold-benefits__img" src="http://cdn.besynchro.com/gold/brain.jpg">
@@ -295,7 +307,7 @@
 </section>
 <!-- FOOTER -->
 {% block footer %} {{ super() }} {% endblock %}
-{% block footer_content %} 
+{% block footer_content %}
   <div class="container-fluid">
     <div class="row">
       <div class="gold-footer__left">

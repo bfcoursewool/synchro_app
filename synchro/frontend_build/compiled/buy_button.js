@@ -115,9 +115,14 @@ $(document).ready(function() {
             return l;
           };
           var checkoutParsed = getLocation(cart.model.checkoutUrl);
+          var cartString = encodeURI(checkoutParsed.pathname + checkoutParsed.search);
+          // Weirdly, sometimes the cartString is lacking a leading /... 
+          if(cartString.substring(0, 1) != '/') {
+            cartString = '/' + cartString;
+          }
           var payload = {
             'km_ident': kissIdentity,
-            'cart_string': encodeURI(checkoutParsed.pathname + checkoutParsed.search)
+            'cart_string': cartString
           };
           $.ajax({
             type: 'POST',
