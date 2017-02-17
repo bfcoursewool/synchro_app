@@ -28,7 +28,7 @@ endpoint_info_dict = {
   },
   'gold': {
     'v0': {
-      'template': 'landing_pages/gold/gold_pain_video.html',
+      'template': 'landing_pages/gold/gold.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
