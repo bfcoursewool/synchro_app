@@ -4,13 +4,13 @@
 .cro002-1 {
 
   &__gold-testimonial {
-    background: #F6F8FB;
+    background-image: linear-gradient(-90deg, #f1cd1e 0%, #F4922C 100%);
     text-align: center;
-    padding: 70px 20px;
+    padding: 30px 20px;
   }
 
   &__content {
-    margin-top: 30px;
+    margin: 40px 0 10px;
 
     @media (max-width: $break-tablet) {
       padding: 0 40px;
@@ -55,7 +55,7 @@
       top: -10px;
       font-family: Georgia, serif;
       font-size: 48px;
-      color: #22BAD8;
+      color: #CD8B0E;
     }
 
     &:after {
@@ -66,13 +66,15 @@
         top: -10px;
         font-family: Georgia, serif;
         font-size: 48px;
-        color: #22BAD8;
+        color: #CD8B0E;
       }
     }
   }
 
   &__quote {
     line-height: 1.5;
+    color: #fff;
+    font-size: 18px;
 
     @media (max-width: $break-mobile) {
       text-align: center;
@@ -82,6 +84,7 @@
   &__name {
     line-height: 40px;
     text-align: right;
+    color: #fff;
 
     @media (max-width: $break-mobile) {
       text-align: center;
