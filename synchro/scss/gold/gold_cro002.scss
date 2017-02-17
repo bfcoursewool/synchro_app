@@ -1,6 +1,97 @@
 @import 'gold/gold_video';
 
 /* variant 1 styles */
+.cro002-1 {
+
+  &__gold-testimonial {
+    background: #F6F8FB;
+    text-align: center;
+    padding: 70px 20px;
+  }
+
+  &__content {
+    margin-top: 30px;
+
+    @media (max-width: $break-tablet) {
+      padding: 0 40px;
+    }
+  }
+
+  &__image {
+    width: 60px;
+
+    @media (max-width: $break-tablet) {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $break-mobile) {
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__testimonial {
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 40px;
+    position: relative;
+    quotes: "\201C""\201D";
+
+    @media (max-width: $break-tablet) {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    @media (max-width: $break-mobile) {
+      width: initial;
+    }
+
+    &:before {
+      content: open-quote;
+      position: absolute;
+      left: -30px;
+      top: -10px;
+      font-family: Georgia, serif;
+      font-size: 48px;
+      color: #22BAD8;
+    }
+
+    &:after {
+      @media (max-width: $break-mobile) {
+        content: close-quote;
+        position: absolute;
+        right: -30px;
+        top: -10px;
+        font-family: Georgia, serif;
+        font-size: 48px;
+        color: #22BAD8;
+      }
+    }
+  }
+
+  &__quote {
+    line-height: 1.5;
+
+    @media (max-width: $break-mobile) {
+      text-align: center;
+    }
+  }
+
+  &__name {
+    line-height: 40px;
+    text-align: right;
+
+    @media (max-width: $break-mobile) {
+      text-align: center;
+    }
+  }
+}
+
+.gold-innovation.cro002-1 {
+  display: none;
+}
 
 /* variant 2 styles */
 .cro002-2 {
@@ -86,6 +177,6 @@
   }
 }
 
-.gold-info {
+.gold-info.cro002-2 {
   padding-bottom: 50px;
 }
