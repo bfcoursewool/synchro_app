@@ -1,0 +1,91 @@
+@import 'gold/gold_video';
+
+/* variant 1 styles */
+
+/* variant 2 styles */
+.cro002-2 {
+
+  &__gold-testimonial {
+    background-image: linear-gradient(-90deg, #EEE510 0%, #F4922C 100%);
+    text-align: center;
+    padding: 40px;
+    font-size: 0;
+  }
+
+  &__image {
+    width: 70px;
+
+    @media (max-width: $break-mobile) {
+      display: block;
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__testimonial {
+    display: inline-block;
+    max-width: 70%;
+    vertical-align: top;
+    text-align: left;
+    margin: 0 30px 0 50px;
+    position: relative;
+    top: 10px;
+    quotes: "\201C""\201D";
+
+    @media (max-width: $break-mobile) {
+      text-align: center;
+      max-width: none;
+      margin: 0;
+    }
+
+    &:before {
+      content: open-quote;
+      position: absolute;
+      left: -35px;
+      top: -12px;
+      font-family: Georgia, serif;
+      font-size: 60px;
+      color: #CD8B0E;
+
+      @media (max-width: $break-mobile) {
+        left: 0px;
+        top: -30px;
+      }
+    }
+
+    &:after {
+      content: close-quote;
+      position: absolute;
+      right: -35px;
+      top: -12px;
+      font-family: Georgia, serif;
+      font-size: 60px;
+      color: #CD8B0E;
+
+      @media (max-width: $break-mobile) {
+        right: 0px;
+        top: -30px;
+      }
+    }
+  }
+
+  &__quote {
+    font-size: 19px;
+    line-height: 27px;
+    color: #FFFFFF;
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-align: right;
+
+    @media (max-width: $break-mobile) {
+      text-align: center;
+    }
+  }
+}
+
+.gold-info {
+  padding-bottom: 50px;
+}
