@@ -35,6 +35,14 @@ endpoint_info_dict = {
         'stylesheet': 'gold/gold_video.css'
       }
     },
+    '1': {
+      'template': 'landing_pages/gold/gold_pain.html',
+      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
+      'template_vars': {
+        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
+        'stylesheet': 'gold/gold_video.css'
+      }
+    },
     'cro002-1': {
       'template': 'landing_pages/gold/gold_cro002-1.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
