@@ -4,6 +4,7 @@ from fanstatic import Fanstatic, Library
 import time
 import KISSmetrics
 from raven.contrib.flask import Sentry
+from synchro import const
 
 # So we can send alias events from the backend and track people from landing page -> shopify checkout
 from synchro.const import kKISSMETRICS_API_KEY
@@ -12,6 +13,9 @@ KM = KISSmetrics.Client(key=kKISSMETRICS_API_KEY)
 app = Flask(__name__)
 app.config.from_object('config')
 app.debug = True
+app.config['SENTRY_CONFIG'] = {
+  'environment': const.kENVIRONMENT
+}
 
 # Log server-side errors, aggregate, and email them to devs
 sentry = Sentry(app, dsn='https://35f8ce49bcbf4b2fa0299a69b5a0b4c5:47fa94c247c74d949dce28fba7bb1d32@sentry.io/130658')
