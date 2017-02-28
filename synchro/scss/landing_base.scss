@@ -14,9 +14,12 @@
 .p--header {
   font-family: 'Open Sans',Helvetica,sans-serif; 
   font-size: 44px; 
-  color: #fff; 
   font-weight: 300; 
   text-transform: capitalize;
+}
+
+.p--white {
+  color: #fff;
 }
 
 .p--title {
@@ -480,6 +483,113 @@ $break-desktop: 1199px;
       margin-bottom: 40px;
       max-width: 100%;
     }
+  }
+}
+
+.purchase {
+  padding: 70px 20px;
+  text-align: center;
+
+  &__item {
+    margin: 30px 0 0;
+
+    @media (max-width: $break-mobile) {
+      width: 100%;
+    }
+
+  }
+
+  .hidden-templates {
+    display: none;
+  }
+
+  .shopify-buy__product__variant-img {
+    margin: 20px 0;
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .pID {
+    display: none;
+  }
+
+  .shopify-buy__product__title,
+  .shopify-buy__product__price {
+    font-family: 'Open Sans', sans-serif;
+    color: #3f3f3f;
+    font-size: 16px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .shopify-buy__product__actual-price {
+    font-weight: bold;
+  }
+
+  .shopify-buy__product__variant-title {
+    font-family: 'Open Sans', sans-serif;
+    color: #3f3f3f;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  &__text-highlight {
+    background-color: yellow;
+  }
+
+  .shopify-buy__btn {
+    margin: 30px;
+  }
+}
+
+.info {
+  text-align: center;
+
+  &__img {
+    max-width: 100%;
+
+    @media (max-width: $break-mobile) {
+      max-width: 90%;
+      margin: 0 auto 30px;
+    }
+  }
+}
+
+.synchro-products {
+  padding: 70px 20px;
+  text-align: center;
+
+  .shopify-buy__product__variant-img {
+    max-width: 270px;
+    margin: 30px 0;
+    width: 100%;
+  }
+}
+
+.synchro-reviews {
+  display: block;
+  background: #F6F8FB;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.faq {
+  background: #F6F8FB;
+  text-align: center;
+  padding: 70px 35px;
+
+  &__text {
+    text-align: left;
+    padding: 20px 0;
+  }
+
+  .p--text {
+    margin-top: 20px;
+    color: #7b858b;
   }
 }
 
