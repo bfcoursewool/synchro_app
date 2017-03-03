@@ -1,7 +1,9 @@
 {% extends "landing_pages/genesis/genesis_base.html" %}
 
 {% block content %}
-<!-- Top Navigation -->
+
+<!-- top navigation -->
+
 <header class="main-header-container">
   <div class="main-header">
     <div class="container-fluid">
@@ -12,9 +14,9 @@
           <div class="main-navigation__hamburger"></div>
         </button>
         <div class="main-header__logo">
-          <img class="synchro-logo" src="http://cdn.besynchro.com/gold/logo-retina.png?2210952882354881356"> <!-- SVG preferred -->
+          <img class="synchro-logo" src="http://cdn.besynchro.com/gold/logo-retina.png">
         </div>
-        <a class="main-header__cta a--cta" role="button" href="#purchase">Buy</a>
+        <a class="a--cta right" role="button" href="#purchase">Buy</a>
         <nav class="main-navigation">
           <a class="main-navigation__item" href="#overview">Overview</a>
           <a class="main-navigation__item" href="#benefits">Benefits</a>
@@ -28,11 +30,13 @@
   </div>
 </header>
 
+<!-- top navigation ends -->
+
 <section class="container-fluid">
   <div class="row">
-    <div class="main-banner">
-      <h1 class="main-banner__headline">Drink one a day. Your body and brain will thank you.</h1>
-      <img class="main-banner__image hidden-sm-down" src="http://cdn.besynchro.com/genesis/images/product-header1.jpg">
+    <div class="genesis-atf section--padding">
+      <h1 class="p--header">Drink one a day. Your body and brain will thank you.</h1>
+      <img class="genesis-atf__image" src="http://cdn.besynchro.com/genesis/images/product-header1.jpg">
     </div>
   </div>
 </section>
@@ -70,9 +74,7 @@
 <section class="product-info">
   <div class="container-fluid">
     <div class="row">
-      <p class="product-info__text p--text col-md-8 offset-md-2 col-xs-10 offset-xs-1">Eating the foods that make your body and brain feel amazing doesn’t have to be a challenge. We spent years researching and developing a formula with the perfect nutrients to keep your body’s systems running optimally throughout your day—and Synchro Genesis is the result.
-
-      Oh, and the best part? Preparing this delicious nutrient-powerhouse of a chocolate shake is as easy as adding water in a jar and shaking. How brilliant is that?</p>
+      <p class="product-info__text p--text col-md-8 offset-md-2 col-xs-10 offset-xs-1">Eating the foods that make your body and brain feel amazing doesn’t have to be a challenge. We spent years researching and developing a formula with the perfect nutrients to keep your body’s systems running optimally throughout your day—and Synchro Genesis is the result.<br><br>Oh, and the best part? Preparing this delicious nutrient-powerhouse of a chocolate shake is as easy as adding water in a jar and shaking. How brilliant is that?</p>
     </div>
   </div>
 </section>
@@ -80,25 +82,31 @@
 <a class="anchor" name="benefits"></a>
 <section class="container-fluid">
   <div class="row">
-    <div class="benefits">
+    <div class="genesis-benefits section--padding">
       <h3 class="p--title">Benefits</h3>
-      <div class="clearfix">
-        <img class="benefits__img" src="http://cdn.besynchro.com/genesis/images/toxins-icon1.jpg">
-        <h4 class="benefits__header p--title">Neutralizes Toxins</h4>
-        <img class="benefits__img" src="http://cdn.besynchro.com/genesis/images/inflammation-icon.jpg">
-        <h4 class="benefits__header p--title">Reduces Inflammation</h4>
-        <img class="benefits__img" src="http://cdn.besynchro.com/genesis/images/bolt-icon1.jpg">
-        <h4 class="benefits__header p--title">Naturally Energizing</h4>
-        <img class="benefits__img" src="http://cdn.besynchro.com/genesis/images/heart-icon.jpg">
-        <h4 class="benefits__header p--title">Supports Healthy Metabolism</h4>
+      <div class="col-md-3 genesis-benefits__item">
+        <img class="genesis-benefits__img" src="http://cdn.besynchro.com/genesis/images/toxins-icon1.jpg">
+        <h4 class="genesis-benefits__header p--text p--bold">Neutralizes Toxins</h4>
       </div>
+      <div class="col-md-3 genesis-benefits__item">
+        <img class="genesis-benefits__img" src="http://cdn.besynchro.com/genesis/images/inflammation-icon.jpg">
+        <h4 class="genesis-benefits__header p--text p--bold">Reduces Inflammation</h4>
+      </div>
+      <div class="col-md-3 genesis-benefits__item">
+        <img class="genesis-benefits__img" src="http://cdn.besynchro.com/genesis/images/bolt-icon1.jpg">
+        <h4 class="genesis-benefits__header p--text p--bold">Naturally Energizing</h4>
+      </div>
+      <div class="col-md-3 genesis-benefits__item">
+        <img class="genesis-benefits__img" src="http://cdn.besynchro.com/genesis/images/heart-icon.jpg">
+        <h4 class="genesis-benefits__header p--text p--bold">Supports Healthy Metabolism</h4>
+      </div>
+      <div class="col-md-12">
+        <p class="p--text">In developing Synchro Genesis, we looked at the two biggest factors that prevent most people from feeling and performing as well as they could—toxins and inflammation—and took them head-on.</p>
+        <p class="p--text">Exceptional levels of natural antioxidants and anti-inflammatories in Synchro Genesis work to neutralize toxins, thus helping to preserve proper metabolic and hormone function and reducing systemic inflammation. The net result is <span class="p--bold">a body that feels energized and alive and a brain that’s sharp as a tack.</span></p>
+      </div>
+      <div class="clearfix"></div>
     </div>
   </div>
-  <div class="row">
-    <div class="benefits">
-      <p class="p--text">In developing Synchro Genesis, we looked at the two biggest factors that prevent most people from feeling and performing as well as they could—toxins and inflammation—and took them head-on.</p>
-
-      <p class="p--text">Exceptional levels of natural antioxidants and anti-inflammatories in Synchro Genesis work to neutralize toxins, thus helping to preserve proper metabolic and hormone function and reducing systemic inflammation. The net result is <span class="p--bold">a body that feels energized and alive and a brain that’s sharp as a tack.</span></p>
 </section>
 
 <a class="anchor" name="ingredients"></a>
@@ -106,7 +114,7 @@
   <div class="container-fluid">
     <div class="row">
       <h3 class="p--header p--white">Perfectly Synergized Ingredients</h3>
-    </div> 
+    </div>
   </div>
 </section>
 
@@ -346,16 +354,16 @@
 <!-- FOOTER -->
 {% block footer %} {{ super() }} {% endblock %}
 {% block footer_content %}
-  <div class="container-fluid">
-    <div class="row">
-      <div class="footer__left">
-        <a class="footer__text" href="http://genesis.besynchro.com/">© Synchro Genesis 2017</a>
-      </div>
-      <div class="footer__right">
-        <a class="footer__text" href="http://besynchro.com/pages/contact-us">Reach out! We'd Love to Hear From You!</a>
-        <a class="footer__text" href="http://besynchro.com/pages/privacy-policy">Privacy Policy</a>
-        <a class="footer__text" href="http://besynchro.com/pages/returns-policy">Returns Policy</a>
-      </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="footer__left">
+      <a class="footer__text" href="http://genesis.besynchro.com/">© Synchro Genesis 2017</a>
+    </div>
+    <div class="footer__right">
+      <a class="footer__text" href="http://besynchro.com/pages/contact-us">Reach out! We'd Love to Hear From You!</a>
+      <a class="footer__text" href="http://besynchro.com/pages/privacy-policy">Privacy Policy</a>
+      <a class="footer__text" href="http://besynchro.com/pages/returns-policy">Returns Policy</a>
     </div>
   </div>
+</div>
 {% endblock %}
