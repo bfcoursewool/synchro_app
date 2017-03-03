@@ -1,26 +1,23 @@
 @import 'reset_default';
 
-/* global styles */
+/* global styles for synchro landing pages */
+
 .container-fluid {
   max-width: 1200px;
   padding-left: 4% !important;
   padding-right: 4% !important;
 }
 
-.right {
-  float: right;
-}
+/* main h1 text */
 
 .p--header {
-  font-family: 'Open Sans',Helvetica,sans-serif; 
-  font-size: 44px; 
-  font-weight: 300; 
+  font-family: 'Open Sans',Helvetica,sans-serif;
+  font-size: 44px;
+  font-weight: 300;
   text-transform: capitalize;
 }
 
-.p--white {
-  color: #fff;
-}
+/* section title text */
 
 .p--title {
   display: block;
@@ -43,6 +40,8 @@
   }
 }
 
+/* paragraph text */
+
 .p--text {
   font-family: 'Open Sans', sans-serif;
   color: #3f3f3f;
@@ -50,6 +49,12 @@
   font-size: 16px;
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
+}
+
+/* text enhancers */
+
+.p--white {
+  color: #fff;
 }
 
 .p--bold {
@@ -63,6 +68,16 @@
 .p--strike {
   text-decoration: line-through;
 }
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+/* primary call-to-action button */
 
 .a--cta,
 .shopify-buy__btn {
@@ -92,9 +107,13 @@ a.anchor {
   top: -55px;
 }
 
+/* responsive break points */
+
 $break-mobile: 767px;
 $break-tablet: 991px;
 $break-desktop: 1199px;
+
+/* main navigation */
 
 .main-header-container {
   height: 115px;
@@ -225,6 +244,193 @@ $break-desktop: 1199px;
   }
 }
 
+/* product claim icons */
+
+.claims {
+  box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.05);
+  padding: 30px 0;
+  text-align: center;
+
+  &__list {
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 20%;
+    margin: 30px 0;
+
+    @media (max-width: $break-mobile) {
+      width: 30%;
+      vertical-align: top;
+    }
+  }
+
+  &__image {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: #7b858b;
+  }
+}
+
+/* product purchase section */
+
+.purchase {
+  padding: 70px 20px;
+  text-align: center;
+
+  &__item {
+    margin: 30px 0 0;
+
+    @media (max-width: $break-mobile) {
+      width: 100%;
+    }
+
+  }
+
+  .hidden-templates {
+    display: none;
+  }
+
+  .shopify-buy__product__variant-img {
+    margin: 20px 0;
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .pID {
+    display: none;
+  }
+
+  .shopify-buy__product__title,
+  .shopify-buy__product__price {
+    font-family: 'Open Sans', sans-serif;
+    color: #3f3f3f;
+    font-size: 16px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .shopify-buy__product__actual-price {
+    font-weight: bold;
+  }
+
+  .shopify-buy__product__variant-title {
+    font-family: 'Open Sans', sans-serif;
+    color: #3f3f3f;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  &__text-highlight {
+    background-color: yellow;
+  }
+
+  .shopify-buy__btn {
+    margin: 30px;
+  }
+}
+
+/* more products section */
+
+.synchro-products {
+  padding: 70px 20px;
+  text-align: center;
+
+  .shopify-buy__product__variant-img {
+    max-width: 270px;
+    margin: 30px 0;
+    width: 100%;
+  }
+}
+
+/* customer review section */
+
+.synchro-reviews {
+  display: block;
+  background: #F6F8FB;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+/* product faq section */
+
+.faq {
+  background: #F6F8FB;
+  text-align: center;
+  padding: 70px 35px;
+
+  &__text {
+    text-align: left;
+    padding: 20px 0;
+  }
+
+  .p--text {
+    margin-top: 20px;
+    color: #7b858b;
+  }
+}
+
+/* landing page footer */
+
+.footer {
+  padding: 30px 0;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: .08em;
+  font-size: 10px;
+  background: #191d20;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+
+  @media (max-width: $break-mobile) {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  &__left {
+    display: inline-block;
+
+    @media (max-width: $break-mobile) {
+      display: block;
+    }
+  }
+
+  &__right {
+    display: inline-block;
+    float: right;
+
+    @media (max-width: $break-mobile) {
+      display: block;
+      float: none;
+    }
+  }
+
+  &__text {
+    padding: 0 10px;
+
+    @media (max-width: $break-mobile) {
+      display: block;
+      padding: 20px 10px;
+    }
+
+    &:hover {
+      color: #22bad8;
+      text-decoration: none;
+    }
+  }
+}
+
+/* global styles end */
+
 .main-banner {
   text-align: center;
   padding: 70px 20px 30px;
@@ -306,7 +512,6 @@ $break-desktop: 1199px;
     display: block;
     margin-bottom: 20px;
   }
-
 }
 
 .benefits {
@@ -344,36 +549,6 @@ $break-desktop: 1199px;
     &:after {
       display: none;
     }
-  }
-}
-
-.claims {
-  box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.05);
-  padding: 30px 0;
-  text-align: center;
-
-  &__list {
-    font-size: 0;
-  }
-
-  &__item {
-    display: inline-block;
-    width: 20%;
-    margin: 30px 0;
-
-    @media (max-width: $break-mobile) {
-      width: 30%;
-      vertical-align: top;
-    }
-  }
-
-  &__image {
-    width: 80px;
-    margin-bottom: 10px;
-  }
-
-  &__text {
-    color: #7b858b;
   }
 }
 
@@ -486,66 +661,6 @@ $break-desktop: 1199px;
   }
 }
 
-.purchase {
-  padding: 70px 20px;
-  text-align: center;
-
-  &__item {
-    margin: 30px 0 0;
-
-    @media (max-width: $break-mobile) {
-      width: 100%;
-    }
-
-  }
-
-  .hidden-templates {
-    display: none;
-  }
-
-  .shopify-buy__product__variant-img {
-    margin: 20px 0;
-    max-width: 300px;
-    width: 100%;
-  }
-
-  .pID {
-    display: none;
-  }
-
-  .shopify-buy__product__title,
-  .shopify-buy__product__price {
-    font-family: 'Open Sans', sans-serif;
-    color: #3f3f3f;
-    font-size: 16px;
-    line-height: 1.8;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .shopify-buy__product__actual-price {
-    font-weight: bold;
-  }
-
-  .shopify-buy__product__variant-title {
-    font-family: 'Open Sans', sans-serif;
-    color: #3f3f3f;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.8;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  &__text-highlight {
-    background-color: yellow;
-  }
-
-  .shopify-buy__btn {
-    margin: 30px;
-  }
-}
-
 .info {
   text-align: center;
 
@@ -558,89 +673,3 @@ $break-desktop: 1199px;
     }
   }
 }
-
-.synchro-products {
-  padding: 70px 20px;
-  text-align: center;
-
-  .shopify-buy__product__variant-img {
-    max-width: 270px;
-    margin: 30px 0;
-    width: 100%;
-  }
-}
-
-.synchro-reviews {
-  display: block;
-  background: #F6F8FB;
-  text-align: center;
-  padding: 70px 20px;
-}
-
-.faq {
-  background: #F6F8FB;
-  text-align: center;
-  padding: 70px 35px;
-
-  &__text {
-    text-align: left;
-    padding: 20px 0;
-  }
-
-  .p--text {
-    margin-top: 20px;
-    color: #7b858b;
-  }
-}
-
-.footer {
-  padding: 30px 0;
-  font-family: 'Raleway', sans-serif;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: .08em;
-  font-size: 10px;
-  background: #191d20;
-  text-transform: uppercase;
-  -webkit-font-smoothing: antialiased;
-
-  @media (max-width: $break-mobile) {
-    padding: 20px 0;
-    text-align: center;
-  }
-
-  &__left {
-    display: inline-block;
-
-    @media (max-width: $break-mobile) {
-      display: block;
-    }
-  }
-
-  &__right {
-    display: inline-block;
-    float: right;
-
-    @media (max-width: $break-mobile) {
-      display: block;
-      float: none;
-    }
-  }
-
-  &__text {
-    padding: 0 10px;
-
-    @media (max-width: $break-mobile) {
-      display: block;
-      padding: 20px 10px;
-    }
-
-    &:hover {
-      color: #22bad8;
-      text-decoration: none;
-    }
-  }
-}
-
-
-/* global styles end */
