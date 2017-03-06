@@ -35,8 +35,8 @@ synchro_effects = Resource(
   ]
 )
 
-gold_analytics = Resource(
-  library_frontend_build, 'gold_analytics.min.js',
+analytics = Resource(
+  library_frontend_build, 'analytics.min.js',
   depends=[
     jquery
   ]

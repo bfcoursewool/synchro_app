@@ -1,5 +1,5 @@
 {% extends "landing_pages/landing_base.html" %}
-{% block title %} The World's Most Powerful Turmeric Elixir {% endblock %}
+{% block title %} Synchro Genesis - Superfood Shake {% endblock %}
 {% block head %}
 
 {{ super() }}
@@ -14,15 +14,13 @@
 
     fbq('init', '495265410669440');
     fbq('track', 'PageView', {
-      property: 'Synchro-Gold'
+      property: 'Synchro-Genesis'
     });
   </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=495265410669440&ev=PageView&cd[property]=Synhcro-Gold&noscript=1" /></noscript>
+ 
 
-<!-- VideoJS - TODO: Why is there a weird line when I include this via fanstatic but not here??? -->
-<link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
-
-<link rel="canonical" href="http://gold.besynchro.com/">
+<link rel="canonical" href="http://genesis.besynchro.com/">
 
 <!-- Custom styles for this template -->
 <link href="{{ url_for('static', filename='css/'+stylesheet) }}" rel="stylesheet">
@@ -32,9 +30,6 @@
 <!-- Font Awesome -->
 <script src="https://use.fontawesome.com/b3f7794244.js"></script>
 
-<meta name="google-site-verification" content="ZhbX-aVaeZXWEolRbslrE7EU9M9ROJmkTb8Wb63jzOA" />
-<meta name="google-site-verification" content="7f8BFFtINsQrTL7If4hePO9SMRkzdnEp5a-I4JWr8ZE" /> <!-- for www.synchrogold.com -->
-
 {% endblock %}
 
 {% block footer %}
@@ -42,6 +37,7 @@
   {% block footer_content %}{% endblock %}
 
   <!-- BEGIN: _GUARANTEE Seal -->
+  <!-- TODO - Get new snippet if we want Norton Seal on these pages
   <span id="_GUARANTEE_SealSpan"></span>
   <img style="display:none;" src="//nsg.symantec.com/Web/Seal/AltSealInfo.aspx?S=Large&T=M&Elem=ImgTagSeal&HASH=6x9T3%2F5jG8bnTgnlY5K7Swjg%2BKT2RegIsDZukbnqUqwGmLe3zdKA1i9BsPe5lcXjS%2BFOhQ5XYLYJcFX3oXbnig%3D%3D&CBF=AB&AB=1&DP=fn=;src=ImgTagSeal;grt=true" />
   <script type="text/javascript" src="//nsg.symantec.com/Web/Seal/gjs.aspx?SN=959467632"></script>
@@ -51,6 +47,7 @@
   _GUARANTEE.WriteSeal("_GUARANTEE_SealSpan", "GuaranteedSeal");
   }
   </script>
+  -->
   <!-- END: _GUARANTEE Seal -->
 </div>
 {% endblock %}

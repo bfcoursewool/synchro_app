@@ -16,8 +16,21 @@ var gaNames = {
   'GLD03': {
     'name': 'Synchro Gold - Four Bottles',
     'variant': 'Four Bottles'
+  },
+  'GEN01': {
+    'name': 'Synchro Genesis - One Bag (454g)',
+    'variant': 'One Bag (12 Servings)'
+  }, 
+  'GEN02': {
+    'name': 'Synchro Genesis - 2 Bags',
+    'variant': 'Two Pack'
+  }, 
+  'GEN03': {
+    'name': 'Synchro Genesis - 5 Bags',
+    'variant': 'Five Pack'
   }
 };
+
 
 jQuery(document).ready(function($){
   //custom code for passing kmid on cross-domain <a href> links

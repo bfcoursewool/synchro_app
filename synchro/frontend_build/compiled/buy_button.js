@@ -153,35 +153,24 @@ $(document).ready(function() {
     }
   };
 
-  options.product.templates.title = '<div class="pID">GLD01</div><h1 class="shopify-buy__product__title">ONE BOTTLE (16 SERVINGS)</h1>';
-  options.product.templates.variantTitle = '<h2 class="shopify-buy__product__variant-title">TWO WEEK SUPPLY</h2>';
-  options.product.templates.price = '<div class="shopify-buy__product__price"><span class=shopify-buy__product__actual-price>$28.97</span></div>';
-  ui.createComponent('product', {
-    id: 374830964,
-    variantId: 979745780,
-    node: document.getElementById('gold-option-one'),
-    options: options
-  });
+  var purchaseItems = $('.purchase__item');
+  var productId, variantId;
+  $.each(purchaseItems, function(index, item) {
+    productId = parseInt($(item).attr('data-product-id'));
+    variantId = parseInt($(item).attr('data-variant-id'));
+    node = $(item).attr('data-node');
 
-  options.product.templates.title = '<div class="pID">GLD02</div><h1 class="shopify-buy__product__title">TWO BOTTLES</h1>';
-  options.product.templates.variantTitle = '<h2 class="shopify-buy__product__variant-title">ONE MONTH SUPPLY</h2>';
-  options.product.templates.price = '<div class="shopify-buy__product__price"><span style="text-decoration: line-through;">$57.94 </span><span class=shopify-buy__product__actual-price>$54.97 (5% OFF) </span></div>';
-  ui.createComponent('product', {
-    id: 374830964,
-    variantId: 979770088,
-    node: document.getElementById('gold-option-two'),
-    options: options
-  });
+    options.product.templates.title = $(item).find('.template-title').html();
+    options.product.templates.variantTitle = $(item).find('.template-variantTitle').html();
+    options.product.templates.price = $(item).find('.template-price').html();
 
-  options.product.templates.title = '<div class="pID">GLD03</div><h1 class="shopify-buy__product__title">FOUR BOTTLES</h1>';
-  options.product.templates.variantTitle = '<h2 class="shopify-buy__product__variant-title">TWO MONTH SUPPLY</h2>';
-  options.product.templates.price = '<div class="shopify-buy__product__price"><span style="background-color: yellow"><span style="text-decoration: line-through;">$115.88 </span><span class=shopify-buy__product__actual-price>$103.97 (BEST VALUE - 10% OFF)</span></span></div>';
-  ui.createComponent('product', {
-    id: 374830964,
-    variantId: 979770380,
-    node: document.getElementById('gold-option-three'),
-    options: options
-  }); 
+    ui.createComponent('product', {
+      id: productId,
+      variantId: variantId,
+      node: document.getElementById(node),
+      options: options
+    });
+  });
 
   ui.createComponent('productSet', {
     id: 205866309,

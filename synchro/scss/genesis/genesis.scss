@@ -1,7 +1,64 @@
-@import 'landing_base'; 
+@import 'landing_base';
+
+.genesis-atf {
+  text-align: center;
+
+  &__image {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/**/
+
+.genesis-benefits {
+
+  &__item {
+    text-align: center;
+  }
+
+  &__img {
+    max-width: 130px;
+  }
+
+  &__header {
+    margin: 10px 0;
+  }
+}
+
+.keystone-ingredients {
+  width: 100%;
+  text-align: center;
+  background-color: #f3f6f9;
+  padding: 70px 20px;
+
+  &__img {
+
+  }
+
+  &__info {
+
+  }
+}
+
+.faq {
+  background-color: white;
+  text-align: center;
+  padding: 70px 35px;
+
+  &__text {
+    text-align: left;
+    padding: 20px 0;
+  }
+
+  .p--text {
+    margin-top: 20px;
+    color: #7b858b;
+  }
+}
 
 
-.facts {
+.use {
   background: #F6F8FB;
   padding: 70px 20px;
 
@@ -32,31 +89,16 @@
   }
 }
 
-.gold-research {
-  padding: 70px 35px;
+.ingredients-header {
+  background: url('http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg') no-repeat center center;
+  background-size: cover;
+  color:#ffffff;
+  padding: 70px 20px;
   text-align: center;
-
-  &__item {
-    padding: 70px 30px 0;
-
-    .p--title {
-      font-family: 'Open Sans', sans-serif;
-      letter-spacing: normal;
-    }
-
-    @media (max-width: $break-mobile) {
-      padding: 70px 0 0;
-    }
-  }
-
-  &__footnote {
-    margin-top: 70px;
-    display: inline-block;
-  }
 }
 
-.gold-cta {
-  background: url("http://cdn.besynchro.com/gold/Gold-leaf-smaller.jpg") center no-repeat;
+.genesis-cta {
+  background: url("http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg") center no-repeat;
   background-size: cover;
   padding: 120px 0;
   text-align: center;
