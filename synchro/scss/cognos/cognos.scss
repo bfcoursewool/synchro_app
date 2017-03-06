@@ -1,0 +1,132 @@
+@import 'landing_base';
+
+.genesis-atf {
+  text-align: center;
+
+  &__image {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/**/
+
+.cognos-benefits {
+
+  &__item {
+    text-align: center;
+  }
+
+  &__img {
+    max-width: 130px;
+  }
+
+  &__header {
+    margin: 10px 0;
+  }
+}
+
+.keystone-ingredients {
+  width: 100%;
+  text-align: center;
+  background-color: #f3f6f9;
+  padding: 70px 20px;
+
+  &__img {
+
+  }
+
+  &__info {
+
+  }
+}
+
+.faq {
+  background-color: white;
+  text-align: center;
+  padding: 70px 35px;
+
+  &__text {
+    text-align: left;
+    padding: 20px 0;
+  }
+
+  .p--text {
+    margin-top: 20px;
+    color: #7b858b;
+  }
+}
+
+
+.use {
+  background: #F6F8FB;
+  padding: 70px 20px;
+
+  @media (max-width: $break-mobile) {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  .p--title:after {
+    margin-left: 0;
+
+    @media (max-width: $break-mobile) {
+      margin-left: auto;
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+
+    @media (max-width: $break-mobile) {
+      margin-bottom: 40px;
+      max-width: 100%;
+    }
+  }
+}
+
+.ingredients-header {
+  background: url('http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg') no-repeat center center;
+  background-size: cover;
+  color:#ffffff;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.cognos-cta {
+  background: url("http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg") center no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  text-align: center;
+
+  &__brandname {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 18px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  &__title {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 44px;
+    margin: 20px 60px 30px;
+    font-weight: 300;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+
+    @media (max-width: $break-mobile) {
+      font-size: 40px;
+    }
+  }
+
+  &__cta {
+    padding: 15px 30px;
+  }
+}

@@ -23,6 +23,15 @@ endpoint_info_dict = {
       }
     }
   },
+  'cognos': {
+    'v0': {
+      'template': 'landing_pages/cognos/cognos.html',
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'template_vars': {
+        'stylesheet': 'cognos/cognos.css'
+      }
+    }
+  },
   'salt': {
     'v0': {
       'template': 'landing_pages/salt/salt.html',
