@@ -68,6 +68,9 @@ def landing_page(page, version):
   # in other words if this is a health-check request going directly to an instance's ephemeral ip
   # let's not set the page to 3 numerical digits.
   if const.kENVIRONMENT == 'production' and subdomain.isalpha():
+    # For addresses like: gold.besynchro.com/1 the first arg is actually the version, but it comes 
+    # through here as "page" because of how the route is set up... 
+    version = page
     page = subdomain
 
   # Page and version can also be passed in as GET vars, for URL-formatting reasons
@@ -82,8 +85,7 @@ def landing_page(page, version):
 
   # Fail if we don't have a valid page or version.
   assert page in endpoint_info_dict
-  if version not in endpoint_info_dict[page]:
-    version = 'v0'
+  assert version in endpoint_info_dict[page]
 
   # Assert that each version entry in the info_dict contains both a template to render and a list of scripts to include.
   # A failed assertion should happen only during development, so this helps ensure developer consistency.
