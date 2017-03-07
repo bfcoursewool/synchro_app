@@ -28,7 +28,7 @@ endpoint_info_dict = {
   },
   'gold': {
     'v0': {
-      'template': 'landing_pages/gold/gold.html',
+      'template': 'landing_pages/gold/gold_organic.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
@@ -36,7 +36,7 @@ endpoint_info_dict = {
       }
     },
     '1': {
-      'template': 'landing_pages/gold/gold_pain.html',
+      'template': 'landing_pages/gold/gold_paid.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
