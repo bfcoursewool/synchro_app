@@ -76,6 +76,7 @@ endpoint_info_dict = {
   }
 }
 
+
 @landing_pages.route('/', defaults={'page': 'none', 'version': 'v0'})
 @landing_pages.route('/<page>/', defaults={'version': 'v0'})
 @landing_pages.route('/<page>/<version>')
