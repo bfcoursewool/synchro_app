@@ -11,6 +11,11 @@ from synchro.third_party_resources import (
   wowjs
 )
 
+synchro_es6 = Resource(
+  library_frontend_build, 'synchro.js',
+  bottom=True
+)
+
 synchro_shopify = Resource(
   library_frontend_build, 'synchro.min.js',
   depends=[

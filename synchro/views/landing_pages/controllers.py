@@ -7,7 +7,13 @@ from flask import (
   request
 )
 from synchro.third_party_resources import bootstrap, bootstrap_css
-from synchro.resources import synchro_shopify, synchro_buy_button, synchro_effects, analytics
+from synchro.resources import (
+  synchro_shopify, 
+  synchro_buy_button, 
+  synchro_effects, 
+  analytics,
+  synchro_es6
+)
 from synchro.third_party_resources import wowjs, videojsga, videojsie8
 from synchro import const
 
@@ -26,7 +32,7 @@ endpoint_info_dict = {
   'cognos': {
     'v0': {
       'template': 'landing_pages/cognos/cognos.html',
-      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'stylesheet': 'cognos/cognos.css'
       }

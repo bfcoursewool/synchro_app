@@ -3,7 +3,6 @@
 jQuery(document).ready(function($){
 
   setTimeout(function() {
-    console.log("loaded fb stuff..."); 
     $('.shopify-buy__btn').click(function() {
       var price = $(this).parent().find('.shopify-buy__product__actual-price').html();
       price = price.replace(/\$/g, ''); 
