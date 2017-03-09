@@ -26,8 +26,9 @@
   }
 }
 
-
 .genesis-ingredients {
+
+  text-align: left;
 
   &__header {
     background: url('http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg') no-repeat center center;
@@ -39,6 +40,26 @@
     width: 100%;
     text-align: center;
     background-color: #f3f6f9;
+  }
+
+  &__img {
+    width: 70%;
+    margin: 40px 0;
+  }
+
+  &__info {
+    text-align: left;
+  }
+
+  &__item {
+
+    .p--title {
+      text-align: left;
+
+      &:after {
+        margin-left: 0;
+      }
+    }
   }
 }
 
