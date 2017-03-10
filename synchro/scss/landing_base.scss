@@ -330,7 +330,6 @@ GLOBAL SECTIONS
   }
 
   &__img {
-    width: 600px;
 
     @media (max-width: $break-tablet) {
       max-width: 80%;

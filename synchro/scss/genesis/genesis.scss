@@ -74,6 +74,7 @@
 
 .genesis-facts {
   box-shadow: 0px -4px 3px rgba(0,0,0,0.05);
+  text-align: center;
 }
 
 .genesis-use {
@@ -92,43 +93,16 @@
   }
 }
 
-/**/
+/* landing_base overwrites */
 
 .faq {
   background-color: white;
 }
 
-.genesis-cta {
+.cta-section {
   background: url("http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg") center no-repeat;
-  background-size: cover;
-  padding: 120px 0;
-  text-align: center;
-
-  &__brandname {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    letter-spacing: 4px;
-    font-size: 18px;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  &__title {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-size: 44px;
-    margin: 20px 60px 30px;
-    font-weight: 300;
-    line-height: 1.4;
-    -webkit-font-smoothing: antialiased;
-
-    @media (max-width: $break-mobile) {
-      font-size: 40px;
-    }
-  }
 
   &__cta {
-    padding: 15px 30px;
     background: white;
     color: #2f90d9;
   }
