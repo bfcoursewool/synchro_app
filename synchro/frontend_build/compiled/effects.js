@@ -1,4 +1,42 @@
+// TODO -- Fix the heinousness of this mess. Please. 
+
 $(function() {
+
+  // Controls modal stuff for the popup video (Popup VIDeo!)
+  var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
+
+  $('a[data-modal-id]').click(function(e) {
+    e.preventDefault();
+    videojs('my-video').play();
+    $("body").append(appendthis);
+    $(".modal-overlay").fadeTo(500, 0.7);
+    //$(".js-modalbox").fadeIn(500);
+    var modalBox = $(this).attr('data-modal-id');
+    $('#'+modalBox).fadeIn($(this).data());
+  });  
+    
+    
+  $(".js-modal-close, .modal-overlay").click(function() {
+    videojs('my-video').pause();
+    $(".modal-box, .modal-overlay").fadeOut(500, function() {
+      $(".modal-overlay").remove();
+    });
+  });
+   
+  $(window).resize(function() {
+    $(".modal-box").css({
+      top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
+      left: ($(window).width() - $(".modal-box").outerWidth()) / 2
+    });
+  });
+   
+  $(window).resize();
+
+  $('.vjs-big-play-button').click(function() {
+    if($(this).closest('#popup-video').length === 0) {
+      $('.main-banner__uvp').addClass('hidden');
+    }
+  });
 
   new WOW().init();
 
@@ -20,11 +58,6 @@ $(function() {
     if($(window).width() < 991) {
       toggleNav();      
     }
-  });
-
-  $('.vjs-big-play-button').click(function() {
-    console.log("test..."); 
-    $('.main-banner__uvp').addClass('hidden');
   });
 
   // Smooth scroll for nav menu anchor links
