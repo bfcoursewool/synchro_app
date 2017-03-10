@@ -9,11 +9,13 @@
 
     .main-header {
       background: rgba(193,138,8,0.10);
+      transition: all 0.75s ease;
+      -moz-transition: all 0.75s ease;
+      -webkit-transition: all 0.75s ease;
 
       &.floated {
         background: rgba(64, 64, 64, 0.9);
       }
-
 
       .main-navigation {
 
