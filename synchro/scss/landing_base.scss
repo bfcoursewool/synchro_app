@@ -304,38 +304,27 @@ GLOBAL SECTIONS
 
 /* product ingredients section */
 .ingredients {
-
-  @media (max-width: $break-tablet) {
-    text-align: center;
-  }
+  text-align: center;
+  padding-bottom: 70px;
 
   &__item {
-    padding: 70px 20px;
-
-    @media (max-width: $break-tablet) {
-      padding-bottom: 0;
-    }
+    padding: 70px 40px 0;
   }
 
-  &__title {
-    margin-bottom: 20px;
+  &__img-box {
+    height: 300px;
   }
 
-  .p--title {
-    text-align: left;
-
-    &:after {
-      margin-left: 0;
-    }
+  &__img-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
   }
 
   &__img {
-
-    @media (max-width: $break-tablet) {
-      max-width: 80%;
-      float: none;
-      margin-top: 50px;
-    }
+    max-width: 90%;
+    max-height: 90%;
+    vertical-align: middle;
   }
 }
 
