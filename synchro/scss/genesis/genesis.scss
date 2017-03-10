@@ -4,7 +4,8 @@
   text-align: center;
 
   &__image {
-    max-width: 700px;
+    max-width: 90%;
+    width: 700px;
     margin: 0 auto;
   }
 }
@@ -75,6 +76,10 @@
 .genesis-facts {
   box-shadow: 0px -4px 3px rgba(0,0,0,0.05);
   text-align: center;
+
+  img {
+    max-width: 90%;
+  }
 }
 
 .genesis-use {
@@ -90,6 +95,10 @@
   &__img {
     width: 100%;
     max-width: 600px;
+
+    @media (max-width: $break-mobile) {
+      margin-top: 50px;
+    }
   }
 }
 

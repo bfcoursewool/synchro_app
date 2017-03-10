@@ -87,6 +87,11 @@ $break-desktop: 1199px;
 .section--padding {
   padding-top: 70px;
   padding-bottom: 70px;
+
+  @media (max-width: $break-mobile) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .bg--ltgrey {
