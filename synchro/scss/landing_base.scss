@@ -1,13 +1,11 @@
 @import 'reset_default';
 
 /* responsive break points */
-
 $break-mobile: 767px;
 $break-tablet: 991px;
 $break-desktop: 1199px;
 
 /* global styles for synchro landing pages */
-
 .container-fluid {
   max-width: 1400px;
   padding-left: 5% !important;
@@ -15,7 +13,6 @@ $break-desktop: 1199px;
 }
 
 /* main h1 text */
-
 .p--header {
   font-family: 'Open Sans', sans-serif;
   font-size: 38px;
@@ -34,7 +31,6 @@ $break-desktop: 1199px;
 }
 
 /* section title text */
-
 .p--title {
   display: block;
   font-family: 'Raleway', sans-serif;
@@ -59,7 +55,6 @@ $break-desktop: 1199px;
 }
 
 /* paragraph text */
-
 .p--text {
   font-family: 'Open Sans', sans-serif;
   color: #3f3f3f;
@@ -71,8 +66,7 @@ $break-desktop: 1199px;
   margin-bottom: 1em;
 }
 
-/* text enhancers */
-
+/* text styles */
 .p--white {
   color: #fff;
 }
@@ -89,6 +83,16 @@ $break-desktop: 1199px;
   text-decoration: line-through;
 }
 
+/* layout styles */
+.section--padding {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.bg--ltgrey {
+  background: #F6F8FB;
+}
+
 .right {
   float: right;
 }
@@ -97,8 +101,12 @@ $break-desktop: 1199px;
   float: left;
 }
 
-/* primary call-to-action button */
+a.anchor {
+  position: relative;
+  top: -55px;
+}
 
+/* primary call-to-action button */
 .a--cta,
 .shopify-buy__btn {
   display: inline-block;
@@ -122,17 +130,9 @@ $break-desktop: 1199px;
   }
 }
 
-a.anchor {
-  position: relative;
-  top: -55px;
-}
-
-/* layout styles */
-
-.section--padding {
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
+/**************
+GLOBAL SECTIONS
+**************/
 
 /* main navigation */
 .main-header-container {
@@ -254,9 +254,9 @@ a.anchor {
     }
   }
 }
-/* product claim icons */
 
-.claims {
+/* product claim icons */
+.claim-icons {
   box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.05);
   padding: 30px 0;
   text-align: center;
@@ -269,6 +269,7 @@ a.anchor {
     display: inline-block;
     width: 20%;
     margin: 30px 0;
+    vertical-align: top;
 
     @media (max-width: $break-mobile) {
       width: 30%;
@@ -286,10 +287,61 @@ a.anchor {
   }
 }
 
-/* product purchase section */
+/* product info section */
+.product-info {
+  background: #F6F8FB;
+  text-align: center;
 
+  &__text {
+    font-size: 18px;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* product ingredients section */
+.ingredients {
+
+  @media (max-width: $break-tablet) {
+    text-align: center;
+  }
+
+  &__item {
+    padding: 70px 20px;
+
+    @media (max-width: $break-tablet) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  .p--title {
+    text-align: left;
+
+    &:after {
+      margin-left: 0;
+    }
+  }
+
+  &__img {
+    width: 600px;
+
+    @media (max-width: $break-tablet) {
+      max-width: 80%;
+      float: none;
+      margin-top: 50px;
+    }
+  }
+}
+
+/* product purchase section */
 .purchase {
-  padding: 70px 20px;
   text-align: center;
 
   &__item {
@@ -348,8 +400,21 @@ a.anchor {
   }
 }
 
-/* more products section */
+/* shipping info section */
+.guarantee {
+  text-align: center;
 
+  &__img {
+    max-width: 100%;
+
+    @media (max-width: $break-mobile) {
+      max-width: 90%;
+      margin: 0 auto 30px;
+    }
+  }
+}
+
+/* more products section */
 .synchro-products {
   padding: 70px 20px;
   text-align: center;
@@ -362,7 +427,6 @@ a.anchor {
 }
 
 /* customer review section */
-
 .synchro-reviews {
   display: block;
   background: #F6F8FB;
@@ -371,7 +435,6 @@ a.anchor {
 }
 
 /* product faq section */
-
 .faq {
   background: #F6F8FB;
   text-align: center;
@@ -379,7 +442,6 @@ a.anchor {
 
   &__text {
     text-align: left;
-    padding: 20px 0;
   }
 
   .p--text {
@@ -388,8 +450,42 @@ a.anchor {
   }
 }
 
-/* landing page footer */
+/* cta section */
+.cta-section {
+  background: url("http://cdn.besynchro.com/gold/Gold-leaf-smaller.jpg") center no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  text-align: center;
 
+  &__brandname {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 18px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  &__title {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 44px;
+    margin: 20px 60px 30px;
+    font-weight: 300;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+
+    @media (max-width: $break-mobile) {
+      font-size: 40px;
+    }
+  }
+
+  &__cta {
+    padding: 15px 30px;
+  }
+}
+
+/* landing page footer */
 .footer {
   padding: 30px 0;
   font-family: 'Raleway', sans-serif;
@@ -435,235 +531,6 @@ a.anchor {
     &:hover {
       color: #22bad8;
       text-decoration: none;
-    }
-  }
-}
-
-/* global styles end */
-
-/* gold styles */
-
-.gold-atf {
-  text-align: center;
-  position: relative;
-
-  @media (max-width: $break-mobile) {
-    padding-top: 30px;
-  }
-
-  &__image {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  &__uvp {
-    text-align: left;
-    position: absolute;
-    top: 200px;
-    left: calc(50% - 430px);
-
-    @media (max-width: $break-tablet) {
-      top: 215px;
-      left: 20px;
-    }
-
-    @media (max-width: $break-mobile) {
-      position: initial;
-      display: inline-block;
-    }
-  }
-
-  &__item {
-    margin: 5px;
-    font-size: 18px;
-
-    @media (max-width: $break-tablet) {
-      font-size: initial;
-    }
-
-    @media (max-width: $break-mobile) {
-      display: block;
-    }
-
-    &:before {
-      content: '\f00c';
-      font-family: FontAwesome;
-      color: #4ca4e6;
-      margin-right: 10px;
-    }
-  }
-}
-
-.product-info {
-  background: #F6F8FB;
-  text-align: center;
-
-  &__text {
-    font-size: 18px;
-  }
-
-  &__title {
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-.benefits {
-  padding: 70px 20px;
-  text-align: center;
-
-  &__item {
-    display: inline-block;
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
-
-    @media (max-width: $break-tablet) {
-      padding-right: 25px;
-      padding-left: 25px;
-    }
-  }
-
-  &__img {
-
-    @media (max-width: $break-tablet) {
-      width: 50%;
-    }
-
-    @media (max-width: $break-mobile) {
-      max-width: 150px;
-    }
-  }
-
-  &__header {
-    margin: 50px 0 20px;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: normal;
-
-    &:after {
-      display: none;
-    }
-  }
-}
-
-.ingredients-header {
-  background: #F6F8FB;
-  padding: 70px 20px;
-  text-align: center;
-}
-
-.ingredients {
-
-  @media (max-width: $break-tablet) {
-    text-align: center;
-  }
-
-
-  &__item {
-    padding: 70px 20px;
-
-    @media (max-width: $break-tablet) {
-      padding-bottom: 0;
-    }
-  }
-
-  &__title {
-    margin-bottom: 20px;
-  }
-
-  .p--title {
-    text-align: left;
-
-    &:after {
-      margin-left: 0;
-    }
-  }
-
-  &__img {
-    width: 600px;
-
-    @media (max-width: $break-tablet) {
-      max-width: 80%;
-      float: none;
-      margin-top: 50px;
-    }
-  }
-
-
-  &__extraction-img {
-    width: 600px;
-    float: right;
-
-    @media (max-width: $break-tablet) {
-      max-width: 80%;
-      float: none;
-      margin-top: 50px;
-    }
-  }
-
-  &__liposomal-img {
-    width: 600px;
-
-    @media (max-width: $break-tablet) {
-      max-width: 80%;
-      float: none;
-      margin-top: 50px;
-    }
-  }
-
-  &__pepper-img {
-    width: 600px;
-    float: right;
-
-    @media (max-width: $break-tablet) {
-      max-width: 80%;
-      float: none;
-      margin-top: 50px;
-      padding-bottom: 70px;
-    }
-  }
-}
-
-.facts {
-  background: #F6F8FB;
-  padding: 70px 20px;
-
-  @media (max-width: $break-mobile) {
-    text-align: center;
-  }
-
-  &__title {
-    margin-bottom: 20px;
-  }
-
-  .p--title:after {
-    margin-left: 0;
-
-    @media (max-width: $break-mobile) {
-      margin-left: auto;
-    }
-  }
-
-  &__img {
-    display: block;
-    margin: 0 auto;
-
-    @media (max-width: $break-mobile) {
-      margin-bottom: 40px;
-      max-width: 100%;
-    }
-  }
-}
-
-.info {
-  text-align: center;
-
-  &__img {
-    max-width: 100%;
-
-    @media (max-width: $break-mobile) {
-      max-width: 90%;
-      margin: 0 auto 30px;
     }
   }
 }

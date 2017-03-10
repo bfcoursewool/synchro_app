@@ -4,7 +4,7 @@
   text-align: center;
 
   &__image {
-    max-width: 100%;
+    max-width: 700px;
     margin: 0 auto;
   }
 }
@@ -42,7 +42,7 @@
     background-color: #f3f6f9;
   }
 
-  &__img {
+  &__keystone-img {
     width: 70%;
     margin: 40px 0;
   }
@@ -52,6 +52,7 @@
   }
 
   &__item {
+    margin: 60px 0;
 
     .p--title {
       text-align: left;
@@ -60,6 +61,34 @@
         margin-left: 0;
       }
     }
+
+    .p--text {
+      text-align: left;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+}
+
+.genesis-facts {
+  box-shadow: 0px -4px 3px rgba(0,0,0,0.05);
+}
+
+.genesis-use {
+
+  .p--title {
+    text-align: left;
+
+    &:after {
+      margin-left: 0;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 600px;
   }
 }
 
@@ -67,50 +96,6 @@
 
 .faq {
   background-color: white;
-  text-align: center;
-  padding: 70px 35px;
-
-  &__text {
-    text-align: left;
-    padding: 20px 0;
-  }
-
-  .p--text {
-    margin-top: 20px;
-    color: #7b858b;
-  }
-}
-
-
-.use {
-  background: #F6F8FB;
-  padding: 70px 20px;
-
-  @media (max-width: $break-mobile) {
-    text-align: center;
-  }
-
-  &__title {
-    margin-bottom: 20px;
-  }
-
-  .p--title:after {
-    margin-left: 0;
-
-    @media (max-width: $break-mobile) {
-      margin-left: auto;
-    }
-  }
-
-  &__img {
-    display: block;
-    margin: 0 auto;
-
-    @media (max-width: $break-mobile) {
-      margin-bottom: 40px;
-      max-width: 100%;
-    }
-  }
 }
 
 .genesis-cta {
@@ -144,5 +129,7 @@
 
   &__cta {
     padding: 15px 30px;
+    background: white;
+    color: #2f90d9;
   }
 }
