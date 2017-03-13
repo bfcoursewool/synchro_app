@@ -15,11 +15,29 @@
       &.floated {
         background: rgba(240,240,240,0.9);
 
-        .main-navigation__item {
-          color: #000000;
-          transition: all 1s ease;
-          -moz-transition: all 1s ease;
-          -webkit-transition: all 1s ease;
+        .main-navigation {
+
+          @media (max-width: $break-tablet) {
+            background: rgba(240,240,240,0.9);
+          }
+
+          &__item {
+            color: #3f3f3f;
+            transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+
+            @media (max-width: $break-tablet) {
+              border-top: 1px solid #FFF;
+            }
+          }
+
+          &__hamburger {
+            background-color: #3f3f3f;
+            transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+          }
         }
 
         .synchro-logo {
@@ -47,7 +65,7 @@
           color: #fff;
 
           @media (max-width: $break-tablet) {
-            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
           }
         }
 
@@ -57,6 +75,7 @@
       }
     }
   }
+
   .main-banner {
     text-align: left;
     padding-top: 180px;
@@ -161,20 +180,8 @@
     box-shadow: none;
     padding-top: 50px;
   }
-}
 
-/* variant 2 styles */
-.cro004-2 {
-}
-
-/* variant 3 styles */
-.cro004-3 {
-}
-
-/* variant 4 styles */
-.cro004-4 {
   .modal-box {
-    display: none;
     position: absolute;
     z-index: 1000;
     width: 98%;
@@ -184,6 +191,7 @@
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-clip: padding-box;
+    transform: translate(-50%, -50%);
   }
 
   .modal-box header,
@@ -231,4 +239,25 @@
   @media (min-width: 32em) {
     .modal-box { width: 70%; }
   }
+}
+
+/* variant 2 styles */
+
+.cro004-2 {
+
+  .main-banner {
+    text-align: left;
+
+    &__headline {
+      max-width: 750px;
+
+      @media (max-width: $break-mobile) {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+/* variant 3 styles */
+.cro004-3 {
 }
