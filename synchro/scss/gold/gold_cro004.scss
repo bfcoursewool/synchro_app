@@ -6,15 +6,35 @@
   .main-header-container {
     height: 0;
 
-
     .main-header {
       background: rgba(193,138,8,0.10);
-      transition: all 0.75s ease;
-      -moz-transition: all 0.75s ease;
-      -webkit-transition: all 0.75s ease;
+      transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
 
       &.floated {
-        background: rgba(64, 64, 64, 0.9);
+        background: rgba(240,240,240,0.9);
+
+        .main-navigation__item {
+          color: #000000;
+          transition: all 1s ease;
+          -moz-transition: all 1s ease;
+          -webkit-transition: all 1s ease;
+        }
+
+        .synchro-logo {
+          fill: #231f20;
+          transition: all 1s ease;
+          -moz-transition: all 1s ease;
+          -webkit-transition: all 1s ease;
+        }
+      }
+
+      &__logo {
+
+        .synchro-logo {
+          fill: #fff;
+        }
       }
 
       .main-navigation {
@@ -34,11 +54,8 @@
         @media (max-width: $break-tablet) {
           background: rgba(125, 78,6, 0.9);
         }
-
       }
-
     }
-
   }
   .main-banner {
     text-align: left;
@@ -154,7 +171,7 @@
 .cro004-3 {
 }
 
-/* variant 4 styles */ 
+/* variant 4 styles */
 .cro004-4 {
   .modal-box {
     display: none;
