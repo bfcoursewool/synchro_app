@@ -1,4 +1,4 @@
-@import 'landing_base'; 
+@import 'landing_base';
 
 /* synchro gold styles */
 .main-header-container {
@@ -283,9 +283,12 @@
 }
 
 .gold-innovation {
-  background: #F6F8FB;
-  padding: 70px 20px;
+  padding: 70px 20px 0 20px;
   text-align: center;
+
+  @media (max-width: $break-tablet) {
+    display: none;
+  }
 }
 
 .gold-ingredients {
