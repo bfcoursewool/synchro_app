@@ -23,6 +23,7 @@ $(function() {
     });
   });
    
+  /*
   $(window).resize(function() {
     $(".modal-box").css({
       top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
@@ -31,6 +32,7 @@ $(function() {
   });
    
   $(window).resize();
+  */ 
 
   $('.vjs-big-play-button').click(function() {
     if($(this).closest('#popup-video').length === 0) {
