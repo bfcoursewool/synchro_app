@@ -58,7 +58,7 @@ endpoint_info_dict = {
   },
   'cro002': {
     'v1' : {
-      'template': 'landing_pages/gold/gold_cro002-1.html',
+      'template': 'landing_pages/gold/abtests/gold_cro002-1.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': False,
@@ -67,7 +67,7 @@ endpoint_info_dict = {
       }
     },
     'v2' : {
-      'template': 'landing_pages/gold/gold_cro002-2.html',
+      'template': 'landing_pages/gold/abtests/gold_cro002-2.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': False,
@@ -78,7 +78,7 @@ endpoint_info_dict = {
   },
   'cro004': {
     'v1' : {
-      'template': 'landing_pages/gold/gold_cro004-1.html',
+      'template': 'landing_pages/gold/abtests/gold_cro004-1.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': False,
@@ -87,7 +87,7 @@ endpoint_info_dict = {
       }
     },
     'v2' : {
-      'template': 'landing_pages/gold/gold_cro004-2.html',
+      'template': 'landing_pages/gold/abtests/gold_cro004-2.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': False,
@@ -96,7 +96,7 @@ endpoint_info_dict = {
       }
     },
     'v3' : {
-      'template': 'landing_pages/gold/gold_cro004-3.html',
+      'template': 'landing_pages/gold/abtests/gold_cro004-3.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': False,
@@ -105,7 +105,7 @@ endpoint_info_dict = {
       }
     },
     'v4' : {
-      'template': 'landing_pages/gold/gold_cro004-4.html',
+      'template': 'landing_pages/gold/abtests/gold_cro004-4.html',
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': False,
