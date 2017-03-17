@@ -63,7 +63,7 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': False,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/gold_cro002.css'
+        'stylesheet': 'gold/abtests/gold_cro002.css'
       }
     },
     'v2' : {
@@ -72,7 +72,7 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': False,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/gold_cro002.css'
+        'stylesheet': 'gold/abtest/gold_cro002.css'
       }
     }
   },
@@ -83,7 +83,7 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': False,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/gold_cro004.css'
+        'stylesheet': 'gold/abtests/gold_cro004.css'
       }
     },
     'v2' : {
@@ -92,7 +92,7 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': False,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/gold_cro004.css'
+        'stylesheet': 'gold/abtests/gold_cro004.css'
       }
     },
     'v3' : {
@@ -101,7 +101,7 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': False,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/gold_cro004.css'
+        'stylesheet': 'gold/abtests/gold_cro004.css'
       }
     },
     'v4' : {
@@ -110,7 +110,7 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': False,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/gold_cro004.css'
+        'stylesheet': 'gold/abtests/gold_cro004.css'
       }
     }
   }
