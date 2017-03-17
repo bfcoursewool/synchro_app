@@ -4,7 +4,8 @@
   text-align: center;
 
   &__image {
-    max-width: 100%;
+    max-width: 90%;
+    width: 700px;
     margin: 0 auto;
   }
 }
@@ -42,7 +43,7 @@
     background-color: #f3f6f9;
   }
 
-  &__img {
+  &__keystone-img {
     width: 70%;
     margin: 40px 0;
   }
@@ -52,6 +53,7 @@
   }
 
   &__item {
+    margin: 60px 0;
 
     .p--title {
       text-align: left;
@@ -60,89 +62,57 @@
         margin-left: 0;
       }
     }
-  }
-}
 
-/**/
-
-.faq {
-  background-color: white;
-  text-align: center;
-  padding: 70px 35px;
-
-  &__text {
-    text-align: left;
-    padding: 20px 0;
-  }
-
-  .p--text {
-    margin-top: 20px;
-    color: #7b858b;
-  }
-}
-
-
-.use {
-  background: #F6F8FB;
-  padding: 70px 20px;
-
-  @media (max-width: $break-mobile) {
-    text-align: center;
-  }
-
-  &__title {
-    margin-bottom: 20px;
-  }
-
-  .p--title:after {
-    margin-left: 0;
-
-    @media (max-width: $break-mobile) {
-      margin-left: auto;
+    .p--text {
+      text-align: left;
     }
   }
 
   &__img {
-    display: block;
-    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+.genesis-facts {
+  box-shadow: 0px -4px 3px rgba(0,0,0,0.05);
+  text-align: center;
+
+  img {
+    max-width: 90%;
+  }
+}
+
+.genesis-use {
+
+  .p--title {
+    text-align: left;
+
+    &:after {
+      margin-left: 0;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 600px;
 
     @media (max-width: $break-mobile) {
-      margin-bottom: 40px;
-      max-width: 100%;
+      margin-top: 50px;
     }
   }
 }
 
-.genesis-cta {
+/* landing_base overwrites */
+
+.faq {
+  background-color: white;
+}
+
+.cta-section {
   background: url("http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg") center no-repeat;
-  background-size: cover;
-  padding: 120px 0;
-  text-align: center;
-
-  &__brandname {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    letter-spacing: 4px;
-    font-size: 18px;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  &__title {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-size: 44px;
-    margin: 20px 60px 30px;
-    font-weight: 300;
-    line-height: 1.4;
-    -webkit-font-smoothing: antialiased;
-
-    @media (max-width: $break-mobile) {
-      font-size: 40px;
-    }
-  }
 
   &__cta {
-    padding: 15px 30px;
+    background: white;
+    color: #2f90d9;
   }
 }

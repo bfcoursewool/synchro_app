@@ -1,9 +1,109 @@
-@import 'landing_base'; 
+@import 'landing_base';
 
+/* gold styles */
 
-.facts {
-  background: #F6F8FB;
+.gold-atf {
+  text-align: center;
+  position: relative;
+
+  @media (max-width: $break-mobile) {
+    padding-top: 30px;
+  }
+
+  &__image {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  &__uvp {
+    text-align: left;
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 430px);
+
+    @media (max-width: $break-tablet) {
+      top: 215px;
+      left: 20px;
+    }
+
+    @media (max-width: $break-mobile) {
+      position: initial;
+      display: inline-block;
+    }
+  }
+
+  &__item {
+    margin: 5px;
+    font-size: 18px;
+
+    @media (max-width: $break-tablet) {
+      font-size: initial;
+    }
+
+    @media (max-width: $break-mobile) {
+      display: block;
+    }
+
+    &:before {
+      content: '\f00c';
+      font-family: FontAwesome;
+      color: #4ca4e6;
+      margin-right: 10px;
+    }
+  }
+}
+
+.gold-benefits {
   padding: 70px 20px;
+  text-align: center;
+
+  &__item {
+    display: inline-block;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    @media (max-width: $break-tablet) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+  }
+
+  &__img {
+
+    @media (max-width: $break-tablet) {
+      width: 50%;
+    }
+
+    @media (max-width: $break-mobile) {
+      max-width: 150px;
+    }
+  }
+
+  &__header {
+    margin: 50px 0 20px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: normal;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.gold-ingredients {
+
+  &__header {
+    background: #F6F8FB;
+    text-align: center;
+
+    .p--title {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.gold-use {
 
   @media (max-width: $break-mobile) {
     text-align: center;
@@ -11,6 +111,7 @@
 
   &__title {
     margin-bottom: 20px;
+    text-align: left;
   }
 
   .p--title:after {
@@ -33,7 +134,8 @@
 }
 
 .gold-research {
-  padding: 70px 35px;
+  padding-left: 35px;
+  padding-right: 35px;
   text-align: center;
 
   &__item {
@@ -45,7 +147,8 @@
     }
 
     @media (max-width: $break-mobile) {
-      padding: 70px 0 0;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -55,36 +158,44 @@
   }
 }
 
-.gold-cta {
-  background: url("http://cdn.besynchro.com/gold/Gold-leaf-smaller.jpg") center no-repeat;
-  background-size: cover;
-  padding: 120px 0;
-  text-align: center;
+/* landing_base overwrites */
 
-  &__brandname {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    letter-spacing: 4px;
-    font-size: 18px;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-  }
+.ingredients {
 
-  &__title {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-size: 44px;
-    margin: 20px 60px 30px;
-    font-weight: 300;
-    line-height: 1.4;
-    -webkit-font-smoothing: antialiased;
+  &__extraction-img {
+    width: 600px;
+    float: right;
 
-    @media (max-width: $break-mobile) {
-      font-size: 40px;
+    @media (max-width: $break-tablet) {
+      max-width: 80%;
+      float: none;
+      margin-top: 50px;
     }
   }
 
-  &__cta {
-    padding: 15px 30px;
+  &__liposomal-img {
+    width: 600px;
+
+    @media (max-width: $break-tablet) {
+      max-width: 80%;
+      float: none;
+      margin-top: 50px;
+    }
   }
+
+  &__pepper-img {
+    width: 600px;
+    float: right;
+
+    @media (max-width: $break-tablet) {
+      max-width: 80%;
+      float: none;
+      margin-top: 50px;
+      padding-bottom: 70px;
+    }
+  }
+}
+
+.cta-section {
+  background: url("http://cdn.besynchro.com/gold/Gold-leaf-smaller.jpg") center no-repeat;
 }
