@@ -329,13 +329,12 @@
     height: 0;
 
     .main-header {
+      background: rgba(252, 165, 6, 0.9);
+      box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+      padding: 10px 20px;
       transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
       -webkit-transition: all 0.5s ease;
-
-      @media (max-width: $break-tablet) {
-        background: rgba(193,138,8,0.10);
-      }
 
       &.floated {
         background: rgba(240,240,240,0.9);
@@ -348,9 +347,9 @@
 
           &__item {
             color: #3f3f3f;
-            transition: all 1s ease;
-            -moz-transition: all 1s ease;
-            -webkit-transition: all 1s ease;
+            transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
 
             @media (max-width: $break-tablet) {
               border-top: 1px solid #FFF;
@@ -359,17 +358,17 @@
 
           &__hamburger {
             background-color: #3f3f3f;
-            transition: all 1s ease;
-            -moz-transition: all 1s ease;
-            -webkit-transition: all 1s ease;
+            transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
           }
         }
 
         .synchro-logo {
           fill: #231f20;
-          transition: all 1s ease;
-          -moz-transition: all 1s ease;
-          -webkit-transition: all 1s ease;
+          transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -webkit-transition: all 0.5s ease;
         }
       }
 
@@ -402,7 +401,7 @@
   }
 
   .main-banner {
-    padding-top: 150px;
+    padding-top: 120px;
 
     @media (max-width: $break-mobile) {
       padding-top: 100px;
