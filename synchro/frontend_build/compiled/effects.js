@@ -78,7 +78,7 @@ $(function() {
   });
 
   // Pin main header/nav menu to the top of the browser window when scrolling, and unpin it when at the top
-  var maxScroll = 100;
+  var maxScroll = $('.main-header').attr('data-max-scroll') ? $('.main-header').attr('data-max-scroll') : 100;
 
   $(window).scroll(function() {
     var navbar = $('.main-header');
