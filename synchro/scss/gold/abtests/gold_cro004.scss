@@ -321,4 +321,212 @@
 
 /* variant 3 styles */
 .cro004-3 {
+
+  .main-header-container {
+    height: 0;
+
+    .main-header {
+      transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+
+      @media (max-width: $break-tablet) {
+        background: rgba(193,138,8,0.10);
+      }
+
+      &.floated {
+        background: rgba(240,240,240,0.9);
+
+        .main-navigation {
+
+          @media (max-width: $break-tablet) {
+            background: rgba(240,240,240,0.9);
+          }
+
+          &__item {
+            color: #3f3f3f;
+            transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+
+            @media (max-width: $break-tablet) {
+              border-top: 1px solid #FFF;
+            }
+          }
+
+          &__hamburger {
+            background-color: #3f3f3f;
+            transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+          }
+        }
+
+        .synchro-logo {
+          fill: #231f20;
+          transition: all 1s ease;
+          -moz-transition: all 1s ease;
+          -webkit-transition: all 1s ease;
+        }
+      }
+
+      &__logo {
+
+        .synchro-logo {
+          fill: #fff;
+        }
+      }
+
+      .main-navigation {
+
+        &__hamburger {
+          background-color: #fff;
+        }
+
+        &__item {
+          color: #fff;
+
+          @media (max-width: $break-tablet) {
+            border-top: 1px solid rgba(255,255,255,0.1);
+          }
+        }
+
+        @media (max-width: $break-tablet) {
+          background: rgba(125, 78,6, 0.9);
+        }
+      }
+    }
+  }
+
+  .main-banner {
+    padding-top: 150px;
+
+    @media (max-width: $break-mobile) {
+      padding-top: 100px;
+    }
+
+    &__background {
+      position: relative;
+      top: -16px;
+      background-image: linear-gradient(-68deg, #FBB906 0%, #FE9806 97%);
+      max-height: 770px;
+
+      @media (max-width: $break-mobile) {
+        max-height: initial;
+      }
+    }
+
+    &__headline {
+      color: #fff;
+      margin-bottom: 20px;
+
+      @media (max-width: $break-mobile) {
+        font-size: 32px;
+      }
+    }
+
+    &__uvp {
+      position: initial;
+      line-height: 1.5;
+    }
+
+    &__item {
+      font-size: 23px;
+      color: #FDF7EF;
+      font-weight: 400;
+      padding-left: 1.5em;
+
+      @media (max-width: $break-mobile) {
+        font-size: 20px;
+      }
+
+      &:before {
+        color: #fff;
+        display: inline-block;
+        margin-left: -1.5em;
+      }
+    }
+
+    &__cta-temp {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    &__cta-text,
+    &__cta-text a {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      -webkit-font-smoothing: antialiased;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+      cursor: pointer;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    &__video {
+      background-image: linear-gradient(-180deg, #6ECAF0 0%, #40ACD7 56%, #1A8FBF 100%);
+      box-shadow: inset 0 1px 0 0 #C7EBFA, 0 10px 30px rgba(0,0,0,0.25);
+      border-radius: 3px;
+      padding: 16px 17px;
+
+      &:before {
+        content: '\f04b';
+        font-family: FontAwesome;
+        margin-right: 15px;
+      }
+    }
+
+    &__image {
+      max-width: 665px;
+
+      @media (max-width: $break-mobile) {
+        max-width: 90%;
+      }
+    }
+  }
+
+  .modal-box {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    text-align: right;
+
+    .js-modal-close {
+      font-size: 35px;
+      color: rgba(255,255,255,0.85);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      padding-right: 15px;
+    }
+
+    .gold-video {
+      width: 100%;
+      margin: 0;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 1000px;
+    }
+
+    .vjs-big-play-button {
+      display: none;
+    }
+  }
+
+  .gold-claims {
+    box-shadow: none;
+    padding-top: 110px;
+
+    @media (max-width: $break-mobile) {
+      padding-top: initial;
+    }
+  }
 }
