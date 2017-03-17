@@ -172,8 +172,11 @@ $(document).ready(function() {
     });
   });
 
+  var collection = $('.synchro-collection');
+  collectionId = collection.attr('data-collection-id');
+  console.log(collectionId); 
   ui.createComponent('productSet', {
-    id: 205866309,
+    id: collectionId,
     node: document.getElementById('synchro-product-set'),
     options: productSetOptions
   });
