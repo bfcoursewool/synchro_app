@@ -44,12 +44,28 @@
             <li class="main-banner__item p--text p--bold">Boosts immune Function</li>
             <li class="main-banner__item p--text p--bold">Naturally Energizing</li>
           </ul>
-          <div class="main-banner__cta-temp">
-            <button class="main-banner__video main-banner__cta-text">Watch the video
-            </button>
-            <a class="main-banner__cta-text" href="#overview">Learn more</a>
+          <a class="main-banner__video main-banner__cta-text js-open-modal" href="#" data-modal-id="popup-video"></a>
+          <img class="main-banner__image" src="http://cdn.besynchro.com/gold/gold-video-poster2.jpg">
+
+          <div id="popup-video" class="modal-box">
+            <div class="modal-body">
+              <a href="#" class="js-modal-close">×</a>
+              <div class="gold-video">
+                <video id="my-video" class="video-js vjs-16-9" controls="true" preload="auto" width="100%" height="100%" data-setup="{}" src="http://cdn.besynchro.com/gold/synchro_gold_15-12_2.mp4" type='video/mp4'>
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a web browser that
+                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+                <script>
+                  videojs('my-video', {}, function() {
+                    this.ga();
+                    // "load the plugin, by defaults tracks everything!!"
+                  });
+                </script>
+              </div>
+            </div>
           </div>
-          <img class="main-banner__image" src="http://cdn.besynchro.com/gold/3-bottles@2x.png">
         </div>
       </div>
     </div>

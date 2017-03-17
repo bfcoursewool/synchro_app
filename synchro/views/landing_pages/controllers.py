@@ -82,7 +82,6 @@ endpoint_info_dict = {
       'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': False,
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
         'stylesheet': 'gold/abtests/gold_cro004.css'
       }
     },
