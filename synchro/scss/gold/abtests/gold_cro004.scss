@@ -165,7 +165,7 @@
     &__image {
       max-width: 423px;
       position: absolute;
-      left: calc(50% + 140px);
+      left: calc(50% + 110px);
       bottom: -40px;
 
       @media (max-width: $break-mobile) {
@@ -411,9 +411,9 @@
       position: relative;
       top: -16px;
       background-image: linear-gradient(-68deg, #FBB906 0%, #FE9806 97%);
-      max-height: 770px;
+      max-height: 750px;
 
-      @media (max-width: $break-mobile) {
+      @media (max-width: $break-desktop) {
         max-height: initial;
       }
     }
@@ -428,24 +428,96 @@
     }
 
     &__uvp {
-      position: initial;
-      line-height: 1.5;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%,0);
+
+      @media (max-width: $break-desktop) {
+        position: static;
+        transform: none;
+        margin-bottom: 50px;
+      }
     }
 
     &__item {
-      font-size: 23px;
+      position: absolute;
+      text-align: center;
+      font-size: 21px;
       color: #FDF7EF;
-      font-weight: 400;
-      padding-left: 1.5em;
+      text-shadow: 1px 1px 0 #E58F04;
+
+      @media (max-width: $break-desktop) {
+        position: inherit;
+        width: initial !important;
+      }
+
+      &.item-1 {
+        left: calc(50% + -490px);
+        top: -260px;
+        width: 260px;
+
+        &:after {
+          left: calc(100% + 10px);
+          width: 200px;
+        }
+      }
+
+      &.item-2 {
+        left: calc(50% + 260px);
+        top: -220px;
+        width: 210px;
+
+        &:after {
+          left: -120px;
+          width: 110px;
+        }
+      }
+
+      &.item-3 {
+        left: calc(50% + -560px);
+        top: -30px;
+        width: 180px;
+
+        &:after {
+          left: calc(100% + 10px);
+        }
+      }
+
+      &.item-4 {
+        left: calc(50% + 370px);
+        top: 20px;
+        width: 120px;
+
+        &:after {
+          right: calc(100% + 10px);
+        }
+      }
 
       @media (max-width: $break-mobile) {
-        font-size: 20px;
+        font-size: 18px;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: relative;
+        bottom: 55px;
+        height: 2px;
+        background: #FFE7A4;
+        box-shadow: inset 0 1px 0 0 #DC8302;
+
+        @media (max-width: $break-desktop) {
+          display: none;
+        }
       }
 
       &:before {
         color: #fff;
-        display: inline-block;
-        margin-left: -1.5em;
+        display: block;
+
+        @media (max-width: $break-desktop) {
+          display: inline-block;
+        }
       }
     }
 
@@ -481,8 +553,11 @@
       }
     }
 
+
+
     &__image {
       max-width: 665px;
+      position: relative;
 
       @media (max-width: $break-mobile) {
         max-width: 90%;
@@ -525,7 +600,7 @@
 
   .gold-claims {
     box-shadow: none;
-    padding-top: 110px;
+    padding-top: 90px;
 
     @media (max-width: $break-mobile) {
       padding-top: initial;
