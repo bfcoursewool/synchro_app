@@ -21,6 +21,14 @@ endpoint_info_dict = {
       'template_vars': {
         'stylesheet': 'genesis/genesis.css'
       }
+    },
+    '1': {
+      'template': 'landing_pages/genesis/genesis.html',
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'template_vars': {
+        'is_variant': True,
+        'stylesheet': 'genesis/genesis.css'
+      }
     }
   },
   'salt': {
