@@ -1,4 +1,4 @@
-/* reset default - to be moved into separate scss*/
+/* this stylesheet resets the styling of all HTML elements to a consistent baseline */
 
 *, ::before, ::after {
   box-sizing: border-box;
@@ -68,4 +68,3 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
-/* reset ends */

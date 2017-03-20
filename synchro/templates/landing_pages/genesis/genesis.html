@@ -1,226 +1,362 @@
+{% extends "landing_pages/genesis/genesis_base.html" %}
 
-{% extends "landing_pages/landing_base.html" %}
-{% block title %} Synchro Genesis {% endblock %}
-{% block head %}
+{% block content %}
 
-    {{ super() }}
+<!-- top navigation - GLOBAL -->
+<header class="main-header-container">
+  <div class="main-header">
+    <div class="container-fluid">
+      <div class="row">
+        <button class="main-navigation__mobile hidden-lg-up">
+          <div class="main-navigation__hamburger"></div>
+          <div class="main-navigation__hamburger"></div>
+          <div class="main-navigation__hamburger"></div>
+        </button>
+        <div class="main-header__logo">
+          <img class="synchro-logo" src="http://cdn.besynchro.com/gold/logo-retina.png">
+        </div>
+        <a class="a--cta right" role="button" href="#purchase">Buy</a>
+        <nav class="main-navigation">
+          <a class="main-navigation__item" href="#overview">Overview</a>
+          <a class="main-navigation__item" href="#benefits">Benefits</a>
+          <a class="main-navigation__item" href="#features">Ingredients</a>
+          <a class="main-navigation__item" href="#use">Use</a>
+          <a class="main-navigation__item" href="#reviews">Reviews</a>
+          <a class="main-navigation__item" href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
 
-    <!-- Custom styles for this template -->
-    <link href="{{ url_for('static', filename='css/genesis/styles.css') }}" rel="stylesheet">
+<section class="container-fluid">
+  <div class="row">
+    <div class="genesis-atf section--padding">
+      <h1 class="p--header">Drink one a day. Your body and brain will thank you.</h1>
+      <img class="genesis-atf__image" src="http://cdn.besynchro.com/genesis/images/product-header1.jpg">
+    </div>
+  </div>
+</section>
+
+<!-- product claims - GLOBAL -->
+<section class="claim-icons">
+  <div class="container-fluid">
+    <div class="row">
+      <ul class="claim-icons__list">
+        <li class="claim-icons__item">
+          <img class="claim-icons__image" src="http://cdn.besynchro.com/gold/organic.jpg">
+          <p class="claim-icons__text p--text">Organic Ingredients</p>
+        </li>
+        <li class="claim-icons__item">
+          <img class="claim-icons__image" src="http://cdn.besynchro.com/gold/plant-based.jpg">
+          <p class="claim-icons__text p--text">100% Plant-Based</p>
+        </li>
+        <li class="claim-icons__item">
+          <img class="claim-icons__image" src="http://cdn.besynchro.com/gold/gluten-free.jpg">
+          <p class="claim-icons__text p--text">Gluten Free</p>
+        </li>
+        <li class="claim-icons__item">
+          <img class="claim-icons__image" src="http://cdn.besynchro.com/gold/gmo-free.jpg">
+          <p class="claim-icons__text p--text">Non-GMO</p>
+        </li>
+        <li class="claim-icons__item">
+          <img class="claim-icons__image" src="http://cdn.besynchro.com/gold/dairy-free.jpg">
+          <p class="claim-icons__text p--text">Dairy-Free</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<a class="anchor" name="overview"></a>
+<section class="product-info section--padding">
+  <div class="container-fluid">
+    <div class="row">
+      <p class="product-info__text p--text col-md-8 offset-md-2 col-xs-10 offset-xs-1">Eating the foods that make your body and brain feel amazing doesn’t have to be a challenge. We spent years researching and developing a formula with the perfect nutrients to <span class="p--bold">keep your body’s systems running optimally throughout your day</span>—and Synchro Genesis is the result.<br><br>Oh, and the best part? Preparing this <span class="p--bold">delicious nutrient-powerhouse of a chocolate shake</span> is as easy as adding water in a jar and shaking. How brilliant is that?</p>
+    </div>
+  </div>
+</section>
+
+<a class="anchor" name="benefits"></a>
+<section class="container-fluid">
+  <div class="row">
+    <div class="genesis-benefits section--padding">
+      <h3 class="p--title">Benefits</h3>
+      <div class="col-lg-3 col-md-6 genesis-benefits__item">
+        <img class="genesis-benefits__img" src="http://cdn.besynchro.com/genesis/images/toxins-icon1.jpg">
+        <h4 class="genesis-benefits__header p--text p--bold">Neutralizes Toxins</h4>
+      </div>
+      <div class="col-lg-3 col-md-6 genesis-benefits__item">
+        <img class="genesis-benefits__img" src="http://cdn.besynchro.com/genesis/images/inflammation-icon.jpg">
+        <h4 class="genesis-benefits__header p--text p--bold">Reduces Inflammation</h4>
+      </div>
+      <div class="col-lg-3 col-md-6 genesis-benefits__item">
+        <img class="genesis-benefits__img" src="http://cdn.besynchro.com/genesis/images/bolt-icon1.jpg">
+        <h4 class="genesis-benefits__header p--text p--bold">Naturally Energizing</h4>
+      </div>
+      <div class="col-lg-3 col-md-6 genesis-benefits__item">
+        <img class="genesis-benefits__img" src="http://cdn.besynchro.com/genesis/images/heart-icon.jpg">
+        <h4 class="genesis-benefits__header p--text p--bold">Supports Healthy Metabolism</h4>
+      </div>
+      <div class="col-md-10 offset-md-1">
+        <p class="p--text">In developing Synchro Genesis, we looked at the two biggest factors that prevent most people from feeling and performing as well as they could—toxins and inflammation—and took them head-on.<br><br>Exceptional levels of natural antioxidants and anti-inflammatories in Synchro Genesis work to neutralize toxins, thus helping to preserve proper metabolic and hormone function and reducing systemic inflammation. The net result is <span class="p--bold">a body that feels energized and alive and a brain that’s sharp as a tack.</span></p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</section>
+
+<a class="anchor" name="ingredients"></a>
+<section class="genesis-ingredients__header section--padding">
+  <div class="container-fluid">
+    <div class="row">
+      <h3 class="p--header p--white">Perfectly Synergized Ingredients</h3>
+    </div>
+  </div>
+</section>
+
+<section class="genesis-ingredients__keystone bg--ltgrey section--padding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <h3 class="p--title">The Keystone Ingredient</h3>
+        <h2 class="p--header">Organic Wild-Harvested Ecuadorian Raw Cacao</h2>
+        <p class="p--text">If there’s any food on this planet deserving of the title “superfood,” it’s surely raw cacao. It has all of the same phytonutrients that give dark chocolate it’s much-lauded health benefits, but in dramatically higher levels. Here’s what makes raw cacao so powerful:</p>
+        <img class="genesis-ingredients__keystone-img wow fadeIn" data-wow-duration="1.5s" src="http://cdn.besynchro.com/genesis/images/Cocoa-pod-compressed.jpg">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 genesis-ingredients__info">
+        <p class="p--text p--bold">Brain Enhancers</p>
+        <p class="p--text">Raw cacao contains very high levels of phenylethylamine and anandamide, both well known to enhance mood and improve cognitive function.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 genesis-ingredients__info">
+        <p class="p--text p--bold">Antioxidants</p>
+        <p class="p--text">Raw cacao is the single most antioxidant rich food on the planet, bar none. The dose of cacao in one serving of Genesis provides more antioxidants than 4 cups of blueberries!</p>
+      </div>
+      <div class="col-lg-3 col-md-6 genesis-ingredients__info">
+        <p class="p--text p--bold">Sustainable Energy</p>
+        <p class="p--text">Related to, but much gentler than caffeine, theobromine stimulates the cardiovascular system (caffeine stimulates the CNS), increasing blood flow throughout the body, which produces a dramatic “awake and alive” feeling in the body and brain after drinking Genesis.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 genesis-ingredients__info">
+        <p class="p--text p--bold">Nutrient Delivery</p>
+        <p class="p--text">Increased blood flow also facilitates improved delivery of nutrients and clearing of toxins throughout the body.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid">
+  <div class="row">
+  <div class="ingredients clearfix">
+      <div class="col-md-6 ingredients__item">
+        <div class="ingredients__img-box">
+          <span class="ingredients__helper"></span><img class="ingredients__img wow fadeIn" data-wow-duration="1.5s" src="http://cdn.besynchro.com/genesis/images/tumeric-compressed.jpg">
+        </div>
+        <h3 class="p--title">Turmeric Extract</h3>
+        <p class="p--text">Turmeric is widely prized as nature’s most potent anti-inflammatory, and daily use can have a profound positive effect on the body and brain. The  extract (98% curcuminoids) in Synchro Genesis is equivalent to more than 3 grams of turmeric powder.</p>
+      </div>
+      <div class="col-md-6 ingredients__item">
+        <div class="ingredients__img-box">
+          <span class="ingredients__helper"></span><img class="ingredients__img wow fadeIn" data-wow-duration="1.5s" src="http://cdn.besynchro.com/genesis/images/wheatgrass-600px.jpg">
+        </div>
+        <h3 class="p--title">SYNCHRO GREENS BLEND</h3>
+        <p class="p--text">We’ve combined six of the planet’s most powerful greens—chlorella, spirulina, alfalfa, kelp, dulse, and dandelion— to create a blend that is both rich in nutrients and an excellent source of chlorophyll, a unique nutrient that can remove heavy metals and other toxins from the body.</p>
+      </div>
+      <div class="col-md-6 ingredients__item">
+        <div class="ingredients__img-box">
+          <span class="ingredients__helper"></span><img class="ingredients__img wow fadeIn" data-wow-duration="1.5s" src="http://cdn.besynchro.com/genesis/images/Acai-Berries-600px.jpg">
+        </div>
+        <h3 class="p--title">ACAI</h3>
+        <p class="p--text">Acai is the planet’s second-richest food source of antioxidants (behind raw cacao, of course) and is a big contributor to Genesis’ astonishing 7000+ ORAC score (per serving).</p>
+      </div>
+      <div class="col-md-6 ingredients__item">
+        <div class="ingredients__img-box">
+          <span class="ingredients__helper"></span><img class="ingredients__img wow fadeIn" data-wow-duration="1.5s" src="http://cdn.besynchro.com/genesis/images/hemp-compressed.jpg">
+        </div>
+        <h3 class="p--title">PLANT PROTEINS</h3>
+        <p class="p--text">We’ve blended the two highest-quality proteins available – organic hemp and pea proteins – in an ideal ratio to deliver 15g of amino-complete, easily-digestible plant protein in each serving of Synchro Genesis.</p>
+      </div>
+      <div class="col-md-6 ingredients__item">
+        <div class="ingredients__img-box">
+          <span class="ingredients__helper"></span><img class="ingredients__img wow fadeIn" data-wow-duration="1.5s" src="http://cdn.besynchro.com/genesis/images/maca-600px.jpg">
+        </div>
+        <h3 class="p--title">MACA ROOT</h3>
+        <p class="p--text">You could eat perfectly and have a killer workout regimen, but if your hormones are functioning poorly, you’ll still feel drained. Maca root gently stimulates our hormone systems, helping to bring them into balance and full functioning.</p>
+      </div>
+      <div class="col-md-6 ingredients__item">
+        <div class="ingredients__img-box">
+          <span class="ingredients__helper"></span><img class="ingredients__img wow fadeIn" data-wow-duration="1.5s" src="http://cdn.besynchro.com/genesis/images/coconuts-600px.jpg">
+        </div>
+        <h3 class="p--title">COCONUT PALM NECTAR</h3>
+        <p class="p--text">We wanted the perfect natural sweetener for Genesis, and we’ve found it in coconut palm nectar. It’s minimally-processed, low-glycemic and free of the contaminants found in other sugars. One serving of Synchro Genesis contains only about 8 grams of sugar. In the context of this nutritionally-balanced blend, this small amount of sugar digests relatively slowly, giving Genesis a very low cumulative Glycemic Index.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="genesis-facts section--padding">
+  <div class="container-fluid">
+    <div class="row">
+      <h3 class="p--title">Nutrition Info</h3>
+      <img class="wow fadeIn" data-wow-duration="1.5s" src="http://cdn.besynchro.com/genesis/images/Nutrition-Facts1.jpg">
+    </div>
+  </div>
+</section>
+
+<section class="genesis-use bg--ltgrey section--padding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-5">
+        <h3 class="p--title">USE</h3>
+        <p class="p--text p--bold">Directions</p>
+        <p class="p--text">Mix 4 tablespoons of Synchro Genesis in 8oz of ice-cold water or non-dairy milk. Shake well and enjoy. That’s it.</p>
+        <p class="p--text">Synchro Genesis is also excellent as a nutrient-rich addition to your favorite smoothie recipe.</p>
+        <p class="p--text">For best results and true vibrant health, use at least one serving daily.</p>
+        <a class="a--cta" role="button" href="#purchase">Buy</a>
+      </div>
+      <div class="col-md-7">
+        <img class="genesis-use__img wow right fadeIn" data-wow-duration="1.5s" src="http://cdn.besynchro.com/genesis/images/glass-600px.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="anchor" name="purchase"></a>
+<section class="container-fluid">
+  <div class="row wow fadeIn" data-wow-duration="1.5s">
+    <div class="purchase section--padding" data-fb-property="Synchro-Genesis">
+      <h3 class="p--title">Purchase Options</h3>
+      <div class="buy-buttons clearfix">
+        <div class="purchase__item col-sm-4" data-node="genesis-option-one" data-product-id="90711797" data-variant-id="212448049">
+          <div class="hidden-templates">
+            <div class="template-title">
+              <div class="pID">GEN01</div><h1 class="shopify-buy__product__title">ONE BAG (12 SERVINGS)</h1>
+            </div>
+            <div class="template-variantTitle">
+            </div>
+            <div class="template-price">
+              <div class="shopify-buy__product__price"><span class=shopify-buy__product__actual-price>$25.97</span></div>
+            </div>
+          </div>
+          <div id="genesis-option-one"></div>
+        </div>
+        <div class="purchase__item col-sm-4" data-node="genesis-option-two" data-product-id="90711797" data-variant-id="938420433">
+          <div class="hidden-templates">
+            <div class="template-title">
+              <div class="pID">GEN02</div><h1 class="shopify-buy__product__title">TWO PACK</h1>
+            </div>
+            <div class="template-variantTitle">
+            </div>
+            <div class="template-price">
+              <div class="shopify-buy__product__price"><span style="text-decoration: line-through;">$52.94 </span><span class=shopify-buy__product__actual-price>$49.47 (5% OFF) </span></div>
+            </div>
+          </div>
+          <div id="genesis-option-two"></div>
+        </div>
+        <div class="purchase__item col-sm-4" data-node="genesis-option-three" data-product-id="90711797" data-variant-id="938417729">
+          <div class="hidden-templates">
+            <div class="template-title">
+              <div class="pID">GEN03</div><h1 class="shopify-buy__product__title">FIVE PACK</h1>
+            </div>
+            <div class="template-variantTitle">
+            </div>
+            <div class="template-price">
+              <div class="shopify-buy__product__price"><span style="background-color: yellow"><span style="text-decoration: line-through;">$129.85 </span><span class=shopify-buy__product__actual-price>$114.97 (BEST VALUE - 10% OFF)</span></span></div>
+            </div>
+          </div>
+          <div id="genesis-option-three"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- product guarantee - GLOBAL -->
+<section class="container-fluid guarantee">
+  <div class="row">
+    <img class="guarantee__img hidden-sm-down" src="http://cdn.besynchro.com/gold/icon-bar-cropped.png" alt="Fast Shipping. Best Price. 100% Organic Ingredients.">
+    <div class="hidden-md-up">
+      <img class="guarantee__img" src="http://cdn.besynchro.com/gold/newfast.jpg" alt="Fast Shipping">
+      <img class="guarantee__img" src="http://cdn.besynchro.com/gold/newbest.jpg" alt="Best Price">
+      <img class="guarantee__img" src="http://cdn.besynchro.com/gold/organic(1).jpg" alt="100% Organic Ingredients">
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid">
+  <div class="row">
+    <div class="synchro-products clearfix">
+      <h3 class="p--title">More products for vibrant living</h3>
+      <div id="synchro-product-set" class="synchro-collection wow fadeIn" data-collection-id="205866437" data-wow-duration="1.5s">
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="anchor" name="reviews"></a>
+<secton class="synchro-reviews">
+  <div class="container-fluid wow fadeIn" data-wow-duration="1.5s">
+    <div class="row">
+      <h3 class="p--title">Reviews</h3>
+      <!-- YOTPO REVIEWS -->
+      <div class="yotpo yotpo-main-widget"
+      data-product-id="90711797"
+      data-name="Synchro Genesis"
+      data-url="http://besynchro.com/products/synchro-genesis"
+      data-image-url="//cdn.shopify.com/s/files/1/0155/0195/products/genesis_shopify_16_grande.jpg?v=1461150962"
+      data-description=""></div>
+    </div>
+  </div>
+</secton>
+
+<a class="anchor" name="faq"></a>
+<section class="faq">
+  <div class="container-fluid">
+    <div class="row">
+      <h3 class="p--title">FAQ</h3>
+      <div class="faq__text wow fadeIn" data-wow-duration="1.5s">
+        <p class="p--text"><span class="p--bold">Where is Synchro Genesis made?</span> Synchro Genesis is made in a cGMP and Organic Certified facility in Southern California.</p>
+        <p class="p--text"><span class="p--bold">Where do the ingredients come from?</span> Our cacao is wild harvested from an Organic Certified property in the mountains of Ecuador. Our maca root comes from an Organic Certified farm in the mountains of Peru. Our acai is wild harvested from Organic Certified properties in Brazil. Our turmeric extract comes from an Organic Certified farm in Vietnam. Our kelp, dulse, dandelion and alfalfa come from Organic Certified properties in the USA. Our spirulina and chlorella come from Organic Certified farms in China. Our coconut sugar comes from an Organic Certified farm in Indonesia. Our pea protein comes from a Non-GMO Certified farm in the USA. Our hemp comes from an Organic Certified farm in Canada.</p>
+        <p class="p--text"><span class="p--bold">Where is Synchro based?</span> Synchro was founded in 2011 by biochemist and nutritionist Graham Ryan with the mission of helping others pursue a state of true health. Synchro is headquartered in and ships all orders from Berkeley, CA.</p>
+        <p class="p--text"><span class="p--bold">Who should use Synchro Genesis?</span> Synchro Genesis will be particularly beneficial for anyone looking to increase metabolic function and energy levels. Because Synchro Genesis is highly anti-inflammatory, it can also help in alleviating foggy brain and achy joints and muscles.</p>
+        <p class="p--text"><span class="p--bold">How does Synchro Genesis work? </span> The benefits of Synchro Genesis are three-fold. First, exceptional levels of antioxidants neutralize toxins in the body, reducing systemic inflammation and helping to restore proper metabolic and hormone function. Second, cacao works as a metabolic and cardiovascular stimulant. This produces Genesis’ energizing effects while being much gentler on the body and adrenals than coffee and other caffeine sources. Finally, the ratio of proteins, carbs and fats in Genesis work to promote healthy metabolic function and lean body composition over time.</p>
+        <p class="p--text"><span class="p--bold">How do I use Synchro Genesis?</span> Mix 4 tablespoons of Synchro Genesis in 8oz of ice-cold water or non-dairy milk. Shake well and enjoy. That’s it.</p>
+
+        <p class="p--text">For best results and vibrant true health, use at least one serving daily.</p>
+        <p class="p--text"><span class="p--bold">When can I expect results?</span> If you’re like most people, you’ll feel a boost within 30 minutes of drinking a single serving of Genesis. That being said, the real benefits of Genesis arise with more consistent use. It’s generally after about two weeks of consistent daily use that people start to notice their energy levels throughout the day and overall well-being have improved dramatically.</p>
+        <p class="p--text"><span class="p--bold">Do I need to refrigerate Synchro Genesis?</span> It’s not necessary, but refrigeration will extend shelf life and potency considerably.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- cta section - GLOBAL -->
+<section class="cta-section">
+  <div class="container-fluid">
+    <div class="row wow fadeInUp">
+      <p class="cta-section__brandname">Synchro</p>
+      <h2 class="cta-section__title">Nutrition for vibrant living.</h2>
+      <a class="cta-section__cta a--cta" role="button" href="#purchase">Buy</a>
+    </div>
+  </div>
+</section>
 
 {% endblock %}
 
-{% block content %}
-<!-- NAVBAR
-================================================== -->
-  <div class="navbar-wrapper">
-    <div class="container">
-
-      <nav class="navbar navbar-inverse navbar-static-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <img class="logo-image" src="http://synchrogold.com.s13414.gridserver.com/wp-content/uploads/2015/07/synchro_logo.png" alt="The World's Most Powerful Anti-Inflammatory Meal Replacement"
-            </a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#overview">Overview</a></li>
-              <li><a href="#benefits">Benefits</a></li>
-              <li><a href="#features">Features</a></li>
-              <li><a href="#use">Use</a></li>
-              <li><a href="#reviews">Reviews</a></li>
-              <li><a class="btn btn-lg btn-primary checkout-link" href="#" role="button">Buy</a>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
+<!-- FOOTER -->
+{% block footer %} {{ super() }} {% endblock %}
+{% block footer_content %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="footer__left">
+      <a class="footer__text" href="http://genesis.besynchro.com/">© Synchro Genesis 2017</a>
+    </div>
+    <div class="footer__right">
+      <a class="footer__text" href="http://besynchro.com/pages/contact-us">Reach out! We'd Love to Hear From You!</a>
+      <a class="footer__text" href="http://besynchro.com/pages/privacy-policy">Privacy Policy</a>
+      <a class="footer__text" href="http://besynchro.com/pages/returns-policy">Returns Policy</a>
     </div>
   </div>
-
-
-  <!-- Carousel
-  ================================================== -->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Genesis --  It all started here</h1>
-            <p>Schlitz roof party williamsburg food truck pour-over narwhal. Gluten-free literally yuccie occupy echo park. Pabst bespoke normcore ethical, ramps offal franzen polaroid farm-to-table. Bicycle rights cardigan taxidermy, pok pok cray four dollar toast franzen asymmetrical microdosing jianbing sriracha umami ennui. Swag DIY forage, hell of vape knausgaard roof party vice selfies activated charcoal blue bottle williamsburg. Vice flexitarian blog keytar letterpress. Lumbersexual sartorial actually vaporware, beard mumblecore everyday carry tumblr heirloom viral kogi.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Whoa Nelly, cacao is good!</h1>
-            <p>Cardigan heirloom succulents sriracha flexitarian vinyl. Viral shoreditch kombucha, hashtag organic DIY cold-pressed twee tacos. Ethical mustache activated charcoal fingerstache sriracha, offal blue bottle williamsburg tumeric. Copper mug kale chips tacos knausgaard four dollar toast cornhole, direct trade listicle gastropub cronut truffaut cray blue bottle gentrify lyft. Wayfarers cold-pressed viral chambray. Craft beer hoodie waistcoat, messenger bag neutra XOXO pop-up skateboard vice bushwick. Etsy intelligentsia sustainable tumblr flannel raw denim.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>For real, drink more Genesis</h1>
-            <p>Man bun vaporware YOLO, mustache microdosing street art enamel pin lyft. Everyday carry ramps pinterest, bicycle rights post-ironic typewriter jianbing subway tile cliche occupy vaporware selfies. Chartreuse kogi direct trade, distillery glossier marfa cronut schlitz put a bird on it raw denim banjo hella literally truffaut. Marfa chia thundercats iceland, deep v retro literally. Cred beard swag bicycle rights actually organic neutra synth affogato portland forage chambray. Bespoke prism wolf letterpress retro you probably haven't heard of them squid pabst, sustainable schlitz sartorial 3 wolf moon humblebrag mixtape. Ennui franzen ugh, affogato pug yuccie letterpress meditation put a bird on it activated charcoal hoodie.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div><!-- /.carousel -->
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-        <h2>Heading</h2>
-        <p>Williamsburg fingerstache leggings, echo park unicorn roof party knausgaard farm-to-table put a bird on it fixie ethical authentic. Salvia kogi 90's edison bulb portland hella, shabby chic chicharrones. Wayfarers celiac plaid air plant YOLO normcore. Ethical la croix quinoa, blue bottle tumeric slow-carb mumblecore jianbing letterpress banjo squid chia whatever portland snackwave. Tofu woke health goth ramps sriracha, mustache DIY bushwick readymade butcher intelligentsia retro next level tbh church-key. Venmo hoodie messenger bag jean shorts, paleo wolf four loko synth williamsburg franzen ramps vegan coloring book roof party. Bushwick farm-to-table keytar subway tile williamsburg, tumblr small batch shabby chic asymmetrical brooklyn taxidermy meggings single-origin coffee deep v.</p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-        <h2>Heading</h2>
-        <p>Tbh in offal raclette magna, hoodie VHS plaid art party copper mug slow-carb 8-bit salvia schlitz. Ut af chillwave dolor. You probably haven't heard of them vero ugh roof party, actually occaecat single-origin coffee iPhone photo booth keffiyeh af hell of nostrud minim irure. Tacos kickstarter kitsch, anim dolor pariatur delectus 3 wolf moon cray tbh viral. Typewriter voluptate aliquip taxidermy lumbersexual. Pariatur laborum before they sold out blog, assumenda cillum hella. Est farm-to-table cliche, polaroid deserunt gentrify veniam incididunt slow-carb.</p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-        <h2>Heading</h2>
-        <p>Bicycle rights post-ironic raw denim nesciunt vero. Farm-to-table meditation lo-fi wolf gentrify semiotics. Lumbersexual placeat irony food truck. Vero sriracha mustache, sartorial retro slow-carb culpa hashtag in asymmetrical messenger bag consectetur. Fanny pack heirloom ugh forage semiotics sapiente put a bird on it hammock paleo try-hard chillwave, banjo reprehenderit pok pok. Placeat normcore keffiyeh 90's semiotics pok pok YOLO, XOXO do adipisicing hot chicken tote bag williamsburg tilde seitan. 90's raw denim quis edison bulb fashion axe, photo booth quinoa veniam YOLO nihil wolf.</p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-        <p class="lead">Fingerstache DIY minim hell of. Cillum nisi put a bird on it, man braid neutra single-origin coffee subway tile listicle. Sed migas nesciunt, cardigan sriracha blue bottle chillwave farm-to-table cliche letterpress. VHS hammock farm-to-table, occaecat vice ennui adipisicing minim paleo cornhole. Excepteur ugh aliqua, ad flannel tattooed normcore fap velit hammock mumblecore irure pork belly. Helvetica 8-bit bicycle rights, man braid pitchfork sunt migas ex copper mug subway tile proident williamsburg voluptate sustainable whatever. Chambray dreamcatcher sunt fanny pack quis af labore migas, street art incididunt umami.</p>
-      </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 col-md-push-5">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Williamsburg stumptown pop-up minim, pariatur austin etsy chartreuse taxidermy. Franzen austin ad food truck, incididunt consequat dolore church-key chambray pok pok in enim sed echo park. Tofu small batch labore, taxidermy dolore vaporware umami crucifix mlkshk ennui non. Man braid kogi hell of prism, tacos anim cliche. Trust fund dolore chia incididunt stumptown yr, excepteur man braid. Next level sed tempor four dollar toast disrupt bicycle rights. Voluptate squid tilde crucifix, portland cold-pressed air plant nulla.</p>
-      </div>
-      <div class="col-md-5 col-md-pull-7">
-        <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Aesthetic cliche twee semiotics knausgaard waistcoat gentrify lo-fi, synth tilde vero. Artisan cred salvia bushwick keytar waistcoat. Tacos keffiyeh actually asymmetrical organic culpa, pitchfork ullamco aesthetic. Intelligentsia art party messenger bag deep v, aesthetic coloring book hot chicken fashion axe bitters chia portland vero thundercats ad put a bird on it. Pour-over cray tempor tote bag. Sed organic waistcoat affogato +1 8-bit. Crucifix la croix elit PBR.</p>
-      </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-    <!-- BUY BUTTONS -->
-    <div class="buy_buttons">
-
-      <div class="product-option genesis_1" data-product-id="90711797" data-quantity="1">
-        <center>
-          <img class="alignnone wp-image-3167 size-full" src="http://synchrogenesis.com/wp-content/uploads/2015/05/synchro-single.jpg" alt="synchro-single" width="400" height="400" srcset="http://synchrogenesis.com/wp-content/uploads/2015/05/synchro-single.jpg 400w, http://synchrogenesis.com/wp-content/uploads/2015/05/synchro-single-150x150.jpg 150w, http://synchrogenesis.com/wp-content/uploads/2015/05/synchro-single-300x300.jpg 300w" sizes="(max-width: 400px) 100vw, 400px"><br>
-          <strong>ONE BAG (12 SERVINGS)</strong><br>
-          $25.97
-        </center>
-        <p align="center">
-          <a class="checkout-link btn btn-lg btn-primary" href="#" role="button">Add To Cart</a>
-        </p>
-      </div>
-
-      <div class="product-option genesis_2" data-product-id="90711797" data-quantity="2">
-        <center>
-          <img class="alignnone wp-image-3168 size-full" src="http://synchrogenesis.com/wp-content/uploads/2015/05/synchro-two-pack.jpg" alt="synchro-two-pack" width="400" height="400" srcset="http://synchrogenesis.com/wp-content/uploads/2015/05/synchro-two-pack.jpg 400w, http://synchrogenesis.com/wp-content/uploads/2015/05/synchro-two-pack-150x150.jpg 150w, http://synchrogenesis.com/wp-content/uploads/2015/05/synchro-two-pack-300x300.jpg 300w" sizes="(max-width: 400px) 100vw, 400px"><br>
-          <strong>TWO PACK</strong><br>
-          <span style="text-decoration: line-through;">52.94</span> <b>$49.47 (5% OFF)</b>
-        </center>
-        <p align="center">
-          <a class="checkout-link btn btn-lg btn-primary" href="#" role="button">Add To Cart</a>
-        </p>
-      </div>
-
-      <div class="product-option genesis_5" data-product-id="90711797" data-quantity="5">
-        <center>
-          <img class="alignnone wp-image-3168 size-full" src="http://synchrogenesis.com/wp-content/uploads/2015/05/synchro-five-pack.jpg" alt="synchro-five-pack" width="400" height="400" srcset="http://synchrogenesis.com/wp-content/uploads/2015/05/synchro-five-pack.jpg 400w, http://synchrogenesis.com/wp-content/uploads/2015/05/synchro-five-pack-150x150.jpg 150w, http://synchrogenesis.com/wp-content/uploads/2015/05/synchro-five-pack-300x300.jpg 300w" sizes="(max-width: 400px) 100vw, 400px"><br>
-          <strong>FIVE PACK</strong><br>
-          <span style="background-color:yellow;"><span style="text-decoration: line-through;">129.85</span> <b>114.97 (BEST VALUE – 10% OFF)</b></span>
-        </center>
-        <p align="center">
-          <a class="checkout-link btn btn-lg btn-primary" href="#" role="button">Add To Cart</a>
-        </p>
-      </div>
-
-    </div>
-
-    <!-- YOTPO REVIEWS --> 
-    <a name="reviews"></a>
-    <div class="yotpo yotpo-main-widget"
-      data-product-id="374830964"
-      data-name="Synchro Gold"
-      data-url="http://besynchro.com/products/synchro-gold-1"
-      data-image-url="//cdn.shopify.com/s/files/1/0155/0195/products/Gold_New_500px_large.png%3Fv=1448686733"
-      data-description="">
-    </div>
-
-
-    <!-- FOOTER -->
-    <footer>
-      <p class="pull-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
-
-  </div><!-- /.container -->}
-
+</div>
 {% endblock %}

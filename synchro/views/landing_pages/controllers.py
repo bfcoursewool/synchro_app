@@ -7,7 +7,7 @@ from flask import (
   request
 )
 from synchro.third_party_resources import bootstrap, bootstrap_css
-from synchro.resources import synchro_shopify, synchro_buy_button, synchro_effects, gold_analytics
+from synchro.resources import synchro_shopify, synchro_buy_button, synchro_effects, analytics
 from synchro.third_party_resources import wowjs, videojsga, videojsie8
 from synchro import const
 
@@ -17,7 +17,10 @@ endpoint_info_dict = {
   'genesis': {
     'v0': {
       'template': 'landing_pages/genesis/genesis.html',
-      'scripts': [synchro_shopify]
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'template_vars': {
+        'stylesheet': 'genesis/genesis.css'
+      }
     }
   },
   'salt': {
@@ -29,7 +32,7 @@ endpoint_info_dict = {
   'gold': {
     'v0': {
       'template': 'landing_pages/gold/gold_organic.html',
-      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': False,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
@@ -38,7 +41,7 @@ endpoint_info_dict = {
     },
     '1': {
       'template': 'landing_pages/gold/gold_paid.html',
-      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
@@ -59,7 +62,7 @@ endpoint_info_dict = {
   'cro002': {
     'v1' : {
       'template': 'landing_pages/gold/gold_cro002-1.html',
-      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': False,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
@@ -68,7 +71,7 @@ endpoint_info_dict = {
     },
     'v2' : {
       'template': 'landing_pages/gold/gold_cro002-2.html',
-      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': False,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
@@ -79,7 +82,7 @@ endpoint_info_dict = {
   'cro004': {
     'v1' : {
       'template': 'landing_pages/gold/gold_cro004-1.html',
-      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': False,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
@@ -88,7 +91,7 @@ endpoint_info_dict = {
     },
     'v2' : {
       'template': 'landing_pages/gold/gold_cro004-2.html',
-      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': False,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
@@ -97,7 +100,7 @@ endpoint_info_dict = {
     },
     'v3' : {
       'template': 'landing_pages/gold/gold_cro004-3.html',
-      'scripts': [synchro_buy_button, synchro_effects, gold_analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': False,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
@@ -133,12 +136,13 @@ def landing_page(page, version):
     version = request.args['v']
 
   # Make sure instances respond correctly to health checker pings
-  if page == "none":
+  if page == 'none':
     return ('', 200)
 
   # Fail if we don't have a valid page or version.
   assert page in endpoint_info_dict
-  assert version in endpoint_info_dict[page]
+  if version not in endpoint_info_dict[page]:
+    version = 'v0'
 
   # Assert that each version entry in the info_dict contains both a template to render and a list of scripts to include.
   # A failed assertion should happen only during development, so this helps ensure developer consistency.
