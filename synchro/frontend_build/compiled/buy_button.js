@@ -174,7 +174,6 @@ $(document).ready(function() {
 
   var collection = $('.synchro-collection');
   collectionId = collection.attr('data-collection-id');
-  console.log(collectionId); 
   ui.createComponent('productSet', {
     id: collectionId,
     node: document.getElementById('synchro-product-set'),

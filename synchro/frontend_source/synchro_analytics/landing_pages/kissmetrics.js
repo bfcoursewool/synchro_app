@@ -42,10 +42,10 @@ jQuery(document).ready(function($){
     });
 
     $('.shopify-buy__btn').click(function() {
-      var price = $(this).closest('.shopify-buy__product').find('.shopify-buy__product__actual-price').html();
+      var price = $(this).closest('.shopify-buy-frame').find('.shopify-buy__product__actual-price').html();
       price = price.replace(/\$/g, ''); 
       price = price.match(/(.*)\.[0-9][0-9]/); 
-      var SKU = $(this).closest('.shopify-buy__product').find('.pID').html(); 
+      var SKU = $(this).closest('.shopify-buy-frame').find('.pID').html(); 
 
       _kmq.push(['record', 'added to cart', {
         'Added Product Name': gaNames[SKU].name,
