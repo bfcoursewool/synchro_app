@@ -411,10 +411,10 @@
       position: relative;
       top: -16px;
       background-image: linear-gradient(-68deg, #FBB906 0%, #FE9806 97%);
-      max-height: 750px;
+      height: 750px;
 
       @media (max-width: $break-desktop) {
-        max-height: initial;
+        height: initial;
       }
     }
 
