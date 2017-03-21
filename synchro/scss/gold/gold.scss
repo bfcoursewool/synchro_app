@@ -30,6 +30,10 @@
       position: initial;
       display: inline-block;
     }
+
+    &.hidden {
+      display:none;
+    }
   }
 
   &__item {

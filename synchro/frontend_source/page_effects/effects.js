@@ -25,7 +25,7 @@ $(function() {
 
   $('.vjs-big-play-button').click(function() {
     if($(this).closest('#popup-video').length === 0) {
-      $('.main-banner__uvp').addClass('hidden');
+      $('.gold-atf__uvp').addClass('hidden');
     }
   });
 
