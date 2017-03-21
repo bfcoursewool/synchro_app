@@ -106,6 +106,12 @@
     </script>
 
     {% endblock %}
+
+    {% if importTest == 'true' %}
+      <script type="text/javascript">
+        var importTest = true;
+      </script>
+    {% endif %}
   </head>
   <body>
     <!-- Google Code for Remarketing Tag -->
