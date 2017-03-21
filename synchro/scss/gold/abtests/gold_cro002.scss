@@ -85,6 +85,7 @@
     line-height: 40px;
     text-align: right;
     color: #fff;
+    margin-bottom: 0;
 
     @media (max-width: $break-mobile) {
       text-align: center;
@@ -181,6 +182,7 @@
     line-height: 40px;
     color: #FFFFFF;
     text-align: right;
+    margin-bottom: 0;
 
     @media (max-width: $break-mobile) {
       text-align: center;
@@ -190,11 +192,11 @@
 
 .cro002-2 {
 
-  &.gold-info {
+  &.guarantee {
     padding-bottom: 50px;
   }
 
-  &.gold-claims {
+  &.claim-icons {
     box-shadow: none;
   }
 }
