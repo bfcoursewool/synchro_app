@@ -1,4 +1,4 @@
-@import 'gold/abtests/gold_cro002';
+@import 'gold/gold_testimonial';
 
 /* variant 1 styles */
 .cro004-1 {
@@ -78,7 +78,7 @@
     }
   }
 
-  .main-banner {
+  .gold-atf {
     text-align: left;
     padding-top: 120px;
     padding-bottom: 40px;
@@ -93,10 +93,11 @@
       background-image: linear-gradient(-68deg, #FBB906 0%, #FE9806 97%);
     }
 
-    &__headline {
+    .p--header {
       max-width: 750px;
       color: #fff;
       font-weight: 400;
+      margin-bottom: 50px;
 
       @media (max-width: $break-mobile) {
         font-size: 32px;
@@ -179,7 +180,7 @@
     }
   }
 
-  .gold-claims {
+  .claim-icons {
     box-shadow: none;
     padding-top: 50px;
   }
