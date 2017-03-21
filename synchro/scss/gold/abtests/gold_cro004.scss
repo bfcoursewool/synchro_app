@@ -402,12 +402,8 @@
     }
   }
 
-  .main-banner {
-    padding-top: 120px;
-
-    @media (max-width: $break-mobile) {
-      padding-top: 100px;
-    }
+  .gold-atf {
+    padding-top: 100px;
 
     &__background {
       position: relative;
@@ -420,7 +416,7 @@
       }
     }
 
-    &__headline {
+    .p--header {
       color: #fff;
       margin-bottom: 20px;
 
@@ -432,6 +428,7 @@
     &__uvp {
       position: relative;
       left: 50%;
+      top: 230px;
       transform: translate(-50%,0);
 
       @media (max-width: $break-desktop) {
@@ -466,7 +463,7 @@
 
       &.item-2 {
         left: calc(50% + 260px);
-        top: -220px;
+        top: -200px;
         width: 210px;
 
         &:after {
@@ -600,12 +597,12 @@
     }
   }
 
-  .gold-claims {
+  .claim-icons {
     box-shadow: none;
-    padding-top: 90px;
+    padding-top: 110px;
 
     @media (max-width: $break-mobile) {
-      padding-top: initial;
+      padding-top: 30px;
     }
   }
 }
