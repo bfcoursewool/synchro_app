@@ -67,7 +67,9 @@ $(function() {
   });
 
   // Pin main header/nav menu to the top of the browser window when scrolling, and unpin it when at the top
-  var scrollAtBannerBackgroundBottom = $('.main-header').attr('data-header-transition')
+  // If data-header-transition is set to "background", then we initiate the transition effect once the header has
+  // reached the bottom of the background image. 
+  var scrollAtBannerBackgroundBottom = $('.main-header').attr('data-header-transition');
   var maxScroll = 100;
   if(scrollAtBannerBackgroundBottom == 'background') {
     maxScroll = $('.main-banner__background').height() - $('.main-header').outerHeight();
