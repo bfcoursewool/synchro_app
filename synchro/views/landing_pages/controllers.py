@@ -72,7 +72,7 @@ endpoint_info_dict = {
       'template': 'landing_pages/gold/abtests/gold_cro002-1.html',
       'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
-        'is_variant': False,
+        'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
         'stylesheet': 'gold/abtests/gold_cro002.css'
       }
@@ -81,7 +81,7 @@ endpoint_info_dict = {
       'template': 'landing_pages/gold/abtests/gold_cro002-2.html',
       'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
-        'is_variant': False,
+        'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
         'stylesheet': 'gold/abtests/gold_cro002.css'
       }
@@ -92,7 +92,7 @@ endpoint_info_dict = {
       'template': 'landing_pages/gold/abtests/gold_cro004-1.html',
       'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
-        'is_variant': False,
+        'is_variant': True,
         'stylesheet': 'gold/abtests/gold_cro004.css'
       }
     },
@@ -100,7 +100,7 @@ endpoint_info_dict = {
       'template': 'landing_pages/gold/abtests/gold_cro004-2.html',
       'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
-        'is_variant': False,
+        'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
         'stylesheet': 'gold/abtests/gold_cro004.css'
       }
@@ -109,7 +109,7 @@ endpoint_info_dict = {
       'template': 'landing_pages/gold/abtests/gold_cro004-3.html',
       'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
-        'is_variant': False,
+        'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
         'stylesheet': 'gold/abtests/gold_cro004.css'
       }
