@@ -23,7 +23,6 @@ $(function() {
   });
 
   $('.vjs-big-play-button').click(function() {
-    console.log("test..."); 
     $('.main-banner__uvp').addClass('hidden');
   });
 

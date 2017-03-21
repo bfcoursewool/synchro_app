@@ -38,11 +38,6 @@
       ga('send', 'pageview');
     </script>
 
-    <script src="https://cdn.ravenjs.com/3.12.0/raven.min.js"></script>
-    <script>
-      Raven.config('https://35f8ce49bcbf4b2fa0299a69b5a0b4c5@sentry.io/130658').install()
-    </script>
-
     <!-- KM Snippet -->
     <script type="text/javascript">
       var _kmq = _kmq || [];
@@ -104,6 +99,12 @@
     <script src='//widget.privy.com/assets/widget.js'></script>
     <!-- END PRIVY WIDGET CODE -->
 
+    <!-- Sentry error telemetry --> 
+    <script src="https://cdn.ravenjs.com/3.12.0/raven.min.js"></script>
+    <script>
+      Raven.config('https://35f8ce49bcbf4b2fa0299a69b5a0b4c5@sentry.io/130658').install()
+    </script>
+
     {% endblock %}
   </head>
   <body>
@@ -135,7 +136,8 @@
 
     {% block content %}{% endblock %}
     {% block footer %}{% endblock %}
-
+    
+    <!-- Mouseflow heatmapper --> 
     <script type="text/javascript">
       var _mfq = _mfq || [];
       (function() {

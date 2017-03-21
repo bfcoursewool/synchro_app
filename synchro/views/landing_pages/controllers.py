@@ -27,6 +27,14 @@ endpoint_info_dict = {
       'template_vars': {
         'stylesheet': 'genesis/genesis.css'
       }
+    },
+    '1': {
+      'template': 'landing_pages/genesis/genesis.html',
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'template_vars': {
+        'is_variant': True,
+        'stylesheet': 'genesis/genesis.css'
+      }
     }
   },
   'cognos': {
@@ -60,7 +68,7 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/gold_video.css'
+        'stylesheet': 'gold/gold_testimonial.css'
       }
     }
   },
@@ -72,6 +80,55 @@ endpoint_info_dict = {
     'v1': {
       'template': 'landing_pages/digestcleanse/digestcleanse_v1.html',
       'scripts': [synchro_shopify]
+    }
+  },
+  'cro002': {
+    'v1' : {
+      'template': 'landing_pages/gold/gold_cro002-1.html',
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'template_vars': {
+        'is_variant': False,
+        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
+        'stylesheet': 'gold/gold_cro002.css'
+      }
+    },
+    'v2' : {
+      'template': 'landing_pages/gold/gold_cro002-2.html',
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'template_vars': {
+        'is_variant': False,
+        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
+        'stylesheet': 'gold/gold_cro002.css'
+      }
+    }
+  },
+  'cro004': {
+    'v1' : {
+      'template': 'landing_pages/gold/gold_cro004-1.html',
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'template_vars': {
+        'is_variant': False,
+        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
+        'stylesheet': 'gold/gold_cro004.css'
+      }
+    },
+    'v2' : {
+      'template': 'landing_pages/gold/gold_cro004-2.html',
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'template_vars': {
+        'is_variant': False,
+        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
+        'stylesheet': 'gold/gold_cro004.css'
+      }
+    },
+    'v3' : {
+      'template': 'landing_pages/gold/gold_cro004-3.html',
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'template_vars': {
+        'is_variant': False,
+        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
+        'stylesheet': 'gold/gold_cro004.css'
+      }
     }
   }
 }
@@ -89,7 +146,7 @@ def landing_page(page, version):
   # in other words if this is a health-check request going directly to an instance's ephemeral ip
   # let's not set the page to 3 numerical digits.
   if const.kENVIRONMENT == 'production' and subdomain.isalpha():
-    # For addresses like: gold.besynchro.com/1 the first arg is actually the version, but it comes 
+    # For addresses like: gold.besynchro.com/1 the first arg is actually the version, but it comes
     # through here as "page" because of how the route is set up, so we'll set that as the version
     # so long as it's not "none", in which case version is already v0
     if page is not 'none':
