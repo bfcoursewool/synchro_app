@@ -5,13 +5,13 @@ export default class LPEffects {
 
   registerEvents() {
     let that = this;
-    let selectors = {
+    let specialSelectors = {
       'window': window
     }
     $.each(this.events(), function(key, value) {
       let [event, selector] = key.split(' '); 
       if(selector == 'window') {
-        selector = selectors[selector];
+        selector = specialSelectors[selector];
       }
       $(selector).on(event, function() {
         that[value](this)
