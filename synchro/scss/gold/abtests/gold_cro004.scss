@@ -223,18 +223,19 @@
 
 .cro004-2 {
 
-  .main-banner {
+  .gold-atf {
     text-align: left;
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     @media (max-width: $break-mobile) {
       text-align: center;
-      padding-top: 30px;
 
     }
 
-    &__headline {
+    .p--header {
       max-width: 750px;
+      margin-bottom: 50px;
 
       @media (max-width: $break-mobile) {
         font-size: 32px;
