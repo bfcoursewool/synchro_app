@@ -22,17 +22,6 @@ $(function() {
       $(".modal-overlay").remove();
     });
   });
-   
-  /*
-  $(window).resize(function() {
-    $(".modal-box").css({
-      top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
-      left: ($(window).width() - $(".modal-box").outerWidth()) / 2
-    });
-  });
-   
-  $(window).resize();
-  */ 
 
   $('.vjs-big-play-button').click(function() {
     if($(this).closest('#popup-video').length === 0) {
@@ -78,7 +67,11 @@ $(function() {
   });
 
   // Pin main header/nav menu to the top of the browser window when scrolling, and unpin it when at the top
-  var maxScroll = $('.main-header').attr('data-max-scroll') ? $('.main-header').attr('data-max-scroll') : 100;
+  var scrollAtBannerBackgroundBottom = $('.main-header').attr('data-header-transition')
+  var maxScroll = 100;
+  if(scrollAtBannerBackgroundBottom == 'background') {
+    maxScroll = $('.main-banner__background').height() - $('.main-header').outerHeight();
+  } 
 
   $(window).scroll(function() {
     var navbar = $('.main-header');
