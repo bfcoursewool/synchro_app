@@ -8,7 +8,6 @@ from flask import (
 )
 from synchro.third_party_resources import bootstrap, bootstrap_css
 from synchro.resources import (
-  synchro_shopify, 
   synchro_buy_button, 
   synchro_effects, 
   analytics,
@@ -23,14 +22,14 @@ endpoint_info_dict = {
   'genesis': {
     'v0': {
       'template': 'landing_pages/genesis/genesis.html',
-      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'stylesheet': 'genesis/genesis.css'
       }
     },
     '1': {
       'template': 'landing_pages/genesis/genesis.html',
-      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'stylesheet': 'genesis/genesis.css'
@@ -40,7 +39,7 @@ endpoint_info_dict = {
   'cognos': {
     'v0': {
       'template': 'landing_pages/cognos/cognos.html',
-      'scripts': [synchro_es6, synchro_buy_button, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
         'importTest': 'true',
         'stylesheet': 'cognos/cognos.css'
@@ -50,7 +49,7 @@ endpoint_info_dict = {
   'salt': {
     'v0': {
       'template': 'landing_pages/salt/salt.html',
-      'scripts': [synchro_shopify]
+      'scripts': []
     }
   },
   'gold': {
@@ -76,11 +75,11 @@ endpoint_info_dict = {
   'digestcleanse': {
     'v0': {
       'template': 'landing_pages/digestcleanse/digestcleanse.html',
-      'scripts': [synchro_shopify]
+      'scripts': []
     },
     'v1': {
       'template': 'landing_pages/digestcleanse/digestcleanse_v1.html',
-      'scripts': [synchro_shopify]
+      'scripts': []
     }
   },
   'cro002': {

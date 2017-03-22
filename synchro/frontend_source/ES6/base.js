@@ -8,15 +8,12 @@ export default class Base {
   }
 
   bindEvents() {
-    let that = this;
-    $.each(this.events(), function(key, value) {
+    for(let [key, value] of Object.entries(this.events())) {
       let [event, selector] = key.split(' '); 
-      if($.inArray(selector, Object.keys(that._specialSelectors)) >= 0) {
-        selector = that._specialSelectors[selector];
+      if($.inArray(selector, Object.keys(this._specialSelectors)) >= 0) {
+        selector = this._specialSelectors[selector];
       }
-      $(selector).on(event, function() {
-        that[value](this);
-      });
-    });
+      $(selector).on(event, (e) => this[value](e.currentTarget))
+    }
   }
 }

@@ -13,15 +13,11 @@ from synchro.third_party_resources import (
 
 synchro_es6 = Resource(
   library_frontend_build, 'synchro.js',
-  bottom=True
-)
-
-synchro_shopify = Resource(
-  library_frontend_build, 'synchro.min.js',
   depends=[
     jquery,
-    shopify
-  ]
+    shopify_buy_button
+  ],
+  bottom=True
 )
 
 synchro_buy_button = Resource(

@@ -27,10 +27,10 @@ export default class LPEffects extends Base {
     $('.main-banner__uvp').addClass('hidden');
   }
 
-  parallaxScroll(oldThis) {
-    if (location.pathname.replace(/^\//,'') == oldThis.pathname.replace(/^\//,'') && location.hostname == oldThis.hostname) {
-      var target = $(oldThis.hash);
-      target = target.length ? target : $('[name=' + oldThis.hash.slice(1) +']');
+  parallaxScroll(clickTarget) {
+    if (location.pathname.replace(/^\//,'') == clickTarget.pathname.replace(/^\//,'') && location.hostname == clickTarget.hostname) {
+      var target = $(clickTarget.hash);
+      target = target.length ? target : $('[name=' + clickTarget.hash.slice(1) +']');
       if (target.length) {
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         $('html, body').animate({
@@ -42,7 +42,6 @@ export default class LPEffects extends Base {
   }
 
   navMenuTransition() {
-    console.log('nav menu transition handler...'); 
     let navbar = $('.main-header');
     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     let maxScroll = 100; 
@@ -53,6 +52,4 @@ export default class LPEffects extends Base {
       navbar.removeClass('floated');
     }
   }
-
-
 }
