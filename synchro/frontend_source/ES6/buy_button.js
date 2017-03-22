@@ -1,0 +1,1 @@
+import shopClient from './shopify_credentials'

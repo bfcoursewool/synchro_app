@@ -1,23 +1,8 @@
-export default class LPEffects {
-  constructor() {
-    this.bindEvents();
-  }
+import Base from './base';
 
-  bindEvents() {
-    let that = this;
-    let specialSelectors = {
-      'window': window
-      'document': document
-    }
-    $.each(this.events(), function(key, value) {
-      let [event, selector] = key.split(' '); 
-      if($.inArray(selector, specialSelectors.keys())) {
-        selector = specialSelectors[selector];
-      }
-      $(selector).on(event, function() {
-        that[value](this)
-      });
-    });
+export default class LPEffects extends Base {
+  constructor() {
+    super();
   }
 
   events() {
@@ -61,7 +46,6 @@ export default class LPEffects {
     let navbar = $('.main-header');
     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     let maxScroll = 100; 
-
 
     if(scrollTop > maxScroll && !navbar.is('.floated')) {
       navbar.addClass('floated');
