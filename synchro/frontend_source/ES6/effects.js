@@ -1,16 +1,17 @@
 export default class LPEffects {
   constructor() {
-    this.registerEvents();
+    this.bindEvents();
   }
 
-  registerEvents() {
+  bindEvents() {
     let that = this;
     let specialSelectors = {
       'window': window
+      'document': document
     }
     $.each(this.events(), function(key, value) {
       let [event, selector] = key.split(' '); 
-      if(selector == 'window') {
+      if($.inArray(selector, specialSelectors.keys())) {
         selector = specialSelectors[selector];
       }
       $(selector).on(event, function() {
