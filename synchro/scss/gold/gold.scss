@@ -30,6 +30,10 @@
       position: initial;
       display: inline-block;
     }
+
+    &.hidden {
+      display:none;
+    }
   }
 
   &__item {
@@ -194,8 +198,4 @@
       padding-bottom: 70px;
     }
   }
-}
-
-.cta-section {
-  background: url("http://cdn.besynchro.com/gold/Gold-leaf-smaller.jpg") center no-repeat;
 }

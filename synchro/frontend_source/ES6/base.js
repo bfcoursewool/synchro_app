@@ -13,7 +13,7 @@ export default class Base {
       if($.inArray(selector, Object.keys(this._specialSelectors)) >= 0) {
         selector = this._specialSelectors[selector];
       }
-      $(selector).on(event, (e) => this[value](e.currentTarget))
+      $(selector).on(event, (e) => this[value](e.currentTarget, e))
     }
   }
 }

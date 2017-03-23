@@ -170,6 +170,10 @@ GLOBAL SECTIONS
     &__logo {
       display: inline-block;
 
+      .synchro-logo {
+        fill: #231f20;
+      }
+
       @media (max-width: $break-mobile) {
         position: fixed;
         left: 50%;
@@ -289,6 +293,7 @@ GLOBAL SECTIONS
 
   &__text {
     color: #7b858b;
+    margin-bottom: 0;
   }
 }
 
@@ -449,8 +454,10 @@ GLOBAL SECTIONS
 
 /* cta section */
 .cta-section {
-  background: url("http://cdn.besynchro.com/gold/Gold-leaf-smaller.jpg") center no-repeat;
+  background-image: url("http://cdn.besynchro.com/gold/Gold-leaf-smaller.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 120px 0;
   text-align: center;
 

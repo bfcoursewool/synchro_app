@@ -3,6 +3,9 @@ import Base from './base';
 export default class LPEffects extends Base {
   constructor() {
     super();
+    new WOW().init();
+
+    this._appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
   }
 
   events() {
@@ -11,7 +14,11 @@ export default class LPEffects extends Base {
       'click .main-navigation__item': 'toggleNav',
       'click .vjs-big-play-button': 'hideBenefitsText',
       'click a[href*="#"]:not([href="#"])': 'parallaxScroll',
-      'scroll window': 'navMenuTransition'
+      'scroll window': 'navMenuTransition',
+      'click a[data-modal-id]': 'openModal',
+      'click .js-modal-close': 'closeModal',
+      'click .modal-overlay': 'closeModal',
+      'click .vjs-big-play-button': 'hideBenefitsText'
     }
   }
 
@@ -24,7 +31,9 @@ export default class LPEffects extends Base {
   }
 
   hideBenefitsText() {
-    $('.main-banner__uvp').addClass('hidden');
+    if($(this).closest('#popup-video').length === 0) {
+      $('.gold-atf__uvp').addClass('hidden');
+    }
   }
 
   parallaxScroll(clickTarget) {
@@ -51,5 +60,22 @@ export default class LPEffects extends Base {
     } else if(scrollTop < maxScroll && navbar.is('.floated')) {
       navbar.removeClass('floated');
     }
+  }
+
+  openModal(target, e) {
+    e.preventDefault();
+    videojs('my-video').play();
+    $("body").append(this._appendthis);
+    $(".modal-overlay").fadeTo(500, 0.7);
+    //$(".js-modalbox").fadeIn(500);
+    var modalBox = $(this).attr('data-modal-id');
+    $('#'+modalBox).fadeIn($(this).data());
+  }
+
+  closeModal() {
+    videojs('my-video').pause();
+    $(".modal-box, .modal-overlay").fadeOut(500, function() {
+      $(".modal-overlay").remove();
+    });
   }
 }
