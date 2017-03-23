@@ -17,6 +17,7 @@ export default class LPEffects extends Base {
       'scroll window': 'navMenuTransition',
       'click a[data-modal-id]': 'openModal',
       'click .js-modal-close': 'closeModal',
+      'keyup window': 'closeModal',
       'click .modal-overlay': 'closeModal',
       'click .vjs-big-play-button': 'hideBenefitsText'
     }
@@ -72,7 +73,8 @@ export default class LPEffects extends Base {
     $('#'+modalBox).fadeIn($(target).data());
   }
 
-  closeModal() {
+  closeModal(target, e) {
+    if(e.which != 27) return;
     videojs('my-video').pause();
     $(".modal-box, .modal-overlay").fadeOut(500, function() {
       $(".modal-overlay").remove();

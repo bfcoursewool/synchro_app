@@ -7,12 +7,7 @@ from flask import (
   request
 )
 from synchro.third_party_resources import bootstrap, bootstrap_css
-from synchro.resources import (
-  synchro_buy_button, 
-  synchro_effects, 
-  analytics,
-  synchro_es6
-)
+from synchro.resources import synchro_es6
 from synchro.third_party_resources import wowjs, videojsga, videojsie8
 from synchro import const
 
@@ -22,14 +17,14 @@ endpoint_info_dict = {
   'genesis': {
     'v0': {
       'template': 'landing_pages/genesis/genesis.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
+      'scripts': [synchro_es6],
       'template_vars': {
         'stylesheet': 'genesis/genesis.css'
       }
     },
     '1': {
       'template': 'landing_pages/genesis/genesis.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
+      'scripts': [synchro_es6],
       'template_vars': {
         'is_variant': True,
         'stylesheet': 'genesis/genesis.css'
@@ -39,9 +34,8 @@ endpoint_info_dict = {
   'cognos': {
     'v0': {
       'template': 'landing_pages/cognos/cognos.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
+      'scripts': [synchro_es6],
       'template_vars': {
-        'importTest': 'true',
         'stylesheet': 'cognos/cognos.css'
       }
     }
