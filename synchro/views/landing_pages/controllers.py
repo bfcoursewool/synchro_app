@@ -22,14 +22,14 @@ endpoint_info_dict = {
   'genesis': {
     'v0': {
       'template': 'landing_pages/genesis/genesis.html',
-      'scripts': [synchro_es6, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'stylesheet': 'genesis/genesis.css'
       }
     },
     '1': {
       'template': 'landing_pages/genesis/genesis.html',
-      'scripts': [synchro_es6, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'stylesheet': 'genesis/genesis.css'
@@ -39,7 +39,7 @@ endpoint_info_dict = {
   'cognos': {
     'v0': {
       'template': 'landing_pages/cognos/cognos.html',
-      'scripts': [synchro_es6, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'importTest': 'true',
         'stylesheet': 'cognos/cognos.css'
@@ -55,7 +55,7 @@ endpoint_info_dict = {
   'gold': {
     'v0': {
       'template': 'landing_pages/gold/gold_organic.html',
-      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': False,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
@@ -64,7 +64,7 @@ endpoint_info_dict = {
     },
     '1': {
       'template': 'landing_pages/gold/gold_paid.html',
-      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
@@ -85,7 +85,7 @@ endpoint_info_dict = {
   'cro002': {
     'v1' : {
       'template': 'landing_pages/gold/abtests/gold_cro002-1.html',
-      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
@@ -94,7 +94,7 @@ endpoint_info_dict = {
     },
     'v2' : {
       'template': 'landing_pages/gold/abtests/gold_cro002-2.html',
-      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
@@ -105,7 +105,7 @@ endpoint_info_dict = {
   'cro004': {
     'v1' : {
       'template': 'landing_pages/gold/abtests/gold_cro004-1.html',
-      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'stylesheet': 'gold/abtests/gold_cro004.css'
@@ -113,7 +113,7 @@ endpoint_info_dict = {
     },
     'v2' : {
       'template': 'landing_pages/gold/abtests/gold_cro004-2.html',
-      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
@@ -122,7 +122,7 @@ endpoint_info_dict = {
     },
     'v3' : {
       'template': 'landing_pages/gold/abtests/gold_cro004-3.html',
-      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',

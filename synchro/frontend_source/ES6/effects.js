@@ -68,8 +68,8 @@ export default class LPEffects extends Base {
     $("body").append(this._appendthis);
     $(".modal-overlay").fadeTo(500, 0.7);
     //$(".js-modalbox").fadeIn(500);
-    var modalBox = $(this).attr('data-modal-id');
-    $('#'+modalBox).fadeIn($(this).data());
+    var modalBox = $(target).attr('data-modal-id');
+    $('#'+modalBox).fadeIn($(target).data());
   }
 
   closeModal() {

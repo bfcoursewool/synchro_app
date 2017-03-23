@@ -190,13 +190,12 @@ export default class BuyButton {
   insertCollection() {
     const collection = $('.synchro-collection');
     let collectionId = collection.attr('data-collection-id');
-    let componentPromise = new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       this._ui.createComponent('productSet', {
         id: collectionId,
         node: document.getElementById('synchro-product-set'),
         options: this.productSetOptions()
       }).then(() => resolve('done'));
     });
-    return componentPromise; 
   }
 }
