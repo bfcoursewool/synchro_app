@@ -22,14 +22,14 @@ endpoint_info_dict = {
   'genesis': {
     'v0': {
       'template': 'landing_pages/genesis/genesis.html',
-      'scripts': [synchro_es6, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, wowjs, videojsie8, videojsga],
       'template_vars': {
         'stylesheet': 'genesis/genesis.css'
       }
     },
     '1': {
       'template': 'landing_pages/genesis/genesis.html',
-      'scripts': [synchro_es6, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, wowjs, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'stylesheet': 'genesis/genesis.css'
@@ -39,7 +39,7 @@ endpoint_info_dict = {
   'cognos': {
     'v0': {
       'template': 'landing_pages/cognos/cognos.html',
-      'scripts': [synchro_es6, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, wowjs, videojsie8, videojsga],
       'template_vars': {
         'importTest': 'true',
         'stylesheet': 'cognos/cognos.css'

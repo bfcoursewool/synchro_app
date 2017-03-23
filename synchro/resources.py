@@ -15,6 +15,7 @@ synchro_es6 = Resource(
   library_frontend_build, 'synchro.js',
   depends=[
     jquery,
+    wowjs,
     shopify_buy_button
   ],
   bottom=True
