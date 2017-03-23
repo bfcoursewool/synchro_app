@@ -23,6 +23,18 @@
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     {% endif %}
 
+    <!-- Start Visual Website Optimizer Asynchronous Code -->
+    <script type='text/javascript'>
+    var _vwo_code=(function(){
+    var account_id=286211,
+    settings_tolerance=2000,
+    library_tolerance=2500,
+    use_existing_jquery=false,
+    /* DO NOT EDIT BELOW THIS LINE */
+    f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+    </script>
+    <!-- End Visual Website Optimizer Asynchronous Code -->
+
     <!-- Universal Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -54,19 +66,7 @@
       _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
     </script>
 
-    <!-- Start Visual Website Optimizer Asynchronous Code -->
-    <script type='text/javascript'>
-    var _vwo_code=(function(){
-    var account_id=286211,
-    settings_tolerance=2000,
-    library_tolerance=2500,
-    use_existing_jquery=false,
-    /* DO NOT EDIT BELOW THIS LINE */
-    f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
-    </script>
-    <!-- End Visual Website Optimizer Asynchronous Code -->
-
-    <!-- VWO integration w/ KM --> 
+    <!-- VWO integration w/ KM -->
     <script type="text/javascript">
     var _vis_opt_queue = window._vis_opt_queue || [], _vis_counter = 0, _kmq = _kmq || [];
     _vis_opt_queue.push(function() {
@@ -85,7 +85,7 @@
               }
             }
           }
-          // Use the _vis_data object created above to fetch the data, 
+          // Use the _vis_data object created above to fetch the data,
           // key of the object is the Test ID and the value is Variation Name
           if(_vis_counter) _kmq.push(['set', _vis_data]);
         }
@@ -94,12 +94,14 @@
     });
     </script>
 
+
+
     <!-- BEGIN PRIVY WIDGET CODE -->
     <script type='text/javascript'> var _d_site = _d_site || 'A0D1801C5174012EDAB8AB32'; </script>
     <script src='//widget.privy.com/assets/widget.js'></script>
     <!-- END PRIVY WIDGET CODE -->
 
-    <!-- Sentry error telemetry --> 
+    <!-- Sentry error telemetry -->
     <script src="https://cdn.ravenjs.com/3.12.0/raven.min.js"></script>
     <script>
       Raven.config('https://35f8ce49bcbf4b2fa0299a69b5a0b4c5@sentry.io/130658').install()
@@ -129,15 +131,15 @@
     <script>
      var sd = 'http://synchrolife.ositracker.com';
      var resource = document.createElement('script');
-     resource.src = "http://synchrolife.ositracker.com/track.js";  
+     resource.src = "http://synchrolife.ositracker.com/track.js";
      var script = document.getElementsByTagName('script')[0];
      script.parentNode.insertBefore(resource, script);
     </script>
 
     {% block content %}{% endblock %}
     {% block footer %}{% endblock %}
-    
-    <!-- Mouseflow heatmapper --> 
+
+    <!-- Mouseflow heatmapper -->
     <script type="text/javascript">
       var _mfq = _mfq || [];
       (function() {
