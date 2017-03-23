@@ -7,7 +7,11 @@ export default class Kissmetrics extends Base {
     super();
 
     _kmq.push(['identify', 'anonymous']);
-    _kmq.push(() => this.kissIdentity = KM.i()); 
+    this.KMPromise = new Promise((resolve, reject) => {
+      _kmq.push(() => {
+        resolve(KM.i()); 
+      });    
+    }); 
 
     // TODO -- O GOD REFACTOR ME
     this.gaNames = {

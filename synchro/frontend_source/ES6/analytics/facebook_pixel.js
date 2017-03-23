@@ -14,7 +14,6 @@ export default class FaceBookPixel extends Base {
   }
 
   fireFBQ(target) {
-    console.log('test'); 
     let price = $(target).closest('.shopify-buy-frame').find('.shopify-buy__product__actual-price').html();
     price = price.replace(/\$/g, ''); 
     price = price.match(/(.*)\.[0-9][0-9]/); 

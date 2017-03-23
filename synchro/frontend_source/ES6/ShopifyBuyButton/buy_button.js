@@ -1,12 +1,12 @@
 import shopClient from './shopify_credentials';
 
 export default class BuyButton {
-  constructor(kissIdentity) {
-    this._kissIdentity = kissIdentity; 
+  constructor(KMPromise) {
+    this._KMPromise = KMPromise; 
     this._ui = ShopifyBuy.UI.init(shopClient); 
   }
 
-  productOptions() {
+  productOptions(kissIdentity) {
     return {
       product: {
         iframe: false,
@@ -60,7 +60,7 @@ export default class BuyButton {
               cartString = '/' + cartString;
             }
             var payload = {
-              'km_ident': this._kissIdentity,
+              'km_ident': kissIdentity,
               'cart_string': cartString
             };
             $.ajax({
@@ -153,35 +153,50 @@ export default class BuyButton {
     }
   }
 
-  insertItems() {
+  init() {
+    return new Promise((resolve, reject) => {
+      this._KMPromise.then((identString) => {
+        let promises = [...this.insertItems(identString), ...this.insertCollection()];
+        Promise.all(promises).then(() => resolve());
+      });
+    });
+  }
+
+  insertItems(kissIdentity) {
     const purchaseItems = $('.purchase__item');
     let productId, variantId, node;
-    let options = this.productOptions();
+    let options = this.productOptions(kissIdentity);
+    let itemPromises = [];
     for(let [index, item] of Object.entries(purchaseItems)) {
       productId = parseInt($(item).attr('data-product-id'));
       variantId = parseInt($(item).attr('data-variant-id'));
       node = $(item).attr('data-node');
+      itemPromises.push(new Promise((resolve, reject) => {
+        options.product.templates.title = $(item).find('.template-title').html();
+        options.product.templates.variantTitle = $(item).find('.template-variantTitle').html();
+        options.product.templates.price = $(item).find('.template-price').html();
 
-      options.product.templates.title = $(item).find('.template-title').html();
-      options.product.templates.variantTitle = $(item).find('.template-variantTitle').html();
-      options.product.templates.price = $(item).find('.template-price').html();
-
-      this._ui.createComponent('product', {
-        id: productId,
-        variantId: variantId,
-        node: document.getElementById(node),
-        options: options
-      });
+        this._ui.createComponent('product', {
+          id: productId,
+          variantId: variantId,
+          node: document.getElementById(node),
+          options: options
+        }).then(() => resolve('done'));
+      }));
     }
+    return itemPromises;
   }
 
   insertCollection() {
     const collection = $('.synchro-collection');
     let collectionId = collection.attr('data-collection-id');
-    this._ui.createComponent('productSet', {
-      id: collectionId,
-      node: document.getElementById('synchro-product-set'),
-      options: this.productSetOptions()
+    let componentPromise = new Promise((resolve, reject) => {
+      this._ui.createComponent('productSet', {
+        id: collectionId,
+        node: document.getElementById('synchro-product-set'),
+        options: this.productSetOptions()
+      }).then(() => resolve('done'));
     });
+    return componentPromise; 
   }
 }
