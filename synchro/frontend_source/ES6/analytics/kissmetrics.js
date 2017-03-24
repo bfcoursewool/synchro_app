@@ -1,8 +1,8 @@
 'use strict';
 
-import Base from '../base';
+import EventsBase from '../events_base';
 
-export default class Kissmetrics extends Base {
+export default class Kissmetrics extends EventsBase {
   constructor() {
     super();
 
