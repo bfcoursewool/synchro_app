@@ -1,4 +1,4 @@
-export default class Base {
+export default class EventsBase {
   constructor() {
     this._specialSelectors = {
       'window': window,

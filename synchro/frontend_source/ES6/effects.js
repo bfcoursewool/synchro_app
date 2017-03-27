@@ -1,6 +1,6 @@
-import Base from './base';
+import EventsBase from './events_base';
 
-export default class LPEffects extends Base {
+export default class LPEffects extends EventsBase {
   constructor() {
     super();
     new WOW().init();
