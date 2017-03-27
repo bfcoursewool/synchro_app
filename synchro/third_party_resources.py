@@ -4,6 +4,11 @@ from fanstatic import Resource
 from fanstatic import Group
 import time
 
+d3js = Resource(
+  library_resources,
+  'd3/d3.js'
+)
+
 jquery = Resource(
   library_resources,
   'jquery/jquery-3.1.1.min.js'

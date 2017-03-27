@@ -323,6 +323,8 @@ GLOBAL SECTIONS
 
   &__img-box {
     height: 300px;
+    width: 50%;
+    max-width: 530px;
   }
 
   &__img-helper {

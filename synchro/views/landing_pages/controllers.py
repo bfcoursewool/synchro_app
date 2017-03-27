@@ -8,7 +8,7 @@ from flask import (
 )
 from synchro.third_party_resources import bootstrap, bootstrap_css
 from synchro.resources import synchro_es6
-from synchro.third_party_resources import wowjs, videojsga, videojsie8
+from synchro.third_party_resources import videojsga, videojsie8, d3js
 from synchro import const
 
 landing_pages = Blueprint('landing_pages', __name__)
@@ -34,7 +34,7 @@ endpoint_info_dict = {
   'cognos': {
     'v0': {
       'template': 'landing_pages/cognos/cognos.html',
-      'scripts': [synchro_es6],
+      'scripts': [synchro_es6, d3js],
       'template_vars': {
         'stylesheet': 'cognos/cognos.css'
       }

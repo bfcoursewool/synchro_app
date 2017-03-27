@@ -7,13 +7,15 @@ import time
 from synchro.third_party_resources import (
   jquery, 
   shopify_buy_button,
-  wowjs
+  wowjs,
+  d3js
 )
 
 synchro_es6 = Resource(
   library_frontend_build, 'synchro.js',
   depends=[
     jquery,
+    d3js,
     wowjs,
     shopify_buy_button
   ],
