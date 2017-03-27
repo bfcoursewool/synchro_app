@@ -1,57 +1,88 @@
 @import 'landing_base';
 
-/* WebPack demo */ 
-
-.BlackTriangle {
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
-  overflow: hidden;
-}
-
-.BlackTriangle-inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 277.2px;
-  height: 277.2px;
-  margin-top: -138.6px;
-  margin-left: -138.6px;
-  border-radius: 100%;
-}
-
-.BlackTriangle-inner:before {
-  position:absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  margin-top: -136px;
-  margin-left: -120px;
-  content: "";
-  width: 0;
+.main-header-container {
   height: 0;
-  border-style: solid;
-  border-width: 0 120px 207.8px 120px;
-  border-color: transparent transparent #000 transparent;
-}
 
-.genesis-atf {
-  text-align: center;
+  .main-header {
+    background: none;
+    text-align: center;
 
-  &__image {
-    max-width: 100%;
-    margin: 0 auto;
+    &.floated {
+      background: rgba(40,40,40,0.9);
+    }
+
+    .main-navigation {
+      float: none;
+      display: block;
+
+      &__item {
+        color: #fff;
+      }
+
+      .a--cta {
+        background: none;
+        border: 1px solid #fff;
+      }
+    }
   }
 }
 
-/**/
+.bg-full-width {
 
-.cognos-benefits {
+  height: 650px;
+  background: linear-gradient(100deg, #751e85 10%, #015caf 90%);
+
+  .p--header {
+    color: #fff;
+  }
+}
+
+.intro {
+
+  &.text-1-col {
+
+    .p--text {
+      font-size: 20px;
+    }
+  }
+}
+
+.benefits .carousel-with-nav {
+
+  &__content {
+    background: linear-gradient(100deg, #773872 10%, #5c40e8 90%);
+    padding: 40px;
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+
+    &.position--right {
+      background: linear-gradient(100deg, #5c40e8 10%, #773872 90%);
+      right: 0;
+    }
+
+    .p--header {
+      color: #fff;
+    }
+
+    .p--text {
+      color: #fff;
+    }
+  }
+
+  &__img {
+    width: 100px;
+  }
+
+}
+
+
+.genesis-benefits {
+
+  text-align: center;
 
   &__item {
-    text-align: center;
+    margin-bottom: 40px;
   }
 
   &__img {
@@ -59,111 +90,96 @@
   }
 
   &__header {
-    margin: 10px 0;
+    margin: 20px 0;
   }
 }
 
-.keystone-ingredients {
-  width: 100%;
-  text-align: center;
-  background-color: #f3f6f9;
-  padding: 70px 20px;
+.genesis-ingredients {
 
-  &__img {
+  text-align: left;
 
-  }
-
-  &__info {
-
-  }
-}
-
-.faq {
-  background-color: white;
-  text-align: center;
-  padding: 70px 35px;
-
-  &__text {
-    text-align: left;
-    padding: 20px 0;
-  }
-
-  .p--text {
-    margin-top: 20px;
-    color: #7b858b;
-  }
-}
-
-
-.use {
-  background: #F6F8FB;
-  padding: 70px 20px;
-
-  @media (max-width: $break-mobile) {
+  &__header {
+    background: url('http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg') no-repeat center center;
+    background-size: cover;
     text-align: center;
   }
 
-  &__title {
-    margin-bottom: 20px;
+  &__keystone {
+    width: 100%;
+    text-align: center;
+    background-color: #f3f6f9;
   }
 
-  .p--title:after {
-    margin-left: 0;
+  &__keystone-img {
+    width: 70%;
+    margin: 40px 0;
+  }
 
-    @media (max-width: $break-mobile) {
-      margin-left: auto;
+  &__info {
+    text-align: left;
+  }
+
+  &__item {
+    margin: 60px 0;
+
+    .p--title {
+      text-align: left;
+
+      &:after {
+        margin-left: 0;
+      }
+    }
+
+    .p--text {
+      text-align: left;
     }
   }
 
   &__img {
-    display: block;
-    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+.genesis-facts {
+  box-shadow: 0px -4px 3px rgba(0,0,0,0.05);
+  text-align: center;
+
+  img {
+    max-width: 90%;
+  }
+}
+
+.genesis-use {
+
+  .p--title {
+    text-align: left;
+
+    &:after {
+      margin-left: 0;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 600px;
 
     @media (max-width: $break-mobile) {
-      margin-bottom: 40px;
-      max-width: 100%;
+      margin-top: 50px;
     }
   }
 }
 
-.ingredients-header {
-  background: url('http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg') no-repeat center center;
-  background-size: cover;
-  color:#ffffff;
-  padding: 70px 20px;
-  text-align: center;
+/* landing_base overwrites */
+
+.faq {
+  background-color: white;
 }
 
-.cognos-cta {
-  background: url("http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg") center no-repeat;
-  background-size: cover;
-  padding: 120px 0;
-  text-align: center;
-
-  &__brandname {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    letter-spacing: 4px;
-    font-size: 18px;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  &__title {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-size: 44px;
-    margin: 20px 60px 30px;
-    font-weight: 300;
-    line-height: 1.4;
-    -webkit-font-smoothing: antialiased;
-
-    @media (max-width: $break-mobile) {
-      font-size: 40px;
-    }
-  }
+.cta-section {
+  background-image: url("http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg");
 
   &__cta {
-    padding: 15px 30px;
+    background: white;
+    color: #2f90d9;
   }
 }

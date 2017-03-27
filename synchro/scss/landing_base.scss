@@ -94,6 +94,16 @@ $break-desktop: 1199px;
   }
 }
 
+.section--padding-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (max-width: $break-mobile) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .bg--ltgrey {
   background: #F6F8FB;
 }
@@ -133,6 +143,14 @@ a.anchor {
     transition: all 0.2s ease;
     text-decoration: none;
   }
+}
+
+.line-wavy {
+  height: 4px;
+  background-image: url('http://cdn.besynchro.com/cognos/wave-line@2x.png');
+  background-size: 10px;
+  background-repeat: repeat-x;
+  border: 0;
 }
 
 /**************
@@ -264,6 +282,64 @@ GLOBAL SECTIONS
   }
 }
 
+.fixed-top-border {
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(100deg, #015caf 10%, #751e85 90%);
+}
+
+.bg-full-width {
+  background-image: url('http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+
+  &__image {
+    max-width: 90%;
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.text-1-col {
+  text-align: center;
+}
+
+.carousel-with-nav {
+
+  text-align: center;
+
+  .carousel-indicators {
+    position: initial;
+    color: black;
+    width: initial;
+    margin: 0 auto;
+  }
+
+  .carousel-indicators li {
+    width: initial;
+    height: initial;
+    text-indent: inherit;
+    margin: 20px;
+    color: #bfbfbf;
+
+    &.active {
+      color: #3f3f3f;
+
+      &:before {
+        content: '~';
+        color: purple;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .carousel-item {
+    max-height: 750px;
+  }
+}
+
 /* product claim icons */
 .claim-icons {
   box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.05);
@@ -301,10 +377,6 @@ GLOBAL SECTIONS
 .product-info {
   background: #F6F8FB;
   text-align: center;
-
-  &__text {
-    font-size: 18px;
-  }
 
   &__title {
     display: block;
