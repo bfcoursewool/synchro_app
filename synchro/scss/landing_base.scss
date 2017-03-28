@@ -161,7 +161,7 @@ a.anchor {
 GENERAL SECTIONS
 ***************/
 
-/* strip top of page */
+/* top of page border */
 .fixed-top-border {
   position: fixed;
   top: 0;
@@ -181,7 +181,7 @@ GENERAL SECTIONS
 
 /* full width carousel with navigation */
 .carousel-with-nav {
-
+  padding-top: 50px;
   text-align: center;
 
   .carousel-indicators {

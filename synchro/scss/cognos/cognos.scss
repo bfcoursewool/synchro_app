@@ -38,23 +38,30 @@
   }
 }
 
-.bg-full-width {
-  position: relative;
-  height: 650px;
+.fixed-top-border {
 
-  .p--header {
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
 }
 
-.faq {
+.atf {
+  &.bg-full-width {
+    position: relative;
+    height: 650px;
 
-  &__text {
-    text-align: center;
+    .p--header {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    .down-arrow {
+      width: 19px;
+      bottom: 30px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
   }
 }
 
@@ -74,22 +81,11 @@
   overflow: hidden;
 }
 
-.genesis-benefits {
-
+.intro {
   text-align: center;
 
-  &__item {
-    margin-bottom: 40px;
-  }
-}
-
-.intro {
-
-  &.text-1-col {
-
-    .p--text {
-      font-size: 20px;
-    }
+  .p--text {
+    font-size: 20px;
   }
 }
 
@@ -121,6 +117,44 @@
   }
 
 }
+
+.about {
+  text-align: center;
+
+  .line-wavy {
+    background-image: url('http://cdn.besynchro.com/cognos/wave-line-purple@2x.png');
+    width: 300px;
+    margin: 20px auto;
+  }
+}
+
+.ingredients {
+  text-align: left;
+
+  .p--header {
+    position: relative;
+
+    .superscript {
+      position: absolute;
+      font-size: 20px;
+      top: 0;
+      left: -1em;
+      color: #7f4c9b;
+    }
+  }
+}
+
+.faq {
+
+  &__text {
+    text-align: center;
+  }
+}
+
+
+
+
+
 
 
 .genesis-benefits {
@@ -259,19 +293,29 @@
       }
     }
   }
+}
 
-  /* landing_base overwrites */
+/* landing_base overwrites */
 
-  .faq {
-    background-color: white;
+.p--title {
+  color: #7f4c9b;
+  font-size: 16px;
+  margin-bottom: 0;
+
+  &:after {
+    display: none;
   }
+}
 
-  .cta-section {
-    background-image: url("http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg");
+.faq {
+  background-color: white;
+}
 
-    &__cta {
-      background: white;
-      color: #2f90d9;
-    }
+.cta-section {
+  background-image: url("http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg");
+
+  &__cta {
+    background: white;
+    color: #2f90d9;
   }
 }
