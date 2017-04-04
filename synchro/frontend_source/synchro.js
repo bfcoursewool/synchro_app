@@ -16,7 +16,6 @@ const svgObj = new SVGLoader();
 
 $(document).ready(() => {
   gradientObj.startEffect();
-  svgObj.loadSVG(); 
 
   buyButtonObj.init().then(() => {
     fbPixelObj.bindEvents();
