@@ -64,15 +64,6 @@ endpoint_info_dict = {
         'stylesheet': 'gold/abtests/gold_cro004.css'
       }
     },
-    '2i' : {
-      'template': 'landing_pages/gold/abtests/gold_cro004-2.html',
-      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/abtests/gold_cro004.css'
-      }
-    },
     '3c' : {
       'template': 'landing_pages/gold/abtests/gold_cro004-3.html',
       'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
