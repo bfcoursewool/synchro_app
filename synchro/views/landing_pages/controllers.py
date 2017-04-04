@@ -53,7 +53,7 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/gold_testimonial.css'
+        'stylesheet': 'gold/abtests/gold_cro004.css'
       }
     },
     '1n' : {
