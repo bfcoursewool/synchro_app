@@ -56,7 +56,7 @@ endpoint_info_dict = {
         'stylesheet': 'gold/abtests/gold_cro004.css'
       }
     },
-    '1n' : {
+    '2c' : {
       'template': 'landing_pages/gold/abtests/gold_cro004-1.html',
       'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
@@ -64,7 +64,7 @@ endpoint_info_dict = {
         'stylesheet': 'gold/abtests/gold_cro004.css'
       }
     },
-    '3c' : {
+    '3r' : {
       'template': 'landing_pages/gold/abtests/gold_cro004-3.html',
       'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
       'template_vars': {
