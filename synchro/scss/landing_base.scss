@@ -157,6 +157,63 @@ a.anchor {
   border: 0;
 }
 
+/***************
+GENERAL SECTIONS
+***************/
+
+/* top of page border */
+.fixed-top-border {
+  position: fixed;
+  top: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(100deg, #015caf 10%, #751e85 90%);
+  z-index: 10;
+}
+
+/* section with full-width bg image */
+.bg-full-width {
+  background-image: url('http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* full width carousel with navigation */
+.carousel-with-nav {
+  padding-top: 50px;
+  text-align: center;
+
+  .carousel-indicators {
+    position: initial;
+    color: black;
+    width: initial;
+    margin: 0 auto;
+  }
+
+  .carousel-indicators li {
+    width: initial;
+    height: initial;
+    text-indent: inherit;
+    margin: 20px;
+    color: #bfbfbf;
+
+    &.active {
+      color: #3f3f3f;
+
+      &:before {
+        content: '~';
+        color: purple;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .carousel-item {
+    max-height: 750px;
+  }
+}
+
 /**************
 GLOBAL SECTIONS
 **************/
@@ -286,66 +343,6 @@ GLOBAL SECTIONS
   }
 }
 
-.fixed-top-border {
-  position: fixed;
-  top: 0;
-  height: 5px;
-  width: 100%;
-  background: linear-gradient(100deg, #015caf 10%, #751e85 90%);
-  z-index: 10;
-}
-
-.bg-full-width {
-  background-image: url('http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &__image {
-    max-width: 90%;
-    width: 700px;
-    margin: 0 auto;
-  }
-}
-
-.text-1-col {
-  text-align: center;
-}
-
-.carousel-with-nav {
-
-  text-align: center;
-
-  .carousel-indicators {
-    position: initial;
-    color: black;
-    width: initial;
-    margin: 0 auto;
-  }
-
-  .carousel-indicators li {
-    width: initial;
-    height: initial;
-    text-indent: inherit;
-    margin: 20px;
-    color: #bfbfbf;
-
-    &.active {
-      color: #3f3f3f;
-
-      &:before {
-        content: '~';
-        color: purple;
-        margin-right: 10px;
-      }
-    }
-  }
-
-  .carousel-item {
-    max-height: 750px;
-  }
-}
-
 /* product claim icons */
 .claim-icons {
   box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.05);
@@ -401,8 +398,6 @@ GLOBAL SECTIONS
 
   &__img-box {
     height: 300px;
-    width: 50%;
-    max-width: 530px;
   }
 
   &__img-helper {
