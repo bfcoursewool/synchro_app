@@ -60,6 +60,13 @@ export default class GradientEffect extends EventsBase {
     }
   }
 
+  // TODO -- Figure out a way to degrade the gradient speed and then this mouse effect will be cool
+  degradeSpeed() {
+    if(this._gradientSpeed > .002) {
+      this._gradientSpeed -= .01; 
+    }
+  }
+
   changeGradientParams(target, e) {
     let deltaX = e.pageX - this.lastMouseX;
     let deltaY = e.pageY - this.lastMouseY; 
@@ -76,12 +83,20 @@ export default class GradientEffect extends EventsBase {
       this._gradientAngle += deltaXPercent * 270;
     }
     
+    if (deltaYPercent * 270) {
+      if(this._gradientSpeed > .1) {
+        this._gradientSpeed = .002;
+      }
+      this._gradientSpeed += .001 * deltaYPercent * 270
+    }
+
     this.lastMouseX = e.pageX;
     this.lastMouseY = e.pageY;
   }
 
   startEffect() {
     if($('#gradient')) {
+      setInterval(this.degradeSpeed, 10); 
       setInterval(this.updateGradient, 10);
     }
   }
