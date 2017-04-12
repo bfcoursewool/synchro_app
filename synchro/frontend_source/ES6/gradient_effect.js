@@ -1,22 +1,9 @@
 import EventsBase from './events_base';
 
-export default class GradientEffect {
+export default class GradientEffect extends EventsBase {
   constructor() {
-    /*
-    this._colors = [
-      [62,35,255], // Royal Blue
-      [60,255,60], // Neon Green
-      [255,35,98], // Fuscia? Pinkish...
-      [45,175,230],// Aqua blue
-      [255,0,255], // Super purple
-      [255,128,0] // Gold-ish
-    ];
-    */
-    //super();
+    super();
 
-    // TODO -- Color strategy: Pick two pairs of colors. This gradient effect blends each pair of colors in inverse ratios, sliding from
-    // predominantly one to the other and back again, and then renders a gradient between these two blended colors. So, what are the two color
-    // pairs which will blend ranges of blues and purples that can be shifted in the gradient? 
     // Things to play with: 
     //  Dynamically altering the angle of the gradient
     //  Connect both the color blending and perhaps the angle of gradient to mouse/scroll interactions
@@ -24,20 +11,25 @@ export default class GradientEffect {
     this._colors = [
       [161,96,181], // Chichi's Purple
       [64,147,218], // Chichi's Blue
-      [0,0,255], // Royal Blue
-      [180,0,180], // Super purple
-      //[45,175,230],
-      //[161,96,181]
+      [0,0,255], // Super Blue
+      [180,0,180], // Pretty purple
     ];
-
     this._step = 0;
-
     this._colorIndices = [0,1,2,3];
 
-    //transition speed
     this._gradientSpeed = 0.002;
+    this._gradientAngle = 0; 
+
+    this._lastMouseX = 0;
+    this._lastMouseY = 0; 
 
     this.updateGradient = this.updateGradient.bind(this);
+  }
+
+  events() {
+    return {
+      'mousemove body': 'changeGradientParams'
+    }
   }
 
   updateGradient() {  
@@ -58,14 +50,34 @@ export default class GradientEffect {
     let color2 = "rgb("+r2+","+g2+","+b2+")";
 
     $('#gradient').css({
-      background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
-      background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"}
+      background: "-webkit-linear-gradient("+this._gradientAngle+"deg, "+color1+", "+color2+")"}).css({
+      background: "-moz-linear-gradient(${this._gradientAngle}deg, left, "+color1+" 0%, "+color2+" 100%)"}
     );
       
     this._step += this._gradientSpeed;
     if ( this._step >= 1 || this._step <= 0) {
       this._gradientSpeed *= -1;
     }
+  }
+
+  changeGradientParams(target, e) {
+    let deltaX = e.pageX - this.lastMouseX;
+    let deltaY = e.pageY - this.lastMouseY; 
+    let deltaXPercent = deltaX / screen.width;
+    let deltaYPercent = deltaY / screen.height;
+
+    // 270 is the max range of degrees it makes sense to specify as the gradient angle, -90 to 180
+    if(deltaXPercent * 270) {
+      if(this._gradientAngle <= 0) {
+        this._gradientAngle = 180; 
+      } else if (this._gradientAngle >= 180) {
+        this._gradientAngle = 0;
+      }
+      this._gradientAngle += deltaXPercent * 270;
+    }
+    
+    this.lastMouseX = e.pageX;
+    this.lastMouseY = e.pageY;
   }
 
   startEffect() {
