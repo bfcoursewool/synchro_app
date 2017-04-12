@@ -51,7 +51,7 @@ export default class GradientEffect extends EventsBase {
 
     $('#gradient').css({
       background: "-webkit-linear-gradient("+this._gradientAngle+"deg, "+color1+", "+color2+")"}).css({
-      background: "-moz-linear-gradient(${this._gradientAngle}deg, left, "+color1+" 0%, "+color2+" 100%)"}
+      background: "-moz-linear-gradient("+this._gradientAngle+"deg, left, "+color1+" 0%, "+color2+" 100%)"}
     );
       
     this._step += this._gradientSpeed;
@@ -68,7 +68,7 @@ export default class GradientEffect extends EventsBase {
 
     // 270 is the max range of degrees it makes sense to specify as the gradient angle, -90 to 180
     if(deltaXPercent * 270) {
-      if(this._gradientAngle <= 0) {
+      if(this._gradientAngle <= -90) {
         this._gradientAngle = 180; 
       } else if (this._gradientAngle >= 180) {
         this._gradientAngle = 0;
