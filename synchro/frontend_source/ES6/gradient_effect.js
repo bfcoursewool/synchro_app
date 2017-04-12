@@ -22,25 +22,16 @@ export default class GradientEffect {
     //  Connect both the color blending and perhaps the angle of gradient to mouse/scroll interactions
 
     this._colors = [
-      [64,147,218], // Chichi's Blue
       [161,96,181], // Chichi's Purple
       [64,147,218], // Chichi's Blue
-      [161,96,181], // Chichi's Purple
+      [0,0,255], // Royal Blue
+      [180,0,180], // Super purple
       //[45,175,230],
       //[161,96,181]
     ];
 
-
-    // [64,147,218] -- Blue
-    // [161,96,181] -- Purple
-
     this._step = 0;
 
-    //color table indices for: 
-    // current color left
-    // next color left
-    // current color right
-    // next color right
     this._colorIndices = [0,1,2,3];
 
     //transition speed
@@ -72,16 +63,8 @@ export default class GradientEffect {
     );
       
     this._step += this._gradientSpeed;
-    if ( this._step >= 1 ) {
-      //this._step %= 1;
+    if ( this._step >= 1 || this._step <= 0) {
       this._gradientSpeed *= -1;
-      //this._colorIndices[0] = this._colorIndices[1];
-      //this._colorIndices[2] = this._colorIndices[3];
-        
-      //pick two new target color indices
-      //do not pick the same as the current one
-      //this._colorIndices[1] = ( this._colorIndices[1] + Math.floor( 1 + Math.random() * (this._colors.length - 1))) % this._colors.length;
-      //this._colorIndices[3] = ( this._colorIndices[3] + Math.floor( 1 + Math.random() * (this._colors.length - 1))) % this._colors.length;
     }
   }
 
