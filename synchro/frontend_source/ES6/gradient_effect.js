@@ -83,12 +83,14 @@ export default class GradientEffect extends EventsBase {
       this._gradientAngle += deltaXPercent * 270;
     }
     
+    /* 
     if (deltaYPercent * 270) {
-      if(this._gradientSpeed > .1) {
+      if(this._gradientSpeed > .05) {
         this._gradientSpeed = .002;
       }
       this._gradientSpeed += .001 * deltaYPercent * 270
     }
+    */ 
 
     this.lastMouseX = e.pageX;
     this.lastMouseY = e.pageY;
@@ -96,7 +98,6 @@ export default class GradientEffect extends EventsBase {
 
   startEffect() {
     if($('#gradient')) {
-      setInterval(this.degradeSpeed, 10); 
       setInterval(this.updateGradient, 10);
     }
   }
