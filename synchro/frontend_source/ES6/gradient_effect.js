@@ -1,12 +1,8 @@
 import EventsBase from './events_base';
 
-export default class GradientEffect extends EventsBase {
+export class GradientBase extends EventsBase {
   constructor() {
     super();
-
-    // Things to play with: 
-    //  Dynamically altering the angle of the gradient
-    //  Connect both the color blending and perhaps the angle of gradient to mouse/scroll interactions
 
     this._colors = [
       [161,96,181], // Chichi's Purple
@@ -22,17 +18,9 @@ export default class GradientEffect extends EventsBase {
 
     this._lastMouseX = 0;
     this._lastMouseY = 0; 
-
-    this.updateGradient = this.updateGradient.bind(this);
   }
 
-  events() {
-    return {
-      'mousemove body': 'changeGradientParams'
-    }
-  }
-
-  updateGradient() {  
+  getNextColors() {
     let c0_0 = this._colors[this._colorIndices[0]];
     let c0_1 = this._colors[this._colorIndices[1]];
     let c1_0 = this._colors[this._colorIndices[2]];
@@ -49,22 +37,47 @@ export default class GradientEffect extends EventsBase {
     let b2 = Math.round(istep * c1_0[2] + this._step * c1_1[2]);
     let color2 = "rgb("+r2+","+g2+","+b2+")";
 
-    $('#gradient').css({
-      background: "-webkit-linear-gradient("+this._gradientAngle+"deg, "+color1+", "+color2+")"}).css({
-      background: "-moz-linear-gradient("+this._gradientAngle+"deg, left, "+color1+" 0%, "+color2+" 100%)"}
-    );
-      
+    return [color1, color2]
+  }
+
+  nextStep() {
     this._step += this._gradientSpeed;
     if ( this._step >= 1 || this._step <= 0) {
       this._gradientSpeed *= -1;
     }
   }
 
-  // TODO -- Figure out a way to degrade the gradient speed and then this mouse effect will be cool
-  degradeSpeed() {
-    if(this._gradientSpeed > .002) {
-      this._gradientSpeed -= .01; 
+  rgb2hex(rgb){
+    rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+    return (rgb && rgb.length === 4) ? "#" +
+      ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
+      ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
+      ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : '';
     }
+}
+
+export default class GradientEffect extends GradientBase {
+  constructor() {
+    super();
+
+    this.updateGradient = this.updateGradient.bind(this);
+  }
+
+  events() {
+    return {
+      'mousemove body': 'changeGradientParams'
+    }
+  }
+
+  updateGradient() {  
+    let [color1, color2] = this.getNextColors(); 
+
+    $('#gradient').css({
+      background: "-webkit-linear-gradient("+this._gradientAngle+"deg, "+color1+", "+color2+")"}).css({
+      background: "-moz-linear-gradient("+this._gradientAngle+"deg, left, "+color1+" 0%, "+color2+" 100%)"}
+    );
+      
+    this.nextStep();
   }
 
   changeGradientParams(target, e) {
@@ -82,15 +95,6 @@ export default class GradientEffect extends EventsBase {
       }
       this._gradientAngle += deltaXPercent * 270;
     }
-    
-    /* 
-    if (deltaYPercent * 270) {
-      if(this._gradientSpeed > .05) {
-        this._gradientSpeed = .002;
-      }
-      this._gradientSpeed += .001 * deltaYPercent * 270
-    }
-    */ 
 
     this.lastMouseX = e.pageX;
     this.lastMouseY = e.pageY;
