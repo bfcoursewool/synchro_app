@@ -6,13 +6,16 @@ export default class SVGLoader extends GradientBase {
 
     this.svgElements = $('svg.external');
     this.gradientLayers = {}; 
+    this._gradientSpeed = .05;
+    //[this.startColors, this.endColors] = this.getColorSequence();
+
 
     $.each(this.svgElements, (index, value) => {
       this.loadSVG($(value).attr('data-src'), $(value).attr('id')); 
     })
 
-    this.updateGradient = this.updateGradient.bind(this); 
-    setInterval(this.updateGradient, 10); 
+    this.updateGradient = this.updateGradient.bind(this);
+    setInterval(this.updateGradient, 5); 
   }
 
   loadSVG(svgURL, svgId) {
@@ -43,7 +46,7 @@ export default class SVGLoader extends GradientBase {
       gradientLayer.select('.start').attr('stop-color', color1Hex);
       gradientLayer.select('.end').attr('stop-color', color2Hex);  
     }
-    
+
     this.nextStep(); 
   }
 
@@ -70,13 +73,23 @@ export default class SVGLoader extends GradientBase {
       .attr('class', 'start')
       .attr('offset', '0%')
       .attr('stop-color', '#4093DA')
-      .attr('stop-opacity', 1);
+      .attr('stop-opacity', 1)
+      //.append('animate')
+      //.attr('attributeName', 'stop-color')
+      //.attr('values', this.startColors.join(';'))
+      //.attr('dur', '5s')
+      //.attr('repeatCount', 'indefinite');
 
 
     this.gradientLayers[svgId].append('stop')
       .attr('class', 'end')
       .attr('offset', '100%')
       .attr('stop-color', '#A160B5')
-      .attr('stop-opacity', 1);
+      .attr('stop-opacity', 1)
+      //.append('animate')
+      //.attr('attributeName', 'stop-color')
+      //.attr('values', this.endColors.join(';'))
+      //.attr('dur', '5s')
+      //.attr('repeatCount', 'indefinite');
   }
 }

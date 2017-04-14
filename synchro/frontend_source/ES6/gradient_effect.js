@@ -12,6 +12,8 @@ export class GradientBase extends EventsBase {
     ];
     this._step = 0;
     this._colorIndices = [0,1,2,3];
+    this.upperBound, this.lowerBound = false; 
+
 
     this._gradientSpeed = 0.002;
     this._gradientAngle = 0; 
@@ -42,9 +44,33 @@ export class GradientBase extends EventsBase {
 
   nextStep() {
     this._step += this._gradientSpeed;
+
     if ( this._step >= 1 || this._step <= 0) {
       this._gradientSpeed *= -1;
+      if(this._step >= 1) {
+        this.upperBound = true;
+      } 
+      if(this._step <= 0) {
+        this.lowerBound = true; 
+      }
     }
+  }
+
+  getColorSequence() {
+    let startColors = [];
+    let endColors = []; 
+    let hex1, hex2, color1, color2
+
+    while(!this.upperBound && !this.lowerBound) {
+      [color1, color2] = this.getNextColors();
+      hex1 = this.rgb2hex(color1);
+      hex2 = this.rgb2hex(color2); 
+      startColors.push(hex1);
+      endColors.push(hex2); 
+      this.nextStep(); 
+    }
+
+    return [startColors, endColors]; 
   }
 
   rgb2hex(rgb){
