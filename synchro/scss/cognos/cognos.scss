@@ -8,23 +8,40 @@
     text-align: center;
 
     &.floated {
-      background: rgba(40,40,40,0.9);
+      background: -webkit-linear-gradient(45deg, rgb(104, 126, 203), rgb(105, 0, 211));
 
-      &__logo {
-        float: left
+      .main-header__logo {
+        float: left;
+        margin-top: 17px;
+      }
+
+      .main-navigation {
+        float: right;
+        margin: 10px 0;
       }
     }
 
     &__logo {
 
-      .synchro-logo {
+      margin: 15px 0 0;
+
+      .cognos-logo {
         fill: #fff;
+        height: 30px;
       }
     }
 
     .main-navigation {
       float: none;
       display: block;
+
+      &__mobile {
+        float: left;
+      }
+
+      &__hamburger {
+        background-color: #fff;
+      }
 
       &__item {
         color: #fff;
