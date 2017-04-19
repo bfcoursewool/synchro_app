@@ -4,6 +4,11 @@
   background-image: url('http://cdn.besynchro.com/cognos/assets-hero-3.jpg');
 }
 
+svg.external {
+  height: 100%;
+  width: 100%;
+}
+
 .main-header-container {
   height: 0;
 
@@ -171,6 +176,10 @@
 .ingredients {
   text-align: left;
 
+  &__img-box {
+    height: 450px;
+  }
+  
   .p--header {
     position: relative;
 
