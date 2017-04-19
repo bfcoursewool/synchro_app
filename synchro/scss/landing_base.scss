@@ -149,14 +149,6 @@ a.anchor {
   }
 }
 
-.line-wavy {
-  height: 4px;
-  background-image: url('http://cdn.besynchro.com/cognos/wave-line@2x.png');
-  background-size: 10px;
-  background-repeat: repeat-x;
-  border: 0;
-}
-
 /***************
 GENERAL SECTIONS
 ***************/
@@ -173,7 +165,7 @@ GENERAL SECTIONS
 
 /* section with full-width bg image */
 .bg-full-width {
-  //background-image: url('http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg');
+  background-image: url('http://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

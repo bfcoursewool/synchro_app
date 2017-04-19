@@ -1,5 +1,9 @@
 @import 'landing_base';
 
+.bg-full-width {
+  background-image: url('http://cdn.besynchro.com/cognos/assets-hero-3.jpg');
+}
+
 .main-header-container {
   height: 0;
 
@@ -143,11 +147,25 @@
     color: #751e85;
   }
 
-  .line-wavy {
-    background-image: url('http://cdn.besynchro.com/cognos/wave-line-purple@2x.png');
-    width: 300px;
-    margin: 20px auto;
-  }
+  //.line-wavy {
+    //background-image: url('http://cdn.besynchro.com/cognos/wave-line-purple@2x.png');
+    //background-image: url("data:image/svg+xml;charset=utf8, <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events'><path fill='none' stroke='grey' stroke-width='1' class='st0' d='M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80 Z'/></svg>");
+    //width: 300px;
+    //margin: 20px auto;
+  //}
+}
+
+.wave-container {
+  height: 40px;
+}
+
+.line-wavy {
+  height: 100%;
+  //background-image: url('http://cdn.besynchro.com/cognos/wave-line@2x.png');
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' width='190px' height='160px'><style type='text/css'>.st0{animation:shift 3s linear infinite;}@keyframes shift {from {transform:translateX(-100%);}to {transform:translateX(0);}}</style><path fill='none' stroke='black' stroke-width='5' class='st0' d='M10 80 C 40 10, 65 10, 95 80 S 150 150 S 150 150, 180 80 Z'/></svg>");
+  background-size: 40px 35px; 
+  background-repeat: repeat-x;
+  border: 0;
 }
 
 .ingredients {
