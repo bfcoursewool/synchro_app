@@ -91,6 +91,14 @@ svg.external {
   }
 }
 
+#gradient-header {
+  display:none;
+
+  &.show {
+    display:block;
+  }
+}
+
 .gradient-layer {
   padding: 0px;
   margin: 0px;

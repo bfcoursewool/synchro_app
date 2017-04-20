@@ -98,13 +98,16 @@ export default class GradientEffect extends GradientBase {
   updateGradient() {  
     let [color1, color2] = this.getNextColors(); 
 
-    $('#gradient').css({
-      background: "-webkit-linear-gradient("+this._gradientAngle+"deg, "+color1+", "+color2+")"}).css({
-      background: "-moz-linear-gradient("+this._gradientAngle+"deg, left, "+color1+" 0%, "+color2+" 100%)"}
-    );
+    $.each($('[id^=gradient-]'), (index, element) => {
+      $(element).css({
+        background: "-webkit-linear-gradient("+this._gradientAngle+"deg, "+color1+", "+color2+")"}).css({
+        background: "-moz-linear-gradient("+this._gradientAngle+"deg, left, "+color1+" 0%, "+color2+" 100%)"}
+      );
+    });
       
     this.nextStep();
   }
+
 
   changeGradientParams(target, e) {
     let deltaX = e.pageX - this.lastMouseX;
@@ -127,7 +130,7 @@ export default class GradientEffect extends GradientBase {
   }
 
   startEffect() {
-    if($('#gradient')) {
+    if($('[id^=gradient-]')) {
       setInterval(this.updateGradient, 10);
     }
   }

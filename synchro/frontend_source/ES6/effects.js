@@ -55,11 +55,23 @@ export default class LPEffects extends EventsBase {
     let navbar = $('.main-header');
     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     let maxScroll = 100; 
+    let scrollAtBannerBackgroundBottom = $('.main-header').attr('data-header-transition')
+    if(scrollAtBannerBackgroundBottom == 'background') {
+      maxScroll = $('.main-banner__background').height() - $('.main-header').outerHeight();
+    } 
+
+    let navGradientLayer = $('.main-header>.gradient-layer'); 
 
     if(scrollTop > maxScroll && !navbar.is('.floated')) {
       navbar.addClass('floated');
+      if(navGradientLayer) {
+        navGradientLayer.addClass('show'); 
+      }
     } else if(scrollTop < maxScroll && navbar.is('.floated')) {
       navbar.removeClass('floated');
+      if(navGradientLayer) {
+        navGradientLayer.removeClass('show'); 
+      }
     }
   }
 

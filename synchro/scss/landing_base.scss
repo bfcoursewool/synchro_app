@@ -210,9 +210,15 @@ GENERAL SECTIONS
 GLOBAL SECTIONS
 **************/
 
+.zfloat {
+  position: relative;
+  z-index: 100;
+}
+
 /* main navigation */
 .main-header-container {
   height: 75px;
+
 
   .main-header {
     position: fixed;
