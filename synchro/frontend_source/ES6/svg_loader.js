@@ -8,33 +8,47 @@ export default class SVGLoader extends GradientBase {
     this.gradientLayers = {}; 
     this._gradientSpeed = .05;
     //[this.startColors, this.endColors] = this.getColorSequence();
+    this._promises = [];
 
 
     $.each(this.svgElements, (index, value) => {
-      this.loadSVG($(value).attr('data-src'), $(value).attr('id')); 
+      this._promises.push(
+        this.loadSVG($(value).attr('data-src'), $(value).attr('id'))
+      ); 
+    });
+
+    Promise.all(this._promises).then(() => {
+      let vivus = new Vivus('nutrient-delivery-actual', {duration: 200}, () => {
+        vivus.reset().play();
+      });
     })
+
 
     this.updateGradient = this.updateGradient.bind(this);
     setInterval(this.updateGradient, 5); 
   }
 
   loadSVG(svgURL, svgId) {
-    d3.xml(svgURL, (error, xml) => {
-      if (error) throw error;
+    return new Promise((resolve, reject) => {
+      d3.xml(svgURL, (error, xml) => {
+        if (error) throw error;
 
-      // 'xml' is the XML DOM tree
-      let htmlSVG = document.getElementById(svgId);  // the svg-element in the DOM
+        // 'xml' is the XML DOM tree
+        let htmlSVG = document.getElementById(svgId);  // the svg-element in the DOM
 
-      let svg = d3.select(htmlSVG);
+        let svg = d3.select(htmlSVG);
 
-      // get the svg-element from the original SVG file
-      let xmlSVG = d3.select(xml.getElementsByTagName('svg')[0]);      
-      this.applyGradientMask(xmlSVG, svgId); 
+        // get the svg-element from the original SVG file
+        let xmlSVG = d3.select(xml.getElementsByTagName('svg')[0]);      
+        this.applyGradientMask(xmlSVG, svgId); 
+        xmlSVG.attr('id', svgId+'-actual');
 
-      // copy its 'viewBox' attribute to the svg element in our HTML file
-      svg.attr('viewBox', xmlSVG.attr('viewBox'));
-      svg.node().appendChild(xmlSVG.node()); 
-    });
+        // copy its 'viewBox' attribute to the svg element in our HTML file
+        svg.attr('viewBox', xmlSVG.attr('viewBox'));
+        svg.node().appendChild(xmlSVG.node()); 
+        resolve(xmlSVG.attr('id')); 
+      });
+    })
   }
 
   updateGradient() {
