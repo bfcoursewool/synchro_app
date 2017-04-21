@@ -6,10 +6,16 @@ export default class SVGLoader extends GradientBase {
 
     this.svgElements = $('svg.external');
     this.gradientLayers = {}; 
-    this._gradientSpeed = .05;
+    this._gradientSpeed = .03;
     //[this.startColors, this.endColors] = this.getColorSequence();
     this._promises = [];
 
+    // 
+    this._cognosEffectsMethods = {
+      'anti-inflammatory-actual': 'antiInflammatoryDrawing',
+      'flow-actual': 'flowDrawing',
+      'nutrient-delivery-actual': 'nutrientDrawing'
+    };
 
     $.each(this.svgElements, (index, value) => {
       this._promises.push(
@@ -17,12 +23,12 @@ export default class SVGLoader extends GradientBase {
       ); 
     });
 
-    Promise.all(this._promises).then(() => {
-      let vivus = new Vivus('nutrient-delivery-actual', {duration: 200}, () => {
-        vivus.reset().play();
-      });
-    })
+    Promise.all(this._promises).then((promiseValue) => {
+      for(let [index, componentId] of Object.entries(promiseValue)) {
+        this[this._cognosEffectsMethods[componentId]](componentId);
+      }
 
+    })
 
     this.updateGradient = this.updateGradient.bind(this);
     setInterval(this.updateGradient, 5); 
@@ -105,5 +111,27 @@ export default class SVGLoader extends GradientBase {
       //.attr('values', this.endColors.join(';'))
       //.attr('dur', '5s')
       //.attr('repeatCount', 'indefinite');
+  }
+
+  antiInflammatoryDrawing(componentId) {
+    return; 
+  }
+
+  flowDrawing(componentId) {
+    let options = {
+      duration: 100,
+      start: 'autostart',
+      type: 'sync',
+      reverseStack: true
+    }
+    let vivus = new Vivus(componentId, options, () => {
+      vivus.reset().play();
+    });
+  }
+
+  nutrientDrawing(componentId) {
+    let vivus = new Vivus(componentId, {duration: 200, start: 'autostart'}, () => {
+      vivus.reset().play();
+    });
   }
 }
