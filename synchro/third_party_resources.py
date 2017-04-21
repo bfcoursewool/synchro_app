@@ -6,12 +6,12 @@ import time
 
 vivus = Resource(
   library_resources,
-  'vivus/dist/vivus.js'  # TODO -- use minified version in production
+  'vivus/dist/vivus.min.js' 
 )
 
 d3js = Resource(
   library_resources,
-  'd3/d3.js'      # TODO -- use minified version in production
+  'd3/d3.min.js' 
 )
 
 jquery = Resource(
