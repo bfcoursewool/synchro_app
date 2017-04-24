@@ -16,7 +16,7 @@ export class GradientBase extends EventsBase {
 
 
     this._gradientSpeed = 0.002;
-    this._gradientAngle = 0; 
+    this._gradientAngle = -30; 
 
     this._lastMouseX = 0;
     this._lastMouseY = 0; 
@@ -91,7 +91,6 @@ export default class GradientEffect extends GradientBase {
 
   events() {
     return {
-      'mousemove body': 'changeGradientParams'
     }
   }
 

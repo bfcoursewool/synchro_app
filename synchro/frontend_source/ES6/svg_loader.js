@@ -6,7 +6,7 @@ export default class SVGLoader extends GradientBase {
 
     this.svgElements = $('svg.external');
     this.gradientLayers = {}; 
-    this._gradientSpeed = .03;
+    this._gradientSpeed = .025;
     //[this.startColors, this.endColors] = this.getColorSequence();
     this._promises = [];
 
@@ -130,8 +130,8 @@ export default class SVGLoader extends GradientBase {
   }
 
   nutrientDrawing(componentId) {
-    let vivus = new Vivus(componentId, {duration: 200, start: 'autostart'}, () => {
-      vivus.reset().play();
+    let vivus = new Vivus(componentId, {duration: 200}, () => {
+      vivus.finish();
     });
   }
 }
