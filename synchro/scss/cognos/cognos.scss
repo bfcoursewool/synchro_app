@@ -2,6 +2,15 @@
 
 .bg-full-width {
   background-image: url('http://cdn.besynchro.com/cognos/assets-hero-3.jpg');
+
+  /* Set a specific height */
+  height: 650px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 svg.external {
