@@ -7,6 +7,8 @@
 svg.external {
   height: 100%;
   width: 100%;
+  display: inline-block; 
+  margin: auto;
 }
 
 .main-header-container {
@@ -148,6 +150,7 @@ svg.external {
 
   &__img {
     width: 83px;
+    text-align: center;
   }
 
 }
