@@ -33,7 +33,7 @@ export default class SVGLoader extends GradientBase {
     })
 
     this.updateGradient = this.updateGradient.bind(this);
-    setInterval(this.updateGradient, 5); 
+    setInterval(this.updateGradient, 10); 
   }
 
   loadSVG(svgURL, svgId, stroke) {
