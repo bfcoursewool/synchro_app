@@ -19,7 +19,7 @@ export default class SVGLoader extends GradientBase {
 
     $.each(this.svgElements, (index, value) => {
       this._promises.push(
-        this.loadSVG($(value).attr('data-src'), $(value).attr('id'), $(value).attr('data-gradient'))
+        this.loadSVG($(value).attr('data-src'), $(value).attr('id'), $(value).attr('data-stroke'))
       ); 
     });
 
@@ -36,7 +36,7 @@ export default class SVGLoader extends GradientBase {
     setInterval(this.updateGradient, 5); 
   }
 
-  loadSVG(svgURL, svgId, hasGradient) {
+  loadSVG(svgURL, svgId, stroke) {
     return new Promise((resolve, reject) => {
       d3.xml(svgURL, (error, xml) => {
         if (error) throw error;
@@ -48,9 +48,10 @@ export default class SVGLoader extends GradientBase {
 
         // get the svg-element from the original SVG file
         let xmlSVG = d3.select(xml.getElementsByTagName('svg')[0]);  
-        if(hasGradient) {
+        if(stroke == "gradient") {
           this.applyGradientMask(xmlSVG, svgId); 
-        }    
+        } 
+
         xmlSVG.attr('id', svgId+'-actual');
 
         // copy its 'viewBox' attribute to the svg element in our HTML file

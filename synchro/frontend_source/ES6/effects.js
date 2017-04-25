@@ -5,6 +5,11 @@ export default class LPEffects extends EventsBase {
     super();
     new WOW().init();
 
+    this._lastScroll = 0; 
+    if($('.parallax')) {
+      this._initialParallaxBackgroundPosition = $('.parallax').css('background-position-y'); 
+    }
+
     this._appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
   }
 
@@ -51,6 +56,25 @@ export default class LPEffects extends EventsBase {
     }
   }
 
+  parallaxBackgroundScroll() {
+    if(!$('.parallax')) {
+      return;
+    }
+
+    let scroll = $(window).scrollTop(); 
+    let scrollDelta = scroll - this._lastScroll;
+    let currentBackgroundPosition = parseInt($('.parallax').css('background-position-y'), 10);  
+    let newBackgroundPosition = currentBackgroundPosition - (scrollDelta / 2); 
+
+    if(newBackgroundPosition > -200) {
+      newBackgroundPosition = -200; 
+    }
+
+    $('.parallax').css('background-position-y', newBackgroundPosition + 'px'); 
+
+    this._lastScroll = scroll; 
+  }
+
   navMenuTransition() {
     let navbar = $('.main-header');
     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -60,6 +84,9 @@ export default class LPEffects extends EventsBase {
       maxScroll = $('.main-banner__background').height() - $('.main-header').outerHeight();
     } 
 
+    // TODO -- Man this is janky... Feels like the nav menu should really become its own 
+    // self-contained/reusable/configurable component instead of just trying to force it into
+    // here and then hack it to work for all our various implementations. 
     let navGradientLayer = $('.main-header>.gradient-layer'); 
 
     if(scrollTop > maxScroll && !navbar.is('.floated')) {
@@ -73,6 +100,8 @@ export default class LPEffects extends EventsBase {
         navGradientLayer.removeClass('show'); 
       }
     }
+
+    this.parallaxBackgroundScroll(); 
   }
 
   openModal(target, e) {
