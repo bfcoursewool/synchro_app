@@ -6,7 +6,7 @@ export default class SVGLoader extends GradientBase {
 
     this.svgElements = $('svg.external');
     this.gradientLayers = {}; 
-    this._gradientSpeed = .025;
+    this._gradientSpeed = .04;
     //[this.startColors, this.endColors] = this.getColorSequence();
     this._promises = [];
 
