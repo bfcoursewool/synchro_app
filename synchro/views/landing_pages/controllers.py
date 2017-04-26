@@ -72,6 +72,15 @@ endpoint_info_dict = {
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
         'stylesheet': 'gold/abtests/gold_cro004.css'
       }
+    },
+    'susan1' : {
+      'template': 'landing_pages/gold/gold_susan.html',
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs],
+      'template_vars': {
+        'is_variant': False,
+        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
+        'stylesheet': 'gold/gold_video.css'
+      }
     }
   },
   'digestcleanse': {
