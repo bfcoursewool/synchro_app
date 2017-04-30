@@ -97,6 +97,8 @@
         color: #fff;
         font-weight: 400;
         margin-bottom: 50px;
+        padding-left: 0;
+        padding-right: 0;
 
         @media (max-width: $break-mobile) {
           font-size: 32px;
@@ -234,6 +236,8 @@
     .p--header {
       max-width: 750px;
       margin-bottom: 50px;
+      padding-left: 0;
+      padding-right: 0;
 
       @media (max-width: $break-mobile) {
         font-size: 32px;
@@ -419,6 +423,8 @@
 
         @media (max-width: $break-mobile) {
           font-size: 32px;
+          padding-left: 0;
+          padding-right: 0;
         }
       }
 

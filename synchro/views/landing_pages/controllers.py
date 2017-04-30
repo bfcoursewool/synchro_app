@@ -62,7 +62,24 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/gold_testimonial.css'
+        'stylesheet': 'gold/abtests/gold_cro004.css'
+      }
+    },
+    '2c' : {
+      'template': 'landing_pages/gold/abtests/gold_cro004-1.html',
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'template_vars': {
+        'is_variant': True,
+        'stylesheet': 'gold/abtests/gold_cro004.css'
+      }
+    },
+    '3r' : {
+      'template': 'landing_pages/gold/abtests/gold_cro004-3.html',
+      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'template_vars': {
+        'is_variant': True,
+        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
+        'stylesheet': 'gold/abtests/gold_cro004.css'
       }
     }
   },
@@ -149,14 +166,16 @@ def landing_page(page, version):
   # Page and version can also be passed in as GET vars, for URL-formatting reasons
   if 'p' in request.args:
     page = request.args['p']
-  if 'v' in request.args:
+  # Use the query param to set the version iff there is not a URL route doing the same. 
+  # ie, we want the URL route to take precedent over the query param... this is to make VWO work better.
+  if 'v' in request.args and version == 'v0':
     version = request.args['v']
 
   # Make sure instances respond correctly to health checker pings
   if page == 'none':
     return ('', 200)
 
-  # Fail if we don't have a valid page or version.
+  # Fail if we don't have a valid page, and default to v0 if the version is invalid
   assert page in endpoint_info_dict
   if version not in endpoint_info_dict[page]:
     version = 'v0'

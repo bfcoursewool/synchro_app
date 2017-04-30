@@ -2,9 +2,15 @@
 
 /* gold styles */
 
+
 .gold-atf {
   text-align: center;
   position: relative;
+
+  .p--header {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
 
   @media (max-width: $break-mobile) {
     padding-top: 30px;
