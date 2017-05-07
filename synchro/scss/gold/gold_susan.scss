@@ -1,0 +1,185 @@
+@import 'landing_base';
+
+.headline {
+  width: 209.5px;
+  height: 100.5px;
+  font-family: Montserrat;
+  font-size: 27.5px;
+  font-weight: 500;
+  text-align: left;
+  color: #ffffff;
+  text-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
+}
+
+.uvp-left {
+  width: 90.8px;
+  height: 31px;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.63;
+  color: #ffffff;
+}
+
+.uvp-right {
+  width: 106.8px;
+  height: 31px;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.63;
+  color: #ffffff;
+}
+
+.oval-2 {
+  width: 2.7px;
+  height: 2.8px;
+  background-color: #f6f8fc;
+}
+
+.bg-full-width {
+  background: -webkit-image-set( url('http://cdn.besynchro.com/gold/susan/hero.jpg') 1x, url('http://cdn.besynchro.com/gold/susan/hero@2x.jpg') 2x, url('http://cdn.besynchro.com/gold/susan/hero@3x.jpg') 3x);
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position-x: 0px;
+  background-position-y: -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: 0s linear;
+  transition-property: background-position-y;
+}
+
+svg.external {
+  height: 100%;
+  width: 100%;
+  display: inline-block; 
+  margin: auto;
+}
+
+.main-header-container {
+  height: 0;
+
+  .main-header {
+    background: none;
+
+    .main-navigation {
+      display: block;
+
+      &__mobile {
+        float: left;
+      }
+
+      &__hamburger {
+        background-color: #fff;
+      }
+
+      &__item {
+        width: 35px;
+        height: 18px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.86;
+        color: #ffffff;
+      }
+
+      .a--cta {
+        background: none;
+        border: 1px solid #fff;
+      }
+    }
+  }
+}
+
+.fixed-top-border {
+
+}
+
+.atf {
+  &.bg-full-width {
+    position: relative;
+    height: 750px;
+
+    .p--header {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    .down-arrow {
+      width: 19px;
+      bottom: 30px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+}
+
+.intro {
+  text-align: center;
+
+  .p--text {
+    font-size: 20px;
+  }
+}
+
+.about {
+  text-align: center;
+
+  .p--header {
+    text-transform: none;
+    color: #751e85;
+  }
+}
+
+.ingredients {
+  text-align: left;
+
+  &__img-box {
+    height: 450px;
+  }
+  
+  .p--header {
+    position: relative;
+
+    .superscript {
+      position: absolute;
+      font-size: 20px;
+      top: 0;
+      left: -1em;
+      color: #7f4c9b;
+    }
+  }
+}
+
+.faq {
+
+  &__text {
+    text-align: center;
+  }
+}
+
+.footer {
+  text-align: center;
+  text-transform: none;
+  background: #F6F8FB;
+  padding: 0;
+
+  .synchro-logo {
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+    fill: #c6c6c6;
+  }
+
+  .bottom-border {
+    margin-top: 40px;
+    height: 12px;
+  }
+}

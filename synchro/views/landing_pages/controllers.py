@@ -65,9 +65,17 @@ endpoint_info_dict = {
         'stylesheet': 'gold/abtests/gold_cro004.css'
       }
     },
+    'susan': {
+      'template': 'landing_pages/gold/gold_susan.html',
+      'scripts': [synchro_es6],
+      'template_vars': {
+        'is_variant': True,
+        'stylesheet': 'gold/gold_susan.css'
+      }
+    },
     '2c' : {
       'template': 'landing_pages/gold/abtests/gold_cro004-1.html',
-      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'stylesheet': 'gold/abtests/gold_cro004.css'
@@ -75,7 +83,7 @@ endpoint_info_dict = {
     },
     '3r' : {
       'template': 'landing_pages/gold/abtests/gold_cro004-3.html',
-      'scripts': [synchro_buy_button, synchro_effects, analytics, wowjs, videojsie8, videojsga],
+      'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
@@ -174,6 +182,9 @@ def landing_page(page, version):
   # Make sure instances respond correctly to health checker pings
   if page == 'none':
     return ('', 200)
+
+  print page
+  print version
 
   # Fail if we don't have a valid page, and default to v0 if the version is invalid
   assert page in endpoint_info_dict
