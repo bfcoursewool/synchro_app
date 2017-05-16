@@ -8,6 +8,7 @@
 $yellow: #fecf33;
 $cta-color: #fdbd39;
 $cta-color-dark: #ee6723;
+$image-backing: #333;
 
 // INTERACTIVE ELEMENTS
 
@@ -23,6 +24,52 @@ $cta-color-dark: #ee6723;
 
 .a--cta {
   @extend %cta;
+}
+
+[data-toggle-content] {
+  height: auto;
+  display: none;
+}
+
+.content-toggle--button {
+  display: block; width: 100%;
+  padding: 1.6875rem 0;
+  text-align: center;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+.content-toggle--text {
+  display: block;
+}
+
+.content-toggle--icon {
+  @extend %cta;
+
+  position: relative;
+  display: inline-block;
+  width: 39 / 16 * 1rem;
+  height: 39 / 16 * 1rem;
+  border-radius: 50%;
+  &:before,
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    background-color: #fff;
+    transform: translate(-50%,-50%);
+  }
+  &:before {
+    width: 1px;
+    height: 25%;
+  }
+  &:after {
+    width: 30%;
+    height: 1px;
+  }
 }
 
 // HERO
@@ -53,7 +100,6 @@ svg.external {
   height: 0;
 	text-align: center;
 
-
 	.main-header__logo .synchro-logo {
 		width: 111px;
 		height: 30.5px;
@@ -68,6 +114,7 @@ svg.external {
   &.bg-full-width {
     position: relative;
     height: 750px;
+    background-color: $image-backing;
 
     .p--header {
       color: #fff;
@@ -96,6 +143,13 @@ svg.external {
   .p--text {
     font-size: 20px;
   }
+}
+
+// BENEFITS
+
+
+.extended-content {
+  overflow: hidden;
 }
 
 .gold-benefits__item {
