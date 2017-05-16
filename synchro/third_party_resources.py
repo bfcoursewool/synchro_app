@@ -42,7 +42,7 @@ tether = Resource(
 
 bootstrap = Resource(
   library_resources,
-  'bootstrap/js/bootstrap.min.js',
+  'bootstrap/js/bootstrap.js',
   depends=[
     jquery,
     tether

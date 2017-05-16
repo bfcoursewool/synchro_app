@@ -9,7 +9,6 @@ import GradientEffect from './ES6/gradient_effect';
 import SVGLoader from './ES6/svg_loader';
 
 const lpEffectsObj = new LPEffects();
-const togglify = new Togglify();
 const KMObj = new Kissmetrics(); 
 const fbPixelObj = new FaceBookPixel(); 
 const buyButtonObj = new BuyButton(KMObj.KMPromise);
@@ -17,6 +16,9 @@ const gradientObj = new GradientEffect();
 const svgObj = new SVGLoader();
 
 $(document).ready(() => {
+
+  const togglify = new Togglify();
+
   gradientObj.startEffect();
 
   buyButtonObj.init().then(() => {
