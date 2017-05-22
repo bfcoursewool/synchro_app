@@ -8,11 +8,32 @@ $yellow: #fecf33;
 $cta-color: #fdbd39;
 $cta-color-dark: #ee6723;
 $image-backing: #333;
+$font-color: #4e4e4e;
+$font-color-icons: #6c6c6c;
+
+$gradient-color-yellow: #FED649;
+$gradient-color-orange: #F1B143;
+
+$fs-divisor: 16;
+
+$font-family: '"Open Sans", helvetica, sans-serif';
+
+// FUNCTIONS
+
+@function pxToRem($size){
+  @return $size / $fs-divisor * 1rem
+}
+
+@function dimensionsToRatio($width, $height){
+  @return  $height / $width * 100%
+}
 
 // INTERACTIVE ELEMENTS
 
 %cta {
   background-color: $cta-color;
+  transition: background-color 0.1s ease-in-out;
+
   &:hover {
    background-color: $cta-color-dark;
   }
@@ -25,14 +46,19 @@ $image-backing: #333;
   @extend %cta;
 }
 
+.content-toggle {
+  margin-top: pxToRem(86);
+}
+
 [data-toggle-content] {
   height: auto;
   display: none;
 }
 
 .content-toggle--button {
-  display: block; width: 100%;
-  padding: 1.6875rem 0;
+  display: block;
+  width: 100%;
+  margin: pxToRem(21.5) 0;
   text-align: center;
   cursor: pointer;
   &:focus {
@@ -42,6 +68,7 @@ $image-backing: #333;
 
 .content-toggle--text {
   display: block;
+  margin-bottom: pxToRem(12.5);
 }
 
 .content-toggle--icon {
@@ -71,10 +98,35 @@ $image-backing: #333;
   }
 }
 
+// OVERWRITES / BASICS
+
+body {
+  font-family: #{$font-family};
+  color: $font-color;
+}
+
+.p--title {
+  font-size: pxToRem(16.5);
+  &:after {
+    content: none;
+  }
+}
+
+.p--text {
+	font-size: pxToRem(21) !important;
+	line-height: 1.38;
+}
+
+.p--header__small {
+	font-size: pxToRem(52);
+}
+
+
 // HERO
 
 .bg-full-width {
   background: -webkit-image-set( url('http://cdn.besynchro.com/gold/susan/hero.jpg') 1x, url('http://cdn.besynchro.com/gold/susan/hero@2x.jpg') 2x, url('http://cdn.besynchro.com/gold/susan/hero@3x.jpg') 3x);
+  background-image: none;
 
 
   /* Create the parallax scrolling effect */
@@ -116,12 +168,15 @@ svg.external {
     background-color: $image-backing;
 
     .p--header {
+      margin: 0;
       color: #fff;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
 			font-size: #{70/16 * 1rem};
+      text-transform: lowercase;
+      font-weight: 400;
 			text-align: center;
 			text-shadow: 1.6px 1.9px 0 rgba(0, 0, 0, 0.1);
     }
@@ -136,12 +191,64 @@ svg.external {
   }
 }
 
-.intro {
-  text-align: center;
+// INTRO
 
-  .p--text {
-    font-size: 20px;
+.intro {
+  text-align: left;
+  padding-top: pxToRem(158);
+  padding-bottom: pxToRem(158);
+  background: linear-gradient(to right, $gradient-color-yellow 0%, $gradient-color-orange 100%);
+
+  .p--title {
+    margin-bottom: 0;
+    font-size: pxToRem(19);
+    text-align: left;
+    font-weight: 500;
+
+    &:after {
+      content: none;
+    }
   }
+
+  .p--header__small {
+    margin: pxToRem(19) 0;
+  }
+
+  .a--cta {
+    @extend %cta;
+    width: 60%;
+    max-width: pxToRem(206);
+    padding: pxToRem(19);
+    background-color: white;
+    color: $cta-color;
+    text-align: center;
+  }
+
+  // Note: Not scoped to these blocks
+	$intro-image-width: 696px;
+	$intro-image-height: 386px;
+
+  .snap-to-ratio {
+    height: 0;
+    position:relative;
+    padding-bottom: dimensionsToRatio($intro-image-width, $intro-image-height);
+  }
+
+  .snap-to-ratio-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.intro--copy {
+  padding-bottom: pxToRem(60);
 }
 
 // BENEFITS
@@ -153,6 +260,19 @@ svg.external {
 
 .gold-benefits__item {
   padding: 0;
+  text-align: center;
+  .p--title {
+    color: $font-color-icons;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+}
+
+.gold-benefits__img {
+  display: inline-block;
+  width: pxToRem(99);
+  height: pxToRem(99);
+  margin-bottom: pxToRem(15);
 }
 
 .extended-content--image {
@@ -173,6 +293,8 @@ svg.external {
     height: auto;
   }
 }
+
+// 
 
 .about {
   text-align: center;
