@@ -122,6 +122,20 @@ body {
 }
 
 
+// HEADER
+
+.main-header {
+  .row {
+    position: relative;
+  }
+  .a--cta {
+    // Without this centered logo is not centered horizontally
+    position: absolute;
+    top: pxToRem(-1);
+    right: 0;
+  }
+}
+
 // HERO
 
 .bg-full-width {
@@ -248,7 +262,11 @@ svg.external {
 }
 
 .intro--copy {
-  padding-bottom: pxToRem(60);
+  @media (max-width: 854px) {
+    & {
+      margin-bottom: pxToRem(60);
+    }
+  }
 }
 
 // BENEFITS
