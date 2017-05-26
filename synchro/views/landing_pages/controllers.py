@@ -64,6 +64,14 @@ endpoint_info_dict = {
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
         'stylesheet': 'gold/abtests/gold_cro004.css'
       }
+    },
+    '2': {
+      'template': 'landing_pages/gold/gold_paid-novideo.html',
+      'scripts': [synchro_es6, videojsie8, videojsga],
+      'template_vars': {
+        'is_variant': True,
+        'stylesheet': 'gold/abtests/gold_cro004.css'
+      }
     }
   },
   'digestcleanse': {
