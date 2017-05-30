@@ -22,7 +22,7 @@ export default class Togglify extends EventsBase {
     return this.toggleIds[toggleId];
   }
 
-  toggleContentById = (e) => {
+  toggleContentById(e) {
     const targetId = e.getAttribute('data-toggle-id');
 
     if (this.isToggleOpen(targetId)) {
@@ -46,10 +46,12 @@ export default class Togglify extends EventsBase {
     $(selector).slideUp();
   }
 
-  setToggleId = (toggleId, value) => {
+  setToggleId(toggleId, value) {
     this.toggleIds[toggleId] = value
   }
 
-  getContentSelector = (toggleId) => `[data-toggle-content='${toggleId}']`
+  getContentSelector(toggleId) {
+    return `[data-toggle-content='${toggleId}']`;
+  }
 
 }

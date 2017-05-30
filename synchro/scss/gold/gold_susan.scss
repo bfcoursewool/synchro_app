@@ -269,8 +269,36 @@ svg.external {
   }
 }
 
-// BENEFITS
+// ICON GROUP
 
+%icon-group--item {
+  padding: 0;
+  text-align: center;
+  .p--title {
+    color: $font-color-icons;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+}
+
+%icon-group--img {
+  display: inline-block;
+  width: pxToRem(99);
+  height: pxToRem(99);
+  margin-bottom: pxToRem(15);
+}
+
+
+// BENEFITS
+.gold-benefits__item {
+  @extend %icon-group--item;
+}
+
+.gold-benefits__img {
+  @extend %icon-group--img;
+}
+
+// EXTENDED CONTENT
 
 .extended-content {
   overflow: hidden;
@@ -312,7 +340,13 @@ svg.external {
   }
 }
 
-// 
+// COLUMN 2.4
+
+.col-md-2pt4 {
+  $perc-width: 100;
+  $item-count: 5;
+  width: $perc-width / $item-count * 100%;
+}
 
 .about {
   text-align: center;
