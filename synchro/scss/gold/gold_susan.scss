@@ -1,6 +1,7 @@
 @import 'landing_base';
 
 * {
+  outline: 1px solid red;
 }
 
 // COLORS
@@ -10,6 +11,8 @@ $cta-color-dark: #ee6723;
 $image-backing: #333;
 $font-color: #4e4e4e;
 $font-color-icons: #6c6c6c;
+$extended-color: #ffffff;
+$extended-bg-color: #404040;
 
 $gradient-color-yellow: #FED649;
 $gradient-color-orange: #F1B143;
@@ -17,6 +20,8 @@ $gradient-color-orange: #F1B143;
 $fs-divisor: 16;
 
 $font-family: '"Open Sans", helvetica, sans-serif';
+
+$medium: '(max-width: 854px)';
 
 // FUNCTIONS
 
@@ -79,6 +84,7 @@ $font-family: '"Open Sans", helvetica, sans-serif';
   width: 39 / 16 * 1rem;
   height: 39 / 16 * 1rem;
   border-radius: 50%;
+  z-index: 100;
   &:before,
   &:after {
     position: absolute;
@@ -262,7 +268,7 @@ svg.external {
 }
 
 .intro--copy {
-  @media (max-width: 854px) {
+  @media #{$medium} {
     & {
       margin-bottom: pxToRem(60);
     }
@@ -278,6 +284,14 @@ svg.external {
     color: $font-color-icons;
     font-weight: 500;
     margin-bottom: 0;
+  }
+  @media #{$medium} {
+    float: left;
+    width: 50% !important;
+    min-height: pxToRem(160);
+    &.last {
+      width: 100%!important;
+    }
   }
 }
 
@@ -302,13 +316,25 @@ svg.external {
 
 .extended-content {
   overflow: hidden;
+  background-color: $extended-bg-color;
+  position: relative;
+  top: -42px;
+
+  .p--title {
+    @extend .p--header__small;
+    font-size: pxToRem(21);
+    color: $extended-color;
+  }
+  .p--text {
+    font-size: pxToRem(14);
+    color: $extended-color;
+  }
 }
 
 .gold-benefits__item {
   padding: 0;
   text-align: center;
   .p--title {
-    color: $font-color-icons;
     font-weight: 500;
     margin-bottom: 0;
   }
@@ -340,12 +366,23 @@ svg.external {
   }
 }
 
+// INGREDIENTS
+
+.ingredients__item {
+  @extend %icon-group--item;
+}
+
+.ingredients__img {
+  @extend %icon-group--img;
+}
+
 // COLUMN 2.4
 
 .col-md-2pt4 {
   $perc-width: 100;
   $item-count: 5;
-  width: $perc-width / $item-count * 100%;
+  float: left;
+  width: $perc-width / $item-count * 1%;
 }
 
 .about {
