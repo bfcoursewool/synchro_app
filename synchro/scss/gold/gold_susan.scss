@@ -1,9 +1,5 @@
 @import 'landing_base';
 
-* {
-  outline: 1px solid red;
-}
-
 // COLORS
 $yellow: #fecf33;
 $cta-color: #fdbd39;
@@ -364,6 +360,27 @@ svg.external {
     width: 100%;
     height: auto;
   }
+}
+
+// TECHNOLOGY
+
+.technology {
+  text-align: center;
+  .p--header__small {
+    text-transform: uppercase;
+  }
+  p {
+    line-height: 1.38;
+    text-align: center;
+    margin-bottom: pxToRem(73);
+  }
+
+}
+
+.tab-content--header {
+  @extend .p--header__small;
+  margin: pxToRem(19) 0 pxToRem(28.5);
+  font-weight: 300;
 }
 
 // INGREDIENTS
