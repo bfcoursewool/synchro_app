@@ -71,6 +71,14 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': True,
         'stylesheet': 'gold/abtests/gold_cro004.css'
+      },
+    },
+    'susr-1-4': {
+        'template': 'landing_pages/gold/gold_susan.html',
+        'scripts': [synchro_es6],
+        'template_vars': {
+         'is_variant': True,
+         'stylesheet': 'gold/gold_susan.css'
       }
     }
   },

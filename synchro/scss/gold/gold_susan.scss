@@ -19,6 +19,7 @@ $font-family: '"Open Sans", helvetica, sans-serif';
 
 $medium: '(max-width: 854px)';
 
+
 // FUNCTIONS
 
 @function pxToRem($size){
@@ -28,6 +29,7 @@ $medium: '(max-width: 854px)';
 @function dimensionsToRatio($width, $height){
   @return  $height / $width * 100%
 }
+
 
 // INTERACTIVE ELEMENTS
 
