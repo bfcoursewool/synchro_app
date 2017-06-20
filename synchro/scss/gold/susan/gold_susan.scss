@@ -22,6 +22,8 @@ $font-family: '"Open Sans", helvetica, sans-serif';
 
 $medium: '(max-width: 854px)';
 
+$medium-small-custom: '(max-width: 530px)';
+
 
 // FUNCTIONS
 
@@ -54,6 +56,7 @@ $medium: '(max-width: 854px)';
 
 .content-toggle {
   margin-top: pxToRem(86);
+  margin-bottom: pxToRem(24);
 }
 
 [data-toggle-content] {
@@ -386,7 +389,7 @@ svg.external {
   overflow: hidden;
   background-color: $extended-bg-color;
   position: relative;
-  top: pxToRem(-22);
+  top: pxToRem(-42);
 
   .p--title {
     @extend .p--header__small;
@@ -401,14 +404,21 @@ svg.external {
     text-align: left;
     color: $extended-color-subtle;
   }
+
 }
 
 .extended-content--inner {
   display: table;
+  @media #{$medium-small-custom} {
+    display: block;
+  }
 }
 
 .extended-content--row {
   display: table-row;
+  @media #{$medium-small-custom} {
+    display: block;
+  }
 }
 
 .gold-benefits__item {
@@ -419,6 +429,12 @@ svg.external {
     font-weight: 500;
     margin-bottom: 0;
   }
+
+  @media #{$medium-small-custom} {
+    display: block;
+    width: 100% !important;
+  }
+
 }
 
 .extended-content--copy {
