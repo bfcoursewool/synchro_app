@@ -1,4 +1,6 @@
 @import 'landing_base';
+@import 'wallop';
+@import 'wallop--slide';
 
 // COLORS
 $yellow: #fecf33;
@@ -100,6 +102,22 @@ $medium: '(max-width: 854px)';
     width: 30%;
     height: 1px;
   }
+}
+
+.Wallop-dot {
+  text-indent: -9999px;
+  border: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin: 5px;
+  background-color: #ccc;
+  -webkit-appearance: none;  
+}
+
+.Wallop-dot--current {
+  background-color: #000;
 }
 
 // OVERWRITES / BASICS

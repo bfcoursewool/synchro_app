@@ -3,7 +3,6 @@ import EventsBase from './events_base';
 export default class Tabbify extends EventsBase {
   constructor() {
     super();
-    console.log('okay')
   }
 
   events() {
@@ -13,9 +12,6 @@ export default class Tabbify extends EventsBase {
   }
 
   onClick(element) {
-
-    console.log('clicked')
-
     const {tabId, tabName} = getTabData(element);
 
     hideTabs(tabId);

@@ -78,7 +78,7 @@ endpoint_info_dict = {
         'scripts': [synchro_es6],
         'template_vars': {
          'is_variant': True,
-         'stylesheet': 'gold/gold_susan.css'
+         'stylesheet': 'gold/susan/gold_susan.css'
       }
     }
   },
