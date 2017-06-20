@@ -403,17 +403,26 @@ svg.external {
   }
 }
 
-.extended-content--copy {
-  padding: pxToRem(48) 12% pxToRem(70);
+.extended-content--inner {
+  display: table;
+}
+
+.extended-content--row {
+  display: table-row;
 }
 
 .gold-benefits__item {
+  display: table-cell;
   padding: 0;
   text-align: center;
   .p--title {
     font-weight: 500;
     margin-bottom: 0;
   }
+}
+
+.extended-content--copy {
+  padding: pxToRem(48) 12% pxToRem(70);
 }
 
 .gold-benefits__img {
