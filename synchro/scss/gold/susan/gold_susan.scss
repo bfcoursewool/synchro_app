@@ -61,11 +61,15 @@ $medium: '(max-width: 854px)';
   display: none;
 }
 
-.content-toggle--button {
-  display: block;
-  width: 100%;
+.content-toggle--ui {
   margin: pxToRem(21.5) 0;
   text-align: center;
+}
+
+.content-toggle--button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
   &:focus {
     outline: none;
@@ -86,6 +90,9 @@ $medium: '(max-width: 854px)';
   height: 39 / 16 * 1rem;
   border-radius: 50%;
   z-index: 100;
+  transition: transform ease-out 0.4s,
+    background-color ease-out 0.4s;
+
   &:before,
   &:after {
     position: absolute;
@@ -98,12 +105,56 @@ $medium: '(max-width: 854px)';
   &:before {
     width: 1px;
     height: 25%;
+    animation: shrink-n-grow-height-to-plus 0.4s;
   }
   &:after {
     width: 30%;
     height: 1px;
+    animation: shrink-n-grow-width-to-plus 0.4s;
+  }
+
+  .opened & {
+    background-color: $font-color-icons;
+    transform: rotate(180 + 45 * 1deg);
+
+    &:before {
+      height: 30%;
+      animation: shrink-n-grow-height-to-x 0.4s;
+    }
+
+    &:after {
+      width: 30%;
+      animation: shrink-n-grow-width-to-x 0.4s;
+    }
+
   }
 }
+
+@keyframes shrink-n-grow-height-to-x {
+  0% { height: 25% }
+  50% { height: 0; }
+  100% { height: 30%;}
+}
+
+@keyframes shrink-n-grow-height-to-plus {
+  0% { height: 30% }
+  50% { height: 0; }
+  100% { height: 25%;}
+}
+
+@keyframes shrink-n-grow-width-to-x {
+  0% { width: 30% }
+  50% { width: 0; }
+  100% { width: 30%;}
+}
+
+@keyframes shrink-n-grow-width-to-plus {
+  0% { width: 30% }
+  50% { width: 0; }
+  100% { width: 30%;}
+}
+
+
 
 .Wallop-dot {
   text-indent: -9999px;
@@ -335,7 +386,7 @@ svg.external {
   overflow: hidden;
   background-color: $extended-bg-color;
   position: relative;
-  top: -42px;
+  top: pxToRem(-22);
 
   .p--title {
     @extend .p--header__small;
