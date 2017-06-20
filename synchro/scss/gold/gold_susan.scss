@@ -1,6 +1,4 @@
 @import 'landing_base';
-@import 'wallop';
-@import 'wallop--slide';
 
 // COLORS
 $yellow: #fecf33;
@@ -10,7 +8,6 @@ $image-backing: #333;
 $font-color: #4e4e4e;
 $font-color-icons: #6c6c6c;
 $extended-color: #ffffff;
-$extended-color-subtle: lightgray;
 $extended-bg-color: #404040;
 
 $gradient-color-yellow: #FED649;
@@ -341,19 +338,17 @@ svg.external {
     @extend .p--header__small;
     font-size: pxToRem(21);
     color: $extended-color;
-    text-align: left;
-    text-transform: none;
+    text-align: left!important;
   }
   .p--text {
-    font-size: pxToRem(14) !important;
+    font-size: pxToRem(14);
     color: $extended-color;
-    text-align: left;
-    color: $extended-color-subtle;
+    text-align: left!important;
   }
 }
 
 .extended-content--copy {
-  padding: pxToRem(48) 12% pxToRem(70);
+  padding: 0 pxToRem(45);
 }
 
 .gold-benefits__item {
@@ -438,16 +433,6 @@ svg.external {
     text-transform: none;
     color: #751e85;
   }
-}
-
-// GOLD INGREDIENTS
-
-.gold-ingredients__item {
-  @extend %icon-group--item;
-}
-
-.gold-ingredients__img {
-  @extend %icon-group--img;
 }
 
 .ingredients {
