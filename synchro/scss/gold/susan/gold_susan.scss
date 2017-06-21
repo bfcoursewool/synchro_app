@@ -13,6 +13,9 @@ $extended-color: #ffffff;
 $extended-color-subtle: lightgray;
 $extended-bg-color: #404040;
 
+$tab-backrgound-color: #F2F2F2;
+$tab-inactive-color: #DFDFDF;
+
 $gradient-color-yellow: #FED649;
 $gradient-color-orange: #F1B143;
 
@@ -157,8 +160,6 @@ $medium-small-custom: '(max-width: 530px)';
   100% { width: 30%;}
 }
 
-
-
 .Wallop-dot {
   text-indent: -9999px;
   border: 0;
@@ -198,6 +199,9 @@ body {
   font-size: pxToRem(52);
 }
 
+%gradient {
+  background: linear-gradient(to right, $gradient-color-yellow 0%, $gradient-color-orange 100%);
+}
 
 // HEADER
 
@@ -218,7 +222,6 @@ body {
 .bg-full-width {
   background: -webkit-image-set( url('http://cdn.besynchro.com/gold/susan/hero.jpg') 1x, url('http://cdn.besynchro.com/gold/susan/hero@2x.jpg') 2x, url('http://cdn.besynchro.com/gold/susan/hero@3x.jpg') 3x);
   background-image: none;
-
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -285,10 +288,11 @@ svg.external {
 // INTRO
 
 .intro {
+  @extend %gradient;
+
   text-align: left;
   padding-top: pxToRem(158);
   padding-bottom: pxToRem(158);
-  background: linear-gradient(to right, $gradient-color-yellow 0%, $gradient-color-orange 100%);
 
   .p--title {
     margin-bottom: 0;
@@ -393,6 +397,7 @@ svg.external {
 
   .p--title {
     @extend .p--header__small;
+    font-weight: 300;
     font-size: pxToRem(21);
     color: $extended-color;
     text-align: left;
@@ -470,6 +475,8 @@ svg.external {
 // TECHNOLOGY
 
 .technology {
+  padding-top: pxToRem(46);
+  background-color: $tab-backrgound-color;
   text-align: center;
   .p--header__small {
     text-transform: uppercase;
@@ -478,14 +485,70 @@ svg.external {
     line-height: 1.38;
     text-align: center;
     margin-bottom: pxToRem(73);
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
+  .p--title {
+    margin-bottom: pxToRem(55);
+  }
 }
 
 .tab-content--header {
   @extend .p--header__small;
   margin: pxToRem(19) 0 pxToRem(28.5);
-  font-weight: 300;
+  font-weight: 100;
+}
+
+.tabs {
+  display: inline-block;
+  width: 100%;
+  overflow: auto;
+}
+
+.tabs-inner {
+  display: table-row;
+  min-width: 80%;
+  max-width: pxToRem(800);
+}
+
+.tab {
+  display: table-cell;
+  font-size: pxToRem(20);
+  text-align: left;
+  min-width: pxToRem(176);
+  height: pxToRem(84);
+  padding: 0 pxToRem(14);
+  cursor: pointer;
+  color: $tab-inactive-color;
+  transition: color ease-in-out 0.4s;
+
+  h6 {
+    display: inline-block;
+    padding: pxToRem(14) 0;
+  }
+
+  &:hover {
+    color: $font-color;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    height: pxToRem(6);
+    background-color: $tab-inactive-color;
+    transition: background ease-in-out 0.4s;
+  }
+
+  &.active {
+    color: $font-color;
+
+    &:before {
+      @extend %gradient;
+      opacity: 1;   
+    }
+  }
 }
 
 // INGREDIENTS

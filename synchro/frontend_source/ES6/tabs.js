@@ -14,6 +14,8 @@ export default class Tabbify extends EventsBase {
   onClick(element) {
     const {tabId, tabName} = getTabData(element);
 
+    console.log('click');
+
     hideTabs(tabId);
     showTabs(tabId, tabName);
 
