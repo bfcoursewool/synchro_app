@@ -16,7 +16,7 @@ export default class Togglify extends EventsBase {
     const isOpen = this.toggleIds[toggleId];
 
     if (typeof isOpen !== "boolean") {
-      this.setToggleId(toggleId, false)
+      this.setToggleId(toggleId, false);
     }
 
     return this.toggleIds[toggleId];
@@ -26,40 +26,58 @@ export default class Togglify extends EventsBase {
     const targetId = e.getAttribute('data-toggle-id');
 
     if (this.isToggleOpen(targetId)) {
-      this.closeToggle(targetId)
-      this.setToggleId(targetId, false);
-      this.rotateToggleOff(targetId);
+      this.closeToggle(targetId);
     }
     else {
       this.openToggle(targetId);
-      this.setToggleId(targetId, true);
-      this.rotateToggleOn(targetId);
     }
 
   }
 
+  closeToggle(toggleId) {
+    this.closeToggleContent(toggleId);
+    this.setToggleId(toggleId, false);
+    this.rotateToggleOff(toggleId);
+  }
+
   openToggle(toggleId) {
+    this.closeAllOtherToggles(toggleId);
+    this.openToggleContent(toggleId);
+    this.setToggleId(toggleId, true);
+    this.rotateToggleOn(toggleId);
+  }
+
+  openToggleContent(toggleId) {
     const selector = this.getContentSelector(toggleId);
     $(selector).slideDown();
   }
 
-  closeToggle(toggleId) {
+  closeToggleContent(toggleId) {
     const selector = this.getContentSelector(toggleId);
     $(selector).slideUp();
+  }
+
+  closeAllOtherToggles(toggleId) {
+
+    // Get all toogleIds
+    const otherToggles = Object.entries(this.toggleIds)
+      .filter(([key, value]) => 
+        key !== toggleId
+      )
+      .forEach(([key, value]) => {
+        if (value) this.closeToggle(key);
+      });
   }
 
   rotateToggleOn(toggleId) {
     const selector = this.getToggleSelector(toggleId);
     $(selector).addClass('opened');
-    console.log('rotateToggleOn');
   }
 
   rotateToggleOff(toggleId) {
     const selector = this.getToggleSelector(toggleId);
     $(selector).removeClass('opened');
-    console.log('rotateToggleOff');
   }
-
 
   setToggleId(toggleId, value) {
     this.toggleIds[toggleId] = value
