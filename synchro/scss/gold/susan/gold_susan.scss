@@ -33,7 +33,7 @@ $font-family: '"Open Sans", sans-serif';
 
 $medium: '(max-width: 854px)';
 
-$medium-small-custom: '(max-width: 530px)';
+$medium-small-custom: '(max-width: 680px)';
 
 
 // FUNCTIONS
@@ -439,13 +439,13 @@ svg.external {
   .p--title {
     @extend .p--header__small;
     font-weight: 300;
-    font-size: pxToRem(21);
+    font-size: pxToRem(31);
     color: $extended-color;
     text-align: left;
     text-transform: none;
   }
   .p--text {
-    font-size: pxToRem(14) !important;
+    font-size: pxToRem(19) !important;
     color: $extended-color;
     text-align: left;
     color: $extended-color-subtle;
@@ -467,7 +467,7 @@ svg.external {
   }
 }
 
-.gold-benefits__item {
+.extendend-content--item {
   display: table-cell;
   padding: 0;
   text-align: center;
@@ -485,6 +485,10 @@ svg.external {
 
 .extended-content--copy {
   padding: pxToRem(48) 12% pxToRem(70);
+}
+
+.gold-benefits__item {
+  @extend .extendend-content--item;
 }
 
 .gold-benefits__img {
@@ -609,7 +613,7 @@ svg.external {
 // GOLD INGREDIENTS
 
 .gold-ingredients__item {
-  @extend %icon-group--item;
+  @extend .extendend-content--item;
 }
 
 .gold-ingredients__img {
@@ -636,6 +640,44 @@ svg.external {
       color: #7f4c9b;
     }
   }
+}
+
+.ingredients--extended-content {
+  background-color: $ingredients-extended-bg-color;
+
+  .extended-content--image {
+    padding-bottom: 47%;
+  }
+
+  .gold-ingredients__header {
+    font-size: pxToRem(31);
+  }
+
+  .gold-ingredients__item {
+    vertical-align: top;
+    padding: pxToRem(95) pxToRem(93/2) 0 pxToRem(93/2);
+  }
+
+  .gold-ingredients__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .gold-ingredients__img {
+    width: auto;
+    height: 100%;
+  }
+
+  .p--text {
+    font-size: pxToRem(19) !important;
+  }
+
+  .extended-content--copy {
+    padding-bottom: 0;   
+  }
+
 }
 
 // QUOTES
