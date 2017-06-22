@@ -16,7 +16,7 @@ const gradientObj = new GradientEffect();
 const svgObj = new SVGLoader();
 const toggle = new Toggle();
 const tabs = new Tabs();
-const slider = Slider();
+const slider = Slider('.slides');
 
 
 $(document).ready(() => {
