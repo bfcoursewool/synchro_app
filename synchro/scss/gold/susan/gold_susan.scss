@@ -542,7 +542,7 @@ svg.external {
 .tabs {
   display: inline-block;
   overflow: auto;
-  min-width: 80%;
+  width: 100%;
   max-width: pxToRem(800);
 }
 
