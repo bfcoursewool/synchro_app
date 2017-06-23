@@ -8,7 +8,10 @@ $cta-color: #fdbd39;
 $cta-color-dark: #ee6723;
 $image-backing: #333;
 $font-color: #4e4e4e;
+$font-color-light: #999999;
 $font-color-icons: #6c6c6c;
+
+$border-color: #E1E1E1;
 
 $extended-color: #ffffff;
 $extended-color-subtle: lightgray;
@@ -193,10 +196,15 @@ body {
 
 .p--title {
   font-size: pxToRem(16.5);
+  letter-spacing: pxToRem(2);
+
+  .gold-ingredients > &,
+  .purchase-options > &,
   .technology &, 
   .gold-benefits > & {
     padding-top: pxToRem(46);
   }
+
   &:after {
     content: none;
   }
@@ -567,7 +575,7 @@ svg.external {
 
   h6 {
     display: inline-block;
-    padding: pxToRem(14) 0;
+    padding: pxToRem(24) 0 pxToRem(34);
   }
 
   &:hover {
@@ -741,6 +749,73 @@ svg.external {
   border-radius: (64);
 }
 
+// PURCHASE OPTIONS
+.purchase--item--title {
+  @extend .p--title;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: pxToRem(21);
+}
+
+.purchase--item--qty {
+  @extend .purchase--item--title;
+  margin-top: pxToRem(-40);
+}
+
+.purchase--item--servings {
+  color: $font-color-light;
+  text-transform: uppercase;
+  font-size: pxToRem(16);
+  margin-top: pxToRem(16);
+}
+
+.purchase--item--img {
+  margin-top: pxToRem(-27);
+}
+
+.purchase--item--type {
+  @extend .purchase--item--servings;
+  margin-top: pxToRem(18);
+  margin-bottom: pxToRem(14.5);
+}
+
+.purchase--item--price {
+  font-size: pxToRem(72);
+  margin-top: pxToRem(47);
+}
+
+.purchase--item--button {
+  @extend .a--cta;
+  display: inline-block;
+  width: 100%;
+}
+
+.purchase--item {
+  padding: pxToRem(32);
+}
+
+.purchase--item__premium {
+  @extend .purchase--item;
+  outline: 1px solid $border-color;
+  &:before {
+    content: "10% Savings";
+    display: block;
+    width: pxToRem(65);
+    height: pxToRem(65);
+    border-radius: pxToRem(64);
+    background-color: $cta-color;
+    position: absolute;
+    top: 0;
+    right: pxToRem(-65);
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: pxToRem(11);
+    text-transform: uppercase;
+    padding-top: pxToRem(19);
+  }
+}
+
+// FAQ & RESEARCH
 .faq {
 
   &__text {
@@ -766,3 +841,4 @@ svg.external {
     height: 12px;
   }
 }
+
