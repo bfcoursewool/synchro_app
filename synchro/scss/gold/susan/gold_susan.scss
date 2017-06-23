@@ -55,6 +55,7 @@ $medium-small-custom: '(max-width: 680px)';
 %cta {
   background-color: $cta-color;
   transition: background-color 0.1s ease-in-out;
+  pointer: cursor;
 
   &:hover {
    background-color: $cta-color-dark;
@@ -235,6 +236,8 @@ body {
 // HEADER
 
 .main-header {
+  transition: background-color ease-in-out 0.4s;
+
   .row {
     position: relative;
   }
@@ -243,6 +246,16 @@ body {
     position: absolute;
     top: pxToRem(-1);
     right: 0;
+  }
+  .main-header__logo .synchro-logo {
+    transition: fill ease-in-out 0.4s;
+  }
+
+  &.floated {
+    background-color: white !important;
+    .main-header__logo .synchro-logo {
+      fill: $font-color;
+    }
   }
 }
 
