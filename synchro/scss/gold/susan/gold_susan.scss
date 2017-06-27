@@ -252,6 +252,7 @@ body {
   }
 
   &.floated {
+    height: 54px; 
     background-color: white !important;
     .main-header__logo .synchro-logo {
       fill: $font-color;
@@ -262,8 +263,7 @@ body {
 // HERO
 
 .bg-full-width {
-  background: -webkit-image-set( url('http://cdn.besynchro.com/gold/susan/hero.jpg') 1x, url('http://cdn.besynchro.com/gold/susan/hero@2x.jpg') 2x, url('http://cdn.besynchro.com/gold/susan/hero@3x.jpg') 3x);
-  background-image: none;
+  background: -webkit-image-set( url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 1x, url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 2x, url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 3x);
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -456,6 +456,8 @@ svg.external {
   background-color: $extended-bg-color;
   position: relative;
   top: pxToRem(-42);
+  margin-right: 0;
+  margin-left: 0;
 
   .p--title {
     @extend .p--header__small;
@@ -492,6 +494,7 @@ svg.external {
   display: table-cell;
   padding: 0;
   text-align: center;
+
   .p--title {
     font-weight: 500;
     margin-bottom: 0;
@@ -539,16 +542,34 @@ svg.external {
 // TECHNOLOGY
 
 .technology {
+  position: relative;
   background-color: $tab-backrgound-color;
   text-align: center;
+  height: pxToRem(680);
+
+  @media (max-width: 870px) {
+    height: pxToRem(780);
+  }
+
+  @media (max-width: 562) {
+    height: pxToRem(860);
+  }
+
+  .row {
+    padding: 0 5%;
+  }
+
+
   .p--header__small {
     text-transform: uppercase;
   }
+
   p {
     line-height: 1.38;
     text-align: center;
     margin-bottom: pxToRem(73);
     width: 80%;
+    font-size: pxToRem(21);
     margin-right: auto;
     margin-left: auto;
   }
@@ -560,8 +581,18 @@ svg.external {
 
 .tab-content--header {
   @extend .p--header__small;
-  margin: pxToRem(19) 0 pxToRem(28.5);
+  text-transform: none;
+  margin: pxToRem(19) 0 pxToRem(42);
   font-weight: 100;
+}
+
+.technology--tabs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: pxToRem(107);
+  text-align: center;
 }
 
 .tabs {
@@ -665,6 +696,8 @@ svg.external {
 
 .ingredients--extended-content {
   background-color: $ingredients-extended-bg-color;
+  position: relative;
+  top: -2.625rem;
 
   .extended-content--image {
     padding-bottom: 47%;
@@ -829,18 +862,15 @@ svg.external {
 }
 
 // FAQ & RESEARCH
-.faq {
+.faq_research {
 
-  &__text {
-    text-align: center;
-  }
 }
 
 .footer {
   text-align: center;
   text-transform: none;
   background: #F6F8FB;
-  padding: 0;
+  padding: pxToRem(60);
 
   .synchro-logo {
     display: block;
