@@ -551,8 +551,12 @@ svg.external {
     height: pxToRem(780);
   }
 
-  @media (max-width: 562) {
-    height: pxToRem(860);
+  @media (max-width: 568px) {
+    height: pxToRem(900);
+  }
+
+  @media (max-width: 428px) {
+    height: pxToRem(1020);
   }
 
   .row {
