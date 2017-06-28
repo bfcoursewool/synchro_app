@@ -667,6 +667,16 @@ svg.external {
 
 // GOLD INGREDIENTS
 
+.gold-ingredients__icon {
+  text-align: center;
+  @media #{$medium} {
+    width: 50%;
+    &.last {
+      width: 100%;
+    }
+  }
+}
+
 .gold-ingredients__item {
   @extend .extendend-content--item;
 }
