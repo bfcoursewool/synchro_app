@@ -176,22 +176,6 @@ $header-z-index: 100;
   100% { width: 30%;}
 }
 
-.Wallop-dot {
-  text-indent: -9999px;
-  border: 0;
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-  padding: 0;
-  margin: 5px;
-  background-color: #ccc;
-  -webkit-appearance: none;  
-}
-
-.Wallop-dot--current {
-  background-color: #000;
-}
-
 // OVERWRITES / BASICS
 
 body {
@@ -266,8 +250,13 @@ body {
 
 // HERO
 
+.hero {
+  background-color: $image-backing;
+
+}
+
 .bg-full-width {
-  background: -webkit-image-set( url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 1x, url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 2x, url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 3x);
+  // background: -webkit-image-set( url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 1x, url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 2x, url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 3x);
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -275,23 +264,12 @@ body {
   background-position-y: -200px;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0; // Fades in
 
   transition: 0s linear;
   transition-property: background-position-y;
   position: relative;
 
-  &:after {
-    content: "";
-    background-image: url(https://storage.googleapis.com/synchro-assets/gold/susan/bottom-wave-copy%402x.png);
-    background-color: transparent;
-    height: 2.8125rem;
-    display: block;
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    background-repeat: repeat-x;
-    background-size: cover;
-  }
 }
 
 svg.external {
@@ -445,6 +423,26 @@ svg.external {
 
 
 // BENEFITS
+
+.benefits {
+  position: relative;
+
+  &:before {
+    content: "";
+    background-image: url(https://storage.googleapis.com/synchro-assets/gold/susan/bottom-wave-copy%402x.png);
+    background-color: transparent;
+    height: 2.8125rem;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    top: -2.8125rem;
+    background-repeat: repeat-x;
+    background-size: cover;
+    z-index: $header-z-index - 10;
+  }
+
+}
 .gold-benefits__item {
   @extend %icon-group--item;
 }
