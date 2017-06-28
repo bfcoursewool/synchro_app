@@ -49,12 +49,15 @@ export default class Togglify extends EventsBase {
 
   openToggleContent(toggleId) {
     const selector = this.getContentSelector(toggleId);
-    $(selector).slideDown();
+    $(selector).closest('.extended-content').addClass('open')
+    $(selector).slideDown(1000);
   }
 
   closeToggleContent(toggleId) {
     const selector = this.getContentSelector(toggleId);
-    $(selector).slideUp();
+    $(selector).slideUp(1000, () => 
+      $(selector).closest('.extended-content').removeClass('open')
+    );
   }
 
   closeAllOtherToggles(toggleId) {

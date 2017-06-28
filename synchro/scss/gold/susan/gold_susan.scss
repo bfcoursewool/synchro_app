@@ -38,6 +38,8 @@ $medium: '(max-width: 854px)';
 
 $medium-small-custom: '(max-width: 680px)';
 
+$header-z-index: 100;
+
 // FUNCTIONS
 
 @function pxToRem($size){
@@ -70,6 +72,9 @@ $medium-small-custom: '(max-width: 680px)';
 
 .content-toggle {
   margin-top: pxToRem(86);
+}
+
+.content-toggle--button {
   margin-bottom: pxToRem(24);
 }
 
@@ -106,7 +111,7 @@ $medium-small-custom: '(max-width: 680px)';
   width: 39 / 16 * 1rem;
   height: 39 / 16 * 1rem;
   border-radius: 50%;
-  z-index: 100;
+  z-index: $header-z-index - 10;
   transition: transform ease-out 0.4s,
     background-color ease-out 0.4s;
 
@@ -458,6 +463,10 @@ svg.external {
   margin-right: 0;
   margin-left: 0;
 
+  &.open {
+    overflow: visible;
+  }
+
   .p--title {
     @extend .p--header__small;
     font-weight: 300;
@@ -473,6 +482,15 @@ svg.external {
     color: $extended-color-subtle;
   }
 
+  &:after {
+    content: "";
+    background-color: $extended-bg-color;
+    display: block;
+    bottom: pxToRem(-42);
+    height: pxToRem(42);
+    position: absolute;
+    width: 100%; 
+  }
 }
 
 .extended-content--inner {
