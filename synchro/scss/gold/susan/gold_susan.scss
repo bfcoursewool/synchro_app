@@ -38,7 +38,6 @@ $medium: '(max-width: 854px)';
 
 $medium-small-custom: '(max-width: 680px)';
 
-
 // FUNCTIONS
 
 @function pxToRem($size){
@@ -545,10 +544,10 @@ svg.external {
   position: relative;
   background-color: $tab-backrgound-color;
   text-align: center;
-  height: pxToRem(680);
+  height: pxToRem(690);
 
   @media (max-width: 870px) {
-    height: pxToRem(780);
+    height: pxToRem(790);
   }
 
   @media (max-width: 568px) {
@@ -749,6 +748,8 @@ svg.external {
 .slide {
   padding: pxToRem(121.5);
   padding-bottom: pxToRem(92);
+  padding-left: 30px;
+  padding-right: 30px; 
 }
 
 [role="button"] {
@@ -784,7 +785,11 @@ svg.external {
   font-weight: 300;
   font-style: italic;
   z-index: 3;
+  line-height: 1.4;
 
+  @media (max-width: 680px) {
+    font-size: pxToRem(21) !important;
+  }
 }
 
 .quote-author-img {
@@ -793,10 +798,8 @@ svg.external {
   }
   margin-top: pxToRem(48);
   margin-bottom: pxToRem(24);
-  background-color: white;
   height: pxToRem(64);
   width: pxToRem(64);
-  border-radius: (64);
 }
 
 // PURCHASE OPTIONS
