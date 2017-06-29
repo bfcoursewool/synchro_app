@@ -78,6 +78,8 @@ export default () => {
     afterReveal: removeStyles
   });
 
+  // PREMIUM PURCHASE OPTIONS
+
   sr.reveal('.premium--content--wrapper.purchase--item--img', {
     scale: 1.2,
     afterReveal: removeStyles
@@ -106,13 +108,13 @@ export default () => {
             }
           )
         ;
-      }, 750);
+      }, 600);
 
-      setTimeout(() => $('.discount').addClass('animate-in'), 350);
+      setTimeout(() => $('.discount').addClass('animate-in'), 250);
 
       removeStyles(el);
     }
-  }, 175)
+  }, 190);
 
 }
 
