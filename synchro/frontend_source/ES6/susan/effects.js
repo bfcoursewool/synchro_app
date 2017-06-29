@@ -34,7 +34,7 @@ export default () => {
   });
 
   // BENEFITS
-  sr.reveal('.gold-benefits__item', {
+  sr.reveal('.gold-benefits .gold-benefits__item', {
     viewFactor: 0.9,
     delay: 50,
     distance: '40px',

@@ -49,8 +49,8 @@ export default class Togglify extends EventsBase {
 
   openToggleContent(toggleId) {
     const selector = this.getContentSelector(toggleId);
-    $(selector).closest('.extended-content').addClass('open')
-    $(selector).slideDown(1000);
+    $(selector).closest('.extended-content').addClass('open');
+    setTimeout(() => $(selector).slideDown(1000), 0);
   }
 
   closeToggleContent(toggleId) {
