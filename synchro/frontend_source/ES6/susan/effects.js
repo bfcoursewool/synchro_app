@@ -54,9 +54,14 @@ export default () => {
 
   sr.reveal('.tab h6', {
     beforeReveal: (el) => {
+
       $(el)
         .siblings('.tab-register')
         .animate({width: '90%'}, 750);
+
+      setTimeout(() => removeStyles(el), 0);
+      // pushing to the end of the event queue
+
     }
   }, 250);
 
@@ -88,21 +93,26 @@ export default () => {
     discount: 0,
     delay: 1000,
     afterReveal: (el) => {
+
       setTimeout(() => {
         $('.false-background--inner')
           .animate(
             {'bottom': '0'},
-            750,
+            500,
             () => {
-              $('.discount').addClass('animate-in')
-              $('.bar--wrapper').addClass('shine-animate-on')
+
+              $('.bar--wrapper').addClass('shine-animate-on');
+
             }
           )
         ;
-      }, 1500);
+      }, 750);
+
+      setTimeout(() => $('.discount').addClass('animate-in'), 350);
+
       removeStyles(el);
     }
-  }, 250)
+  }, 175)
 
 }
 
