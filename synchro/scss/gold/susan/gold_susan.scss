@@ -482,6 +482,20 @@ svg.external {
 
 // EXTENDED CONTENT
 
+.extended-content--header {
+  @extend .extended-content--copy;
+  font-size: pxToRem(23);
+  padding-bottom: 0;
+  color: $extended-color;
+
+  .research & {
+    padding-top: 6.625rem;
+    padding-bottom: 2.5rem;
+    padding-left: 6%;
+    padding-right: 6%; 
+  }
+}
+
 .extended-content {
   overflow: hidden;
   background-color: $extended-bg-color;
@@ -496,6 +510,7 @@ svg.external {
 
   .p--title {
     @extend %p--title__large;
+    color: $extended-color;
   }
 
   .p--text {
@@ -587,6 +602,10 @@ svg.external {
   .content-toggle  {
     padding-top: pxToRem(20);
     padding-bottom: pxToRem(20);
+  }
+
+  .extended-content {
+    text-align: center;
   }
 
 }

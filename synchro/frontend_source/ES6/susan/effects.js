@@ -123,6 +123,10 @@ export default () => {
     }
   }, 190);
 
+  sr.reveal('.faq-animate', {
+    viewFactor: 1
+  }, 250);
+
 }
 
 const removeStyles = (el) => el.removeAttribute('style');
