@@ -1,6 +1,4 @@
 @import 'landing_base';
-@import 'wallop';
-@import 'wallop--slide';
 
 // COLORS
 $yellow: #fecf33;
@@ -256,7 +254,7 @@ body {
 }
 
 .bg-full-width {
-  // background: -webkit-image-set( url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 1x, url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 2x, url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 3x);
+  background: -webkit-image-set( url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 1x, url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 2x, url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 3x);
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -264,7 +262,7 @@ body {
   background-position-y: -200px;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0; // Fades in
+  // opacity: 0; // Fades in
 
   transition: 0s linear;
   transition-property: background-position-y;
@@ -439,6 +437,7 @@ svg.external {
     top: -2.8125rem;
     background-repeat: repeat-x;
     background-size: cover;
+    background-position-x: 50%;
     z-index: $header-z-index - 10;
   }
 
@@ -626,6 +625,7 @@ svg.external {
 }
 
 .tab {
+  position: relative;
   display: table-cell;
   font-size: pxToRem(20);
   text-align: left;
@@ -645,22 +645,25 @@ svg.external {
     color: $font-color;
   }
 
-  &:before {
-    content: "";
-    display: block;
-    height: pxToRem(6);
-    background-color: $tab-inactive-color;
-    transition: background ease-in-out 0.4s;
-  }
-
   &.active {
     color: $font-color;
 
-    &:before {
+    .tab-register {
       @extend %gradient;
       opacity: 1;   
     }
   }
+}
+
+.tab-register {
+  display: block;
+  height: pxToRem(6);
+  background-color: $tab-inactive-color;
+  transition: background ease-in-out 0.4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
 }
 
 // COLUMN 2.4
@@ -807,6 +810,8 @@ svg.external {
 }
 
 .quote-text {
+  max-width: pxToRem(860);
+  display: inline-block;
   font-size: pxToRem(47);
   font-weight: 300;
   font-style: italic;
@@ -829,11 +834,36 @@ svg.external {
 }
 
 // PURCHASE OPTIONS
+@media (max-width: 767px) {
+  .section--padding {
+      padding-left: pxToRem(80);
+      padding-right: pxToRem(80);
+  }
+}
+
+.purchase--item {
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.025);
+    .purchase--item--img {
+      transform: scale(1.0125);
+    }
+  }  
+}
+
+.purchase--item--img {
+  margin-top: pxToRem(-27);
+  transition: transform 0.3s ease-in-out;
+}
+
 .purchase--item--title {
   @extend .p--title;
   margin-bottom: 0;
   font-weight: 500;
   font-size: pxToRem(21);
+  position: relative;
+  top: pxToRem(20);
 }
 
 .purchase--item--qty {
@@ -846,10 +876,6 @@ svg.external {
   text-transform: uppercase;
   font-size: pxToRem(16);
   margin-top: pxToRem(16);
-}
-
-.purchase--item--img {
-  margin-top: pxToRem(-27);
 }
 
 .purchase--item--type {
@@ -867,6 +893,7 @@ svg.external {
   @extend .a--cta;
   display: inline-block;
   width: 100%;
+  max-width: pxToRem(210);
 }
 
 .purchase--item {
@@ -875,22 +902,144 @@ svg.external {
 
 .purchase--item__premium {
   @extend .purchase--item;
-  outline: 1px solid $border-color;
-  &:before {
-    content: "10% Savings";
-    display: block;
-    width: pxToRem(65);
-    height: pxToRem(65);
-    border-radius: pxToRem(64);
-    background-color: $cta-color;
+  height: 0;
+  padding: 0 0 57% 0;
+
+  .premium--content--wrapper {
+    position: relative;       
+    z-index: $header-z-index - 20;
+  }
+
+  .bar--wrapper {
     position: absolute;
+    overflow: hidden;    
     top: 0;
-    right: pxToRem(-65);
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: pxToRem(11);
-    text-transform: uppercase;
-    padding-top: pxToRem(19);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: $header-z-index - 50;
+  }
+
+  .bar {
+    position: absolute;
+    background: $cta-color;
+    transition: all 2s linear;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
+ .bar.delay {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+  }
+  .top {
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+  } 
+
+  .false-background,
+  .false-background--inner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px; 
+    z-index: $header-z-index - 70;
+  }
+
+  .false-background--inner {
+    bottom: 100%;
+    background-color: $border-color;
+  }
+
+  .premium--content--wrapper {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px; 
+    background-color: white;
+    z-index: $header-z-index - 60;
+  }
+
+}
+
+.shine-animate-on {
+  .top, .bottom {
+    -webkit-animation-name: h-move;
+    animation-name: h-move;
+    height: 1px;
+    width: 25%;
+  }
+
+  .right, .left {
+    -webkit-animation-name: v-move;
+    animation-name: v-move;
+    width: 1px;
+    height: 25%;
+  }
+}
+
+.discount {
+  opacity: 0;
+  display: block;
+  width: pxToRem(65);
+  height: pxToRem(65);
+  border-radius: pxToRem(64);
+  background-color: $cta-color;
+  position: absolute;
+  top: 0;
+  right: pxToRem(-65);
+  transform: translate(-50%, -50%) scale(1.2);
+  color: white;
+  font-size: pxToRem(11);
+  text-transform: uppercase;
+  padding-top: pxToRem(19);
+  z-index: $header-z-index - 40;
+  transition: transform 0.7s ease-in-out,
+    opacity 0.7s ease-in-out;
+
+  &.animate-in {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes h-move {
+ 0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes v-move {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
   }
 }
 

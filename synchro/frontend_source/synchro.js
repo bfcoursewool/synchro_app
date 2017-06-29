@@ -8,6 +8,7 @@ import Toggle from './ES6/toggle';
 import Tabs from './ES6/tabs';
 import Slider from './ES6/slider';
 import { loadHeroImg } from './ES6/hero_image';
+import susanEffects from './ES6/susan/effects';
 
 const lpEffectsObj = new LPEffects();
 const KMObj = new Kissmetrics(); 
@@ -19,7 +20,7 @@ const toggle = new Toggle();
 const tabs = new Tabs();
 const slider = Slider('.slides');
 
-loadHeroImg();
+susanEffects();
 
 $(document).ready(() => {
   gradientObj.startEffect();
