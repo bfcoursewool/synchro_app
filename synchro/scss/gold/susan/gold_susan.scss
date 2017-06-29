@@ -254,12 +254,16 @@ body {
 }
 
 .bg-full-width {
-  background: -webkit-image-set( url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 1x, url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 2x, url('https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg') 3x);
+  background: -webkit-image-set(
+    url('https://storage.googleapis.com/synchro-assets/gold/susan/hero.jpg') 1x,
+    url('https://storage.googleapis.com/synchro-assets/gold/susan/hero@2x.jpg') 2x,
+    url('https://storage.googleapis.com/synchro-assets/gold/susan/hero@3x.jpg') 3x
+  );
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position-x: 0px;
-  background-position-y: -200px;
+  background-position-y: 0px;
   background-repeat: no-repeat;
   background-size: cover;
   // opacity: 0; // Fades in
@@ -298,6 +302,7 @@ svg.external {
     background-color: $image-backing;
 
     .p--header {
+      opacity: 0;
       margin: 0;
       color: #fff;
       position: absolute;
@@ -309,14 +314,29 @@ svg.external {
       font-weight: 400;
       text-align: center;
       text-shadow: 1.6px 1.9px 0 rgba(0, 0, 0, 0.1);
+      transition: opacity 0.75s ease-in-out;
+
+      &.animate-in {
+        opacity: 1;
+      }
+
     }
 
     .down-arrow {
+      opacity: 0;
       width: 19px;
-      bottom: pxToRem(70);
+      bottom: pxToRem(100);
       position: absolute;
       left: 50%;
       transform: translate(-50%);
+      transition: opacity 0.75s ease-in-out,
+        bottom 0.75s ease-in-out;
+
+      &.animate-in {
+        bottom: pxToRem(70);
+        opacity: 1;
+      }
+
     }
   }
 }
@@ -616,22 +636,23 @@ svg.external {
 .tabs {
   display: inline-block;
   overflow: auto;
-  width: 100%;
   max-width: pxToRem(800);
 }
 
 .tabs-inner {
+  table-layout: fixed;
   display: table-row;
 }
 
 .tab {
   position: relative;
   display: table-cell;
-  font-size: pxToRem(20);
-  text-align: left;
+  max-width: 210px;
   min-width: pxToRem(176);
   height: pxToRem(84);
   padding: 0 pxToRem(14);
+  font-size: pxToRem(20);
+  text-align: left;
   cursor: pointer;
   color: $tab-inactive-color;
   transition: color ease-in-out 0.4s;
@@ -834,6 +855,7 @@ svg.external {
 }
 
 // PURCHASE OPTIONS
+
 @media (max-width: 767px) {
   .section--padding {
       padding-left: pxToRem(80);
@@ -842,33 +864,88 @@ svg.external {
 }
 
 .purchase--item {
+  position: relative;
+  padding: 0 0 60% 0!important;
+  height: 0;
   transition: transform 0.3s ease-in-out;
+  text-align: center;
+
+  @media (max-width: 1100px) {
+    padding: 0 0 70% 0 !important;
+  }
+
+  @media (max-width: 880px) {
+    padding: 0 0 80% 0 !important;
+  }
+
+  @media (max-width: 880px) {
+    padding: 0 !important;
+    height: 700px !important;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 !important;
+    height: 600px !important;
+    margin-bottom: pxToRem(20);
+
+    .purchase--item--img,
+    .premium--img--wrapper img {
+      width: pxToRem(298);
+      height: pxToRem(298);
+    }
+  }
+
 
   &:hover {
     transform: scale(1.025);
-    .purchase--item--img {
-      transform: scale(1.0125);
-    }
   }  
 }
 
 .purchase--item--img {
+  position: absolute;
+  left: 50%;
+  top:  9%;
+  transform: translateX(-50%);
   margin-top: pxToRem(-27);
   transition: transform 0.3s ease-in-out;
 }
 
+.premium--img--wrapper {
+  position: absolute;
+  top:  6%;
+  right: 0;
+  left: 0;
+  height: 0;
+  z-index: $header-z-index - 10;
+}
+
 .purchase--item--title {
   @extend .p--title;
-  margin-bottom: 0;
+  position: absolute;
+  left: 0;
+  top: pxToRem(20);
+  width: 100%;
   font-weight: 500;
   font-size: pxToRem(21);
-  position: relative;
-  top: pxToRem(20);
+  z-index: $header-z-index - 10;
+}
+
+.purchase--item--info {
+  position: absolute;
+  left: 10%;
+  top: 54%;
+  width: 80%;
+  z-index: $header-z-index - 10;
+
+  @media (max-width: 1100px) {
+    top: 50%;
+  }
 }
 
 .purchase--item--qty {
   @extend .purchase--item--title;
-  margin-top: pxToRem(-40);
+  position: static;
+  margin: 0;
 }
 
 .purchase--item--servings {
@@ -878,22 +955,43 @@ svg.external {
   margin-top: pxToRem(16);
 }
 
+.purchase--item--pricing {
+  position: absolute;
+  right: 0;
+  bottom: pxToRem(68);
+  left: 0;
+  z-index: $header-z-index - 10;
+}
+
 .purchase--item--type {
   @extend .purchase--item--servings;
+  color: $font-color-light;
   margin-top: pxToRem(18);
   margin-bottom: pxToRem(14.5);
 }
 
 .purchase--item--price {
+  color: $font-color-light;
   font-size: pxToRem(72);
   margin-top: pxToRem(47);
+  color: $font-color;
+}
+
+.purchase--item {
+  .button--wrapper {
+    position: absolute;
+    bottom: pxToRem(20);
+    left: 0;
+    right: 0;
+  }
 }
 
 .purchase--item--button {
   @extend .a--cta;
-  display: inline-block;
-  width: 100%;
+  position: relative;
   max-width: pxToRem(210);
+  width: 80%;
+  z-index: $header-z-index - 1;
 }
 
 .purchase--item {
@@ -902,12 +1000,15 @@ svg.external {
 
 .purchase--item__premium {
   @extend .purchase--item;
-  height: 0;
-  padding: 0 0 57% 0;
+
+  @media (min-width: 881px) {
+    height: 0;
+    padding: 0 0 57% 0;
+  }
 
   .premium--content--wrapper {
     position: relative;       
-    z-index: $header-z-index - 20;
+    z-index: $header-z-index - 1;
   }
 
   .bar--wrapper {
@@ -917,7 +1018,7 @@ svg.external {
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: $header-z-index - 50;
+    z-index: $header-z-index - 80;
   }
 
   .bar {
@@ -964,7 +1065,7 @@ svg.external {
     left: 0px;
     right: 0px;
     bottom: 0px; 
-    z-index: $header-z-index - 70;
+    z-index: $header-z-index - 90;
   }
 
   .false-background--inner {
@@ -979,7 +1080,7 @@ svg.external {
     right: 1px;
     bottom: 1px; 
     background-color: white;
-    z-index: $header-z-index - 60;
+    z-index: $header-z-index - 20;
   }
 
 }
@@ -1015,7 +1116,7 @@ svg.external {
   font-size: pxToRem(11);
   text-transform: uppercase;
   padding-top: pxToRem(19);
-  z-index: $header-z-index - 40;
+  z-index: $header-z-index - 10;
   transition: transform 0.7s ease-in-out,
     opacity 0.7s ease-in-out;
 

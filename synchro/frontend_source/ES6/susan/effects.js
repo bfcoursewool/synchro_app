@@ -8,13 +8,19 @@ export default () => {
   window.sr = ScrollReveal({
     duration: 1000,
     scale: 1,
-    viewFactor: 0.4,    
+    viewFactor: 0.6,    
   });
 
   // HERO
   sr.reveal('.atf', {
     delay: 1000,
-    distance: 0
+    distance: 0,
+    afterReveal: () => {
+      $('.atf .p--header').addClass('animate-in');
+      setTimeout(() => {
+        $('.atf .down-arrow').addClass('animate-in');
+      }, 1000)
+    }
   });
 
   sr.reveal('.atf.p--header', {
@@ -29,6 +35,7 @@ export default () => {
 
   // BENEFITS
   sr.reveal('.gold-benefits__item', {
+    viewFactor: 0.9,
     delay: 50,
     distance: '40px',
     scale: 0.9

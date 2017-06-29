@@ -66,8 +66,8 @@ export default class LPEffects extends EventsBase {
     let currentBackgroundPosition = parseInt($('.parallax').css('background-position-y'), 10);  
     let newBackgroundPosition = currentBackgroundPosition - (scrollDelta / 2); 
 
-    if(newBackgroundPosition > -200) {
-      newBackgroundPosition = -200; 
+    if(newBackgroundPosition > 0) {
+      newBackgroundPosition = 0; 
     }
 
     $('.parallax').css('background-position-y', newBackgroundPosition + 'px'); 
