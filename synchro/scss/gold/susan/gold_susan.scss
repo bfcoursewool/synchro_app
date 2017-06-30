@@ -538,6 +538,7 @@ svg.external {
 
 .extended-content--inner {
   display: table;
+  table-layout: fixed;
   @media #{$medium-small-custom} {
     display: block;
   }
@@ -552,6 +553,7 @@ svg.external {
 
 .extendend-content--item {
   display: table-cell;
+  width: 50%;
   padding: 0;
   text-align: center;
 
@@ -604,11 +606,6 @@ svg.external {
 
 .research {
   background-color: $tab-backrgound-color;
-
-  .content-toggle  {
-    padding-top: pxToRem(20);
-    padding-bottom: pxToRem(20);
-  }
 
   .extended-content {
     text-align: center;
@@ -795,24 +792,22 @@ svg.external {
   position: relative;
   top: -2.625rem;
 
+  .p--text {
+    color: $font-color;
+  }
+
   .extended-content--image {
     padding-bottom: 47%;
   }
 
   .gold-ingredients__header {
     font-size: pxToRem(31);
+    color: $font-color;
   }
 
   .gold-ingredients__item {
     vertical-align: top;
     padding: pxToRem(95) pxToRem(93/2) 0 pxToRem(93/2);
-  }
-
-  .gold-ingredients__img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .gold-ingredients__img {
