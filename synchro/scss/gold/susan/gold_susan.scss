@@ -273,7 +273,7 @@ body {
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position-x: 0px;
+  background-position-x: 50%;
   background-position-y: 0px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -716,7 +716,8 @@ svg.external {
 .tab-register {
   display: block;
   height: pxToRem(6);
-  background-color: $tab-inactive-color;
+
+  background: linear-gradient(to right, $tab-inactive-color 0%, $tab-inactive-color 100%);
   transition: background ease-in-out 0.4s;
   position: absolute;
   top: 0;
