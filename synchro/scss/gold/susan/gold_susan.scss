@@ -516,13 +516,14 @@ svg.external {
   .p--title {
     @extend %p--title__large;
     color: $extended-color;
+    text-align: center;
   }
 
   .p--text {
     font-size: pxToRem(19) !important;
     color: $extended-color;
-    text-align: left;
     color: $extended-color-subtle;
+    text-align: center;
   }
 
   &:after {
@@ -551,7 +552,7 @@ svg.external {
   }
 }
 
-.extendend-content--item {
+.extended-content--item {
   display: table-cell;
   width: 50%;
   padding: 0;
@@ -574,7 +575,12 @@ svg.external {
 }
 
 .gold-benefits__item {
-  @extend .extendend-content--item;
+  @extend .extended-content--item;
+  .p--text,
+  .p--header,
+  .p--title {
+    text-align: left;
+  }
 }
 
 .gold-benefits__img {
@@ -758,7 +764,7 @@ svg.external {
 }
 
 .gold-ingredients__item {
-  @extend .extendend-content--item;
+  @extend .extended-content--item;
 }
 
 .gold-ingredients__img {
