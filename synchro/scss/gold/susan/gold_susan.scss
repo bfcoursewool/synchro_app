@@ -71,11 +71,10 @@ $header-z-index: 100;
 
 .content-toggle {
   padding-top: pxToRem(86);
+  margin-top: pxToRem(-24);
+  padding-bottom: pxToRem(22);
 }
 
-.content-toggle--button {
-  margin-bottom: pxToRem(24);
-}
 
 [data-toggle-content] {
   height: auto;
@@ -100,6 +99,7 @@ $header-z-index: 100;
 .content-toggle--text {
   display: block;
   margin-bottom: pxToRem(12.5);
+  font-size: pxToRem(20);
 }
 
 .content-toggle--icon {
@@ -233,7 +233,8 @@ body {
 // HEADER
 
 .main-header {
-  transition: background-color ease-in-out 0.4s;
+  transition: background-color ease-in-out 0.75s,
+    padding ease-in-out 0.75s !important;
 
   .row {
     position: relative;
@@ -249,7 +250,6 @@ body {
   }
 
   &.floated {
-    height: 54px; 
     background-color: white !important;
     .main-header__logo .synchro-logo {
       fill: $font-color;
@@ -257,14 +257,23 @@ body {
   }
 }
 
+// Overriding the other styles
+@media (max-width: 767px) {
+  .main-header-container .main-header__logo {
+    position: static;
+    transform: none;
+  }
+}
+
 // HERO
 
 .hero {
   background-color: $image-backing;
-
 }
 
 .bg-full-width {
+  max-height: 100vh;
+
   background: -webkit-image-set(
     url('https://storage.googleapis.com/synchro-assets/gold/susan/hero.jpg') 1x,
     url('https://storage.googleapis.com/synchro-assets/gold/susan/hero@2x.jpg') 2x,
@@ -386,9 +395,8 @@ svg.external {
     width: 60%;
     max-width: pxToRem(206);
     padding: pxToRem(19);
-    background-color: white;
-    color: $cta-color;
     text-align: center;
+    border: 1px solid white;
   }
 
   // Note: Not scoped to these blocks
@@ -429,7 +437,7 @@ svg.external {
   text-align: center;
   .p--title {
     color: $font-color-icons;
-    font-weight: 500;
+    font-weight: 300;
     margin-bottom: 0;
   }
   @media #{$medium} {
@@ -665,7 +673,7 @@ svg.external {
 
 .tab-content--header {
   @extend .p--header__small;
-  text-transform: none;
+  text-transform: none!important;
   margin: pxToRem(19) 0 pxToRem(42);
   font-weight: 100;
 }
@@ -677,11 +685,11 @@ svg.external {
   right: 0;
   height: pxToRem(107);
   text-align: center;
+  overflow: auto;
 }
 
 .tabs {
   display: inline-block;
-  overflow: auto;
   max-width: pxToRem(800);
 }
 
@@ -837,6 +845,10 @@ svg.external {
   background-color: $quotes-bg-color;
   color: $quote-color;
   text-align: center;
+  background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/quote.svg');
+  background-repeat: no-repeat;
+  background-position: 9% 20%;
+  background-size: pxToRem(116);
 }
 
 .slide {
@@ -906,6 +918,14 @@ svg.external {
       padding-right: pxToRem(80);
   }
 }
+
+@media (max-width: 500px) {
+  .section--padding {
+      padding-left: pxToRem(40);
+      padding-right: pxToRem(40);
+  }
+}
+
 
 .purchase--item {
   position: relative;
