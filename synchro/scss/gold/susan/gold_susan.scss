@@ -512,8 +512,8 @@ svg.external {
 .extended-content {
   overflow: hidden;
   background-color: $extended-bg-color;
-  position: relative;
-  top: pxToRem(-42);
+  // position: relative;
+  // top: pxToRem(-42);
   margin-right: 0;
   margin-left: 0;
 
@@ -534,15 +534,15 @@ svg.external {
     text-align: center;
   }
 
-  &:after {
-    content: "";
-    background-color: $extended-bg-color;
-    display: block;
-    bottom: pxToRem(-42);
-    height: pxToRem(42);
-    position: absolute;
-    width: 100%; 
-  }
+  // &:after {
+  //   content: "";
+  //   background-color: $extended-bg-color;
+  //   display: block;
+  //   bottom: pxToRem(-42);
+  //   height: pxToRem(42);
+  //   position: absolute;
+  //   width: 100%; 
+  // }
 }
 
 .extended-content--inner {
@@ -803,8 +803,7 @@ svg.external {
 
 .ingredients--extended-content {
   background-color: $ingredients-extended-bg-color;
-  position: relative;
-  top: -2.625rem;
+  padding-bottom: pxToRem(124);
 
   .p--text {
     color: $font-color;
@@ -822,11 +821,21 @@ svg.external {
   .gold-ingredients__item {
     vertical-align: top;
     padding: pxToRem(95) pxToRem(93/2) 0 pxToRem(93/2);
+
+    .gold-ingredients__img {
+      transform: scale(0.8);
+    }
+
+    & + .gold-ingredients__item .gold-ingredients__img {
+      transform: none;
+    }
   }
+
 
   .gold-ingredients__img {
     width: auto;
     height: 100%;
+
   }
 
   .p--text {
