@@ -61,7 +61,7 @@ endpoint_info_dict = {
       'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
+        'poster_image': 'http://cdn.besynchro.com/gold/gold-lg-video-poster.png',
         'stylesheet': 'gold/gold_lemon-ginger.css'
       }
     },
