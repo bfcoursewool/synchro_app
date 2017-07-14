@@ -1,3 +1,4 @@
+let entries = require('object.entries');
 import GradientBase from './gradient_effect';
 
 export default class SVGLoader extends GradientBase {
@@ -24,7 +25,7 @@ export default class SVGLoader extends GradientBase {
     });
 
     Promise.all(this._promises).then((promiseValue) => {
-      for(let [index, componentId] of Object.entries(promiseValue)) {
+      for(let [index, componentId] of entries(promiseValue)) {
         if(componentId in this._cognosEffectsMethods) {
           this[this._cognosEffectsMethods[componentId]](componentId);          
         }
@@ -67,7 +68,7 @@ export default class SVGLoader extends GradientBase {
     let color1Hex = this.rgb2hex(color1);
     let color2Hex = this.rgb2hex(color2); 
     
-    for(let [svgId, gradientLayer] of Object.entries(this.gradientLayers)) {
+    for(let [svgId, gradientLayer] of entries(this.gradientLayers)) {
       gradientLayer.select('.start').attr('stop-color', color1Hex);
       gradientLayer.select('.end').attr('stop-color', color2Hex);  
     }
