@@ -13,6 +13,7 @@ export default class Togglify extends EventsBase {
   }
 
   isToggleOpen(toggleId) {
+
     const isOpen = this.toggleIds[toggleId];
 
     if (typeof isOpen !== "boolean") {
@@ -23,6 +24,7 @@ export default class Togglify extends EventsBase {
   }
 
   toggleContentById(e) {
+    console.log('cats');
     const targetId = e.getAttribute('data-toggle-id');
 
     if (this.isToggleOpen(targetId)) {

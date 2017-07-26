@@ -286,7 +286,6 @@ body {
   background-position-x: 50%;
   background-position-y: 0px;
   background-repeat: no-repeat;
-  background-size: cover;
   // opacity: 0; // Fades in
 
   transition: 0s linear;
@@ -733,13 +732,12 @@ svg.external {
 .tab-register {
   display: block;
   height: pxToRem(6);
-
   background: linear-gradient(to right, $tab-inactive-color 0%, $tab-inactive-color 100%);
   transition: background ease-in-out 0.4s;
   position: absolute;
   top: 0;
   left: 6%;
-  width: 0;
+  width: 90%;
 }
 
 // COLUMN 2.4
