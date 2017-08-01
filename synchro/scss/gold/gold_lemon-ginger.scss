@@ -1,0 +1,14 @@
+@import 'gold/gold_testimonial';
+
+.gold-atf__uvp {
+	left: calc(50% - 470px);
+
+	@media (max-width: $break-tablet) {
+		left: 0px;
+	}
+}
+
+.gold-use__img {
+	width: 100%;
+	max-width: 320px;
+}

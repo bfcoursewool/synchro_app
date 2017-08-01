@@ -24,7 +24,6 @@ export default class Togglify extends EventsBase {
   }
 
   toggleContentById(e) {
-    console.log('cats');
     const targetId = e.getAttribute('data-toggle-id');
 
     if (this.isToggleOpen(targetId)) {

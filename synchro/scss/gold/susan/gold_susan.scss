@@ -184,7 +184,7 @@ body {
 
 .p--title {
   font-size: pxToRem(16.5);
-  letter-spacing: pxToRem(2);
+  letter-spacing: pxToRem(1);
 
   .gold-ingredients > &,
   .purchase-options > &,
@@ -286,6 +286,7 @@ body {
   background-position-x: 50%;
   background-position-y: 0px;
   background-repeat: no-repeat;
+  background-size: cover;
   // opacity: 0; // Fades in
 
   transition: 0s linear;
@@ -654,6 +655,7 @@ svg.external {
 
   .p--header__small {
     text-transform: uppercase;
+    margin-bottom: pxToRem(18);
   }
 
   p {

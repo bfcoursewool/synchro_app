@@ -1,3 +1,4 @@
+let entries = require('object.entries'); 
 import shopClient from './shopify_credentials';
 
 export default class BuyButton {
@@ -167,7 +168,7 @@ export default class BuyButton {
     let productId, variantId, node;
     let options = this.productOptions(kissIdentity);
     let itemPromises = [];
-    for(let [index, item] of Object.entries(purchaseItems)) {
+    for(let [index, item] of entries(purchaseItems)) {
       productId = parseInt($(item).attr('data-product-id'));
       variantId = parseInt($(item).attr('data-variant-id'));
       node = $(item).attr('data-node');
