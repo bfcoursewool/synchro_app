@@ -251,6 +251,8 @@ body {
 
   &.floated {
     background-color: white !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
     .main-header__logo .synchro-logo {
       fill: $font-color;
     }
@@ -286,7 +288,6 @@ body {
   background-position-x: 50%;
   background-position-y: 0px;
   background-repeat: no-repeat;
-  background-size: cover;
   // opacity: 0; // Fades in
 
   transition: 0s linear;
@@ -319,7 +320,7 @@ svg.external {
 .atf {
   &.bg-full-width {
     position: relative;
-    height: 750px;
+    height: 738px;
     background-color: $image-backing;
 
     .p--header {
@@ -688,6 +689,12 @@ svg.external {
   height: pxToRem(107);
   text-align: center;
   overflow: auto;
+
+  @media #{$medium-small-custom} {
+    position: static;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
 }
 
 .tabs {
@@ -749,6 +756,10 @@ svg.external {
   $item-count: 5;
   float: left;
   width: $perc-width / $item-count * 1%;
+
+  @media (max-width: 480px) {
+    width: 100% !important;
+  }
 }
 
 .about {
