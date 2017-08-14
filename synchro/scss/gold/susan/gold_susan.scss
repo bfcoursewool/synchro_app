@@ -294,6 +294,10 @@ body {
   transition-property: background-position-y;
   position: relative;
 
+  @media only screen and (min-width : 480px) {
+    background-size: cover
+  }
+
 }
 
 svg.external {
@@ -562,6 +566,11 @@ svg.external {
   }
 }
 
+.extended-content--row__single {
+  @extend .extended-content--row;
+  display: block;
+}
+
 .extended-content--item {
   display: table-cell;
   width: 50%;
@@ -785,6 +794,13 @@ svg.external {
 
 .gold-ingredients__item {
   @extend .extended-content--item;
+}
+
+.gold-ingredients__item__single {
+  @extend .extended-content--item;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gold-ingredients__img {
@@ -1247,11 +1263,18 @@ svg.external {
   }
 }
 
+.footnote {    
+  font-size: 14px!important;
+  margin-bottom: 0!important;
+}
+
 .footer {
   text-align: center;
   text-transform: none;
   background: #F6F8FB;
   padding: pxToRem(60);
+  position: relative;
+  top: 16px;
 
   .synchro-logo {
     display: block;
