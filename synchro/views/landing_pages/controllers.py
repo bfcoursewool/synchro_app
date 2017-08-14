@@ -73,7 +73,8 @@ endpoint_info_dict = {
         'stylesheet': 'gold/gold_lemon-ginger.css'
       },
     },
-    'susr': {
+    'sus-8-1-1': {
+    //susan - month launched - iteration - test variation
         'template': 'landing_pages/gold/susan/index.html',
         'scripts': [synchro_es6],
         'template_vars': {
