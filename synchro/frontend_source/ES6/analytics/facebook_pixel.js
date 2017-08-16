@@ -9,8 +9,14 @@ export default class FaceBookPixel extends EventsBase {
 
   events() {
     return {
-      'click .shopify-buy__btn': 'fireFBQ'
+      'click .shopify-buy__btn': 'fireFBQ',
+      'click a': 'test'
     }
+  }
+
+  test(e) {
+    console.log(e);
+    console.log("blahblah");
   }
 
   fireFBQ(target) {
