@@ -10,17 +10,14 @@ export default class FaceBookPixel extends EventsBase {
   events() {
     return {
       'click .shopify-buy__btn': 'fireFBQ',
-      'click .ch-buy-link': 'fireFBQ'
+      'click .ch-buy-link': 'test'
     }
   }
-
+  
   fireFBQ(target, e) {
-    e.preventDefault();
-    console.log("Test"); 
-    let price = $(target).closest('.shopify-buy-frame').find('.shopify-buy__product__actual-price').html();
     price = price.replace(/\$/g, ''); 
     price = price.match(/(.*)\.[0-9][0-9]/); 
-    let contentName = $(target).closest('.shopify-buy-frame').find('.shopify-buy__product__title').html() + $(target).closest('.shopify-buy-frame').find('.shopify-buy__product__variant-title').html();
+    let contentName = $(target).closest('.hidden-template').find('.shopify-buy__product__title').html() + $(target).closest('.shopify-buy-frame').find('.shopify-buy__product__variant-title').html();
     let content_ids = [$(target).closest('.purchase__item').attr('data-product-id')];
     let property = $(target).closest('.purchase').attr('data-fb-property');
 
