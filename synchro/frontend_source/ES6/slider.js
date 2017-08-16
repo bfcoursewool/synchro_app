@@ -1,3 +1,5 @@
+import slick from 'slick-carousel';
+
 export default (selector) => $(selector).slick({
   dots: true,
   infinite: true,
