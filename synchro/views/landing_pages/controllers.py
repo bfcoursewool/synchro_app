@@ -74,7 +74,7 @@ endpoint_info_dict = {
       },
     },
     'sus-8-1-1': {
-    //susan - month launched - iteration - test variation
+    # susan - month launched - iteration - test variation
         'template': 'landing_pages/gold/susan/index.html',
         'scripts': [synchro_es6],
         'template_vars': {
