@@ -10,16 +10,13 @@ export default class FaceBookPixel extends EventsBase {
   events() {
     return {
       'click .shopify-buy__btn': 'fireFBQ',
-      'click a': 'test'
+      'click .ch-buy-link': 'fireFBQ'
     }
   }
 
-  test(e) {
-    console.log(e);
-    console.log("blahblah");
-  }
-
-  fireFBQ(target) {
+  fireFBQ(target, e) {
+    e.preventDefault();
+    console.log("Test"); 
     let price = $(target).closest('.shopify-buy-frame').find('.shopify-buy__product__actual-price').html();
     price = price.replace(/\$/g, ''); 
     price = price.match(/(.*)\.[0-9][0-9]/); 
