@@ -6,7 +6,7 @@ import GradientEffect from './ES6/gradient_effect';
 import SVGLoader from './ES6/svg_loader';
 import Toggle from './ES6/toggle';
 import Tabs from './ES6/tabs';
-import Slider from './ES6/slider';
+// import Slider from './ES6/slider';
 import { loadHeroImg } from './ES6/hero_image';
 import susanEffects from './ES6/susan/effects';
 
@@ -18,7 +18,7 @@ const gradientObj = new GradientEffect();
 const svgObj = new SVGLoader();
 const toggle = new Toggle();
 const tabs = new Tabs();
-const slider = Slider('.slides');
+// const slider = Slider('.slides');
 
 susanEffects();
 
