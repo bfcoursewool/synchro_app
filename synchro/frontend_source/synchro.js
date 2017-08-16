@@ -25,8 +25,10 @@ susanEffects();
 $(document).ready(() => {
   gradientObj.startEffect();
 
+  /*
   buyButtonObj.init().then(() => {
     fbPixelObj.bindEvents();
     KMObj.bindEvents();
   });
+  */ 
 })
