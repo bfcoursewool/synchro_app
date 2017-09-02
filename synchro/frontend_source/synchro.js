@@ -11,9 +11,7 @@ import { loadHeroImg } from './ES6/hero_image';
 import susanEffects from './ES6/susan/effects';
 
 const lpEffectsObj = new LPEffects();
-const KMObj = new Kissmetrics(); 
 const fbPixelObj = new FaceBookPixel(); 
-//const buyButtonObj = new BuyButton(KMObj.KMPromise);
 const gradientObj = new GradientEffect(); 
 const svgObj = new SVGLoader();
 const toggle = new Toggle();
@@ -24,11 +22,4 @@ susanEffects();
 
 $(document).ready(() => {
   gradientObj.startEffect();
-
-  /*
-  buyButtonObj.init().then(() => {
-    fbPixelObj.bindEvents();
-    KMObj.bindEvents();
-  });
-  */ 
 })
