@@ -140,7 +140,6 @@ a.anchor {
   border: 0;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
-  margin-top: 30px;
 
   &:hover {
     background: #4ca4e6;
@@ -451,6 +450,10 @@ GLOBAL SECTIONS
     line-height: 1.8;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
+  }
+
+  .shopify-buy__product__price{
+    margin-bottom: 30px;
   }
 
   .shopify-buy__product__actual-price {
