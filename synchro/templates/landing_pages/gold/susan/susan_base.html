@@ -34,47 +34,6 @@
 
 <meta name="google-site-verification" content="ZhbX-aVaeZXWEolRbslrE7EU9M9ROJmkTb8Wb63jzOA" />
 <meta name="google-site-verification" content="7f8BFFtINsQrTL7If4hePO9SMRkzdnEp5a-I4JWr8ZE" /> <!-- for www.synchrogold.com -->
-
-<script type='text/javascript'>
-(function(){
-    function load_button_1(){
-        var this_id = 'ch-buy-button-corejs-A7MV1BXtRMYBSjohN17b';
-        var remove = document.getElementById(this_id);
-        if(remove){
-            remove.parentNode.removeChild(remove);
-        }
-        var script=document.createElement('script');
-        script.setAttribute('src', 'https://api.c.carthook.com//api/v1/code/A7MV1BXtRMYBSjohN17b/buyButton.js?style=style1');
-        script.setAttribute('type', 'text/javascript');
-        script.setAttribute('id', this_id);
-        document.getElementsByTagName('head')[0].appendChild(script);
-    }
-    function load_button_css(){
-        var this_id = 'ch-buy-button-css-A7MV1BXtRMYBSjohN17b';
-        var remove = document.getElementById(this_id);
-        if(remove){
-            remove.parentNode.removeChild(remove);
-        }
-        var link=document.createElement('link');
-        link.id=this_id;
-        link.rel='stylesheet';
-        link.type='text/css';
-        link.href='https://api.c.carthook.com//api/v1/code/A7MV1BXtRMYBSjohN17b/buyButton.css?style=style1';
-        link.media='all';
-        link.addEventListener('load', function(){
-            load_button_1();
-        });
-        document.getElementsByTagName('head')[0].appendChild(link);
-    }
-    load_button_css();
-})();
-if(typeof chTranslationVariables == 'undefined'){
-    var chTranslationVariables = { "A7MV1BXtRMYBSjohN17b" : {"$defVariant":"all","$quantity":"Quantity","$maxQuantity":10,"$buyText":"BUY NOW","$buyTextBackground":"#2f90d9","$buyTextColor":"#FFFFFF","$validation2":"Sorry! This item is currently not available in this"} };
-} else {
-    chTranslationVariables["A7MV1BXtRMYBSjohN17b"] = {"$defVariant":"all","$quantity":"Quantity","$maxQuantity":10,"$buyText":"BUY NOW","$buyTextBackground":"#2f90d9","$buyTextColor":"#FFFFFF","$validation2":"Sorry! This item is currently not available in this"};
-}
-</script>
-
 {% endblock %}
 
 {% block footer %}
