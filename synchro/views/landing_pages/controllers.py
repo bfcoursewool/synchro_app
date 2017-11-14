@@ -48,6 +48,14 @@ endpoint_info_dict = {
   },
   'gold': {
     'v0': {
+        'template': 'landing_pages/gold/susan/index.html',
+        'scripts': [synchro_es6],
+        'template_vars': {
+         'is_variant': True,
+         'stylesheet': 'gold/susan/gold_susan.css'
+      }
+    },
+    'old-gold': {
       'template': 'landing_pages/gold/gold_organic.html',
       'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
@@ -72,14 +80,6 @@ endpoint_info_dict = {
         'is_variant': True,
         'stylesheet': 'gold/gold_lemon-ginger.css'
       },
-    },
-    'sus-8-1-1': {
-        'template': 'landing_pages/gold/susan/index.html',
-        'scripts': [synchro_es6],
-        'template_vars': {
-         'is_variant': True,
-         'stylesheet': 'gold/susan/gold_susan.css'
-      }
     }
   },
   'digestcleanse': {
