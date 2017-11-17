@@ -51,7 +51,7 @@ endpoint_info_dict = {
         'template': 'landing_pages/gold/susan/index.html',
         'scripts': [synchro_es6],
         'template_vars': {
-         'is_variant': True,
+         'is_variant': False,
          'stylesheet': 'gold/susan/gold_susan.css'
       }
     },
@@ -59,26 +59,25 @@ endpoint_info_dict = {
       'template': 'landing_pages/gold/gold_organic.html',
       'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
-        'is_variant': False,
+        'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-lg-video-poster2.png',
         'stylesheet': 'gold/gold_lemon-ginger.css'
       }
     },
     '1': {
-      'template': 'landing_pages/gold/gold_paid.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-lg-video-poster2.png',
-        'stylesheet': 'gold/gold_lemon-ginger.css'
+        'template': 'landing_pages/gold/susan/index.html',
+        'scripts': [synchro_es6],
+        'template_vars': {
+         'is_variant': True,
+         'stylesheet': 'gold/susan/gold_susan.css'
       }
     },
     '2': {
-      'template': 'landing_pages/gold/gold_paid-novideo.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'stylesheet': 'gold/gold_lemon-ginger.css'
+        'template': 'landing_pages/gold/susan/index.html',
+        'scripts': [synchro_es6],
+        'template_vars': {
+         'is_variant': True,
+         'stylesheet': 'gold/susan/gold_susan.css'
       },
     }
   },
