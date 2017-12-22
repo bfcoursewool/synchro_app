@@ -508,7 +508,8 @@ GLOBAL SECTIONS
 /* customer review section */
 .synchro-reviews {
   display: block;
-  background: #F6F8FB;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
   text-align: center;
   padding: 70px 20px;
 }
