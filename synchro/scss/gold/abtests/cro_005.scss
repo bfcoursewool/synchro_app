@@ -1,0 +1,67 @@
+@import 'gold/susan/gold_susan';
+
+.cro005-1 {
+
+	.purchase--item__premium {
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+		.false-background--inner {
+			background: none;
+		}
+	}
+
+	.purchase--item--title, .purchase--item--qty {
+		margin-top: pxToRem(40);
+	}
+
+	.purchase--item--img {
+		top: 11%;
+		width: 80%;
+	}
+
+	.premium--img--wrapper {
+		top: 2%;
+	}
+
+	.purchase--item--info {
+		top: 43%;
+	}
+
+	.purchase--item--cancel {
+		font-size: pxToRem(14);
+		margin-top: pxToRem(14);
+		font-style: italic;
+		color: $font-color-light;
+	}
+
+	.purchase--item--pricing {
+		bottom: pxToRem(100);
+	}
+
+	.purchase--item--off {
+
+		font-weight: bold;
+		text-transform: uppercase;
+
+		span {
+			font-weight: normal;
+			text-decoration: line-through;
+		}
+	}
+
+	.purchase--item--price {
+		margin-top: pxToRem(15);
+		opacity: 0.9;
+		font-size: pxToRem(64);
+	}
+
+	.purchase--item--price.premium-animate {
+		opacity: 1;
+		font-size: pxToRem(72);
+	}
+
+	.purchase--item .button--wrapper,
+	.purchase--item__premium .button--wrapper {
+		bottom: pxToRem(45);
+	}
+}

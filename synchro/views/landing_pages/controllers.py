@@ -93,49 +93,59 @@ endpoint_info_dict = {
   },
   'cro002': {
     'v1' : {
-      'template': 'landing_pages/gold/abtests/gold_cro002-1.html',
+      'template': 'landing_pages/gold/abtests/cro_002/variant_1.html',
       'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/abtests/gold_cro002.css'
+        'stylesheet': 'gold/abtests/cro_002.css'
       }
     },
     'v2' : {
-      'template': 'landing_pages/gold/abtests/gold_cro002-2.html',
+      'template': 'landing_pages/gold/abtests/cro_002/variant_2.html',
       'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/abtests/gold_cro002.css'
+        'stylesheet': 'gold/abtests/cro_002.css'
       }
     }
   },
   'cro004': {
     'v1' : {
-      'template': 'landing_pages/gold/abtests/gold_cro004-1.html',
+      'template': 'landing_pages/gold/abtests/cro_004/variant_1.html',
       'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
-        'stylesheet': 'gold/abtests/gold_cro004.css'
+        'stylesheet': 'gold/abtests/cro_004.css'
       }
     },
     'v2' : {
-      'template': 'landing_pages/gold/abtests/gold_cro004-2.html',
+      'template': 'landing_pages/gold/abtests/cro_004/variant_2.html',
       'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/abtests/gold_cro004.css'
+        'stylesheet': 'gold/abtests/cro_004.css'
       }
     },
     'v3' : {
-      'template': 'landing_pages/gold/abtests/gold_cro004-3.html',
+      'template': 'landing_pages/gold/abtests/cro_004/variant_3.html',
       'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/abtests/gold_cro004.css'
+        'stylesheet': 'gold/abtests/cro_004.css'
+      }
+    }
+  },
+  'cro005': {
+    'v1' : {
+      'template': 'landing_pages/gold/abtests/cro_005/variant_1.html',
+      'scripts': [synchro_es6, videojsie8, videojsga],
+      'template_vars': {
+        'is_variant': True,
+        'stylesheet': 'gold/abtests/cro_005.css'
       }
     }
   }
