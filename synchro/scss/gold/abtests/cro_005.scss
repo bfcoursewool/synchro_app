@@ -2,66 +2,88 @@
 
 .cro005-1 {
 
-	.purchase--item__premium {
-		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	.purchase--item {
 
-		.false-background--inner {
-			background: none;
+		padding-bottom: 55% !important;
+
+		@media (max-width: 1300px) {
+			padding-bottom: 60% !important;
 		}
-	}
 
-	.purchase--item--title, .purchase--item--qty {
-		margin-top: pxToRem(40);
-	}
+		&__premium {
 
-	.purchase--item--img {
-		top: 11%;
-		width: 80%;
-	}
+			.false-background--inner {
+				background: #fbfaf9;
+			}
 
-	.premium--img--wrapper {
-		top: 2%;
-	}
+			.premium--content--wrapper {
+				background: #fbfaf9;
+			}
 
-	.purchase--item--info {
-		top: 43%;
-	}
+			.premium--img--wrapper {
+				top: 1%;
 
-	.purchase--item--cancel {
-		font-size: pxToRem(14);
-		margin-top: pxToRem(14);
-		font-style: italic;
-		color: $font-color-light;
-	}
-
-	.purchase--item--pricing {
-		bottom: pxToRem(100);
-	}
-
-	.purchase--item--off {
-
-		font-weight: bold;
-		text-transform: uppercase;
-
-		span {
-			font-weight: normal;
-			text-decoration: line-through;
+				img {
+					width: 85%;
+				}
+			}
 		}
-	}
 
-	.purchase--item--price {
-		margin-top: pxToRem(15);
-		opacity: 0.9;
-		font-size: pxToRem(64);
-	}
+		&--title,
+		&--qty {
+			margin-top: pxToRem(20);
 
-	.purchase--item--price.premium-animate {
-		opacity: 1;
-		font-size: pxToRem(72);
-	}
+		}
 
-	.purchase--item .button--wrapper,
-	.purchase--item__premium .button--wrapper {
-		bottom: pxToRem(45);
+		&--img {
+			top: 12.5%;
+			width: 60%;
+		}
+
+		&--info {
+			top: 42%;
+
+			@media (max-width: 1300px) {
+				top: 38%;
+			}
+		}
+
+		&--cancel {
+			font-size: pxToRem(14);
+			margin-top: pxToRem(14);
+			font-style: italic;
+			color: $font-color-light;
+		}
+
+		&--pricing {
+			bottom: pxToRem(100);
+		}
+
+		&--off {
+
+			font-weight: bold;
+			text-transform: uppercase;
+
+			span {
+				font-weight: normal;
+				text-decoration: line-through;
+			}
+		}
+
+		&--price {
+			margin-top: pxToRem(15);
+			opacity: 0.9;
+			font-size: pxToRem(64);
+
+			&.premium-animate {
+				opacity: 1;
+				font-size: pxToRem(72);
+			}
+		}
+
+		.button--wrapper,
+		&__premium .button--wrapper {
+			bottom: pxToRem(40);
+		}
 	}
 }
