@@ -1,0 +1,135 @@
+@import 'gold/susan/gold_susan';
+
+.cro005-1 {
+
+	.purchase {
+
+		padding-top: 0;
+	}
+
+	.purchase--item {
+
+		height: 670px !important;
+		padding: 0 !important;
+
+		&__premium {
+
+			.false-background--inner {
+				background: #fbfaf9;
+			}
+
+			.premium--content--wrapper {
+				background: #fbfaf9;
+			}
+
+			.premium--img--wrapper {
+				height: 220px;
+				width: 100%;
+				top: 62px;
+				background-position: center center;
+				background-repeat: no-repeat;
+				margin-top: pxToRem(0);
+				background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-plan-gold.svg');
+				background-size: 320px;
+			}
+
+			.purchase--item--pricing {
+				@media #{$medium-small-custom} {
+					top: pxToRem(430);
+				}
+			}
+
+			.button--wrapper {
+				@media #{$medium-small-custom} {
+					top: pxToRem(590) !important;
+				}
+			}
+		}
+
+		&--title,
+		&--qty {
+			margin-top: pxToRem(20);
+
+		}
+
+		&--img {
+			height: 220px;
+			width: 100%;
+			top: 62px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			margin-top: pxToRem(0);
+
+			&.option-1 {
+				background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/starter-kit-Gold.svg')
+			}
+
+			&.option-3 {
+				background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/four-bottles.svg')
+			}
+		}
+
+		&--info {
+			top: 255px;
+		}
+
+		&--cancel {
+			font-size: pxToRem(14);
+			margin-top: pxToRem(14);
+			font-style: italic;
+			color: $font-color-light;
+		}
+
+		&--pricing {
+			top: pxToRem(410);
+
+			@media #{$medium} {
+				top: pxToRem(430);
+			}
+
+			@media #{$medium-small-custom} {
+				top: pxToRem(380);
+			}
+		}
+
+		&--off {
+
+			font-weight: bold;
+			text-transform: uppercase;
+
+			span {
+				font-weight: normal;
+				text-decoration: line-through;
+			}
+		}
+
+		&--price {
+			margin-top: pxToRem(15);
+			opacity: 0.9;
+			font-size: pxToRem(64);
+			line-height: pxToRem(72);
+
+			@media #{$medium} {
+				font-size: pxToRem(53);
+				line-height: pxToRem(60);
+			}
+
+			&.premium-animate {
+				opacity: 1;
+				font-size: pxToRem(72);
+
+				@media #{$medium} {
+					font-size: pxToRem(60);
+				}
+			}
+		}
+
+		.button--wrapper {
+			top: pxToRem(590);
+
+			@media #{$medium-small-custom} {
+				top: pxToRem(550);
+			}
+		}
+	}
+}
