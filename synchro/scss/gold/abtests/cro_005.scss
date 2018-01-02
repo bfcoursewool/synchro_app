@@ -2,13 +2,15 @@
 
 .cro005-1 {
 
+	.purchase {
+
+		padding-top: 0;
+	}
+
 	.purchase--item {
 
-		padding-bottom: 55% !important;
-
-		@media (max-width: 1300px) {
-			padding-bottom: 60% !important;
-		}
+		height: 670px !important;
+		padding: 0 !important;
 
 		&__premium {
 
@@ -21,10 +23,25 @@
 			}
 
 			.premium--img--wrapper {
-				top: 1%;
+				height: 220px;
+				width: 100%;
+				top: 62px;
+				background-position: center center;
+				background-repeat: no-repeat;
+				margin-top: pxToRem(0);
+				background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-plan-gold.svg');
+				background-size: 320px;
+			}
 
-				img {
-					width: 85%;
+			.purchase--item--pricing {
+				@media #{$medium-small-custom} {
+					top: pxToRem(430);
+				}
+			}
+
+			.button--wrapper {
+				@media #{$medium-small-custom} {
+					top: pxToRem(590) !important;
 				}
 			}
 		}
@@ -36,16 +53,24 @@
 		}
 
 		&--img {
-			top: 12.5%;
-			width: 60%;
+			height: 220px;
+			width: 100%;
+			top: 62px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			margin-top: pxToRem(0);
+
+			&.option-1 {
+				background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/starter-kit-Gold.svg')
+			}
+
+			&.option-3 {
+				background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/four-bottles.svg')
+			}
 		}
 
 		&--info {
-			top: 42%;
-
-			@media (max-width: 1300px) {
-				top: 38%;
-			}
+			top: 255px;
 		}
 
 		&--cancel {
@@ -56,7 +81,15 @@
 		}
 
 		&--pricing {
-			bottom: pxToRem(100);
+			top: pxToRem(410);
+
+			@media #{$medium} {
+				top: pxToRem(430);
+			}
+
+			@media #{$medium-small-custom} {
+				top: pxToRem(380);
+			}
 		}
 
 		&--off {
@@ -74,16 +107,29 @@
 			margin-top: pxToRem(15);
 			opacity: 0.9;
 			font-size: pxToRem(64);
+			line-height: pxToRem(72);
+
+			@media #{$medium} {
+				font-size: pxToRem(53);
+				line-height: pxToRem(60);
+			}
 
 			&.premium-animate {
 				opacity: 1;
 				font-size: pxToRem(72);
+
+				@media #{$medium} {
+					font-size: pxToRem(60);
+				}
 			}
 		}
 
-		.button--wrapper,
-		&__premium .button--wrapper {
-			bottom: pxToRem(40);
+		.button--wrapper {
+			top: pxToRem(590);
+
+			@media #{$medium-small-custom} {
+				top: pxToRem(550);
+			}
 		}
 	}
 }
