@@ -48,9 +48,9 @@ endpoint_info_dict = {
   },
   'gold': {
     'v0': {
-        'template': 'landing_pages/gold/susan/index.html',
-        'scripts': [synchro_es6],
-        'template_vars': {
+      'template': 'landing_pages/gold/susan/index.html',
+      'scripts': [synchro_es6],
+      'template_vars': {
          'is_variant': False,
          'stylesheet': 'gold/susan/gold_susan.css'
       }
@@ -65,9 +65,9 @@ endpoint_info_dict = {
       }
     },
     '1': {
-        'template': 'landing_pages/gold/susan/index.html',
-        'scripts': [synchro_es6],
-        'template_vars': {
+      'template': 'landing_pages/gold/susan/index.html',
+      'scripts': [synchro_es6],
+      'template_vars': {
          'is_variant': True,
          'stylesheet': 'gold/susan/gold_susan.css'
       }
@@ -92,7 +92,7 @@ endpoint_info_dict = {
     }
   },
   'cro002': {
-    'v1' : {
+    'v1': {
       'template': 'landing_pages/gold/abtests/cro_002/variant_1.html',
       'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
@@ -101,7 +101,7 @@ endpoint_info_dict = {
         'stylesheet': 'gold/abtests/cro_002.css'
       }
     },
-    'v2' : {
+    'v2': {
       'template': 'landing_pages/gold/abtests/cro_002/variant_2.html',
       'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
@@ -112,7 +112,7 @@ endpoint_info_dict = {
     }
   },
   'cro004': {
-    'v1' : {
+    'v1': {
       'template': 'landing_pages/gold/abtests/cro_004/variant_1.html',
       'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
@@ -120,7 +120,7 @@ endpoint_info_dict = {
         'stylesheet': 'gold/abtests/cro_004.css'
       }
     },
-    'v2' : {
+    'v2': {
       'template': 'landing_pages/gold/abtests/cro_004/variant_2.html',
       'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
@@ -129,7 +129,7 @@ endpoint_info_dict = {
         'stylesheet': 'gold/abtests/cro_004.css'
       }
     },
-    'v3' : {
+    'v3': {
       'template': 'landing_pages/gold/abtests/cro_004/variant_3.html',
       'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
@@ -140,7 +140,7 @@ endpoint_info_dict = {
     }
   },
   'cro005': {
-    'v1' : {
+    'v1': {
       'template': 'landing_pages/gold/abtests/cro_005/variant_1.html',
       'scripts': [synchro_es6, videojsie8, videojsga],
       'template_vars': {
