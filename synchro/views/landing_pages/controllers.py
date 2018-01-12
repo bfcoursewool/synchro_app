@@ -148,6 +148,16 @@ endpoint_info_dict = {
         'stylesheet': 'gold/abtests/cro_005.css'
       }
     }
+  },
+  'cro006': {
+    'v1': {
+      'template': 'landing_pages/gold/abtests/cro_006/variant_1.html',
+      'scripts': [synchro_es6, videojsie8, videojsga],
+      'template_vars': {
+        'is_variant': True,
+        'stylesheet': 'gold/abtests/cro_006.css'
+      }
+    }
   }
 }
 
