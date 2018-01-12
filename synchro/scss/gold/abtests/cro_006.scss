@@ -2,4 +2,96 @@
 
 .cro006-1 {
 
+	.purchase {
+
+		.purchase--item {
+			height: 620px;
+
+			@media #{$mobile} {
+				height: 600px;
+				border-bottom: 1px solid #e2e2e2;
+			}
+
+			&__premium {
+				height: 640px;
+
+				@media #{$mobile} {
+					height: 560px;
+					border-bottom: 0;
+					margin-top: 70px;
+				}
+
+				.discount {
+					border-radius: 0;
+					left: 50%;
+					width: pxToRem(110);
+					height: pxToRem(26);
+					font-size: pxToRem(12);
+					letter-spacing: 0.5px;
+					padding-top: pxToRem(7);
+				}
+
+				.discount:before, .discount:after {
+					content: "";
+					position: absolute;
+					top: 0;
+					border: 13px solid #FEBD39;
+					border-left-width: 8px;
+					border-right-width: 8px;
+					z-index: -1;
+				}
+
+				.discount:before {
+					left: -16px;
+					border-left-color: transparent;
+				}
+
+				.discount:after {
+					right: -16px;
+					border-right-color: transparent;
+				}
+
+				.premium--img--wrapper {
+					background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-four-bottles-highlighted.svg');
+					background-size: 280px;
+					
+					@media #{$medium} {
+						background-size: initial;
+					}
+				}
+
+				.button--wrapper {
+					@media #{$medium-small-custom} {
+						top: pxToRem(490) !important;
+					}
+				}
+			}
+
+			&--img {
+
+				&.option-1 {
+					background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-one-bottle.svg')
+				}
+
+				&.option-2 {
+					background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/starter-kit-Gold.svg')
+				}
+			}
+
+			&--pricing {
+
+				@media #{$mobile} {
+					top: pxToRem(370);
+				}
+			}
+
+			.button--wrapper {
+				top: pxToRem(560);
+
+				@media #{$mobile} {
+					top: pxToRem(490);
+				}
+			}
+		}
+	}
 }
