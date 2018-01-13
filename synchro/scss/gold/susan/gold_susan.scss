@@ -1293,18 +1293,18 @@ svg.external {
   .discount {
     opacity: 0;
     display: block;
-    width: pxToRem(65);
-    height: pxToRem(65);
-    border-radius: pxToRem(64);
+    width: pxToRem(110);
+    height: pxToRem(26);
     background-color: $cta-color;
     position: absolute;
     top: 0;
-    right: pxToRem(-65);
+    left: 50%;
     transform: translate(-50%, -50%) scale(1.2);
     color: white;
-    font-size: pxToRem(11);
+    font-size: pxToRem(12);
+    letter-spacing: 0.5px;
     text-transform: uppercase;
-    padding-top: pxToRem(19);
+    padding-top: pxToRem(7);
     z-index: $header-z-index - 10;
     transition: transform 0.7s ease-in-out,
     opacity 0.7s ease-in-out;
@@ -1313,6 +1313,26 @@ svg.external {
       transform: translate(-50%, -50%) scale(1);
       opacity: 1;
     }
+  }
+
+  .discount:before, .discount:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 13px solid #FEBD39;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    z-index: -1;
+  }
+
+  .discount:before {
+    left: -16px;
+    border-left-color: transparent;
+  }
+
+  .discount:after {
+    right: -16px;
+    border-right-color: transparent;
   }
 
   @-webkit-keyframes h-move {

@@ -21,36 +21,6 @@
 					margin-top: 70px;
 				}
 
-				.discount {
-					border-radius: 0;
-					left: 50%;
-					width: pxToRem(110);
-					height: pxToRem(26);
-					font-size: pxToRem(12);
-					letter-spacing: 0.5px;
-					padding-top: pxToRem(7);
-				}
-
-				.discount:before, .discount:after {
-					content: "";
-					position: absolute;
-					top: 0;
-					border: 13px solid #FEBD39;
-					border-left-width: 8px;
-					border-right-width: 8px;
-					z-index: -1;
-				}
-
-				.discount:before {
-					left: -16px;
-					border-left-color: transparent;
-				}
-
-				.discount:after {
-					right: -16px;
-					border-right-color: transparent;
-				}
-
 				.premium--img--wrapper {
 					background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-four-bottles-highlighted.svg');
 					background-size: 280px;
