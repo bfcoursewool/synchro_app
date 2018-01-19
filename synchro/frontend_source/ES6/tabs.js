@@ -27,18 +27,17 @@ const getTabData = element => ({
 });
 
 const hideTabs = tabId => {
-  $(`.tab-pane[data-tabs=${tabId}]`)
-  .finish()
-  .fadeOut(1000, () => $(this).removeClass('active'));
+  /* $(`.tab-pane[data-tabs=${tabId}]`).removeClass('active'); */
+
+  $(`.tab-box[data-tabs=${tabId}]`).removeClass('active');
 
   $(`.tab[data-tabs=${tabId}]`).removeClass('active');
 };
 
 const showTabs = (tabId, tabName) => {
-  $(`.tab-pane[data-tabs=${tabId}][id="${tabName}"]`)
-    .finish()
-    .delay(1000)
-    .fadeIn(1000, () => $(this).addClass('active'));
+  $(`.tab-pane[data-tabs=${tabId}][id="${tabName}"]`).addClass('active');
+
+  $(`.tab-box[data-tabs=${tabId}][id="${tabName}"]`).addClass('active');
 
   $(`.tab[data-tabs=${tabId}][id="${tabName}"]`).addClass('active');
 };
