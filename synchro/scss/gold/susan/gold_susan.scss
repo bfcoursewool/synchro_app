@@ -737,7 +737,7 @@ svg.external {
 
     margin: pxToRem(55) 0 0;
     border-radius: 12px;
-    box-shadow: inset 0px 0px 1px #e2e2e2;
+    box-shadow: inset 0px 0px 1px #bdbdbd;
 
     @media #{$mobile} {
       margin-bottom: pxToRem(55);
