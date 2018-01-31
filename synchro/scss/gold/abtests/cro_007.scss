@@ -2,4 +2,30 @@
 
 .cro007-1 {
 
+	&.benefits {
+
+		.extended-content {
+			margin-top: pxToRem(90);
+
+			@media #{$medium} {
+				margin-top: pxToRem(50);
+			}
+		}
+	}
+
+	&.intro {
+
+		@media #{$medium} {
+			margin-top: 0;
+		}
+	}
+
+	.ingredients--extended-content {
+		padding-bottom:pxToRem(90);
+		
+		@media #{$medium} {
+			margin-top: pxToRem(70);
+		}
+	}
+
 }

@@ -29,7 +29,6 @@
   </section>
 </div>
 
-
 <section class="benefits cro007-1">
   <div class="container-fluid">
     <div class="row">
@@ -57,15 +56,8 @@
     </div>
   </div>
 
-  <div class="content-toggle">
-    <button class="content-toggle--button" data-toggle-id="benefits">
-      <span class="content-toggle--text">Learn more about the benefits</span>
-      <i class="content-toggle--icon"></i>
-    </button>
-  </div>
-
   <!-- Extended Content -->
-  <div class="row extended-content" data-toggle-content="benefits">
+  <div class="row extended-content">
     <div class="extented-content--inner">
       <div class="extended-content--row">
         <div class="gold-benefits__item">
@@ -123,7 +115,29 @@
   </div>
 </section>
 
-{% include 'landing_pages/gold/susan/intro.html' %}
+<section class="intro cro007-1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="intro--copy col-md-5">
+        <h2 class="p--title intro-copy-animate">Synchro Gold</h2>
+        <h3 class="p--header__small intro-copy-animate">The world’s most potent turmeric supplement.</h3>
+        <p class="p--text intro-copy-animate">Three cutting-edge nutrient-delivery technologies work in synergy to produce Synchro Gold’s unparalleled effects.</p>
+        <a class="a--cta intro-copy-animate" role="button" href="#purchase">Get Gold</a>
+      </div>
+      <div class="col-md-7 intro-image-animate">
+        <div class="snap-to-ratio">
+          <div class="snap-to-ratio-img">
+            <img src="https://storage.googleapis.com/synchro-assets/gold/susan/gold-product.png"
+               srcset="https://storage.googleapis.com/synchro-assets/gold/susan/gold-product@2x.png 2x, 
+                       https://storage.googleapis.com/synchro-assets/gold/susan/gold-product@3x.png 3x" 
+               class="synchro_product_shot" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% include 'landing_pages/gold/susan/technology.html' %}
 {% include 'landing_pages/gold/susan/research.html' %}
 
@@ -158,16 +172,8 @@
     </div>
   </div>
 
-  <div class="content-toggle">
-    <div class="content-toggle-ui">
-      <button class="content-toggle--button" data-toggle-id="ingredients">
-        <span class="content-toggle--text">Learn more about the ingredients</span>
-        <i class="content-toggle--icon"></i>
-      </button>
-    </div>
-  </div>
   <!-- Extended Content -->
-  <div class="row extended-content ingredients--extended-content" data-toggle-content="ingredients">
+  <div class="row extended-content ingredients--extended-content">
     <div class="extented-content--inner">
       <div class="extended-content--row">
         <div class="gold-ingredients__item">
