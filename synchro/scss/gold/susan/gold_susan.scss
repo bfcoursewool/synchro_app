@@ -10,7 +10,7 @@ $font-color: #4e4e4e;
 $font-color-light: #999999;
 $font-color-icons: #6c6c6c;
 
-$border-color: #E1E1E1;
+$border-color: #e1e1e1;
 
 $extended-color: #ffffff;
 $extended-color-subtle: lightgray;
@@ -72,9 +72,7 @@ $header-z-index: 100;
 }
 
 .content-toggle {
-  padding-top: pxToRem(86);
-  margin-top: pxToRem(-24);
-  padding-bottom: pxToRem(22);
+  padding: pxToRem(30);
 
   @media #{$medium-small-custom} {
     display: none;
@@ -233,7 +231,7 @@ body {
 }
 
 %gradient {
-  background: linear-gradient(to right, $gradient-color-yellow 0%, $gradient-color-orange 100%);
+  background: linear-gradient(to bottom, $gradient-color-yellow 0%, $gradient-color-orange 100%);
 }
 
 // HEADER
@@ -675,16 +673,10 @@ svg.external {
   .technology {
     position: relative;
     text-align: center;
-    height: pxToRem(690);
-
-    @media (max-width: 870px) {
-      height: pxToRem(790);
-    }
 
     .row {
       padding: 0 5%;
     }
-
 
     .p--header__small {
       text-transform: uppercase;
@@ -696,7 +688,7 @@ svg.external {
       text-align: center;
       margin-top: pxToRem(30);
       margin-bottom: pxToRem(30);
-      width: 80%;
+      width: 90%;
       font-size: pxToRem(21);
       margin-right: auto;
       margin-left: auto;
@@ -713,54 +705,119 @@ svg.external {
     }
   }
 
+  .tab-content {
+    min-height: 300px;
+    padding: pxToRem(30) pxToRem(40);
+  }
+
+  .tab-pane {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+
+    &.active {
+      max-height: 500px;
+    }
+  }
+
   .tab-content--header {
     @extend .p--header__small;
     text-transform: none!important;
-    margin: pxToRem(19) 0 pxToRem(42);
+    margin: pxToRem(20);
     font-weight: 100;
+
+    @media #{$mobile} {
+      font-size: pxToRem(32);
+      margin: pxToRem(40) pxToRem(30);
+      line-height: 1.2;
+    }
   }
 
   .technology--tabs {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: pxToRem(107);
-    text-align: center;
-    overflow: auto;
 
-    @media #{$medium-small-custom} {
-      position: static;
-      margin-top: 14px;
-      margin-bottom: 14px;
+    margin: pxToRem(55) 0 0;
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 1px #bdbdbd;
+
+    @media #{$mobile} {
+      margin-bottom: pxToRem(55);
+      box-shadow: none;
     }
   }
 
   .tabs {
-    display: inline-block;
-    max-width: pxToRem(800);
+    max-width: pxToRem(1200);
   }
 
   .tabs-inner {
-    table-layout: fixed;
-    display: table-row;
+    display: inline-block;
+    font-size: 0;
+    height: pxToRem(115);
+    width: 100%;
+    border-radius: pxToRem(12) pxToRem(12) 0 0;
+    overflow: hidden;
+
+    @media #{$mobile} {
+      border-radius: 0;
+      height: initial;
+    }
+  }
+
+  .tab-box {
+    display: inline-block;
+    width: 25%;
+
+    @media #{$mobile} {
+      width: 100%;
+      box-shadow: inset 0px 0px 1px #e2e2e2;
+      border-radius: pxToRem(6);
+      margin: pxToRem(5) 0;
+      overflow: hidden;
+
+      &.active {
+        box-shadow: inset 0px 0px 1px #fdbd39;
+      }
+    }
   }
 
   .tab {
+    background: #F4F4F5;
     position: relative;
-    display: table-cell;
-    max-width: 210px;
-    min-width: pxToRem(176);
-    height: pxToRem(84);
-    padding: 0 pxToRem(14);
+    line-height: pxToRem(100);
     font-size: pxToRem(20);
-    text-align: left;
     cursor: pointer;
-    color: $tab-inactive-color;
-    transition: color ease-in-out 0.4s;
+    color: $font-color;
+    outline: 1px solid #ffffff;
+
+    @media #{$medium} {
+      font-size: initial;
+    }
+
+    @media #{$mobile} {
+      line-height: initial;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      border-width: 10px;
+      border-style: solid;
+      border-color: #f4f4f5 transparent transparent;
+      margin-left: -10px;
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+
+      @media #{$mobile} {
+        display: none;
+      }
+    }
 
     h6 {
-      padding: pxToRem(24) 0 pxToRem(34);
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+      padding: pxToRem(15);
     }
 
     &:hover {
@@ -768,11 +825,15 @@ svg.external {
     }
 
     &.active {
-      color: $font-color;
+      @extend %gradient;
+      color: #ffffff;
 
-      .tab-register {
-        @extend %gradient;
-        opacity: 1;   
+      &:after {
+        border-color: $gradient-color-orange transparent transparent;
+
+        @media #{$mobile} {
+          display: block;
+        }  
       }
     }
   }
@@ -983,6 +1044,10 @@ svg.external {
 
   // PURCHASE OPTIONS
 
+  .purchase {
+    padding-top: 0;
+  }
+
   @media #{$mobile} {
     .section--padding {
       padding-left: pxToRem(80);
@@ -1000,36 +1065,14 @@ svg.external {
 
   .purchase--item {
     position: relative;
-    padding: 0 0 60% 0!important;
-    height: 0;
+    padding: 0;
+    height: 650px;
     transition: transform 0.3s ease-in-out;
     text-align: center;
 
-    @media (max-width: 1100px) {
-      padding: 0 0 70% 0 !important;
-    }
-
-    @media (max-width: 880px) {
-      padding: 0 0 80% 0 !important;
-    }
-
-    @media (max-width: 880px) {
-      padding: 0 !important;
-      height: 700px !important;
-    }
-
     @media #{$mobile} {
-      padding: 0 !important;
-      height: 600px !important;
-      margin-bottom: pxToRem(20);
-
-      .purchase--item--img,
-      .premium--img--wrapper img {
-        width: pxToRem(298);
-        height: pxToRem(298);
-      }
+      margin-top: 30px;
     }
-
 
     &:hover {
       transform: scale(1.025);
@@ -1039,19 +1082,37 @@ svg.external {
   .purchase--item--img {
     position: absolute;
     left: 50%;
-    top:  9%;
+    top: 62px;
     transform: translateX(-50%);
-    margin-top: pxToRem(-27);
+    margin-top: pxToRem(0);
     transition: transform 0.3s ease-in-out;
+    height: 220px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &.option-1 {
+      background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/starter-kit-Gold.svg')
+    }
+
+    &.option-3 {
+      background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/four-bottles.svg')
+    }
   }
 
   .premium--img--wrapper {
     position: absolute;
-    top:  6%;
+    top:  62px;
     right: 0;
     left: 0;
-    height: 0;
     z-index: $header-z-index - 10;
+    height: 220px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: pxToRem(0);
+    background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-plan-gold.svg');
+    background-size: 320px;
   }
 
   .purchase--item--title {
@@ -1063,24 +1124,29 @@ svg.external {
     font-weight: 500;
     font-size: pxToRem(21);
     z-index: $header-z-index - 10;
+    margin-top: pxToRem(20);
   }
 
   .purchase--item--info {
     position: absolute;
     left: 10%;
-    top: 54%;
+    top: 255px;
     width: 80%;
     z-index: $header-z-index - 10;
+  }
 
-    @media (max-width: 1100px) {
-      top: 50%;
-    }
+  .purchase--item--cancel {
+    font-size: pxToRem(14);
+    margin-top: pxToRem(14);
+    font-style: italic;
+    color: $font-color-light;
   }
 
   .purchase--item--qty {
     @extend .purchase--item--title;
     position: static;
     margin: 0;
+    margin-top: pxToRem(20);
   }
 
   .purchase--item--servings {
@@ -1090,12 +1156,31 @@ svg.external {
     margin-top: pxToRem(16);
   }
 
+  .purchase--item--off {
+    font-weight: bold;
+    text-transform: uppercase;
+
+    span {
+      font-weight: normal;
+      text-decoration: line-through;
+    }
+  }
+
   .purchase--item--pricing {
     position: absolute;
     right: 0;
+    top: pxToRem(410);
     bottom: pxToRem(68);
     left: 0;
     z-index: $header-z-index - 10;
+
+    @media #{$medium} {
+      top: pxToRem(430);
+    }
+
+    @media #{$medium-small-custom} {
+      top: pxToRem(380);
+    }
   }
 
   .purchase--item--type {
@@ -1106,18 +1191,40 @@ svg.external {
   }
 
   .purchase--item--price {
-    color: $font-color-light;
-    font-size: pxToRem(72);
-    margin-top: pxToRem(47);
+    font-size: pxToRem(64);
+    margin-top: pxToRem(15);
     color: $font-color;
+    opacity: 0.9;
+    line-height: pxToRem(72);
+
+    @media #{$medium} {
+      font-size: pxToRem(53);
+      line-height: pxToRem(60);
+    }
+
+    &.premium-animate {
+      opacity: 1;
+      font-size: pxToRem(72);
+
+      @media #{$medium} {
+        font-size: pxToRem(60);
+      }
+    }
+
+
   }
 
   .purchase--item {
     .button--wrapper {
       position: absolute;
+      top: pxToRem(590);
       bottom: pxToRem(20);
       left: 0;
       right: 0;
+
+      @media #{$medium-small-custom} {
+        top: pxToRem(550);
+      }
     }
   }
 
@@ -1135,15 +1242,12 @@ svg.external {
 
   .purchase--item__premium {
     @extend .purchase--item;
-
-    @media (min-width: 881px) {
-      height: 0;
-      padding: 0 0 57% 0;
-    }
+    height: 670px;
 
     .premium--content--wrapper {
       position: relative;       
       z-index: $header-z-index - 1;
+      background: #fbfaf9;
     }
 
     .bar--wrapper {
@@ -1214,8 +1318,19 @@ svg.external {
       left: 1px;
       right: 1px;
       bottom: 1px; 
-      background-color: white;
       z-index: $header-z-index - 20;
+    }
+
+    .purchase--item--pricing {
+      @media #{$medium-small-custom} {
+        top: pxToRem(430);
+      }
+    }
+
+    .button--wrapper {
+      @media #{$medium-small-custom} {
+        top: pxToRem(590) !important;
+      }
     }
 
   }
@@ -1239,18 +1354,18 @@ svg.external {
   .discount {
     opacity: 0;
     display: block;
-    width: pxToRem(65);
-    height: pxToRem(65);
-    border-radius: pxToRem(64);
+    width: pxToRem(110);
+    height: pxToRem(26);
     background-color: $cta-color;
     position: absolute;
     top: 0;
-    right: pxToRem(-65);
+    left: 50%;
     transform: translate(-50%, -50%) scale(1.2);
     color: white;
-    font-size: pxToRem(11);
+    font-size: pxToRem(12);
+    letter-spacing: 0.5px;
     text-transform: uppercase;
-    padding-top: pxToRem(19);
+    padding-top: pxToRem(7);
     z-index: $header-z-index - 10;
     transition: transform 0.7s ease-in-out,
     opacity 0.7s ease-in-out;
@@ -1259,6 +1374,26 @@ svg.external {
       transform: translate(-50%, -50%) scale(1);
       opacity: 1;
     }
+  }
+
+  .discount:before, .discount:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 13px solid #FEBD39;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    z-index: -1;
+  }
+
+  .discount:before {
+    left: -16px;
+    border-left-color: transparent;
+  }
+
+  .discount:after {
+    right: -16px;
+    border-right-color: transparent;
   }
 
   @-webkit-keyframes h-move {

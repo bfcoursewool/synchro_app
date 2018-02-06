@@ -5622,17 +5622,17 @@
 	};
 	
 	var hideTabs = function hideTabs(tabId) {
-	  $('.tab-pane[data-tabs=' + tabId + ']').finish().fadeOut(1000, function () {
-	    return $(undefined).removeClass('active');
-	  });
+	  $('.tab-pane[data-tabs=' + tabId + ']').removeClass('active');
 	
+	  $('.tab-box[data-tabs=' + tabId + ']').removeClass('active');
+
 	  $('.tab[data-tabs=' + tabId + ']').removeClass('active');
 	};
 	
 	var showTabs = function showTabs(tabId, tabName) {
-	  $('.tab-pane[data-tabs=' + tabId + '][id="' + tabName + '"]').finish().delay(1000).fadeIn(1000, function () {
-	    return $(undefined).addClass('active');
-	  });
+	  $('.tab-pane[data-tabs=' + tabId + '][id="' + tabName + '"]').addClass('active');
+
+	  $('.tab-box[data-tabs=' + tabId + '][id="' + tabName + '"]').addClass('active');
 	
 	  $('.tab[data-tabs=' + tabId + '][id="' + tabName + '"]').addClass('active');
 	};
