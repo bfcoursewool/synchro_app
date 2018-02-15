@@ -1066,13 +1066,13 @@ svg.external {
   .purchase--item {
     position: relative;
     padding: 0;
-    height: 620px;
+    height: pxToRem(620);
     transition: transform 0.3s ease-in-out;
     text-align: center;
 
     @media #{$mobile} {
-      margin-top: 30px;
-      height: 600px;
+      margin-top: pxToRem(30);
+      height: pxToRem(600);
       border-bottom: 1px solid #e2e2e2;
     }
 
@@ -1337,12 +1337,6 @@ svg.external {
       right: 1px;
       bottom: 1px; 
       z-index: $header-z-index - 20;
-    }
-
-    .purchase--item--pricing {
-      @media #{$medium-small-custom} {
-        top: pxToRem(430);
-      }
     }
 
     .button--wrapper {
