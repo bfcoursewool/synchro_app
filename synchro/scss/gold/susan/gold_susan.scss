@@ -33,6 +33,10 @@ $fs-divisor: 16;
 
 $font-family: '"futura-pt", "Open Sans", sans-serif';
 
+// BREAKPOINTS
+
+$small-desktop: '(max-width: 1200px)';
+
 $medium: '(max-width: 854px)';
 
 $mobile: '(max-width: 767px)';
@@ -395,7 +399,7 @@ svg.external {
   @media #{$medium-small-custom} {
     padding-top: pxToRem(75);
     padding-bottom: pxToRem(75);
-    margin-top: pxToRem(50);
+    margin-top: pxToRem(30);
   }
 
   .p--title {
@@ -471,22 +475,19 @@ svg.external {
   @media #{$medium} {
     float: left;
     width: 50%;
-    min-height: pxToRem(160);
-    margin-bottom: pxToRem(24);
     &.last {
       width: 100%!important;
     }
-  }
-  @media #{$mobile} {
-    width: 100%;
   }
 }
 
 %icon-group--img {
   display: inline-block;
-  width: pxToRem(130);
-  height: pxToRem(130);
-  margin-bottom: pxToRem(15);
+  height: pxToRem(80);
+
+  @media #{$mobile} {
+    height: pxToRem(55);
+  }
 }
 
 
@@ -522,6 +523,27 @@ svg.external {
 
 .gold-benefits__img {
   @extend %icon-group--img;
+}
+
+.gold-benefits__point {
+  font-size: pxToRem(20) !important;
+  max-width: 80%;
+  margin: pxToRem(40) auto;
+
+  @media #{$medium} {
+    margin: pxToRem(30) auto pxToRem(60);
+  }
+
+  @media #{$mobile} {
+    font-size: pxToRem(16) !important;
+    margin: pxToRem(20) auto pxToRem(50);
+  }
+
+  span {
+    @media #{$mobile} {
+      display: none;
+    }
+  }
 }
 
 // EXTENDED CONTENT
@@ -631,11 +653,6 @@ svg.external {
     .p--title {
       text-align: left;
     }
-  }
-
-  .gold-benefits__img {
-    display: inline-block;
-    margin-bottom: pxToRem(15);
   }
 
   .extended-content--image {
@@ -1027,7 +1044,7 @@ svg.external {
     z-index: 3;
     line-height: 1.4;
 
-    @media (max-width: 680px) {
+    @media #{$medium-small-custom} {
       font-size: pxToRem(21) !important;
     }
   }
