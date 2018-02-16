@@ -892,14 +892,36 @@ svg.external {
 
   .gold-ingredients__icons {
     background: #F2F2F2;
+    font-size: 0;
+    text-align: center;
   }
 
   .gold-ingredients__icon {
+    display: inline-block;
     text-align: center;
+    width: 20%;
+    vertical-align: top;
+
     @media #{$medium} {
+      width: 33%;
+    }
+
+    @media #{$medium-small-custom} {
       width: 50%;
-      &.last {
-        width: 100%;
+    }
+
+    .ingredients__header {
+      font-size: pxToRem(20) !important;
+      max-width: 80%;
+      margin: pxToRem(20) auto pxToRem(40);
+
+      @media #{$medium} {
+        margin: pxToRem(30) auto pxToRem(60);
+      }
+
+      @media #{$mobile} {
+        font-size: pxToRem(16) !important;
+        margin: pxToRem(20) auto pxToRem(50);
       }
     }
   }
@@ -917,8 +939,13 @@ svg.external {
 
   .gold-ingredients__img {
     @extend %icon-group--img;
-    width: pxToRem(130);
-    height: pxToRem(130);
+    height: pxToRem(100);
+    -webkit-filter: drop-shadow(0 0 3px rgba(0,0,0,0.1)); 
+    filter: drop-shadow(0 0 3px rgba(0,0,0,0.1)); 
+
+    @media #{$mobile} {
+      height: pxToRem(70);
+    }
   }
 
   .ingredients {
