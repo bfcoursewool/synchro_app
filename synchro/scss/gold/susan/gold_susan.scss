@@ -392,6 +392,10 @@ svg.external {
   padding-top: pxToRem(158);
   padding-bottom: pxToRem(158);
 
+  @media #{$medium} {
+    margin-top: 0;
+  }
+
   @media #{$mobile} {
     text-align: center;
   }
@@ -548,6 +552,22 @@ svg.external {
 
 // EXTENDED CONTENT
 
+.benefits {
+
+  .extended-content {
+    margin-top: pxToRem(50);
+  }
+
+  .extended-content--copy {
+    padding: pxToRem(48) 12%;
+    
+    @media #{$mobile} {
+      padding: pxToRem(32);
+
+    }
+  }
+}
+
 .extended-content--header {
   @extend .extended-content--copy;
   font-size: pxToRem(23);
@@ -636,16 +656,6 @@ svg.external {
 
   }
 
-  .extended-content--copy {
-    padding: pxToRem(48) 12% pxToRem(70);
-    
-    @media #{$mobile} {
-      padding: pxToRem(32);
-
-    }
-
-  }
-
   .gold-benefits__item {
     @extend .extended-content--item;
     .p--text,
@@ -681,8 +691,23 @@ svg.external {
 
     .extended-content {
       text-align: center;
+      margin-top: pxToRem(50);
     }
 
+    .extended-content--header {
+      line-height: initial;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    .extended-content--copy {
+      padding: pxToRem(48) 12%;
+
+      @media #{$mobile} {
+        padding: pxToRem(32);
+
+      }
+    }
   }
 
   // TECHNOLOGY
@@ -733,7 +758,7 @@ svg.external {
     transition: max-height 0.5s ease-out;
 
     &.active {
-      max-height: 500px;
+      max-height: 650px;
     }
   }
 
@@ -970,7 +995,12 @@ svg.external {
 
   .ingredients--extended-content {
     background-color: $ingredients-extended-bg-color;
-    padding-bottom: pxToRem(124);
+    padding-bottom: pxToRem(70);
+    margin-top: pxToRem(20);
+    
+    @media #{$mobile} {
+      margin-top: pxToRem(0);
+    }
 
     .p--text {
       color: $font-color;
@@ -983,11 +1013,17 @@ svg.external {
     .gold-ingredients__header {
       font-size: pxToRem(31);
       color: $font-color;
+      margin-top: pxToRem(20);
     }
 
-    .gold-ingredients__item {
+    .gold-ingredients__item,
+    .gold-ingredients__item__single {
       vertical-align: top;
-      padding: pxToRem(95) pxToRem(93/2) 0 pxToRem(93/2);
+      padding: pxToRem(80) pxToRem(50) 0;
+
+      @media (max-width: 480px) {
+        padding: pxToRem(60) pxToRem(20) 0;
+      }
 
       .gold-ingredients__img {
         transform: scale(0.8);
