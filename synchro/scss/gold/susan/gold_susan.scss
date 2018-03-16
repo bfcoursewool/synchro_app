@@ -259,6 +259,7 @@ body {
 
   &.floated {
     background-color: white !important;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
     padding-top: 15px !important;
     padding-bottom: 15px !important;
     .main-header__logo .synchro-logo {
@@ -327,9 +328,17 @@ svg.external {
     width: 111px;
     height: 30.5px;
     fill: #fff;
+
+    @media #{$mobile} {
+      fill: #000000;
+    }
   }
   .main-header {
     background: none;
+
+    @media #{$mobile} {
+      background: rgba(255,255,255,0.9);
+    }
   }
 }
 
