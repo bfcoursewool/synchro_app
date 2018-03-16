@@ -516,6 +516,22 @@ svg.external {
   }
 
 }
+
+.benefits-cta {
+
+  display: none;
+
+  @media #{$medium} {
+    display: block;
+    text-align: center;
+  }
+
+  .a--cta {
+    max-width: 13.125rem;
+    width: 80%;
+  }
+}
+
 .gold-benefits__icon {
   @extend %icon-group--item;
 }
