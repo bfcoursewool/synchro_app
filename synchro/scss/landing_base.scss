@@ -514,6 +514,14 @@ GLOBAL SECTIONS
   padding: 70px 20px;
 }
 
+.promoted-products-box {
+
+  @media (max-width: $break-mobile) {
+    display: none !important;
+  }
+}
+
+
 /* product faq section */
 .faq {
   background: #F6F8FB;
