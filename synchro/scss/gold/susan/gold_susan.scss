@@ -1188,7 +1188,7 @@ svg.external {
   .purchase--item--img {
     position: absolute;
     left: 50%;
-    top: 62px;
+    top: 82px;
     transform: translateX(-50%);
     margin-top: pxToRem(0);
     transition: transform 0.3s ease-in-out;
@@ -1196,19 +1196,20 @@ svg.external {
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: contain;
 
     &.option-1 {
-      background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-one-bottle.svg')
+      background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-lg-1.png')
     }
 
     &.option-2 {
-      background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/starter-kit-Gold.svg')
+      background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-lg-2.png')
     }
   }
 
   .premium--img--wrapper {
     position: absolute;
-    top:  62px;
+    top:  82px;
     right: 0;
     left: 0;
     z-index: $header-z-index - 10;
@@ -1217,12 +1218,8 @@ svg.external {
     background-position: center center;
     background-repeat: no-repeat;
     margin-top: pxToRem(0);
-    background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-four-bottles-highlighted.svg');
-    background-size: 280px;
-
-    @media #{$medium} {
-      background-size: initial;
-    }
+    background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-lg-4.png');
+    background-size: contain;
   }
 
   .purchase--item--title {
@@ -1240,7 +1237,7 @@ svg.external {
   .purchase--item--info {
     position: absolute;
     left: 10%;
-    top: 255px;
+    top: 295px;
     width: 80%;
     z-index: $header-z-index - 10;
   }
@@ -1279,21 +1276,13 @@ svg.external {
   .purchase--item--pricing {
     position: absolute;
     right: 0;
-    top: pxToRem(410);
+    top: pxToRem(430);
     bottom: pxToRem(68);
     left: 0;
     z-index: $header-z-index - 10;
 
-    @media #{$medium} {
-      top: pxToRem(430);
-    }
-
-    @media #{$medium-small-custom} {
-      top: pxToRem(380);
-    }
-
     @media #{$mobile} {
-      top: pxToRem(370);
+      top: pxToRem(410);
     }
   }
 
@@ -1334,12 +1323,8 @@ svg.external {
       left: 0;
       right: 0;
 
-      @media #{$medium-small-custom} {
-        top: pxToRem(550);
-      }
-
       @media #{$mobile} {
-        top: pxToRem(490);
+        top: pxToRem(520);
       }
     }
   }
@@ -1361,7 +1346,7 @@ svg.external {
     height: 640px;
 
     @media #{$mobile} {
-      height: 560px;
+      height: 590px;
       border-bottom: 0;
       margin-top: 70px;
     }
@@ -1441,12 +1426,6 @@ svg.external {
       right: 1px;
       bottom: 1px; 
       z-index: $header-z-index - 20;
-    }
-
-    .button--wrapper {
-      @media #{$medium-small-custom} {
-        top: pxToRem(490) !important;
-      }
     }
 
   }
