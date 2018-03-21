@@ -396,22 +396,24 @@ svg.external {
 // INTRO
 
 .intro {
-  background: #f2efe7;
+  background: #f3f5f7;
   text-align: left;
-  padding-top: pxToRem(158);
-  padding-bottom: pxToRem(158);
+  padding-top: pxToRem(90);
+  padding-bottom: pxToRem(90);
+  background-image: url(https://storage.googleapis.com/synchro-assets/gold/susan/synchro-gold-effective-turmeric-supplement.jpg);
+  background-size: 1450px;
+  background-position: center center;
+  background-repeat: no-repeat;
 
   @media #{$medium} {
-    margin-top: 0;
+    background-size: cover;
   }
 
   @media #{$mobile} {
+    padding-top: 0;
+    padding-bottom: pxToRem(50);
     text-align: center;
-  }
-
-  @media #{$medium-small-custom} {
-    padding-top: pxToRem(75);
-    padding-bottom: pxToRem(75);
+    background-image: none;
   }
 
   .p--title {
@@ -433,6 +435,14 @@ svg.external {
   .p--header__small {
     margin: pxToRem(19) 0;
     line-height: 1.2;
+
+    @media #{$medium} {
+      font-size: pxToRem(42);
+    }
+
+    @media #{$mobile} {
+      font-size: pxToRem(32);
+    }
   }
 
   .a--cta {
@@ -441,6 +451,10 @@ svg.external {
     max-width: pxToRem(206);
     padding: pxToRem(19);
     text-align: center;
+  }
+
+  .intro-image {
+    width: 100%;
   }
 
   // Note: Not scoped to these blocks
@@ -462,14 +476,6 @@ svg.external {
     img {
       width: 100%;
       height: auto;
-    }
-  }
-}
-
-.intro--copy {
-  @media #{$medium} {
-    & {
-      margin-bottom: pxToRem(60);
     }
   }
 }
