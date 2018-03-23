@@ -259,6 +259,7 @@ body {
 
   &.floated {
     background-color: white !important;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
     padding-top: 15px !important;
     padding-bottom: 15px !important;
     .main-header__logo .synchro-logo {
@@ -327,9 +328,17 @@ svg.external {
     width: 111px;
     height: 30.5px;
     fill: #fff;
+
+    @media #{$mobile} {
+      fill: #000000;
+    }
   }
   .main-header {
     background: none;
+
+    @media #{$mobile} {
+      background: rgba(255,255,255,0.9);
+    }
   }
 }
 
@@ -387,22 +396,24 @@ svg.external {
 // INTRO
 
 .intro {
-  background: #f2efe7;
+  background: #f3f5f7;
   text-align: left;
-  padding-top: pxToRem(158);
-  padding-bottom: pxToRem(158);
+  padding-top: pxToRem(90);
+  padding-bottom: pxToRem(90);
+  background-image: url(https://storage.googleapis.com/synchro-assets/gold/susan/synchro-gold-effective-turmeric-supplement.jpg);
+  background-size: 1450px;
+  background-position: center center;
+  background-repeat: no-repeat;
 
   @media #{$medium} {
-    margin-top: 0;
+    background-size: cover;
   }
 
   @media #{$mobile} {
+    padding-top: 0;
+    padding-bottom: pxToRem(50);
     text-align: center;
-  }
-
-  @media #{$medium-small-custom} {
-    padding-top: pxToRem(75);
-    padding-bottom: pxToRem(75);
+    background-image: none;
   }
 
   .p--title {
@@ -424,6 +435,14 @@ svg.external {
   .p--header__small {
     margin: pxToRem(19) 0;
     line-height: 1.2;
+
+    @media #{$medium} {
+      font-size: pxToRem(42);
+    }
+
+    @media #{$mobile} {
+      font-size: pxToRem(32);
+    }
   }
 
   .a--cta {
@@ -432,6 +451,10 @@ svg.external {
     max-width: pxToRem(206);
     padding: pxToRem(19);
     text-align: center;
+  }
+
+  .intro-image {
+    width: 100%;
   }
 
   // Note: Not scoped to these blocks
@@ -453,14 +476,6 @@ svg.external {
     img {
       width: 100%;
       height: auto;
-    }
-  }
-}
-
-.intro--copy {
-  @media #{$medium} {
-    & {
-      margin-bottom: pxToRem(60);
     }
   }
 }
@@ -516,6 +531,22 @@ svg.external {
   }
 
 }
+
+.benefits-cta {
+
+  display: none;
+
+  @media #{$medium} {
+    display: block;
+    text-align: center;
+  }
+
+  .a--cta {
+    max-width: 13.125rem;
+    width: 80%;
+  }
+}
+
 .gold-benefits__icon {
   @extend %icon-group--item;
 }
@@ -1163,7 +1194,7 @@ svg.external {
   .purchase--item--img {
     position: absolute;
     left: 50%;
-    top: 62px;
+    top: 82px;
     transform: translateX(-50%);
     margin-top: pxToRem(0);
     transition: transform 0.3s ease-in-out;
@@ -1171,19 +1202,20 @@ svg.external {
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: contain;
 
     &.option-1 {
-      background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-one-bottle.svg')
+      background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-lg1.png')
     }
 
     &.option-2 {
-      background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/starter-kit-Gold.svg')
+      background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-lg2.png')
     }
   }
 
   .premium--img--wrapper {
     position: absolute;
-    top:  62px;
+    top:  82px;
     right: 0;
     left: 0;
     z-index: $header-z-index - 10;
@@ -1192,12 +1224,8 @@ svg.external {
     background-position: center center;
     background-repeat: no-repeat;
     margin-top: pxToRem(0);
-    background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-four-bottles-highlighted.svg');
-    background-size: 280px;
-
-    @media #{$medium} {
-      background-size: initial;
-    }
+    background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-lg4.png');
+    background-size: contain;
   }
 
   .purchase--item--title {
@@ -1215,7 +1243,7 @@ svg.external {
   .purchase--item--info {
     position: absolute;
     left: 10%;
-    top: 255px;
+    top: 295px;
     width: 80%;
     z-index: $header-z-index - 10;
   }
@@ -1254,21 +1282,13 @@ svg.external {
   .purchase--item--pricing {
     position: absolute;
     right: 0;
-    top: pxToRem(410);
+    top: pxToRem(430);
     bottom: pxToRem(68);
     left: 0;
     z-index: $header-z-index - 10;
 
-    @media #{$medium} {
-      top: pxToRem(430);
-    }
-
-    @media #{$medium-small-custom} {
-      top: pxToRem(380);
-    }
-
     @media #{$mobile} {
-      top: pxToRem(370);
+      top: pxToRem(410);
     }
   }
 
@@ -1309,12 +1329,8 @@ svg.external {
       left: 0;
       right: 0;
 
-      @media #{$medium-small-custom} {
-        top: pxToRem(550);
-      }
-
       @media #{$mobile} {
-        top: pxToRem(490);
+        top: pxToRem(520);
       }
     }
   }
@@ -1336,7 +1352,7 @@ svg.external {
     height: 640px;
 
     @media #{$mobile} {
-      height: 560px;
+      height: 590px;
       border-bottom: 0;
       margin-top: 70px;
     }
@@ -1416,12 +1432,6 @@ svg.external {
       right: 1px;
       bottom: 1px; 
       z-index: $header-z-index - 20;
-    }
-
-    .button--wrapper {
-      @media #{$medium-small-custom} {
-        top: pxToRem(490) !important;
-      }
     }
 
   }

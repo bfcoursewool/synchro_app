@@ -236,7 +236,8 @@ GLOBAL SECTIONS
     -o-transition: all 0.35s ease; /* Opera */
 
     @media (max-width: $break-mobile) {
-      padding: 10px 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
 
     &.floated {
@@ -513,6 +514,14 @@ GLOBAL SECTIONS
   text-align: center;
   padding: 70px 20px;
 }
+
+.promoted-products-box {
+
+  @media (max-width: $break-mobile) {
+    display: none !important;
+  }
+}
+
 
 /* product faq section */
 .faq {
