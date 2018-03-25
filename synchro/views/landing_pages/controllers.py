@@ -4,7 +4,8 @@ from flask import (
   render_template,
   make_response,
   abort,
-  request
+  request,
+  redirect
 )
 from synchro.third_party_resources import bootstrap, bootstrap_css
 from synchro.resources import synchro_es6
@@ -190,6 +191,11 @@ def landing_page(page, version):
     if page is not 'none':
       version = page
     page = subdomain
+
+  if page == "genesis" and 'https://' not in request.url:
+    full_url = request.url 
+    ssl_url = full_url.replace('http://', 'https://')
+    return redirect(ssl_url)
 
   # Page and version can also be passed in as GET vars, for URL-formatting reasons
   if 'p' in request.args:
