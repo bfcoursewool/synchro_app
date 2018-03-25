@@ -192,7 +192,7 @@ def landing_page(page, version):
       version = page
     page = subdomain
 
-  if page == "genesis" and 'https://' not in request.url:
+  if page == "genesis" and request.headers.get('X-Forwarded-Proto', '').lower() != "https":
     full_url = request.url 
     ssl_url = full_url.replace('http://', 'https://')
     return redirect(ssl_url)
