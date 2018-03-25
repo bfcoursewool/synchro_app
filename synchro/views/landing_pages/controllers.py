@@ -8,7 +8,7 @@ from flask import (
 )
 from synchro.third_party_resources import bootstrap, bootstrap_css
 from synchro.resources import synchro_es6
-from synchro.third_party_resources import videojsga, videojsie8, d3js, vivus
+from synchro.third_party_resources import videojsga, videojsie8
 from synchro import const
 
 landing_pages = Blueprint('landing_pages', __name__)

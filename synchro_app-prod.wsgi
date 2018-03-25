@@ -6,4 +6,9 @@ if not synchro_app in sys.path:
 
 os.environ['SYNCHRO_ENV'] = 'PRODUCTION'
 
+def application(environ, start_response):
+  os.environ['CACHE_VERSION'] = environ['CACHE_VERSION']
+  from synchro import fanstatic_app as _app
+  return _app(environ, start_response)
+
 from synchro import fanstatic_app as application
