@@ -1179,6 +1179,7 @@ svg.external {
     height: pxToRem(620);
     transition: transform 0.3s ease-in-out;
     text-align: center;
+    cursor: pointer;
 
     @media #{$mobile} {
       margin-top: pxToRem(30);
