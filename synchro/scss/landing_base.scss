@@ -1,42 +1,37 @@
 @import 'reset_default';
-
 /* responsive break points */
 $break-mobile: 767px;
 $break-tablet: 991px;
 $break-desktop: 1199px;
-
 /* global styles for synchro landing pages */
 .container-fluid {
   max-width: 1400px;
   padding-left: 5% !important;
   padding-right: 5% !important;
 }
-
 /* main h1 text */
 .p--header {
-  font-family: 'Open Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 38px;
   line-height: 1.4;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: 300;
   text-transform: capitalize;
   color: #353535;
   -webkit-font-smoothing: antialiased;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-
   @media (max-width: $break-mobile) {
     font-size: 28px;
   }
 }
-
 /* section title text */
 .p--title {
   display: block;
   font-family: 'Raleway', sans-serif;
   color: #4d515c;
   font-weight: bold;
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
   font-size: 18px;
   line-height: 1.4;
   text-transform: uppercase;
@@ -49,11 +44,10 @@ $break-desktop: 1199px;
     display: block;
     width: 40px;
     height: 2px;
-    background: #22bad8;
+    background: #5DA8A6;
     margin: 20px auto;
   }
 }
-
 /* paragraph text */
 .p--text {
   font-family: 'Open Sans', sans-serif;
@@ -65,7 +59,6 @@ $break-desktop: 1199px;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-
 /* text styles */
 .p--white {
   color: #fff;
@@ -86,12 +79,10 @@ $break-desktop: 1199px;
 .p--color {
   color: #7f4c9b;
 }
-
 /* layout styles */
 .section--padding {
   padding-top: 70px;
   padding-bottom: 70px;
-
   @media (max-width: $break-mobile) {
     padding-left: 10px;
     padding-right: 10px;
@@ -101,7 +92,6 @@ $break-desktop: 1199px;
 .section--padding-50 {
   padding-top: 50px;
   padding-bottom: 50px;
-
   @media (max-width: $break-mobile) {
     padding-left: 10px;
     padding-right: 10px;
@@ -124,19 +114,17 @@ a.anchor {
   position: relative;
   top: -55px;
 }
-
 /* primary call-to-action button */
 .a--cta,
 .shopify-buy__btn {
   display: inline-block;
   color: #fff;
-  background: #2f90d9;
+  background: #000;
   padding: 12px 18px;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: 11px;
-  letter-spacing: .08em;
-  border-radius: 5px;
+  letter-spacing: 0.08em;
   border: 0;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
@@ -148,11 +136,9 @@ a.anchor {
     text-decoration: none;
   }
 }
-
 /***************
 GENERAL SECTIONS
 ***************/
-
 /* top of page border */
 .fixed-top-border {
   position: fixed;
@@ -162,15 +148,13 @@ GENERAL SECTIONS
   background: linear-gradient(100deg, #015caf 10%, #751e85 90%);
   z-index: 10;
 }
-
 /* section with full-width bg image */
 .bg-full-width {
-  background-image: url('https://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg');
+  background-image: url("https://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 /* full width carousel with navigation */
 .carousel-with-nav {
   padding-top: 50px;
@@ -205,21 +189,15 @@ GENERAL SECTIONS
     max-height: 750px;
   }
 }
-
 /**************
 GLOBAL SECTIONS
 **************/
-
 .zfloat {
   position: relative;
   z-index: 100;
 }
-
 /* main navigation */
 .main-header-container {
-  height: 75px;
-
-
   .main-header {
     position: fixed;
     top: 0;
@@ -229,12 +207,13 @@ GLOBAL SECTIONS
     padding-bottom: 20px;
     font-size: 0;
     z-index: 100;
-    background: rgba(240,240,240,0.9);
     transition: all 0.35s ease;
-    -moz-transition: all 0.35s ease; /* FF 4 */
-    -webkit-transition: all 0.35s ease; /* Safari & Chrome */
-    -o-transition: all 0.35s ease; /* Opera */
-
+    -moz-transition: all 0.35s ease;
+    /* FF 4 */
+    -webkit-transition: all 0.35s ease;
+    /* Safari & Chrome */
+    -o-transition: all 0.35s ease;
+    /* Opera */
     @media (max-width: $break-mobile) {
       padding-top: 15px;
       padding-bottom: 15px;
@@ -243,6 +222,7 @@ GLOBAL SECTIONS
     &.floated {
       padding-top: 10px;
       padding-bottom: 10px;
+      background: rgba(255, 255, 255, 0.9);
     }
 
     &__logo {
@@ -251,7 +231,6 @@ GLOBAL SECTIONS
       .synchro-logo {
         fill: #231f20;
       }
-
       @media (max-width: $break-mobile) {
         position: fixed;
         left: 50%;
@@ -261,7 +240,6 @@ GLOBAL SECTIONS
 
       .synchro-logo {
         height: 35px;
-
         @media (max-width: $break-mobile) {
           height: 30px;
         }
@@ -272,7 +250,6 @@ GLOBAL SECTIONS
       display: inline-block;
       float: right;
       margin: 12px 0;
-
       @media (max-width: $break-tablet) {
         display: block;
         visibility: hidden;
@@ -286,14 +263,12 @@ GLOBAL SECTIONS
         -webkit-transition: all 0.35s ease;
         -o-transition: all 0.35s ease;
       }
-
       @media (max-width: $break-mobile) {
         left: 0;
         transform: translate(-100%);
       }
 
       &.expanded {
-
         @media (max-width: $break-tablet) {
           visibility: visible;
           opacity: 1;
@@ -318,15 +293,14 @@ GLOBAL SECTIONS
       }
 
       &__item {
-        font-size: 11px;
+        font-size: 12px;
         font-weight: bold;
         padding-right: 20px;
         text-transform: uppercase;
-        font-family: 'Raleway', sans-serif;
-        letter-spacing: .08em;
+        font-family: futura-pt, sans-serif;
+        letter-spacing: 0.08em;
         text-decoration: none;
         -webkit-font-smoothing: antialiased;
-
         @media (max-width: $break-tablet) {
           display: block;
           padding: 16px 20px;
@@ -334,17 +308,15 @@ GLOBAL SECTIONS
         }
 
         &:hover {
-          color: #22bad8;
+          color: #5DA8A6;
           transition: all 0.2s ease;
         }
       }
     }
   }
 }
-
 /* product claim icons */
 .claim-icons {
-  box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.05);
   padding: 30px 0;
   text-align: center;
 
@@ -357,7 +329,6 @@ GLOBAL SECTIONS
     width: 20%;
     margin: 30px 0;
     vertical-align: top;
-
     @media (max-width: $break-mobile) {
       width: 30%;
       vertical-align: top;
@@ -374,7 +345,6 @@ GLOBAL SECTIONS
     margin-bottom: 0;
   }
 }
-
 /* product info section */
 .product-info {
   background: #F6F8FB;
@@ -385,7 +355,6 @@ GLOBAL SECTIONS
     margin-bottom: 20px;
   }
 }
-
 /* product ingredients section */
 .ingredients {
   text-align: center;
@@ -415,18 +384,15 @@ GLOBAL SECTIONS
     margin-bottom: 30px;
   }
 }
-
 /* product purchase section */
 .purchase {
   text-align: center;
 
   &__item {
     margin: 30px 0 0;
-
     @media (max-width: $break-mobile) {
       width: 100%;
     }
-
   }
 
   .hidden-templates {
@@ -443,8 +409,8 @@ GLOBAL SECTIONS
     display: none;
   }
 
-  .shopify-buy__product__title,
-  .shopify-buy__product__price {
+  .shopify-buy__product__price,
+  .shopify-buy__product__title {
     font-family: 'Open Sans', sans-serif;
     color: #3f3f3f;
     font-size: 16px;
@@ -453,7 +419,7 @@ GLOBAL SECTIONS
     -webkit-font-smoothing: antialiased;
   }
 
-  .shopify-buy__product__price{
+  .shopify-buy__product__price {
     margin-bottom: 30px;
   }
 
@@ -479,21 +445,18 @@ GLOBAL SECTIONS
     margin: 30px;
   }
 }
-
 /* shipping info section */
 .guarantee {
   text-align: center;
 
   &__img {
     max-width: 100%;
-
     @media (max-width: $break-mobile) {
       max-width: 90%;
       margin: 0 auto 30px;
     }
   }
 }
-
 /* more products section */
 .synchro-products {
   padding: 70px 20px;
@@ -505,7 +468,6 @@ GLOBAL SECTIONS
     width: 100%;
   }
 }
-
 /* customer review section */
 .synchro-reviews {
   display: block;
@@ -516,13 +478,10 @@ GLOBAL SECTIONS
 }
 
 .promoted-products-box {
-
   @media (max-width: $break-mobile) {
     display: none !important;
   }
 }
-
-
 /* product faq section */
 .faq {
   background: #F6F8FB;
@@ -538,7 +497,6 @@ GLOBAL SECTIONS
     color: #7b858b;
   }
 }
-
 /* cta section */
 .cta-section {
   background-image: url("https://cdn.besynchro.com/gold/Gold-leaf-smaller.jpg");
@@ -565,7 +523,6 @@ GLOBAL SECTIONS
     font-weight: 300;
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
-
     @media (max-width: $break-mobile) {
       font-size: 40px;
     }
@@ -575,19 +532,17 @@ GLOBAL SECTIONS
     padding: 15px 30px;
   }
 }
-
 /* landing page footer */
 .footer {
   padding: 30px 0;
   font-family: 'Raleway', sans-serif;
   color: #fff;
   font-weight: bold;
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
   font-size: 10px;
   background: #191d20;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
-
   @media (max-width: $break-mobile) {
     padding: 20px 0;
     text-align: center;
@@ -595,7 +550,6 @@ GLOBAL SECTIONS
 
   &__left {
     display: inline-block;
-
     @media (max-width: $break-mobile) {
       display: block;
     }
@@ -604,7 +558,6 @@ GLOBAL SECTIONS
   &__right {
     display: inline-block;
     float: right;
-
     @media (max-width: $break-mobile) {
       display: block;
       float: none;
@@ -613,14 +566,13 @@ GLOBAL SECTIONS
 
   &__text {
     padding: 0 10px;
-
     @media (max-width: $break-mobile) {
       display: block;
       padding: 20px 10px;
     }
 
     &:hover {
-      color: #22bad8;
+      color: #5DA8A6;
       text-decoration: none;
     }
   }

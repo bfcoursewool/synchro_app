@@ -1,17 +1,26 @@
 @import 'landing_base';
 
 .genesis-atf {
-  text-align: center;
+  display: table;
+  background: url("https://storage.googleapis.com/synchro-assets/genesis/images/DSC03486(edited).jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 720px;
+  background-size: auto 800px;
 
-  &__image {
-    max-width: 90%;
-    width: 700px;
-    margin: 0 auto;
+  &__text {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .p--header {
+    font-size: 50px;
+    text-align: left;
   }
 }
 
 .genesis-benefits {
-
   text-align: center;
 
   &__item {
@@ -28,13 +37,13 @@
 }
 
 .genesis-ingredients {
-
   text-align: left;
 
   &__header {
-    background: url('https://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg') no-repeat center center;
+    background: url("https://cdn.besynchro.com/genesis/images/genesis-lp-pattern.jpg") center;
     background-size: cover;
     text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
   }
 
   &__keystone {
@@ -74,16 +83,17 @@
 }
 
 .genesis-facts {
-  box-shadow: 0px -4px 3px rgba(0,0,0,0.05);
   text-align: center;
+  background: url("https://cdn.besynchro.com/genesis/images/genesis-lp-pattern.jpg") center;
+  background-size: cover;
 
   img {
+    max-height: 685px;
     max-width: 90%;
   }
 }
 
 .genesis-use {
-
   .p--title {
     text-align: left;
 
@@ -95,43 +105,9 @@
   &__img {
     width: 100%;
     max-width: 600px;
-
     @media (max-width: $break-mobile) {
       margin-top: 50px;
     }
-  }
-}
-
-.ch-checkout-holder {
-  label {
-    display: none !important;
-  }
-}
-
-.ch-buy-link {
-  display: inline-block !important;
-  color: #fff;
-  background: #2f90d9;
-  padding: 12px 18px !important;
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: .08em;
-  border-radius: 5px !important;
-  border: 0;
-  font-weight: bold;
-  -webkit-font-smoothing: antialiased;
-
-  &:hover {
-    background: #4ca4e6;
-    color: #fff;
-    transition: all 0.2s ease;
-    text-decoration: none;
-  }
-
-  span {
-    line-height: inherit !important;
-    font-size: 11px !important;
   }
 }
 
@@ -140,15 +116,13 @@
     margin: 30px;
   }
 }
-
 /* landing_base overwrites */
-
 .faq {
   background-color: white;
 }
 
 .cta-section {
-  background-image: url("https://cdn.besynchro.com/genesis/images/chloroplasts-compressed.jpg");
+  background-image: url("https://cdn.besynchro.com/genesis/images/genesis-lp-pattern.jpg");
 
   &__cta {
     background: white;
