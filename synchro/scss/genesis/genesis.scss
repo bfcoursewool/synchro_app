@@ -7,16 +7,33 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 720px;
-  background-size: auto 800px;
+  background-size: auto 760px;
+  @media (max-width: $break-mobile) {
+    background-image: url("https://storage.googleapis.com/synchro-assets/genesis/images/genesis-lp-small.jpg");
+  }
 
   &__text {
     display: table-cell;
     vertical-align: middle;
+    @media (max-width: $break-mobile) {
+      display: initial;
+    }
   }
 
   .p--header {
     font-size: 50px;
     text-align: left;
+    max-width: 500px;
+    @media (max-width: $break-tablet) {
+      font-size: 38px;
+      max-width: 350px;
+    }
+    @media (max-width: $break-mobile) {
+      text-align: center;
+      padding-top: 100px;
+      margin: 0 auto;
+      max-width: none;
+    }
   }
 }
 
@@ -125,7 +142,12 @@
   background-image: url("https://cdn.besynchro.com/genesis/images/genesis-lp-pattern.jpg");
 
   &__cta {
-    background: white;
-    color: #2f90d9;
+    background: #fff;
+    color: #000;
+
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
   }
 }
