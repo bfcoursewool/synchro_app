@@ -356,7 +356,7 @@ svg.external {
       top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
-      font-size: #{70/16 * 1rem};
+      font-size: #{70/16} * 1rem;
       text-transform: lowercase;
       font-weight: 400;
       text-align: center;
@@ -369,7 +369,7 @@ svg.external {
 
       @media #{$mobile} {
         top: 45%;
-        font-size: #{50/16 * 1rem};
+        font-size: #{50/16} * 1rem;
       }
 
     }

@@ -18,27 +18,17 @@ endpoint_info_dict = {
   'genesis': {
     'v0': {
       'template': 'landing_pages/genesis/genesis.html',
-      'scripts': [synchro_es6],
-      'template_vars': {
-        'stylesheet': 'genesis/genesis.css'
-      }
     },
     '1': {
       'template': 'landing_pages/genesis/genesis.html',
-      'scripts': [synchro_es6],
       'template_vars': {
         'is_variant': True,
-        'stylesheet': 'genesis/genesis.css'
       }
     }
   },
   'cognos': {
     'v0': {
       'template': 'landing_pages/cognos/cognos.html',
-      'scripts': [synchro_es6],
-      'template_vars': {
-        'stylesheet': 'cognos/cognos.css'
-      }
     }
   },
   'salt': {
@@ -50,15 +40,13 @@ endpoint_info_dict = {
   'gold': {
     'v0': {
       'template': 'landing_pages/gold/susan/index.html',
-      'scripts': [synchro_es6],
       'template_vars': {
          'is_variant': False,
-         'stylesheet': 'gold/susan/gold_susan.css'
       }
     },
     'old-gold': {
       'template': 'landing_pages/gold/gold_organic.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
+      'scripts': [videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-lg-video-poster2.png',
@@ -67,106 +55,92 @@ endpoint_info_dict = {
     },
     '1': {
       'template': 'landing_pages/gold/susan/index.html',
-      'scripts': [synchro_es6],
       'template_vars': {
          'is_variant': True,
-         'stylesheet': 'gold/susan/gold_susan.css'
       }
     },
     '2': {
         'template': 'landing_pages/gold/susan/index.html',
-        'scripts': [synchro_es6],
         'template_vars': {
          'is_variant': True,
-         'stylesheet': 'gold/susan/gold_susan.css'
       },
     }
   },
   'digestcleanse': {
     'v0': {
       'template': 'landing_pages/digestcleanse/digestcleanse.html',
-      'scripts': []
     },
     'v1': {
       'template': 'landing_pages/digestcleanse/digestcleanse_v1.html',
-      'scripts': []
     }
   },
   'cro002': {
     'v1': {
       'template': 'landing_pages/gold/abtests/cro_002/variant_1.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
+      'scripts': [videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/abtests/cro_002.css'
       }
     },
     'v2': {
       'template': 'landing_pages/gold/abtests/cro_002/variant_2.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
+      'scripts': [videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/abtests/cro_002.css'
       }
     }
   },
   'cro004': {
     'v1': {
       'template': 'landing_pages/gold/abtests/cro_004/variant_1.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
+      'scripts': [videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
-        'stylesheet': 'gold/abtests/cro_004.css'
       }
     },
     'v2': {
       'template': 'landing_pages/gold/abtests/cro_004/variant_2.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
+      'scripts': [videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/abtests/cro_004.css'
       }
     },
     'v3': {
       'template': 'landing_pages/gold/abtests/cro_004/variant_3.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
+      'scripts': [videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
         'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/abtests/cro_004.css'
       }
     }
   },
   'cro005': {
     'v1': {
       'template': 'landing_pages/gold/abtests/cro_005/variant_1.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
+      'scripts': [videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
-        'stylesheet': 'gold/abtests/cro_005.css'
       }
     }
   },
   'cro006': {
     'v1': {
       'template': 'landing_pages/gold/abtests/cro_006/variant_1.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
+      'scripts': [videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
-        'stylesheet': 'gold/abtests/cro_006.css'
       }
     }
   },
   'cro007': {
     'v1': {
       'template': 'landing_pages/gold/abtests/cro_007/variant_1.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
+      'scripts': [videojsie8, videojsga],
       'template_vars': {
         'is_variant': True,
-        'stylesheet': 'gold/abtests/cro_007.css'
       }
     }
   }
@@ -218,10 +192,9 @@ def landing_page(page, version):
   # Assert that each version entry in the info_dict contains both a template to render and a list of scripts to include.
   # A failed assertion should happen only during development, so this helps ensure developer consistency.
   assert 'template' in endpoint_info_dict[page][version]
-  assert 'scripts' in endpoint_info_dict[page][version]
 
   # Include all the JS assets we need.
-  for script in endpoint_info_dict[page][version]['scripts']:
+  for script in endpoint_info_dict[page][version].get('scripts', []):
     script.need()
   bootstrap.need()
   bootstrap_css.need()
