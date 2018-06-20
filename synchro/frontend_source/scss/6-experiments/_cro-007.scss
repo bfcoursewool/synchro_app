@@ -1,4 +1,4 @@
-@import 'gold/susan/gold_susan';
+@import '../synchro';
 
 .cro007-1 {
 
@@ -22,7 +22,7 @@
 
 	.ingredients--extended-content {
 		padding-bottom:pxToRem(90);
-		
+
 		@media #{$medium} {
 			margin-top: pxToRem(70);
 		}

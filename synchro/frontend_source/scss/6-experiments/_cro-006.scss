@@ -1,4 +1,4 @@
-@import 'gold/susan/gold_susan';
+@import '../synchro';
 
 .cro006-1 {
 
@@ -24,7 +24,7 @@
 				.premium--img--wrapper {
 					background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-four-bottles-highlighted.svg');
 					background-size: 280px;
-					
+
 					@media #{$medium} {
 						background-size: initial;
 					}

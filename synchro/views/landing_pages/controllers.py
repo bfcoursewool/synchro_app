@@ -167,14 +167,14 @@ def landing_page(page, version):
 
     ## Redirect to https if this isn't a health-checker request
     if request.headers.get('X-Forwarded-Proto', '').lower() != "https":
-      full_url = request.url 
+      full_url = request.url
       ssl_url = full_url.replace('http://', 'https://')
       return redirect(ssl_url)
 
   # Page and version can also be passed in as GET vars, for URL-formatting reasons
   if 'p' in request.args:
     page = request.args['p']
-  # Use the query param to set the version iff there is not a URL route doing the same. 
+  # Use the query param to set the version iff there is not a URL route doing the same.
   # ie, we want the URL route to take precedent over the query param... this is to make VWO work better.
   if 'v' in request.args and version == 'v0':
     version = request.args['v']
@@ -208,4 +208,3 @@ def landing_page(page, version):
     kENV=const.kENVIRONMENT,
     **template_vars
   )
-
