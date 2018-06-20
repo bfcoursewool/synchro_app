@@ -29,29 +29,12 @@ $gradient-color-orange: #F1B143;
 
 $fs-divisor: 16;
 
-$font-family: '"futura-pt", "Open Sans", sans-serif';
 
 // BREAKPOINTS
 
-$small-desktop: '(max-width: 1200px)';
-
-$medium: '(max-width: 854px)';
-
-$mobile: '(max-width: 767px)';
-
-$medium-small-custom: '(max-width: 680px)';
-
 $header-z-index: 100;
 
-// FUNCTIONS
 
-@function pxToRem($size){
-  @return $size / $fs-divisor * 1rem
-}
-
-@function dimensionsToRatio($width, $height){
-  @return  $height / $width * 100%
-}
 
 
 // INTERACTIVE ELEMENTS

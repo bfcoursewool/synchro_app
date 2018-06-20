@@ -1,0 +1,23 @@
+// Fonts
+$font-family: '"futura-pt", "Open Sans", sans-serif';
+$light: 100;
+$normal: 400;
+$bold: 700; // Branding
+$color-primary: #000000; // $color-gold:;
+// $color-genesis:;
+// $color-ketomanna:;
+// $color-prebios:;
+// $color-microbios:;
+// $color-cognos:;
+$color-cta: #000000;
+
+
+// The styles below will be slowly phased out
+// Breakpoints (genesis)
+$break-mobile: 767px;
+$break-tablet: 991px;
+$break-desktop: 1199px; // Breakpoints (susan)
+$small-desktop: '(max-width: 1200px)';
+$medium: '(max-width: 854px)';
+$mobile: '(max-width: 767px)';
+$medium-small-custom: '(max-width: 680px)';

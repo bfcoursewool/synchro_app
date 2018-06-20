@@ -1,13 +1,10 @@
-.bg-full-width {
+/* .bg-full-width {
   background-image: url('https://cdn.besynchro.com/cognos/assets-hero-3.jpg');
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position-x: 0px;
   background-position-y: -200px;
   background-repeat: no-repeat;
   background-size: cover;
-
   transition: 0s linear;
   transition-property: background-position-y;
 }
@@ -238,15 +235,4 @@ svg.external {
     background: linear-gradient(100deg, #015caf 10%, #751e85 90%);
   }
 }
-
-/* landing_base overwrites */
-
-.p--title {
-  color: #7f4c9b;
-  font-size: 16px;
-  margin-bottom: 0;
-
-  &:after {
-    display: none;
-  }
-}
+*/

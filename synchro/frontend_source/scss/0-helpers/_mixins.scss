@@ -1,0 +1,66 @@
+// Layout
+@mixin container($padding-top-bottom: 80px) {
+  @include clearfix;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: $padding-top-bottom 5%;
+}
+// CTA
+@mixin cta($bg-color, $text-color) {
+  display: inline-block;
+  padding: 16px 25px;
+  background-color: $bg-color;
+  color: $text-color;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.87px;
+  line-height: 1.4;
+}
+// Elements
+@mixin sprite($position-x, $position-y, $width, $height) {
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  background-position-x: $position-x;
+  background-position-y: $position-y;
+  width: $width;
+  height: $height;
+}
+// Breakpoints
+@mixin retina {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
+  }
+}
+@mixin xs-screen {
+  @media (max-width: 680px) {
+    @content;
+  }
+}
+@mixin s-screen {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin sm-screen {
+  @media (max-width: 854px) {
+    @content;
+  }
+}
+@mixin m-screen {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin l-screen {
+  @media (max-width: 1599px) {
+    @content;
+  }
+}
+@mixin xl-screen {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}

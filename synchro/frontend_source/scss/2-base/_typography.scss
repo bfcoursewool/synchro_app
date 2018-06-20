@@ -1,0 +1,50 @@
+// H1
+.p--header {
+  font-family: futura-pt, sans-serif;
+  font-size: 38px;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #353535;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  @media (max-width: $break-mobile) {
+    font-size: 28px;
+  }
+}
+// Section Title
+.p--title {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  color: #4d515c;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 18px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  margin-bottom: 70px;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #5DA8A6;
+    margin: 20px auto;
+  }
+}
+// Paragraph text
+.p--text {
+  font-family: 'Open Sans', sans-serif;
+  color: #3f3f3f;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

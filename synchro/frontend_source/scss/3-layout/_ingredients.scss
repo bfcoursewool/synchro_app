@@ -1,0 +1,28 @@
+.ingredients {
+  text-align: center;
+  padding-bottom: 70px;
+
+  &__item {
+    padding: 70px 40px 0;
+  }
+
+  &__img-box {
+    height: 300px;
+  }
+
+  &__img-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  &__img {
+    max-width: 90%;
+    max-height: 90%;
+    vertical-align: middle;
+  }
+
+  .p--title {
+    margin-bottom: 30px;
+  }
+}
