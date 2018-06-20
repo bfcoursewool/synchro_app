@@ -1,5 +1,8 @@
 // Main Navigation
+
 .main-header-container {
+  text-align: center;
+
   .main-header {
     position: fixed;
     top: 0;
@@ -31,7 +34,8 @@
       display: inline-block;
 
       .synchro-logo {
-        fill: #231f20;
+        width: 110px;
+        fill: $color-logo-dark;
       }
       @media (max-width: $break-mobile) {
         position: fixed;

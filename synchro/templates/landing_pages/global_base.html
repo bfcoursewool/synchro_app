@@ -72,7 +72,7 @@
       _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
     </script>
 
-    <!--BEGIN: Bing Ads UET Javascript tag.-->
+    <!-- Bing Ads UET Javascript tag -->
     <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5858604"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5858604&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
 
 
@@ -163,7 +163,7 @@
 
     {% endblock %}
   </head>
-  <body>
+  <body id="gold-lp">
     <!-- Google Code for Remarketing Tag -->
     <!--
     Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
@@ -193,7 +193,6 @@
     </script>
 
     {% block content %}{% endblock %}
-    {% block footer %}{% endblock %}
 
     <!-- Mouseflow heatmapper -->
     <script type="text/javascript">

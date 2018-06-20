@@ -1,8 +1,10 @@
 // Fonts
-$font-family: '"futura-pt", "Open Sans", sans-serif';
+$font-primary: "futura-pt", "Open Sans", sans-serif;
 $light: 100;
 $normal: 400;
-$bold: 700; // Branding
+$bold: 700;
+
+// Branding
 $color-primary: #000000; // $color-gold:;
 // $color-genesis:;
 // $color-ketomanna:;
@@ -10,14 +12,48 @@ $color-primary: #000000; // $color-gold:;
 // $color-microbios:;
 // $color-cognos:;
 $color-cta: #000000;
+$color-logo-light: #ffffff;
+$color-logo-dark: #000000;
 
 
 // The styles below will be slowly phased out
 // Breakpoints (genesis)
 $break-mobile: 767px;
 $break-tablet: 991px;
-$break-desktop: 1199px; // Breakpoints (susan)
+$break-desktop: 1199px;
+// Breakpoints (susan)
 $small-desktop: '(max-width: 1200px)';
 $medium: '(max-width: 854px)';
 $mobile: '(max-width: 767px)';
 $medium-small-custom: '(max-width: 680px)';
+$header-z-index: 100;
+// COLORS
+$yellow: #fecf33;
+$cta-color: #fdbd39;
+$cta-color-dark: #ffd737;
+$cta-color-active: #ee6723;
+$image-backing: #333;
+$font-color: #4e4e4e;
+$font-color-light: #999999;
+$font-color-icons: #6c6c6c;
+
+$border-color: #e1e1e1;
+
+$extended-color: #ffffff;
+$extended-color-subtle: lightgray;
+$extended-bg-color: #404040;
+
+$ingredients-extended-bg-color: #ffffff;
+
+$tab-backrgound-color: #F2F2F2;
+$tab-inactive-color: #DFDFDF;
+
+$quotes-bg-color: #737373;
+$quote-color: #fafafa;
+$slider-button-bg: #A6A6A6;
+$slider-button-active-bg: $cta-color;
+
+$gradient-color-yellow: #FED649;
+$gradient-color-orange: #F1B143;
+
+$fs-divisor: 16;
