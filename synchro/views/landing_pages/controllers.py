@@ -38,7 +38,7 @@ endpoint_info_dict = {
   },
   'gold': {
     'v0': {
-      'template': 'landing_pages/gold/susan/index.html',
+      'template': 'landing_pages/gold/index.html',
       'template_vars': {
          'is_variant': False,
       }
@@ -53,13 +53,13 @@ endpoint_info_dict = {
       }
     },
     '1': {
-      'template': 'landing_pages/gold/susan/index.html',
+      'template': 'landing_pages/gold/index.html',
       'template_vars': {
          'is_variant': True,
       }
     },
     '2': {
-        'template': 'landing_pages/gold/susan/index.html',
+        'template': 'landing_pages/gold/index.html',
         'template_vars': {
          'is_variant': True,
       },
