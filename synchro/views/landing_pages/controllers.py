@@ -16,10 +16,10 @@ landing_pages = Blueprint('landing_pages', __name__)
 endpoint_info_dict = {
   'genesis': {
     'v0': {
-      'template': 'landing_pages/genesis/genesis.html',
+      'template': 'landing_pages/genesis/v1-0/0-index.html',
     },
     '1': {
-      'template': 'landing_pages/genesis/genesis.html',
+      'template': 'landing_pages/genesis/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
@@ -38,7 +38,7 @@ endpoint_info_dict = {
   },
   'gold': {
     'v0': {
-      'template': 'landing_pages/gold/index.html',
+      'template': 'landing_pages/gold/v2-0/0-index.html',
       'template_vars': {
          'is_variant': False,
       }
@@ -53,13 +53,13 @@ endpoint_info_dict = {
       }
     },
     '1': {
-      'template': 'landing_pages/gold/index.html',
+      'template': 'landing_pages/gold/v2-0/0-index.html',
       'template_vars': {
          'is_variant': True,
       }
     },
     '2': {
-        'template': 'landing_pages/gold/index.html',
+        'template': 'landing_pages/gold/v2-0/0-index.html',
         'template_vars': {
          'is_variant': True,
       },
