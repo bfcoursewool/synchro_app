@@ -135,11 +135,39 @@
 .faq {
   background-color: white;
 }
-
+// CTA Section
 .cta-section {
   background-image: url("https://cdn.besynchro.com/genesis/images/genesis-lp-pattern.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 120px 0;
+  text-align: center;
+
+  &__brandname {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 18px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  &__title {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 44px;
+    margin: 20px 60px 30px;
+    font-weight: 300;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    @media (max-width: $break-mobile) {
+      font-size: 40px;
+    }
+  }
 
   &__cta {
+    padding: 15px 30px;
     background: #fff;
     color: #000;
 

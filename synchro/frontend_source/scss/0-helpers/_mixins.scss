@@ -21,6 +21,14 @@
   width: $width;
   height: $height;
 }
+// Layout
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
 // Breakpoints
 @mixin retina {
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
