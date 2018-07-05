@@ -1,0 +1,74 @@
+// BENEFITS
+
+.benefits {
+  .extended-benefits {
+    display: table;
+
+    &__item {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+      @include s-screen {
+        width: 100%;
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__copy {
+      margin: 50px 60px;
+    }
+
+    &__header {
+      font-weight: $font-normal;
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.benefits-cta {
+  display: none;
+  @media #{$medium} {
+    display: block;
+    text-align: center;
+  }
+
+  .a--cta {
+    max-width: 13.125rem;
+    width: 80%;
+  }
+}
+
+.gold-benefits__icon {
+  @extend %icon-group--item;
+}
+
+.gold-ingredients__item {
+  vertical-align: top;
+}
+
+.gold-benefits__img {
+  @extend %icon-group--img;
+}
+
+.gold-benefits__point {
+  font-size: pxToRem(20) !important;
+  max-width: 80%;
+  margin: pxToRem(40) auto;
+  @media #{$medium} {
+    margin: pxToRem(30) auto pxToRem(60);
+  }
+  @media #{$mobile} {
+    font-size: pxToRem(16) !important;
+    margin: pxToRem(20) auto pxToRem(50);
+  }
+
+  span {
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+}

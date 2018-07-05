@@ -10,6 +10,177 @@
       }
     }
   }
+
+  .atf {
+
+    &.bg-full-width {
+      height: 738px;
+      max-height: 100vh;
+      background: url("https://storage.googleapis.com/synchro-assets/gold/susan/hero@2x.jpg");
+      background: -webkit-image-set(url('https://storage.googleapis.com/synchro-assets/gold/susan/hero.jpg') 1x, url('https://storage.googleapis.com/synchro-assets/gold/susan/hero@2x.jpg') 2x, url('https://storage.googleapis.com/synchro-assets/gold/susan/hero@3x.jpg') 3x);
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position-x: 50%;
+      background-position-y: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      // opacity: 0; // Fades in
+      transition: 0s linear;
+      transition-property: background-position-y;
+      position: relative;
+
+      .p--header {
+        opacity: 0;
+        margin: 0;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 60px;
+        text-transform: lowercase;
+        text-align: center;
+        font-weight: $font-normal;
+        text-shadow: 1.6px 1.9px 0 rgba(0, 0, 0, 0.1);
+        transition: opacity 0.75s ease-in-out;
+
+        &.animate-in {
+          opacity: 1;
+        }
+        @include s-screen {
+          top: 45%;
+          font-size: #{50/16} * 1rem;
+        }
+      }
+
+      .down-arrow {
+        opacity: 0;
+        width: 19px;
+        bottom: pxToRem(100);
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        transition: opacity 0.75s ease-in-out, bottom 0.75s ease-in-out;
+
+        &.animate-in {
+          bottom: pxToRem(70);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.extended-content--header {
+  @extend .extended-content--copy;
+  font-size: pxToRem(23);
+  padding-bottom: 0;
+  color: $extended-color;
+
+  .research & {
+    padding: 6.625rem 6% 2.5rem;
+  }
+}
+
+.extended-content {
+  overflow: hidden;
+  background-color: $extended-bg-color;
+  // position: relative;
+  // top: pxToRem(-42);
+  margin-right: 0;
+  margin-left: 0;
+
+  &.open {
+    overflow: visible;
+  }
+
+  .p--title {
+    @extend %p--title__large;
+    color: $extended-color;
+    text-align: center;
+  }
+
+  .p--text {
+    font-size: pxToRem(19) !important;
+    color: $extended-color;
+    color: $extended-color-subtle;
+    text-align: center;
+  }
+  // &:after {
+  //   content: "";
+  //   background-color: $extended-bg-color;
+  //   display: block;
+  //   bottom: pxToRem(-42);
+  //   height: pxToRem(42);
+  //   position: absolute;
+  //   width: 100%;
+  // }
+}
+
+.extended-content--inner {
+  display: table;
+  table-layout: fixed;
+  @media #{$medium-small-custom} {
+    display: block;
+  }
+}
+
+.extended-content--row {
+  display: table-row;
+  @media #{$medium-small-custom} {
+    display: block;
+  }
+}
+
+.extended-content--row__single {
+  @extend .extended-content--row;
+  display: block;
+}
+
+.extended-benefits--item {
+  display: table-cell;
+  width: 50%;
+  padding: 0;
+  text-align: center;
+
+  .p--title {
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  @media #{$medium-small-custom} {
+    display: block;
+    width: 100% !important;
+  }
+}
+
+.gold-benefits__item {
+
+  .p--header,
+  .p--text,
+  .p--title {
+    text-align: left;
+  }
+}
+
+.extended-content--image {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%; // guess
+  overflow: hidden;
+}
+
+.extended-content--image--wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 // The styles below will be slowly phased out
 
@@ -153,10 +324,7 @@ body {
 }
 
 .p--title {
-  font-size: pxToRem(16.5);
-  letter-spacing: pxToRem(1);
 
-  .gold-benefits > &,
   .gold-ingredients > &,
   .purchase-options > &,
   .technology & {
@@ -166,17 +334,6 @@ body {
   &:after {
     content: none;
   }
-}
-
-.p--text {
-  font-size: pxToRem(21) !important;
-  line-height: 1.38;
-}
-
-.p--header,
-.p--text,
-.p--title {
-  font-family: #{$font-primary};
 }
 
 .p--header__small {
@@ -197,86 +354,6 @@ body {
 
 %gradient {
   background: linear-gradient(to bottom, $gradient-color-yellow 0%, $gradient-color-orange 100%);
-}
-// HERO
-
-.hero {
-  background-color: $image-backing;
-}
-
-.bg-full-width {
-  max-height: 100vh;
-  background: url("https://storage.googleapis.com/synchro-assets/gold/susan/hero@2x.jpg");
-  background: -webkit-image-set(url('https://storage.googleapis.com/synchro-assets/gold/susan/hero.jpg') 1x, url('https://storage.googleapis.com/synchro-assets/gold/susan/hero@2x.jpg') 2x, url('https://storage.googleapis.com/synchro-assets/gold/susan/hero@3x.jpg') 3x);
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position-x: 50%;
-  background-position-y: 0;
-  background-repeat: no-repeat;
-  // opacity: 0; // Fades in
-  transition: 0s linear;
-  transition-property: background-position-y;
-  position: relative;
-  @media #{$mobile} {
-    max-height: 85vh;
-  }
-  @media only screen and (min-width : 480px) {
-    background-size: cover;
-  }
-}
-
-svg.external {
-  height: 100%;
-  width: 100%;
-  display: inline-block;
-  margin: auto;
-}
-
-.atf {
-  &.bg-full-width {
-    position: relative;
-    height: 738px;
-    background-color: $image-backing;
-
-    .p--header {
-      opacity: 0;
-      margin: 0;
-      color: #fff;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      font-size: #{70/16} * 1rem;
-      text-transform: lowercase;
-      font-weight: 400;
-      text-align: center;
-      text-shadow: 1.6px 1.9px 0 rgba(0, 0, 0, 0.1);
-      transition: opacity 0.75s ease-in-out;
-
-      &.animate-in {
-        opacity: 1;
-      }
-      @media #{$mobile} {
-        top: 45%;
-        font-size: #{50/16} * 1rem;
-      }
-    }
-
-    .down-arrow {
-      opacity: 0;
-      width: 19px;
-      bottom: pxToRem(100);
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%);
-      transition: opacity 0.75s ease-in-out, bottom 0.75s ease-in-out;
-
-      &.animate-in {
-        bottom: pxToRem(70);
-        opacity: 1;
-      }
-    }
-  }
 }
 // INTRO
 
@@ -385,198 +462,10 @@ svg.external {
     height: pxToRem(55);
   }
 }
-// BENEFITS
 
-.benefits {
-  position: relative;
 
-  &:before {
-    content: "";
-    background-image: url("https://storage.googleapis.com/synchro-assets/gold/susan/bottom-wave-copy%402x.png");
-    background-color: transparent;
-    height: 2.8125rem;
-    display: block;
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    top: -2.8125rem;
-    background-repeat: repeat-x;
-    background-size: cover;
-    background-position-x: 50%;
-    z-index: $header-z-index - 10;
-  }
-}
 
-.benefits-cta {
-  display: none;
-  @media #{$medium} {
-    display: block;
-    text-align: center;
-  }
 
-  .a--cta {
-    max-width: 13.125rem;
-    width: 80%;
-  }
-}
-
-.gold-benefits__icon {
-  @extend %icon-group--item;
-}
-
-.gold-ingredients__item {
-  vertical-align: top;
-}
-
-.gold-benefits__img {
-  @extend %icon-group--img;
-}
-
-.gold-benefits__point {
-  font-size: pxToRem(20) !important;
-  max-width: 80%;
-  margin: pxToRem(40) auto;
-  @media #{$medium} {
-    margin: pxToRem(30) auto pxToRem(60);
-  }
-  @media #{$mobile} {
-    font-size: pxToRem(16) !important;
-    margin: pxToRem(20) auto pxToRem(50);
-  }
-
-  span {
-    @media #{$mobile} {
-      display: none;
-    }
-  }
-}
-// EXTENDED CONTENT
-
-.benefits {
-  .extended-content {
-    margin-top: pxToRem(50);
-  }
-
-  .extended-content--copy {
-    padding: pxToRem(48) 12%;
-    @media #{$mobile} {
-      padding: pxToRem(32);
-    }
-  }
-}
-
-.extended-content--header {
-  @extend .extended-content--copy;
-  font-size: pxToRem(23);
-  padding-bottom: 0;
-  color: $extended-color;
-
-  .research & {
-    padding: 6.625rem 6% 2.5rem;
-  }
-}
-
-.extended-content {
-  overflow: hidden;
-  background-color: $extended-bg-color;
-  // position: relative;
-  // top: pxToRem(-42);
-  margin-right: 0;
-  margin-left: 0;
-
-  &.open {
-    overflow: visible;
-  }
-
-  .p--title {
-    @extend %p--title__large;
-    color: $extended-color;
-    text-align: center;
-  }
-
-  .p--text {
-    font-size: pxToRem(19) !important;
-    color: $extended-color;
-    color: $extended-color-subtle;
-    text-align: center;
-  }
-  // &:after {
-  //   content: "";
-  //   background-color: $extended-bg-color;
-  //   display: block;
-  //   bottom: pxToRem(-42);
-  //   height: pxToRem(42);
-  //   position: absolute;
-  //   width: 100%;
-  // }
-}
-
-.extended-content--inner {
-  display: table;
-  table-layout: fixed;
-  @media #{$medium-small-custom} {
-    display: block;
-  }
-}
-
-.extended-content--row {
-  display: table-row;
-  @media #{$medium-small-custom} {
-    display: block;
-  }
-}
-
-.extended-content--row__single {
-  @extend .extended-content--row;
-  display: block;
-}
-
-.extended-content--item {
-  display: table-cell;
-  width: 50%;
-  padding: 0;
-  text-align: center;
-
-  .p--title {
-    font-weight: 500;
-    margin-bottom: 0;
-  }
-  @media #{$medium-small-custom} {
-    display: block;
-    width: 100% !important;
-  }
-}
-
-.gold-benefits__item {
-  @extend .extended-content--item;
-
-  .p--header,
-  .p--text,
-  .p--title {
-    text-align: left;
-  }
-}
-
-.extended-content--image {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 60%; // guess
-  overflow: hidden;
-}
-
-.extended-content--image--wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
 // RESEARCH
 
 .research {
@@ -822,11 +711,9 @@ svg.external {
 }
 
 .gold-ingredients__item {
-  @extend .extended-content--item;
 }
 
 .gold-ingredients__item__single {
-  @extend .extended-content--item;
   display: block;
   margin-left: auto;
   margin-right: auto;

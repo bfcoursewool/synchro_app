@@ -1,0 +1,15 @@
+.atf {
+  &:after {
+    content: "";
+    background-image: url("https://cdn.besynchro.com/gold/atf-bottom-wave@2x.png");
+    background-color: transparent;
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-repeat: repeat-x;
+    background-size: auto 45px;
+    background-position-x: center;
+    z-index: $header-z-index - 10;
+  }
+}
