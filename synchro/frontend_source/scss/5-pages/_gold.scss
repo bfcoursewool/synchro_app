@@ -70,6 +70,7 @@
     }
   }
 }
+// The styles below will be slowly phased out
 
 .extended-content--header {
   @extend .extended-content--copy;
@@ -182,7 +183,6 @@
     height: auto;
   }
 }
-// The styles below will be slowly phased out
 
 .content-toggle {
   padding: pxToRem(30);

@@ -14,6 +14,12 @@
 
   &__copy {
     text-align: center;
+
+    .p--header {
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .a--cta {
