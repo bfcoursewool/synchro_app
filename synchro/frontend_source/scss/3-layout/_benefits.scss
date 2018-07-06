@@ -1,6 +1,15 @@
 // BENEFITS
 
 .benefits {
+  .benefits-cta {
+    display: none;
+    @include sm-screen {
+      display: block;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  }
+
   .extended-benefits {
     display: table;
 
@@ -23,22 +32,10 @@
 
     &__header {
       font-weight: $font-normal;
+      color: $color-primary;
       font-size: 30px;
       margin-bottom: 40px;
     }
-  }
-}
-
-.benefits-cta {
-  display: none;
-  @media #{$medium} {
-    display: block;
-    text-align: center;
-  }
-
-  .a--cta {
-    max-width: 13.125rem;
-    width: 80%;
   }
 }
 

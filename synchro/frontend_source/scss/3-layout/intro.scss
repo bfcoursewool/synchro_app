@@ -1,0 +1,22 @@
+.intro {
+  background: #f3f5f7;
+  background-image: url("https://cdn.besynchro.com/gold/v2-0/synchro-gold-effective-turmeric-supplement.jpg");
+  background-size: 1400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @include s-screen {
+    background-image: none;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__copy {
+    text-align: center;
+  }
+
+  .a--cta {
+    margin: 30px auto 60px;
+  }
+}

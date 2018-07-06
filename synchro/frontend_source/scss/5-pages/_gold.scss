@@ -16,8 +16,8 @@
     &.bg-full-width {
       height: 738px;
       max-height: 100vh;
-      background: url("https://storage.googleapis.com/synchro-assets/gold/susan/hero@2x.jpg");
-      background: -webkit-image-set(url('https://storage.googleapis.com/synchro-assets/gold/susan/hero.jpg') 1x, url('https://storage.googleapis.com/synchro-assets/gold/susan/hero@2x.jpg') 2x, url('https://storage.googleapis.com/synchro-assets/gold/susan/hero@3x.jpg') 3x);
+      background: url("https://cdn.besynchro.com/gold/v2-0/gold-atf@2x.jpg");
+      background: -webkit-image-set(url('https://cdn.besynchro.com/gold/v2-0/gold-atf.jpg') 1x, url('https://cdn.besynchro.com/gold/v2-0/gold-atf@2x.jpg') 2x, url('https://cdn.besynchro.com/gold/v2-0/gold-atf@3x.jpg') 3x);
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
       background-position-x: 50%;
@@ -355,85 +355,7 @@ body {
 %gradient {
   background: linear-gradient(to bottom, $gradient-color-yellow 0%, $gradient-color-orange 100%);
 }
-// INTRO
 
-.intro {
-  background: #f3f5f7;
-  text-align: left;
-  padding-top: pxToRem(90);
-  padding-bottom: pxToRem(90);
-  background-image: url("https://storage.googleapis.com/synchro-assets/gold/susan/synchro-gold-effective-turmeric-supplement.jpg?v=1");
-  background-size: 1450px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  @media #{$medium} {
-    background-size: cover;
-  }
-  @media #{$mobile} {
-    padding-top: 0;
-    padding-bottom: pxToRem(50);
-    text-align: center;
-    background-image: none;
-  }
-
-  .p--title {
-    margin-bottom: 0;
-    font-size: pxToRem(19);
-    text-align: left;
-    font-weight: 500;
-    @media #{$mobile} {
-      text-align: center;
-    }
-
-    &:after {
-      content: none;
-    }
-  }
-
-  .p--header__small {
-    margin: pxToRem(19) 0;
-    line-height: 1.2;
-    @media #{$medium} {
-      font-size: pxToRem(42);
-    }
-    @media #{$mobile} {
-      font-size: pxToRem(32);
-    }
-  }
-
-  .a--cta {
-    width: 60%;
-    max-width: pxToRem(206);
-    padding: pxToRem(19);
-    text-align: center;
-  }
-
-  .intro-image {
-    width: 100%;
-  }
-  // Note: Not scoped to these blocks
-  $intro-image-width: 696px;
-  $intro-image-height: 386px;
-
-  .snap-to-ratio {
-    height: 0;
-    position: relative;
-    padding-bottom: dimensionsToRatio($intro-image-width, $intro-image-height);
-  }
-
-  .snap-to-ratio-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-}
 // ICON GROUP
 
 %icon-group--item {

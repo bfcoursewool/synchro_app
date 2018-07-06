@@ -1,43 +1,38 @@
-// H1
-
-.p--header {
+.p--header,
+.p--text,
+.p--title {
   font-family: $font-primary;
-  font-size: 38px;
-  line-height: 1.4;
-  letter-spacing: 0.5px;
-  font-weight: 300;
-  text-transform: capitalize;
   color: $color-primary;
   -webkit-font-smoothing: antialiased;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+}
+// Header
+
+.p--header {
+  line-height: 1.2;
+  font-weight: $font-normal;
+  font-size: 38px;
   @media (max-width: $break-mobile) {
     font-size: 28px;
   }
+}
+// Paragraph text
+
+.p--text {
+  font-weight: $font-normal;
+  line-height: 1.5;
+  font-size: 21px;
+  margin: 1em auto;
 }
 // Section Title
 
 .p--title {
   display: block;
-  font-family: $font-primary;
-  color: $color-primary;
   letter-spacing: 2px;
   font-size: 16px;
   text-transform: uppercase;
-  -webkit-font-smoothing: antialiased;
   text-align: center;
-  margin: 60px auto;
+  margin: 60px auto 40px;
   padding: 5px 20px;
   width: fit-content;
   border: 2px solid $color-primary;
-}
-// Paragraph text
-
-.p--text {
-  font-family: $font-primary;
-  color: $color-primary;
-  font-weight: $font-normal;
-  font-size: 21px;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
 }
