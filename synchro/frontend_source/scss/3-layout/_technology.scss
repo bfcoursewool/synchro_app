@@ -1,16 +1,11 @@
 // TECHNOLOGY
 
 .technology {
-  position: relative;
   text-align: center;
 
-  .row {
-    padding: 0 5%;
-  }
-
-  .p--header__small {
+  .p--header {
     text-transform: uppercase;
-    margin-bottom: pxToRem(18);
+    letter-spacing: 1px;
   }
 
   p {
@@ -26,10 +21,6 @@
       width: 90%;
       font-size: pxToRem(18);
     }
-  }
-
-  .p--title {
-    margin-bottom: pxToRem(55);
   }
 }
 
@@ -70,10 +61,6 @@
   }
 }
 
-.tabs {
-  max-width: pxToRem(1200);
-}
-
 .tabs-inner {
   display: inline-block;
   font-size: 0;
@@ -81,6 +68,8 @@
   width: 100%;
   border-radius: pxToRem(12) pxToRem(12) 0 0;
   overflow: hidden;
+  padding: 0;
+  margin: 0;
   @media #{$mobile} {
     border-radius: 0;
     height: initial;

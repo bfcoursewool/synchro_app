@@ -206,6 +206,8 @@
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+  -webkit-appearance: none;
+  border: none;
 
   &:focus {
     outline: none;
@@ -220,6 +222,7 @@
 
 .content-toggle--icon {
   position: relative;
+  background-color: #fdbd39;
   display: inline-block;
   width: 39 / 16 * 1rem;
   height: 39 / 16 * 1rem;
@@ -326,8 +329,7 @@ body {
 .p--title {
 
   .gold-ingredients > &,
-  .purchase-options > &,
-  .technology & {
+  .purchase-options > & {
     padding-top: pxToRem(46);
   }
 
