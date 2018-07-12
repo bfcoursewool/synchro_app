@@ -2,45 +2,22 @@
 
 .footer {
   padding: 30px 0;
-  font-family: 'Raleway', sans-serif;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 0.08em;
-  font-size: 10px;
-  background: #191d20;
-  text-transform: uppercase;
-  -webkit-font-smoothing: antialiased;
-  @media (max-width: $break-mobile) {
-    padding: 20px 0;
-    text-align: center;
+  text-align: center;
+  background: $color-primary;
+  @include s-screen {
+    margin-bottom: 80px;
   }
 
-  &__left {
-    display: inline-block;
-    @media (max-width: $break-mobile) {
-      display: block;
-    }
+  .synchro-logo {
+    display: block;
+    margin: 0 auto 5px;
+    width: 90px;
+    fill: #fff;
   }
 
-  &__right {
-    display: inline-block;
-    float: right;
-    @media (max-width: $break-mobile) {
-      display: block;
-      float: none;
-    }
-  }
-
-  &__text {
-    padding: 0 10px;
-    @media (max-width: $break-mobile) {
-      display: block;
-      padding: 20px 10px;
-    }
-
-    &:hover {
-      color: #5DA8A6;
-      text-decoration: none;
-    }
+  .p--text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: $font-bold;
   }
 }
