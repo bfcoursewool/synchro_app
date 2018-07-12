@@ -1,7 +1,7 @@
 // QUOTES
 
 .slider {
-  background-color: $color-primary;
+  background-color: #272727;
   color: #fff;
   text-align: center;
   background-image: url("https://storage.googleapis.com/synchro-assets/gold/susan/quote.svg");
@@ -9,6 +9,9 @@
   background-position: 9% 18%;
   background-size: 120px;
   padding: 60px;
+  @include m-screen {
+    background-image: none;
+  }
   @include s-screen {
     padding: $padding-mobile;
   }

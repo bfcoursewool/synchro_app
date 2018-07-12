@@ -1,12 +1,36 @@
 // BENEFITS
 
 .benefits {
-  .benefits-cta {
-    display: none;
-    @include sm-screen {
-      display: block;
-      margin-bottom: 50px;
-      text-align: center;
+  &__icons {
+    padding-bottom: $padding-desktop;
+    @include s-screen {
+      padding-bottom: $padding-mobile;
+    }
+  }
+
+  &__icon {
+    text-align: center;
+  }
+
+  &__img {
+    height: pxToRem(80);
+    @media #{$mobile} {
+      height: pxToRem(55);
+    }
+  }
+
+  &__point {
+    font-size: 20px;
+    max-width: 80%;
+    margin: 30px auto 0;
+    @include s-screen {
+      margin-bottom: 40px;
+    }
+
+    span {
+      @include m-screen {
+        display: none;
+      }
     }
   }
 
@@ -27,7 +51,13 @@
     }
 
     &__copy {
-      margin: 50px 60px;
+      margin: 50px $padding-desktop;
+      @include m-screen {
+        margin: 40px $padding-tablet;
+      }
+      @include s-screen {
+        margin: 40px $padding-mobile;
+      }
     }
 
     &__header {
@@ -39,33 +69,11 @@
   }
 }
 
-.gold-benefits__icon {
-  @extend %icon-group--item;
-}
-
-.gold-ingredients__item {
-  vertical-align: top;
-}
-
-.gold-benefits__img {
-  @extend %icon-group--img;
-}
-
-.gold-benefits__point {
-  font-size: pxToRem(20) !important;
-  max-width: 80%;
-  margin: pxToRem(40) auto;
-  @media #{$medium} {
-    margin: pxToRem(30) auto pxToRem(60);
-  }
-  @media #{$mobile} {
-    font-size: pxToRem(16) !important;
-    margin: pxToRem(20) auto pxToRem(50);
-  }
-
-  span {
-    @media #{$mobile} {
-      display: none;
-    }
+.benefits-cta {
+  display: none;
+  @include sm-screen {
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
   }
 }

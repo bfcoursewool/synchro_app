@@ -42,6 +42,9 @@
   &__items {
     padding: $padding-desktop;
     font-size: 0;
+    @include m-screen {
+      padding: $padding-tablet;
+    }
     @include s-screen {
       padding: $padding-mobile;
     }
@@ -80,7 +83,6 @@
 }
 
 .gold-ingredients__img {
-  @extend %icon-group--img;
   height: pxToRem(100);
   -webkit-filter: drop-shadow(0 0 3px rgba(0,0,0,0.1));
   filter: drop-shadow(0 0 3px rgba(0,0,0,0.1));

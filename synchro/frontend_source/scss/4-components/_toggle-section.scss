@@ -73,16 +73,22 @@
 
 .extended-content {
   text-align: center;
-  background-color: $color-section-dark;
+  background-color: $color-gray-dark;
   margin-right: 0;
   margin-left: 0;
-  padding: 60px;
+  padding: $padding-desktop;
   font-size: 0;
+  @include sm-screen {
+    padding: $padding-tablet;
+  }
 
   .p--header {
     color: #fff;
     max-width: 850px;
     margin: 0 auto;
+    @include sm-screen {
+      font-size: 30px;
+    }
   }
 
   &__item {

@@ -12,22 +12,16 @@
   }
 
   .atf {
-
     &.bg-full-width {
       height: 738px;
       max-height: 100vh;
       background: url("https://cdn.besynchro.com/gold/v2-0/gold-atf@2x.jpg");
-      background: -webkit-image-set(url('https://cdn.besynchro.com/gold/v2-0/gold-atf.jpg') 1x, url('https://cdn.besynchro.com/gold/v2-0/gold-atf@2x.jpg') 2x, url('https://cdn.besynchro.com/gold/v2-0/gold-atf@3x.jpg') 3x);
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
-      background-position-x: 50%;
-      background-position-y: 0;
+      background-position: center top;
       background-repeat: no-repeat;
       background-size: cover;
-      // opacity: 0; // Fades in
       transition: 0s linear;
-      transition-property: background-position-y;
-      position: relative;
 
       .p--header {
         opacity: 0;
@@ -68,111 +62,5 @@
         }
       }
     }
-  }
-}
-// The styles below will be slowly phased out
-
-
-@keyframes shrink-n-grow-height-to-x {
-  0% {
-    height: 25%;
-  }
-
-  50% {
-    height: 0;
-  }
-
-  100% {
-    height: 30%;
-  }
-}
-@keyframes shrink-n-grow-height-to-plus {
-  0% {
-    height: 30%;
-  }
-
-  50% {
-    height: 0;
-  }
-
-  100% {
-    height: 25%;
-  }
-}
-@keyframes shrink-n-grow-width-to-x {
-  0% {
-    width: 30%;
-  }
-
-  50% {
-    width: 0;
-  }
-
-  100% {
-    width: 30%;
-  }
-}
-@keyframes shrink-n-grow-width-to-plus {
-  0% {
-    width: 30%;
-  }
-
-  50% {
-    width: 0;
-  }
-
-  100% {
-    width: 30%;
-  }
-}
-// OVERWRITES / BASICS
-
-
-.p--header__small {
-  font-size: pxToRem(52);
-  @media #{$medium-small-custom} {
-    font-size: pxToRem(32);
-  }
-}
-
-%p--title__large {
-  @extend .p--header__small;
-  font-weight: 300;
-  font-size: pxToRem(31);
-  color: $extended-color;
-  text-align: left;
-  text-transform: none;
-}
-
-%gradient {
-  background: linear-gradient(to bottom, $gradient-color-yellow 0%, $gradient-color-orange 100%);
-}
-
-// ICON GROUP
-
-%icon-group--item {
-  padding: 0;
-  text-align: center;
-
-  .p--title {
-    color: $font-color-icons;
-    font-weight: 300;
-    margin-bottom: 0;
-  }
-  @media #{$medium} {
-    float: left;
-    width: 50%;
-
-    &.last {
-      width: 100%!important;
-    }
-  }
-}
-
-%icon-group--img {
-  display: inline-block;
-  height: pxToRem(80);
-  @media #{$mobile} {
-    height: pxToRem(55);
   }
 }
