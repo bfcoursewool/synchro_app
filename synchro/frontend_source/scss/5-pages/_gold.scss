@@ -194,72 +194,7 @@ body {
 }
 
 
-// QUOTES
 
-.slider {
-  background-color: $quotes-bg-color;
-  color: $quote-color;
-  text-align: center;
-  background-image: url("https://storage.googleapis.com/synchro-assets/gold/susan/quote.svg");
-  background-repeat: no-repeat;
-  background-position: 9% 20%;
-  background-size: pxToRem(116);
-}
-
-.slide {
-  padding: pxToRem(121.5) 30px pxToRem(92);
-}
-
-[role="button"] {
-  .slick-dots & {
-    font-size: 0;
-    height: pxToRem(12.5);
-    width: pxToRem(12.5);
-    border-radius: pxToRem(12.5);
-    background-color: $slider-button-bg;
-  }
-}
-
-.slick-dots {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: pxToRem(12.5);
-
-  [role="presentation"] {
-    padding: pxToRem(8.5 / 2);
-    display: inline-block;
-  }
-
-  .slick-active {
-    [role="button"] {
-      background-color: $slider-button-active-bg;
-    }
-  }
-}
-
-.quote-text {
-  max-width: pxToRem(860);
-  display: inline-block;
-  font-size: pxToRem(30);
-  font-weight: 300;
-  font-style: italic;
-  z-index: 3;
-  line-height: 1.4;
-  @media #{$medium-small-custom} {
-    font-size: pxToRem(21) !important;
-  }
-}
-
-.quote-author-img {
-  .slick-slide & {
-    display: inline-block;
-  }
-  margin-top: pxToRem(48);
-  margin-bottom: pxToRem(24);
-  height: pxToRem(64);
-  width: pxToRem(64);
-}
 // PURCHASE OPTIONS
 
 .purchase {

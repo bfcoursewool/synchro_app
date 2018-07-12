@@ -1,0 +1,71 @@
+// QUOTES
+
+.slider {
+  background-color: $color-primary;
+  color: #fff;
+  text-align: center;
+  background-image: url("https://storage.googleapis.com/synchro-assets/gold/susan/quote.svg");
+  background-repeat: no-repeat;
+  background-position: 9% 18%;
+  background-size: 120px;
+  padding: 60px;
+  @include s-screen {
+    padding: $padding-mobile;
+  }
+}
+
+.slides {
+  padding: 0;
+}
+
+[role="button"] {
+  .slick-dots & {
+    font-size: 0;
+    border: 0;
+    height: 3px;
+    width: 40px;
+    margin: 5px;
+    outline: none;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  width: 100%;
+  @include s-screen {
+    display: none !important;
+  }
+
+  [role="presentation"] {
+    display: inline-block;
+  }
+
+  .slick-active {
+    [role="button"] {
+      background-color: $slider-button-active-bg;
+    }
+  }
+}
+
+.quote-text {
+  max-width: 800px;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: $font-light;
+  font-style: italic;
+  z-index: 3;
+  margin: $padding-mobile;
+}
+
+.quote-author-img {
+  .slick-slide & {
+    display: inline-block;
+  }
+  margin-top: pxToRem(48);
+  margin-bottom: pxToRem(24);
+  height: pxToRem(64);
+  width: pxToRem(64);
+}
