@@ -3,11 +3,8 @@
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
   text-align: center;
-  padding: 70px 20px;
-}
-
-.promoted-products-box {
-  @media (max-width: $break-mobile) {
-    display: none !important;
+  padding: 0 $padding-desktop $padding-desktop;
+  @include s-screen {
+    padding: 0 $padding-mobile $padding-mobile;
   }
 }
