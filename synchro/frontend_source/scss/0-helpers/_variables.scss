@@ -4,9 +4,12 @@ $font-light: 100;
 $font-normal: 400;
 $font-medium: 500;
 $font-demi: 600;
-$font-bold: 700; // Branding
+$font-bold: 700;
+
+// Branding
 $color-primary: #000000;
-$color-gold: #eca846; // $color-genesis:;
+$color-gold: #eca846;
+// $color-genesis:;
 // $color-ketomanna:;
 // $color-prebios:;
 // $color-microbios:;
@@ -15,11 +18,16 @@ $color-cta: #000000;
 $color-logo-light: #ffffff;
 $color-logo-dark: #000000;
 $color-section-dark: #404040;
+$color-bg-light: #f4f4f5;
+
 // Layout
 $padding-mobile: 20px;
 $padding-tablet: 40px;
-$padding-desktop: 60px; // Z-Index
+$padding-desktop: 60px;
+
+// Z-Index
 $header-z-index: 100;
+
 // The styles below will be slowly phased out
 // Breakpoints (genesis)
 $break-mobile: 767px;
@@ -43,10 +51,6 @@ $extended-color-subtle: lightgray;
 $ingredients-extended-bg-color: #ffffff;
 $tab-backrgound-color: #F2F2F2;
 $tab-inactive-color: #DFDFDF;
-$quotes-bg-color: #737373;
-$quote-color: #fafafa;
-$slider-button-bg: #A6A6A6;
-$slider-button-active-bg: $cta-color;
 $gradient-color-yellow: #FED649;
 $gradient-color-orange: #F1B143;
 $fs-divisor: 16;

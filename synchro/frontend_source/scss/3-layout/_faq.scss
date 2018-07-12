@@ -1,14 +1,23 @@
 .faq {
-  background: #F6F8FB;
-  text-align: center;
-  padding: 70px 35px;
-
-  &__text {
-    text-align: left;
+  background: $color-bg-light;
+  @include s-screen {
+    padding: 0 $padding-mobile;
   }
 
-  .p--text {
-    margin-top: 20px;
-    color: #7b858b;
+  &__text {
+    text-align: center;
+
+    .p--header {
+      font-size: 30px;
+    }
+
+    .p--text {
+      margin-bottom: 40px;
+      max-width: 900px;
+    }
+
+    .footnote {
+      font-size: 15px;
+    }
   }
 }

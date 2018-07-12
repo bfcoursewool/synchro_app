@@ -178,31 +178,6 @@
 }
 
 
-
-
-// FAQ & RESEARCH
-
-.faq {
-  background-color: white;
-}
-
-.faq__text {
-  .p--title {
-    @extend %p--title__large;
-    color: $font-color;
-    margin-bottom: pxToRem(24);
-  }
-
-  .p--text {
-    margin-bottom: pxToRem(48);
-  }
-}
-
-.footnote {
-  font-size: 14px!important;
-  margin-bottom: 0!important;
-}
-
 .footer {
   text-align: center;
   text-transform: none;
