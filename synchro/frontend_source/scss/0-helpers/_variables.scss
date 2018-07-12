@@ -4,11 +4,9 @@ $font-light: 100;
 $font-normal: 400;
 $font-medium: 500;
 $font-demi: 600;
-$font-bold: 700;
-// Branding
+$font-bold: 700; // Branding
 $color-primary: #000000;
-$color-gold: #eca846;
-// $color-genesis:;
+$color-gold: #eca846; // $color-genesis:;
 // $color-ketomanna:;
 // $color-prebios:;
 // $color-microbios:;
@@ -17,9 +15,11 @@ $color-cta: #000000;
 $color-logo-light: #ffffff;
 $color-logo-dark: #000000;
 $color-section-dark: #404040;
-// Z-Index
+// Layout
+$padding-mobile: 20px;
+$padding-tablet: 40px;
+$padding-desktop: 60px; // Z-Index
 $header-z-index: 100;
-
 // The styles below will be slowly phased out
 // Breakpoints (genesis)
 $break-mobile: 767px;
