@@ -8,7 +8,7 @@ export default () => {
   window.sr = ScrollReveal({
     duration: 1000,
     scale: 1,
-    viewFactor: 0.6,    
+    viewFactor: 0.6,
   });
 
   // HERO
@@ -74,12 +74,12 @@ export default () => {
 
   // PURCHASE OPTIONS
 
-  sr.reveal('.purchase--item-animate-first', {
+  sr.reveal('.purchase__item-animate-first', {
     scale: 0.9,
     afterReveal: removeStyles
   });
 
-  sr.reveal('.purchase--item-animate-second', {
+  sr.reveal('.purchase__item-animate-second', {
     scale: 0.9,
     delay: 250,
     afterReveal: removeStyles

@@ -1,3 +1,11 @@
+body {
+  font-family: $font-primary;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
 /* text styles */
 .p--white {
   color: #fff;
