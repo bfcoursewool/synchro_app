@@ -44,7 +44,7 @@
 
     .a--cta {
       margin-left: auto;
-      @include cta-custom(#fdbd39, white);
+      @include cta-custom($color-gold, white);
     }
 
     .main-navigation {

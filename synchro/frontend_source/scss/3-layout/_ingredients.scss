@@ -1,28 +1,122 @@
 .ingredients {
   text-align: center;
-  padding-bottom: 70px;
 
-  &__item {
-    padding: 70px 40px 0;
+  &__icons {
+    background: #F2F2F2;
+    overflow: auto;
+    font-size: 0;
+    padding: 0 60px;
   }
 
-  &__img-box {
-    height: 300px;
-  }
-
-  &__img-helper {
+  &__icon-box {
     display: inline-block;
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    padding-bottom: 30px;
+    @include sm-screen {
+      width: 33%;
+    }
+    @include xs-screen {
+      width: 50%;
+    }
+
+    .p--text {
+      font-size: 16px;
+      color: #6C6C6C;
+      letter-spacing: 1px;
+      font-weight: $font-demi;
+      text-transform: uppercase;
+    }
+  }
+
+  &__icon {
+    max-width: 100px;
+  }
+}
+
+.ingredients {
+  &__items {
+    padding: 60px;
+    font-size: 0;
+  }
+
+  &__item-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 0 5%;
+
+    @include s-screen {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__image-box {
+    height: 240px;
+    padding: 50px 0;
+  }
+
+  &__image {
     height: 100%;
-    vertical-align: middle;
   }
 
-  &__img {
-    max-width: 90%;
-    max-height: 90%;
-    vertical-align: middle;
+  &__copy {
+    .p--header {
+      padding: initial 0;
+      border-width: 0 0 2px;
+    }
+  }
+}
+
+.gold-ingredients__img {
+  @extend %icon-group--img;
+  height: pxToRem(100);
+  -webkit-filter: drop-shadow(0 0 3px rgba(0,0,0,0.1));
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.1));
+  @media #{$mobile} {
+    height: pxToRem(70);
+  }
+}
+
+.ingredients--extended-content {
+  background-color: $ingredients-extended-bg-color;
+  padding-bottom: pxToRem(70);
+  margin-top: pxToRem(20);
+  @media #{$mobile} {
+    margin-top: pxToRem(0);
   }
 
-  .p--title {
-    margin-bottom: 30px;
+  .extended-content--image {
+    padding-bottom: 47%;
+  }
+
+  .gold-ingredients__header {
+    font-size: pxToRem(31);
+    color: $font-color;
+    margin-top: pxToRem(20);
+  }
+
+  .gold-ingredients__item,
+  .gold-ingredients__item__single {
+    vertical-align: top;
+    padding: pxToRem(80) pxToRem(50) 0;
+    @media (max-width: 480px) {
+      padding: pxToRem(60) pxToRem(20) 0;
+    }
+
+    .gold-ingredients__img {
+      transform: scale(0.8);
+    }
+
+    & + .gold-ingredients__item .gold-ingredients__img {
+      transform: none;
+    }
+  }
+
+  .gold-ingredients__img {
+    width: auto;
+    height: 100%;
   }
 }
