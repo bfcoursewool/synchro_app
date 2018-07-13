@@ -19,7 +19,7 @@ endpoint_info_dict = {
       'template': 'landing_pages/genesis/v1-0/0-index.html',
     },
     '1': {
-      'template': 'landing_pages/genesis/v1-0/0-index.html',
+      'template': 'landing_pages/genesis/v2-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }

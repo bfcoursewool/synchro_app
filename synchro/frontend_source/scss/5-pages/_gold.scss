@@ -63,4 +63,22 @@
       }
     }
   }
+
+  .purchase {
+    .option-1 {
+      background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png");
+    }
+
+    .option-2 {
+      background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png");
+    }
+
+    .option-3 {
+      background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png");
+    }
+
+    .discount {
+      @include discount ($color-gold)
+    }
+  }
 }

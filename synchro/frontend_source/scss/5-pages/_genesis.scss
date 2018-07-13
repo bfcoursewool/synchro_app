@@ -1,3 +1,23 @@
+#genesis-lp {
+  .purchase {
+    .option-1 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/genesis-new-1.jpg");
+    }
+
+    .option-2 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/genesis-new-2.jpg");
+    }
+
+    .option-3 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/genesis-bag-front_2.jpg");
+    }
+
+    .discount {
+      @include discount ($color-genesis)
+    }
+  }
+}
+
 .genesis-atf {
   display: table;
   background: url("https://storage.googleapis.com/synchro-assets/genesis/images/DSC03486(edited).jpg");
@@ -131,8 +151,8 @@
     margin: 30px;
   }
 }
-
 // CTA Section
+
 .cta-section {
   background-image: url("https://cdn.besynchro.com/genesis/images/genesis-lp-pattern.jpg");
   background-size: cover;
