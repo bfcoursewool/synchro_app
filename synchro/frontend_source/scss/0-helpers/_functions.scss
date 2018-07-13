@@ -1,6 +1,6 @@
-@function pxToRem($size) {
-  @return $size / $fs-divisor * 1rem
-}
-@function dimensionsToRatio($width, $height) {
-  @return $height / $width * 100%
-}
+// @function pxToRem($size) {
+//   @return $size / $fs-divisor * 1rem
+// }
+// @function dimensionsToRatio($width, $height) {
+//   @return $height / $width * 100%
+// }

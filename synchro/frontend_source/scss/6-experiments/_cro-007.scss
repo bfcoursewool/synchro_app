@@ -5,26 +5,26 @@
 	&.benefits {
 
 		.extended-content {
-			margin-top: pxToRem(90);
+			margin-top: 90px;
 
-			@media #{$medium} {
-				margin-top: pxToRem(50);
+			@include sm-screen {
+				margin-top: 50px;
 			}
 		}
 	}
 
 	&.intro {
 
-		@media #{$medium} {
+		@include sm-screen {
 			margin-top: 0;
 		}
 	}
 
 	.ingredients--extended-content {
-		padding-bottom:pxToRem(90);
+		padding-bottom: 90px;
 
-		@media #{$medium} {
-			margin-top: pxToRem(70);
+		@include sm-screen {
+			margin-top: 70px;
 		}
 	}
 

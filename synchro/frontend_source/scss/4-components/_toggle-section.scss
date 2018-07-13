@@ -1,5 +1,5 @@
 .content-toggle {
-  padding: pxToRem(30);
+  padding: 30px;
   @include xs-screen {
     display: none;
   }

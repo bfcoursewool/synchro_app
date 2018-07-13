@@ -50,14 +50,14 @@
       .down-arrow {
         opacity: 0;
         width: 19px;
-        bottom: pxToRem(100);
+        bottom: 100px;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
         transition: opacity 0.75s ease-in-out, bottom 0.75s ease-in-out;
 
         &.animate-in {
-          bottom: pxToRem(70);
+          bottom: 70px;
           opacity: 1;
         }
       }

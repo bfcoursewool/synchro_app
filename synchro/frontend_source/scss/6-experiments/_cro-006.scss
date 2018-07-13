@@ -7,7 +7,7 @@
 		.purchase--item {
 			height: 620px;
 
-			@media #{$mobile} {
+			@include s-screen {
 				height: 600px;
 				border-bottom: 1px solid #e2e2e2;
 			}
@@ -15,7 +15,7 @@
 			&__premium {
 				height: 640px;
 
-				@media #{$mobile} {
+				@include s-screen {
 					height: 560px;
 					border-bottom: 0;
 					margin-top: 70px;
@@ -25,14 +25,14 @@
 					background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-four-bottles-highlighted.svg');
 					background-size: 280px;
 
-					@media #{$medium} {
+					@include sm-screen {
 						background-size: initial;
 					}
 				}
 
 				.button--wrapper {
 					@media #{$medium-small-custom} {
-						top: pxToRem(490) !important;
+						top: 490px !important;
 					}
 				}
 			}
@@ -50,16 +50,16 @@
 
 			&--pricing {
 
-				@media #{$mobile} {
-					top: pxToRem(370);
+				@include s-screen {
+					top: 370px;
 				}
 			}
 
 			.button--wrapper {
-				top: pxToRem(560);
+				top: 560px;
 
-				@media #{$mobile} {
-					top: pxToRem(490);
+				@include s-screen {
+					top: 490px;
 				}
 			}
 		}

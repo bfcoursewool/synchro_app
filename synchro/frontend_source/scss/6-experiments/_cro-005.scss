@@ -28,27 +28,27 @@
 				top: 62px;
 				background-position: center center;
 				background-repeat: no-repeat;
-				margin-top: pxToRem(0);
+				margin-top: 0;
 				background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-plan-gold.svg');
 				background-size: 320px;
 			}
 
 			.purchase--item--pricing {
 				@media #{$medium-small-custom} {
-					top: pxToRem(430);
+					top: 430px;
 				}
 			}
 
 			.button--wrapper {
 				@media #{$medium-small-custom} {
-					top: pxToRem(590) !important;
+					top: 590px !important;
 				}
 			}
 		}
 
 		&--title,
 		&--qty {
-			margin-top: pxToRem(20);
+			margin-top: 20px;
 
 		}
 
@@ -58,7 +58,7 @@
 			top: 62px;
 			background-position: center center;
 			background-repeat: no-repeat;
-			margin-top: pxToRem(0);
+			margin-top: 0;
 
 			&.option-1 {
 				background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/starter-kit-Gold.svg')
@@ -74,21 +74,21 @@
 		}
 
 		&--cancel {
-			font-size: pxToRem(14);
-			margin-top: pxToRem(14);
+			font-size: 14px;
+			margin-top: 14px;
 			font-style: italic;
 			color: $font-color-light;
 		}
 
 		&--pricing {
-			top: pxToRem(410);
+			top: 410px;
 
-			@media #{$medium} {
-				top: pxToRem(430);
+			@include sm-screen {
+				top: 430px;
 			}
 
 			@media #{$medium-small-custom} {
-				top: pxToRem(380);
+				top: 380px;
 			}
 		}
 
@@ -104,31 +104,31 @@
 		}
 
 		&--price {
-			margin-top: pxToRem(15);
+			margin-top: 15px;
 			opacity: 0.9;
-			font-size: pxToRem(64);
-			line-height: pxToRem(72);
+			font-size: 64px;
+			line-height: 72px;
 
-			@media #{$medium} {
-				font-size: pxToRem(53);
-				line-height: pxToRem(60);
+			@include sm-screen {
+				font-size: 53px;
+				line-height: 60px;
 			}
 
 			&.premium-animate {
 				opacity: 1;
-				font-size: pxToRem(72);
+				font-size: 72px;
 
-				@media #{$medium} {
-					font-size: pxToRem(60);
+				@include sm-screen {
+					font-size: 60px;
 				}
 			}
 		}
 
 		.button--wrapper {
-			top: pxToRem(590);
+			top: 590px;
 
 			@media #{$medium-small-custom} {
-				top: pxToRem(550);
+				top: 550px;
 			}
 		}
 	}

@@ -13,9 +13,9 @@
   }
 
   &__img {
-    height: pxToRem(80);
-    @media #{$mobile} {
-      height: pxToRem(55);
+    height: 80px;
+    @include s-screen {
+      height: 55px;
     }
   }
 

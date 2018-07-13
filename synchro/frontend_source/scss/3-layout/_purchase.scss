@@ -76,21 +76,21 @@
   }
 
   &__item-price {
-    font-size: pxToRem(64);
-    margin-top: pxToRem(15);
+    font-size: 64px;
+    margin-top: 15px;
     color: $font-color;
     opacity: 0.9;
-    line-height: pxToRem(72);
-    @media #{$medium} {
-      font-size: pxToRem(53);
-      line-height: pxToRem(60);
+    line-height: 72px;
+    @include sm-screen {
+      font-size: 53px;
+      line-height: 60px;
     }
 
     &.premium-animate {
       opacity: 1;
-      font-size: pxToRem(72);
-      @media #{$medium} {
-        font-size: pxToRem(60);
+      font-size: 72px;
+      @include sm-screen {
+        font-size: 60px;
       }
     }
   }
