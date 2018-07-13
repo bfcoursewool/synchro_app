@@ -6,6 +6,19 @@
   background: $color-primary;
   @include s-screen {
     margin-bottom: 80px;
+    padding-left: $gutter-mobile;
+    padding-right: $gutter-mobile;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  &__logo {
+    grid-column-start: 2;
   }
 
   .synchro-logo {
@@ -19,5 +32,15 @@
     color: #fff;
     font-size: 16px;
     font-weight: $font-bold;
+  }
+
+  &__top {
+    background: #fff;
+    font-family: $font-awesome;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    line-height: 27px;
+    font-size: 15px;
   }
 }
