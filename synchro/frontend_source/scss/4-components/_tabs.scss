@@ -65,11 +65,11 @@
   }
 
   &:hover {
-    color: $font-color;
+    color: #4e4e4e;
   }
 
   &.active {
-    background: linear-gradient(to bottom, $gradient-color-yellow 0%, $color-gold 100%);
+    background: linear-gradient(to bottom, #FED649 0%, $color-gold 100%);
     color: #ffffff;
 
     &:after {

@@ -2,9 +2,9 @@
 
 .benefits {
   &__icons {
-    padding-bottom: $padding-desktop;
+    padding-bottom: $gutter-desktop;
     @include s-screen {
-      padding-bottom: $padding-mobile;
+      padding-bottom: $gutter-mobile;
     }
   }
 
@@ -51,12 +51,12 @@
     }
 
     &__copy {
-      margin: 50px $padding-desktop;
+      margin: 50px $gutter-desktop;
       @include m-screen {
-        margin: 40px $padding-tablet;
+        margin: 40px $gutter-tablet;
       }
       @include s-screen {
-        margin: 40px $padding-mobile;
+        margin: 40px $gutter-mobile;
       }
     }
 

@@ -51,7 +51,7 @@
       display: inline-block;
       float: right;
       margin: 12px 0;
-      @media (max-width: $break-tablet) {
+      @include sm-screen {
         display: block;
         visibility: hidden;
         opacity: 0;
@@ -64,17 +64,17 @@
         -webkit-transition: all 0.35s ease;
         -o-transition: all 0.35s ease;
       }
-      @media (max-width: $break-mobile) {
+      @include s-screen {
         left: 0;
         transform: translate(-100%);
       }
 
       &.expanded {
-        @media (max-width: $break-tablet) {
+        @include sm-screen {
           visibility: visible;
           opacity: 1;
         }
-        @media (max-width: $break-mobile) {
+        @include s-screen {
           transform: translate(0);
         }
       }
@@ -101,7 +101,7 @@
         font-family: futura-pt, sans-serif;
         letter-spacing: 0.08em;
         text-decoration: none;
-        @media (max-width: $break-tablet) {
+        @include sm-screen {
           display: block;
           padding: 16px 20px;
           border-top: 1px solid #FFF;

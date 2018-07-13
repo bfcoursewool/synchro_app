@@ -3,7 +3,7 @@
 .gold-atf__uvp {
 	left: calc(50% - 470px);
 
-	@media (max-width: $break-tablet) {
+	@include sm-screen {
 		left: 0px;
 	}
 }

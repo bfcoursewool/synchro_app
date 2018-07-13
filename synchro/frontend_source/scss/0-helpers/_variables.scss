@@ -8,52 +8,23 @@ $font-bold: 700;
 
 // Branding
 $color-primary: #000000;
-$color-gold: #eca846;
-// $color-genesis:;
-// $color-ketomanna:;
-// $color-prebios:;
-// $color-microbios:;
-// $color-cognos:;
+$color-gray-dark: #404040;
+$color-gray-light: #f4f4f5;
 $color-cta: #000000;
 $color-logo-light: #ffffff;
 $color-logo-dark: #000000;
-$color-gray-dark: #404040;
-$color-gray-light: #f4f4f5;
+$color-gold: #eca846;
+$color-genesis: #5da8a6;
+$color-ketomanna: #6c5851;
+$color-ketobasis: #8b79b3;
+$color-ketoprana: #af80b3;
+$color-prebios: #f3a98f;
+$color-microbios: #efa8b6;
 
 // Layout
-$padding-mobile: 20px;
-$padding-tablet: 40px;
-$padding-desktop: 60px;
+$gutter-mobile: 20px;
+$gutter-tablet: 40px;
+$gutter-desktop: 60px;
 
 // Z-Index
 $header-z-index: 100;
-
-// The styles below will be slowly phased out
-// Breakpoints (genesis)
-$break-mobile: 767px;
-$break-tablet: 991px;
-$break-desktop: 1199px;
-
-// Breakpoints (susan)
-$small-desktop: '(max-width: 1200px)';
-$medium: '(max-width: 854px)';
-$mobile: '(max-width: 767px)';
-$medium-small-custom: '(max-width: 680px)';
-
-// COLORS
-$yellow: #fecf33;
-$cta-color: #fdbd39;
-$cta-color-dark: #ffd737;
-$cta-color-active: #ee6723;
-$image-backing: #333;
-$font-color: #4e4e4e;
-$font-color-light: #999999;
-$font-color-icons: #6c6c6c;
-$border-color: #e1e1e1;
-$extended-color: #ffffff;
-$extended-color-subtle: lightgray;
-$ingredients-extended-bg-color: #ffffff;
-$tab-backrgound-color: #F2F2F2;
-$tab-inactive-color: #DFDFDF;
-$gradient-color-yellow: #FED649;
-$fs-divisor: 16;

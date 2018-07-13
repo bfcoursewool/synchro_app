@@ -1,10 +1,10 @@
 .purchase {
-  padding-bottom: $padding-desktop;
+  padding-bottom: $gutter-desktop;
   @include m-screen {
-    padding-bottom: $padding-tablet;
+    padding-bottom: $gutter-tablet;
   }
   @include s-screen {
-    padding: $padding-mobile;
+    padding: $gutter-mobile;
   }
 
   &__item {
@@ -12,13 +12,13 @@
     text-align: center;
     max-width: 450px;
     margin: 0 auto;
-    padding: $padding-desktop;
+    padding: $gutter-desktop;
 
     &:hover {
       transform: scale(1.025);
     }
     @include m-screen {
-      padding: $padding-tablet;
+      padding: $gutter-tablet;
     }
     @include s-screen {
       &:nth-child(2) {
@@ -61,7 +61,7 @@
   }
 
   &__item-servings {
-    color: $font-color-light;
+    color: #4e4e4e;
     text-transform: uppercase;
   }
 
@@ -78,7 +78,7 @@
   &__item-price {
     font-size: 64px;
     margin-top: 15px;
-    color: $font-color;
+    color: #4e4e4e;
     opacity: 0.9;
     line-height: 72px;
     @include sm-screen {

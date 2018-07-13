@@ -11,7 +11,7 @@
   &__content {
     margin: 40px 0 10px;
 
-    @media (max-width: $break-tablet) {
+    @include sm-screen {
       padding: 0 40px;
     }
   }
@@ -19,12 +19,12 @@
   &__image {
     width: 60px;
 
-    @media (max-width: $break-tablet) {
+    @include sm-screen {
       display: block;
       margin-bottom: 20px;
     }
 
-    @media (max-width: $break-mobile) {
+    @include s-screen {
       margin: 0 auto 20px;
     }
   }
@@ -38,12 +38,12 @@
     position: relative;
     quotes: "\201C""\201D";
 
-    @media (max-width: $break-tablet) {
+    @include sm-screen {
       width: 100%;
       margin-left: 0;
     }
 
-    @media (max-width: $break-mobile) {
+    @include s-screen {
       width: initial;
     }
 
@@ -58,7 +58,7 @@
     }
 
     &:after {
-      @media (max-width: $break-mobile) {
+      @include s-screen {
         content: close-quote;
         position: absolute;
         right: -30px;
@@ -75,7 +75,7 @@
     color: #fff;
     font-size: 18px;
 
-    @media (max-width: $break-mobile) {
+    @include s-screen {
       text-align: center;
     }
   }
@@ -85,7 +85,7 @@
     text-align: right;
     color: #fff;
 
-    @media (max-width: $break-mobile) {
+    @include s-screen {
       text-align: center;
     }
   }

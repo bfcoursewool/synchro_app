@@ -2,7 +2,7 @@
   background: $color-gray-light;
   overflow: auto;
   @include s-screen {
-    padding: 0 $padding-mobile;
+    padding: 0 $gutter-mobile;
   }
 
   &__text {

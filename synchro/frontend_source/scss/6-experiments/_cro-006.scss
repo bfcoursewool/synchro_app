@@ -31,7 +31,7 @@
 				}
 
 				.button--wrapper {
-					@media #{$medium-small-custom} {
+					@include xs-screen {
 						top: 490px !important;
 					}
 				}

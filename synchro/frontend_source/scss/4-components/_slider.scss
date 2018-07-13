@@ -13,7 +13,7 @@
     background-image: none;
   }
   @include s-screen {
-    padding: $padding-mobile;
+    padding: $gutter-mobile;
   }
 }
 
@@ -60,7 +60,7 @@
   font-weight: $font-light;
   font-style: italic;
   z-index: 3;
-  margin: $padding-mobile;
+  margin: $gutter-mobile;
 }
 
 .quote-author-img {

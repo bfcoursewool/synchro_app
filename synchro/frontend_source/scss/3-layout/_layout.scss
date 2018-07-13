@@ -10,7 +10,7 @@
 .section--padding {
   padding-top: 70px;
   padding-bottom: 70px;
-  @media (max-width: $break-mobile) {
+  @include s-screen {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -19,7 +19,7 @@
 .section--padding-50 {
   padding-top: 50px;
   padding-bottom: 50px;
-  @media (max-width: $break-mobile) {
+  @include s-screen {
     padding-left: 10px;
     padding-right: 10px;
   }

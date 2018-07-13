@@ -5,9 +5,9 @@
     background: #F2F2F2;
     overflow: auto;
     font-size: 0;
-    padding: 0 $padding-desktop;
+    padding: 0 $gutter-desktop;
     @include xs-screen {
-      padding: 0 $padding-mobile;
+      padding: 0 $gutter-mobile;
     }
   }
 
@@ -40,15 +40,15 @@
 
 .ingredients {
   &__items {
-    padding: 0 $padding-desktop $padding-desktop;
+    padding: 0 $gutter-desktop $gutter-desktop;
     font-size: 0;
     @include m-screen {
-      padding-left: $padding-mobile;
-      padding-right: $padding-mobile;
-      padding-bottom: $padding-tablet;
+      padding-left: $gutter-mobile;
+      padding-right: $gutter-mobile;
+      padding-bottom: $gutter-tablet;
     }
     @include s-screen {
-      padding-bottom: $padding-mobile;
+      padding-bottom: $gutter-mobile;
     }
   }
 
@@ -92,7 +92,6 @@
 }
 
 .ingredients--extended-content {
-  background-color: $ingredients-extended-bg-color;
   padding-bottom: 70px;
   margin-top: 20px;
   @include s-screen {
@@ -105,7 +104,7 @@
 
   .gold-ingredients__header {
     font-size: 31px;
-    color: $font-color;
+    color: #4e4e4e;
     margin-top: 20px;
   }
 

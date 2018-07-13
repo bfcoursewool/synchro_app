@@ -55,7 +55,6 @@
     }
 
     .opened & {
-      background-color: $font-color-icons;
       transform: rotate(180 + 45 * 1deg);
 
       &:before {
@@ -76,10 +75,10 @@
   background-color: $color-gray-dark;
   margin-right: 0;
   margin-left: 0;
-  padding: $padding-desktop;
+  padding: $gutter-desktop;
   font-size: 0;
   @include sm-screen {
-    padding: $padding-tablet;
+    padding: $gutter-tablet;
   }
 
   .p--header {

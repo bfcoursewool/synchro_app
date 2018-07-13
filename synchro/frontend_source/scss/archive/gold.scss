@@ -12,7 +12,7 @@
     padding-left: 50px;
   }
 
-  @media (max-width: $break-mobile) {
+  @include s-screen {
     padding-top: 30px;
   }
 
@@ -27,12 +27,12 @@
     top: 200px;
     left: calc(50% - 430px);
 
-    @media (max-width: $break-tablet) {
+    @include sm-screen {
       top: 215px;
       left: 20px;
     }
 
-    @media (max-width: $break-mobile) {
+    @include s-screen {
       position: initial;
       display: inline-block;
     }
@@ -46,11 +46,11 @@
     margin: 5px;
     font-size: 18px;
 
-    @media (max-width: $break-tablet) {
+    @include sm-screen {
       font-size: initial;
     }
 
-    @media (max-width: $break-mobile) {
+    @include s-screen {
       display: block;
     }
 
@@ -73,7 +73,7 @@
     padding-right: 50px;
     padding-left: 50px;
 
-    @media (max-width: $break-tablet) {
+    @include sm-screen {
       padding-right: 25px;
       padding-left: 25px;
     }
@@ -81,11 +81,11 @@
 
   &__img {
 
-    @media (max-width: $break-tablet) {
+    @include sm-screen {
       width: 50%;
     }
 
-    @media (max-width: $break-mobile) {
+    @include s-screen {
       max-width: 150px;
     }
   }
@@ -115,7 +115,7 @@
 
 .gold-use {
 
-  @media (max-width: $break-mobile) {
+  @include s-screen {
     text-align: center;
   }
 
@@ -127,7 +127,7 @@
   .p--title:after {
     margin-left: 0;
 
-    @media (max-width: $break-mobile) {
+    @include s-screen {
       margin-left: auto;
     }
   }
@@ -136,7 +136,7 @@
     display: block;
     margin: 0 auto;
 
-    @media (max-width: $break-mobile) {
+    @include s-screen {
       margin-bottom: 40px;
       max-width: 100%;
     }
@@ -156,7 +156,7 @@
       letter-spacing: normal;
     }
 
-    @media (max-width: $break-mobile) {
+    @include s-screen {
       padding-left: 0;
       padding-right: 0;
     }
@@ -176,7 +176,7 @@
     width: 600px;
     float: right;
 
-    @media (max-width: $break-tablet) {
+    @include sm-screen {
       max-width: 80%;
       float: none;
       margin-top: 50px;
@@ -186,7 +186,7 @@
   &__liposomal-img {
     width: 600px;
 
-    @media (max-width: $break-tablet) {
+    @include sm-screen {
       max-width: 80%;
       float: none;
       margin-top: 50px;
@@ -197,7 +197,7 @@
     width: 600px;
     float: right;
 
-    @media (max-width: $break-tablet) {
+    @include sm-screen {
       max-width: 80%;
       float: none;
       margin-top: 50px;
