@@ -1,4 +1,10 @@
 #genesis-lp {
+  .main-header-container {
+    .a--cta {
+      background: $color-genesis;
+    }
+  }
+
   .purchase {
     .option-1 {
       background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/genesis-new-1.jpg");
@@ -16,181 +22,156 @@
       @include discount ($color-genesis)
     }
   }
-}
 
-.genesis-atf {
-  display: table;
-  background: url("https://storage.googleapis.com/synchro-assets/genesis/images/DSC03486(edited).jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 720px;
-  background-size: auto 760px;
-  @include s-screen {
-    background-image: url("https://storage.googleapis.com/synchro-assets/genesis/images/genesis-lp-small.jpg");
-  }
-
-  &__text {
-    display: table-cell;
-    vertical-align: middle;
-    @include s-screen {
-      display: initial;
-    }
-  }
-
-  .p--header {
-    font-size: 50px;
-    text-align: left;
-    max-width: 500px;
-    @include sm-screen {
-      font-size: 38px;
-      max-width: 350px;
-    }
-    @include s-screen {
+  .genesis {
+    &__facts {
       text-align: center;
-      padding-top: 100px;
-      margin: 0 auto;
-      max-width: none;
-    }
-  }
-}
+      background: url("https://cdn.besynchro.com/genesis/images/genesis-lp-pattern.jpg") center;
+      background-size: cover;
+      padding: $gutter-desktop;
+      @include sm-screen {
+        padding: $gutter-tablet;
+      }
+      @include s-screen {
+        padding: $gutter-mobile;
+      }
 
-.genesis-benefits {
-  text-align: center;
-
-  &__item {
-    margin-bottom: 40px;
-  }
-
-  &__img {
-    max-width: 130px;
-  }
-
-  &__header {
-    margin: 20px 0;
-  }
-}
-
-.genesis-ingredients {
-  text-align: left;
-
-  &__header {
-    background: url("https://cdn.besynchro.com/genesis/images/genesis-lp-pattern.jpg") center;
-    background-size: cover;
-    text-align: center;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-  }
-
-  &__keystone {
-    width: 100%;
-    text-align: center;
-    background-color: #f3f6f9;
-  }
-
-  &__keystone-img {
-    width: 70%;
-    margin: 40px 0;
-  }
-
-  &__info {
-    text-align: left;
-  }
-
-  &__item {
-    margin: 60px 0;
-
-    .p--title {
-      text-align: left;
-
-      &:after {
-        margin-left: 0;
+      img {
+        max-height: 685px;
       }
     }
 
-    .p--text {
+    &__directions {
+      padding: $gutter-desktop $gutter-desktop 0;
+      @include m-screen {
+        padding: $gutter-mobile $gutter-mobile 0;
+      }
+
+      &__wrapper {
+        background: $color-gray-light;
+        text-align: center;
+        font-size: 0;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      &__copy {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 $gutter-desktop $gutter-desktop;
+        @include m-screen {
+          padding: 0 $gutter-tablet $gutter-tablet;
+        }
+        @include sm-screen {
+          padding-bottom: 0;
+          width: 100%;
+        }
+        @include s-screen {
+          padding: 0 $gutter-mobile $gutter-mobile;
+        }
+      }
+
+      &__image-box {
+        width: 50%;
+        background: url("https://cdn.besynchro.com/genesis/images/glass-600px.jpg") center;
+        display: inline-block;
+        background-size: cover;
+        @include sm-screen {
+          background: none;
+          width: 100%;
+        }
+      }
+
+      &__image {
+        visibility: hidden;
+        @include sm-screen {
+          visibility: visible;
+          width: 100%;
+        }
+      }
+    }
+
+    .genesis-atf {
+      display: table;
+      background: url("https://storage.googleapis.com/synchro-assets/genesis/images/DSC03486(edited).jpg");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 720px;
+      background-size: auto 760px;
+      @include s-screen {
+        background-image: url("https://storage.googleapis.com/synchro-assets/genesis/images/genesis-lp-small.jpg");
+      }
+
+      &__text {
+        display: table-cell;
+        vertical-align: middle;
+        @include s-screen {
+          display: initial;
+        }
+      }
+
+      .p--header {
+        font-size: 50px;
+        text-align: left;
+        max-width: 500px;
+        @include sm-screen {
+          font-size: 38px;
+          max-width: 350px;
+        }
+        @include s-screen {
+          text-align: center;
+          padding-top: 100px;
+          margin: 0 auto;
+          max-width: none;
+        }
+      }
+    }
+
+    .genesis-ingredients {
       text-align: left;
-    }
-  }
 
-  &__img {
-    max-width: 100%;
-  }
-}
+      &__header {
+        background: url("https://cdn.besynchro.com/genesis/images/genesis-lp-pattern.jpg") center;
+        background-size: cover;
+        text-align: center;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+      }
 
-.genesis-facts {
-  text-align: center;
-  background: url("https://cdn.besynchro.com/genesis/images/genesis-lp-pattern.jpg") center;
-  background-size: cover;
+      &__keystone {
+        width: 100%;
+        text-align: center;
+      }
 
-  img {
-    max-height: 685px;
-    max-width: 90%;
-  }
-}
+      &__keystone-img {
+        width: 70%;
+        margin: 40px 0;
+      }
 
-.genesis-use {
-  .p--title {
-    text-align: left;
+      &__info {
+        text-align: left;
+      }
 
-    &:after {
-      margin-left: 0;
-    }
-  }
+      &__item {
+        margin: 60px 0;
 
-  &__img {
-    width: 100%;
-    max-width: 600px;
-    @include s-screen {
-      margin-top: 50px;
-    }
-  }
-}
+        .p--title {
+          text-align: left;
 
-.purchase {
-  .ch-buy-link {
-    margin: 30px;
-  }
-}
-// CTA Section
+          &:after {
+            margin-left: 0;
+          }
+        }
 
-.cta-section {
-  background-image: url("https://cdn.besynchro.com/genesis/images/genesis-lp-pattern.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 120px 0;
-  text-align: center;
+        .p--text {
+          text-align: left;
+        }
+      }
 
-  &__brandname {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    letter-spacing: 4px;
-    font-size: 18px;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  &__title {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-size: 44px;
-    margin: 20px 60px 30px;
-    font-weight: 300;
-    line-height: 1.4;
-    -webkit-font-smoothing: antialiased;
-    @include s-screen {
-      font-size: 40px;
-    }
-  }
-
-  &__cta {
-    padding: 15px 30px;
-    background: #fff;
-    color: #000;
-
-    &:hover {
-      background: #000;
-      color: #fff;
+      &__img {
+        max-width: 100%;
+      }
     }
   }
 }
