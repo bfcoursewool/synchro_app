@@ -14,7 +14,8 @@
   .atf {
     &.bg-full-width {
       height: 738px;
-      max-height: 100vh;
+      max-height: 80vh;
+      width: 100%;
       background: url("https://cdn.besynchro.com/gold/v2-0/gold-atf@2x.jpg");
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
@@ -22,6 +23,10 @@
       background-repeat: no-repeat;
       background-size: cover;
       transition: 0s linear;
+      @include s-screen {
+        background-attachment: scroll;
+        background-size: 1300px;
+      }
 
       .p--header {
         opacity: 0;
