@@ -13,59 +13,48 @@
 
   .atf {
     &.bg-full-width {
-      height: 738px;
-      max-height: 80vh;
-      width: 100%;
-      background: url("https://cdn.besynchro.com/gold/v2-0/gold-atf@2x.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-atf@2x.jpg");
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
-      background-position: center top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transition: 0s linear;
       @include s-screen {
         background-attachment: scroll;
-        background-size: 1300px;
+        background-size: auto 900px;
       }
+    }
 
-      .p--header {
-        opacity: 0;
-        margin: 0;
-        color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        font-size: 60px;
-        text-transform: lowercase;
-        text-align: center;
-        font-weight: $font-normal;
-        text-shadow: 1.6px 1.9px 0 rgba(0, 0, 0, 0.1);
-        transition: opacity 0.75s ease-in-out;
+    &__header {
+      text-transform: lowercase;
+      color: #fff;
+      text-shadow: 1.6px 1.9px 0 rgba(0, 0, 0, 0.1);
+    }
 
-        &.animate-in {
-          opacity: 1;
-        }
-        @include s-screen {
-          top: 45%;
-          font-size: #{50/16} * 1rem;
-        }
+    .down-arrow {
+      opacity: 0;
+      width: 19px;
+      bottom: 100px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      transition: opacity 0.75s ease-in-out, bottom 0.75s ease-in-out;
+
+      &.animate-in {
+        bottom: 70px;
+        opacity: 1;
       }
-
-      .down-arrow {
-        opacity: 0;
-        width: 19px;
-        bottom: 100px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        transition: opacity 0.75s ease-in-out, bottom 0.75s ease-in-out;
-
-        &.animate-in {
-          bottom: 70px;
-          opacity: 1;
-        }
-      }
+    }
+    // wave bottom
+    &:after {
+      content: "";
+      background-image: url("https://cdn.besynchro.com/gold/v2-0/atf-bottom-wave@2x.png");
+      background-color: transparent;
+      height: 45px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      background-repeat: repeat-x;
+      background-size: auto 45px;
+      background-position-x: center;
+      z-index: $header-z-index - 10;
     }
   }
 

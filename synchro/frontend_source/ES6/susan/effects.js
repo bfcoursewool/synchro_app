@@ -16,7 +16,7 @@ export default () => {
     delay: 1000,
     distance: 0,
     afterReveal: () => {
-      $('.atf .p--header').addClass('animate-in');
+      $('.atf .atf__header').addClass('animate-in');
       setTimeout(() => {
         $('.atf .down-arrow').addClass('animate-in');
       }, 1000)
