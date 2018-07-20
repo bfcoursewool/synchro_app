@@ -2,53 +2,15 @@ body {
   font-family: $font-primary;
   margin: 0 auto;
   max-width: 2000px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: $shadow-white-div;
 }
 
 a {
   text-decoration: none;
   color: initial;
-}
 
-// These styles are to be phased out
-.p--white {
-  color: #fff;
-}
-
-.p--bold {
-  font-weight: bold;
-}
-
-.p--italic {
-  font-style: italic;
-}
-
-.p--strike {
-  text-decoration: line-through;
-}
-
-.p--color {
-  color: #7f4c9b;
-}
-
-.bg--ltgrey {
-  background: #F6F8FB;
-}
-
-.right {
-  float: right;
-}
-
-.left {
-  float: left;
-}
-
-a.anchor {
-  position: relative;
-  top: -55px;
-}
-
-.zfloat {
-  position: relative;
-  z-index: 100;
+  &.anchor {
+    position: relative;
+    top: -65px;
+  }
 }

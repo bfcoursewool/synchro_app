@@ -10,7 +10,7 @@
       background-image: url("https://cdn.besynchro.com/genesis/v2-0/atf-image-genesis.jpg");
       max-height: none;
       @include sm-screen {
-        background-image: url("https://cdn.besynchro.com/genesis/v2-0/atf-image-genesis-small.jpg");
+        background-image: url("https://cdn.besynchro.com/genesis/v2-0/atf-image-small-genesis.jpg");
         background-position: center;
       }
     }
@@ -38,26 +38,65 @@
     }
   }
 
-  .purchase {
-    .option-1 {
-      background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-1.png");
-    }
+  .ingredients {
+    &__genesis {
+      font-size: 0;
+      padding: 0 $gutter-desktop $gutter-desktop;
+      @include s-screen {
+        padding: 0 $gutter-mobile $gutter-desktop;
+      }
 
-    .option-2 {
-      background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-2.png");
-    }
+      &-keystone-img {
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+        padding: $gutter-desktop;
+        @include m-screen {
+          display: block;
+          width: auto;
+          max-width: 70%;
+          margin: 0 auto;
+          padding: $gutter-tablet;
+          @include s-screen {
+            max-width: 100%;
+            padding: $gutter-mobile;
+          }
+        }
+      }
 
-    .option-3 {
-      background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-bag.png");
-    }
+      &-keystone {
+        display: inline-block;
+        width: 50%;
+        text-align: left;
+        vertical-align: middle;
+        @include m-screen {
+          width: 100%;
+          text-align: center;
+        }
+      }
 
-    .discount {
-      @include discount ($color-genesis)
+      &-details {
+        box-shadow: 5px 5px 0 $color-gray-dark;
+        margin: 40px 0;
+        border: 2px solid $color-gray-dark;
+      }
+
+      &-info {
+        display: inline-block;
+        width: 50%;
+        padding: 0 40px;
+        text-align: left;
+        border-right: 2px solid $color-gray-dark;
+
+        &:last-child {
+          border: none;
+        }
+      }
     }
   }
 
-  .genesis {
-    &__facts {
+  .facts {
+    &__genesis {
       text-align: center;
       background: url("https://cdn.besynchro.com/genesis/v2-0/bg-pattern-genesis.jpg") center;
       background-size: cover;
@@ -73,14 +112,16 @@
         max-height: 685px;
       }
     }
+  }
 
-    &__directions {
+  .directions {
+    &__genesis {
       padding: $gutter-desktop $gutter-desktop 0;
       @include m-screen {
         padding: $gutter-mobile $gutter-mobile 0;
       }
 
-      &__wrapper {
+      &-wrapper {
         background: $color-gray-light;
         text-align: center;
         font-size: 0;
@@ -88,7 +129,7 @@
         margin: 0 auto;
       }
 
-      &__copy {
+      &-copy {
         width: 50%;
         display: inline-block;
         vertical-align: middle;
@@ -104,7 +145,7 @@
         }
       }
 
-      &__image-box {
+      &-image-box {
         width: 50%;
         background: url("https://cdn.besynchro.com/genesis/v2-0/directions-genesis.jpg") center;
         display: inline-block;
@@ -115,7 +156,7 @@
         }
       }
 
-      &__image {
+      &-image {
         visibility: hidden;
         max-height: 600px;
         @include sm-screen {
@@ -124,50 +165,23 @@
         }
       }
     }
-    // to be phased out
-    .genesis-ingredients {
-      text-align: left;
+  }
 
-      &__header {
-        background: url("https://cdn.besynchro.com/genesis/images/genesis-lp-pattern.jpg") center;
-        background-size: cover;
-        text-align: center;
-        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-      }
+  .purchase {
+    .option-1 {
+      background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-1.png");
+    }
 
-      &__keystone {
-        width: 100%;
-        text-align: center;
-      }
+    .option-2 {
+      background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-2.png");
+    }
 
-      &__keystone-img {
-        width: 70%;
-        margin: 40px 0;
-      }
+    .option-3 {
+      background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-bag.png");
+    }
 
-      &__info {
-        text-align: left;
-      }
-
-      &__item {
-        margin: 60px 0;
-
-        .p--title {
-          text-align: left;
-
-          &:after {
-            margin-left: 0;
-          }
-        }
-
-        .p--text {
-          text-align: left;
-        }
-      }
-
-      &__img {
-        max-width: 100%;
-      }
+    .discount {
+      @include discount ($color-genesis)
     }
   }
 }

@@ -39,3 +39,20 @@
   font-size: 21px;
   margin: 1em auto;
 }
+
+// Quick-access classes
+.p--demi {
+  font-weight: $font-demi;
+}
+
+.p--bold {
+  font-weight: $font-bold;
+}
+
+.p--italic {
+  font-style: italic;
+}
+
+.p--strike {
+  text-decoration: line-through;
+}
