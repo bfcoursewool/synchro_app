@@ -14,10 +14,13 @@
     <link rel="shortcut icon" href="https://cdn.besynchro.com/global/fav-icon.png">
     <link href="{{ url_for('static', filename='synchro.css') }}" rel="stylesheet">
 
+    <!-- Fonts -->
+
     <link rel="stylesheet" href="https://use.typekit.net/ytz3drb.css">
 
-    <!--<script src=“https://use.typekit.net/ytz3drb.js“></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/b3f7794244.js"></script>
 
     {% if kENV == 'production' %}
     <script type="text/javascript">
@@ -56,22 +59,6 @@
       ga('send', 'pageview');
     </script>
 
-    <!-- KM Snippet -->
-    <script type="text/javascript">
-      var _kmq = _kmq || [];
-      var _kmk = _kmk || 'a1d477ea6135e5cb56c1951d70f32c7e1c9253e2';
-      function _kms(u){
-        setTimeout(function(){
-          var d = document, f = d.getElementsByTagName('script')[0],
-          s = d.createElement('script');
-          s.type = 'text/javascript'; s.async = true; s.src = u;
-          f.parentNode.insertBefore(s, f);
-        }, 1);
-      }
-      _kms('//i.kissmetrics.com/i.js');
-      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
-    </script>
-
     <!-- Bing Ads UET Javascript tag -->
     <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5858604"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5858604&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
 
@@ -98,36 +85,6 @@
       pintrk('track', 'pagevisit');
     </script>
     <!-- End Track PageVisit -->
-
-    <!-- VWO integration w/ KM -->
-    <script type="text/javascript">
-    var _vis_opt_queue = window._vis_opt_queue || [], _vis_counter = 0, _kmq = _kmq || [];
-    _vis_opt_queue.push(function() {
-      try {
-        if(!_vis_counter) {
-          var _vis_data = {},_vis_combination,_vis_id,_vis_l=0;
-          for(;_vis_l<_vwo_exp_ids.length;_vis_l++) {
-            _vis_id = _vwo_exp_ids[_vis_l];
-            if(_vwo_exp[_vis_id].ready) {
-              _vis_combination = _vis_opt_readCookie('_vis_opt_exp_'+_vis_id+'_combi');
-              if(typeof(_vwo_exp[_vis_id].combination_chosen) != "undefined")
-                _vis_combination = _vwo_exp[_vis_id].combination_chosen;
-              if(typeof(_vwo_exp[_vis_id].comb_n[_vis_combination]) != "undefined") {
-                _vis_data['VWO-Test-ID-'+_vis_id] = _vwo_exp[_vis_id].comb_n[_vis_combination];
-                _vis_counter++;
-              }
-            }
-          }
-          // Use the _vis_data object created above to fetch the data,
-          // key of the object is the Test ID and the value is Variation Name
-          if(_vis_counter) _kmq.push(['set', _vis_data]);
-        }
-      }
-      catch(err) {};
-    });
-    </script>
-
-
 
     <!-- BEGIN PRIVY WIDGET CODE -->
     <script type='text/javascript'> var _d_site = _d_site || 'A0D1801C5174012EDAB8AB32'; </script>
