@@ -14,132 +14,27 @@ from synchro import const
 landing_pages = Blueprint('landing_pages', __name__)
 
 endpoint_info_dict = {
+  'gold': {
+    'v2': {
+      'template': 'landing_pages/gold/v2-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    }
+  },
   'genesis': {
-    'v0': {
-      'template': 'landing_pages/genesis/v1-0/0-index.html',
-    },
-    '1': {
+    'v2': {
       'template': 'landing_pages/genesis/v2-0/0-index.html',
       'template_vars': {
-        'is_variant': True,
+        'is_variant': False,
       }
     }
   },
   'cognos': {
-    'v0': {
-      'template': 'landing_pages/cognos/cognos.html',
-    }
-  },
-  'salt': {
-    'v0': {
-      'template': 'landing_pages/salt/salt.html',
-      'scripts': []
-    }
-  },
-  'gold': {
-    'v0': {
-      'template': 'landing_pages/gold/v2-0/0-index.html',
-      'template_vars': {
-         'is_variant': False,
-      }
-    },
-    'old-gold': {
-      'template': 'landing_pages/gold/gold_organic.html',
-      'scripts': [videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-lg-video-poster2.png',
-        'stylesheet': 'gold/gold_lemon-ginger.css'
-      }
-    },
-    '1': {
-      'template': 'landing_pages/gold/v2-0/0-index.html',
-      'template_vars': {
-         'is_variant': True,
-      }
-    },
-    '2': {
-        'template': 'landing_pages/gold/v2-0/0-index.html',
-        'template_vars': {
-         'is_variant': True,
-      },
-    }
-  },
-  'digestcleanse': {
-    'v0': {
-      'template': 'landing_pages/digestcleanse/digestcleanse.html',
-    },
     'v1': {
-      'template': 'landing_pages/digestcleanse/digestcleanse_v1.html',
-    }
-  },
-  'cro002': {
-    'v1': {
-      'template': 'landing_pages/gold/abtests/cro_002/variant_1.html',
-      'scripts': [videojsie8, videojsga],
+      'template': 'landing_pages/cognos/v1-0/0-index.html',
       'template_vars': {
-        'is_variant': True,
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-      }
-    },
-    'v2': {
-      'template': 'landing_pages/gold/abtests/cro_002/variant_2.html',
-      'scripts': [videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-      }
-    }
-  },
-  'cro004': {
-    'v1': {
-      'template': 'landing_pages/gold/abtests/cro_004/variant_1.html',
-      'scripts': [videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    'v2': {
-      'template': 'landing_pages/gold/abtests/cro_004/variant_2.html',
-      'scripts': [videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-      }
-    },
-    'v3': {
-      'template': 'landing_pages/gold/abtests/cro_004/variant_3.html',
-      'scripts': [videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-      }
-    }
-  },
-  'cro005': {
-    'v1': {
-      'template': 'landing_pages/gold/abtests/cro_005/variant_1.html',
-      'scripts': [videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
-  'cro006': {
-    'v1': {
-      'template': 'landing_pages/gold/abtests/cro_006/variant_1.html',
-      'scripts': [videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
-  'cro007': {
-    'v1': {
-      'template': 'landing_pages/gold/abtests/cro_007/variant_1.html',
-      'scripts': [videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
+        'is_variant': False,
       }
     }
   }
