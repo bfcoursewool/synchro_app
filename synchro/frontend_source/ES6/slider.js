@@ -7,8 +7,12 @@ export default (selector) => {
       infinite: true,
       speed: 300,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 14000,
       arrows: false
     });
+    $(selector).on('afterChange', (event, slick, currentSlide, nextSlide) => {
+      let speed = $(slick.$slides[currentSlide]).data('time')
+      $(selector).slick('slickSetOption', 'autoplaySpeed', speed)
+    })
   }
 }
