@@ -1,0 +1,92 @@
+@import 'gold/gold_video';
+
+.testimonials {
+
+  &__gold-testimonial {
+    background-image: linear-gradient(-90deg, #f1cd1e 0%, #F4922C 100%);
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  &__content {
+    margin: 40px 0 10px;
+
+    @include sm-screen {
+      padding: 0 40px;
+    }
+  }
+
+  &__image {
+    width: 60px;
+
+    @include sm-screen {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    @include s-screen {
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__testimonial {
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 40px;
+    position: relative;
+    quotes: "\201C""\201D";
+
+    @include sm-screen {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    @include s-screen {
+      width: initial;
+    }
+
+    &:before {
+      content: open-quote;
+      position: absolute;
+      left: -30px;
+      top: -10px;
+      font-family: Georgia, serif;
+      font-size: 48px;
+      color: #CD8B0E;
+    }
+
+    &:after {
+      @include s-screen {
+        content: close-quote;
+        position: absolute;
+        right: -30px;
+        top: -10px;
+        font-family: Georgia, serif;
+        font-size: 48px;
+        color: #CD8B0E;
+      }
+    }
+  }
+
+  &__quote {
+    line-height: 1.5;
+    color: #fff;
+    font-size: 18px;
+
+    @include s-screen {
+      text-align: center;
+    }
+  }
+
+  &__name {
+    line-height: 40px;
+    text-align: right;
+    color: #fff;
+
+    @include s-screen {
+      text-align: center;
+    }
+  }
+}

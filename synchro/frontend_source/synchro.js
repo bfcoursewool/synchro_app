@@ -1,3 +1,4 @@
+import './scss/synchro.scss';
 import LPEffects from './ES6/effects';
 //import BuyButton from './ES6/ShopifyBuyButton/buy_button';
 import FaceBookPixel from './ES6/analytics/facebook_pixel';
@@ -9,6 +10,8 @@ import Tabs from './ES6/tabs';
 import Slider from './ES6/slider';
 import { loadHeroImg } from './ES6/hero_image';
 import susanEffects from './ES6/susan/effects';
+
+console.log(`release_tag: ${process.env.RELEASE_TAG}`)
 
 const lpEffectsObj = new LPEffects();
 const fbPixelObj = new FaceBookPixel(); 

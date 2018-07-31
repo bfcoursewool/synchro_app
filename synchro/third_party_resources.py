@@ -4,16 +4,6 @@ from fanstatic import Resource
 from fanstatic import Group
 import time
 
-vivus = Resource(
-  library_resources,
-  'vivus/dist/vivus.min.js' 
-)
-
-d3js = Resource(
-  library_resources,
-  'd3/d3.min.js' 
-)
-
 jquery = Resource(
   library_resources,
   'jquery/jquery-3.1.1.min.js'
@@ -63,11 +53,6 @@ shopify_buy_button = Resource(
   library_resources,
   'shopify/buybutton.js',
   depends=[]
-)
-
-wowjs = Resource(
-  library_resources,
-  'wow/wow.min.js',
 )
 
 '''

@@ -1,0 +1,15 @@
+.text-full-width {
+  background: $color-gray-light;
+  text-align: center;
+  padding: $gutter-tablet $gutter-desktop;
+  @include s-screen {
+    padding: $gutter-mobile;
+  }
+
+  .p--text {
+    max-width: 900px;
+    @include sm-screen {
+      max-width: 90%;
+    }
+  }
+}

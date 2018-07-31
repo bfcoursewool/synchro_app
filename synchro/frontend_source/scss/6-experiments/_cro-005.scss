@@ -1,0 +1,135 @@
+@import '../synchro';
+
+.cro005-1 {
+
+	.purchase {
+
+		padding-top: 0;
+	}
+
+	.purchase--item {
+
+		height: 670px !important;
+		padding: 0 !important;
+
+		&__premium {
+
+			.false-background--inner {
+				background: #fbfaf9;
+			}
+
+			.premium--content--wrapper {
+				background: #fbfaf9;
+			}
+
+			.premium--img--wrapper {
+				height: 220px;
+				width: 100%;
+				top: 62px;
+				background-position: center center;
+				background-repeat: no-repeat;
+				margin-top: 0;
+				background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-plan-gold.svg');
+				background-size: 320px;
+			}
+
+			.purchase--item--pricing {
+				@include xs-screen {
+					top: 430px;
+				}
+			}
+
+			.button--wrapper {
+				@include xs-screen {
+					top: 590px !important;
+				}
+			}
+		}
+
+		&--title,
+		&--qty {
+			margin-top: 20px;
+
+		}
+
+		&--img {
+			height: 220px;
+			width: 100%;
+			top: 62px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			margin-top: 0;
+
+			&.option-1 {
+				background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/starter-kit-Gold.svg')
+			}
+
+			&.option-3 {
+				background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/four-bottles.svg')
+			}
+		}
+
+		&--info {
+			top: 255px;
+		}
+
+		&--cancel {
+			font-size: 14px;
+			margin-top: 14px;
+			font-style: italic;
+			color: #4e4e4e;
+		}
+
+		&--pricing {
+			top: 410px;
+
+			@include sm-screen {
+				top: 430px;
+			}
+
+			@include xs-screen {
+				top: 380px;
+			}
+		}
+
+		&--off {
+
+			font-weight: bold;
+			text-transform: uppercase;
+
+			span {
+				font-weight: normal;
+				text-decoration: line-through;
+			}
+		}
+
+		&--price {
+			margin-top: 15px;
+			opacity: 0.9;
+			font-size: 64px;
+			line-height: 72px;
+
+			@include sm-screen {
+				font-size: 53px;
+				line-height: 60px;
+			}
+
+			&.premium-animate {
+				opacity: 1;
+				font-size: 72px;
+
+				@include sm-screen {
+					font-size: 60px;
+				}
+			}
+		}
+
+		.button--wrapper {
+			top: 590px;
+
+			@include xs-screen {
+				top: 550px;
+			}
+		}
+	}
+}

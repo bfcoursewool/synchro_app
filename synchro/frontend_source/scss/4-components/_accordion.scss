@@ -1,0 +1,82 @@
+.accordion-horizontal {
+  input {
+    display: none;
+  }
+
+  &__title {
+    display: block;
+    cursor: pointer;
+    margin: 0;
+    padding: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__text-box {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    // -webkit-transition: width 0.25s linear, opacity 0.2s linear;
+    // transition: width 0.25s linear, opacity 0.3s linear;
+    opacity: 0;
+  }
+
+  &__box {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+    @include m-screen {
+      width: 70%;
+      margin: 10px 0;
+    }
+    @include s-screen {
+      width: 100%;
+    }
+
+    &:hover {
+      box-shadow: 5px 5px 0 0 $color-gray-dark;
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  &__inner-box {
+    border: 2px solid $color-gray-dark;
+    display: inline-block;
+    text-align: left;
+    @include m-screen {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  input:checked + &__inner-box {
+    box-shadow: 5px 5px 0 0 $color-gray-dark;
+    padding: 20px 20px 0;
+
+    .accordion-horizontal__title {
+      padding: 0;
+      // color: #fff;
+    }
+
+    .accordion-horizontal__text-box {
+      width: 600px;
+      height: auto;
+      opacity: 1;
+      @include l-screen {
+        width: 300px;
+      }
+      @include m-screen {
+        width: auto;
+      }
+    }
+
+    .accordion-horizontal__text {
+      // color: #fff;
+    }
+  }
+}

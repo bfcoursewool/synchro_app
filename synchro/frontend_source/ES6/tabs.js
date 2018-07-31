@@ -27,7 +27,7 @@ const getTabData = element => ({
 });
 
 const hideTabs = tabId => {
-  /* $(`.tab-pane[data-tabs=${tabId}]`).removeClass('active'); */
+  $(`.tab-pane[data-tabs=${tabId}]`).removeClass('active');
 
   $(`.tab-box[data-tabs=${tabId}]`).removeClass('active');
 

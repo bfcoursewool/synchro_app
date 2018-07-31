@@ -1,0 +1,238 @@
+/* .bg-full-width {
+  background-image: url('https://cdn.besynchro.com/cognos/assets-hero-3.jpg');
+  background-attachment: fixed;
+  background-position-x: 0px;
+  background-position-y: -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0s linear;
+  transition-property: background-position-y;
+}
+
+svg.external {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+}
+
+.main-header-container {
+  height: 0;
+
+  .main-header {
+    background: none;
+    text-align: center;
+
+    &.floated {
+      background: -webkit-linear-gradient(45deg, rgb(104, 126, 203), rgb(105, 0, 211));
+
+      .main-header__logo {
+        float: left;
+        margin-top: 17px;
+      }
+
+      .main-navigation {
+        float: right;
+        margin: 10px 0;
+      }
+    }
+
+    &__logo {
+
+      margin: 15px 0 0;
+
+      .cognos-logo {
+        fill: #fff;
+        height: 30px;
+      }
+    }
+
+    .main-navigation {
+      float: none;
+      display: block;
+
+      &__mobile {
+        float: left;
+      }
+
+      &__hamburger {
+        background-color: #fff;
+      }
+
+      &__item {
+        color: #fff;
+      }
+
+      .a--cta {
+        background: none;
+        border: 1px solid #fff;
+      }
+    }
+  }
+}
+
+.fixed-top-border {
+
+}
+
+.atf {
+  &.bg-full-width {
+    position: relative;
+    height: 750px;
+
+    .p--header {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    .down-arrow {
+      width: 19px;
+      bottom: 30px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+}
+
+#gradient-header {
+  display:none;
+
+  &.show {
+    display:block;
+  }
+}
+
+.gradient-layer {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .75;
+}
+
+#gradient {
+  width: 100%;
+  overflow: hidden;
+}
+
+.intro {
+  text-align: center;
+
+  .p--text {
+    font-size: 20px;
+  }
+}
+
+.benefits .carousel-with-nav {
+
+  &__content {
+    background: linear-gradient(100deg, #773872 10%, #5c40e8 90%);
+    padding: 40px;
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+
+    &.position--right {
+      background: linear-gradient(100deg, #5c40e8 10%, #773872 90%);
+      right: 0;
+    }
+
+    .p--header {
+      color: #fff;
+    }
+
+    .p--text {
+      color: #fff;
+    }
+  }
+
+  &__img {
+    width: 83px;
+    text-align: center;
+  }
+
+}
+
+.about {
+  text-align: center;
+
+  .p--header {
+    text-transform: none;
+    color: #751e85;
+  }
+
+  //.line-wavy {
+    //background-image: url('https://cdn.besynchro.com/cognos/wave-line-purple@2x.png');
+    //background-image: url("data:image/svg+xml;charset=utf8, <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events'><path fill='none' stroke='grey' stroke-width='1' class='st0' d='M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80 Z'/></svg>");
+    //width: 300px;
+    //margin: 20px auto;
+  //}
+}
+
+.wave-container {
+  height: 40px;
+}
+
+.line-wavy {
+  height: 100%;
+  //background-image: url('https://cdn.besynchro.com/cognos/wave-line@2x.png');
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' width='190px' height='160px'><style type='text/css'>.st0{animation:shift 3s linear infinite;}@keyframes shift {from {transform:translateX(-100%);}to {transform:translateX(0);}}</style><path fill='none' stroke='black' stroke-width='5' class='st0' d='M10 80 C 40 10, 65 10, 95 80 S 150 150 S 150 150, 180 80 Z'/></svg>");
+  background-size: 40px 35px;
+  background-repeat: repeat-x;
+  border: 0;
+}
+
+.ingredients {
+  text-align: left;
+
+  &__img-box {
+    height: 450px;
+  }
+
+  .p--header {
+    position: relative;
+
+    .superscript {
+      position: absolute;
+      font-size: 20px;
+      top: 0;
+      left: -1em;
+      color: #7f4c9b;
+    }
+  }
+}
+
+.faq {
+
+  &__text {
+    text-align: center;
+  }
+}
+
+.footer {
+  text-align: center;
+  text-transform: none;
+  background: #F6F8FB;
+  padding: 0;
+
+  .synchro-logo {
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+    fill: #c6c6c6;
+  }
+
+  .bottom-border {
+    margin-top: 40px;
+    height: 12px;
+    background: linear-gradient(100deg, #015caf 10%, #751e85 90%);
+  }
+}
+*/

@@ -1,3 +1,4 @@
+import { WOW } from 'wowjs';
 import EventsBase from './events_base';
 
 export default class LPEffects extends EventsBase {

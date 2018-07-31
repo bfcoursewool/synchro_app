@@ -1,0 +1,67 @@
+@import '../synchro';
+
+.cro006-1 {
+
+	.purchase {
+
+		.purchase--item {
+			height: 620px;
+
+			@include s-screen {
+				height: 600px;
+				border-bottom: 1px solid #e2e2e2;
+			}
+
+			&__premium {
+				height: 640px;
+
+				@include s-screen {
+					height: 560px;
+					border-bottom: 0;
+					margin-top: 70px;
+				}
+
+				.premium--img--wrapper {
+					background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-four-bottles-highlighted.svg');
+					background-size: 280px;
+
+					@include sm-screen {
+						background-size: initial;
+					}
+				}
+
+				.button--wrapper {
+					@include xs-screen {
+						top: 490px !important;
+					}
+				}
+			}
+
+			&--img {
+
+				&.option-1 {
+					background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/gold-one-bottle.svg')
+				}
+
+				&.option-2 {
+					background-image: url('https://storage.googleapis.com/synchro-assets/gold/susan/starter-kit-Gold.svg')
+				}
+			}
+
+			&--pricing {
+
+				@include s-screen {
+					top: 370px;
+				}
+			}
+
+			.button--wrapper {
+				top: 560px;
+
+				@include s-screen {
+					top: 490px;
+				}
+			}
+		}
+	}
+}

@@ -8,165 +8,51 @@ from flask import (
   redirect
 )
 from synchro.third_party_resources import bootstrap, bootstrap_css
-from synchro.resources import synchro_es6
-from synchro.third_party_resources import videojsga, videojsie8, d3js, vivus
+from synchro.third_party_resources import videojsga, videojsie8
 from synchro import const
 
 landing_pages = Blueprint('landing_pages', __name__)
 
 endpoint_info_dict = {
-  'genesis': {
+  'gold': {
     'v0': {
-      'template': 'landing_pages/genesis/genesis.html',
-      'scripts': [synchro_es6],
+      'template': 'landing_pages/gold/v2-0/0-index.html',
       'template_vars': {
-        'stylesheet': 'genesis/genesis.css'
+        'is_variant': False,
       }
     },
-    '1': {
-      'template': 'landing_pages/genesis/genesis.html',
-      'scripts': [synchro_es6],
+    'v2': {
+      'template': 'landing_pages/gold/v2-0/0-index.html',
       'template_vars': {
-        'is_variant': True,
-        'stylesheet': 'genesis/genesis.css'
+        'is_variant': False,
+      }
+    }
+  },
+  'genesis': {
+    'v0': {
+      'template': 'landing_pages/genesis/v2-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
+    'v2': {
+      'template': 'landing_pages/genesis/v2-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
       }
     }
   },
   'cognos': {
     'v0': {
-      'template': 'landing_pages/cognos/cognos.html',
-      'scripts': [synchro_es6],
+      'template': 'landing_pages/cognos/v1-0/0-index.html',
       'template_vars': {
-        'stylesheet': 'cognos/cognos.css'
+        'is_variant': False,
       }
-    }
-  },
-  'salt': {
-    'v0': {
-      'template': 'landing_pages/salt/salt.html',
-      'scripts': []
-    }
-  },
-  'gold': {
-    'v0': {
-      'template': 'landing_pages/gold/susan/index.html',
-      'scripts': [synchro_es6],
-      'template_vars': {
-         'is_variant': False,
-         'stylesheet': 'gold/susan/gold_susan.css'
-      }
-    },
-    'old-gold': {
-      'template': 'landing_pages/gold/gold_organic.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-lg-video-poster2.png',
-        'stylesheet': 'gold/gold_lemon-ginger.css'
-      }
-    },
-    '1': {
-      'template': 'landing_pages/gold/susan/index.html',
-      'scripts': [synchro_es6],
-      'template_vars': {
-         'is_variant': True,
-         'stylesheet': 'gold/susan/gold_susan.css'
-      }
-    },
-    '2': {
-        'template': 'landing_pages/gold/susan/index.html',
-        'scripts': [synchro_es6],
-        'template_vars': {
-         'is_variant': True,
-         'stylesheet': 'gold/susan/gold_susan.css'
-      },
-    }
-  },
-  'digestcleanse': {
-    'v0': {
-      'template': 'landing_pages/digestcleanse/digestcleanse.html',
-      'scripts': []
     },
     'v1': {
-      'template': 'landing_pages/digestcleanse/digestcleanse_v1.html',
-      'scripts': []
-    }
-  },
-  'cro002': {
-    'v1': {
-      'template': 'landing_pages/gold/abtests/cro_002/variant_1.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
+      'template': 'landing_pages/cognos/v1-0/0-index.html',
       'template_vars': {
-        'is_variant': True,
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/abtests/cro_002.css'
-      }
-    },
-    'v2': {
-      'template': 'landing_pages/gold/abtests/cro_002/variant_2.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/abtests/cro_002.css'
-      }
-    }
-  },
-  'cro004': {
-    'v1': {
-      'template': 'landing_pages/gold/abtests/cro_004/variant_1.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'stylesheet': 'gold/abtests/cro_004.css'
-      }
-    },
-    'v2': {
-      'template': 'landing_pages/gold/abtests/cro_004/variant_2.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/abtests/cro_004.css'
-      }
-    },
-    'v3': {
-      'template': 'landing_pages/gold/abtests/cro_004/variant_3.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'poster_image': 'http://cdn.besynchro.com/gold/gold-video-poster2.jpg',
-        'stylesheet': 'gold/abtests/cro_004.css'
-      }
-    }
-  },
-  'cro005': {
-    'v1': {
-      'template': 'landing_pages/gold/abtests/cro_005/variant_1.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'stylesheet': 'gold/abtests/cro_005.css'
-      }
-    }
-  },
-  'cro006': {
-    'v1': {
-      'template': 'landing_pages/gold/abtests/cro_006/variant_1.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'stylesheet': 'gold/abtests/cro_006.css'
-      }
-    }
-  },
-  'cro007': {
-    'v1': {
-      'template': 'landing_pages/gold/abtests/cro_007/variant_1.html',
-      'scripts': [synchro_es6, videojsie8, videojsga],
-      'template_vars': {
-        'is_variant': True,
-        'stylesheet': 'gold/abtests/cro_007.css'
+        'is_variant': False,
       }
     }
   }
@@ -194,14 +80,14 @@ def landing_page(page, version):
 
     ## Redirect to https if this isn't a health-checker request
     if request.headers.get('X-Forwarded-Proto', '').lower() != "https":
-      full_url = request.url 
+      full_url = request.url
       ssl_url = full_url.replace('http://', 'https://')
       return redirect(ssl_url)
 
   # Page and version can also be passed in as GET vars, for URL-formatting reasons
   if 'p' in request.args:
     page = request.args['p']
-  # Use the query param to set the version iff there is not a URL route doing the same. 
+  # Use the query param to set the version iff there is not a URL route doing the same.
   # ie, we want the URL route to take precedent over the query param... this is to make VWO work better.
   if 'v' in request.args and version == 'v0':
     version = request.args['v']
@@ -211,6 +97,7 @@ def landing_page(page, version):
     return ('', 200)
 
   # Fail if we don't have a valid page, and default to v0 if the version is invalid
+  print "Page:  %s" % page
   assert page in endpoint_info_dict
   if version not in endpoint_info_dict[page]:
     version = 'v0'
@@ -218,10 +105,9 @@ def landing_page(page, version):
   # Assert that each version entry in the info_dict contains both a template to render and a list of scripts to include.
   # A failed assertion should happen only during development, so this helps ensure developer consistency.
   assert 'template' in endpoint_info_dict[page][version]
-  assert 'scripts' in endpoint_info_dict[page][version]
 
   # Include all the JS assets we need.
-  for script in endpoint_info_dict[page][version]['scripts']:
+  for script in endpoint_info_dict[page][version].get('scripts', []):
     script.need()
   bootstrap.need()
   bootstrap_css.need()
@@ -236,4 +122,3 @@ def landing_page(page, version):
     kENV=const.kENVIRONMENT,
     **template_vars
   )
-

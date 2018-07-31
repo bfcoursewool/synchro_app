@@ -1,0 +1,133 @@
+.ingredients {
+  text-align: center;
+
+  &__icons {
+    background: #F2F2F2;
+    overflow: auto;
+    font-size: 0;
+    padding: 0 $gutter-desktop;
+    @include xs-screen {
+      padding: 0 $gutter-mobile;
+    }
+  }
+
+  &__icon-box {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    padding-bottom: 30px;
+    @include sm-screen {
+      width: 33%;
+    }
+    @include xs-screen {
+      width: 50%;
+    }
+
+    .p--text {
+      font-size: 16px;
+      color: #6C6C6C;
+      letter-spacing: 1px;
+      font-weight: $font-demi;
+      text-transform: uppercase;
+    }
+  }
+
+  &__icon {
+    max-width: 90px;
+  }
+}
+
+.ingredients {
+  &__items {
+    padding: 0 $gutter-desktop $gutter-desktop;
+    font-size: 0;
+    @include m-screen {
+      padding-left: $gutter-mobile;
+      padding-right: $gutter-mobile;
+      padding-bottom: $gutter-tablet;
+    }
+    @include s-screen {
+      padding-bottom: $gutter-mobile;
+    }
+  }
+
+  &__item-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 0 5%;
+    @include s-screen {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__image-box {
+    margin: 50px 0 30px;
+    @include s-screen {
+      height: auto;
+    }
+  }
+
+  &__image {
+    max-height: 220px;
+    max-width: 100%;
+  }
+
+  &__copy {
+    .p--header {
+      font-size: 35px;
+      border-width: 0 0 2px;
+    }
+  }
+}
+
+.gold-ingredients__img {
+  height: 100px;
+  -webkit-filter: drop-shadow(0 0 3px rgba(0,0,0,0.1));
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.1));
+  @include s-screen {
+    height: 70px;
+  }
+}
+
+.ingredients--extended-content {
+  padding-bottom: 70px;
+  margin-top: 20px;
+  @include s-screen {
+    margin-top: 0;
+  }
+
+  .extended-content--image {
+    padding-bottom: 47%;
+  }
+
+  .gold-ingredients__header {
+    font-size: 31px;
+    color: #4e4e4e;
+    margin-top: 20px;
+  }
+
+  .gold-ingredients__item,
+  .gold-ingredients__item__single {
+    vertical-align: top;
+    padding: 80px 50px 0;
+    @media (max-width: 480px) {
+      padding: 60px 20px 0;
+    }
+
+    .gold-ingredients__img {
+      transform: scale(0.8);
+    }
+
+    & + .gold-ingredients__item .gold-ingredients__img {
+      transform: none;
+    }
+  }
+
+  .gold-ingredients__img {
+    width: auto;
+    height: 100%;
+  }
+}

@@ -1,0 +1,288 @@
+{% extends "landing_pages/cognos/base.html" %}
+
+{% block content %}
+
+<!-- top navigation - GLOBAL -->
+<header class="main-header-container">
+  <div class="main-header">
+    <div id="gradient-header" class="gradient-layer"></div>
+    <div class="container-fluid">
+      <div class="row zfloat">
+        <button class="main-navigation__mobile hidden-lg-up">
+          <div class="main-navigation__hamburger"></div>
+          <div class="main-navigation__hamburger"></div>
+          <div class="main-navigation__hamburger"></div>
+        </button>
+        <div class="main-header__logo">
+          <svg class="cognos-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 12"><path d="M1.8 4C1.8 2.6 2.7 1.6 4 1.6 4.7 1.6 5.2 1.9 5.6 2.3L6.9 1.2C6.2 0.5 5.2 0 4 0 1.7 0 0 1.7 0 4 0 6.3 1.7 8.1 4 8.1 6.3 8.1 8 6.3 8 4L6.3 4C6.3 5.4 5.3 6.4 4 6.4 2.7 6.4 1.8 5.4 1.8 4ZM9 4C9 1.7 10.7 0 13 0 15.3 0 17 1.7 17 4 17 6.3 15.3 8.1 13 8.1 10.7 8.1 9 6.3 9 4ZM10.7 4C10.7 5.4 11.6 6.4 13 6.4 14.3 6.4 15.2 5.4 15.2 4 15.2 2.7 14.3 1.7 13 1.7 11.6 1.7 10.7 2.7 10.7 4ZM18 3.2C18 1.4 19.3 0 21.2 0 21.8 0 22.4 0.1 22.8 0.5L22.8 0.1 24.5 0.1 24.5 3.2C24.5 4.1 24.1 4.9 23.5 5.5 24.4 6.2 24.9 7.2 24.9 8.4 24.9 10.6 23.3 12 21.3 12 19.3 12 17.9 10.8 17.6 9L19.4 9C19.7 9.8 20.2 10.4 21.3 10.4 22.4 10.4 23.2 9.5 23.2 8.4 23.2 7.2 22.4 6.4 21.3 6.4 20.5 6.4 19.9 6.8 19.6 7.4L18.3 6.2C18.5 5.9 18.7 5.7 19.1 5.5 18.4 4.9 18 4.1 18 3.2ZM19.8 3.2C19.8 4.1 20.4 4.7 21.3 4.7 22.1 4.7 22.8 4.1 22.8 3.2 22.8 2.3 22.1 1.6 21.3 1.6 20.4 1.6 19.8 2.3 19.8 3.2ZM26.3 8L28.1 8 28.1 3.6C28.1 2.5 28.7 1.6 29.8 1.6 30.9 1.6 31.5 2.2 31.5 3.6L31.5 8 33.2 8 33.2 3.2C33.2 1.1 32.2 0 30.2 0 29.1 0 28.4 0.5 28.1 1L28.1 0.1 26.3 0.1 26.3 8ZM34.5 4C34.5 1.7 36.2 0 38.5 0 40.9 0 42.6 1.7 42.6 4 42.6 6.3 40.9 8.1 38.5 8.1 36.2 8.1 34.5 6.3 34.5 4ZM36.3 4C36.3 5.4 37.2 6.4 38.5 6.4 39.9 6.4 40.8 5.4 40.8 4 40.8 2.7 39.9 1.7 38.5 1.7 37.2 1.7 36.3 2.7 36.3 4ZM43.6 5.4C43.6 6.9 44.7 8.1 46.3 8.1 47.9 8.1 49 7 49 5.4 49 4.1 48.3 3.5 47.5 3.2 46.6 2.9 45.8 2.9 45.8 2.2 45.8 1.9 46 1.5 46.4 1.5 46.7 1.5 46.9 1.7 47.1 2.1L48.1 1C47.7 0.4 47.1 0 46.3 0 45.1 0 44.1 0.9 44.1 2.2 44.1 3.4 45 4.1 45.7 4.3 46.5 4.5 47.3 4.6 47.3 5.4 47.3 6.1 46.9 6.4 46.3 6.4 45.8 6.4 45.2 6 45.2 5.4L43.6 5.4Z"/></svg>
+        </div>
+        <nav class="main-navigation">
+          <a class="main-navigation__item" href="#overview">Overview</a>
+          <a class="main-navigation__item" href="#benefits">Benefits</a>
+          <a class="main-navigation__item" href="#ingredients">Ingredients</a>
+          <a class="main-navigation__item" href="#use">Use</a>
+          <a class="main-navigation__item" href="#reviews">Reviews</a>
+          <a class="main-navigation__item" href="#faq">FAQ</a>
+          <a class="a--cta" role="button" href="#purchase">Buy</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="fixed-top-border"></div>
+
+<section class="atf bg-full-width parallax">
+  <div class="container-fluid">
+    <div class="row">
+      <div id="gradient-atf" class="gradient-layer"></div>
+      <h1 class="p--header wow fadeIn" data-wow-duration="2s">It's about having more great ideas.</h1>
+      <a href="#overview"><img class="down-arrow wow fadeIn" data-wow-duration="2s" src="https://cdn.besynchro.com/cognos/down-arrow@2x.png"></a>
+    </div>
+  </div>
+</section>
+
+<a class="anchor" name="overview"></a>
+<section class="intro section--padding-50">
+  <div class="container-fluid">
+    <div class="row">
+      <p class="p--text col-md-10 offset-md-1">If you do creative work, you know it’s your great ideas that set you apart. A thousand people can do the execution - it’s the vision that is uniquely yours.<br><br>But, of course, truly great ideas don’t come easily. There are those <span class="p--color">magical days</span> where you feel fully alive and in-sync and great ideas pour in effortlessly. Unfortunately for most of us, these days are few and far between.<br><br>Put simply, <span class="p--color">Synchro Cognos is designed to give you more of these days.</span></p>
+    </div>
+  </div>
+</section>
+
+<div class="wave-container">
+  <hr class="line-wavy">
+</div>
+
+<a class="anchor" name="benefits"></a>
+<section class="benefits carousel-with-nav">
+  <h2 class="p--title">Benefits</h2>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active p--text p--bold">Creative Flow States</li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1" class="p--text p--bold">Expanded Mental Vision</li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2" class="p--text p--bold">Sustained Focus</li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3" class="p--text p--bold">Enhanced Mood</li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4" class="p--text p--bold">Verbal Fluency</li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <img class="d-block img-fluid" src="https://cdn.besynchro.com/cognos/assets-benefits-creative_flow.jpg" alt="First slide">
+        <div class="carousel-with-nav__content position--right">
+          <div id="gradient-slider-1" class="gradient-layer"></div>
+          <div class="carousel-with-nav__img">
+            <svg class="external zfloat" id="flow-states"  width="100%" data-stroke="white" data-src="https://cdn.besynchro.com/cognos/mental-vision.svg"></svg>
+          </div>
+          <h3 class="p--header p--bold zfloat zfloat">Improved Access To Creative Flow States</h3>
+          <p class="p--text zfloat">For most of us, states of true inspiration and genius are fleeting and next-to-impossible to produce on demand. Thankfully, this doesn’t have to be the case. We’ve learned there IS a biochemical correlate to these states of inspired “flow”. By enhancing nervous system health and performance, Synchro Cognos creates the ideal metabolic and neurohormonal conditions in the body and brain for creative “flow states” to arise.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid" src="https://cdn.besynchro.com/cognos/assets-benefits-expanded_vision.jpg" alt="Second slide">
+        <div class="carousel-with-nav__content">
+          <div id="gradient-slider-2" class="gradient-layer"></div>
+          <div class="carousel-with-nav__img">
+            <svg class="external zfloat" id="mental-vision"  width="100%" data-stroke="white" data-src="https://cdn.besynchro.com/cognos/mental-vision.svg"></svg>
+          </div>
+          <h3 class="p--header p--bold zfloat">Expanded Mental Vision</h3>
+          <p class="p--text zfloat">Have you ever had one of those days where your thinking is crystal clear and the brain moves swiftly through huge ideas and complex systems? If you have, you know exactly how valuable and even seductive these moments are. Creatives live for these moments. Synchro Cognos creates the ideal metabolic conditions in the brain for moments of expansive mental vision and clarity to arise.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid" src="https://cdn.besynchro.com/cognos/assets-benefits-sustained_focus.jpg" alt="Third slide">
+        <div class="carousel-with-nav__content position--right">
+          <div id="gradient-slider-3" class="gradient-layer"></div>
+          <div class="carousel-with-nav__img">
+            <svg class="external zfloat" id="sustained-focus"  width="100%" data-stroke="white" data-src="https://cdn.besynchro.com/cognos/sustained-focus.svg"></svg>
+          </div>
+          <h3 class="p--header p--bold zfloat">Sustained Focus</h3>
+          <p class="p--text zfloat">As enjoyable as creative flow states are, they’re not particularly valuable if we can’t focus long enough to translate our ideas onto the paper/canvas/keyboard/etc. By improving delivery of essential nutrients to the brain and gently calming the nervous system, Cognos puts the brain in an optimal state for bringing your ideas into the world.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid" src="https://cdn.besynchro.com/cognos/assets-benefits-enhanced_mood.jpg" alt="Fourth slide">
+        <div class="carousel-with-nav__content">
+          <div id="gradient-slider-4" class="gradient-layer"></div>
+          <div class="carousel-with-nav__img">
+            <svg class="external zfloat" id="enhanced-mood"  width="100%" data-stroke="white" data-src="https://cdn.besynchro.com/cognos/enhanced-mood-alt.svg"></svg>
+          </div>
+          <h3 class="p--header p--bold zfloat">Enhanced Mood and Emotional State</h3>
+          <p class="p--text zfloat">We believe that people do their best work when they’re feeling radiant and fully alive. By supporting healthy levels of serotonin, dopamine and other key neurotransmitters in the brain, Synchro Cognos gently and sustainably improves emotional well-being and mood.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid" src="https://cdn.besynchro.com/cognos/assets-benefits-enhanced_mood.jpg" alt="Fifth slide">
+        <div class="carousel-with-nav__content position--right">
+          <div id="gradient-slider-5" class="gradient-layer"></div>
+          <div class="carousel-with-nav__img">
+            <svg class="external zfloat" id="verbal-fluency"  width="100%" data-stroke="white" data-src="https://cdn.besynchro.com/cognos/verbal-fluency.svg"></svg>
+          </div>
+          <h3 class="p--header p--bold zfloat">Improved Verbal Fluency</h3>
+          <p class="p--text zfloat">One of the first things people notice when taking Cognos is that their command of language has dramatically improved. Previously-too-sophisticated words are now fully accessible and communicating complex ideas has become somehow remarkably easier. If you’re a writer, you’ll know how valuable this is. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about section--padding-50 bg--ltgrey">
+  <div class="container-fluid">
+    <div class="row">
+      <h3 class="p--header col-md-8 offset-md-2 col-xs-10 offset-xs-1">99% of nootropic products are BORING. Synchro Cognos is different.</h3>
+      <div class="clearfix"></div>
+      <div class="wave-container">
+        <hr class="line-wavy">
+      </div>
+      <p class="p--text col-md-8 offset-md-2 col-xs-10 offset-xs-1">Here’s the dirty secret of the cognitive-enhancement (aka “nootropic”) industry:<br>99% of products on the market today are just slight variations of the same conventional formula.<br><br>These products intend to put the brain into a hyper-stimulated, narrowly-focused, “process-oriented” state. In practical terms, if you’re wanting to hammer out some data-entry or clean out your email inbox, conventional nootropic products could work great for you. In our humble opinion this state is BORING and relatively low-value.<br><br>In developing Synchro Cognos, we were after something different; the genuinely inspired states of “flow” from which great ideas are born. And realistically, conventional nootropics are more likely to hinder you than be of use in realizing these high-value states.<br><br>We knew that it was possible to formulate a nootropic product that would reliably produce creative flow states, and do it in a way that was actually healthy for the brain. The task simply required someone with a deep knowledge of brain and body metabolism to be innovative and think creatively about the formula design process.  (Thankfully, that someone was us)<br><br><span class="p--color">Synchro Cognos creates the ideal conditions for creative flow states through the synergistic interaction of three distinct components:</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid">
+  <div class="row">
+    <div class="ingredients section--padding-50">
+      <h2 class="p--title">Components</h2>
+      <div class="ingredients__item clearfix wow fadeInUp" data-wow-duration="1.5s">
+        <div class="col-lg-4 offset-lg-0 col-md-10 offset-md-1">
+          <h3 class="p--header"><span class="superscript p--bold">1</span>Anti-inflammatory component</h3>
+          <p class="p--text">Taking a holistic look at the brain and body, it was clear that the single biggest factor suppressing both energy levels and brain function for most people was systemic inflammation. Trying to improve cognitive performance without first addressing inflammation is like putting race fuel in a fundamentally broken engine. Cognos utilizes nature’s most potent inflammation-reducer (turmeric extract) to address this issue first and foremost.</p>
+        </div>
+        <div class="col-lg-8">
+          <div class="ingredients__img-box">
+            <span class="ingredients__helper"></span><svg class="external" id="anti-inflammatory" width="100%" data-stroke="gradient"data-src="https://cdn.besynchro.com/cognos/svg/flow-component.svg"></svg>
+          </div>
+        </div>
+      </div>
+      <div class="ingredients__item clearfix wow fadeInUp" data-wow-duration="1.5s">
+        <div class="col-lg-4 offset-lg-0 push-lg-8 col-md-10 offset-md-1">
+          <h3 class="p--header"><span class="superscript p--bold">2</span>Flow Component</h3>
+          <p class="p--text">This is where the magic comes in. Cognos uses a meticulously formulated set of amino acids and plant extracts (L-Theanine, Phenibut, Mucuna) designed to relax the brain and nervous system and facilitate the shift into a state of focused creative flow.</p>
+        </div>
+        <div class="col-lg-8 pull-lg-4">
+          <div class="ingredients__img-box">
+            <span class="ingredients__helper"></span><svg class="external" id="flow" width="100%" data-stroke="gradient" data-src="https://cdn.besynchro.com/cognos/svg/flow-component.svg"></svg>
+          </div>
+        </div>
+      </div>
+      <div class="ingredients__item clearfix wow fadeInUp" data-wow-duration="1.5s">
+        <div class="col-lg-4 offset-lg-0 col-md-10 offset-md-1">
+          <h3 class="p--header"><span class="superscript p--bold">3</span>Nutrient-Delivery Component</h3>
+          <p class="p--text">Again taking a holistic view of the body-brain system, we saw that there was frequently a basic nutrient-availability problem (i.e. oxygen and glucose and/or ketones) in the brain that limited cognitive performance. Cognos uses a blend of vitamins and naturally-occurring compounds (Theobromine, Pyridoxine) to stimulate blood-flow and increasing delivery of these critical nutrients to the brain.</p>
+        </div>
+        <div class="col-lg-8">
+          <div class="ingredients__img-box">
+            <span class="ingredients__helper"></span><svg class="external" id="nutrient-delivery"  width="100%" data-stroke="gradient" data-src="https://cdn.besynchro.com/cognos/svg/Nutrient-Delivery.svg"></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="anchor" name="use"></a>
+<a class="anchor" name="ingredients"></a>
+<section class="section--padding bg--ltgrey">
+  <div class="container-fluid">
+    <div class="row">
+      <h3 class="p--title">Ingredients + Use</h3>
+      <div class="col-lg-4 col-md-5 col-sm-6">
+        <img class="gold-use__img wow fadeIn" data-wow-duration="1.5s" src="https://cdn.besynchro.com/gold/Supplement-Facts2.jpg">
+      </div>
+      <div class="col-lg-7 offset-lg-1 col-md-7 col-sm-6">
+        <p class="p--text p--bold">DIRECTIONS</p>
+        <p class="p--text">For facilitation of creative flow states, take 3 capsules with your first cup of coffee or tea in a day. (pairing with caffeine is recommended, but not required)<br><br>Ideal dosage will vary depending on the individual and can be increased to 4-5 capsules if needed. Cognos can be used daily, but delivers maximum benefit when used not more than 2 days consecutively or 4 days in a 7 day period.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="anchor" name="purchase"></a>
+<section class="container-fluid">
+  <div class="row wow fadeIn" data-wow-duration="1.5s">
+    <div class="purchase section--padding" data-fb-property="Synchro-Cognos">
+      <h3 class="p--title">Purchase Options</h3>
+      <div class="buy-buttons clearfix">
+        <div class="purchase__item col-sm-4" data-node="cognos-option-one" data-product-id="90711797" data-variant-id="212448049">
+          <div class="hidden-templates">
+            <div class="template-title">
+              <div class="pID">GEN01</div><h1 class="shopify-buy__product__title">ONE BAG (12 SERVINGS)</h1>
+            </div>
+            <div class="template-variantTitle">
+            </div>
+            <div class="template-price">
+              <div class="shopify-buy__product__price"><span class=shopify-buy__product__actual-price>$25.97</span></div>
+            </div>
+          </div>
+          <div id="cognos-option-one"></div>
+        </div>
+        <div class="purchase__item col-sm-4" data-node="cognos-option-two" data-product-id="90711797" data-variant-id="938420433">
+          <div class="hidden-templates">
+            <div class="template-title">
+              <div class="pID">GEN02</div><h1 class="shopify-buy__product__title">TWO PACK</h1>
+            </div>
+            <div class="template-variantTitle">
+            </div>
+            <div class="template-price">
+              <div class="shopify-buy__product__price"><span style="text-decoration: line-through;">$52.94 </span><span class=shopify-buy__product__actual-price>$49.47 (5% OFF) </span></div>
+            </div>
+          </div>
+          <div id="cognos-option-two"></div>
+        </div>
+        <div class="purchase__item col-sm-4" data-node="cognos-option-three" data-product-id="90711797" data-variant-id="938417729">
+          <div class="hidden-templates">
+            <div class="template-title">
+              <div class="pID">GEN03</div><h1 class="shopify-buy__product__title">FIVE PACK</h1>
+            </div>
+            <div class="template-variantTitle">
+            </div>
+            <div class="template-price">
+              <div class="shopify-buy__product__price"><span style="background-color: yellow"><span style="text-decoration: line-through;">$129.85 </span><span class=shopify-buy__product__actual-price>$114.97 (BEST VALUE - 10% OFF)</span></span></div>
+            </div>
+          </div>
+          <div id="cognos-option-three"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="anchor" name="faq"></a>
+<section class="faq bg--ltgrey">
+  <div class="container-fluid">
+    <div class="row">
+      <h3 class="p--title">FAQ</h3>
+      <div class="faq__text wow fadeIn" data-wow-duration="1.5s">
+        <p class="p--text"><span class="p--color">Who is Synchro Cognos for?</span><br>Cognos is for anyone interested in increasing the time they spend in inspired, creative flow-states.</p>
+
+        <p class="p--text"><span class="p--color">Where is Synchro Cognos made?</span><br>Synchro Cognos is made in a cGMP facility in Southern California.</p>
+
+        <p class="p--text"><span class="p--color">Where is Synchro based?</span><br>Synchro was founded in 2011 by biochemist and nutritionist Graham Ryan with the mission of helping others pursue a state of true health. Synchro is headquartered in and ships all orders from Berkeley, CA.</p>
+
+        <p class="p--text"><span class="p--color">How does Synchro Cognos work?</span><br>A synergistic interaction of three key functional components (enhanced nutrient delivery, neural inflammation reduction, flow-state catalysis) allow Synchro Cognos to create the ideal metabolic and neurohormonal conditions for sustained, focused creativity.</p>
+
+        <p class="p--text"><span class="p--color">How do I use Synchro Cognos?</span><br>For facilitation of creative flow states, take 3 capsules with your first cup of coffee or tea in a day. (pairing with caffeine is recommended, but not required)<br>Ideal dosage will vary depending on the individual and can be increased to 4-5 capsules if needed. Cognos can be used daily, but delivers maximum benefit when used not more than 2 days consecutively or 4 days in a 7 day period.</p>
+
+        <p class="p--text"><span class="p--color">When can I expect results?</span><br>Most people experience meaningful improvements in focus and creativity within one hour of taking Synchro Cognoss. If your experience does not meet these expectations, try increasing dosage by one capsule the next time you use Cognos.</p>
+
+        <p class="p--text"><span class="p--color">Can I take Synchro Cognos with my prescription medication?</span><br>Synchro Cognos is extremely safe, but there are a few potential interactions to be mindful of. Cognos should not be combined with alcohol and benzodiazepines (Xanax, Klonopin, Valium, etc) as it could increase potency of these drugs. If you are prescribed antidepressants, we recommend checking in with your doctor before beginning use of Cognos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+<!-- FOOTER -->
+{% block footer %} {{ super() }} {% endblock %}
+{% block footer_content %}
+<div class="container-fluid">
+  <div class="row">
+    <svg class="synchro-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 66"><path d="M199.2 14.1c-7 0-10.4 5.6-11.9 8.4 0-0.5 0-3.9 0-3.9 0-1.3-0.6-2.4-1.4-3.1 -0.8-0.7-1.9-1-3.3-1h-6.9c0 0 3.5 3 3.5 9v27.2h8.1V36.5c0-2.2 0.3-4.3 0.8-6.2 1.8-6 6.8-8.1 10.5-8.2 0.5 0 1 0 1.4 0.1l0.4 0v-8.1l-0.3 0C199.8 14.1 199.5 14.1 199.2 14.1zM220.3 13.7c-11.2 0-19.6 8.1-19.6 18.9 0 10.8 8.5 18.9 19.6 18.9 11.2 0 19.7-8.1 19.7-18.9C240 21.8 231.5 13.7 220.3 13.7zM220.3 44.7c-6.5 0-11.4-5.2-11.4-12.1 0-6.9 4.9-12.1 11.4-12.1 6.5 0 11.4 5.2 11.5 12.1C231.8 39.5 226.9 44.7 220.3 44.7zM16.3 29.2c-4.1-1.5-7.5-2.9-7.4-5.5 0-1.3 1.3-2.2 3.8-2.3 0.2 0 14.7 0 14.7 0l-3-6.9H13.4c-4.6 0-12.5 1.9-12.5 9.5 0 7 7 9.7 12.3 11.9 3.9 1.6 7.2 3 7.1 5.3 0 2.5-2 4.1-5.5 4.1H0v6.2h14.8c7.9 0 13.6-4.4 13.6-10.9C28.4 33.7 21.8 31.3 16.3 29.2zM99.3 33.7v-6.4c0-4.2-1.2-7.4-3.8-9.6 -2.5-2.1-6.3-3.1-11.3-3.1 -3 0-18.6 0.7-18.6 15.4v20.7h8.1V34.2c0-8.8 3.3-13 10-13 4.7 0 7.4 2.9 7.4 8.1v5.2c0 15.8 17.5 17.1 17.5 17.1C104.4 48.9 99.3 43.7 99.3 33.7zM70.8 14.6h-9.4c-0.2 0-3.7 0-5 3 -0.8 1.9-7.9 23.8-7.9 23.8l-9.3-23.6c-0.8-2.3-2-3.2-4.4-3.2h-6.1l15.9 36.6 -1.3 3c-1.3 3.3-3.6 5.1-6.5 5.1 -2.8 0-5.1-2.2-5.1-2.2l-3 5.6c0 0 3.5 3.4 8.7 3.4h0c5.8 0 10.5-3.5 12.8-9.4 0.1-0.3 9.7-25.7 12.7-33C65.4 17.3 70.8 14.6 70.8 14.6zM141.5 46.6L141.5 46.6l-0.1 4.1h8.1V36.5C149.6 36.5 145.1 42.9 141.5 46.6zM162.7 13.7c-6.5 0-11.4 5.6-13.1 7.8 0-1.1 0-17.1 0-17.1 0-1.5-0.3-2.6-1-3.3 -0.7-0.7-1.9-1-3.4-1h-6.9c0 0 3.2 2.8 3.2 9v21.6l-0.1 0.1c-2.8 5.2-9.8 14.1-18.2 14.1 -5.8 0-12-3.6-12-11.7 0-6.9 4.8-11.8 11.4-11.8 0.1 0 11 0 11 0v-6.6c0 0-10.5 0-11 0 -11.5 0-19.6 7.6-19.6 18.5 0 10.7 8.2 18.5 19.4 18.5h0c6.8 0 10.8-2.6 14-5.3 5.3-4.5 8.2-9.1 11.4-13.9 1.3-2 2.6-4.1 4.2-6.2 2.6-3.5 5.2-5 8.7-5 5.7 0 6.3 4.5 6.3 8.1v17c0 1.5 0.3 2.7 1 3.4 0.7 0.8 1.8 1 3.3 1h3.7V27.3c0-4.5-1-7.9-3.1-10.2C169.9 14.8 166.8 13.7 162.7 13.7z"></path>
+    </svg>
+    <a class="p--text" href="http://besynchro.com">www.besynchro.com</a>
+  </div>
+</div>
+<div class="bottom-border"></div>
+{% endblock %}

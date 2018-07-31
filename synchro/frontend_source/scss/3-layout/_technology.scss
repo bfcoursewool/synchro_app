@@ -1,0 +1,20 @@
+.technology {
+  text-align: center;
+
+  .p--header {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__tabs {
+    margin-top: 50px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 1px #bdbdbd;
+    @include s-screen {
+      box-shadow: none;
+    }
+    @include xs-screen {
+      margin-bottom: 30px;
+    }
+  }
+}

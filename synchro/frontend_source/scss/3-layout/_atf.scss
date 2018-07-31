@@ -1,0 +1,28 @@
+.atf {
+  position: relative;
+
+  &__header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    -webkit-font-smoothing: antialiased;
+    opacity: 0;
+    margin: 0 auto;
+    color: $color-primary;
+    font-size: 60px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: $font-normal;
+    transition: opacity 0.75s ease-in-out;
+
+    &.animate-in {
+      opacity: 1;
+    }
+    @include s-screen {
+      font-size: 40px;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+// QUOTES
+
+.slider {
+  background-color: #272727;
+  color: #fff;
+  text-align: center;
+  background-image: url("https://cdn.besynchro.com/gold/v2-0/quote.svg");
+  background-repeat: no-repeat;
+  background-position: 9% 18%;
+  background-size: 120px;
+  padding: 60px;
+  @include m-screen {
+    background-image: none;
+  }
+  @include s-screen {
+    padding: $gutter-mobile;
+  }
+}
+
+.slides {
+  padding: 0;
+}
+
+[role="button"] {
+  .slick-dots & {
+    font-size: 0;
+    border: 0;
+    height: 14px;
+    width: 14px;
+    border-radius: 7px;
+    margin: 5px;
+    outline: none;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  width: 100%;
+  @include s-screen {
+    display: none !important;
+  }
+
+  [role="presentation"] {
+    display: inline-block;
+  }
+
+  .slick-active {
+    [role="button"] {
+      background-color: $color-gold;
+    }
+  }
+}
+
+.quote-text {
+  max-width: 800px;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: $font-light;
+  z-index: 3;
+  letter-spacing: 0.5px;
+  margin: $gutter-mobile;
+}
+
+.quote-author-img {
+  .slick-slide & {
+    display: inline-block;
+  }
+  margin-top: 48px;
+  margin-bottom: 24px;
+  height: 64px;
+  width: 64px;
+}

@@ -1,0 +1,24 @@
+.faq {
+  background: $color-gray-light;
+  overflow: auto;
+  @include s-screen {
+    padding: 0 $gutter-mobile;
+  }
+
+  &__text {
+    text-align: center;
+
+    .p--header {
+      font-size: 30px;
+    }
+
+    .p--text {
+      margin-bottom: 40px;
+      max-width: 900px;
+    }
+
+    .footnote {
+      font-size: 15px;
+    }
+  }
+}
