@@ -1,1 +1,60 @@
 // STYLES FOR ONGOING EXPERIMENTS/TESTS
+
+.cro008-1 {
+  .main-header {
+    .synchro-logo {
+      fill: $color-primary;
+    }
+
+    &__content {
+      height: 47px;
+    }
+  }
+
+  .atf {
+    &.bg-full-width {
+      background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf.jpg");
+      background-attachment: initial;
+      @include sm-screen {
+        background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf-mobile.jpg");
+      }
+    }
+
+    &__content-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__header-box {
+      width: 385px;
+      height: 155px;
+      background: #fff;
+    }
+
+    &__header {
+      top: 78px;
+      font-size: 45px;
+      color: $color-primary;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-shadow: none;
+    }
+
+    &__cta {
+      text-align: center;
+      margin-top: 90px;
+
+      .a--cta {
+        margin: 5px;
+
+        &.cta--secondary {
+          box-shadow: inset 0 0 0 2px $color-primary;
+          background: none;
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
