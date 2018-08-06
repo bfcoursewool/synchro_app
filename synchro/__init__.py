@@ -13,7 +13,7 @@ KM = KISSmetrics.Client(key=kKISSMETRICS_API_KEY)
 
 app = Flask(__name__)
 app.config.from_object('config')
-app.debug = True
+app.debug = const.kAPP_DEBUG_MODE
 app.config['CDN_DOMAIN'] = const.kSTATIC_ASSETS_PREFIX
 app.config['CDN_TIMESTAMP'] = False  ## WTF IF THIS IS TRUE IT 500s THE APP!!!
 app.config['CDN_VERSION'] = os.environ.get('CACHE_VERSION')
