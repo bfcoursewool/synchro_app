@@ -7,6 +7,6 @@ if not synchro_app in sys.path:
 os.environ['SYNCHRO_ENV'] = 'PRODUCTION'
 
 def application(environ, start_response):
-  os.environ['CACHE_VERSION'] = environ['CACHE_VERSION']
+  os.environ['CACHE_VERSION'] = environ.get('CACHE_VERSION')
   from synchro import app as _app
   return _app(environ, start_response)
