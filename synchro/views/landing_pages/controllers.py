@@ -7,6 +7,7 @@ from flask import (
   request,
   redirect
 )
+from flask_cdn import url_for
 from synchro import const
 
 landing_pages = Blueprint('landing_pages', __name__)
@@ -108,6 +109,8 @@ def landing_page(page, version):
   template_vars = {}
   if 'template_vars' in endpoint_info_dict[page][version]:
     template_vars = endpoint_info_dict[page][version]['template_vars']
+
+  print url_for('static', filename='synchro.css')
 
   return render_template(
     endpoint_info_dict[page][version]['template'],

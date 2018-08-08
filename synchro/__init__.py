@@ -11,16 +11,19 @@ from synchro.const import kKISSMETRICS_API_KEY
 KM = KISSmetrics.Client(key=kKISSMETRICS_API_KEY)
 
 app = Flask(__name__)
-app.config.from_object('config')
+#app.config.from_object('config')
 app.debug = const.kAPP_DEBUG_MODE
 app.config['CDN_DOMAIN'] = const.kSTATIC_ASSETS_PREFIX
-app.config['CDN_TIMESTAMP'] = False  ## WTF IF THIS IS TRUE IT 500s THE APP!!!
-app.config['CDN_VERSION'] = os.environ.get('CACHE_VERSION')
+app.config['CDN_TIMESTAMP'] = True  ## WTF IF THIS IS TRUE IT 500s THE APP!!!
+#app.config['CDN_VERSION'] = os.environ.get('CACHE_VERSION')
 app.config['CDN_HTTPS'] = True
 app.config['SENTRY_CONFIG'] = {
   'environment': const.kENVIRONMENT
 }
+app.secret_key = "tat_tvam_asi"
 CDN(app)
+
+print app.config['CDN_DOMAIN']
 
 # Log server-side errors, aggregate, and email them to devs
 sentry = Sentry(app, dsn='https://35f8ce49bcbf4b2fa0299a69b5a0b4c5:47fa94c247c74d949dce28fba7bb1d32@sentry.io/130658')
