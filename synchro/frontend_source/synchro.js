@@ -1,3 +1,4 @@
+//import 'bootstrap';
 import './scss/synchro.scss';
 import LPEffects from './ES6/effects';
 //import BuyButton from './ES6/ShopifyBuyButton/buy_button';
@@ -10,6 +11,8 @@ import Tabs from './ES6/tabs';
 import Slider from './ES6/slider';
 import { loadHeroImg } from './ES6/hero_image';
 import susanEffects from './ES6/susan/effects';
+
+var $ = require('jquery'), require('jquery-ui');
 
 console.log(`release_tag: ${process.env.RELEASE_TAG}`)
 

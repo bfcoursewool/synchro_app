@@ -1,5 +1,4 @@
 'use strict';
-
 import EventsBase from '../events_base';
 
 export default class Kissmetrics extends EventsBase {

@@ -1,3 +1,4 @@
+
 const loadHeroImg = (
     src = 'https://storage.googleapis.com/synchro-assets/gold/susan/test.jpg',
     selector = '.bg-full-width'
