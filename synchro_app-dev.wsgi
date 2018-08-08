@@ -6,4 +6,4 @@ if not synchro_app in sys.path:
 
 os.environ['SYNCHRO_ENV'] = 'DEVELOPMENT'
 
-from synchro import fanstatic_app as application
+from synchro import app as application

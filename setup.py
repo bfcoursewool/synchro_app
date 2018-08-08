@@ -7,7 +7,6 @@ CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
 
 requires = [
   'flask',
-  'fanstatic'
 ]
 
 setup(
@@ -29,10 +28,5 @@ setup(
   include_package_data=True,
   zip_safe=False,
   install_requires=requires,
-  entry_points= {
-    'fanstatic.libraries': [
-      'synchro = synchro:library_resources',
-      'synchro_frontend_build = synchro:library_frontend_build'
-    ]
-  }
+  entry_points= {}
 )

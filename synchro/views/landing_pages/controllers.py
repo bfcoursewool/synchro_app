@@ -7,7 +7,6 @@ from flask import (
   request,
   redirect
 )
-from synchro.third_party_resources import bootstrap, bootstrap_css
 from synchro import const
 
 landing_pages = Blueprint('landing_pages', __name__)
@@ -104,12 +103,6 @@ def landing_page(page, version):
   # Assert that each version entry in the info_dict contains both a template to render and a list of scripts to include.
   # A failed assertion should happen only during development, so this helps ensure developer consistency.
   assert 'template' in endpoint_info_dict[page][version]
-
-  # Include all the JS assets we need.
-  for script in endpoint_info_dict[page][version].get('scripts', []):
-    script.need()
-  bootstrap.need()
-  bootstrap_css.need()
 
   # If there is a dict of template vars, let's grab it and pass it as kwargs to render_template
   template_vars = {}

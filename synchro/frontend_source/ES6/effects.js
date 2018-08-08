@@ -1,3 +1,4 @@
+import videojs from 'video.js';
 import { WOW } from 'wowjs';
 import EventsBase from './events_base';
 
