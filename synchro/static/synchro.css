@@ -5208,7 +5208,7 @@ body {
 a {
   text-decoration: none;
   color: initial; }
-  a:hover {
+  a:active, a:focus, a:hover, a:visited {
     text-decoration: none;
     color: initial; }
   a.anchor {
