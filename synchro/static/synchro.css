@@ -5208,6 +5208,9 @@ body {
 a {
   text-decoration: none;
   color: initial; }
+  a:hover {
+    text-decoration: none;
+    color: initial; }
   a.anchor {
     position: relative;
     top: -65px; }
@@ -5994,15 +5997,6 @@ a {
 .slides {
   padding: 0; }
 
-.slick-dots [role="button"] {
-  font-size: 0;
-  border: 0;
-  height: 14px;
-  width: 14px;
-  border-radius: 7px;
-  margin: 5px;
-  outline: none; }
-
 .slick-dots {
   position: absolute;
   left: 50%;
@@ -6013,8 +6007,17 @@ a {
     .slick-dots {
       display: none !important; } }
   .slick-dots [role="presentation"] {
-    display: inline-block; }
-  .slick-dots .slick-active [role="button"] {
+    display: inline-block;
+    width: 30px; }
+  .slick-dots [type="button"] {
+    font-size: 0;
+    border: 0;
+    height: 14px;
+    width: 14px;
+    border-radius: 7px;
+    margin: 5px;
+    outline: none; }
+  .slick-dots .slick-active [type="button"] {
     background-color: #eca846; }
 
 .quote-text {
