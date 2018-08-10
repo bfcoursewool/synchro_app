@@ -6607,5 +6607,48 @@ svg.external {
   }
 }
 */
+.cro008-1 .main-header .synchro-logo {
+  fill: #000000; }
+
+.cro008-1 .main-header__content {
+  height: 47px; }
+
+.cro008-1 .atf.bg-full-width {
+  background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf.jpg");
+  background-attachment: initial;
+  background-color: #f0f3f4;
+  background-position: center; }
+  @media (max-width: 854px) {
+    .cro008-1 .atf.bg-full-width {
+      background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf-mobile.jpg"); } }
+
+.cro008-1 .atf__content-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.cro008-1 .atf__header-box {
+  width: 385px;
+  height: 155px;
+  background: #fff; }
+
+.cro008-1 .atf__header {
+  top: 78px;
+  font-size: 45px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: none; }
+
+.cro008-1 .atf__cta {
+  text-align: center;
+  margin-top: 90px; }
+  .cro008-1 .atf__cta .a--cta {
+    margin: 5px; }
+    .cro008-1 .atf__cta .a--cta.cta--secondary {
+      box-shadow: inset 0 0 0 2px #000000;
+      background: none;
+      color: #000000; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

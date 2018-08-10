@@ -15,6 +15,8 @@
     &.bg-full-width {
       background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf.jpg");
       background-attachment: initial;
+      background-color: #f0f3f4;
+      background-position: center;
       @include sm-screen {
         background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf-mobile.jpg");
       }
