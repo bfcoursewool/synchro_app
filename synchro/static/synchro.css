@@ -6194,6 +6194,33 @@ input:checked + .accordion-horizontal__inner-box {
     right: -15px;
     border-right-color: transparent; }
 
+.gold-adwords .main-header .synchro-logo {
+  fill: #000000; }
+
+.gold-adwords .main-header__content {
+  height: 47px; }
+
+.gold-adwords .atf.bg-full-width {
+  background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf.jpg");
+  background-attachment: initial;
+  background-color: #f0f3f4;
+  background-position: center; }
+  @media (max-width: 854px) {
+    .gold-adwords .atf.bg-full-width {
+      background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf-mobile.jpg");
+      background-size: cover; } }
+
+.gold-adwords .atf__header {
+  font-size: 45px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: none;
+  background: white;
+  max-width: 350px;
+  padding: 14px;
+  opacity: 0.8; }
+
 .gold-adwords .technology {
   padding-bottom: 60px; }
 
