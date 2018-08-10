@@ -5780,6 +5780,7 @@ a {
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased; }
   .a--cta:hover {
+    color: #fff;
     opacity: 0.7; }
   .a--cta:active {
     opacity: 1; }
@@ -6192,6 +6193,9 @@ input:checked + .accordion-horizontal__inner-box {
   .gold-lp .purchase .discount:after {
     right: -15px;
     border-right-color: transparent; }
+
+.gold-adwords .technology {
+  padding-bottom: 60px; }
 
 .genesis-lp .main-header-container .a--cta {
   background: #5da8a6; }

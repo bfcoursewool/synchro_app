@@ -23,7 +23,13 @@ endpoint_info_dict = {
     'v2': {
       'template': 'landing_pages/gold/v2-0/0-index.html',
       'template_vars': {
-        'is_variant': False,
+        'is_variant': True,
+      }
+    },
+    'turmeric-supplement': {
+      'template': 'landing_pages/gold/v2-0-adwords/0-index.html',
+      'template_vars': {
+        'is_variant': True,
       }
     }
   },
@@ -37,7 +43,7 @@ endpoint_info_dict = {
     'v2': {
       'template': 'landing_pages/genesis/v2-0/0-index.html',
       'template_vars': {
-        'is_variant': False,
+        'is_variant': True,
       }
     }
   },
@@ -51,7 +57,7 @@ endpoint_info_dict = {
     'v1': {
       'template': 'landing_pages/cognos/v1-0/0-index.html',
       'template_vars': {
-        'is_variant': False,
+        'is_variant': True,
       }
     }
   }
