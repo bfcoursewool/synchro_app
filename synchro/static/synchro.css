@@ -5779,6 +5779,9 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased; }
+  @media (max-width: 680px) {
+    .a--cta {
+      padding: 10px 23px; } }
   .a--cta:hover {
     color: #fff;
     opacity: 0.7; }
@@ -6217,9 +6220,13 @@ input:checked + .accordion-horizontal__inner-box {
   text-transform: uppercase;
   text-shadow: none;
   background: white;
-  max-width: 350px;
+  width: 350px;
   padding: 14px;
-  opacity: 0.8; }
+  opacity: 0.8;
+  max-width: 80%; }
+  @media (max-width: 680px) {
+    .gold-adwords .atf__header {
+      font-size: 40px; } }
 
 .gold-adwords .technology {
   padding-bottom: 60px; }
@@ -6635,4 +6642,4 @@ svg.external {
 }
 */
 
-/*# sourceMappingURL=synchro.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
