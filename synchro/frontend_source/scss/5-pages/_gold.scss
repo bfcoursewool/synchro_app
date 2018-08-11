@@ -107,9 +107,13 @@
       text-transform: uppercase;
       text-shadow: none;
       background: white;
-      max-width: 350px;
+      width: 350px;
       padding: 14px;
       opacity: 0.8;
+      max-width: 80%;
+      @include xs-screen {
+        font-size: 40px;
+      }
     }
   }
 

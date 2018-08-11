@@ -15,9 +15,12 @@
   text-decoration: none;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
+  @include xs-screen {
+    padding: 10px 23px;
+  }
 
   &:hover {
-  color: #fff;
+    color: #fff;
     opacity: 0.7;
   }
 
