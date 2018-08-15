@@ -77,8 +77,46 @@
   }
 }
 
-
 .gold-adwords {
+  .main-header {
+    .synchro-logo {
+      fill: $color-primary;
+    }
+
+    &__content {
+      height: 47px;
+    }
+  }
+
+  .atf {
+    &.bg-full-width {
+      background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf.jpg");
+      background-attachment: initial;
+      background-color: #f0f3f4;
+      background-position: center;
+      @include sm-screen {
+        background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf-mobile.jpg");
+        background-size: cover;
+      }
+    }
+
+    &__header {
+      font-size: 45px;
+      color: #000000;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-shadow: none;
+      background: white;
+      width: 350px;
+      padding: 14px;
+      opacity: 0.8;
+      max-width: 80%;
+      @include xs-screen {
+        font-size: 40px;
+      }
+    }
+  }
+
   .technology {
     padding-bottom: $gutter-desktop;
   }
