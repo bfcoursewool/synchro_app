@@ -6369,6 +6369,11 @@ input:checked + .accordion-horizontal__inner-box {
         max-height: none;
         width: 100%; } }
 
+@media (max-width: 767px) {
+  .genesis-lp .purchase__item:nth-child(2) {
+    border-bottom: none;
+    border-top: 1px solid #e2e2e2; } }
+
 .genesis-lp .purchase .option-1 {
   background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-1.png"); }
 
