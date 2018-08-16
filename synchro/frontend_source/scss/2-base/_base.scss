@@ -14,10 +14,10 @@ a {
   &:hover,
   &:visited {
     text-decoration: none;
-    color: initial;
   }
 
   &.anchor {
+    display: block;
     position: relative;
     top: -65px;
   }

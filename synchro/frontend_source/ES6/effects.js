@@ -44,66 +44,52 @@ export default class LPEffects extends EventsBase {
     }
   }
 
-  parallaxScroll(clickTarget) {
-    if (location.pathname.replace(/^\//,'') == clickTarget.pathname.replace(/^\//,'') && location.hostname == clickTarget.hostname) {
-      var target = $(clickTarget.hash);
-      target = target.length ? target : $('[name=' + clickTarget.hash.slice(1) +']');
-      if (target.length) {
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        $('html, body').animate({
-          scrollTop: target.offset().top + scrollTop
-        }, 1000);
-        return false;
-      }
-    }
-  }
-
   parallaxBackgroundScroll() {
     if(!$('.parallax')) {
       return;
     }
 
-    let scroll = $(window).scrollTop(); 
+    let scroll = $(window).scrollTop();
     let scrollDelta = scroll - this._lastScroll;
-    let currentBackgroundPosition = parseInt($('.parallax').css('background-position-y'), 10);  
-    let newBackgroundPosition = currentBackgroundPosition - (scrollDelta / 2); 
+    let currentBackgroundPosition = parseInt($('.parallax').css('background-position-y'), 10);
+    let newBackgroundPosition = currentBackgroundPosition - (scrollDelta / 2);
 
     if(newBackgroundPosition > 0) {
-      newBackgroundPosition = 0; 
+      newBackgroundPosition = 0;
     }
 
-    $('.parallax').css('background-position-y', newBackgroundPosition + 'px'); 
+    $('.parallax').css('background-position-y', newBackgroundPosition + 'px');
 
-    this._lastScroll = scroll; 
+    this._lastScroll = scroll;
   }
 
   navMenuTransition() {
     let navbar = $('.main-header');
     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    let maxScroll = 100; 
+    let maxScroll = 100;
     let scrollAtBannerBackgroundBottom = $('.main-header').attr('data-header-transition')
     if(scrollAtBannerBackgroundBottom == 'background') {
       maxScroll = $('.main-banner__background').height() - $('.main-header').outerHeight();
-    } 
+    }
 
-    // TODO -- Man this is janky... Feels like the nav menu should really become its own 
+    // TODO -- Man this is janky... Feels like the nav menu should really become its own
     // self-contained/reusable/configurable component instead of just trying to force it into
-    // here and then hack it to work for all our various implementations. 
-    let navGradientLayer = $('.main-header>.gradient-layer'); 
+    // here and then hack it to work for all our various implementations.
+    let navGradientLayer = $('.main-header>.gradient-layer');
 
     if(scrollTop > maxScroll && !navbar.is('.floated')) {
       navbar.addClass('floated');
       if(navGradientLayer) {
-        navGradientLayer.addClass('show'); 
+        navGradientLayer.addClass('show');
       }
     } else if(scrollTop < maxScroll && navbar.is('.floated')) {
       navbar.removeClass('floated');
       if(navGradientLayer) {
-        navGradientLayer.removeClass('show'); 
+        navGradientLayer.removeClass('show');
       }
     }
 
-    this.parallaxBackgroundScroll(); 
+    this.parallaxBackgroundScroll();
   }
 
   openModal(target, e) {
