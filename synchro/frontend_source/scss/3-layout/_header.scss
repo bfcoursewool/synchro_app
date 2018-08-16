@@ -42,12 +42,15 @@
       }
     }
 
-    .a--cta {
+    a {
       margin-left: auto;
-      @include cta-custom($color-gold, white);
       @include s-screen {
         margin-right: 10px;
       }
+    }
+
+    .a--cta {
+      @include cta-custom($color-gold, white);
     }
 
     .main-navigation {

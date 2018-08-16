@@ -1,5 +1,6 @@
 body {
   font-family: $font-primary;
+  color: $color-primary;
   margin: 0 auto;
   max-width: 2000px;
   box-shadow: $shadow-white-div;
@@ -7,18 +8,22 @@ body {
 
 a {
   text-decoration: none;
-  color: initial;
+  color: inherit;
 
   &:active,
   &:focus,
   &:hover,
   &:visited {
     text-decoration: none;
+    color: inherit;
   }
 
   &.anchor {
     display: block;
     position: relative;
     top: -65px;
+    @include s-screen {
+      top: 0;
+    }
   }
 }
