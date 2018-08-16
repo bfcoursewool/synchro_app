@@ -5201,19 +5201,24 @@ template {
 
 body {
   font-family: "futura-pt", "Open Sans", sans-serif;
+  color: #000000;
   margin: 0 auto;
   max-width: 2000px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
 
 a {
   text-decoration: none;
-  color: initial; }
+  color: inherit; }
   a:active, a:focus, a:hover, a:visited {
-    text-decoration: none; }
+    text-decoration: none;
+    color: inherit; }
   a.anchor {
     display: block;
     position: relative;
     top: -65px; }
+    @media (max-width: 767px) {
+      a.anchor {
+        top: 0; } }
 
 .p--header,
 .p--text,
@@ -5313,13 +5318,14 @@ a {
       height: 30px;
       fill: #000000;
       transition: fill ease-in-out 0.5s; }
+  .main-header-container .main-header a {
+    margin-left: auto; }
+    @media (max-width: 767px) {
+      .main-header-container .main-header a {
+        margin-right: 10px; } }
   .main-header-container .main-header .a--cta {
-    margin-left: auto;
     background: #eca846;
     color: white; }
-    @media (max-width: 767px) {
-      .main-header-container .main-header .a--cta {
-        margin-right: 10px; } }
   .main-header-container .main-header .main-navigation {
     display: inline-block;
     float: right;
