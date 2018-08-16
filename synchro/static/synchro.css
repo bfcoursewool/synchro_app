@@ -6655,45 +6655,103 @@ svg.external {
 .cro008-1 .main-header .synchro-logo {
   fill: #000000; }
 
+.cro008-1 .main-header .a--cta {
+  display: none; }
+
+.cro008-1 .main-header.floated .a--cta {
+  display: block; }
+
 .cro008-1 .main-header__content {
   height: 47px; }
+
+.cro008-1 .atf__mobile {
+  display: none; }
+  @media (max-width: 854px) {
+    .cro008-1 .atf__mobile {
+      display: block;
+      background-image: url("https://cdn.besynchro.com/experiments/gold-og-lg-bg-mobile.jpg");
+      background-size: cover;
+      height: 400px;
+      background-position: center;
+      position: relative; } }
+  .cro008-1 .atf__mobile:after {
+    content: "";
+    background-image: url("https://cdn.besynchro.com/gold/v2-0/atf-bottom-wave@2x.png");
+    background-color: transparent;
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-repeat: repeat-x;
+    background-size: auto 45px;
+    background-position-x: center;
+    z-index: 90; }
 
 .cro008-1 .atf.bg-full-width {
   background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf.jpg");
   background-attachment: initial;
   background-color: #f0f3f4;
-  background-position: center; }
+  background-position: center;
+  max-height: 100vh; }
   @media (max-width: 854px) {
     .cro008-1 .atf.bg-full-width {
-      background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf-mobile.jpg"); } }
+      background: none;
+      height: auto; }
+      .cro008-1 .atf.bg-full-width:after {
+        content: none; } }
 
 .cro008-1 .atf__content-box {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
-
-.cro008-1 .atf__header-box {
-  width: 385px;
-  height: 155px;
-  background: #fff; }
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  text-align: center; }
+  @media (max-width: 854px) {
+    .cro008-1 .atf__content-box {
+      position: initial;
+      transform: none;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 80%; } }
 
 .cro008-1 .atf__header {
-  top: 78px;
+  position: initial;
+  transform: none;
   font-size: 45px;
   color: #000000;
   letter-spacing: 3px;
   text-transform: uppercase;
-  text-shadow: none; }
-
-.cro008-1 .atf__cta {
-  text-align: center;
-  margin-top: 90px; }
-  .cro008-1 .atf__cta .a--cta {
-    margin: 5px; }
-    .cro008-1 .atf__cta .a--cta.cta--secondary {
-      box-shadow: inset 0 0 0 2px #000000;
+  text-shadow: none;
+  background: white;
+  width: 350px;
+  padding: 14px;
+  opacity: 0.8; }
+  @media (max-width: 854px) {
+    .cro008-1 .atf__header {
       background: none;
-      color: #000000; }
+      padding: 0;
+      width: initial; } }
+  @media (max-width: 680px) {
+    .cro008-1 .atf__header {
+      font-size: 40px; } }
+
+.cro008-1 .atf__description {
+  font-size: 26px;
+  margin-bottom: 30px; }
+  @media (max-width: 854px) {
+    .cro008-1 .atf__description {
+      margin: 0 auto 20px;
+      font-size: 22px; } }
+
+.cro008-1 .atf .a--cta {
+  margin: 5px; }
+  .cro008-1 .atf .a--cta.cta--secondary {
+    background: none;
+    color: #000000; }
+
+.cro008-1 .atf .down-arrow {
+  position: initial;
+  transform: none; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
