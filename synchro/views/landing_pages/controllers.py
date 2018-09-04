@@ -68,14 +68,6 @@ endpoint_info_dict = {
         'is_variant': True,
       }
     }
-  },
-  'cro008': {
-    'v1': {
-      'template': 'landing_pages/experiments/cro008/v1/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
   }
 }
 

@@ -1,40 +1,89 @@
 .gold-lp {
   .main-header {
-    .synchro-logo {
-      fill: $color-logo-light;
+    .a--cta {
+      display: none;
     }
 
     &.floated {
-      .synchro-logo {
-        fill: $color-logo-dark;
+      .a--cta {
+        display: block;
       }
+    }
+
+    &__content {
+      height: 47px;
     }
   }
 
   .atf {
     &.bg-full-width {
-      background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-atf@2x.jpg");
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      @include s-screen {
-        background-attachment: scroll;
-        background-size: auto 900px;
+      background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf.jpg");
+      background-color: #f0f3f4;
+      background-position: center;
+      @include sm-screen {
+        background: none;
+
+        &:after {
+          content: none;
+        }
+      }
+    }
+
+    &__content-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 400px;
+      text-align: center;
+      @include sm-screen {
+        position: initial;
+        transform: none;
+        margin: 0 auto;
+        max-width: 80%;
       }
     }
 
     &__header {
-      text-transform: lowercase;
-      color: #fff;
-      text-shadow: 1.6px 1.9px 0 rgba(0, 0, 0, 0.1);
+      position: initial;
+      transform: none;
+      font-size: 45px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      background: white;
+      width: 350px;
+      padding: 14px;
+      opacity: 0.8;
+      @include sm-screen {
+        background: none;
+        padding: 0;
+        width: initial;
+      }
+      @include xs-screen {
+        font-size: 40px;
+      }
+    }
+
+    &__description {
+      font-size: 26px;
+      @include sm-screen {
+        margin: 0 auto 20px;
+        font-size: 22px;
+      }
+    }
+
+    .a--cta {
+      margin: 5px;
+
+      &.cta--secondary {
+        background: none;
+        color: $color-primary;
+      }
     }
 
     .down-arrow {
       opacity: 0;
       width: 19px;
-      bottom: 100px;
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%);
       transition: opacity 0.75s ease-in-out, bottom 0.75s ease-in-out;
 
       &.animate-in {
@@ -55,6 +104,32 @@
       background-size: auto 45px;
       background-position-x: center;
       z-index: $header-z-index - 10;
+    }
+
+    &__mobile {
+      display: none;
+      @include sm-screen {
+        display: block;
+        position: relative;
+        background-image: url("https://cdn.besynchro.com/experiments/gold-og-lg-bg-mobile.jpg");
+        background-size: cover;
+        height: 400px;
+        background-position: center;
+      }
+      // wave bottom
+      &:after {
+        content: "";
+        background-image: url("https://cdn.besynchro.com/gold/v2-0/atf-bottom-wave@2x.png");
+        background-color: transparent;
+        height: 45px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-repeat: repeat-x;
+        background-size: auto 45px;
+        background-position-x: center;
+        z-index: $header-z-index - 10;
+      }
     }
   }
 
@@ -78,45 +153,6 @@
 }
 
 .gold-adwords {
-  .main-header {
-    .synchro-logo {
-      fill: $color-primary;
-    }
-
-    &__content {
-      height: 47px;
-    }
-  }
-
-  .atf {
-    &.bg-full-width {
-      background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf.jpg");
-      background-attachment: initial;
-      background-color: #f0f3f4;
-      background-position: center;
-      @include sm-screen {
-        background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf-mobile.jpg");
-        background-size: cover;
-      }
-    }
-
-    &__header {
-      font-size: 45px;
-      color: #000000;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      text-shadow: none;
-      background: white;
-      width: 350px;
-      padding: 14px;
-      opacity: 0.8;
-      max-width: 80%;
-      @include xs-screen {
-        font-size: 40px;
-      }
-    }
-  }
-
   .technology {
     padding-bottom: $gutter-desktop;
   }

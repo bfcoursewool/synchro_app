@@ -1,0 +1,128 @@
+@import '../synchro';
+
+.cro008-1 {
+  .main-header {
+    .synchro-logo {
+      fill: $color-primary;
+    }
+
+    .a--cta {
+      display: none;
+    }
+
+    &.floated {
+      .a--cta {
+        display: block;
+      }
+    }
+
+    &__content {
+      height: 47px;
+    }
+  }
+
+  .atf {
+    &__mobile {
+      display: none;
+      @include sm-screen {
+        display: block;
+        background-image: url("https://cdn.besynchro.com/experiments/gold-og-lg-bg-mobile.jpg");
+        background-size: cover;
+        height: 400px;
+        background-position: center;
+        position: relative;
+      }
+      // wave bottom
+      &:after {
+        content: "";
+        background-image: url("https://cdn.besynchro.com/gold/v2-0/atf-bottom-wave@2x.png");
+        background-color: transparent;
+        height: 45px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-repeat: repeat-x;
+        background-size: auto 45px;
+        background-position-x: center;
+        z-index: $header-z-index - 10;
+      }
+    }
+
+    &.bg-full-width {
+      background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf.jpg");
+      background-attachment: initial;
+      background-color: #f0f3f4;
+      background-position: center;
+      max-height: 100vh;
+      @include sm-screen {
+        background: none;
+        height: auto;
+
+        &:after {
+          content: none;
+        }
+      }
+    }
+
+    &__content-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 400px;
+      text-align: center;
+      @include sm-screen {
+        position: initial;
+        transform: none;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 80%;
+      }
+    }
+
+    &__header {
+      position: initial;
+      transform: none;
+      font-size: 45px;
+      color: #000000;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-shadow: none;
+      background: white;
+      width: 350px;
+      padding: 14px;
+      opacity: 0.8;
+      @include sm-screen {
+        background: none;
+        padding: 0;
+        width: initial;
+      }
+      @include xs-screen {
+        font-size: 40px;
+      }
+    }
+
+    &__description {
+      font-size: 26px;
+      margin-bottom: 30px;
+      @include sm-screen {
+        margin: 0 auto 20px;
+        font-size: 22px;
+      }
+    }
+
+    .a--cta {
+      margin: 5px;
+
+      &.cta--secondary {
+        background: none;
+        color: $color-primary;
+      }
+    }
+
+    .down-arrow {
+      position: initial;
+      transform: none;
+    }
+  }
+}
