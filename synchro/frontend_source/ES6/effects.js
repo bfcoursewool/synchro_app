@@ -44,6 +44,19 @@ export default class LPEffects extends EventsBase {
     }
   }
 
+  parallaxScroll(clickTarget) {
+    if (location.pathname.replace(/^\//,'') == clickTarget.pathname.replace(/^\//,'') && location.hostname == clickTarget.hostname) {
+      var target = $(clickTarget.hash);
+      target = target.length ? target : $('[name=' + clickTarget.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  }
+
   parallaxBackgroundScroll() {
     if(!$('.parallax')) {
       return;
