@@ -5726,7 +5726,6 @@ a {
   background: #000000; }
   @media (max-width: 767px) {
     .footer {
-      margin-bottom: 80px;
       padding-left: 20px;
       padding-right: 20px; } }
   .footer__content {
@@ -5750,7 +5749,7 @@ a {
     font-family: FontAwesome;
     width: 30px;
     height: 30px;
-    margin-left: auto;
+    margin-right: auto;
     line-height: 27px;
     font-size: 15px; }
 
