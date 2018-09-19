@@ -8,8 +8,6 @@ from flask import (
   render_template
 )
 from synchro.const import kSHOPIFY_WEBHOOK_SECRET
-from synchro.models.km_ident import KMIdent
-from synchro import KM
 
 webhook_handlers = Blueprint('webhook_handlers', __name__, url_prefix='/hooks')
 
@@ -22,13 +20,7 @@ def checkout_create():
   assert header_hmac is not None
   assert validate_webhook(json_data, header_hmac)
 
-  checkout = KMIdent.select_one(
-    cart_string=data['landing_site'],
-    aliased=0
-  )
-  if checkout: 
-    KM.alias(data['token'], checkout.km_ident)
-    checkout.mark_complete()
+  print data
     
   return ('', 200)
 
