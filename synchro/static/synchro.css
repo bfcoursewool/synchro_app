@@ -5212,6 +5212,8 @@ a {
   a:active, a:focus, a:hover, a:visited {
     text-decoration: none;
     color: inherit; }
+  a:hover {
+    opacity: 0.7; }
   a.anchor {
     display: block;
     position: relative;
@@ -5263,6 +5265,10 @@ a {
 
 .p--strike {
   text-decoration: line-through; }
+
+.p--superscript {
+  vertical-align: super;
+  font-size: 60%; }
 
 .container-fluid {
   max-width: 1400px;
@@ -5720,13 +5726,29 @@ a {
     .faq__text .footnote {
       font-size: 15px; }
 
+@media (max-width: 767px) {
+  .references {
+    padding: 0 20px; } }
+
+.references__text {
+  text-align: center; }
+  .references__text .p--text {
+    margin-bottom: 40px;
+    max-width: 900px; }
+  .references__text .footnote {
+    font-size: 15px; }
+
+.references__url {
+  font-size: 80%;
+  overflow-wrap: break-word;
+  word-wrap: break-word; }
+
 .footer {
   padding: 30px 0;
   text-align: center;
   background: #000000; }
   @media (max-width: 767px) {
     .footer {
-      margin-bottom: 80px;
       padding-left: 20px;
       padding-right: 20px; } }
   .footer__content {
@@ -5750,7 +5772,7 @@ a {
     font-family: FontAwesome;
     width: 30px;
     height: 30px;
-    margin-left: auto;
+    margin-right: auto;
     line-height: 27px;
     font-size: 15px; }
 

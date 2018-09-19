@@ -5,7 +5,6 @@
   text-align: center;
   background: $color-primary;
   @include s-screen {
-    margin-bottom: 80px;
     padding-left: $gutter-mobile;
     padding-right: $gutter-mobile;
   }
@@ -39,7 +38,7 @@
     font-family: $font-awesome;
     width: 30px;
     height: 30px;
-    margin-left: auto;
+    margin-right: auto;
     line-height: 27px;
     font-size: 15px;
   }
