@@ -156,4 +156,12 @@
   .technology {
     padding-bottom: $gutter-desktop;
   }
+
+  &.no-wave {
+    .atf {
+      &:after {
+        content: none;
+      }
+    }
+  }
 }

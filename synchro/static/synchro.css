@@ -6291,6 +6291,9 @@ input:checked + .accordion-horizontal__inner-box {
 .gold-adwords .technology {
   padding-bottom: 60px; }
 
+.gold-adwords.no-wave .atf:after {
+  content: none; }
+
 .genesis-lp .main-header-container .a--cta {
   background: #5da8a6; }
 

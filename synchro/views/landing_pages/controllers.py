@@ -31,6 +31,42 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': True,
       }
+    },
+    '1': {
+      'template': 'landing_pages/gold/v2-0-adwords/1/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    '2': {
+      'template': 'landing_pages/gold/v2-0-adwords/2/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    '3': {
+      'template': 'landing_pages/gold/v2-0-adwords/3/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    '4': {
+      'template': 'landing_pages/gold/v2-0-adwords/4/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    '5': {
+      'template': 'landing_pages/gold/v2-0-adwords/5/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    '6': {
+      'template': 'landing_pages/gold/v2-0-adwords/6/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
     }
   },
   'genesis': {
