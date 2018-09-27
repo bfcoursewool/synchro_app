@@ -24,3 +24,11 @@ def create_km_entry():
 
   return jsonify(**new_checkout_entry.__json__())
   
+
+@rest_api_handlers.route('/adwords_idents', methods=['POST'])
+def create_adwords_entry():
+  assert request.get_json()
+  payload = request.get_json()
+  assert 'gclid' in payload
+
+  
