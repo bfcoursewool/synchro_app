@@ -23,13 +23,14 @@ class AnalyticsIntegration extends EventsBase {
       let queryParams = this.parseQueryString(window.location.search.substring(1))
       if('gclid' in queryParams) {
         console.log("We got an AdWords click!")
-        this.has_fired = true
-        $(target).trigger('click');
+        this.saveGCLID(queryParams).then(() => {
+          this.has_fired = true
+          $(target).trigger('click');
+        })
       }      
     } else {
       window.location.href = $(target).find('a').attr('href');
     }
-
   }
 
   saveGCLID(gclidParams) {
@@ -40,7 +41,8 @@ class AnalyticsIntegration extends EventsBase {
         contentType: 'application/json',
         url: '/api/adwords_idents',
         data: JSON.stringify(gclidParams),
-        success: () => resolve()
+        success: () => resolve(),
+        error: (XMLHttpRequest, textStatus, errorThrown) => resolve()
       });
     })
   }

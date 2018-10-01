@@ -4,6 +4,7 @@ import LPEffects from './ES6/effects';
 //import BuyButton from './ES6/ShopifyBuyButton/buy_button';
 import FaceBookPixel from './ES6/analytics/facebook_pixel';
 import Kissmetrics from './ES6/analytics/kissmetrics'; 
+import AnalyticsIntegration from './ES6/AnalyticsIntegration';
 import GradientEffect from './ES6/gradient_effect';
 import SVGLoader from './ES6/svg_loader';
 import Toggle from './ES6/toggle';
@@ -20,6 +21,7 @@ const gradientObj = new GradientEffect();
 const svgObj = new SVGLoader();
 const toggle = new Toggle();
 const tabs = new Tabs();
+const analyticsObj = new AnalyticsIntegration();
 const slider = Slider('.slides');
 
 susanEffects();

@@ -7,9 +7,28 @@ from flask import (
   request,
   render_template
 )
+from urlparse import urlparse, parse_qs
 from synchro.const import kSHOPIFY_WEBHOOK_SECRET
+from synchro.models.adwords_user import AdwordsUser
 
 webhook_handlers = Blueprint('webhook_handlers', __name__, url_prefix='/hooks')
+
+## Recharge API token -- 45094ac4ae34333ac4f603834b34cc6ca6602e6a685025c45615aea3
+## Recharge webhook curl: 
+'''
+
+curl -i -H 'X-Recharge-Access-Token: your_api_token' \
+-H "Accept: application/json" \
+-H "Content-Type: application/json" \
+-X POST https://api.rechargeapps.com/webhooks \
+--data '{"address":"https://request.in/foo", "topic":"subscription/created"}'
+
+'''
+
+# Webhook received from Recharge when a subsriptin order happens
+@webhook_handlers.route('/recharge_order', methods=['POST'])
+def recharge_order():
+  return ('', 200)
 
 # Webhook recieved from Shopify on "checkout create"
 @webhook_handlers.route('/checkout_create', methods=['POST'])
@@ -20,8 +39,16 @@ def checkout_create():
   assert header_hmac is not None
   assert validate_webhook(json_data, header_hmac)
 
-  print data
-    
+  referring_site = data.get('referring_site', None)
+  parsed_url = urlparse(referring_site)
+  query_params = parse_qs(parsed_url.query)
+  if 'gold.besynhro.com' in parsed_url.netloc or 
+      'genesis.besynchro.com' in parsed_url.netlock and 
+      'gclid' in query_params:
+    adwords_user = AdwordsUser.select_one(gclid=query_params['gclid'])
+    if adwords_user:
+      adwords_user.shopify_id = data['id']
+      adwords_user.shopify_email = data['email']
   return ('', 200)
 
 def validate_webhook(json_data, header_hmac):

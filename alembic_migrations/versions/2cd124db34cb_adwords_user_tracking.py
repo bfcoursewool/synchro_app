@@ -23,6 +23,7 @@ def upgrade():
       sa.Column('created_at', sa.DateTime, nullable=False),
       sa.Column('gclid', sa.String(255), nullable=False),
       sa.Column('shopify_id', sa.Integer),
+      sa.Column('shopify_email', sa.String(255)),
       sa.Column('recharge_id', sa.Integer),
       sa.Column('num_of_recharges', sa.Integer)
     )
