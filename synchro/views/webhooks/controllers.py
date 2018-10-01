@@ -37,7 +37,7 @@ def recharge_order():
 
   adwords_user = AdwordsUser.select_one(shopify_email=data['email'])
   if adwords_user:
-    adwords_user.recharge_id = data['customer_id']
+    adwords_user.set_recharge_id(data['customer_id'])
   return ('', 200)
 
 # Webhook recieved from Shopify on "checkout create"
@@ -57,8 +57,7 @@ def checkout_create():
       'gclid' in query_params:
     adwords_user = AdwordsUser.select_one(gclid=query_params['gclid'])
     if adwords_user:
-      adwords_user.shopify_id = data['id']
-      adwords_user.shopify_email = data['email']
+      adwords_user.set_shopify_info(data['id'], data['email'])
   return ('', 200)
 
 def validate_webhook(json_data, header_hmac):

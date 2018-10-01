@@ -28,3 +28,12 @@ class AdwordsUser(Base):
     db_session.add(new_entry)
     db_session.commit()
     return new_entry 
+
+  def set_recharge_id(self, recharge_id):
+    self.recharge_id = recharge_id
+    db_session.commit()
+
+  def set_shopify_info(self, shopify_id, shopify_email):
+    self.shopify_id = shopify_id
+    self.shopify_email = shopify_email
+    db_session.commit()
