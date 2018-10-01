@@ -9,6 +9,7 @@ from flask import (
 )
 from urlparse import urlparse, parse_qs
 from synchro.const import kSHOPIFY_WEBHOOK_SECRET
+from synchro.const_secrets import kRECHARGE_CLIENT_SECRET
 from synchro.models.adwords_user import AdwordsUser
 
 webhook_handlers = Blueprint('webhook_handlers', __name__, url_prefix='/hooks')
@@ -28,6 +29,14 @@ curl -i -H 'X-Recharge-Access-Token: your_api_token' \
 # Webhook received from Recharge when a subsriptin order happens
 @webhook_handlers.route('/recharge_order', methods=['POST'])
 def recharge_order():
+  json_data = request.get_data()
+  data = json.loads(json_data)
+  header_hmac = request.headers.get('X-Recharge-Hmac-Sha256')
+  assert header_hmac is not None
+  assert validate_recharge_webhook(json_data, header_hmac)
+
+  print data
+  #adwords_user = AdwordsUser.select_one(shopify_email=)
   return ('', 200)
 
 # Webhook recieved from Shopify on "checkout create"
@@ -42,8 +51,8 @@ def checkout_create():
   referring_site = data.get('referring_site', None)
   parsed_url = urlparse(referring_site)
   query_params = parse_qs(parsed_url.query)
-  if 'gold.besynhro.com' in parsed_url.netloc or 
-      'genesis.besynchro.com' in parsed_url.netlock and 
+  if 'gold.besynhro.com' in parsed_url.netloc or \
+      'genesis.besynchro.com' in parsed_url.netlock and \
       'gclid' in query_params:
     adwords_user = AdwordsUser.select_one(gclid=query_params['gclid'])
     if adwords_user:
@@ -57,3 +66,14 @@ def validate_webhook(json_data, header_hmac):
   if calculated_hmac == header_hmac:
     return True 
   return False
+
+def validate_recharge_webhook(req_body, webhook_hmac):
+  calculated_hmac = hashlib.sha256()
+  calculated_hmac.update(kRECHARGE_CLIENT_SECRET.encode("UTF-8")) 
+  calculated_hmac.update(req_body.encode("UTF-8"))
+  calculated_hmac = calculated_hmac.hexdigest()
+
+  if calculated_hmac == webhook_hmac:
+    return True
+  else:
+    return False
