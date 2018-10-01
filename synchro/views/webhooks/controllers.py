@@ -18,11 +18,11 @@ webhook_handlers = Blueprint('webhook_handlers', __name__, url_prefix='/hooks')
 ## Recharge webhook curl: 
 '''
 
-curl -i -H 'X-Recharge-Access-Token: your_api_token' \
+curl -i -H 'X-Recharge-Access-Token: 45094ac4ae34333ac4f603834b34cc6ca6602e6a685025c45615aea3' \
 -H "Accept: application/json" \
 -H "Content-Type: application/json" \
 -X POST https://api.rechargeapps.com/webhooks \
---data '{"address":"https://request.in/foo", "topic":"subscription/created"}'
+--data '{"address":"https://gold.besynchro.com/hooks/recharge_order", "topic":"charge/paid"}'
 
 '''
 

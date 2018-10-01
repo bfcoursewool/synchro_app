@@ -17,17 +17,15 @@ class AnalyticsIntegration extends EventsBase {
 
   handleClick(target, e) {
     console.log("Clicked!");
-    if(!this.has_fired) {
+    let queryParams = this.parseQueryString(window.location.search.substring(1))
+    if(!this.has_fired && 'gclid' in queryParams) {
       console.log("Preventing default...");
       e.preventDefault()
-      let queryParams = this.parseQueryString(window.location.search.substring(1))
-      if('gclid' in queryParams) {
-        console.log("We got an AdWords click!")
-        this.saveGCLID(queryParams).then(() => {
-          this.has_fired = true
-          $(target).trigger('click');
-        })
-      }      
+      console.log("We got an AdWords click!")
+      this.saveGCLID(queryParams).then(() => {
+        this.has_fired = true
+        $(target).trigger('click');
+      })
     } else {
       window.location.href = $(target).find('a').attr('href');
     }
