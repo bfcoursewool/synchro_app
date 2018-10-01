@@ -35,8 +35,9 @@ def recharge_order():
   assert header_hmac is not None
   assert validate_recharge_webhook(json_data, header_hmac)
 
-  print data
-  #adwords_user = AdwordsUser.select_one(shopify_email=)
+  adwords_user = AdwordsUser.select_one(shopify_email=data['email'])
+  if adwords_user:
+    adwords_user.recharge_id = data['customer_id']
   return ('', 200)
 
 # Webhook recieved from Shopify on "checkout create"
