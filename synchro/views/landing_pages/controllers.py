@@ -160,8 +160,6 @@ def landing_page(page, version):
   if 'template_vars' in endpoint_info_dict[page][version]:
     template_vars = endpoint_info_dict[page][version]['template_vars']
 
-  print url_for('static', filename='synchro.css')
-
   return render_template(
     endpoint_info_dict[page][version]['template'],
     kENV=const.kENVIRONMENT,

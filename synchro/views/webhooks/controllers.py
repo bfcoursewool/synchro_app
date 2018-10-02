@@ -53,7 +53,7 @@ def checkout_create():
   parsed_url = urlparse(referring_site)
   query_params = parse_qs(parsed_url.query)
   if 'gold.besynhro.com' in parsed_url.netloc or \
-      'genesis.besynchro.com' in parsed_url.netlock and \
+      'genesis.besynchro.com' in parsed_url.netloc and \
       'gclid' in query_params:
     adwords_user = AdwordsUser.select_one(gclid=query_params['gclid'])
     if adwords_user:
