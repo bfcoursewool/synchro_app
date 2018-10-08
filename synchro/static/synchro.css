@@ -6301,7 +6301,7 @@ input:checked + .accordion-horizontal__inner-box {
   z-index: 10;
   width: 100%; }
   .flash-sale-banner__code {
-    padding: 3px 9px;
+    padding: 1px 5px;
     color: #eca846;
     background: white;
     margin: 0 2px;
@@ -6331,21 +6331,21 @@ input:checked + .accordion-horizontal__inner-box {
     font-size: 18px; }
   .flash-sale-banner .a--cta {
     padding: 7px 15px;
-    margin: 0 10px; }
-    @media (max-width: 854px) {
+    letter-spacing: 0;
+    margin-left: 10px; }
+    @media (max-width: 680px) {
       .flash-sale-banner .a--cta {
-        display: block;
-        width: fit-content;
-        margin: 5px auto 0; } }
+        padding: 5px 9px;
+        margin: 5px 0 5px 10px; } }
 
 .main-header-container .main-header {
   position: relative;
   top: 70px;
   padding: 0;
   z-index: 1; }
-  .main-header-container .main-header.floated {
-    position: fixed;
-    top: 0; }
+  @media (max-width: 680px) {
+    .main-header-container .main-header {
+      top: 90px; } }
 
 .genesis-lp .main-header-container .a--cta {
   background: #5da8a6; }
