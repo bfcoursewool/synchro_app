@@ -6300,9 +6300,12 @@ input:checked + .accordion-horizontal__inner-box {
   background-color: #eca846;
   z-index: 10;
   width: 100%; }
+  @media (max-width: 680px) {
+    .flash-sale-banner__desktop {
+      display: none; } }
   .flash-sale-banner__code {
     padding: 1px 5px;
-    color: #000;
+    color: #eca846;
     background: white;
     margin: 0 2px;
     -webkit-animation: flash linear 1s infinite;

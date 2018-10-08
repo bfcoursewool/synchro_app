@@ -173,9 +173,15 @@
   z-index: 10;
   width: 100%;
 
+  &__desktop {
+    @include xs-screen {
+      display: none;
+    }
+  }
+
   &__code {
     padding: 1px 5px;
-    color: #000;
+    color: $color-gold;
     background: white;
     margin: 0 2px;
     -webkit-animation: flash linear 1s infinite;
