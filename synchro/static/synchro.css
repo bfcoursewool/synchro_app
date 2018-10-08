@@ -6336,7 +6336,7 @@ input:checked + .accordion-horizontal__inner-box {
     @media (max-width: 680px) {
       .flash-sale-banner .a--cta {
         padding: 5px 9px;
-        margin: 5px 0 5px 10px; } }
+        margin: 5px 0 0 10px; } }
 
 .main-header-container .main-header {
   position: relative;
