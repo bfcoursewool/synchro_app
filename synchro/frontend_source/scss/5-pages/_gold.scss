@@ -211,7 +211,7 @@
     color: #fff;
     font-weight: $font-demi;
     font-size: 18px;
-    @include sm-screen {
+    @include xs-screen {
       padding-top: 15px;
     }
   }
