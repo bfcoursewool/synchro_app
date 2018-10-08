@@ -6295,9 +6295,12 @@ input:checked + .accordion-horizontal__inner-box {
   content: none; }
 
 .flash-sale-banner {
+  position: fixed;
   text-align: center;
-  background-color: #eca846; }
-  .flash-sale-banner__title {
+  background-color: #eca846;
+  z-index: 10;
+  width: 100%; }
+  .flash-sale-banner__code {
     padding: 3px 9px;
     color: #eca846;
     background: white;
@@ -6326,17 +6329,20 @@ input:checked + .accordion-horizontal__inner-box {
     color: #fff;
     font-weight: 600;
     font-size: 18px; }
-    @media (max-width: 680px) {
-      .flash-sale-banner__text {
-        padding-top: 15px; } }
-  .flash-sale-banner__code {
-    padding: 1px 7px;
-    border: 2px solid white;
-    margin: 0 2px; }
+  .flash-sale-banner .a--cta {
+    padding: 7px 15px;
+    margin: 0 10px; }
+    @media (max-width: 854px) {
+      .flash-sale-banner .a--cta {
+        display: block;
+        width: fit-content;
+        margin: 5px auto 0; } }
 
 .main-header-container .main-header {
-  position: absolute;
-  top: initial; }
+  position: relative;
+  top: 70px;
+  padding: 0;
+  z-index: 1; }
   .main-header-container .main-header.floated {
     position: fixed;
     top: 0; }
