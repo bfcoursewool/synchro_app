@@ -165,3 +165,69 @@
     }
   }
 }
+
+.flash-sale-banner {
+  text-align: center;
+  background-color: $color-gold;
+
+  &__title {
+    padding: 3px 9px;
+    color: $color-gold;
+    background: white;
+    margin: 0 2px;
+    -webkit-animation: flash linear 1s infinite;
+    animation: flash linear 1s infinite;
+  }
+  @-webkit-keyframes flash {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.6;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes flash {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.6;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    padding: 10px;
+    margin: 0;
+    color: #fff;
+    font-weight: $font-demi;
+    font-size: 18px;
+  }
+
+  &__code {
+    padding: 1px 7px;
+    border: 2px solid white;
+    margin: 0 2px;
+  }
+}
+
+.main-header-container {
+  .main-header {
+    position: absolute;
+    top: initial;
+
+    &.floated {
+      position: fixed;
+      top: 0;
+    }
+  }
+}

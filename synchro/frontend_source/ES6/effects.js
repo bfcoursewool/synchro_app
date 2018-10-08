@@ -7,9 +7,9 @@ export default class LPEffects extends EventsBase {
     super();
     new WOW().init();
 
-    this._lastScroll = 0; 
+    this._lastScroll = 0;
     if($('.parallax')) {
-      this._initialParallaxBackgroundPosition = $('.parallax').css('background-position-y'); 
+      this._initialParallaxBackgroundPosition = $('.parallax').css('background-position-y');
     }
 
     this._appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
@@ -34,7 +34,7 @@ export default class LPEffects extends EventsBase {
     if($('.main-navigation').is('.expanded')) {
       $('.main-navigation').removeClass('expanded');
     } else {
-      $('.main-navigation').addClass('expanded'); 
+      $('.main-navigation').addClass('expanded');
     }
   }
 
@@ -79,7 +79,7 @@ export default class LPEffects extends EventsBase {
   navMenuTransition() {
     let navbar = $('.main-header');
     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    let maxScroll = 100;
+    let maxScroll = 47;
     let scrollAtBannerBackgroundBottom = $('.main-header').attr('data-header-transition')
     if(scrollAtBannerBackgroundBottom == 'background') {
       maxScroll = $('.main-banner__background').height() - $('.main-header').outerHeight();
