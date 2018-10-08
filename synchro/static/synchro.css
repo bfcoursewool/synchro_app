@@ -6326,6 +6326,9 @@ input:checked + .accordion-horizontal__inner-box {
     color: #fff;
     font-weight: 600;
     font-size: 18px; }
+    @media (max-width: 854px) {
+      .flash-sale-banner__text {
+        padding-top: 15px; } }
   .flash-sale-banner__code {
     padding: 1px 7px;
     border: 2px solid white;
