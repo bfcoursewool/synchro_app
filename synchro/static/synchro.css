@@ -6302,7 +6302,7 @@ input:checked + .accordion-horizontal__inner-box {
   width: 100%; }
   .flash-sale-banner__code {
     padding: 1px 5px;
-    color: #eca846;
+    color: #000;
     background: white;
     margin: 0 2px;
     -webkit-animation: flash linear 1s infinite;
