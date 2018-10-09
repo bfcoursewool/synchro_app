@@ -165,3 +165,82 @@
     }
   }
 }
+
+.flash-sale-banner {
+  position: fixed;
+  text-align: center;
+  background-color: $color-gold;
+  z-index: 10;
+  width: 100%;
+
+  &__desktop {
+    @include xs-screen {
+      display: none;
+    }
+  }
+
+  &__code {
+    padding: 1px 5px;
+    color: $color-gold;
+    background: white;
+    margin: 0 2px;
+    -webkit-animation: flash linear 1s infinite;
+    animation: flash linear 1s infinite;
+  }
+  @-webkit-keyframes flash {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.6;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes flash {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.6;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    padding: 10px;
+    margin: 0;
+    color: #fff;
+    font-weight: $font-demi;
+    font-size: 18px;
+  }
+
+  .a--cta {
+    padding: 7px 15px;
+    letter-spacing: 0;
+    margin-left: 10px;
+    @include xs-screen {
+      padding: 5px 9px;
+      margin: 5px 0 0 10px;
+    }
+  }
+}
+
+.main-header-container {
+  .main-header {
+    position: relative;
+    top: 70px;
+    padding: 0;
+    z-index: 1;
+    @include xs-screen {
+      top: 90px;
+    }
+  }
+}
