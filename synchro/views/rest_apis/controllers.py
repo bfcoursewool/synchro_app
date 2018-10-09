@@ -3,6 +3,7 @@ from flask import (
   request,
   jsonify
 )
+from flask_cors import cross_origin
 import json
 from synchro.models.km_ident import KMIdent
 from synchro.models.adwords_user import AdwordsUser
@@ -27,6 +28,7 @@ def create_km_entry():
   
 
 @rest_api_handlers.route('/adwords_idents', methods=['POST'])
+@cross_origin()
 def create_adwords_entry():
   assert request.get_json()
   payload = request.get_json()

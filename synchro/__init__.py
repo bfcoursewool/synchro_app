@@ -1,7 +1,6 @@
 import os
 from flask import Flask, render_template
 from flask_cdn import CDN
-from flask_cors import CORS
 import time
 import KISSmetrics
 from raven.contrib.flask import Sentry
@@ -23,7 +22,6 @@ app.config['SENTRY_CONFIG'] = {
 }
 app.secret_key = "tat_tvam_asi"
 CDN(app)
-CORS(app, resources={"/api/adwords_idents": {"origins": "besynchro.com"}})
 
 print app.config['CDN_DOMAIN']
 
