@@ -235,12 +235,11 @@
 
 .main-header-container {
   .main-header {
-    position: relative;
-    top: 70px;
+    top: 20px;
     padding: 0;
     z-index: 1;
-    @include xs-screen {
-      top: 90px;
-    }
+    // @include xs-screen {
+    //   top: 90px;
+    // }
   }
 }
