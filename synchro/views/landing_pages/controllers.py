@@ -147,9 +147,11 @@ def landing_page(page, version):
 
   # Fail if we don't have a valid page, and default to v0 if the version is invalid
   print "Page:  %s" % page
+  noindex = False
   assert page in endpoint_info_dict
   if version not in endpoint_info_dict[page]:
     version = 'v0'
+    noindex = True
 
   # Assert that each version entry in the info_dict contains both a template to render and a list of scripts to include.
   # A failed assertion should happen only during development, so this helps ensure developer consistency.
@@ -159,6 +161,7 @@ def landing_page(page, version):
   template_vars = {}
   if 'template_vars' in endpoint_info_dict[page][version]:
     template_vars = endpoint_info_dict[page][version]['template_vars']
+    template_vars['is_variant'] = noindex
 
   return render_template(
     endpoint_info_dict[page][version]['template'],
