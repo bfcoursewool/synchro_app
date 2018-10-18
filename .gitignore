@@ -2,4 +2,6 @@ synchro_venv
 activate_venv
 *.pyc
 synchro/resources/shopify/buy-button-js
+synchro/static/production
+synchro/static/production/*
 npm-debug.log
