@@ -76,34 +76,34 @@ export default class LPEffects extends EventsBase {
     this._lastScroll = scroll;
   }
 
-  // navMenuTransition() {
-  //   let navbar = $('.main-header');
-  //   let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  //   let maxScroll = 47;
-  //   let scrollAtBannerBackgroundBottom = $('.main-header').attr('data-header-transition')
-  //   if(scrollAtBannerBackgroundBottom == 'background') {
-  //     maxScroll = $('.main-banner__background').height() - $('.main-header').outerHeight();
-  //   }
-  //
-  //   // TODO -- Man this is janky... Feels like the nav menu should really become its own
-  //   // self-contained/reusable/configurable component instead of just trying to force it into
-  //   // here and then hack it to work for all our various implementations.
-  //   let navGradientLayer = $('.main-header>.gradient-layer');
-  //
-  //   if(scrollTop > maxScroll && !navbar.is('.floated')) {
-  //     navbar.addClass('floated');
-  //     if(navGradientLayer) {
-  //       navGradientLayer.addClass('show');
-  //     }
-  //   } else if(scrollTop < maxScroll && navbar.is('.floated')) {
-  //     navbar.removeClass('floated');
-  //     if(navGradientLayer) {
-  //       navGradientLayer.removeClass('show');
-  //     }
-  //   }
-  //
-  //   this.parallaxBackgroundScroll();
-  // }
+  navMenuTransition() {
+    let navbar = $('.main-header');
+    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    let maxScroll = 100;
+    let scrollAtBannerBackgroundBottom = $('.main-header').attr('data-header-transition')
+    if(scrollAtBannerBackgroundBottom == 'background') {
+      maxScroll = $('.main-banner__background').height() - $('.main-header').outerHeight();
+    }
+
+    // TODO -- Man this is janky... Feels like the nav menu should really become its own
+    // self-contained/reusable/configurable component instead of just trying to force it into
+    // here and then hack it to work for all our various implementations.
+    let navGradientLayer = $('.main-header>.gradient-layer');
+
+    if(scrollTop > maxScroll && !navbar.is('.floated')) {
+      navbar.addClass('floated');
+      if(navGradientLayer) {
+        navGradientLayer.addClass('show');
+      }
+    } else if(scrollTop < maxScroll && navbar.is('.floated')) {
+      navbar.removeClass('floated');
+      if(navGradientLayer) {
+        navGradientLayer.removeClass('show');
+      }
+    }
+
+    this.parallaxBackgroundScroll();
+  }
 
   openModal(target, e) {
     e.preventDefault();

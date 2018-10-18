@@ -6294,61 +6294,8 @@ input:checked + .accordion-horizontal__inner-box {
 .gold-adwords.no-wave .atf:after {
   content: none; }
 
-.flash-sale-banner {
-  position: fixed;
-  text-align: center;
-  background-color: #eca846;
-  z-index: 10;
-  width: 100%; }
-  @media (max-width: 680px) {
-    .flash-sale-banner__desktop {
-      display: none; } }
-  .flash-sale-banner__code {
-    padding: 1px 5px;
-    color: #eca846;
-    background: white;
-    margin: 0 2px;
-    -webkit-animation: flash linear 1s infinite;
-    animation: flash linear 1s infinite; }
-
-@-webkit-keyframes flash {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0.6; }
-  100% {
-    opacity: 1; } }
-
-@keyframes flash {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0.6; }
-  100% {
-    opacity: 1; } }
-  .flash-sale-banner__text {
-    padding: 10px;
-    margin: 0;
-    color: #fff;
-    font-weight: 600;
-    font-size: 18px; }
-  .flash-sale-banner .a--cta {
-    padding: 7px 15px;
-    letter-spacing: 0;
-    margin-left: 10px; }
-    @media (max-width: 680px) {
-      .flash-sale-banner .a--cta {
-        padding: 5px 9px;
-        margin: 5px 0 0 10px; } }
-
 .main-header-container .main-header {
-  position: relative;
-  top: 70px;
-  padding: 0;
-  z-index: 1; }
-  @media (max-width: 680px) {
-    .main-header-container .main-header {
-      top: 90px; } }
+  padding-top: 20px; }
 
 .genesis-lp .main-header-container .a--cta {
   background: #5da8a6; }
