@@ -46,12 +46,14 @@ def checkout_create():
   json_data = request.get_data()
   data = json.loads(json_data)
   header_hmac = request.headers.get('X-Shopify-Hmac-Sha256')
+
+  print "Webhoooook"
+
   assert header_hmac is not None
   assert validate_webhook(json_data, header_hmac)
 
   referring_site = data.get('referring_site', None)
 
-  print "Webhoooook"
   print referring_site
 
   parsed_url = urlparse(referring_site)
