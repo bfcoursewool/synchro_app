@@ -50,6 +50,10 @@ def checkout_create():
   assert validate_webhook(json_data, header_hmac)
 
   referring_site = data.get('referring_site', None)
+
+  print "Webhoooook"
+  print referring_site
+
   parsed_url = urlparse(referring_site)
   query_params = parse_qs(parsed_url.query)
   if 'gclid' in query_params:
