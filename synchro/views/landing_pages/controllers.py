@@ -107,10 +107,6 @@ endpoint_info_dict = {
   }
 }
 
-@landing_pages.route('/testing')
-def testing():
-  print "Uh hello..."
-
 @landing_pages.route('/', defaults={'page': 'none', 'version': 'v0'})
 @landing_pages.route('/<page>/', defaults={'version': 'v0'})
 @landing_pages.route('/<page>/<version>')
@@ -118,9 +114,6 @@ def landing_page(page, version):
   parsed_url = urlparse(request.url_root)
   host = parsed_url[1].split(':')[0] # Don't care about port, if it's in the netloc
   subdomain = host.split('.')[0]
-
-  print const.kENVIRONMENT
-  print subdomain.isalpha()
 
   # Only set page to the parsed 'subdomain' in case it's actually letters.
   # in other words if this is a health-check request going directly to an instance's ephemeral ip
@@ -137,7 +130,6 @@ def landing_page(page, version):
     if request.headers.get('X-Forwarded-Proto', '').lower() != "https":
       full_url = request.url
       ssl_url = full_url.replace('http://', 'https://')
-      print "UHm.... 301 redirect?!"
       return redirect(ssl_url, code=301)
 
   # Page and version can also be passed in as GET vars, for URL-formatting reasons
@@ -153,7 +145,6 @@ def landing_page(page, version):
     return ('', 200)
 
   # Fail if we don't have a valid page, and default to v0 if the version is invalid
-  print "Page:  %s" % page
   noindex = False
   assert page in endpoint_info_dict
   if version not in endpoint_info_dict[page]:
