@@ -83,6 +83,14 @@ endpoint_info_dict = {
       }
     }
   },
+  'ketomanna': {
+    'v0': {
+      'template': 'landing_pages/ketomanna/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    }
+  },
   'cognos': {
     'v0': {
       'template': 'landing_pages/cognos/v1-0/0-index.html',

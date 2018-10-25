@@ -258,7 +258,7 @@ html {
 html {
   font-size: 16px;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -4321,7 +4321,7 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px; }
   .carousel-indicators .active {
@@ -5321,7 +5321,7 @@ a {
   .main-header-container .main-header__logo {
     grid-column-start: 2; }
     .main-header-container .main-header__logo .synchro-logo {
-      height: 30px;
+      height: 20px;
       fill: #000000;
       transition: fill ease-in-out 0.5s; }
   .main-header-container .main-header a {
@@ -6474,6 +6474,154 @@ input:checked + .accordion-horizontal__inner-box {
     right: -15px;
     border-right-color: transparent; }
 
+.ketomanna-lp .atf.bg-full-width {
+  background-image: url("https://cdn.besynchro.com/KetoManna/v1-0/km-product-atf.jpg");
+  background-color: #f0f3f4;
+  background-position: center; }
+  @media (max-width: 854px) {
+    .ketomanna-lp .atf.bg-full-width {
+      background: none; }
+      .ketomanna-lp .atf.bg-full-width:after {
+        content: none; } }
+
+.ketomanna-lp .atf__content-box {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  text-align: center; }
+  @media (max-width: 854px) {
+    .ketomanna-lp .atf__content-box {
+      position: initial;
+      transform: none;
+      margin: 0 auto;
+      max-width: 80%; } }
+
+.ketomanna-lp .atf__header {
+  position: initial;
+  transform: none;
+  font-size: 40px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: white;
+  width: 320px;
+  padding: 14px;
+  opacity: 0.8; }
+  @media (max-width: 854px) {
+    .ketomanna-lp .atf__header {
+      background: none;
+      padding: 0;
+      width: initial; } }
+  @media (max-width: 680px) {
+    .ketomanna-lp .atf__header {
+      font-size: 40px; } }
+
+.ketomanna-lp .atf__description {
+  font-size: 26px; }
+  @media (max-width: 854px) {
+    .ketomanna-lp .atf__description {
+      margin: 0 auto 20px;
+      font-size: 22px; } }
+
+.ketomanna-lp .atf .a--cta {
+  margin: 5px; }
+  .ketomanna-lp .atf .a--cta.cta--secondary {
+    background: none;
+    color: #000000; }
+
+.ketomanna-lp .atf .down-arrow {
+  opacity: 0;
+  width: 19px;
+  transition: opacity 0.75s ease-in-out, bottom 0.75s ease-in-out; }
+  .ketomanna-lp .atf .down-arrow.animate-in {
+    bottom: 70px;
+    opacity: 1; }
+
+.ketomanna-lp .atf:after {
+  content: "";
+  background-image: url("https://cdn.besynchro.com/gold/v2-0/atf-bottom-wave@2x.png");
+  background-color: transparent;
+  height: 45px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-repeat: repeat-x;
+  background-size: auto 45px;
+  background-position-x: center;
+  z-index: 90; }
+
+.ketomanna-lp .atf__mobile {
+  display: none; }
+  @media (max-width: 854px) {
+    .ketomanna-lp .atf__mobile {
+      display: block;
+      position: relative;
+      background-image: url("https://cdn.besynchro.com/experiments/gold-og-lg-bg-mobile.jpg");
+      background-size: cover;
+      height: 400px;
+      background-position: center; } }
+  .ketomanna-lp .atf__mobile:after {
+    content: "";
+    background-image: url("https://cdn.besynchro.com/gold/v2-0/atf-bottom-wave@2x.png");
+    background-color: transparent;
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-repeat: repeat-x;
+    background-size: auto 45px;
+    background-position-x: center;
+    z-index: 90; }
+
+.ketomanna-lp .intro {
+  background-color: #E6E6E5;
+  background-image: url("https://cdn.besynchro.com/KetoManna/v1-0/km-intro.jpg");
+  background-size: cover; }
+  .ketomanna-lp .intro__copy {
+    text-align: left; }
+    .ketomanna-lp .intro__copy .p--title {
+      margin-left: 0; }
+    .ketomanna-lp .intro__copy .p--header {
+      max-width: none;
+      margin: initial; }
+
+.ketomanna-lp .facts__ketomanna {
+  text-align: center;
+  background: url("https://cdn.besynchro.com/KetoManna/v1-0/km-background.png") center;
+  background-size: cover;
+  padding: 60px; }
+  @media (max-width: 854px) {
+    .ketomanna-lp .facts__ketomanna {
+      padding: 40px; } }
+  @media (max-width: 767px) {
+    .ketomanna-lp .facts__ketomanna {
+      padding: 20px; } }
+  .ketomanna-lp .facts__ketomanna img {
+    max-height: 550px; }
+
+.ketomanna-lp .consumption {
+  font-size: 0;
+  padding: 0 60px 60px; }
+  .ketomanna-lp .consumption__box {
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    vertical-align: top; }
+  .ketomanna-lp .consumption__text {
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    margin: 0;
+    font-size: 26px;
+    color: #fff; }
+    .ketomanna-lp .consumption__text.km-fudge {
+      background: #6C5851; }
+    .ketomanna-lp .consumption__text.km-bar {
+      background: #515E6C; }
+  .ketomanna-lp .consumption__image {
+    width: 100%; }
+
 /* .bg-full-width {
   background-image: url('https://cdn.besynchro.com/cognos/assets-hero-3.jpg');
   background-attachment: fixed;
@@ -6713,4 +6861,4 @@ svg.external {
 }
 */
 
-/*# sourceMappingURL=synchro.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

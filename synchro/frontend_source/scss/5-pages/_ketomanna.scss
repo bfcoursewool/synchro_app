@@ -1,0 +1,190 @@
+.ketomanna-lp {
+  .atf {
+    &.bg-full-width {
+      background-image: url("https://cdn.besynchro.com/KetoManna/v1-0/km-product-atf.jpg");
+      background-color: #f0f3f4;
+      background-position: center;
+      @include sm-screen {
+        background: none;
+
+        &:after {
+          content: none;
+        }
+      }
+    }
+
+    &__content-box {
+      position: absolute;
+      top: 53%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 400px;
+      text-align: center;
+      @include sm-screen {
+        position: initial;
+        transform: none;
+        margin: 0 auto;
+        max-width: 80%;
+      }
+    }
+
+    &__header {
+      position: initial;
+      transform: none;
+      font-size: 40px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      background: white;
+      width: 320px;
+      padding: 14px;
+      opacity: 0.8;
+      @include sm-screen {
+        background: none;
+        padding: 0;
+        width: initial;
+      }
+      @include xs-screen {
+        font-size: 40px;
+      }
+    }
+
+    &__description {
+      font-size: 26px;
+      @include sm-screen {
+        margin: 0 auto 20px;
+        font-size: 22px;
+      }
+    }
+
+    .a--cta {
+      margin: 5px;
+
+      &.cta--secondary {
+        background: none;
+        color: $color-primary;
+      }
+    }
+
+    .down-arrow {
+      opacity: 0;
+      width: 19px;
+      transition: opacity 0.75s ease-in-out, bottom 0.75s ease-in-out;
+
+      &.animate-in {
+        bottom: 70px;
+        opacity: 1;
+      }
+    }
+    // wave bottom
+    &:after {
+      content: "";
+      background-image: url("https://cdn.besynchro.com/gold/v2-0/atf-bottom-wave@2x.png");
+      background-color: transparent;
+      height: 45px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      background-repeat: repeat-x;
+      background-size: auto 45px;
+      background-position-x: center;
+      z-index: $header-z-index - 10;
+    }
+
+    &__mobile {
+      display: none;
+      @include sm-screen {
+        display: block;
+        position: relative;
+        background-image: url("https://cdn.besynchro.com/experiments/gold-og-lg-bg-mobile.jpg");
+        background-size: cover;
+        height: 400px;
+        background-position: center;
+      }
+      // wave bottom
+      &:after {
+        content: "";
+        background-image: url("https://cdn.besynchro.com/gold/v2-0/atf-bottom-wave@2x.png");
+        background-color: transparent;
+        height: 45px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-repeat: repeat-x;
+        background-size: auto 45px;
+        background-position-x: center;
+        z-index: $header-z-index - 10;
+      }
+    }
+  }
+
+  .intro {
+    background-color: #E6E6E5;
+    background-image: url("https://cdn.besynchro.com/KetoManna/v1-0/km-intro.jpg");
+    background-size: cover;
+
+    &__copy {
+      text-align: left;
+
+      .p--title {
+        margin-left: 0;
+      }
+
+      .p--header {
+        max-width: none;
+        margin: initial;
+      }
+    }
+  }
+
+  .facts {
+    &__ketomanna {
+      text-align: center;
+      background: url("https://cdn.besynchro.com/KetoManna/v1-0/km-background.png") center;
+      background-size: cover;
+      padding: $gutter-desktop;
+      @include sm-screen {
+        padding: $gutter-tablet;
+      }
+      @include s-screen {
+        padding: $gutter-mobile;
+      }
+
+      img {
+        max-height: 550px;
+      }
+    }
+  }
+
+  .consumption {
+    font-size: 0;
+    padding: 0 $gutter-desktop $gutter-desktop;
+
+    &__box {
+      display: inline-block;
+      width: 50%;
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    &__text {
+      height: 80px;
+      text-align: center;
+      line-height: 80px;
+      margin: 0;
+      font-size: 26px;
+      color: #fff;
+
+      &.km-fudge {
+        background: #6C5851;
+      }
+
+      &.km-bar {
+        background: #515E6C;
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+}
