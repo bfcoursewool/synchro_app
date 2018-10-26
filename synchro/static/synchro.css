@@ -6567,10 +6567,11 @@ input:checked + .accordion-horizontal__inner-box {
     .ketomanna-lp .atf__mobile {
       display: block;
       position: relative;
-      background-image: url("https://cdn.besynchro.com/experiments/gold-og-lg-bg-mobile.jpg");
+      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf-mobile.jpg");
       background-size: cover;
       height: 400px;
-      background-position: center; } }
+      background-position: center;
+      background-position-y: -10px; } }
   .ketomanna-lp .atf__mobile:after {
     content: "";
     background-image: url("https://cdn.besynchro.com/gold/v2-0/atf-bottom-wave@2x.png");
@@ -6588,9 +6589,19 @@ input:checked + .accordion-horizontal__inner-box {
   background-color: #E6E6E5;
   background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro.jpg");
   background-size: cover;
-  padding: 60px; }
+  padding-bottom: 60px; }
+  @media (max-width: 767px) {
+    .ketomanna-lp .intro {
+      background: none;
+      border-bottom: 1px solid #E6E6E5;
+      padding-bottom: 40px; } }
   .ketomanna-lp .intro__copy {
+    padding-top: 60px;
     text-align: left; }
+    @media (max-width: 767px) {
+      .ketomanna-lp .intro__copy {
+        text-align: center;
+        padding-top: 40px; } }
     .ketomanna-lp .intro__copy .p--title {
       margin-left: 0; }
     .ketomanna-lp .intro__copy .p--header {
@@ -6603,13 +6614,25 @@ input:checked + .accordion-horizontal__inner-box {
   padding-top: 60px;
   padding-bottom: 30px;
   background: none; }
+  @media (max-width: 767px) {
+    .ketomanna-lp .ingredients__icons {
+      border-top: 1px solid #e6e6e5;
+      margin-top: 20px;
+      padding-top: 40px;
+      padding-bottom: 0; } }
 
 .ketomanna-lp .ingredients__icon-box {
   width: 25%;
   max-width: 300px; }
+  @media (max-width: 767px) {
+    .ketomanna-lp .ingredients__icon-box {
+      width: 50%; } }
 
 .ketomanna-lp .ingredients__items {
   padding: 10px 60px 40px; }
+  @media (max-width: 767px) {
+    .ketomanna-lp .ingredients__items {
+      padding: 0 20px 20px; } }
 
 .ketomanna-lp .ingredients__image {
   max-height: 110px; }
@@ -6633,7 +6656,8 @@ input:checked + .accordion-horizontal__inner-box {
     .ketomanna-lp .facts__ketomanna {
       padding: 20px; } }
   .ketomanna-lp .facts__ketomanna img {
-    max-height: 550px; }
+    max-height: 550px;
+    max-width: 100%; }
   .ketomanna-lp .facts__ketomanna .p--title {
     border-color: #fff;
     color: #fff; }
@@ -6641,15 +6665,24 @@ input:checked + .accordion-horizontal__inner-box {
     color: #fff;
     font-size: 30px;
     max-width: 700px; }
+    @media (max-width: 767px) {
+      .ketomanna-lp .facts__ketomanna .p--text {
+        font-size: 20px; } }
 
 .ketomanna-lp .consumption {
   font-size: 0;
   padding: 0 60px 60px; }
+  @media (max-width: 767px) {
+    .ketomanna-lp .consumption {
+      padding: 0 20px 40px; } }
   .ketomanna-lp .consumption__box {
     display: inline-block;
     width: 50%;
     padding: 10px;
     vertical-align: top; }
+    @media (max-width: 767px) {
+      .ketomanna-lp .consumption__box {
+        width: 100%; } }
   .ketomanna-lp .consumption__text {
     height: 80px;
     text-align: center;
@@ -6657,12 +6690,23 @@ input:checked + .accordion-horizontal__inner-box {
     margin: 0;
     font-size: 26px;
     color: #fff; }
+    @media (max-width: 767px) {
+      .ketomanna-lp .consumption__text {
+        height: initial;
+        line-height: 1.5;
+        padding: 15px;
+        font-size: 22px; } }
     .ketomanna-lp .consumption__text.km-fudge {
       background: #6C5851; }
     .ketomanna-lp .consumption__text.km-bar {
       background: #515E6C; }
   .ketomanna-lp .consumption__image {
     width: 100%; }
+
+@media (max-width: 767px) {
+  .ketomanna-lp .purchase__item:nth-child(2) {
+    border-bottom: none;
+    border-top: 1px solid #e2e2e2; } }
 
 .ketomanna-lp .purchase .option-1 {
   background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/ketomanna-10ct-1.jpg"); }

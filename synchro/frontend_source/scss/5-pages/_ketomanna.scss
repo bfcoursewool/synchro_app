@@ -112,10 +112,11 @@
       @include sm-screen {
         display: block;
         position: relative;
-        background-image: url("https://cdn.besynchro.com/experiments/gold-og-lg-bg-mobile.jpg");
+        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf-mobile.jpg");
         background-size: cover;
         height: 400px;
         background-position: center;
+        background-position-y: -10px;
       }
       // wave bottom
       &:after {
@@ -138,10 +139,20 @@
     background-color: #E6E6E5;
     background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro.jpg");
     background-size: cover;
-    padding: $gutter-desktop;
+    padding-bottom: $gutter-desktop;
+    @include s-screen {
+      background: none;
+      border-bottom: 1px solid #E6E6E5;
+      padding-bottom: $gutter-tablet;
+    }
 
     &__copy {
+      padding-top: $gutter-desktop;
       text-align: left;
+      @include s-screen {
+        text-align: center;
+        padding-top: $gutter-tablet;
+      }
 
       .p--title {
         margin-left: 0;
@@ -163,15 +174,27 @@
       padding-top: $gutter-desktop;
       padding-bottom: 30px;
       background: none;
+      @include s-screen {
+        border-top: 1px solid #e6e6e5;
+        margin-top: 20px;
+        padding-top: $gutter-tablet;
+        padding-bottom: 0;
+      }
     }
 
     &__icon-box {
       width: 25%;
       max-width: 300px;
+      @include s-screen {
+        width: 50%;
+      }
     }
 
     &__items {
       padding: 10px $gutter-desktop 40px;
+      @include s-screen {
+        padding: 0 $gutter-mobile $gutter-mobile;
+      }
     }
 
     &__image {
@@ -202,6 +225,7 @@
 
       img {
         max-height: 550px;
+        max-width: 100%;
       }
 
       .p--title {
@@ -213,6 +237,9 @@
         color: #fff;
         font-size: 30px;
         max-width: 700px;
+        @include s-screen {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -220,12 +247,18 @@
   .consumption {
     font-size: 0;
     padding: 0 $gutter-desktop $gutter-desktop;
+    @include s-screen {
+      padding: 0 $gutter-mobile $gutter-tablet;
+    }
 
     &__box {
       display: inline-block;
       width: 50%;
       padding: 10px;
       vertical-align: top;
+      @include s-screen {
+        width: 100%;
+      }
     }
 
     &__text {
@@ -235,6 +268,12 @@
       margin: 0;
       font-size: 26px;
       color: #fff;
+      @include s-screen {
+        height: initial;
+        line-height: 1.5;
+        padding: 15px;
+        font-size: 22px;
+      }
 
       &.km-fudge {
         background: #6C5851;
@@ -251,6 +290,13 @@
   }
 
   .purchase {
+    @include s-screen {
+      &__item:nth-child(2) {
+        border-bottom: none;
+        border-top: 1px solid #e2e2e2;
+      }
+    }
+
     .option-1 {
       background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/ketomanna-10ct-1.jpg");
     }
