@@ -5321,7 +5321,7 @@ a {
   .main-header-container .main-header__logo {
     grid-column-start: 2; }
     .main-header-container .main-header__logo .synchro-logo {
-      height: 30px;
+      height: 20px;
       fill: #000000;
       transition: fill ease-in-out 0.5s; }
   .main-header-container .main-header a {
