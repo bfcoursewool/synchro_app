@@ -1,7 +1,24 @@
 .ketomanna-lp {
+  .main-header {
+    .a--cta {
+      display: none;
+    }
+
+    &.floated {
+      .a--cta {
+        display: block;
+        background: $color-ketomanna;
+      }
+    }
+
+    &__content {
+      height: 47px;
+    }
+  }
+
   .atf {
     &.bg-full-width {
-      background-image: url("https://cdn.besynchro.com/KetoManna/v1-0/km-product-atf.jpg");
+      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf.jpg");
       background-color: #f0f3f4;
       background-position: center;
       @include sm-screen {
@@ -119,8 +136,9 @@
 
   .intro {
     background-color: #E6E6E5;
-    background-image: url("https://cdn.besynchro.com/KetoManna/v1-0/km-intro.jpg");
+    background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro.jpg");
     background-size: cover;
+    padding: $gutter-desktop;
 
     &__copy {
       text-align: left;
@@ -134,14 +152,47 @@
         margin: initial;
       }
     }
+
+    .a--cta {
+      margin-bottom: 0;
+    }
+  }
+
+  .ingredients {
+    &__icons {
+      padding-top: $gutter-desktop;
+      padding-bottom: 30px;
+      background: none;
+    }
+
+    &__icon-box {
+      width: 25%;
+      max-width: 300px;
+    }
+
+    &__items {
+      padding: 10px $gutter-desktop 40px;
+    }
+
+    &__image {
+      max-height: 110px;
+    }
+
+    &__header {
+      font-size: 20px;
+      border-width: 0 0 2px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
   }
 
   .facts {
     &__ketomanna {
       text-align: center;
-      background: url("https://cdn.besynchro.com/KetoManna/v1-0/km-background.png") center;
+      background: url("https://cdn.besynchro.com/ketomanna/v1-0/km-background.png") center;
       background-size: cover;
-      padding: $gutter-desktop;
+      padding: $gutter-desktop $gutter-desktop 30px;
       @include sm-screen {
         padding: $gutter-tablet;
       }
@@ -151,6 +202,17 @@
 
       img {
         max-height: 550px;
+      }
+
+      .p--title {
+        border-color: #fff;
+        color: #fff;
+      }
+
+      .p--text {
+        color: #fff;
+        font-size: 30px;
+        max-width: 700px;
       }
     }
   }
@@ -185,6 +247,24 @@
 
     &__image {
       width: 100%;
+    }
+  }
+
+  .purchase {
+    .option-1 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/ketomanna-10ct-1.jpg");
+    }
+
+    .option-2 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/ketomanna-20ct-1.jpg");
+    }
+
+    .option-3 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/ketomanna-20ct-2.jpg");
+    }
+
+    .discount {
+      @include discount ($color-ketomanna)
     }
   }
 }

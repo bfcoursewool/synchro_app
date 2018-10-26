@@ -6474,8 +6474,18 @@ input:checked + .accordion-horizontal__inner-box {
     right: -15px;
     border-right-color: transparent; }
 
+.ketomanna-lp .main-header .a--cta {
+  display: none; }
+
+.ketomanna-lp .main-header.floated .a--cta {
+  display: block;
+  background: #6c5851; }
+
+.ketomanna-lp .main-header__content {
+  height: 47px; }
+
 .ketomanna-lp .atf.bg-full-width {
-  background-image: url("https://cdn.besynchro.com/KetoManna/v1-0/km-product-atf.jpg");
+  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf.jpg");
   background-color: #f0f3f4;
   background-position: center; }
   @media (max-width: 854px) {
@@ -6576,8 +6586,9 @@ input:checked + .accordion-horizontal__inner-box {
 
 .ketomanna-lp .intro {
   background-color: #E6E6E5;
-  background-image: url("https://cdn.besynchro.com/KetoManna/v1-0/km-intro.jpg");
-  background-size: cover; }
+  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro.jpg");
+  background-size: cover;
+  padding: 60px; }
   .ketomanna-lp .intro__copy {
     text-align: left; }
     .ketomanna-lp .intro__copy .p--title {
@@ -6585,12 +6596,36 @@ input:checked + .accordion-horizontal__inner-box {
     .ketomanna-lp .intro__copy .p--header {
       max-width: none;
       margin: initial; }
+  .ketomanna-lp .intro .a--cta {
+    margin-bottom: 0; }
+
+.ketomanna-lp .ingredients__icons {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background: none; }
+
+.ketomanna-lp .ingredients__icon-box {
+  width: 25%;
+  max-width: 300px; }
+
+.ketomanna-lp .ingredients__items {
+  padding: 10px 60px 40px; }
+
+.ketomanna-lp .ingredients__image {
+  max-height: 110px; }
+
+.ketomanna-lp .ingredients__header {
+  font-size: 20px;
+  border-width: 0 0 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 .ketomanna-lp .facts__ketomanna {
   text-align: center;
-  background: url("https://cdn.besynchro.com/KetoManna/v1-0/km-background.png") center;
+  background: url("https://cdn.besynchro.com/ketomanna/v1-0/km-background.png") center;
   background-size: cover;
-  padding: 60px; }
+  padding: 60px 60px 30px; }
   @media (max-width: 854px) {
     .ketomanna-lp .facts__ketomanna {
       padding: 40px; } }
@@ -6599,6 +6634,13 @@ input:checked + .accordion-horizontal__inner-box {
       padding: 20px; } }
   .ketomanna-lp .facts__ketomanna img {
     max-height: 550px; }
+  .ketomanna-lp .facts__ketomanna .p--title {
+    border-color: #fff;
+    color: #fff; }
+  .ketomanna-lp .facts__ketomanna .p--text {
+    color: #fff;
+    font-size: 30px;
+    max-width: 700px; }
 
 .ketomanna-lp .consumption {
   font-size: 0;
@@ -6621,6 +6663,46 @@ input:checked + .accordion-horizontal__inner-box {
       background: #515E6C; }
   .ketomanna-lp .consumption__image {
     width: 100%; }
+
+.ketomanna-lp .purchase .option-1 {
+  background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/ketomanna-10ct-1.jpg"); }
+
+.ketomanna-lp .purchase .option-2 {
+  background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/ketomanna-20ct-1.jpg"); }
+
+.ketomanna-lp .purchase .option-3 {
+  background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/ketomanna-20ct-2.jpg"); }
+
+.ketomanna-lp .purchase .discount {
+  display: block;
+  width: 110px;
+  height: 26px;
+  background-color: #6c5851;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  text-transform: uppercase;
+  z-index: 90;
+  transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out; }
+  .ketomanna-lp .purchase .discount:after, .ketomanna-lp .purchase .discount:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 13px solid #6c5851;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    z-index: -1; }
+  .ketomanna-lp .purchase .discount:before {
+    left: -15px;
+    border-left-color: transparent; }
+  .ketomanna-lp .purchase .discount:after {
+    right: -15px;
+    border-right-color: transparent; }
 
 /* .bg-full-width {
   background-image: url('https://cdn.besynchro.com/cognos/assets-hero-3.jpg');
