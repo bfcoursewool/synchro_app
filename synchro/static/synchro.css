@@ -5760,13 +5760,13 @@ a {
     grid-column-start: 2; }
   .footer .synchro-logo {
     display: block;
-    margin: 0 auto 5px;
-    width: 90px;
+    margin: 7px auto 9px;
+    height: 17px;
     fill: #fff; }
   .footer .p--text {
     color: #fff;
     font-size: 16px;
-    font-weight: 700; }
+    font-weight: 600; }
   .footer__top {
     background: #fff;
     font-family: FontAwesome;
@@ -6067,6 +6067,12 @@ a {
   width: 64px; }
   .slick-slide .quote-author-img {
     display: inline-block; }
+
+.quote-author-name {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  font-weight: 100; }
 
 .text-full-width {
   background: #f4f4f5;
@@ -6702,6 +6708,9 @@ input:checked + .accordion-horizontal__inner-box {
       background: #515E6C; }
   .ketomanna-lp .consumption__image {
     width: 100%; }
+
+.ketomanna-lp .slider .slick-active [type="button"] {
+  background-color: #988177; }
 
 @media (max-width: 767px) {
   .ketomanna-lp .purchase__item:nth-child(2) {

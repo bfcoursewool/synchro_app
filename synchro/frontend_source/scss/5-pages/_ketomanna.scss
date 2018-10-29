@@ -289,6 +289,14 @@
     }
   }
 
+  .slider {
+    .slick-active {
+      [type="button"] {
+        background-color: #988177;
+      }
+    }
+  }
+
   .purchase {
     @include s-screen {
       &__item:nth-child(2) {
