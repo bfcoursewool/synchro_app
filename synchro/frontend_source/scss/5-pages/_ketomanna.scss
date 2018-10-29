@@ -112,7 +112,7 @@
       @include sm-screen {
         display: block;
         position: relative;
-        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf-mobile.jpg");
+        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf-mobile2.jpg");
         background-size: cover;
         height: 400px;
         background-position: center;
@@ -247,6 +247,8 @@
   .consumption {
     font-size: 0;
     padding: 0 $gutter-desktop $gutter-desktop;
+    max-width: 1400px;
+    margin: 0 auto;
     @include s-screen {
       padding: 0 $gutter-mobile $gutter-tablet;
     }
