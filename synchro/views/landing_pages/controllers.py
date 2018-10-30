@@ -27,7 +27,7 @@ endpoint_info_dict = {
       }
     },
     'turmeric-supplement': {
-      'template': 'landing_pages/gold/v2-0-adwords/0-index.html',
+      'template': 'landing_pages/gold/v2-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
@@ -50,6 +50,12 @@ endpoint_info_dict = {
   'ketomanna': {
     'v0': {
       'template': 'landing_pages/ketomanna/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
+    'keto-chocolate-fudge': {
+      'template': 'landing_pages/ketomanna/v1-0-paid/0-index.html',
       'template_vars': {
         'is_variant': False,
       }
