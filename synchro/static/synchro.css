@@ -5694,6 +5694,12 @@ a {
       @media (max-width: 854px) {
         .purchase__item-price.premium-animate {
           font-size: 60px; } }
+  .purchase__item-cents {
+    font-size: 25px;
+    vertical-align: top;
+    line-height: 45px;
+    border-bottom: 2px solid #e9e9ea;
+    margin-left: 3px; }
 
 .premium-item {
   background: #fbfaf9; }
@@ -6720,13 +6726,13 @@ input:checked + .accordion-horizontal__inner-box {
     border-top: 1px solid #e2e2e2; } }
 
 .ketomanna-lp .purchase .option-1 {
-  background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/ketomanna-10ct-1.jpg"); }
+  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png"); }
 
 .ketomanna-lp .purchase .option-2 {
-  background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/ketomanna-20ct-1.jpg"); }
+  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png"); }
 
 .ketomanna-lp .purchase .option-3 {
-  background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/products/ketomanna-20ct-2.jpg"); }
+  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png"); }
 
 .ketomanna-lp .purchase .discount {
   display: block;
