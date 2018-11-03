@@ -82,6 +82,14 @@
       }
     }
   }
+
+  &__item-cents {
+    font-size: 25px;
+    vertical-align: top;
+    line-height: 45px;
+    border-bottom: 2px solid #e9e9ea;
+    margin-left: 3px;
+  }
 }
 
 .premium-item {
