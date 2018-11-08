@@ -1,9 +1,9 @@
 .text-full-width {
-  background: $color-gray-light;
+  background: $color-silver-light;
   text-align: center;
-  padding: $gutter-tablet $gutter-desktop;
+  padding: $gutter-medium $gutter-large;
   @include s-screen {
-    padding: $gutter-mobile;
+    padding: $gutter-small;
   }
 
   .p--text {

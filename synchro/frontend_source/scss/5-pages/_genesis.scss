@@ -41,25 +41,25 @@
   .ingredients {
     &__genesis {
       font-size: 0;
-      padding: 0 $gutter-desktop $gutter-desktop;
+      padding: 0 $gutter-large $gutter-large;
       @include s-screen {
-        padding: 0 $gutter-mobile $gutter-desktop;
+        padding: 0 $gutter-small $gutter-large;
       }
 
       &-keystone-img {
         display: inline-block;
         width: 50%;
         vertical-align: middle;
-        padding: $gutter-desktop;
+        padding: $gutter-large;
         @include m-screen {
           display: block;
           width: auto;
           max-width: 70%;
           margin: 0 auto;
-          padding: $gutter-tablet;
+          padding: $gutter-medium;
           @include s-screen {
             max-width: 100%;
-            padding: $gutter-mobile;
+            padding: $gutter-small;
           }
         }
       }
@@ -76,9 +76,9 @@
       }
 
       &-details {
-        box-shadow: 5px 5px 0 $color-gray-dark;
+        box-shadow: 5px 5px 0 $color-silver-dark;
         margin: 40px 0;
-        border: 2px solid $color-gray-dark;
+        border: 2px solid $color-silver-dark;
       }
 
       &-info {
@@ -86,7 +86,7 @@
         width: 50%;
         padding: 0 40px;
         text-align: left;
-        border-right: 2px solid $color-gray-dark;
+        border-right: 2px solid $color-silver-dark;
 
         &:last-child {
           border: none;
@@ -100,12 +100,12 @@
       text-align: center;
       background: url("https://cdn.besynchro.com/genesis/v2-0/bg-pattern-genesis.jpg") center;
       background-size: cover;
-      padding: $gutter-desktop;
+      padding: $gutter-large;
       @include sm-screen {
-        padding: $gutter-tablet;
+        padding: $gutter-medium;
       }
       @include s-screen {
-        padding: $gutter-mobile;
+        padding: $gutter-small;
       }
 
       img {
@@ -116,13 +116,13 @@
 
   .directions {
     &__genesis {
-      padding: $gutter-desktop $gutter-desktop 0;
+      padding: $gutter-large $gutter-large 0;
       @include m-screen {
-        padding: $gutter-mobile $gutter-mobile 0;
+        padding: $gutter-small $gutter-small 0;
       }
 
       &-wrapper {
-        background: $color-gray-light;
+        background: $color-silver-light;
         text-align: center;
         font-size: 0;
         max-width: 1200px;
@@ -133,15 +133,15 @@
         width: 50%;
         display: inline-block;
         vertical-align: middle;
-        padding: 0 $gutter-desktop $gutter-desktop;
+        padding: 0 $gutter-large $gutter-large;
         @include m-screen {
-          padding: 0 $gutter-tablet $gutter-tablet;
+          padding: 0 $gutter-medium $gutter-medium;
         }
         @include sm-screen {
           width: 100%;
         }
         @include s-screen {
-          padding: 0 $gutter-mobile;
+          padding: 0 $gutter-small;
         }
       }
 
@@ -151,7 +151,7 @@
         display: inline-block;
         background-size: cover;
         @include sm-screen {
-          box-shadow: inset 0 130px 80px -80px $color-gray-light;
+          box-shadow: inset 0 130px 80px -80px $color-silver-light;
           width: 100%;
         }
       }

@@ -36,7 +36,7 @@
     }
 
     &:hover {
-      box-shadow: 5px 5px 0 0 $color-gray-dark;
+      box-shadow: 5px 5px 0 0 $color-silver-dark;
     }
 
     &:active {
@@ -45,7 +45,7 @@
   }
 
   &__inner-box {
-    border: 2px solid $color-gray-dark;
+    border: 2px solid $color-silver-dark;
     display: inline-block;
     text-align: left;
     @include m-screen {
@@ -55,12 +55,12 @@
   }
 
   input:checked + &__inner-box {
-    box-shadow: 5px 5px 0 0 $color-gray-dark;
+    box-shadow: 5px 5px 0 0 $color-silver-dark;
     padding: 20px 20px 0;
 
     .accordion-horizontal__title {
       padding: 0;
-      // color: #fff;
+      // color: $color-ivory;
     }
 
     .accordion-horizontal__text-box {
@@ -76,7 +76,7 @@
     }
 
     .accordion-horizontal__text {
-      // color: #fff;
+      // color: $color-ivory;
     }
   }
 }

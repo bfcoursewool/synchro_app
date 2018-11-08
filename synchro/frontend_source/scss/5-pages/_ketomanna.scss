@@ -78,7 +78,7 @@
 
       &.cta--secondary {
         background: none;
-        color: $color-primary;
+        color: $color-ebony;
       }
     }
 
@@ -139,19 +139,19 @@
     background-color: #E6E6E5;
     background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro.jpg");
     background-size: cover;
-    padding-bottom: $gutter-desktop;
+    padding-bottom: $gutter-large;
     @include s-screen {
       background: none;
       border-bottom: 1px solid #E6E6E5;
-      padding-bottom: $gutter-tablet;
+      padding-bottom: $gutter-medium;
     }
 
     &__copy {
-      padding-top: $gutter-desktop;
+      padding-top: $gutter-large;
       text-align: left;
       @include s-screen {
         text-align: center;
-        padding-top: $gutter-tablet;
+        padding-top: $gutter-medium;
       }
 
       .p--title {
@@ -171,13 +171,13 @@
 
   .ingredients {
     &__icons {
-      padding-top: $gutter-desktop;
+      padding-top: $gutter-large;
       padding-bottom: 30px;
       background: none;
       @include s-screen {
         border-top: 1px solid #e6e6e5;
         margin-top: 20px;
-        padding-top: $gutter-tablet;
+        padding-top: $gutter-medium;
         padding-bottom: 0;
       }
     }
@@ -191,9 +191,9 @@
     }
 
     &__items {
-      padding: 10px $gutter-desktop 40px;
+      padding: 10px $gutter-large 40px;
       @include s-screen {
-        padding: 0 $gutter-mobile $gutter-mobile;
+        padding: 0 $gutter-small $gutter-small;
       }
     }
 
@@ -215,12 +215,12 @@
       text-align: center;
       background: url("https://cdn.besynchro.com/ketomanna/v1-0/km-background.png") center;
       background-size: cover;
-      padding: $gutter-desktop $gutter-desktop 30px;
+      padding: $gutter-large $gutter-large 30px;
       @include sm-screen {
-        padding: $gutter-tablet;
+        padding: $gutter-medium;
       }
       @include s-screen {
-        padding: $gutter-mobile;
+        padding: $gutter-small;
       }
 
       img {
@@ -229,12 +229,12 @@
       }
 
       .p--title {
-        border-color: #fff;
-        color: #fff;
+        border-color: $color-ivory;
+        color: $color-ivory;
       }
 
       .p--text {
-        color: #fff;
+        color: $color-ivory;
         font-size: 30px;
         max-width: 700px;
         @include s-screen {
@@ -246,11 +246,11 @@
 
   .consumption {
     font-size: 0;
-    padding: 0 $gutter-desktop $gutter-desktop;
+    padding: 0 $gutter-large $gutter-large;
     max-width: 1400px;
     margin: 0 auto;
     @include s-screen {
-      padding: 0 $gutter-mobile $gutter-tablet;
+      padding: 0 $gutter-small $gutter-medium;
     }
 
     &__box {
@@ -269,7 +269,7 @@
       line-height: 80px;
       margin: 0;
       font-size: 26px;
-      color: #fff;
+      color: $color-ivory;
       @include s-screen {
         height: initial;
         line-height: 1.5;

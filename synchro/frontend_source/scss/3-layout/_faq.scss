@@ -1,8 +1,8 @@
 .faq {
-  background: $color-gray-light;
+  background: $color-silver-light;
   overflow: auto;
   @include s-screen {
-    padding: 0 $gutter-mobile;
+    padding: 0 $gutter-small;
   }
 
   &__text {

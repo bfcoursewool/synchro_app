@@ -42,7 +42,7 @@ svg.external {
       margin: 15px 0 0;
 
       .cognos-logo {
-        fill: #fff;
+        fill: $color-ivory;
         height: 30px;
       }
     }
@@ -56,16 +56,16 @@ svg.external {
       }
 
       &__hamburger {
-        background-color: #fff;
+        background-color: $color-ivory;
       }
 
       &__item {
-        color: #fff;
+        color: $color-ivory;
       }
 
       .a--cta {
         background: none;
-        border: 1px solid #fff;
+        border: 1px solid $color-ivory;
       }
     }
   }
@@ -81,7 +81,7 @@ svg.external {
     height: 750px;
 
     .p--header {
-      color: #fff;
+      color: $color-ivory;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -145,11 +145,11 @@ svg.external {
     }
 
     .p--header {
-      color: #fff;
+      color: $color-ivory;
     }
 
     .p--text {
-      color: #fff;
+      color: $color-ivory;
     }
   }
 

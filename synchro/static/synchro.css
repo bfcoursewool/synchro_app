@@ -5375,14 +5375,14 @@ a {
       font-weight: bold;
       padding-right: 20px;
       text-transform: uppercase;
-      font-family: futura-pt, sans-serif;
+      font-family: "futura-pt", "Open Sans", sans-serif;
       letter-spacing: 0.08em;
       text-decoration: none; }
       @media (max-width: 854px) {
         .main-header-container .main-header .main-navigation__item {
           display: block;
           padding: 16px 20px;
-          border-top: 1px solid #FFF; } }
+          border-top: 1px solid #ffffff; } }
       .main-header-container .main-header .main-navigation__item:hover {
         color: #5DA8A6;
         transition: all 0.2s ease; }
@@ -5768,13 +5768,13 @@ a {
     display: block;
     margin: 7px auto 9px;
     height: 17px;
-    fill: #fff; }
+    fill: #ffffff; }
   .footer .p--text {
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 600; }
   .footer__top {
-    background: #fff;
+    background: #ffffff;
     font-family: FontAwesome;
     width: 30px;
     height: 30px;
@@ -5805,7 +5805,7 @@ a {
   border: none;
   transition: background-color 0.1s ease-in-out;
   font-family: "futura-pt", "Open Sans", sans-serif;
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -5816,7 +5816,7 @@ a {
     .a--cta {
       padding: 10px 23px; } }
   .a--cta:hover {
-    color: #fff;
+    color: #ffffff;
     opacity: 0.7; }
   .a--cta:active {
     opacity: 1; }
@@ -5852,7 +5852,7 @@ a {
       top: 50%;
       left: 50%;
       content: "";
-      background-color: #fff;
+      background-color: #ffffff;
       transform: translate(-50%, -50%); }
     .content-toggle__icon:before {
       width: 1px;
@@ -5882,7 +5882,7 @@ a {
     .extended-content {
       padding: 40px; } }
   .extended-content .p--header {
-    color: #fff;
+    color: #ffffff;
     max-width: 850px;
     margin: 0 auto; }
     @media (max-width: 854px) {
@@ -5899,11 +5899,11 @@ a {
         display: block;
         width: 100%; } }
     .extended-content__item .p--title {
-      color: #fff;
+      color: #ffffff;
       font-size: 20px;
-      border: 2px solid #fff; }
+      border: 2px solid #ffffff; }
     .extended-content__item .p--text {
-      color: #fff; }
+      color: #ffffff; }
 
 [data-toggle-content] {
   height: auto;
@@ -6017,7 +6017,7 @@ a {
 
 .slider {
   background-color: #272727;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   background-image: url("https://cdn.besynchro.com/gold/v2-0/quote.svg");
   background-repeat: no-repeat;
@@ -6278,7 +6278,7 @@ input:checked + .accordion-horizontal__inner-box {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%) scale(1.2);
-  color: #fff;
+  color: #ffffff;
   font-size: 12px;
   letter-spacing: 0.5px;
   line-height: 26px;
@@ -6464,7 +6464,7 @@ input:checked + .accordion-horizontal__inner-box {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%) scale(1.2);
-  color: #fff;
+  color: #ffffff;
   font-size: 12px;
   letter-spacing: 0.5px;
   line-height: 26px;
@@ -6671,10 +6671,10 @@ input:checked + .accordion-horizontal__inner-box {
     max-height: 550px;
     max-width: 100%; }
   .ketomanna-lp .facts__ketomanna .p--title {
-    border-color: #fff;
-    color: #fff; }
+    border-color: #ffffff;
+    color: #ffffff; }
   .ketomanna-lp .facts__ketomanna .p--text {
-    color: #fff;
+    color: #ffffff;
     font-size: 30px;
     max-width: 700px; }
     @media (max-width: 767px) {
@@ -6703,7 +6703,7 @@ input:checked + .accordion-horizontal__inner-box {
     line-height: 80px;
     margin: 0;
     font-size: 26px;
-    color: #fff; }
+    color: #ffffff; }
     @media (max-width: 767px) {
       .ketomanna-lp .consumption__text {
         height: initial;
@@ -6743,7 +6743,7 @@ input:checked + .accordion-horizontal__inner-box {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%) scale(1.2);
-  color: #fff;
+  color: #ffffff;
   font-size: 12px;
   letter-spacing: 0.5px;
   line-height: 26px;
@@ -6809,7 +6809,7 @@ svg.external {
       margin: 15px 0 0;
 
       .cognos-logo {
-        fill: #fff;
+        fill: $color-ivory;
         height: 30px;
       }
     }
@@ -6823,16 +6823,16 @@ svg.external {
       }
 
       &__hamburger {
-        background-color: #fff;
+        background-color: $color-ivory;
       }
 
       &__item {
-        color: #fff;
+        color: $color-ivory;
       }
 
       .a--cta {
         background: none;
-        border: 1px solid #fff;
+        border: 1px solid $color-ivory;
       }
     }
   }
@@ -6848,7 +6848,7 @@ svg.external {
     height: 750px;
 
     .p--header {
-      color: #fff;
+      color: $color-ivory;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -6912,11 +6912,11 @@ svg.external {
     }
 
     .p--header {
-      color: #fff;
+      color: $color-ivory;
     }
 
     .p--text {
-      color: #fff;
+      color: $color-ivory;
     }
   }
 
@@ -7004,4 +7004,4 @@ svg.external {
 }
 */
 
-/*# sourceMappingURL=synchro.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

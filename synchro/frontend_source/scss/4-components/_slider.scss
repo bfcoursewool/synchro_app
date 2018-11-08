@@ -2,7 +2,7 @@
 
 .slider {
   background-color: #272727;
-  color: #fff;
+  color: $color-ivory;
   text-align: center;
   background-image: url("https://cdn.besynchro.com/gold/v2-0/quote.svg");
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     background-image: none;
   }
   @include s-screen {
-    padding: $gutter-mobile;
+    padding: $gutter-small;
   }
 }
 
@@ -60,7 +60,7 @@
   font-weight: $font-light;
   z-index: 3;
   letter-spacing: 0.5px;
-  margin: $gutter-mobile;
+  margin: $gutter-small;
 }
 
 .quote-author-img {
