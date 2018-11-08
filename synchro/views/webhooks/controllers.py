@@ -59,9 +59,13 @@ def checkout_create():
   parsed_url = urlparse(referring_site)
   query_params = parse_qs(parsed_url.query)
   if 'gclid' in query_params:
+    print 'gclid of referring_site: %s' % query_params['gclid']
     adwords_user = AdwordsUser.select_one(gclid=query_params['gclid'])
     if adwords_user:
+      print 'got adwords user!'
+      print data
       adwords_user.set_shopify_info(data['id'], data['email'])
+      print adwords_user
   return ('', 200)
 
 def validate_webhook(json_data, header_hmac):
