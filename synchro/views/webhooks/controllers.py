@@ -22,11 +22,11 @@ curl -i -H 'X-Recharge-Access-Token: 45094ac4ae34333ac4f603834b34cc6ca6602e6a685
 -H "Accept: application/json" \
 -H "Content-Type: application/json" \
 -X POST https://api.rechargeapps.com/webhooks \
---data '{"address":"https://gold.besynchro.com/hooks/recharge_order", "topic":"charge/paid"}'
+--data '{"address":"https://6dc4157d.ngrok.io/hooks/recharge_order", "topic":"charge/paid"}'
 
 '''
 
-# Webhook received from Recharge when a subsriptin order happens
+# Webhook received from Recharge when a subsription order happens
 @webhook_handlers.route('/recharge_order', methods=['POST'])
 def recharge_order():
   json_data = request.get_data()
@@ -35,9 +35,12 @@ def recharge_order():
   assert header_hmac is not None
   assert validate_recharge_webhook(json_data, header_hmac)
 
+  print data
+
   adwords_user = AdwordsUser.select_one(shopify_email=data['email'])
   if adwords_user:
-    adwords_user.set_recharge_id(data['customer_id'])
+    print "Got user! setting ID: %d" % int(data['customer_id'])
+    adwords_user.set_recharge_id(int(data['customer_id']))
   return ('', 200)
 
 # Webhook recieved from Shopify on "checkout create"
