@@ -30,12 +30,12 @@
 }
 
 .tab {
-  background: $color-gray-light;
+  background: $color-silver-light;
   position: relative;
   line-height: 100px;
   font-size: 20px;
   cursor: pointer;
-  outline: 1px solid #ffffff;
+  outline: 1px solid $color-ivory;
   padding: 0 20px;
   @include s-screen {
     line-height: 50px;
@@ -46,7 +46,7 @@
     display: block;
     border-width: 10px;
     border-style: solid;
-    border-color: $color-gray-light transparent transparent;
+    border-color: $color-silver-light transparent transparent;
     margin-left: -10px;
     position: absolute;
     bottom: -20px;
@@ -70,7 +70,7 @@
 
   &.active {
     background: linear-gradient(to bottom, #FED649 0%, $color-gold 100%);
-    color: #ffffff;
+    color: $color-ivory;
 
     &:after {
       border-color: $color-gold transparent transparent;

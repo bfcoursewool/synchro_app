@@ -8,12 +8,11 @@ $font-demi: 600;
 $font-bold: 700;
 
 // General Branding
-$color-primary: #000000;
-$color-gray-dark: #404040;
-$color-gray-light: #f4f4f5;
-$color-cta: #000000;
-$color-logo-light: #ffffff;
-$color-logo-dark: #000000;
+$color-ebony: #000000;
+$color-ivory: #ffffff;
+$color-silver: #E6E6E5;
+$color-silver-dark: #404040;
+$color-silver-light: #f4f4f5;
 
 // Product Branding
 $color-gold: #eca846;
@@ -25,10 +24,10 @@ $color-prebios: #f3a98f;
 $color-microbios: #efa8b6;
 
 // Layout
-$gutter-mobile: 20px;
-$gutter-tablet: 40px;
-$gutter-desktop: 60px;
-$shadow-white-div: 0px 0px 10px rgba(0,0,0,0.1);
+$gutter-small: 20px;
+$gutter-medium: 40px;
+$gutter-large: 60px;
+$shadow-white: 0px 0px 10px rgba(0,0,0,0.1);
 
 // Z-Index
 $header-z-index: 100;

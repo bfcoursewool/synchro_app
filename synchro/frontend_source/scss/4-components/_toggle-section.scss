@@ -38,7 +38,7 @@
       top: 50%;
       left: 50%;
       content: "";
-      background-color: #fff;
+      background-color: $color-ivory;
       transform: translate(-50%,-50%);
     }
 
@@ -72,17 +72,17 @@
 
 .extended-content {
   text-align: center;
-  background-color: $color-gray-dark;
+  background-color: $color-silver-dark;
   margin-right: 0;
   margin-left: 0;
-  padding: $gutter-desktop;
+  padding: $gutter-large;
   font-size: 0;
   @include sm-screen {
-    padding: $gutter-tablet;
+    padding: $gutter-medium;
   }
 
   .p--header {
-    color: #fff;
+    color: $color-ivory;
     max-width: 850px;
     margin: 0 auto;
     @include sm-screen {
@@ -102,13 +102,13 @@
     }
 
     .p--title {
-      color: #fff;
+      color: $color-ivory;
       font-size: 20px;
-      border: 2px solid #fff;
+      border: 2px solid $color-ivory;
     }
 
     .p--text {
-      color: #fff;
+      color: $color-ivory;
     }
   }
 }

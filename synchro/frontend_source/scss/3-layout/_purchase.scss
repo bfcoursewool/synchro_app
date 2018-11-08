@@ -1,10 +1,10 @@
 .purchase {
-  padding-bottom: $gutter-desktop;
+  padding-bottom: $gutter-large;
   @include m-screen {
-    padding-bottom: $gutter-tablet;
+    padding-bottom: $gutter-medium;
   }
   @include s-screen {
-    padding: $gutter-mobile;
+    padding: $gutter-small;
   }
 
   &__item {
@@ -12,13 +12,13 @@
     text-align: center;
     max-width: 450px;
     margin: 0 auto;
-    padding: $gutter-desktop;
+    padding: $gutter-large;
 
     &:hover {
       transform: scale(1.025);
     }
     @include m-screen {
-      padding: $gutter-tablet;
+      padding: $gutter-medium;
     }
     @include s-screen {
       &:nth-child(2) {

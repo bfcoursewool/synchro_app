@@ -30,7 +30,7 @@
             -webkit-transition: all 0.5s ease;
 
             @include sm-screen {
-              border-top: 1px solid #FFF;
+              border-top: 1px solid $color-ivory;
             }
           }
 
@@ -53,18 +53,18 @@
       &__logo {
 
         .synchro-logo {
-          fill: #fff;
+          fill: $color-ivory;
         }
       }
 
       .main-navigation {
 
         &__hamburger {
-          background-color: #fff;
+          background-color: $color-ivory;
         }
 
         &__item {
-          color: #fff;
+          color: $color-ivory;
 
           @include sm-screen {
             border-top: 1px solid rgba(255,255,255,0.1);
@@ -94,7 +94,7 @@
 
       .p--header {
         max-width: 750px;
-        color: #fff;
+        color: $color-ivory;
         font-weight: 400;
         margin-bottom: 50px;
         padding-left: 0;
@@ -121,7 +121,7 @@
         }
 
         &:before {
-          color: #fff;
+          color: $color-ivory;
           display: inline-block;
           margin-left: -1.5em;
         }
@@ -144,7 +144,7 @@
         -webkit-font-smoothing: antialiased;
         font-size: 15px;
         letter-spacing: 0.3px;
-        color: #FFFFFF;
+        color: $color-ivory;
         text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
         cursor: pointer;
         display: inline-block;
@@ -159,7 +159,7 @@
 
         &:before {
           content: '\f04b';
-          font-family: FontAwesome;
+          font-family: $font-awesome;
           margin-right: 15px;
         }
       }
@@ -271,9 +271,9 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        font-family: FontAwesome;
+        font-family: $font-awesome;
         font-size: 30px;
-        color: #fff;
+        color: $color-ivory;
         text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
         transform: translate(-50%,-50%);
       }
@@ -356,7 +356,7 @@
             -webkit-transition: all 0.5s ease;
 
             @include sm-screen {
-              border-top: 1px solid #FFF;
+              border-top: 1px solid $color-ivory;
             }
           }
 
@@ -379,18 +379,18 @@
       &__logo {
 
         .synchro-logo {
-          fill: #fff;
+          fill: $color-ivory;
         }
       }
 
       .main-navigation {
 
         &__hamburger {
-          background-color: #fff;
+          background-color: $color-ivory;
         }
 
         &__item {
-          color: #fff;
+          color: $color-ivory;
 
           @include sm-screen {
             border-top: 1px solid rgba(255,255,255,0.1);
@@ -418,7 +418,7 @@
       padding-top: 100px;
 
       .p--header {
-        color: #fff;
+        color: $color-ivory;
         margin-bottom: 20px;
 
         @include s-screen {
@@ -514,7 +514,7 @@
         }
 
         &:before {
-          color: #fff;
+          color: $color-ivory;
           display: block;
 
           @include m-screen {
@@ -535,7 +535,7 @@
         -webkit-font-smoothing: antialiased;
         font-size: 15px;
         letter-spacing: 0.3px;
-        color: #FFFFFF;
+        color: $color-ivory;
         text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
         cursor: pointer;
         display: inline-block;
@@ -550,7 +550,7 @@
 
         &:before {
           content: '\f04b';
-          font-family: FontAwesome;
+          font-family: $font-awesome;
           margin-right: 15px;
         }
       }

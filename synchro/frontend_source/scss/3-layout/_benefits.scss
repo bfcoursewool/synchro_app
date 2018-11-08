@@ -2,9 +2,9 @@
 
 .benefits {
   &__icons {
-    padding-bottom: $gutter-desktop;
+    padding-bottom: $gutter-large;
     @include s-screen {
-      padding-bottom: $gutter-mobile;
+      padding-bottom: $gutter-small;
     }
   }
 
@@ -51,18 +51,18 @@
     }
 
     &__copy {
-      margin: 50px $gutter-desktop;
+      margin: 50px $gutter-large;
       @include m-screen {
-        margin: 40px $gutter-tablet;
+        margin: 40px $gutter-medium;
       }
       @include s-screen {
-        margin: 40px $gutter-mobile;
+        margin: 40px $gutter-small;
       }
     }
 
     &__header {
       font-weight: $font-normal;
-      color: $color-primary;
+      color: $color-ebony;
       font-size: 30px;
       margin-bottom: 40px;
     }

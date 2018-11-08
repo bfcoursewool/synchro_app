@@ -3,12 +3,12 @@
 .a--cta {
   display: inline-block;
   -webkit-appearance: none;
-  background: $color-cta;
+  background: $color-ebony;
   padding: 13px 30px;
   border: none;
   transition: background-color 0.1s ease-in-out;
   font-family: $font-primary;
-  color: #fff;
+  color: $color-ivory;
   font-size: 14px;
   font-weight: $font-bold;
   letter-spacing: 0.1em;
@@ -20,7 +20,7 @@
   }
 
   &:hover {
-    color: #fff;
+    color: $color-ivory;
     opacity: 0.7;
   }
 

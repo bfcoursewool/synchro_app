@@ -10,7 +10,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 0;
-    z-index: 100;
+    z-index: $header-z-index;
     transition: background-color ease-in-out 0.5s, padding ease-in-out 0.5s;
     -moz-transition: background-color ease-in-out 0.5s, padding ease-in-out 0.5s;
     /* FF 4 */
@@ -19,7 +19,7 @@
     -o-transition: background-color ease-in-out 0.5s, padding ease-in-out 0.5s;
     /* Opera */
     &.floated {
-      background: #ffffff;
+      background: $color-ivory;
       box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
       padding-top: 10px;
       padding-bottom: 10px;
@@ -37,7 +37,7 @@
 
       .synchro-logo {
         height: 20px;
-        fill: $color-logo-dark;
+        fill: $color-ebony;
         transition: fill ease-in-out 0.5s;
       }
     }
@@ -104,13 +104,13 @@
         font-weight: bold;
         padding-right: 20px;
         text-transform: uppercase;
-        font-family: futura-pt, sans-serif;
+        font-family: $font-primary;
         letter-spacing: 0.08em;
         text-decoration: none;
         @include sm-screen {
           display: block;
           padding: 16px 20px;
-          border-top: 1px solid #FFF;
+          border-top: 1px solid $color-ivory;
         }
 
         &:hover {

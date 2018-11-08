@@ -73,7 +73,7 @@
 
   &__quote {
     line-height: 1.5;
-    color: #fff;
+    color: $color-ivory;
     font-size: 18px;
 
     @include s-screen {
@@ -84,7 +84,7 @@
   &__name {
     line-height: 40px;
     text-align: right;
-    color: #fff;
+    color: $color-ivory;
     margin-bottom: 0;
 
     @include s-screen {
@@ -174,13 +174,13 @@
   &__quote {
     font-size: 19px;
     line-height: 27px;
-    color: #FFFFFF;
+    color: $color-ivory;
   }
 
   &__name {
     font-size: 16px;
     line-height: 40px;
-    color: #FFFFFF;
+    color: $color-ivory;
     text-align: right;
     margin-bottom: 0;
 

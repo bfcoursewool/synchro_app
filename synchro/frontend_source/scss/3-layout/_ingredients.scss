@@ -5,9 +5,9 @@
     background: #F2F2F2;
     overflow: auto;
     font-size: 0;
-    padding: 0 $gutter-desktop;
+    padding: 0 $gutter-large;
     @include xs-screen {
-      padding: 0 $gutter-mobile;
+      padding: 0 $gutter-small;
     }
   }
 
@@ -40,15 +40,15 @@
 
 .ingredients {
   &__items {
-    padding: 0 $gutter-desktop $gutter-desktop;
+    padding: 0 $gutter-large $gutter-large;
     font-size: 0;
     @include m-screen {
-      padding-left: $gutter-mobile;
-      padding-right: $gutter-mobile;
-      padding-bottom: $gutter-tablet;
+      padding-left: $gutter-small;
+      padding-right: $gutter-small;
+      padding-bottom: $gutter-medium;
     }
     @include s-screen {
-      padding-bottom: $gutter-mobile;
+      padding-bottom: $gutter-small;
     }
   }
 
