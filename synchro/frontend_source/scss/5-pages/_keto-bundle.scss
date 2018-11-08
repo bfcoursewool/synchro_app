@@ -1,2 +1,40 @@
 .keto-bundle-lp {
+  .atf-v2 {
+    .bg-full-width {
+      position: relative;
+      min-height: inherit;
+      height: 629px;
+      background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-bundle-atf-desktop@2x.jpg");
+      background-color: $color-silver;
+      background-position: center;
+      @include sm-screen {
+        background: none;
+
+        &:after {
+          content: none;
+        }
+      }
+      // curves
+      &:after,
+      &:before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 100%;
+        background-size: 100% 100%;
+        transform: translateX(-50%);
+        background-repeat: no-repeat;
+      }
+      // curve-in top
+      &:before {
+        top: 0;
+        background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/image-curve-in@2x.png");
+      }
+      // curve-out bottom
+      &:after {
+        bottom: 0;
+        background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/image-curve-out@2x.png");
+      }
+    }
+  }
 }

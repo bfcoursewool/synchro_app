@@ -5411,6 +5411,29 @@ a {
       .atf__header {
         font-size: 40px; } }
 
+.atf-v2 {
+  text-align: center; }
+  .atf-v2 .synchro-logo-square {
+    width: 100px; }
+  .atf-v2__content-box {
+    padding: 30px; }
+  .atf-v2__header {
+    font-size: 45px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: opacity 0.75s ease-in-out;
+    margin: 0; }
+    @media (max-width: 767px) {
+      .atf-v2__header {
+        font-size: 40px; } }
+  .atf-v2__description {
+    font-size: 26px;
+    margin: 0; }
+  .atf-v2 .a--cta {
+    margin: 30px 0 10px; }
+
 .claim-icons {
   padding: 30px 0;
   text-align: center; }
@@ -6764,6 +6787,33 @@ input:checked + .accordion-horizontal__inner-box {
   .ketomanna-lp .purchase .discount:after {
     right: -15px;
     border-right-color: transparent; }
+
+.keto-bundle-lp .atf-v2 .bg-full-width {
+  position: relative;
+  min-height: inherit;
+  height: 629px;
+  background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-bundle-atf-desktop@2x.jpg");
+  background-color: #E6E6E5;
+  background-position: center; }
+  @media (max-width: 854px) {
+    .keto-bundle-lp .atf-v2 .bg-full-width {
+      background: none; }
+      .keto-bundle-lp .atf-v2 .bg-full-width:after {
+        content: none; } }
+  .keto-bundle-lp .atf-v2 .bg-full-width:after, .keto-bundle-lp .atf-v2 .bg-full-width:before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background-size: 100% 100%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat; }
+  .keto-bundle-lp .atf-v2 .bg-full-width:before {
+    top: 0;
+    background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/image-curve-in@2x.png"); }
+  .keto-bundle-lp .atf-v2 .bg-full-width:after {
+    bottom: 0;
+    background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/image-curve-out@2x.png"); }
 
 /* .bg-full-width {
   background-image: url('https://cdn.besynchro.com/cognos/assets-hero-3.jpg');
