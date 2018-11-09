@@ -1,0 +1,120 @@
+.product-cards {
+  background: #F9F9F9;
+  font-size: 0;
+  overflow: auto;
+  padding: 0 $gutter-large $gutter-large;
+  @include m-screen {
+    padding-left: $gutter-medium;
+    padding-right: $gutter-medium;
+  }
+  @include m-screen {
+    text-align: center;
+    padding-left: $gutter-small;
+    padding-right: $gutter-small;
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1560px;
+  }
+
+  .product-card {
+    vertical-align: top;
+    width: 33.33%;
+    display: inline-block;
+    text-align: left;
+    max-width: 500px;
+    @include m-screen {
+      width: 50%;
+    }
+    @include s-screen {
+      width: 100%;
+    }
+
+    &__inner {
+      background: $color-ivory;
+      margin: 0 10px;
+      overflow: auto;
+      @include m-screen {
+        margin: 10px;
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__copy {
+      margin: 30px;
+    }
+
+    &__header {
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 2.4px;
+      font-weight: $font-medium;
+    }
+
+    &__details {
+      opacity: 0.5;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      font-weight: $font-medium;
+      margin: 1em 0;
+    }
+
+    &__ingredients,
+    &__nutrition {
+      &-cta {
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+
+        &:before {
+          content: "+ ";
+        }
+
+        &.active {
+          &:before {
+            content: "- ";
+            position: relative;
+            top: -1px;
+          }
+        }
+      }
+    }
+
+    &__ingredients {
+      margin: 10px 0;
+
+      .p--text {
+        display: none;
+      }
+
+      &.active {
+        .p--text {
+          display: block;
+        }
+      }
+    }
+
+    &__nutrition {
+      margin: 10px 0;
+
+      img {
+        display: none;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      &.active {
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+}

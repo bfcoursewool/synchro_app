@@ -5204,7 +5204,7 @@ body {
   color: #000000;
   margin: 0 auto;
   max-width: 2000px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
 
 a {
   text-decoration: none;
@@ -5224,7 +5224,14 @@ a {
 
 .p--header,
 .p--text,
-.p--title {
+.p--title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   font-family: "futura-pt", "Open Sans", sans-serif;
   color: #000000;
   -webkit-font-smoothing: antialiased; }
@@ -5301,12 +5308,12 @@ a {
   padding-bottom: 20px;
   font-size: 0;
   z-index: 100;
-  transition: background-color ease-in-out 0.5s, padding ease-in-out 0.5s;
-  -moz-transition: background-color ease-in-out 0.5s, padding ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
   /* FF 4 */
-  -webkit-transition: background-color ease-in-out 0.5s, padding ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
   /* Safari & Chrome */
-  -o-transition: background-color ease-in-out 0.5s, padding ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
   /* Opera */ }
   .main-header-container .main-header.floated {
     background: #ffffff;
@@ -5329,9 +5336,6 @@ a {
     @media (max-width: 767px) {
       .main-header-container .main-header a {
         margin-right: 10px; } }
-  .main-header-container .main-header .a--cta {
-    background: #eca846;
-    color: white; }
   .main-header-container .main-header .main-navigation {
     display: inline-block;
     float: right;
@@ -5574,9 +5578,8 @@ a {
         width: 50%; } }
     .ingredients__icon-box .p--text {
       font-size: 16px;
-      color: #6C6C6C;
-      letter-spacing: 1px;
-      font-weight: 600;
+      letter-spacing: 1.5px;
+      font-weight: 500;
       text-transform: uppercase; }
   .ingredients__icon {
     max-width: 90px; }
@@ -6084,7 +6087,7 @@ a {
   max-width: 800px;
   display: inline-block;
   font-size: 25px;
-  font-weight: 100;
+  color: #ffffff;
   z-index: 3;
   letter-spacing: 0.5px;
   margin: 20px; }
@@ -6101,7 +6104,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-size: 15px;
-  font-weight: 100; }
+  color: #ffffff; }
 
 .text-full-width {
   background: #f4f4f5;
@@ -6174,7 +6177,88 @@ input:checked + .accordion-horizontal__inner-box {
       input:checked + .accordion-horizontal__inner-box .accordion-horizontal__text-box {
         width: auto; } }
 
+.product-cards {
+  background: #F9F9F9;
+  font-size: 0;
+  overflow: auto;
+  padding: 0 60px 60px; }
+  @media (max-width: 1199px) {
+    .product-cards {
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media (max-width: 1199px) {
+    .product-cards {
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px; } }
+  .product-cards__container {
+    margin: 0 auto;
+    max-width: 1560px; }
+  .product-cards .product-card {
+    vertical-align: top;
+    width: 33.33%;
+    display: inline-block;
+    text-align: left;
+    max-width: 500px; }
+    @media (max-width: 1199px) {
+      .product-cards .product-card {
+        width: 50%; } }
+    @media (max-width: 767px) {
+      .product-cards .product-card {
+        width: 100%; } }
+    .product-cards .product-card__inner {
+      background: #ffffff;
+      margin: 0 10px;
+      overflow: auto; }
+      @media (max-width: 1199px) {
+        .product-cards .product-card__inner {
+          margin: 10px; } }
+    .product-cards .product-card__image {
+      width: 100%; }
+    .product-cards .product-card__copy {
+      margin: 30px; }
+    .product-cards .product-card__header {
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 2.4px;
+      font-weight: 500; }
+    .product-cards .product-card__details {
+      opacity: 0.5;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      font-weight: 500;
+      margin: 1em 0; }
+    .product-cards .product-card__ingredients-cta, .product-cards .product-card__nutrition-cta {
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer; }
+      .product-cards .product-card__ingredients-cta:before, .product-cards .product-card__nutrition-cta:before {
+        content: "+ "; }
+      .product-cards .product-card__ingredients-cta.active:before, .product-cards .product-card__nutrition-cta.active:before {
+        content: "- ";
+        position: relative;
+        top: -1px; }
+    .product-cards .product-card__ingredients {
+      margin: 10px 0; }
+      .product-cards .product-card__ingredients .p--text {
+        display: none; }
+      .product-cards .product-card__ingredients.active .p--text {
+        display: block; }
+    .product-cards .product-card__nutrition {
+      margin: 10px 0; }
+      .product-cards .product-card__nutrition img {
+        display: none;
+        width: 100%;
+        margin-top: 20px; }
+      .product-cards .product-card__nutrition.active img {
+        display: block; }
+
 .gold-lp .main-header .a--cta {
+  background: #eca846;
+  color: white;
   display: none; }
 
 .gold-lp .main-header.floated .a--cta {
@@ -6788,6 +6872,13 @@ input:checked + .accordion-horizontal__inner-box {
     right: -15px;
     border-right-color: transparent; }
 
+.keto-bundle-lp .main-header-container .main-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 0; }
+  .keto-bundle-lp .main-header-container .main-header.floated {
+    opacity: 1; }
+
 .keto-bundle-lp .atf-v2 .bg-full-width {
   position: relative;
   min-height: inherit;
@@ -6797,7 +6888,8 @@ input:checked + .accordion-horizontal__inner-box {
   background-position: center; }
   @media (max-width: 854px) {
     .keto-bundle-lp .atf-v2 .bg-full-width {
-      background: none; }
+      background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-bundle-atf-mobile@2x.jpg");
+      height: 234px; }
       .keto-bundle-lp .atf-v2 .bg-full-width:after {
         content: none; } }
   .keto-bundle-lp .atf-v2 .bg-full-width:after, .keto-bundle-lp .atf-v2 .bg-full-width:before {
@@ -6806,14 +6898,179 @@ input:checked + .accordion-horizontal__inner-box {
     height: 20px;
     width: 100%;
     background-size: 100% 100%;
-    transform: translateX(-50%);
+    left: 0;
     background-repeat: no-repeat; }
   .keto-bundle-lp .atf-v2 .bg-full-width:before {
     top: 0;
-    background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/image-curve-in@2x.png"); }
+    background-image: url("https://cdn.besynchro.com/global/image-curve-in-top@2x.png"); }
   .keto-bundle-lp .atf-v2 .bg-full-width:after {
     bottom: 0;
-    background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/image-curve-out@2x.png"); }
+    background-image: url("https://cdn.besynchro.com/global/image-curve-out-bottom@2x.png"); }
+
+.keto-bundle-lp .ingredients__icons {
+  background-color: #ffffff; }
+
+.keto-bundle-lp .ingredients__icon {
+  max-width: 100px; }
+
+.keto-bundle-lp .intro {
+  position: relative; }
+  .keto-bundle-lp .intro .bg-full-width {
+    position: relative;
+    min-height: inherit;
+    height: 488px;
+    background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-intro-desktop@2x.jpg");
+    background-color: #E6E6E5;
+    background-position: center; }
+    @media (max-width: 854px) {
+      .keto-bundle-lp .intro .bg-full-width {
+        background: none; }
+        .keto-bundle-lp .intro .bg-full-width:after {
+          content: none; } }
+    .keto-bundle-lp .intro .bg-full-width:after, .keto-bundle-lp .intro .bg-full-width:before {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 100%;
+      background-size: 100% 100%;
+      left: 0;
+      background-repeat: no-repeat; }
+    .keto-bundle-lp .intro .bg-full-width:before {
+      top: 0;
+      background-image: url("https://cdn.besynchro.com/global/image-curve-in-top@2x.png"); }
+    .keto-bundle-lp .intro .bg-full-width:after {
+      bottom: 0;
+      background-image: url("https://cdn.besynchro.com/global/image-curve-in-bottom@2x.png"); }
+  .keto-bundle-lp .intro__copy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 500px;
+    transform: translate(-100%, -50%);
+    text-align: left; }
+    .keto-bundle-lp .intro__copy .p--header {
+      max-width: initial; }
+
+.keto-bundle-lp .consumption {
+  text-align: center;
+  font-size: 0;
+  padding: 0 60px 60px; }
+  .keto-bundle-lp .consumption__box {
+    vertical-align: top;
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+    max-width: 500px; }
+  .keto-bundle-lp .consumption__text {
+    height: 80px; }
+    .keto-bundle-lp .consumption__text .p--text {
+      color: #ffffff;
+      margin: 0;
+      padding: 9px 30px; }
+    .keto-bundle-lp .consumption__text.km-fudge {
+      background: #6C5851; }
+    .keto-bundle-lp .consumption__text.km-bar {
+      background: #515E6C; }
+    .keto-bundle-lp .consumption__text.kb-powder {
+      background: #746D82; }
+  .keto-bundle-lp .consumption__image {
+    width: 100%; }
+
+.keto-bundle-lp .purchase__item {
+  max-width: fit-content;
+  padding: 0; }
+  .keto-bundle-lp .purchase__item a:hover {
+    opacity: 1; }
+
+.keto-bundle-lp .purchase__img {
+  display: inline-block;
+  background: #E6E6E5;
+  height: 400px;
+  width: 400px;
+  vertical-align: middle; }
+
+.keto-bundle-lp .purchase__copy {
+  display: inline-block;
+  width: 300px;
+  vertical-align: middle;
+  background: #F8F8F8;
+  padding: 10px 0 30px;
+  margin: 10px; }
+
+.keto-bundle-lp .purchase__banner {
+  position: relative;
+  left: -10px;
+  width: 320px;
+  background: #C4A498;
+  padding: 7px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0.6px;
+  line-height: 1.5;
+  margin-bottom: 25px; }
+  .keto-bundle-lp .purchase__banner:after, .keto-bundle-lp .purchase__banner:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background: #A88173;
+    bottom: -5px;
+    z-index: -1; }
+  .keto-bundle-lp .purchase__banner:before {
+    left: 0;
+    transform: skewY(35deg); }
+  .keto-bundle-lp .purchase__banner:after {
+    right: 0;
+    transform: skewY(-35deg); }
+
+.keto-bundle-lp .purchase__plan {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 26px;
+  letter-spacing: 1.08px;
+  margin: 10px 0; }
+
+.keto-bundle-lp .purchase__qty {
+  font-weight: 400;
+  font-size: 20px;
+  opacity: 0.60;
+  margin-bottom: 25px; }
+
+.keto-bundle-lp .purchase__off {
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #6c5851;
+  letter-spacing: 1px; }
+  .keto-bundle-lp .purchase__off:after, .keto-bundle-lp .purchase__off:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 70px;
+    background: #6c5851;
+    left: 50%;
+    transform: translateX(-50%); }
+  .keto-bundle-lp .purchase__off:before {
+    top: -4px; }
+  .keto-bundle-lp .purchase__off:after {
+    bottom: -4px; }
+
+.keto-bundle-lp .purchase__item-cents, .keto-bundle-lp .purchase__item-price {
+  color: #000000;
+  border: none;
+  margin: 0; }
+
+.keto-bundle-lp .purchase__original {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  opacity: 0.6;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 10px 0 20px; }
 
 /* .bg-full-width {
   background-image: url('https://cdn.besynchro.com/cognos/assets-hero-3.jpg');

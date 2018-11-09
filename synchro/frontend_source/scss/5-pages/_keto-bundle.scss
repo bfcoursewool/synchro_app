@@ -1,4 +1,16 @@
 .keto-bundle-lp {
+  .main-header-container {
+    .main-header {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      opacity: 0;
+
+      &.floated {
+        opacity: 1;
+      }
+    }
+  }
+
   .atf-v2 {
     .bg-full-width {
       position: relative;
@@ -8,33 +20,222 @@
       background-color: $color-silver;
       background-position: center;
       @include sm-screen {
+      background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-bundle-atf-mobile@2x.jpg");
+      height: 234px;
+
+        &:after {
+          content: none;
+        }
+      }
+      @include image-curve ($curve-in-top, $curve-out-bottom)
+    }
+  }
+
+  .ingredients {
+    &__icons {
+      background-color: $color-ivory;
+    }
+
+    &__icon {
+      max-width: 100px;
+    }
+  }
+
+  .intro {
+    position: relative;
+
+    .bg-full-width {
+      position: relative;
+      min-height: inherit;
+      height: 488px;
+      background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-intro-desktop@2x.jpg");
+      background-color: $color-silver;
+      background-position: center;
+      @include sm-screen {
         background: none;
 
         &:after {
           content: none;
         }
       }
-      // curves
+      @include image-curve ($curve-in-top, $curve-in-bottom)
+    }
+
+    &__copy {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-width: 500px;
+      transform: translate(-100% , -50%);
+      text-align: left;
+
+      .p--header {
+        max-width: initial;
+      }
+    }
+  }
+
+  .consumption {
+    text-align: center;
+    font-size: 0;
+    padding: 0 $gutter-large $gutter-large;
+
+    &__box {
+      vertical-align: top;
+      width: 30%;
+      display: inline-block;
+      margin: 10px;
+      max-width: 500px;
+    }
+
+    &__text {
+      height: 80px;
+
+      .p--text {
+        color: $color-ivory;
+        margin: 0;
+        padding: 9px 30px;
+      }
+
+      &.km-fudge {
+        background: #6C5851;
+      }
+
+      &.km-bar {
+        background: #515E6C;
+      }
+
+      &.kb-powder {
+        background: #746D82;
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+
+  .purchase {
+    &__item {
+      max-width: fit-content;
+      padding: 0;
+
+      a:hover {
+        opacity: 1;
+      }
+    }
+
+    &__img {
+      display: inline-block;
+      background: $color-silver;
+      height: 400px;
+      width: 400px;
+      vertical-align: middle;
+    }
+
+    &__copy {
+      display: inline-block;
+      width: 300px;
+      vertical-align: middle;
+      background: #F8F8F8;
+      padding: 10px 0 30px;
+      margin: 10px;
+    }
+
+    &__banner {
+      position: relative;
+      left: -10px;
+      width: 320px;
+      background: #C4A498;
+      padding: 7px 20px;
+      font-weight: $font-demi;
+      text-transform: uppercase;
+      font-size: 16px;
+      color: $color-ivory;
+      letter-spacing: 0.6px;
+      line-height: 1.5;
+      margin-bottom: 25px;
+
       &:after,
       &:before {
         content: "";
         position: absolute;
+        width: 10px;
         height: 20px;
-        width: 100%;
-        background-size: 100% 100%;
-        transform: translateX(-50%);
-        background-repeat: no-repeat;
+        background: #A88173;
+        bottom: -5px;
+        z-index: -1;
       }
-      // curve-in top
+
       &:before {
-        top: 0;
-        background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/image-curve-in@2x.png");
+        left: 0;
+        transform: skewY(35deg);
       }
-      // curve-out bottom
+
       &:after {
-        bottom: 0;
-        background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/image-curve-out@2x.png");
+        right: 0;
+        transform: skewY(-35deg);
       }
+    }
+
+    &__plan {
+      font-weight: $font-medium;
+      text-transform: uppercase;
+      font-size: 26px;
+      letter-spacing: 1.08px;
+      margin: 10px 0;
+    }
+
+    &__qty {
+      font-weight: $font-normal;
+      font-size: 20px;
+      opacity: 0.60;
+      margin-bottom: 25px;
+    }
+
+    &__off {
+      position: relative;
+      font-weight: $font-demi;
+      text-transform: uppercase;
+      font-size: 16px;
+      color: $color-ketomanna;
+      letter-spacing: 1px;
+
+      &:after,
+      &:before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 70px;
+        background: $color-ketomanna;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &:before {
+        top: -4px;
+      }
+
+      &:after {
+        bottom: -4px;
+      }
+    }
+
+    &__item-cents,
+    &__item-price {
+      color: $color-ebony;
+      border: none;
+      margin: 0;
+    }
+
+    &__original {
+      font-weight: $font-medium;
+      text-transform: uppercase;
+      font-size: 16px;
+      opacity: 0.6;
+      letter-spacing: 1px;
+      text-align: center;
+      margin: 10px 0 20px;
     }
   }
 }

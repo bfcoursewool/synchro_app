@@ -11,12 +11,12 @@
     padding-bottom: 20px;
     font-size: 0;
     z-index: $header-z-index;
-    transition: background-color ease-in-out 0.5s, padding ease-in-out 0.5s;
-    -moz-transition: background-color ease-in-out 0.5s, padding ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
     /* FF 4 */
-    -webkit-transition: background-color ease-in-out 0.5s, padding ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
     /* Safari & Chrome */
-    -o-transition: background-color ease-in-out 0.5s, padding ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
     /* Opera */
     &.floated {
       background: $color-ivory;
@@ -47,10 +47,6 @@
       @include s-screen {
         margin-right: 10px;
       }
-    }
-
-    .a--cta {
-      @include cta-custom($color-gold, white);
     }
 
     .main-navigation {
