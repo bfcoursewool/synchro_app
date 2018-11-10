@@ -35,43 +35,38 @@ def recharge_order():
   assert header_hmac is not None
   assert validate_recharge_webhook(json_data, header_hmac)
 
-  print data
+  recharge_id = int(data['charge']['customer_id'])
+  customer_email = data['charge']['email']
 
-  adwords_user = AdwordsUser.select_one(shopify_email=data['charge']['email'])
+  adwords_user = AdwordsUser.select_one(recharge_id=recharge_id)
+  if not adwords_user:
+    adwords_user = AdwordsUser.select_one(shopify_email=customer_email)
+
   if adwords_user:
-    print "Got user! setting ID: %d" % int(data['charge']['customer_id'])
-    adwords_user.set_recharge_id(int(data['charge']['customer_id']))
+    if not adwords_user.recharge_id:
+      adwords_user.set_recharge_id(int(data['charge']['customer_id']))
+    adwords_user.increment_charge_count()
   return ('', 200)
 
-# Webhook recieved from Shopify on "checkout create"
+# Webhook actually recieved from Shopify on "order create"... 
 @webhook_handlers.route('/checkout_create', methods=['POST'])
 def checkout_create(): 
   json_data = request.get_data()
   data = json.loads(json_data)
   header_hmac = request.headers.get('X-Shopify-Hmac-Sha256')
-
-  print "Webhoooook"
-
   assert header_hmac is not None
   assert validate_webhook(json_data, header_hmac)
 
   referring_site = data.get('referring_site', None)
-
-  print referring_site
-
   if not referring_site:
     return ('', 200)
 
   parsed_url = urlparse(referring_site)
   query_params = parse_qs(parsed_url.query)
   if 'gclid' in query_params:
-    print 'gclid of referring_site: %s' % query_params['gclid']
     adwords_user = AdwordsUser.select_one(gclid=query_params['gclid'])
     if adwords_user:
-      print 'got adwords user!'
-      print data
       adwords_user.set_shopify_info(data['id'], data['email'])
-      print adwords_user
   return ('', 200)
 
 def validate_webhook(json_data, header_hmac):

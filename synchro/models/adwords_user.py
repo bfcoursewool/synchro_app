@@ -11,6 +11,7 @@ class AdwordsUser(Base):
 
   def __init__(self, gclid):
     self.gclid = gclid
+    self.num_of_recharges = 0
 
   def __json__(self):
     return {
@@ -36,4 +37,8 @@ class AdwordsUser(Base):
   def set_shopify_info(self, shopify_id, shopify_email):
     self.shopify_id = shopify_id
     self.shopify_email = shopify_email
+    db_session.commit()
+
+  def increment_charge_count(self):
+    self.num_of_recharges += 1
     db_session.commit()
