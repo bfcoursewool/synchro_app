@@ -39,8 +39,8 @@ def recharge_order():
 
   adwords_user = AdwordsUser.select_one(shopify_email=data['charge']['email'])
   if adwords_user:
-    print "Got user! setting ID: %d" % int(data['customer_id'])
-    adwords_user.set_recharge_id(int(data['customer_id']))
+    print "Got user! setting ID: %d" % int(data['charge']['customer_id'])
+    adwords_user.set_recharge_id(int(data['charge']['customer_id']))
   return ('', 200)
 
 # Webhook recieved from Shopify on "checkout create"
