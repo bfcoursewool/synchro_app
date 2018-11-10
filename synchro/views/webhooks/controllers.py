@@ -37,7 +37,7 @@ def recharge_order():
 
   print data
 
-  adwords_user = AdwordsUser.select_one(shopify_email=data['email'])
+  adwords_user = AdwordsUser.select_one(shopify_email=data['charge']['email'])
   if adwords_user:
     print "Got user! setting ID: %d" % int(data['customer_id'])
     adwords_user.set_recharge_id(int(data['customer_id']))
@@ -58,6 +58,9 @@ def checkout_create():
   referring_site = data.get('referring_site', None)
 
   print referring_site
+
+  if not referring_site:
+    return ('', 200)
 
   parsed_url = urlparse(referring_site)
   query_params = parse_qs(parsed_url.query)
