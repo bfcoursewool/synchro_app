@@ -20,14 +20,13 @@
       background-color: $color-silver;
       background-position: center;
       @include sm-screen {
-      background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-bundle-atf-mobile@2x.jpg");
-      height: 234px;
-
-        &:after {
-          content: none;
-        }
+        height: 400px;
       }
-      @include image-curve ($curve-in-top, $curve-out-bottom)
+      @include s-screen {
+        background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-bundle-atf-mobile@2x.jpg");
+        height: 234px;
+      }
+      @include image-curve ($curve-in-top-white-desktop, $curve-in-top-white-mobile, $curve-out-bottom-white-desktop, $curve-out-bottom-white-mobile)
     }
   }
 
@@ -39,10 +38,25 @@
     &__icon {
       max-width: 100px;
     }
+
+    &__icon-box {
+      @include l-screen {
+        width: 25%;
+      }
+      @include sm-screen {
+        width: 50%;
+      }
+      @include xs-screen {
+        width: 100%;
+      }
+    }
   }
 
   .intro {
     position: relative;
+    @include sm-screen {
+      background: $color-ivory;
+    }
 
     .bg-full-width {
       position: relative;
@@ -51,14 +65,17 @@
       background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-intro-desktop@2x.jpg");
       background-color: $color-silver;
       background-position: center;
+      @include image-curve ($curve-in-top-white-desktop, $curve-in-top-white-mobile, $curve-in-bottom-silver-desktop, $curve-in-bottom-white-mobile);
       @include sm-screen {
-        background: none;
-
-        &:after {
-          content: none;
-        }
+        background-position-x: calc(50% - 90px);
       }
-      @include image-curve ($curve-in-top, $curve-in-bottom)
+      @include s-screen {
+        background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-intro-mobile@2x.jpg");
+        background-position: center;
+      }
+      @include xs-screen {
+        height: 234px;
+      }
     }
 
     &__copy {
@@ -66,8 +83,18 @@
       top: 50%;
       left: 50%;
       max-width: 500px;
-      transform: translate(-100% , -50%);
+      transform: translate(-87% , -50%);
       text-align: left;
+      @include s-screen {
+        position: initial;
+        transform: none;
+        text-align: center;
+        padding: $gutter-medium;
+        max-width: none;
+      }
+      @include xs-screen {
+        padding: 30px $gutter-small 10px;
+      }
 
       .p--header {
         max-width: initial;
@@ -79,17 +106,48 @@
     text-align: center;
     font-size: 0;
     padding: 0 $gutter-large $gutter-large;
+    @include m-screen {
+      padding: 0 $gutter-medium $gutter-medium;
+    }
+    @include s-screen {
+      padding: 0 $gutter-small $gutter-small;
+    }
 
-    &__box {
+    &__container {
+      margin: 0 auto;
+      max-width: 1560px;
+    }
+
+    .consumption-card {
       vertical-align: top;
-      width: 30%;
+      width: 33.33%;
       display: inline-block;
-      margin: 10px;
       max-width: 500px;
+      @include m-screen {
+        width: 50%;
+      }
+      @include s-screen {
+        width: 100%;
+      }
+
+      &__inner {
+        margin: 0 10px;
+        overflow: auto;
+        @include m-screen {
+          margin: 10px;
+        }
+        @include s-screen {
+          margin: 10px 0;
+        }
+      }
     }
 
     &__text {
       height: 80px;
+      @include m-screen {
+        height: auto;
+        min-height: 80px;
+      }
 
       .p--text {
         color: $color-ivory;
@@ -119,6 +177,7 @@
     &__item {
       max-width: fit-content;
       padding: 0;
+      border: none;
 
       a:hover {
         opacity: 1;
@@ -130,7 +189,11 @@
       background: $color-silver;
       height: 400px;
       width: 400px;
+      max-width: 100%;
       vertical-align: middle;
+      @include s-screen {
+        height: 250px;
+      }
     }
 
     &__copy {
@@ -197,8 +260,8 @@
       position: relative;
       font-weight: $font-demi;
       text-transform: uppercase;
-      font-size: 16px;
-      color: $color-ketomanna;
+      font-size: 20px;
+      color: $color-gold;
       letter-spacing: 1px;
 
       &:after,
@@ -206,8 +269,8 @@
         content: "";
         position: absolute;
         height: 1px;
-        width: 70px;
-        background: $color-ketomanna;
+        width: 80px;
+        background: $color-gold;
         left: 50%;
         transform: translateX(-50%);
       }

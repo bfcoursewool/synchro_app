@@ -95,14 +95,14 @@
     border-right-color: transparent;
   }
 }
-@mixin image-curve($curve-top, $curve-bottom) {
+@mixin image-curve($curve-top, $curve-top-mobile, $curve-bottom, $curve-bottom-mobile) {
   &:after,
   &:before {
     content: "";
     position: absolute;
     height: 20px;
     width: 100%;
-    background-size: 100% 100%;
+    background-size: 100%;
     left: 0;
     background-repeat: no-repeat;
   }
@@ -110,11 +110,18 @@
   &:before {
     top: 0;
     background-image: $curve-top;
+    @include s-screen {
+      background-image: $curve-top-mobile;
+    }
   }
 
   &:after {
     bottom: 0;
     background-image: $curve-bottom;
+    background-position: bottom;
+    @include s-screen {
+      background-image: $curve-bottom-mobile;
+    }
   }
 }
 // Layout

@@ -32,6 +32,9 @@
 
   .synchro-logo-square {
     width: 100px;
+    @include s-screen {
+      width: 80px;
+    }
   }
 
   &__content-box {
