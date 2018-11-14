@@ -29,7 +29,7 @@
       @include s-screen {
         background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-bundle-atf-mobile@2x.jpg");
         height: 200px;
-        background-size: contain;
+        background-size: auto 200px;
       }
       @include image-curve ($curve-in-top-white-desktop, $curve-in-top-white-mobile, $curve-out-bottom-white-desktop, $curve-out-bottom-white-mobile)
     }

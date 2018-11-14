@@ -6916,7 +6916,7 @@ input:checked + .accordion-horizontal__inner-box {
     .keto-bundle-lp .atf-v2 .bg-full-width {
       background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-bundle-atf-mobile@2x.jpg");
       height: 200px;
-      background-size: contain; } }
+      background-size: auto 200px; } }
   .keto-bundle-lp .atf-v2 .bg-full-width:after, .keto-bundle-lp .atf-v2 .bg-full-width:before {
     content: "";
     position: absolute;
