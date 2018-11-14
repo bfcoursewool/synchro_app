@@ -7081,14 +7081,17 @@ input:checked + .accordion-horizontal__inner-box {
 
 .keto-bundle-lp .purchase__img {
   display: inline-block;
-  background: #E6E6E5;
   height: 400px;
   width: 400px;
   max-width: 100%;
-  vertical-align: middle; }
+  vertical-align: middle;
+  background-image: url("https://storage.googleapis.com/synchro-assets/keto-bundle/v1-0/keto-bundle-purchase%402x.jpg");
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+  background-position: center; }
   @media (max-width: 767px) {
     .keto-bundle-lp .purchase__img {
-      height: 250px; } }
+      height: 300px; } }
 
 .keto-bundle-lp .purchase__copy {
   display: inline-block;

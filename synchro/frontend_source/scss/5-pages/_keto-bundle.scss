@@ -191,13 +191,16 @@
 
     &__img {
       display: inline-block;
-      background: $color-silver;
       height: 400px;
       width: 400px;
       max-width: 100%;
       vertical-align: middle;
+      background-image: url("https://storage.googleapis.com/synchro-assets/keto-bundle/v1-0/keto-bundle-purchase%402x.jpg");
+      background-size: auto 80%;
+      background-repeat: no-repeat;
+      background-position: center;
       @include s-screen {
-        height: 250px;
+        height: 300px;
       }
     }
 
