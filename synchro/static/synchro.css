@@ -6901,17 +6901,22 @@ input:checked + .accordion-horizontal__inner-box {
 .keto-bundle-lp .atf-v2 .bg-full-width {
   position: relative;
   min-height: inherit;
-  height: 629px;
+  height: 400px;
   background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-bundle-atf-desktop@2x.jpg");
-  background-color: #E6E6E5;
+  background-color: #ffffff;
+  background-size: contain;
   background-position: center; }
+  @media (max-width: 1199px) {
+    .keto-bundle-lp .atf-v2 .bg-full-width {
+      height: 350px; } }
   @media (max-width: 854px) {
     .keto-bundle-lp .atf-v2 .bg-full-width {
-      height: 400px; } }
+      height: 250px; } }
   @media (max-width: 767px) {
     .keto-bundle-lp .atf-v2 .bg-full-width {
       background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-bundle-atf-mobile@2x.jpg");
-      height: 234px; } }
+      height: 200px;
+      background-size: contain; } }
   .keto-bundle-lp .atf-v2 .bg-full-width:after, .keto-bundle-lp .atf-v2 .bg-full-width:before {
     content: "";
     position: absolute;
