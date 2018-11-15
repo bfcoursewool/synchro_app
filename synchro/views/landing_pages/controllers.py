@@ -68,7 +68,7 @@ endpoint_info_dict = {
         'is_variant': False,
       }
     },
-    'keto-plan': {
+    'ketoplan': {
       'template': 'landing_pages/keto-bundle/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
