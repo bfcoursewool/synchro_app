@@ -1,0 +1,28 @@
+.rating {
+  padding-top: 10px;
+
+  &__stars {
+    #rating__star {
+      height: 20px;
+    }
+  }
+
+  &__icon {
+    fill: $color-gold;
+    stroke: $color-gold;
+    fill-rule: nonzero;
+
+    &.star-5 {
+      fill: url("#rating__halfstar");
+    }
+  }
+
+  &__count {
+    font-weight: $font-medium;
+    font-size: 14px;
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+}

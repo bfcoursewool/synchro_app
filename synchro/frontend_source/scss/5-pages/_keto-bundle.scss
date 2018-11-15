@@ -31,7 +31,6 @@
         height: 200px;
         background-size: auto 200px;
       }
-      @include image-curve ($curve-in-top-white-desktop, $curve-in-top-white-mobile, $curve-out-bottom-white-desktop, $curve-out-bottom-white-mobile)
     }
   }
 
