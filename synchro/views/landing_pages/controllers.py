@@ -57,9 +57,23 @@ endpoint_info_dict = {
     'keto-chocolate-fudge': {
       'template': 'landing_pages/ketomanna/v1-0-paid/0-index.html',
       'template_vars': {
-        'is_variant': False,
+        'is_variant': True,
       }
     }
+  },
+  'keto': {
+    'v0': {
+      'template': 'landing_pages/keto-bundle/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
+    'ketoplan': {
+      'template': 'landing_pages/keto-bundle/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
   },
   'cognos': {
     'v0': {

@@ -26,7 +26,19 @@ export default class LPEffects extends EventsBase {
       'click .js-modal-close': 'closeModal',
       'keyup window': 'closeModal',
       'click .modal-overlay': 'closeModal',
-      'click .vjs-big-play-button': 'hideBenefitsText'
+      'click .vjs-big-play-button': 'hideBenefitsText',
+      'click .product-card__ingredients': 'toggleInfoText',  // On Keto-Bundle page  TODO -- Refactor front-end build by page somehow... 
+      'click .product-card__nutrition': 'toggleInfoText', // Same ^^ 
+    }
+  }
+
+  toggleInfoText(target) {
+    if($(target).is('.active')) {
+      $(target).removeClass('active');
+      $(target).find('span').removeClass('active');
+    } else {
+      $(target).addClass('active');
+      $(target).find('span').addClass('active');
     }
   }
 
