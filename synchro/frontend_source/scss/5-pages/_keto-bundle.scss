@@ -36,6 +36,12 @@
       vertical-align: middle;
     }
 
+    &__desktop {
+      @include xs-screen {
+        display: none;
+      }
+    }
+
     .a--cta {
       padding: 8px 20px;
       margin: 5px;

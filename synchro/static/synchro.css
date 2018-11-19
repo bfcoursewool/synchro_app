@@ -6936,6 +6936,9 @@ input:checked + .accordion-horizontal__inner-box {
     font-weight: 500;
     font-size: 18px;
     vertical-align: middle; }
+  @media (max-width: 680px) {
+    .keto-bundle-lp .flash-sale-banner__desktop {
+      display: none; } }
   .keto-bundle-lp .flash-sale-banner .a--cta {
     padding: 8px 20px;
     margin: 5px;
