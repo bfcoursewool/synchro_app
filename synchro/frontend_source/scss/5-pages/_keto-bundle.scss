@@ -11,6 +11,38 @@
     }
   }
 
+  .flash-sale-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: $color-ketobasis;
+    z-index: $header-z-index;
+    padding: 5px;
+
+    &.pseudo {
+      position: relative;
+    }
+
+    &__text {
+      display: inline-block;
+      color: $color-ivory;
+      margin: 5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+
+    .a--cta {
+      padding: 8px 20px;
+      margin: 5px;
+      vertical-align: middle;
+    }
+  }
+
   .atf-v2 {
     .bg-full-width {
       position: relative;

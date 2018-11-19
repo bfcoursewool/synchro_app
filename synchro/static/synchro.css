@@ -6916,6 +6916,31 @@ input:checked + .accordion-horizontal__inner-box {
   .keto-bundle-lp .main-header-container .main-header.floated {
     opacity: 1; }
 
+.keto-bundle-lp .flash-sale-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: #8b79b3;
+  z-index: 100;
+  padding: 5px; }
+  .keto-bundle-lp .flash-sale-banner.pseudo {
+    position: relative; }
+  .keto-bundle-lp .flash-sale-banner__text {
+    display: inline-block;
+    color: #ffffff;
+    margin: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 18px;
+    vertical-align: middle; }
+  .keto-bundle-lp .flash-sale-banner .a--cta {
+    padding: 8px 20px;
+    margin: 5px;
+    vertical-align: middle; }
+
 .keto-bundle-lp .atf-v2 .bg-full-width {
   position: relative;
   min-height: inherit;
@@ -7412,4 +7437,4 @@ svg.external {
 }
 */
 
-/*# sourceMappingURL=synchro.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
