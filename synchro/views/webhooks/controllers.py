@@ -44,7 +44,7 @@ def recharge_order():
 
   if adwords_user:
     if not adwords_user.recharge_id:
-      adwords_user.set_recharge_id(int(data['charge']['customer_id']))
+      adwords_user.set_recharge_id(recharge_id)
     adwords_user.increment_charge_count()
   return ('', 200)
 
@@ -63,7 +63,13 @@ def checkout_create():
     return ('', 200)
 
   url_list = [referring_site, landing_site]
-  gclid_url = next((url for url in url_list if 'gclid' in url), None)
+  try:
+    # This is a janky and bad way to use try/except but basically if neither url 
+    # has a gclid, which is often, this one-liner will throw a 500 so if that happens
+    # we just catch it and return a 200 and bail... 
+    gclid_url = next((url for url in url_list if 'gclid' in url), None)
+  except:
+    return('', 200)
 
   parsed_url = urlparse(gclid_url)
   query_params = parse_qs(parsed_url.query)
