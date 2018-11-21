@@ -58,13 +58,18 @@ def checkout_create():
   assert validate_webhook(json_data, header_hmac)
 
   referring_site = data.get('referring_site', None)
-  if not referring_site:
+  landing_site = data.get('landing_site', None)
+  if not referring_site and not landing_site:
     return ('', 200)
 
-  parsed_url = urlparse(referring_site)
+  url_list = [referring_site, landing_site]
+  gclid_url = next((url for url in url_list if 'gclid' in url), None)
+
+  parsed_url = urlparse(gclid_url)
   query_params = parse_qs(parsed_url.query)
   if 'gclid' in query_params:
-    adwords_user = AdwordsUser.select_one(gclid=query_params['gclid'])
+    gclid = query_params['gclid'][0]
+    adwords_user = AdwordsUser.select_one(gclid=gclid)
     if adwords_user:
       adwords_user.set_shopify_info(data['id'], data['email'])
   return ('', 200)
