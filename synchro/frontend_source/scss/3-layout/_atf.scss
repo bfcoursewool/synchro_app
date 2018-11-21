@@ -26,3 +26,44 @@
     }
   }
 }
+
+.atf-v2 {
+  text-align: center;
+
+  .synchro-logo-square {
+    width: 100px;
+    @include s-screen {
+      width: 80px;
+    }
+  }
+
+  &__content-box {
+    padding: 30px 30px 0;
+  }
+
+  &__header {
+    // opacity: 0;
+    font-size: 45px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: $font-normal;
+    letter-spacing: 2px;
+    transition: opacity 0.75s ease-in-out;
+    margin: 0;
+    // &.animate-in {
+    //   opacity: 1;
+    // }
+    @include s-screen {
+      font-size: 40px;
+    }
+  }
+
+  &__description {
+    font-size: 26px;
+    margin: 0;
+  }
+
+  .a--cta {
+    margin: 30px 0 10px;
+  }
+}

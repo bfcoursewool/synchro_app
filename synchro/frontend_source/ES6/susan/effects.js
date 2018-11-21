@@ -123,25 +123,6 @@ export default () => {
     }
   }, 190);
 
-  sr.reveal('.faq-animate-1', {viewFactor: 1});
-  sr.reveal('.faq-animate-2', {viewFactor: 1});
-  sr.reveal('.faq-animate-3', {viewFactor: 1});
-  sr.reveal('.faq-animate-4', {viewFactor: 1});
-  sr.reveal('.faq-animate-5', {viewFactor: 1});
-  sr.reveal('.faq-animate-6', {viewFactor: 1});
-  sr.reveal('.faq-animate-7', {viewFactor: 1});
-  sr.reveal('.faq-animate-8', {viewFactor: 1});
-  sr.reveal('.faq-animate-9', {viewFactor: 1});
-  sr.reveal('.faq-animate-10', {viewFactor: 1});
-  sr.reveal('.faq-animate-11', {viewFactor: 1});
-  sr.reveal('.faq-animate-12', {viewFactor: 1});
-  sr.reveal('.faq-animate-13', {viewFactor: 1});
-  sr.reveal('.faq-animate-14', {viewFactor: 1});
-  sr.reveal('.faq-animate-15', {viewFactor: 1});
-  sr.reveal('.faq-animate-16', {viewFactor: 1});
-  sr.reveal('.faq-animate-17', {viewFactor: 1});
-  sr.reveal('.faq-animate-18', {viewFactor: 1});
-
 
 }
 

@@ -1,0 +1,138 @@
+.product-cards {
+  background: #F9F9F9;
+  font-size: 0;
+  overflow: auto;
+  padding: 0 $gutter-large $gutter-large;
+  @include m-screen {
+    padding: 0 $gutter-medium $gutter-medium;
+  }
+  @include s-screen {
+    text-align: center;
+    padding: 0 $gutter-small $gutter-small;
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1560px;
+    text-align: center;
+  }
+
+  .product-card {
+    vertical-align: top;
+    width: 33.33%;
+    display: inline-block;
+    text-align: left;
+    max-width: 500px;
+    @include m-screen {
+      width: 50%;
+    }
+    @include s-screen {
+      width: 100%;
+    }
+
+    &__inner {
+      background: $color-ivory;
+      margin: 0 10px;
+      overflow: auto;
+      @include m-screen {
+        margin: 10px;
+      }
+      @include s-screen {
+        margin: 10px 0;
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__copy {
+      margin: 30px;
+    }
+
+    &__header {
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 2.4px;
+      font-weight: $font-medium;
+    }
+
+    &__details {
+      opacity: 0.5;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      font-weight: $font-medium;
+      margin: 1em 0;
+    }
+
+    &__ingredients,
+    &__nutrition {
+      &-cta {
+        position: relative;
+        left: 20px;
+        font-weight: $font-demi;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+
+        &:before {
+          content: "+";
+          position: absolute;
+          left: -20px;
+        }
+
+        &.active {
+          &:before {
+            content: "-";
+            position: absolute;
+            top: -2px;
+            left: -20px;
+          }
+        }
+      }
+    }
+
+    &__ingredients {
+      margin: 10px 0;
+
+      .p--text {
+        max-height: 0;
+        overflow: hidden;
+        margin: 0;
+        transition: all ease-in-out 0.5s;
+      }
+
+      &.active {
+        .p--text {
+          max-height: 200px;
+          margin: 1em 0;
+        }
+      }
+    }
+
+    &__nutrition {
+      margin: 10px 0;
+
+      .product-card__nutrition-image {
+        max-height: 0;
+        overflow: hidden;
+        margin: 0;
+        transition: all ease-in-out 0.5s;
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &.active {
+        .product-card__nutrition-image {
+          margin-top: 20px;
+          max-height: 420px;
+        }
+      }
+    }
+  }
+}

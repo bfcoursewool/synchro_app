@@ -1,6 +1,7 @@
 .gold-lp {
   .main-header {
     .a--cta {
+      @include cta-custom($color-gold, white);
       display: none;
     }
 

@@ -6,14 +6,12 @@ $font-normal: 400;
 $font-medium: 500;
 $font-demi: 600;
 $font-bold: 700;
-
 // General Branding
 $color-ebony: #000000;
 $color-ivory: #ffffff;
 $color-silver: #E6E6E5;
 $color-silver-dark: #404040;
 $color-silver-light: #f4f4f5;
-
 // Product Branding
 $color-gold: #eca846;
 $color-genesis: #5da8a6;
@@ -22,12 +20,34 @@ $color-ketobasis: #8b79b3;
 $color-ketoprana: #af80b3;
 $color-prebios: #f3a98f;
 $color-microbios: #efa8b6;
+// Elements
+$curve-in-top-white-desktop: url("https://cdn.besynchro.com/global/curve-in-top-white-desktop@2x.png");
+$curve-in-top-white-mobile: url("https://cdn.besynchro.com/global/curve-in-top-white-mobile@2x.png");
 
+$curve-out-top-white-desktop: url("https://cdn.besynchro.com/global/curve-out-top-white-desktop@2x.png");
+$curve-out-top-white-mobile: url("https://cdn.besynchro.com/global/curve-out-top-white-mobile@2x.png");
+
+$curve-in-bottom-white-desktop: url("https://cdn.besynchro.com/global/curve-in-bottom-white-desktop@2x.png");
+$curve-in-bottom-white-mobile: url("https://cdn.besynchro.com/global/curve-in-bottom-white-mobile@2x.png");
+
+$curve-out-bottom-white-desktop: url("https://cdn.besynchro.com/global/curve-out-bottom-white-desktop@2x.png");
+$curve-out-bottom-white-mobile: url("https://cdn.besynchro.com/global/curve-out-bottom-white-mobile@2x.png");
+
+$curve-in-top-silver-desktop: url("https://cdn.besynchro.com/global/curve-in-top-silver-desktop@2x.png");
+$curve-in-top-silver-mobile: url("https://cdn.besynchro.com/global/curve-in-top-silver-mobile@2x.png");
+
+$curve-out-top-silver-desktop: url("https://cdn.besynchro.com/global/curve-out-top-silver-desktop@2x.png");
+$curve-out-top-silver-mobile: url("https://cdn.besynchro.com/global/curve-out-top-silver-mobile@2x.png");
+
+$curve-in-bottom-silver-desktop: url("https://cdn.besynchro.com/global/curve-in-bottom-silver-desktop@2x.png");
+$curve-in-bottom-silver-mobile: url("https://cdn.besynchro.com/global/curve-in-bottom-silver-mobile@2x.png");
+
+$curve-out-bottom-silver-desktop: url("https://cdn.besynchro.com/global/curve-out-bottom-silver-desktop@2x.png");
+$curve-out-bottom-silver-mobile: url("https://cdn.besynchro.com/global/curve-out-bottom-silver-mobile@2x.png");
 // Layout
 $gutter-small: 20px;
 $gutter-medium: 40px;
 $gutter-large: 60px;
-$shadow-white: 0px 0px 10px rgba(0,0,0,0.1);
-
+$shadow-white: 0 0 10px rgba(0,0,0,0.1);
 // Z-Index
 $header-z-index: 100;
