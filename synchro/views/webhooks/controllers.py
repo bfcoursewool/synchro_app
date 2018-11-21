@@ -66,7 +66,7 @@ def checkout_create():
   try:
     # This is a janky and bad way to use try/except but basically if neither url 
     # has a gclid, which is often, this one-liner will throw a 500 so if that happens
-    # we just catch it and return a 200 and bail... 
+    # we just catch it and return a 200 and bail...
     gclid_url = next((url for url in url_list if 'gclid' in url), None)
   except:
     return('', 200)
