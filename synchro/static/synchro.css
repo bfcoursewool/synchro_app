@@ -6283,8 +6283,6 @@ input:checked + .accordion-horizontal__inner-box {
     fill: #eca846;
     stroke: #eca846;
     fill-rule: nonzero; }
-    .rating__icon.star-5 {
-      fill: url("#rating__halfstar"); }
   .rating__count {
     font-weight: 500;
     font-size: 14px;
