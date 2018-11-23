@@ -11,10 +11,6 @@
     fill: $color-gold;
     stroke: $color-gold;
     fill-rule: nonzero;
-
-    &.star-5 {
-      fill: url("#rating__halfstar");
-    }
   }
 
   &__count {
