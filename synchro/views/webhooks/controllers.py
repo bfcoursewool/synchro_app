@@ -71,6 +71,9 @@ def checkout_create():
   except:
     return('', 200)
 
+  if not gclid_url:
+    return('', 200)
+    
   parsed_url = urlparse(gclid_url)
   query_params = parse_qs(parsed_url.query)
   if 'gclid' in query_params:
