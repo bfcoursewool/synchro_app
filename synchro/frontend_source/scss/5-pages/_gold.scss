@@ -16,6 +16,15 @@
     }
   }
 
+  .top-offer-bar {
+    background: $color-gold;
+
+    .a--cta {
+      background: $color-ebony;
+      color: $color-ivory;
+    }
+  }
+
   .atf {
     &.bg-full-width {
       background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf.jpg");
@@ -28,6 +37,7 @@
           content: none;
         }
       }
+      @include image-curve (none, none, $curve-out-bottom-white-desktop, $curve-out-bottom-white-mobile);
     }
 
     &__content-box {
@@ -40,7 +50,7 @@
       @include sm-screen {
         position: initial;
         transform: none;
-        margin: 0 auto;
+        margin: 20px auto 0;
         max-width: 80%;
       }
     }
@@ -92,20 +102,6 @@
         opacity: 1;
       }
     }
-    // wave bottom
-    &:after {
-      content: "";
-      background-image: url("https://cdn.besynchro.com/gold/v2-0/atf-bottom-wave@2x.png");
-      background-color: transparent;
-      height: 45px;
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      background-repeat: repeat-x;
-      background-size: auto 45px;
-      background-position-x: center;
-      z-index: $header-z-index - 10;
-    }
 
     &__mobile {
       display: none;
@@ -114,23 +110,16 @@
         position: relative;
         background-image: url("https://cdn.besynchro.com/experiments/gold-og-lg-bg-mobile.jpg");
         background-size: cover;
-        height: 400px;
+        height: 300px;
         background-position: center;
+        @include image-curve (none, none, $curve-out-bottom-white-desktop, $curve-out-bottom-white-mobile);
       }
-      // wave bottom
-      &:after {
-        content: "";
-        background-image: url("https://cdn.besynchro.com/gold/v2-0/atf-bottom-wave@2x.png");
-        background-color: transparent;
-        height: 45px;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        background-repeat: repeat-x;
-        background-size: auto 45px;
-        background-position-x: center;
-        z-index: $header-z-index - 10;
-      }
+    }
+  }
+
+  .benefits {
+    @include s-screen {
+      border-top: 1px solid #e6e6e5;
     }
   }
 
@@ -166,7 +155,7 @@
     }
   }
 }
-// .flash-sale-banner {
+// .top-offer-bar {
 //   position: fixed;
 //   text-align: center;
 //   background-color: $color-gold;
@@ -232,10 +221,8 @@
 //     }
 //   }
 // }
-
 .main-header-container {
   .main-header {
-    padding-top: 20px;
     // @include xs-screen {
     //   top: 90px;
     // }

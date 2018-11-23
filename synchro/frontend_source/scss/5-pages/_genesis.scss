@@ -1,7 +1,21 @@
 .genesis-lp {
-  .main-header-container {
+  .main-header {
     .a--cta {
+      display: none;
       background: $color-genesis;
+    }
+
+    &__content {
+      height: 47px;
+    }
+  }
+
+  .top-offer-bar {
+    background: $color-genesis;
+
+    .a--cta {
+      background: $color-ebony;
+      color: $color-ivory;
     }
   }
 
@@ -12,6 +26,7 @@
       @include sm-screen {
         background-image: url("https://cdn.besynchro.com/genesis/v2-0/atf-image-small-genesis.jpg");
         background-position: center;
+        min-height: 580px;
       }
     }
 
@@ -27,12 +42,12 @@
       @include sm-screen {
         position: initial;
         transform: none;
-        padding-top: 130px;
+        padding-top: 70px;
         font-size: 40px;
         max-width: none;
       }
       @include xs-screen {
-        padding-top: 100px;
+        padding-top: 50px;
         max-width: 370px;
       }
     }
