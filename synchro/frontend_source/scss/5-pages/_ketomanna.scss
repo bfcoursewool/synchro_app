@@ -42,7 +42,7 @@
 
     &__content-box {
       position: absolute;
-      top: 53%;
+      top: 56%;
       left: 50%;
       transform: translate(-50%, -50%);
       max-width: 400px;
@@ -84,22 +84,9 @@
     }
 
     .a--cta {
-      margin: 5px;
-
       &.cta--secondary {
         background: none;
         color: $color-ebony;
-      }
-    }
-
-    .down-arrow {
-      opacity: 0;
-      width: 19px;
-      transition: opacity 0.75s ease-in-out, bottom 0.75s ease-in-out;
-
-      &.animate-in {
-        bottom: 70px;
-        opacity: 1;
       }
     }
 

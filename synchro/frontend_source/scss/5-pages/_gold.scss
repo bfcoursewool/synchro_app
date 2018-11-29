@@ -42,7 +42,7 @@
 
     &__content-box {
       position: absolute;
-      top: 50%;
+      top: 53%;
       left: 50%;
       transform: translate(-50%, -50%);
       max-width: 400px;
@@ -92,17 +92,6 @@
       }
     }
 
-    .down-arrow {
-      opacity: 0;
-      width: 19px;
-      transition: opacity 0.75s ease-in-out, bottom 0.75s ease-in-out;
-
-      &.animate-in {
-        bottom: 70px;
-        opacity: 1;
-      }
-    }
-
     &__mobile {
       display: none;
       @include sm-screen {
@@ -113,6 +102,14 @@
         height: 300px;
         background-position: center;
         @include image-curve (none, none, $curve-out-bottom-white-desktop, $curve-out-bottom-white-mobile);
+      }
+    }
+  }
+
+  .rating {
+    &__count {
+      &:before {
+        content: "1400+";
       }
     }
   }
@@ -221,6 +218,7 @@
 //     }
 //   }
 // }
+
 .main-header-container {
   .main-header {
     // @include xs-screen {

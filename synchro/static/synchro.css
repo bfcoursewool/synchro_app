@@ -5217,7 +5217,7 @@ a {
   a.anchor {
     display: block;
     position: relative;
-    top: -50px; }
+    top: -65px; }
     @media (max-width: 767px) {
       a.anchor {
         top: 0; } }
@@ -5299,6 +5299,12 @@ p {
       padding-right: 10px; } }
 
 .main-header-container .main-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: none;
+  z-index: 100;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 0;
@@ -5309,6 +5315,11 @@ p {
   /* Safari & Chrome */
   -o-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
   /* Opera */ }
+  .main-header-container .main-header.floated {
+    background: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    padding-bottom: 10px; }
   .main-header-container .main-header__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -5429,6 +5440,15 @@ p {
     margin: 0; }
   .atf-v2 .a--cta {
     margin: 30px 0 10px; }
+
+.down-arrow {
+  opacity: 0;
+  width: 19px;
+  transition: opacity 0.75s ease-in-out, bottom 0.75s ease-in-out;
+  margin: 20px; }
+  .down-arrow.animate-in {
+    bottom: 70px;
+    opacity: 1; }
 
 .claim-icons {
   padding: 30px 0;
@@ -6295,7 +6315,7 @@ input:checked + .accordion-horizontal__inner-box {
         max-height: 420px; }
 
 .rating {
-  padding-top: 10px; }
+  margin: 20px; }
   .rating__stars #rating__star {
     height: 20px; }
   .rating__icon {
@@ -6305,10 +6325,12 @@ input:checked + .accordion-horizontal__inner-box {
   .rating__count {
     font-weight: 500;
     font-size: 14px;
-    opacity: 0.5;
+    opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0; }
+    .rating__count:before {
+      content: "100+"; }
 
 .gold-lp .main-header .a--cta {
   background: #eca846;
@@ -6360,7 +6382,7 @@ input:checked + .accordion-horizontal__inner-box {
 
 .gold-lp .atf__content-box {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 400px;
@@ -6404,14 +6426,6 @@ input:checked + .accordion-horizontal__inner-box {
     background: none;
     color: #000000; }
 
-.gold-lp .atf .down-arrow {
-  opacity: 0;
-  width: 19px;
-  transition: opacity 0.75s ease-in-out, bottom 0.75s ease-in-out; }
-  .gold-lp .atf .down-arrow.animate-in {
-    bottom: 70px;
-    opacity: 1; }
-
 .gold-lp .atf__mobile {
   display: none; }
   @media (max-width: 854px) {
@@ -6444,6 +6458,9 @@ input:checked + .accordion-horizontal__inner-box {
     @media (max-width: 854px) and (max-width: 767px) {
       .gold-lp .atf__mobile:after {
         background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-mobile@2x.png"); } }
+
+.gold-lp .rating__count:before {
+  content: "1400+"; }
 
 @media (max-width: 767px) {
   .gold-lp .benefits {
@@ -6496,11 +6513,7 @@ input:checked + .accordion-horizontal__inner-box {
   content: none; }
 
 .genesis-lp .main-header .a--cta {
-  display: none;
   background: #5da8a6; }
-
-.genesis-lp .main-header__content {
-  height: 47px; }
 
 .genesis-lp .top-offer-bar {
   background: #5da8a6; }
@@ -6732,7 +6745,7 @@ input:checked + .accordion-horizontal__inner-box {
 
 .ketomanna-lp .atf__content-box {
   position: absolute;
-  top: 53%;
+  top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 400px;
@@ -6770,19 +6783,9 @@ input:checked + .accordion-horizontal__inner-box {
       margin: 0 auto 20px;
       font-size: 22px; } }
 
-.ketomanna-lp .atf .a--cta {
-  margin: 5px; }
-  .ketomanna-lp .atf .a--cta.cta--secondary {
-    background: none;
-    color: #000000; }
-
-.ketomanna-lp .atf .down-arrow {
-  opacity: 0;
-  width: 19px;
-  transition: opacity 0.75s ease-in-out, bottom 0.75s ease-in-out; }
-  .ketomanna-lp .atf .down-arrow.animate-in {
-    bottom: 70px;
-    opacity: 1; }
+.ketomanna-lp .atf .a--cta.cta--secondary {
+  background: none;
+  color: #000000; }
 
 .ketomanna-lp .atf__mobile {
   display: none; }
@@ -7177,7 +7180,7 @@ input:checked + .accordion-horizontal__inner-box {
   width: 300px;
   vertical-align: middle;
   background: #F8F8F8;
-  padding: 10px 0 30px;
+  padding: 30px 0;
   margin: 10px; }
 
 .keto-bundle-lp .purchase__banner {
@@ -7243,8 +7246,7 @@ input:checked + .accordion-horizontal__inner-box {
 
 .keto-bundle-lp .purchase__item-cents, .keto-bundle-lp .purchase__item-price {
   color: #000000;
-  border: none;
-  margin: 0; }
+  border: none; }
 
 .keto-bundle-lp .purchase__original {
   font-weight: 500;
