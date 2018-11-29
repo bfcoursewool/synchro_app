@@ -38,6 +38,9 @@ def recharge_order():
   recharge_id = int(data['charge']['customer_id'])
   customer_email = data['charge']['email']
 
+  with open('/tmp/recharge_orders.txt', 'a+') as debug:
+    debug.write("recharge_id: %d, email: %s\n" % (recharge_id, customer_email))
+
   adwords_user = AdwordsUser.select_one(recharge_id=recharge_id)
   if not adwords_user:
     adwords_user = AdwordsUser.select_one(shopify_email=customer_email)
@@ -73,7 +76,7 @@ def checkout_create():
 
   if not gclid_url:
     return('', 200)
-    
+
   parsed_url = urlparse(gclid_url)
   query_params = parse_qs(parsed_url.query)
   if 'gclid' in query_params:
