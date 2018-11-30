@@ -46,11 +46,13 @@
   &__item-qty {
     margin-top: 10px;
     font-weight: $font-normal;
+    line-height: 1.4;
   }
 
   &__item-servings {
     color: #4e4e4e;
     text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
   &__item-off {

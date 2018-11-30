@@ -5706,10 +5706,12 @@ p {
     background-size: contain; }
   .purchase__item-qty {
     margin-top: 10px;
-    font-weight: 400; }
+    font-weight: 400;
+    line-height: 1.4; }
   .purchase__item-servings {
     color: #4e4e4e;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 1px; }
   .purchase__item-off {
     font-weight: bold;
     text-transform: uppercase; }
@@ -7246,7 +7248,8 @@ input:checked + .accordion-horizontal__inner-box {
 
 .keto-bundle-lp .purchase__item-cents, .keto-bundle-lp .purchase__item-price {
   color: #000000;
-  border: none; }
+  border: none;
+  margin-bottom: 30px; }
 
 .keto-bundle-lp .purchase__original {
   font-weight: 500;
@@ -7495,5 +7498,13 @@ svg.external {
   }
 }
 */
+.cro010-01 .purchase .option-1 {
+  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png"); }
+
+.cro010-01 .purchase .option-2 {
+  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png"); }
+
+.cro010-01 .purchase .option-3 {
+  background-image: url("https://cdn.besynchro.com/experiments/keto-bundle-purchase%402x.png"); }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
