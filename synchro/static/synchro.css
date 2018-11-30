@@ -6990,6 +6990,9 @@ input:checked + .accordion-horizontal__inner-box {
     right: -15px;
     border-right-color: transparent; }
 
+.ketomanna-paid-r .main-header-container .main-header {
+  position: initial; }
+
 .keto-bundle-lp .main-header-container .main-header {
   padding-top: 10px;
   padding-bottom: 10px;
