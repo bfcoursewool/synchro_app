@@ -15,11 +15,11 @@
   &__text {
     display: inline-block;
     color: $color-ivory;
-    margin: 5px;
+    margin: 0 3px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     vertical-align: middle;
   }
 
@@ -30,8 +30,10 @@
   }
 
   .a--cta {
-    padding: 8px 20px;
-    margin: 2px 5px;
+    height: 30px;
+    margin: 7px 3px;
+    line-height: 30px;
+    padding: 0 14px;
     vertical-align: middle;
     background: $color-ivory;
     color: $color-ebony;

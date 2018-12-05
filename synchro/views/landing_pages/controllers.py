@@ -107,9 +107,9 @@ endpoint_info_dict = {
       }
     }
   },
-  'cro010': {
+  'cro011': {
     'v1': {
-      'template': 'landing_pages/experiments/cro010/v1/0-index.html',
+      'template': 'landing_pages/experiments/cro011/v1/0-index.html',
       'template_vars': {
         'is_variant': True,
       }

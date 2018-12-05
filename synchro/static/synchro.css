@@ -5851,18 +5851,20 @@ p {
   .top-offer-bar__text {
     display: inline-block;
     color: #ffffff;
-    margin: 5px;
+    margin: 0 3px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     vertical-align: middle; }
   @media (max-width: 680px) {
     .top-offer-bar__desktop {
       display: none; } }
   .top-offer-bar .a--cta {
-    padding: 8px 20px;
-    margin: 2px 5px;
+    height: 30px;
+    margin: 7px 3px;
+    line-height: 30px;
+    padding: 0 14px;
     vertical-align: middle;
     background: #ffffff;
     color: #000000; }
@@ -6708,12 +6710,6 @@ input:checked + .accordion-horizontal__inner-box {
 .ketomanna-lp .main-header__content {
   height: 47px; }
 
-.ketomanna-lp .top-offer-bar {
-  background: #6c5851; }
-  .ketomanna-lp .top-offer-bar .a--cta {
-    background: #000000;
-    color: #ffffff; }
-
 .ketomanna-lp .atf.bg-full-width {
   background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf.jpg");
   background-color: #f0f3f4;
@@ -7501,13 +7497,66 @@ svg.external {
   }
 }
 */
-.cro010-01 .purchase .option-1 {
-  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png"); }
+.cro011-01 a.anchor {
+  top: -40px; }
 
-.cro010-01 .purchase .option-2 {
-  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png"); }
+.cro011-01 .main-header {
+  position: initial; }
 
-.cro010-01 .purchase .option-3 {
-  background-image: url("https://cdn.besynchro.com/experiments/keto-bundle-purchase%402x.png"); }
+.cro011-01 .top-offer-bar {
+  background: #000000; }
+  .cro011-01 .top-offer-bar__text {
+    margin: 0 5px;
+    line-height: 32px; }
+  .cro011-01 .top-offer-bar__code {
+    background: #ffffff;
+    color: #000000;
+    padding: 3px 8px;
+    margin: 0 5px;
+    -webkit-animation: flash 1s infinite;
+    -moz-animation: flash 1s infinite;
+    -o-animation: flash 1s infinite;
+    animation: flash 1s infinite; }
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.85; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.85; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.85; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.85; }
+  100% {
+    opacity: 1; } }
+
+.cro011-01 .purchase__options::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.cro011-01 .purchase__shipping {
+  text-align: center;
+  padding-top: 20px; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

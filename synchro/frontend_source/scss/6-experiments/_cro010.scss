@@ -1,0 +1,26 @@
+@import '../synchro';
+
+.cro010-01 {
+  .purchase {
+    // @include s-screen {
+    //   &__item:nth-child(2) {
+    //     border-bottom: none;
+    //     border-top: 1px solid #e2e2e2;
+    //   }
+    // }
+    .option-1 {
+      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png");
+    }
+
+    .option-2 {
+      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png");
+    }
+
+    .option-3 {
+      background-image: url("https://cdn.besynchro.com/experiments/keto-bundle-purchase%402x.png");
+    }
+    // .discount {
+    //   @include discount ($color-ketomanna)
+    // }
+  }
+}
