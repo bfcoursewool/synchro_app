@@ -48,21 +48,18 @@ endpoint_info_dict = {
     }
   },
   'ketomanna': {
-    # Redirect this to keto/ketomanna
     'v0': {
       'template': 'landing_pages/ketomanna/v1-0/0-index.html',
       'template_vars': {
         'is_variant': False,
       }
     },
-    # Redirect this to keto/ketomanna/keto-chocolate-fudge (to be created)
     'keto-chocolate-fudge': {
       'template': 'landing_pages/ketomanna/v1-0-paid-a/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
-    # Direct this to keto/ketomanna/keto-chocolate-fudge/r (to be created)
     'keto-chocolate-fudge-r': {
       'template': 'landing_pages/ketomanna/v1-0-paid-r/0-index.html',
       'template_vars': {
@@ -77,15 +74,6 @@ endpoint_info_dict = {
         'is_variant': False,
       }
     },
-    # Ketomanna Organic Landing Page
-    'ketomanna': {
-      'template': 'landing_pages/ketomanna/v1-0/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Create keto/ketomanna/keto-chocolate-fudge
-    # Create keto/ketomanna/keto-chocolate-fudge/r
     'ketoplan': {
       'template': 'landing_pages/keto-bundle/v1-0/0-index.html',
       'template_vars': {
