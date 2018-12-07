@@ -8,7 +8,6 @@
     transform: translate(-50%,-50%);
     width: 90%;
     -webkit-font-smoothing: antialiased;
-    opacity: 0;
     margin: 0 auto;
     color: $color-ebony;
     font-size: 60px;
@@ -16,11 +15,6 @@
     text-transform: capitalize;
     text-align: center;
     font-weight: $font-normal;
-    transition: opacity 0.75s ease-in-out;
-
-    &.animate-in {
-      opacity: 1;
-    }
     @include s-screen {
       font-size: 40px;
     }

@@ -5400,17 +5400,13 @@ p {
     transform: translate(-50%, -50%);
     width: 90%;
     -webkit-font-smoothing: antialiased;
-    opacity: 0;
     margin: 0 auto;
     color: #000000;
     font-size: 60px;
     line-height: 1.4;
     text-transform: capitalize;
     text-align: center;
-    font-weight: 400;
-    transition: opacity 0.75s ease-in-out; }
-    .atf__header.animate-in {
-      opacity: 1; }
+    font-weight: 400; }
     @media (max-width: 767px) {
       .atf__header {
         font-size: 40px; } }
