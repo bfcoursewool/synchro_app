@@ -10,12 +10,14 @@
 
   &.pseudo {
     position: relative;
+    visibility: hidden;
   }
 
   &__text {
     display: inline-block;
     color: $color-ivory;
-    margin: 0 3px;
+    margin: 0 5px;
+    line-height: 32px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
@@ -26,6 +28,21 @@
   &__desktop {
     @include xs-screen {
       display: none;
+    }
+  }
+
+  &__code {
+    background: $color-ivory;
+    color: $color-ebony;
+    padding: 3px 8px;
+    margin: 0 5px;
+    @include animate-flash;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &:visited {
+      color: $color-ebony;
     }
   }
 

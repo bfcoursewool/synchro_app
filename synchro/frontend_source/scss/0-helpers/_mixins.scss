@@ -132,3 +132,62 @@
     display: block;
   }
 }
+// Animation
+@mixin animate-flash($speed: 1s, $start-opacity: 1, $mid-opacity: 0.8) {
+  -webkit-animation: flash $speed infinite;
+  -moz-animation: flash $speed infinite;
+  -o-animation: flash $speed infinite;
+  animation: flash $speed infinite;
+  @-webkit-keyframes flash {
+    0% {
+      opacity: $start-opacity;
+    }
+
+    50% {
+      opacity: $mid-opacity;
+    }
+
+    100% {
+      opacity: $start-opacity;
+    }
+  }
+  @-moz-keyframes flash {
+    0% {
+      opacity: $start-opacity;
+    }
+
+    50% {
+      opacity: $mid-opacity;
+    }
+
+    100% {
+      opacity: $start-opacity;
+    }
+  }
+  @-o-keyframes flash {
+    0% {
+      opacity: $start-opacity;
+    }
+
+    50% {
+      opacity: $mid-opacity;
+    }
+
+    100% {
+      opacity: $start-opacity;
+    }
+  }
+  @keyframes flash {
+    0% {
+      opacity: $start-opacity;
+    }
+
+    50% {
+      opacity: $mid-opacity;
+    }
+
+    100% {
+      opacity: $start-opacity;
+    }
+  }
+}

@@ -5721,7 +5721,7 @@ p {
   .purchase__item-price {
     font-size: 64px;
     margin-top: 15px;
-    color: #4e4e4e;
+    color: #000000;
     opacity: 0.9;
     line-height: 72px; }
     @media (max-width: 854px) {
@@ -5847,11 +5847,13 @@ p {
   z-index: 100;
   padding: 5px; }
   .top-offer-bar.pseudo {
-    position: relative; }
+    position: relative;
+    visibility: hidden; }
   .top-offer-bar__text {
     display: inline-block;
     color: #ffffff;
-    margin: 0 3px;
+    margin: 0 5px;
+    line-height: 32px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
@@ -5860,6 +5862,49 @@ p {
   @media (max-width: 680px) {
     .top-offer-bar__desktop {
       display: none; } }
+  .top-offer-bar__code {
+    background: #ffffff;
+    color: #000000;
+    padding: 3px 8px;
+    margin: 0 5px;
+    -webkit-animation: flash 1s infinite;
+    -moz-animation: flash 1s infinite;
+    -o-animation: flash 1s infinite;
+    animation: flash 1s infinite; }
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+    .top-offer-bar__code:active, .top-offer-bar__code:focus, .top-offer-bar__code:hover, .top-offer-bar__code:visited {
+      color: #000000; }
   .top-offer-bar .a--cta {
     height: 30px;
     margin: 7px 3px;
@@ -6986,8 +7031,70 @@ input:checked + .accordion-horizontal__inner-box {
     right: -15px;
     border-right-color: transparent; }
 
+.ketomanna-paid-r a.anchor {
+  top: 40px; }
+  @media (max-width: 767px) {
+    .ketomanna-paid-r a.anchor {
+      top: 90px; } }
+
+.ketomanna-paid-r .top-offer-bar__text {
+  font-size: 18px;
+  display: inline; }
+
+.ketomanna-paid-r .top-offer-bar .a--cta {
+  -webkit-animation: flash 1s infinite;
+  -moz-animation: flash 1s infinite;
+  -o-animation: flash 1s infinite;
+  animation: flash 1s infinite; }
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+  .ketomanna-paid-r .top-offer-bar .a--cta:active, .ketomanna-paid-r .top-offer-bar .a--cta:focus, .ketomanna-paid-r .top-offer-bar .a--cta:hover, .ketomanna-paid-r .top-offer-bar .a--cta:visited {
+    color: #000000; }
+
 .ketomanna-paid-r .main-header-container .main-header {
   position: initial; }
+
+.ketomanna-paid-r .purchase__item-servings {
+  margin: 15px 0 10px; }
+
+.ketomanna-paid-r .purchase__item-off {
+  font-size: 22px;
+  font-weight: 600;
+  background: #C4A498;
+  color: white;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 2px 15px; }
 
 .keto-bundle-lp .main-header-container .main-header {
   padding-top: 10px;
@@ -7502,53 +7609,6 @@ svg.external {
 
 .cro011-01 .main-header {
   position: initial; }
-
-.cro011-01 .top-offer-bar {
-  background: #000000; }
-  .cro011-01 .top-offer-bar__text {
-    margin: 0 5px;
-    line-height: 32px; }
-  .cro011-01 .top-offer-bar__code {
-    background: #ffffff;
-    color: #000000;
-    padding: 3px 8px;
-    margin: 0 5px;
-    -webkit-animation: flash 1s infinite;
-    -moz-animation: flash 1s infinite;
-    -o-animation: flash 1s infinite;
-    animation: flash 1s infinite; }
-
-@-webkit-keyframes flash {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0.85; }
-  100% {
-    opacity: 1; } }
-
-@-moz-keyframes flash {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0.85; }
-  100% {
-    opacity: 1; } }
-
-@-o-keyframes flash {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0.85; }
-  100% {
-    opacity: 1; } }
-
-@keyframes flash {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0.85; }
-  100% {
-    opacity: 1; } }
 
 .cro011-01 .purchase__options::after {
   clear: both;

@@ -286,7 +286,48 @@
 }
 
 .ketomanna-paid-r {
+  a.anchor {
+    top: 40px;
+    @include s-screen {
+      top: 90px;
+    }
+  }
+
+  .top-offer-bar {
+    &__text {
+      font-size: 18px;
+      display: inline;
+    }
+
+    .a--cta {
+      @include animate-flash;
+
+      &:active,
+      &:focus,
+      &:hover,
+      &:visited {
+        color: $color-ebony;
+      }
+    }
+  }
+
   .main-header-container .main-header {
     position: initial;
+  }
+
+  .purchase {
+    &__item-servings {
+      margin: 15px 0 10px;
+    }
+
+    &__item-off {
+      font-size: 22px;
+      font-weight: $font-demi;
+      background: #C4A498;
+      color: white;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 2px 15px;
+    }
   }
 }
