@@ -80,6 +80,18 @@ endpoint_info_dict = {
         'is_variant': True,
       }
     },
+    'keto-chocolate-fudge': {
+      'template': 'landing_pages/ketomanna/v1-0-paid-a/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    'keto-chocolate-fudge-r': {
+      'template': 'landing_pages/ketomanna/v1-0-paid-r/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    }
   },
   'cognos': {
     'v0': {
@@ -105,10 +117,11 @@ endpoint_info_dict = {
   }
 }
 
-@landing_pages.route('/', defaults={'page': 'none', 'version': 'v0'})
-@landing_pages.route('/<page>/', defaults={'version': 'v0'})
-@landing_pages.route('/<page>/<version>')
-def landing_page(page, version):
+@landing_pages.route('/', defaults={'page': 'none', 'version': 'v0', 'prod_category': None})
+@landing_pages.route('/<page>/', defaults={'version': 'v0', 'prod_category': None})
+@landing_pages.route('/<page>/<version>', defaults={'prod_category': None})
+@landing_pages.route('/<prod_category>/<page>/<version>')
+def landing_page(page, version, prod_category):
   parsed_url = urlparse(request.url_root)
   host = parsed_url[1].split(':')[0] # Don't care about port, if it's in the netloc
   subdomain = host.split('.')[0]
@@ -117,12 +130,15 @@ def landing_page(page, version):
   # in other words if this is a health-check request going directly to an instance's ephemeral ip
   # let's not set the page to 3 numerical digits.
   if const.kENVIRONMENT == 'production' and subdomain.isalpha():
-    # For addresses like: gold.besynchro.com/1 the first arg is actually the version, but it comes
-    # through here as "page" because of how the route is set up, so we'll set that as the version
-    # so long as it's not "none", in which case version is already v0
-    if page is not 'none':
+    # For addresses like: gold.besynchro.com/1, or keto.besynchro.com/ketomanna/keto-chocolate-fudge
+    # we have to do a little shifting around of values, because in each URL the subdomain is serving
+    # as either the <page> or the <prod_category>, while the URI values are themselves serving as 
+    # different values. 
+    if page is not 'none' and version is not 'v0':
+      prod_category = subdomain
+    elif page is not 'none':
       version = page
-    page = subdomain
+      page = subdomain
 
     ## Redirect to https if this isn't a health-checker request
     if request.headers.get('X-Forwarded-Proto', '').lower() != "https":
