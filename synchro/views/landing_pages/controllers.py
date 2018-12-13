@@ -139,6 +139,8 @@ def landing_page(page, version, prod_category):
     elif page is not 'none':
       version = page
       page = subdomain
+    else:
+      page = subdomain
 
     ## Redirect to https if this isn't a health-checker request
     if request.headers.get('X-Forwarded-Proto', '').lower() != "https":
