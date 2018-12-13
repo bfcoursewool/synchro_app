@@ -258,7 +258,7 @@ html {
 html {
   font-size: 16px;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -4321,7 +4321,7 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px; }
   .carousel-indicators .active {
@@ -7600,19 +7600,5 @@ svg.external {
   }
 }
 */
-.cro011-01 a.anchor {
-  top: -40px; }
 
-.cro011-01 .main-header {
-  position: initial; }
-
-.cro011-01 .purchase__options::after {
-  clear: both;
-  content: "";
-  display: block; }
-
-.cro011-01 .purchase__shipping {
-  text-align: center;
-  padding-top: 20px; }
-
-/*# sourceMappingURL=synchro.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

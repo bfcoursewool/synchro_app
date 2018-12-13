@@ -1,0 +1,31 @@
+@import '../synchro';
+
+.cro007-1 {
+
+	&.benefits {
+
+		.extended-content {
+			margin-top: 90px;
+
+			@include sm-screen {
+				margin-top: 50px;
+			}
+		}
+	}
+
+	&.intro {
+
+		@include sm-screen {
+			margin-top: 0;
+		}
+	}
+
+	.ingredients--extended-content {
+		padding-bottom: 90px;
+
+		@include sm-screen {
+			margin-top: 70px;
+		}
+	}
+
+}

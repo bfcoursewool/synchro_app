@@ -1,0 +1,202 @@
+@import '../synchro';
+
+/* variant 1 styles */
+.cro002-1 {
+
+  &__gold-testimonial {
+    background-image: linear-gradient(-90deg, #f1cd1e 0%, #F4922C 100%);
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  &__content {
+    margin: 40px 0 10px;
+
+    @include sm-screen {
+      padding: 0 40px;
+    }
+  }
+
+  &__image {
+    width: 60px;
+
+    @include sm-screen {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    @include s-screen {
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__testimonial {
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 40px;
+    position: relative;
+    quotes: "\201C""\201D";
+
+    @include sm-screen {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    @include s-screen {
+      width: initial;
+    }
+
+    &:before {
+      content: open-quote;
+      position: absolute;
+      left: -30px;
+      top: -10px;
+      font-family: Georgia, serif;
+      font-size: 48px;
+      color: #CD8B0E;
+    }
+
+    &:after {
+      @include s-screen {
+        content: close-quote;
+        position: absolute;
+        right: -30px;
+        top: -10px;
+        font-family: Georgia, serif;
+        font-size: 48px;
+        color: #CD8B0E;
+      }
+    }
+  }
+
+  &__quote {
+    line-height: 1.5;
+    color: $color-ivory;
+    font-size: 18px;
+
+    @include s-screen {
+      text-align: center;
+    }
+  }
+
+  &__name {
+    line-height: 40px;
+    text-align: right;
+    color: $color-ivory;
+    margin-bottom: 0;
+
+    @include s-screen {
+      text-align: center;
+    }
+  }
+}
+
+.cro002-1 {
+
+  &.gold-innovation {
+    background: none;
+    padding-bottom: 0;
+
+    @include sm-screen {
+      display: none;
+    }
+  }
+}
+
+/* variant 2 styles */
+.cro002-2 {
+
+  &__gold-testimonial {
+    background-image: linear-gradient(-90deg, #EEE510 0%, #F4922C 100%);
+    text-align: center;
+    padding: 40px;
+    font-size: 0;
+  }
+
+  &__image {
+    width: 70px;
+
+    @include s-screen {
+      display: block;
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__testimonial {
+    display: inline-block;
+    max-width: 70%;
+    vertical-align: top;
+    text-align: left;
+    margin: 0 30px 0 50px;
+    position: relative;
+    top: 10px;
+    quotes: "\201C""\201D";
+
+    @include s-screen {
+      text-align: center;
+      max-width: none;
+      margin: 0;
+    }
+
+    &:before {
+      content: open-quote;
+      position: absolute;
+      left: -35px;
+      top: -12px;
+      font-family: Georgia, serif;
+      font-size: 60px;
+      color: #CD8B0E;
+
+      @include s-screen {
+        left: 0px;
+        top: -30px;
+      }
+    }
+
+    &:after {
+      content: close-quote;
+      position: absolute;
+      right: -35px;
+      top: -12px;
+      font-family: Georgia, serif;
+      font-size: 60px;
+      color: #CD8B0E;
+
+      @include s-screen {
+        right: 0px;
+        top: -30px;
+      }
+    }
+  }
+
+  &__quote {
+    font-size: 19px;
+    line-height: 27px;
+    color: $color-ivory;
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 40px;
+    color: $color-ivory;
+    text-align: right;
+    margin-bottom: 0;
+
+    @include s-screen {
+      text-align: center;
+    }
+  }
+}
+
+.cro002-2 {
+
+  &.guarantee {
+    padding-bottom: 50px;
+  }
+
+  &.claim-icons {
+    box-shadow: none;
+  }
+}

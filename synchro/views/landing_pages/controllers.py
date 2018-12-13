@@ -106,14 +106,6 @@ endpoint_info_dict = {
         'is_variant': True,
       }
     }
-  },
-  'cro011': {
-    'v1': {
-      'template': 'landing_pages/experiments/cro011/v1/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
   }
 }
 
@@ -132,8 +124,8 @@ def landing_page(page, version, prod_category):
   if const.kENVIRONMENT == 'production' and subdomain.isalpha():
     # For addresses like: gold.besynchro.com/1, or keto.besynchro.com/ketomanna/keto-chocolate-fudge
     # we have to do a little shifting around of values, because in each URL the subdomain is serving
-    # as either the <page> or the <prod_category>, while the URI values are themselves serving as 
-    # different values. 
+    # as either the <page> or the <prod_category>, while the URI values are themselves serving as
+    # different values.
     if page is not 'none' and version is not 'v0':
       prod_category = subdomain
     elif page is not 'none':
