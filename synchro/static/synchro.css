@@ -6388,12 +6388,6 @@ input:checked + .accordion-horizontal__inner-box {
 .gold-lp .main-header__content {
   height: 47px; }
 
-.gold-lp .top-offer-bar {
-  background: #eca846; }
-  .gold-lp .top-offer-bar .a--cta {
-    background: #000000;
-    color: #ffffff; }
-
 .gold-lp .atf.bg-full-width {
   background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf.jpg");
   background-color: #f0f3f4;
@@ -7600,50 +7594,62 @@ svg.external {
   }
 }
 */
-.cro012-01 a.anchor {
+.cro012-01 a.anchor,
+.cro013-01 a.anchor {
   top: -40px; }
 
-.cro012-01 .top-offer-bar .a--cta {
+.cro012-01 .top-offer-bar .a--cta,
+.cro013-01 .top-offer-bar .a--cta {
   margin: 3px;
   color: #000000 !important; }
 
-.cro012-01 .main-header {
+.cro012-01 .main-header,
+.cro013-01 .main-header {
   position: initial; }
 
-.cro012-01 .purchase__item {
+.cro012-01 .purchase__item,
+.cro013-01 .purchase__item {
   padding: 40px 60px; }
   @media (max-width: 1199px) {
-    .cro012-01 .purchase__item {
+    .cro012-01 .purchase__item,
+    .cro013-01 .purchase__item {
       padding: 40px 20px; } }
 
-.cro012-01 .purchase__item-plan {
+.cro012-01 .purchase__item-plan,
+.cro013-01 .purchase__item-plan {
   min-height: 0;
   font-size: 18px;
   letter-spacing: 1px;
   margin: 20px 0 10px; }
 
-.cro012-01 .purchase__item-qty {
+.cro012-01 .purchase__item-qty,
+.cro013-01 .purchase__item-qty {
   margin: 10px 0;
   font-size: 18px;
   opacity: 0.5; }
 
-.cro012-01 .purchase__item-servings {
+.cro012-01 .purchase__item-servings,
+.cro013-01 .purchase__item-servings {
   color: #e85050;
   font-weight: 600;
   font-size: 14px;
   margin: 10px 0; }
 
-.cro012-01 .purchase__item-pricing {
+.cro012-01 .purchase__item-pricing,
+.cro013-01 .purchase__item-pricing {
   margin-bottom: 20px; }
 
-.cro012-01 .purchase__item-price {
+.cro012-01 .purchase__item-price,
+.cro013-01 .purchase__item-price {
   margin: 10px 0; }
 
-.cro012-01 .purchase__item-off {
+.cro012-01 .purchase__item-off,
+.cro013-01 .purchase__item-off {
   font-weight: 600;
   margin: 10px 0;
   font-size: 15px; }
-  .cro012-01 .purchase__item-off span {
+  .cro012-01 .purchase__item-off span,
+  .cro013-01 .purchase__item-off span {
     font-weight: 500;
     letter-spacing: 1px;
     opacity: 0.5; }
