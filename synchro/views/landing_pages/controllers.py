@@ -91,6 +91,24 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': True,
       }
+    },
+    'keto-cleanse-program': {
+      'template': 'landing_pages/keto-cleanse/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
+    'keto-cleanse-program-home': {
+      'template': 'landing_pages/keto-cleanse/directory/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
+    'keto-cleanse-program-1': {
+      'template': 'landing_pages/keto-cleanse/week-1/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
     }
   },
   'cognos': {
