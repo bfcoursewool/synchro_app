@@ -7373,23 +7373,23 @@ input:checked + .accordion-horizontal__inner-box {
   text-align: center;
   margin: 10px 0 20px; }
 
-.keto-cleanse-lp .a--cta {
+.keto-cleanse .a--cta {
   background: #427074;
   color: #ffffff; }
 
-.keto-cleanse-lp .main-header-container .main-header {
+.keto-cleanse .main-header-container .main-header {
   padding-top: 10px;
   padding-bottom: 10px;
   opacity: 0; }
-  .keto-cleanse-lp .main-header-container .main-header.floated {
+  .keto-cleanse .main-header-container .main-header.floated {
     opacity: 1; }
 
-.keto-cleanse-lp .atf-kcp {
+.keto-cleanse .atf-kcp {
   position: relative;
   text-align: center;
   background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-atf-desktop%402x.jpg");
   background-size: cover; }
-  .keto-cleanse-lp .atf-kcp:after, .keto-cleanse-lp .atf-kcp:before {
+  .keto-cleanse .atf-kcp:after, .keto-cleanse .atf-kcp:before {
     content: "";
     position: absolute;
     height: 20px;
@@ -7397,41 +7397,41 @@ input:checked + .accordion-horizontal__inner-box {
     background-size: 100%;
     left: 0;
     background-repeat: no-repeat; }
-  .keto-cleanse-lp .atf-kcp:before {
+  .keto-cleanse .atf-kcp:before {
     top: 0;
     background-image: none; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .atf-kcp:before {
+      .keto-cleanse .atf-kcp:before {
         background-image: none; } }
-  .keto-cleanse-lp .atf-kcp:after {
+  .keto-cleanse .atf-kcp:after {
     bottom: 0;
     background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-desktop@2x.png");
     background-position: bottom; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .atf-kcp:after {
+      .keto-cleanse .atf-kcp:after {
         background-image: none; } }
   @media (max-width: 767px) {
-    .keto-cleanse-lp .atf-kcp {
+    .keto-cleanse .atf-kcp {
       padding: 30px; } }
-  .keto-cleanse-lp .atf-kcp .synchro-logo-square {
+  .keto-cleanse .atf-kcp .synchro-logo-square {
     width: 100px; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .atf-kcp .synchro-logo-square {
+      .keto-cleanse .atf-kcp .synchro-logo-square {
         width: 70px; } }
-  .keto-cleanse-lp .atf-kcp__content-box {
+  .keto-cleanse .atf-kcp__content-box {
     background: #F8F3F0;
     max-width: 750px;
     margin: 0 auto;
     padding: 0 20px 20px; }
-  .keto-cleanse-lp .atf-kcp__icon {
+  .keto-cleanse .atf-kcp__icon {
     max-height: 120px;
     display: block;
     margin: 30px auto; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .atf-kcp__icon {
+      .keto-cleanse .atf-kcp__icon {
         max-height: 80px;
         margin: 20px auto; } }
-  .keto-cleanse-lp .atf-kcp__sub-header {
+  .keto-cleanse .atf-kcp__sub-header {
     font-weight: 600;
     font-size: 20px;
     color: #427074;
@@ -7440,9 +7440,9 @@ input:checked + .accordion-horizontal__inner-box {
     border-bottom: 1px solid #427074;
     display: inline-block; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .atf-kcp__sub-header {
+      .keto-cleanse .atf-kcp__sub-header {
         font-size: 18px; } }
-  .keto-cleanse-lp .atf-kcp__header {
+  .keto-cleanse .atf-kcp__header {
     font-weight: 600;
     font-size: 90px;
     color: #427074;
@@ -7450,63 +7450,63 @@ input:checked + .accordion-horizontal__inner-box {
     letter-spacing: 4.5px;
     margin: 0; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .atf-kcp__header {
+      .keto-cleanse .atf-kcp__header {
         letter-spacing: 2.5px;
         font-size: 50px;
         margin: 10px 0; } }
-  .keto-cleanse-lp .atf-kcp__description {
+  .keto-cleanse .atf-kcp__description {
     font-weight: 600;
     font-size: 24px;
     color: #848280;
     text-transform: uppercase;
     letter-spacing: 1.2px; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .atf-kcp__description {
+      .keto-cleanse .atf-kcp__description {
         font-size: 16px; } }
-  .keto-cleanse-lp .atf-kcp .a--cta {
+  .keto-cleanse .atf-kcp .a--cta {
     position: absolute;
     top: 20px;
     right: 30px; }
     @media (max-width: 1199px) {
-      .keto-cleanse-lp .atf-kcp .a--cta {
+      .keto-cleanse .atf-kcp .a--cta {
         position: initial;
         margin: 10px; } }
 
-.keto-cleanse-lp .benefits {
+.keto-cleanse .benefits {
   padding: 20px;
   text-align: center; }
   @media (max-width: 1199px) {
-    .keto-cleanse-lp .benefits {
+    .keto-cleanse .benefits {
       padding: 0; } }
   @media (max-width: 767px) {
-    .keto-cleanse-lp .benefits {
+    .keto-cleanse .benefits {
       border-bottom: 1px solid #E6E6E5; } }
-  .keto-cleanse-lp .benefits .p--title {
+  .keto-cleanse .benefits .p--title {
     display: none; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .benefits .p--title {
+      .keto-cleanse .benefits .p--title {
         display: block;
         margin-top: 40px; } }
-  .keto-cleanse-lp .benefits__icons {
+  .keto-cleanse .benefits__icons {
     padding: 0; }
-  .keto-cleanse-lp .benefits__container {
+  .keto-cleanse .benefits__container {
     display: inline-block; }
-  .keto-cleanse-lp .benefits__icon {
+  .keto-cleanse .benefits__icon {
     display: inline-block;
     width: 130px;
     margin: 40px; }
     @media (max-width: 854px) {
-      .keto-cleanse-lp .benefits__icon {
+      .keto-cleanse .benefits__icon {
         margin: 40px 20px; } }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .benefits__icon {
+      .keto-cleanse .benefits__icon {
         margin: 0 10px 40px; } }
     @media (max-width: 680px) {
-      .keto-cleanse-lp .benefits__icon {
+      .keto-cleanse .benefits__icon {
         margin: 0 20px 40px; } }
-  .keto-cleanse-lp .benefits__img {
+  .keto-cleanse .benefits__img {
     height: 70px; }
-  .keto-cleanse-lp .benefits__point {
+  .keto-cleanse .benefits__point {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -7514,21 +7514,21 @@ input:checked + .accordion-horizontal__inner-box {
     font-weight: 500;
     margin: 20px 0 0; }
 
-.keto-cleanse-lp .kcp-intro {
+.keto-cleanse .kcp-intro {
   text-align: center; }
-  .keto-cleanse-lp .kcp-intro__img {
+  .keto-cleanse .kcp-intro__img {
     max-width: 620px;
     position: relative;
     margin: 0 auto; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .kcp-intro__img {
+      .keto-cleanse .kcp-intro__img {
         margin: 40px auto 0; } }
-    .keto-cleanse-lp .kcp-intro__img img {
+    .keto-cleanse .kcp-intro__img img {
       width: 100%; }
       @media (max-width: 767px) {
-        .keto-cleanse-lp .kcp-intro__img img {
+        .keto-cleanse .kcp-intro__img img {
           width: 90%; } }
-    .keto-cleanse-lp .kcp-intro__img::before {
+    .keto-cleanse .kcp-intro__img::before {
       content: "(";
       position: absolute;
       left: -130px;
@@ -7537,9 +7537,9 @@ input:checked + .accordion-horizontal__inner-box {
       font-weight: 100;
       color: #E2E4E1; }
       @media (max-width: 767px) {
-        .keto-cleanse-lp .kcp-intro__img::before {
+        .keto-cleanse .kcp-intro__img::before {
           display: none; } }
-    .keto-cleanse-lp .kcp-intro__img::after {
+    .keto-cleanse .kcp-intro__img::after {
       content: ")";
       position: absolute;
       right: -130px;
@@ -7548,27 +7548,27 @@ input:checked + .accordion-horizontal__inner-box {
       font-weight: 100;
       color: #E2E4E1; }
       @media (max-width: 767px) {
-        .keto-cleanse-lp .kcp-intro__img::after {
+        .keto-cleanse .kcp-intro__img::after {
           display: none; } }
-  .keto-cleanse-lp .kcp-intro__text {
+  .keto-cleanse .kcp-intro__text {
     max-width: 600px;
     font-size: 36px;
     margin: 40px auto; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .kcp-intro__text {
+      .keto-cleanse .kcp-intro__text {
         font-size: 24px;
         margin: 20px; } }
-  .keto-cleanse-lp .kcp-intro__video {
+  .keto-cleanse .kcp-intro__video {
     display: block;
     margin: 50px auto;
     width: 100%;
     max-width: 1050px; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .kcp-intro__video {
+      .keto-cleanse .kcp-intro__video {
         margin: 40px auto;
         padding: 0 20px; } }
 
-.keto-cleanse-lp .how-it-works {
+.keto-cleanse .how-it-works {
   text-align: center;
   padding: 0 0 60px;
   overflow: auto;
@@ -7576,39 +7576,39 @@ input:checked + .accordion-horizontal__inner-box {
   background-size: cover;
   background-position: center; }
   @media (max-width: 767px) {
-    .keto-cleanse-lp .how-it-works {
+    .keto-cleanse .how-it-works {
       background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-mobile%402x.jpg");
       padding: 0 20px 20px; } }
-  .keto-cleanse-lp .how-it-works .p--title {
+  .keto-cleanse .how-it-works .p--title {
     color: #ffffff;
     border: 2px solid #ffffff; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .how-it-works .p--title {
+      .keto-cleanse .how-it-works .p--title {
         margin-top: 40px; } }
-  .keto-cleanse-lp .how-it-works__header {
+  .keto-cleanse .how-it-works__header {
     max-width: 850px;
     font-size: 50px;
     color: #ffffff;
     font-weight: 500;
     margin: 40px auto; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .how-it-works__header {
+      .keto-cleanse .how-it-works__header {
         font-size: 36px; } }
-    .keto-cleanse-lp .how-it-works__header span {
+    .keto-cleanse .how-it-works__header span {
       border-bottom: 2px solid #fff; }
       @media (max-width: 767px) {
-        .keto-cleanse-lp .how-it-works__header span {
+        .keto-cleanse .how-it-works__header span {
           border: none;
           text-decoration: underline; } }
-  .keto-cleanse-lp .how-it-works__info {
+  .keto-cleanse .how-it-works__info {
     max-width: 1600px;
     margin: 0 auto;
     font-size: 0;
     padding: 0 1%; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .how-it-works__info {
+      .keto-cleanse .how-it-works__info {
         padding: 0; } }
-  .keto-cleanse-lp .how-it-works__box {
+  .keto-cleanse .how-it-works__box {
     display: inline-block;
     width: 23%;
     vertical-align: top;
@@ -7618,60 +7618,60 @@ input:checked + .accordion-horizontal__inner-box {
     padding: 30px 20px;
     opacity: 0.9; }
     @media (max-width: 1199px) {
-      .keto-cleanse-lp .how-it-works__box {
+      .keto-cleanse .how-it-works__box {
         width: 48%;
         margin: 10px 1%; } }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .how-it-works__box {
+      .keto-cleanse .how-it-works__box {
         width: 100%;
         margin: 10px 0; } }
-  .keto-cleanse-lp .how-it-works__number {
+  .keto-cleanse .how-it-works__number {
     border: 2px solid rgba(0, 0, 0, 0.2);
     display: inline-block;
     padding: 2px 10px;
     margin: 0; }
-  .keto-cleanse-lp .how-it-works__benefit, .keto-cleanse-lp .how-it-works__number {
+  .keto-cleanse .how-it-works__benefit, .keto-cleanse .how-it-works__number {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px; }
   @media (max-width: 767px) {
-    .keto-cleanse-lp .how-it-works__text {
+    .keto-cleanse .how-it-works__text {
       display: none; } }
-  .keto-cleanse-lp .how-it-works__text span {
+  .keto-cleanse .how-it-works__text span {
     display: none; }
 
-.keto-cleanse-lp .program {
+.keto-cleanse .program {
   text-align: center;
   padding: 30px 0; }
   @media (max-width: 767px) {
-    .keto-cleanse-lp .program {
+    .keto-cleanse .program {
       padding: 10px 20px; } }
-  .keto-cleanse-lp .program__header {
+  .keto-cleanse .program__header {
     max-width: 850px;
     font-size: 50px;
     font-weight: 500;
     margin: 40px auto; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .program__header {
+      .keto-cleanse .program__header {
         font-size: 36px; } }
-  .keto-cleanse-lp .program__info {
+  .keto-cleanse .program__info {
     max-width: 1600px;
     margin: 0 auto;
     font-size: 0;
     padding: 0 1%; }
-  .keto-cleanse-lp .program__box {
+  .keto-cleanse .program__box {
     display: inline-block;
     width: 31%;
     vertical-align: top;
     margin: 0 1%;
     padding: 20px 10px; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .program__box {
+      .keto-cleanse .program__box {
         width: 100%;
         margin: 0;
         padding: 10px 0; } }
-  .keto-cleanse-lp .program__week {
+  .keto-cleanse .program__week {
     display: inline-block;
     padding: 3px 40px;
     font-weight: 500;
@@ -7680,68 +7680,68 @@ input:checked + .accordion-horizontal__inner-box {
     letter-spacing: 2px;
     border: 2px solid #427074;
     text-transform: uppercase; }
-  .keto-cleanse-lp .program__title {
+  .keto-cleanse .program__title {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px; }
-  .keto-cleanse-lp .program__text {
+  .keto-cleanse .program__text {
     font-size: 20px; }
 
-.keto-cleanse-lp .weight-loss {
+.keto-cleanse .weight-loss {
   text-align: center;
   padding: 60px;
   background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-weight-loss-desktop%402x.jpg");
   background-size: cover;
   background-position: center; }
   @media (max-width: 767px) {
-    .keto-cleanse-lp .weight-loss {
+    .keto-cleanse .weight-loss {
       padding: 40px 20px;
       background-position: 80%; } }
-  .keto-cleanse-lp .weight-loss__header {
+  .keto-cleanse .weight-loss__header {
     max-width: 850px;
     font-size: 50px;
     color: #ffffff;
     font-weight: 500;
     margin: 0 auto; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .weight-loss__header {
+      .keto-cleanse .weight-loss__header {
         font-size: 36px; } }
-  .keto-cleanse-lp .weight-loss__text {
+  .keto-cleanse .weight-loss__text {
     color: #ffffff;
     max-width: 600px;
     font-size: 22px; }
-  .keto-cleanse-lp .weight-loss .icon-learn-more::after {
+  .keto-cleanse .weight-loss .icon-learn-more::after {
     color: #ffffff; }
-  .keto-cleanse-lp .weight-loss .icon-learn-more__circle {
+  .keto-cleanse .weight-loss .icon-learn-more__circle {
     stroke: #ffffff; }
-  .keto-cleanse-lp .weight-loss .icon-learn-more__plus {
+  .keto-cleanse .weight-loss .icon-learn-more__plus {
     fill: #ffffff; }
 
 @media (max-width: 767px) {
-  .keto-cleanse-lp .product-cards .p--title {
+  .keto-cleanse .product-cards .p--title {
     margin: 40px auto; } }
 
-.keto-cleanse-lp .product-cards .product-card {
+.keto-cleanse .product-cards .product-card {
   text-align: center; }
-  .keto-cleanse-lp .product-cards .product-card__inner {
+  .keto-cleanse .product-cards .product-card__inner {
     padding: 30px 0 0; }
-  .keto-cleanse-lp .product-cards .product-card__header {
+  .keto-cleanse .product-cards .product-card__header {
     margin-bottom: 30px; }
-  .keto-cleanse-lp .product-cards .product-card__item {
+  .keto-cleanse .product-cards .product-card__item {
     font-weight: 500;
     margin: 20px 0 0;
     font-size: 20px; }
-    .keto-cleanse-lp .product-cards .product-card__item span {
+    .keto-cleanse .product-cards .product-card__item span {
       opacity: 0.5; }
-  .keto-cleanse-lp .product-cards .product-card__info {
+  .keto-cleanse .product-cards .product-card__info {
     opacity: 0.5;
     margin: 0;
     font-size: 20px; }
-  .keto-cleanse-lp .product-cards .product-card__icon {
+  .keto-cleanse .product-cards .product-card__icon {
     height: 50px; }
 
-.keto-cleanse-lp .purchase {
+.keto-cleanse .purchase {
   text-align: center;
   padding: 0 0 60px;
   overflow: auto;
@@ -7750,27 +7750,27 @@ input:checked + .accordion-horizontal__inner-box {
   background-size: cover;
   background-position: center; }
   @media (max-width: 767px) {
-    .keto-cleanse-lp .purchase {
+    .keto-cleanse .purchase {
       background-size: 150%;
       background-position: top;
       padding: 0; } }
-  .keto-cleanse-lp .purchase .p--title {
+  .keto-cleanse .purchase .p--title {
     color: #ffffff;
     border: 2px solid #ffffff; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .purchase .p--title {
+      .keto-cleanse .purchase .p--title {
         margin: 40px auto; } }
-  .keto-cleanse-lp .purchase__header {
+  .keto-cleanse .purchase__header {
     max-width: 850px;
     font-size: 50px;
     color: #ffffff;
     font-weight: 500;
     margin: 0 auto; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .purchase__header {
+      .keto-cleanse .purchase__header {
         font-size: 36px;
         padding: 0 20px; } }
-  .keto-cleanse-lp .purchase__box {
+  .keto-cleanse .purchase__box {
     background: #ffffff;
     max-width: 500px;
     margin: 0 auto;
@@ -7778,17 +7778,17 @@ input:checked + .accordion-horizontal__inner-box {
     padding: 30px;
     margin-top: 40px; }
     @media (max-width: 767px) {
-      .keto-cleanse-lp .purchase__box {
+      .keto-cleanse .purchase__box {
         border-radius: 0; } }
-  .keto-cleanse-lp .purchase__items {
+  .keto-cleanse .purchase__items {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 0.8px; }
-  .keto-cleanse-lp .purchase__pricing {
+  .keto-cleanse .purchase__pricing {
     width: 200px;
     margin: 25px auto 10px; }
-  .keto-cleanse-lp .purchase__offer {
+  .keto-cleanse .purchase__offer {
     background: #C69B82;
     color: #ffffff;
     text-transform: uppercase;
@@ -7797,34 +7797,183 @@ input:checked + .accordion-horizontal__inner-box {
     font-size: 20px;
     letter-spacing: 1px;
     margin: 0; }
-  .keto-cleanse-lp .purchase__price {
+  .keto-cleanse .purchase__price {
     background: #F8F3F0;
     line-height: 90px;
     font-size: 54px;
     font-weight: 500;
     letter-spacing: 2.5px;
     margin: 0; }
-  .keto-cleanse-lp .purchase__original {
+  .keto-cleanse .purchase__original {
     text-transform: uppercase;
     text-decoration: line-through; }
-  .keto-cleanse-lp .purchase .a--cta {
+  .keto-cleanse .purchase .a--cta {
     width: 90%; }
 
 @media (max-width: 767px) {
-  .keto-cleanse-lp .faq .p--title {
+  .keto-cleanse .faq .p--title {
     margin: 40px auto; } }
 
-.keto-cleanse-lp .footer {
+.keto-cleanse .footer {
   padding: 20px;
   background: #ffffff; }
-  .keto-cleanse-lp .footer__content {
+  .keto-cleanse .footer__content {
     max-width: 1600px;
     margin: 0 auto; }
-  .keto-cleanse-lp .footer__top {
+  .keto-cleanse .footer__top {
     background: #404040;
     color: #ffffff; }
-  .keto-cleanse-lp .footer .synchro-logo {
+  .keto-cleanse .footer .synchro-logo {
     fill: #000000; }
+
+.keto-cleanse.kcp-home .atf-kcp__header {
+  font-size: 70px;
+  margin: 20px 0; }
+
+.keto-cleanse.kcp-home .kcp-intro {
+  padding: 20px; }
+  .keto-cleanse.kcp-home .kcp-intro__text {
+    font-size: 20px; }
+
+.keto-cleanse.kcp-home .kcp-program {
+  text-align: center;
+  overflow: auto;
+  background: #F8F3F0; }
+  @media (max-width: 767px) {
+    .keto-cleanse.kcp-home .kcp-program {
+      padding: 0 20px; } }
+  .keto-cleanse.kcp-home .kcp-program .p--title {
+    margin: 50px auto 40px; }
+  .keto-cleanse.kcp-home .kcp-program__intro {
+    max-width: 700px; }
+  .keto-cleanse.kcp-home .kcp-program__weeks {
+    max-width: 1300px;
+    margin: 40px auto 20px;
+    font-size: 0;
+    padding: 0 1%; }
+    @media (max-width: 767px) {
+      .keto-cleanse.kcp-home .kcp-program__weeks {
+        padding: 0; } }
+  .keto-cleanse.kcp-home .kcp-program__box {
+    display: inline-block;
+    width: 31%;
+    margin: 0 1% 20px;
+    height: 214px;
+    position: relative;
+    vertical-align: top; }
+    @media (max-width: 1199px) {
+      .keto-cleanse.kcp-home .kcp-program__box {
+        width: 48%; } }
+    @media (max-width: 680px) {
+      .keto-cleanse.kcp-home .kcp-program__box {
+        width: 100%;
+        margin: 0 0 20px; } }
+    .keto-cleanse.kcp-home .kcp-program__box.week-1 {
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-1%402x.jpg");
+      background-size: cover;
+      background-position: center; }
+    .keto-cleanse.kcp-home .kcp-program__box.week-2 {
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-2%402x.jpg");
+      background-size: cover;
+      background-position: center; }
+    .keto-cleanse.kcp-home .kcp-program__box.week-3 {
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-3%402x.jpg");
+      background-size: cover;
+      background-position: center; }
+  .keto-cleanse.kcp-home .kcp-program__details {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%); }
+  .keto-cleanse.kcp-home .kcp-program__day {
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px; }
+  .keto-cleanse.kcp-home .kcp-program__week {
+    color: #ffffff;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0; }
+
+.keto-cleanse.kcp-home .kcp-readings {
+  text-align: center;
+  overflow: auto; }
+  @media (max-width: 767px) {
+    .keto-cleanse.kcp-home .kcp-readings {
+      padding: 0 20px; } }
+  .keto-cleanse.kcp-home .kcp-readings__intro {
+    max-width: 700px; }
+  .keto-cleanse.kcp-home .kcp-readings__articles {
+    max-width: 1300px;
+    margin: 40px auto 0;
+    font-size: 0;
+    padding: 0 1%; }
+  .keto-cleanse.kcp-home .kcp-readings__box {
+    display: inline-block;
+    width: 31%;
+    margin: 0 1% 40px;
+    vertical-align: top; }
+    @media (max-width: 1199px) {
+      .keto-cleanse.kcp-home .kcp-readings__box {
+        width: 48%; } }
+    @media (max-width: 767px) {
+      .keto-cleanse.kcp-home .kcp-readings__box {
+        width: 100%;
+        margin: 0 0 40px; } }
+  .keto-cleanse.kcp-home .kcp-readings__image {
+    height: 214px; }
+    .keto-cleanse.kcp-home .kcp-readings__image.article-1 {
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-article-1%402x.jpg");
+      background-size: cover;
+      background-position: center; }
+    .keto-cleanse.kcp-home .kcp-readings__image.article-2 {
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-article-2%402x.jpg");
+      background-size: cover;
+      background-position: center; }
+  .keto-cleanse.kcp-home .kcp-readings__details {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 20px 0 0; }
+
+.keto-cleanse.kcp-home .kcp-videos {
+  text-align: center;
+  overflow: auto;
+  background: #F8F3F0; }
+  @media (max-width: 767px) {
+    .keto-cleanse.kcp-home .kcp-videos {
+      padding: 0 20px; } }
+  .keto-cleanse.kcp-home .kcp-videos__intro {
+    max-width: 700px; }
+  .keto-cleanse.kcp-home .kcp-videos__videos {
+    max-width: 1300px;
+    margin: 40px auto 0;
+    font-size: 0;
+    padding: 0 1%; }
+  .keto-cleanse.kcp-home .kcp-videos__box {
+    display: inline-block;
+    width: 31%;
+    margin: 0 1% 40px;
+    vertical-align: top; }
+    @media (max-width: 1199px) {
+      .keto-cleanse.kcp-home .kcp-videos__box {
+        width: 48%; } }
+    @media (max-width: 767px) {
+      .keto-cleanse.kcp-home .kcp-videos__box {
+        width: 100%;
+        margin: 0 0 40px; } }
+  .keto-cleanse.kcp-home .kcp-videos__video {
+    width: 100%; }
+  .keto-cleanse.kcp-home .kcp-videos__details {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 20px 0 0; }
+    .keto-cleanse.kcp-home .kcp-videos__details span {
+      display: block;
+      font-weight: 400; }
 
 /* .bg-full-width {
   background-image: url('https://cdn.besynchro.com/cognos/assets-hero-3.jpg');

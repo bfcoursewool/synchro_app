@@ -1,4 +1,4 @@
-.keto-cleanse-lp {
+.keto-cleanse {
   .a--cta {
     @include cta-custom($color-kcp, $color-ivory);
   }
@@ -569,6 +569,212 @@
 
     .synchro-logo {
       fill: $color-ebony;
+    }
+  }
+
+  &.kcp-home {
+    .atf-kcp {
+      &__header {
+        font-size: 70px;
+        margin: 20px 0;
+      }
+    }
+
+    .kcp-intro {
+      padding: 20px;
+
+      &__text {
+        font-size: 20px;
+      }
+    }
+
+    .kcp-program {
+      text-align: center;
+      overflow: auto;
+      background: #F8F3F0;
+      @include s-screen {
+        padding: 0 $gutter-small;
+      }
+
+      .p--title {
+        margin: 50px auto 40px;
+      }
+
+      &__intro {
+        max-width: 700px;
+      }
+
+      &__weeks {
+        max-width: 1300px;
+        margin: 40px auto 20px;
+        font-size: 0;
+        padding: 0 1%;
+        @include s-screen {
+          padding: 0;
+        }
+      }
+
+      &__box {
+        display: inline-block;
+        width: 31%;
+        margin: 0 1% 20px;
+        height: 214px;
+        position: relative;
+        vertical-align: top;
+        @include m-screen {
+          width: 48%;
+        }
+        @include xs-screen {
+          width: 100%;
+          margin: 0 0 20px;
+        }
+
+        &.week-1 {
+          background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-1%402x.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+
+        &.week-2 {
+          background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-2%402x.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+
+        &.week-3 {
+          background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-3%402x.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+      }
+
+      &__details {
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+
+      &__day {
+        color: $color-ivory;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: $font-demi;
+        margin-bottom: 5px;
+      }
+
+      &__week {
+        color: $color-ivory;
+        font-size: 40px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: $font-demi;
+        margin: 0;
+      }
+    }
+
+    .kcp-readings {
+      text-align: center;
+      overflow: auto;
+      @include s-screen {
+        padding: 0 $gutter-small;
+      }
+
+      &__intro {
+        max-width: 700px;
+      }
+
+      &__articles {
+        max-width: 1300px;
+        margin: 40px auto 0;
+        font-size: 0;
+        padding: 0 1%;
+      }
+
+      &__box {
+        display: inline-block;
+        width: 31%;
+        margin: 0 1% 40px;
+        vertical-align: top;
+        @include m-screen {
+          width: 48%;
+        }
+        @include s-screen {
+          width: 100%;
+          margin: 0 0 40px;
+        }
+      }
+
+      &__image {
+        height: 214px;
+
+        &.article-1 {
+          background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-article-1%402x.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+
+        &.article-2 {
+          background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-article-2%402x.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+      }
+
+      &__details {
+        font-weight: $font-demi;
+        font-size: 20px;
+        margin: 20px 0 0;
+      }
+    }
+
+    .kcp-videos {
+      text-align: center;
+      overflow: auto;
+      background: #F8F3F0;
+      @include s-screen {
+        padding: 0 $gutter-small;
+      }
+
+      &__intro {
+        max-width: 700px;
+      }
+
+      &__videos {
+        max-width: 1300px;
+        margin: 40px auto 0;
+        font-size: 0;
+        padding: 0 1%;
+      }
+
+      &__box {
+        display: inline-block;
+        width: 31%;
+        margin: 0 1% 40px;
+        vertical-align: top;
+        @include m-screen {
+          width: 48%;
+        }
+        @include s-screen {
+          width: 100%;
+          margin: 0 0 40px;
+        }
+      }
+
+      &__video {
+        width: 100%;
+      }
+
+      &__details {
+        font-weight: $font-demi;
+        font-size: 20px;
+        margin: 20px 0 0;
+
+        span {
+          display: block;
+          font-weight: $font-normal;
+        }
+      }
     }
   }
 }
