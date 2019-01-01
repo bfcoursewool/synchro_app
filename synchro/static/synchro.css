@@ -5934,6 +5934,23 @@ p {
   .a--cta:active {
     opacity: 1; }
 
+.icon-learn-more {
+  height: 30px;
+  width: 100px;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased; }
+  .icon-learn-more::after {
+    content: "Learn More";
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    text-decoration: underline; }
+  .icon-learn-more__circle {
+    stroke: #000000; }
+  .icon-learn-more__plus {
+    fill: #000000; }
+
 .content-toggle {
   padding: 30px; }
   @media (max-width: 680px) {
@@ -7355,6 +7372,459 @@ input:checked + .accordion-horizontal__inner-box {
   letter-spacing: 1px;
   text-align: center;
   margin: 10px 0 20px; }
+
+.keto-cleanse-lp .a--cta {
+  background: #427074;
+  color: #ffffff; }
+
+.keto-cleanse-lp .main-header-container .main-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 0; }
+  .keto-cleanse-lp .main-header-container .main-header.floated {
+    opacity: 1; }
+
+.keto-cleanse-lp .atf-kcp {
+  position: relative;
+  text-align: center;
+  background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-atf-desktop%402x.jpg");
+  background-size: cover; }
+  .keto-cleanse-lp .atf-kcp:after, .keto-cleanse-lp .atf-kcp:before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background-size: 100%;
+    left: 0;
+    background-repeat: no-repeat; }
+  .keto-cleanse-lp .atf-kcp:before {
+    top: 0;
+    background-image: none; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .atf-kcp:before {
+        background-image: none; } }
+  .keto-cleanse-lp .atf-kcp:after {
+    bottom: 0;
+    background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-desktop@2x.png");
+    background-position: bottom; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .atf-kcp:after {
+        background-image: none; } }
+  @media (max-width: 767px) {
+    .keto-cleanse-lp .atf-kcp {
+      padding: 30px; } }
+  .keto-cleanse-lp .atf-kcp .synchro-logo-square {
+    width: 100px; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .atf-kcp .synchro-logo-square {
+        width: 70px; } }
+  .keto-cleanse-lp .atf-kcp__content-box {
+    background: #F8F3F0;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 20px 20px; }
+  .keto-cleanse-lp .atf-kcp__icon {
+    max-height: 120px;
+    display: block;
+    margin: 30px auto; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .atf-kcp__icon {
+        max-height: 80px;
+        margin: 20px auto; } }
+  .keto-cleanse-lp .atf-kcp__sub-header {
+    font-weight: 600;
+    font-size: 20px;
+    color: #427074;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #427074;
+    display: inline-block; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .atf-kcp__sub-header {
+        font-size: 18px; } }
+  .keto-cleanse-lp .atf-kcp__header {
+    font-weight: 600;
+    font-size: 90px;
+    color: #427074;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    margin: 0; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .atf-kcp__header {
+        letter-spacing: 2.5px;
+        font-size: 50px;
+        margin: 10px 0; } }
+  .keto-cleanse-lp .atf-kcp__description {
+    font-weight: 600;
+    font-size: 24px;
+    color: #848280;
+    text-transform: uppercase;
+    letter-spacing: 1.2px; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .atf-kcp__description {
+        font-size: 16px; } }
+  .keto-cleanse-lp .atf-kcp .a--cta {
+    position: absolute;
+    top: 20px;
+    right: 30px; }
+    @media (max-width: 1199px) {
+      .keto-cleanse-lp .atf-kcp .a--cta {
+        position: initial;
+        margin: 10px; } }
+
+.keto-cleanse-lp .benefits {
+  padding: 20px;
+  text-align: center; }
+  @media (max-width: 1199px) {
+    .keto-cleanse-lp .benefits {
+      padding: 0; } }
+  @media (max-width: 767px) {
+    .keto-cleanse-lp .benefits {
+      border-bottom: 1px solid #E6E6E5; } }
+  .keto-cleanse-lp .benefits .p--title {
+    display: none; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .benefits .p--title {
+        display: block;
+        margin-top: 40px; } }
+  .keto-cleanse-lp .benefits__icons {
+    padding: 0; }
+  .keto-cleanse-lp .benefits__container {
+    display: inline-block; }
+  .keto-cleanse-lp .benefits__icon {
+    display: inline-block;
+    width: 130px;
+    margin: 40px; }
+    @media (max-width: 854px) {
+      .keto-cleanse-lp .benefits__icon {
+        margin: 40px 20px; } }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .benefits__icon {
+        margin: 0 10px 40px; } }
+    @media (max-width: 680px) {
+      .keto-cleanse-lp .benefits__icon {
+        margin: 0 20px 40px; } }
+  .keto-cleanse-lp .benefits__img {
+    height: 70px; }
+  .keto-cleanse-lp .benefits__point {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    max-width: none;
+    font-weight: 500;
+    margin: 20px 0 0; }
+
+.keto-cleanse-lp .kcp-intro {
+  text-align: center; }
+  .keto-cleanse-lp .kcp-intro__img {
+    max-width: 620px;
+    position: relative;
+    margin: 0 auto; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .kcp-intro__img {
+        margin: 40px auto 0; } }
+    .keto-cleanse-lp .kcp-intro__img img {
+      width: 100%; }
+      @media (max-width: 767px) {
+        .keto-cleanse-lp .kcp-intro__img img {
+          width: 90%; } }
+    .keto-cleanse-lp .kcp-intro__img::before {
+      content: "(";
+      position: absolute;
+      left: -130px;
+      top: -140px;
+      font-size: 350px;
+      font-weight: 100;
+      color: #E2E4E1; }
+      @media (max-width: 767px) {
+        .keto-cleanse-lp .kcp-intro__img::before {
+          display: none; } }
+    .keto-cleanse-lp .kcp-intro__img::after {
+      content: ")";
+      position: absolute;
+      right: -130px;
+      top: -140px;
+      font-size: 350px;
+      font-weight: 100;
+      color: #E2E4E1; }
+      @media (max-width: 767px) {
+        .keto-cleanse-lp .kcp-intro__img::after {
+          display: none; } }
+  .keto-cleanse-lp .kcp-intro__text {
+    max-width: 600px;
+    font-size: 36px;
+    margin: 40px auto; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .kcp-intro__text {
+        font-size: 24px;
+        margin: 20px; } }
+  .keto-cleanse-lp .kcp-intro__video {
+    display: block;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1050px; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .kcp-intro__video {
+        margin: 40px auto;
+        padding: 0 20px; } }
+
+.keto-cleanse-lp .how-it-works {
+  text-align: center;
+  padding: 0 0 60px;
+  overflow: auto;
+  background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-desktop%402x.jpg");
+  background-size: cover;
+  background-position: center; }
+  @media (max-width: 767px) {
+    .keto-cleanse-lp .how-it-works {
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-mobile%402x.jpg");
+      padding: 0 20px 20px; } }
+  .keto-cleanse-lp .how-it-works .p--title {
+    color: #ffffff;
+    border: 2px solid #ffffff; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .how-it-works .p--title {
+        margin-top: 40px; } }
+  .keto-cleanse-lp .how-it-works__header {
+    max-width: 850px;
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 40px auto; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .how-it-works__header {
+        font-size: 36px; } }
+    .keto-cleanse-lp .how-it-works__header span {
+      border-bottom: 2px solid #fff; }
+      @media (max-width: 767px) {
+        .keto-cleanse-lp .how-it-works__header span {
+          border: none;
+          text-decoration: underline; } }
+  .keto-cleanse-lp .how-it-works__info {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-size: 0;
+    padding: 0 1%; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .how-it-works__info {
+        padding: 0; } }
+  .keto-cleanse-lp .how-it-works__box {
+    display: inline-block;
+    width: 23%;
+    vertical-align: top;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 0 1%;
+    padding: 30px 20px;
+    opacity: 0.9; }
+    @media (max-width: 1199px) {
+      .keto-cleanse-lp .how-it-works__box {
+        width: 48%;
+        margin: 10px 1%; } }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .how-it-works__box {
+        width: 100%;
+        margin: 10px 0; } }
+  .keto-cleanse-lp .how-it-works__number {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 0; }
+  .keto-cleanse-lp .how-it-works__benefit, .keto-cleanse-lp .how-it-works__number {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  @media (max-width: 767px) {
+    .keto-cleanse-lp .how-it-works__text {
+      display: none; } }
+  .keto-cleanse-lp .how-it-works__text span {
+    display: none; }
+
+.keto-cleanse-lp .program {
+  text-align: center;
+  padding: 30px 0; }
+  @media (max-width: 767px) {
+    .keto-cleanse-lp .program {
+      padding: 10px 20px; } }
+  .keto-cleanse-lp .program__header {
+    max-width: 850px;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 40px auto; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .program__header {
+        font-size: 36px; } }
+  .keto-cleanse-lp .program__info {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-size: 0;
+    padding: 0 1%; }
+  .keto-cleanse-lp .program__box {
+    display: inline-block;
+    width: 31%;
+    vertical-align: top;
+    margin: 0 1%;
+    padding: 20px 10px; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .program__box {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0; } }
+  .keto-cleanse-lp .program__week {
+    display: inline-block;
+    padding: 3px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #427074;
+    letter-spacing: 2px;
+    border: 2px solid #427074;
+    text-transform: uppercase; }
+  .keto-cleanse-lp .program__title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .keto-cleanse-lp .program__text {
+    font-size: 20px; }
+
+.keto-cleanse-lp .weight-loss {
+  text-align: center;
+  padding: 60px;
+  background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-weight-loss-desktop%402x.jpg");
+  background-size: cover;
+  background-position: center; }
+  @media (max-width: 767px) {
+    .keto-cleanse-lp .weight-loss {
+      padding: 40px 20px;
+      background-position: 80%; } }
+  .keto-cleanse-lp .weight-loss__header {
+    max-width: 850px;
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0 auto; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .weight-loss__header {
+        font-size: 36px; } }
+  .keto-cleanse-lp .weight-loss__text {
+    color: #ffffff;
+    max-width: 600px;
+    font-size: 22px; }
+  .keto-cleanse-lp .weight-loss .icon-learn-more::after {
+    color: #ffffff; }
+  .keto-cleanse-lp .weight-loss .icon-learn-more__circle {
+    stroke: #ffffff; }
+  .keto-cleanse-lp .weight-loss .icon-learn-more__plus {
+    fill: #ffffff; }
+
+@media (max-width: 767px) {
+  .keto-cleanse-lp .product-cards .p--title {
+    margin: 40px auto; } }
+
+.keto-cleanse-lp .product-cards .product-card {
+  text-align: center; }
+  .keto-cleanse-lp .product-cards .product-card__inner {
+    padding: 30px 0 0; }
+  .keto-cleanse-lp .product-cards .product-card__header {
+    margin-bottom: 30px; }
+  .keto-cleanse-lp .product-cards .product-card__item {
+    font-weight: 500;
+    margin: 20px 0 0;
+    font-size: 20px; }
+    .keto-cleanse-lp .product-cards .product-card__item span {
+      opacity: 0.5; }
+  .keto-cleanse-lp .product-cards .product-card__info {
+    opacity: 0.5;
+    margin: 0;
+    font-size: 20px; }
+  .keto-cleanse-lp .product-cards .product-card__icon {
+    height: 50px; }
+
+.keto-cleanse-lp .purchase {
+  text-align: center;
+  padding: 0 0 60px;
+  overflow: auto;
+  background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-purchase-desktop%402x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  @media (max-width: 767px) {
+    .keto-cleanse-lp .purchase {
+      background-size: 150%;
+      background-position: top;
+      padding: 0; } }
+  .keto-cleanse-lp .purchase .p--title {
+    color: #ffffff;
+    border: 2px solid #ffffff; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .purchase .p--title {
+        margin: 40px auto; } }
+  .keto-cleanse-lp .purchase__header {
+    max-width: 850px;
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0 auto; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .purchase__header {
+        font-size: 36px;
+        padding: 0 20px; } }
+  .keto-cleanse-lp .purchase__box {
+    background: #ffffff;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 40px; }
+    @media (max-width: 767px) {
+      .keto-cleanse-lp .purchase__box {
+        border-radius: 0; } }
+  .keto-cleanse-lp .purchase__items {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.8px; }
+  .keto-cleanse-lp .purchase__pricing {
+    width: 200px;
+    margin: 25px auto 10px; }
+  .keto-cleanse-lp .purchase__offer {
+    background: #C69B82;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 45px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 0; }
+  .keto-cleanse-lp .purchase__price {
+    background: #F8F3F0;
+    line-height: 90px;
+    font-size: 54px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    margin: 0; }
+  .keto-cleanse-lp .purchase__original {
+    text-transform: uppercase;
+    text-decoration: line-through; }
+  .keto-cleanse-lp .purchase .a--cta {
+    width: 90%; }
+
+@media (max-width: 767px) {
+  .keto-cleanse-lp .faq .p--title {
+    margin: 40px auto; } }
+
+.keto-cleanse-lp .footer {
+  padding: 20px;
+  background: #ffffff; }
+  .keto-cleanse-lp .footer__content {
+    max-width: 1600px;
+    margin: 0 auto; }
+  .keto-cleanse-lp .footer__top {
+    background: #404040;
+    color: #ffffff; }
+  .keto-cleanse-lp .footer .synchro-logo {
+    fill: #000000; }
 
 /* .bg-full-width {
   background-image: url('https://cdn.besynchro.com/cognos/assets-hero-3.jpg');

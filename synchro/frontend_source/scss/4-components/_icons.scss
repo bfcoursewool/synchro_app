@@ -1,0 +1,23 @@
+.icon-learn-more {
+  height: 30px;
+  width: 100px;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+
+  &::after {
+    content: "Learn More";
+    text-align: center;
+    font-size: 18px;
+    font-weight: $font-medium;
+    display: block;
+    text-decoration: underline;
+  }
+
+  &__circle {
+    stroke: $color-ebony;
+  }
+
+  &__plus {
+    fill: $color-ebony;
+  }
+}
