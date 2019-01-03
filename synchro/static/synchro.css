@@ -7829,6 +7829,10 @@ input:checked + .accordion-horizontal__inner-box {
 .keto-cleanse.kcp-home .atf-kcp__header {
   font-size: 70px;
   margin: 20px 0; }
+  @media (max-width: 767px) {
+    .keto-cleanse.kcp-home .atf-kcp__header {
+      font-size: 50px;
+      margin: 10px 0; } }
 
 .keto-cleanse.kcp-home .kcp-intro {
   padding: 20px; }
@@ -7860,7 +7864,9 @@ input:checked + .accordion-horizontal__inner-box {
     margin: 0 1% 20px;
     height: 214px;
     position: relative;
-    vertical-align: top; }
+    vertical-align: top;
+    background-size: cover;
+    background-position: center; }
     @media (max-width: 1199px) {
       .keto-cleanse.kcp-home .kcp-program__box {
         width: 48%; } }
@@ -7869,17 +7875,11 @@ input:checked + .accordion-horizontal__inner-box {
         width: 100%;
         margin: 0 0 20px; } }
     .keto-cleanse.kcp-home .kcp-program__box.week-1 {
-      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-1%402x.jpg");
-      background-size: cover;
-      background-position: center; }
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-2%402x.jpg"); }
     .keto-cleanse.kcp-home .kcp-program__box.week-2 {
-      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-2%402x.jpg");
-      background-size: cover;
-      background-position: center; }
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-1%402x.jpg"); }
     .keto-cleanse.kcp-home .kcp-program__box.week-3 {
-      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-3%402x.jpg");
-      background-size: cover;
-      background-position: center; }
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-3%402x.jpg"); }
   .keto-cleanse.kcp-home .kcp-program__details {
     position: relative;
     top: 50%;
@@ -7899,45 +7899,60 @@ input:checked + .accordion-horizontal__inner-box {
     font-weight: 600;
     margin: 0; }
 
-.keto-cleanse.kcp-home .kcp-readings {
+.keto-cleanse.kcp-home .kcp-recipes {
   text-align: center;
   overflow: auto; }
   @media (max-width: 767px) {
-    .keto-cleanse.kcp-home .kcp-readings {
+    .keto-cleanse.kcp-home .kcp-recipes {
       padding: 0 20px; } }
-  .keto-cleanse.kcp-home .kcp-readings__intro {
+  .keto-cleanse.kcp-home .kcp-recipes__intro {
     max-width: 700px; }
-  .keto-cleanse.kcp-home .kcp-readings__articles {
+  .keto-cleanse.kcp-home .kcp-recipes__recipes {
     max-width: 1300px;
-    margin: 40px auto 0;
+    margin: 40px auto 10px;
     font-size: 0;
     padding: 0 1%; }
-  .keto-cleanse.kcp-home .kcp-readings__box {
+  .keto-cleanse.kcp-home .kcp-recipes__box {
     display: inline-block;
     width: 31%;
-    margin: 0 1% 40px;
+    margin: 0 1% 30px;
     vertical-align: top; }
     @media (max-width: 1199px) {
-      .keto-cleanse.kcp-home .kcp-readings__box {
+      .keto-cleanse.kcp-home .kcp-recipes__box {
         width: 48%; } }
     @media (max-width: 767px) {
-      .keto-cleanse.kcp-home .kcp-readings__box {
+      .keto-cleanse.kcp-home .kcp-recipes__box {
         width: 100%;
-        margin: 0 0 40px; } }
-  .keto-cleanse.kcp-home .kcp-readings__image {
-    height: 214px; }
-    .keto-cleanse.kcp-home .kcp-readings__image.article-1 {
-      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-article-1%402x.jpg");
-      background-size: cover;
-      background-position: center; }
-    .keto-cleanse.kcp-home .kcp-readings__image.article-2 {
-      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-article-2%402x.jpg");
-      background-size: cover;
-      background-position: center; }
-  .keto-cleanse.kcp-home .kcp-readings__details {
+        margin: 0 0 30px; } }
+  .keto-cleanse.kcp-home .kcp-recipes__image {
+    height: 214px;
+    background-size: cover;
+    background-position: center; }
+    .keto-cleanse.kcp-home .kcp-recipes__image.recipe-1 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/PG519949-C286EFD4-1E44-47FB-89F0-8C8D0886BDC7_grande.jpg?v=1504020472"); }
+    .keto-cleanse.kcp-home .kcp-recipes__image.recipe-2 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC06462_1024x1024.jpg?v=1535359640"); }
+    .keto-cleanse.kcp-home .kcp-recipes__image.recipe-3 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC06531_1024x1024.jpg?v=1534885730"); }
+    .keto-cleanse.kcp-home .kcp-recipes__image.recipe-4 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC05713_1024x1024.jpg?v=1529413850"); }
+    .keto-cleanse.kcp-home .kcp-recipes__image.recipe-5 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC05012_1024x1024.jpg?v=1527165847"); }
+    .keto-cleanse.kcp-home .kcp-recipes__image.recipe-6 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC01058_1024x1024.jpg?v=1527168286"); }
+    .keto-cleanse.kcp-home .kcp-recipes__image.recipe-7 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC04982_1024x1024.jpg?v=1527154562"); }
+    .keto-cleanse.kcp-home .kcp-recipes__image.recipe-8 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC00449_1024x1024.jpg?v=1526480652"); }
+    .keto-cleanse.kcp-home .kcp-recipes__image.recipe-9 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC01764-2_1024x1024.jpg?v=1526121490"); }
+    .keto-cleanse.kcp-home .kcp-recipes__image.recipe-10 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/chia_bowl_1_grande.jpg?v=1510841354"); }
+  .keto-cleanse.kcp-home .kcp-recipes__details {
     font-weight: 600;
     font-size: 20px;
-    margin: 20px 0 0; }
+    margin: 15px 0 0;
+    text-transform: capitalize; }
 
 .keto-cleanse.kcp-home .kcp-videos {
   text-align: center;
@@ -7950,13 +7965,13 @@ input:checked + .accordion-horizontal__inner-box {
     max-width: 700px; }
   .keto-cleanse.kcp-home .kcp-videos__videos {
     max-width: 1300px;
-    margin: 40px auto 0;
+    margin: 40px auto 10px;
     font-size: 0;
     padding: 0 1%; }
   .keto-cleanse.kcp-home .kcp-videos__box {
     display: inline-block;
     width: 31%;
-    margin: 0 1% 40px;
+    margin: 0 1% 30px;
     vertical-align: top; }
     @media (max-width: 1199px) {
       .keto-cleanse.kcp-home .kcp-videos__box {
@@ -7964,16 +7979,60 @@ input:checked + .accordion-horizontal__inner-box {
     @media (max-width: 767px) {
       .keto-cleanse.kcp-home .kcp-videos__box {
         width: 100%;
-        margin: 0 0 40px; } }
+        margin: 0 0 30px; } }
   .keto-cleanse.kcp-home .kcp-videos__video {
     width: 100%; }
   .keto-cleanse.kcp-home .kcp-videos__details {
     font-weight: 600;
     font-size: 20px;
-    margin: 20px 0 0; }
+    margin: 15px 0 0;
+    text-transform: capitalize; }
     .keto-cleanse.kcp-home .kcp-videos__details span {
       display: block;
       font-weight: 400; }
+
+.keto-cleanse.kcp-home .kcp-readings {
+  text-align: center;
+  overflow: auto; }
+  @media (max-width: 767px) {
+    .keto-cleanse.kcp-home .kcp-readings {
+      padding: 0 20px; } }
+  .keto-cleanse.kcp-home .kcp-readings__intro {
+    max-width: 700px; }
+  .keto-cleanse.kcp-home .kcp-readings__articles {
+    max-width: 1300px;
+    margin: 40px auto 10px;
+    font-size: 0;
+    padding: 0 1%; }
+  .keto-cleanse.kcp-home .kcp-readings__box {
+    display: inline-block;
+    width: 31%;
+    margin: 0 1% 30px;
+    vertical-align: top; }
+    @media (max-width: 1199px) {
+      .keto-cleanse.kcp-home .kcp-readings__box {
+        width: 48%; } }
+    @media (max-width: 767px) {
+      .keto-cleanse.kcp-home .kcp-readings__box {
+        width: 100%;
+        margin: 0 0 30px; } }
+  .keto-cleanse.kcp-home .kcp-readings__image {
+    height: 214px;
+    background-size: cover;
+    background-position: center; }
+    .keto-cleanse.kcp-home .kcp-readings__image.article-1 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/shutterstock_392813248_1024x1024.jpg?v=1516871083"); }
+    .keto-cleanse.kcp-home .kcp-readings__image.article-2 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/25688467_l_grande.jpg?v=1493800061"); }
+    .keto-cleanse.kcp-home .kcp-readings__image.article-3 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/shutterstock_656888362_1024x1024.jpg?v=1517821009"); }
+    .keto-cleanse.kcp-home .kcp-readings__image.article-4 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/10252373_ml_0329cdb0-3c25-40b8-b228-2daf2ae7b633_grande.jpg?7622257216880995316"); }
+  .keto-cleanse.kcp-home .kcp-readings__details {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 15px 0 0;
+    text-transform: capitalize; }
 
 /* .bg-full-width {
   background-image: url('https://cdn.besynchro.com/cognos/assets-hero-3.jpg');

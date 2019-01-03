@@ -577,6 +577,10 @@
       &__header {
         font-size: 70px;
         margin: 20px 0;
+        @include s-screen {
+          font-size: 50px;
+          margin: 10px 0;
+        }
       }
     }
 
@@ -621,6 +625,8 @@
         height: 214px;
         position: relative;
         vertical-align: top;
+        background-size: cover;
+        background-position: center;
         @include m-screen {
           width: 48%;
         }
@@ -630,21 +636,15 @@
         }
 
         &.week-1 {
-          background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-1%402x.jpg");
-          background-size: cover;
-          background-position: center;
+          background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-2%402x.jpg");
         }
 
         &.week-2 {
-          background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-2%402x.jpg");
-          background-size: cover;
-          background-position: center;
+          background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-1%402x.jpg");
         }
 
         &.week-3 {
           background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-week-3%402x.jpg");
-          background-size: cover;
-          background-position: center;
         }
       }
 
@@ -673,7 +673,7 @@
       }
     }
 
-    .kcp-readings {
+    .kcp-recipes {
       text-align: center;
       overflow: auto;
       @include s-screen {
@@ -684,9 +684,9 @@
         max-width: 700px;
       }
 
-      &__articles {
+      &__recipes {
         max-width: 1300px;
-        margin: 40px auto 0;
+        margin: 40px auto 10px;
         font-size: 0;
         padding: 0 1%;
       }
@@ -694,37 +694,68 @@
       &__box {
         display: inline-block;
         width: 31%;
-        margin: 0 1% 40px;
+        margin: 0 1% 30px;
         vertical-align: top;
         @include m-screen {
           width: 48%;
         }
         @include s-screen {
           width: 100%;
-          margin: 0 0 40px;
+          margin: 0 0 30px;
         }
       }
 
       &__image {
         height: 214px;
+        background-size: cover;
+        background-position: center;
 
-        &.article-1 {
-          background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-article-1%402x.jpg");
-          background-size: cover;
-          background-position: center;
+        &.recipe-1 {
+          background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/PG519949-C286EFD4-1E44-47FB-89F0-8C8D0886BDC7_grande.jpg?v=1504020472");
         }
 
-        &.article-2 {
-          background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-home-article-2%402x.jpg");
-          background-size: cover;
-          background-position: center;
+        &.recipe-2 {
+          background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC06462_1024x1024.jpg?v=1535359640");
+        }
+
+        &.recipe-3 {
+          background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC06531_1024x1024.jpg?v=1534885730");
+        }
+
+        &.recipe-4 {
+          background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC05713_1024x1024.jpg?v=1529413850");
+        }
+
+        &.recipe-5 {
+          background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC05012_1024x1024.jpg?v=1527165847");
+        }
+
+        &.recipe-6 {
+          background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC01058_1024x1024.jpg?v=1527168286");
+        }
+
+        &.recipe-7 {
+          background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC04982_1024x1024.jpg?v=1527154562");
+        }
+
+        &.recipe-8 {
+          background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC00449_1024x1024.jpg?v=1526480652");
+        }
+
+        &.recipe-9 {
+          background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC01764-2_1024x1024.jpg?v=1526121490");
+        }
+
+        &.recipe-10 {
+          background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/chia_bowl_1_grande.jpg?v=1510841354");
         }
       }
 
       &__details {
         font-weight: $font-demi;
         font-size: 20px;
-        margin: 20px 0 0;
+        margin: 15px 0 0;
+        text-transform: capitalize;
       }
     }
 
@@ -742,7 +773,7 @@
 
       &__videos {
         max-width: 1300px;
-        margin: 40px auto 0;
+        margin: 40px auto 10px;
         font-size: 0;
         padding: 0 1%;
       }
@@ -750,14 +781,14 @@
       &__box {
         display: inline-block;
         width: 31%;
-        margin: 0 1% 40px;
+        margin: 0 1% 30px;
         vertical-align: top;
         @include m-screen {
           width: 48%;
         }
         @include s-screen {
           width: 100%;
-          margin: 0 0 40px;
+          margin: 0 0 30px;
         }
       }
 
@@ -768,12 +799,75 @@
       &__details {
         font-weight: $font-demi;
         font-size: 20px;
-        margin: 20px 0 0;
+        margin: 15px 0 0;
+        text-transform: capitalize;
 
         span {
           display: block;
           font-weight: $font-normal;
         }
+      }
+    }
+
+    .kcp-readings {
+      text-align: center;
+      overflow: auto;
+      @include s-screen {
+        padding: 0 $gutter-small;
+      }
+
+      &__intro {
+        max-width: 700px;
+      }
+
+      &__articles {
+        max-width: 1300px;
+        margin: 40px auto 10px;
+        font-size: 0;
+        padding: 0 1%;
+      }
+
+      &__box {
+        display: inline-block;
+        width: 31%;
+        margin: 0 1% 30px;
+        vertical-align: top;
+        @include m-screen {
+          width: 48%;
+        }
+        @include s-screen {
+          width: 100%;
+          margin: 0 0 30px;
+        }
+      }
+
+      &__image {
+        height: 214px;
+        background-size: cover;
+        background-position: center;
+
+        &.article-1 {
+          background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/shutterstock_392813248_1024x1024.jpg?v=1516871083");
+        }
+
+        &.article-2 {
+          background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/25688467_l_grande.jpg?v=1493800061");
+        }
+
+        &.article-3 {
+          background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/shutterstock_656888362_1024x1024.jpg?v=1517821009");
+        }
+
+        &.article-4 {
+          background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/10252373_ml_0329cdb0-3c25-40b8-b228-2daf2ae7b633_grande.jpg?7622257216880995316");
+        }
+      }
+
+      &__details {
+        font-weight: $font-demi;
+        font-size: 20px;
+        margin: 15px 0 0;
+        text-transform: capitalize;
       }
     }
   }
