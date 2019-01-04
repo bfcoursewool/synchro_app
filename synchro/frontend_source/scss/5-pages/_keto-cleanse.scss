@@ -229,8 +229,8 @@
     padding: 0 0 $gutter-large;
     overflow: auto;
     background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-desktop%402x.jpg");
-    background-size: cover;
-    background-position: center;
+    background-size: 100%;
+    background-position: top;
     @include s-screen {
       background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-mobile%402x.jpg");
       padding: 0 $gutter-small $gutter-small;
@@ -308,12 +308,15 @@
     }
 
     &__text {
+      max-height: 100px;
+      transition: 0.5s ease-in-out all;
+      overflow: hidden;
       @include s-screen {
         display: none;
       }
 
-      span {
-        display: none;
+      &.active {
+        max-height: 1000px;
       }
     }
   }
@@ -386,7 +389,6 @@
     background-position: center;
     @include s-screen {
       padding: $gutter-medium $gutter-small;
-      background-position: 80%;
     }
 
     &__header {
@@ -402,21 +404,28 @@
 
     &__text {
       color: $color-ivory;
-      max-width: 600px;
+      max-width: 850px;
       font-size: 22px;
+      max-height: 130px;
+      overflow: hidden;
+      transition: 0.5s ease-in-out all;
+
+      &.active {
+        max-height: 1100px;
+      }
     }
 
     .icon-learn-more {
-      &::after {
-        color: $color-ivory;
-      }
-
       &__circle {
         stroke: $color-ivory;
       }
 
       &__plus {
         fill: $color-ivory;
+      }
+
+      &__text {
+        color: $color-ivory;
       }
     }
   }

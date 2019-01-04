@@ -30,6 +30,26 @@ export default class LPEffects extends EventsBase {
       'click .product-card__ingredients': 'toggleInfoText',  // On Keto-Bundle page  TODO -- Refactor front-end build by page somehow...
       'click .product-card__nutrition': 'toggleInfoText', // Same ^^
       'click .kcp-timeline__event': 'toggleTimelineText',
+      'click .how-it-works__icon': 'toggleHowItWorks',
+      'click .weight-loss__icon': 'toggleWeightLoss',
+    }
+  }
+  toggleWeightLoss(target) {
+    if($(target).is('.active')) {
+      $(target).removeClass('active');
+      $(target).siblings('.weight-loss__text').removeClass('active');
+    } else {
+      $(target).addClass('active');
+      $(target).siblings('.weight-loss__text').addClass('active');
+    }
+  }
+  toggleHowItWorks(target) {
+    if($(target).is('.active')) {
+      $('.how-it-works .icon-learn-more').removeClass('active');
+      $('.how-it-works__text').removeClass('active');
+    } else {
+      $(target).addClass('active');
+      $(target).siblings('.how-it-works__text').addClass('active');
     }
   }
 

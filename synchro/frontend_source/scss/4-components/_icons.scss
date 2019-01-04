@@ -1,16 +1,12 @@
 .icon-learn-more {
-  height: 30px;
   width: 100px;
   display: inline-block;
   -webkit-font-smoothing: antialiased;
+  cursor: pointer;
 
-  &::after {
-    content: "Learn More";
-    text-align: center;
-    font-size: 18px;
-    font-weight: $font-medium;
-    display: block;
-    text-decoration: underline;
+  &__svg {
+    height: 30px;
+    transition: 0.2s ease-in-out all;
   }
 
   &__circle {
@@ -19,5 +15,25 @@
 
   &__plus {
     fill: $color-ebony;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: $font-medium;
+    text-decoration: underline;
+    max-height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.2s ease-in-out all;
+  }
+
+  &.active {
+    .icon-learn-more__svg {
+      transform: rotate(45deg);
+    }
+
+    .icon-learn-more__text {
+      max-height: 0;
+    }
   }
 }

@@ -5940,21 +5940,29 @@ p {
       cursor: no-drop; }
 
 .icon-learn-more {
-  height: 30px;
   width: 100px;
   display: inline-block;
-  -webkit-font-smoothing: antialiased; }
-  .icon-learn-more::after {
-    content: "Learn More";
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    display: block;
-    text-decoration: underline; }
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer; }
+  .icon-learn-more__svg {
+    height: 30px;
+    transition: 0.2s ease-in-out all; }
   .icon-learn-more__circle {
     stroke: #000000; }
   .icon-learn-more__plus {
     fill: #000000; }
+  .icon-learn-more__text {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    max-height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.2s ease-in-out all; }
+  .icon-learn-more.active .icon-learn-more__svg {
+    transform: rotate(45deg); }
+  .icon-learn-more.active .icon-learn-more__text {
+    max-height: 0; }
 
 .content-toggle {
   padding: 30px; }
@@ -7582,8 +7590,8 @@ input:checked + .accordion-horizontal__inner-box {
   padding: 0 0 60px;
   overflow: auto;
   background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-desktop%402x.jpg");
-  background-size: cover;
-  background-position: center; }
+  background-size: 100%;
+  background-position: top; }
   @media (max-width: 767px) {
     .keto-cleanse .how-it-works {
       background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-mobile%402x.jpg");
@@ -7644,11 +7652,15 @@ input:checked + .accordion-horizontal__inner-box {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px; }
-  @media (max-width: 767px) {
-    .keto-cleanse .how-it-works__text {
-      display: none; } }
-  .keto-cleanse .how-it-works__text span {
-    display: none; }
+  .keto-cleanse .how-it-works__text {
+    max-height: 100px;
+    transition: 0.5s ease-in-out all;
+    overflow: hidden; }
+    @media (max-width: 767px) {
+      .keto-cleanse .how-it-works__text {
+        display: none; } }
+    .keto-cleanse .how-it-works__text.active {
+      max-height: 1000px; }
 
 .keto-cleanse .program {
   text-align: center;
@@ -7705,8 +7717,7 @@ input:checked + .accordion-horizontal__inner-box {
   background-position: center; }
   @media (max-width: 767px) {
     .keto-cleanse .weight-loss {
-      padding: 40px 20px;
-      background-position: 80%; } }
+      padding: 40px 20px; } }
   .keto-cleanse .weight-loss__header {
     max-width: 850px;
     font-size: 50px;
@@ -7718,14 +7729,19 @@ input:checked + .accordion-horizontal__inner-box {
         font-size: 36px; } }
   .keto-cleanse .weight-loss__text {
     color: #ffffff;
-    max-width: 600px;
-    font-size: 22px; }
-  .keto-cleanse .weight-loss .icon-learn-more::after {
-    color: #ffffff; }
+    max-width: 850px;
+    font-size: 22px;
+    max-height: 130px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out all; }
+    .keto-cleanse .weight-loss__text.active {
+      max-height: 1100px; }
   .keto-cleanse .weight-loss .icon-learn-more__circle {
     stroke: #ffffff; }
   .keto-cleanse .weight-loss .icon-learn-more__plus {
     fill: #ffffff; }
+  .keto-cleanse .weight-loss .icon-learn-more__text {
+    color: #ffffff; }
 
 @media (max-width: 767px) {
   .keto-cleanse .product-cards .p--title {
