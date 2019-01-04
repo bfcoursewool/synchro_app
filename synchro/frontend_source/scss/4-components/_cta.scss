@@ -27,4 +27,13 @@
   &:active {
     opacity: 1;
   }
+
+  &.out-of-stock {
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+      cursor: no-drop;
+    }
+  }
 }

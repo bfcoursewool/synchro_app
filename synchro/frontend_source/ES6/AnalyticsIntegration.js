@@ -9,11 +9,11 @@ class AnalyticsIntegration extends EventsBase {
     this.has_fired = false;
   }
 
-  events() {
-    return {
-      'click .purchase__item > a': 'handleClick'
-    }
-  }
+  // events() {
+  //   return {
+  //     'click .purchase__item > a': 'handleClick'
+  //   }
+  // }
 
   handleClick(target, e) {
     console.log("Clicked!");

@@ -5933,6 +5933,11 @@ p {
     opacity: 0.7; }
   .a--cta:active {
     opacity: 1; }
+  .a--cta.out-of-stock {
+    opacity: 0.5; }
+    .a--cta.out-of-stock:hover {
+      opacity: 1;
+      cursor: no-drop; }
 
 .icon-learn-more {
   height: 30px;
