@@ -91,6 +91,36 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': True,
       }
+    },
+    'keto-cleanse-program': {
+      'template': 'landing_pages/keto-cleanse/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
+    'keto-cleanse-program-home': {
+      'template': 'landing_pages/keto-cleanse/directory/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
+    'keto-cleanse-program-1': {
+      'template': 'landing_pages/keto-cleanse/week-1/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
+    'keto-cleanse-program-2': {
+      'template': 'landing_pages/keto-cleanse/week-2/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
+    'keto-cleanse-program-3': {
+      'template': 'landing_pages/keto-cleanse/week-3/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
     }
   },
   'cognos': {
@@ -107,9 +137,17 @@ endpoint_info_dict = {
       }
     }
   },
-  'cro011': {
+  'cro012': {
     'v1': {
-      'template': 'landing_pages/experiments/cro011/v1/0-index.html',
+      'template': 'landing_pages/experiments/cro012/v1/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    }
+  },
+  'cro013': {
+    'v1': {
+      'template': 'landing_pages/experiments/cro013/v1/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
@@ -132,8 +170,8 @@ def landing_page(page, version, prod_category):
   if const.kENVIRONMENT == 'production' and subdomain.isalpha():
     # For addresses like: gold.besynchro.com/1, or keto.besynchro.com/ketomanna/keto-chocolate-fudge
     # we have to do a little shifting around of values, because in each URL the subdomain is serving
-    # as either the <page> or the <prod_category>, while the URI values are themselves serving as 
-    # different values. 
+    # as either the <page> or the <prod_category>, while the URI values are themselves serving as
+    # different values.
     if page is not 'none' and version is not 'v0':
       prod_category = subdomain
     elif page is not 'none':

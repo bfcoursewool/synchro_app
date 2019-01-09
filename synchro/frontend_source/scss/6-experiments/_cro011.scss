@@ -1,0 +1,22 @@
+@import '../synchro';
+
+.cro011-01 {
+  a.anchor {
+    top: -40px;
+  }
+
+  .main-header {
+    position: initial;
+  }
+
+  .purchase {
+    &__options {
+      @include clearfix;
+    }
+
+    &__shipping {
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
+}
