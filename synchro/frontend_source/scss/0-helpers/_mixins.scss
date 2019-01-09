@@ -127,7 +127,7 @@
   }
 
   &:after {
-    bottom: 0;
+    bottom: -1px;
     background-image: $curve-bottom;
     background-position: bottom;
     @include s-screen {

@@ -6442,7 +6442,7 @@ input:checked + .accordion-horizontal__inner-box {
       .gold-lp .atf.bg-full-width:before {
         background-image: none; } }
   .gold-lp .atf.bg-full-width:after {
-    bottom: 0;
+    bottom: -1px;
     background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-desktop@2x.png");
     background-position: bottom; }
     @media (max-width: 767px) {
@@ -6521,7 +6521,7 @@ input:checked + .accordion-horizontal__inner-box {
         background-image: none; } }
   @media (max-width: 854px) {
       .gold-lp .atf__mobile:after {
-        bottom: 0;
+        bottom: -1px;
         background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-desktop@2x.png");
         background-position: bottom; } }
     @media (max-width: 854px) and (max-width: 767px) {
@@ -6799,7 +6799,7 @@ input:checked + .accordion-horizontal__inner-box {
       .ketomanna-lp .atf.bg-full-width:before {
         background-image: none; } }
   .ketomanna-lp .atf.bg-full-width:after {
-    bottom: 0;
+    bottom: -1px;
     background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-desktop@2x.png");
     background-position: bottom; }
     @media (max-width: 767px) {
@@ -6876,7 +6876,7 @@ input:checked + .accordion-horizontal__inner-box {
         background-image: none; } }
   @media (max-width: 854px) {
       .ketomanna-lp .atf__mobile:after {
-        bottom: 0;
+        bottom: -1px;
         background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-desktop@2x.png");
         background-position: bottom; } }
     @media (max-width: 854px) and (max-width: 767px) {
@@ -7194,7 +7194,7 @@ input:checked + .accordion-horizontal__inner-box {
         .keto-bundle-lp .intro .bg-full-width:before {
           background-image: url("https://cdn.besynchro.com/global/curve-in-top-white-mobile@2x.png"); } }
     .keto-bundle-lp .intro .bg-full-width:after {
-      bottom: 0;
+      bottom: -1px;
       background-image: url("https://cdn.besynchro.com/global/curve-in-bottom-silver-desktop@2x.png");
       background-position: bottom; }
       @media (max-width: 767px) {
@@ -7410,7 +7410,7 @@ input:checked + .accordion-horizontal__inner-box {
       .keto-cleanse .atf-kcp:before {
         background-image: none; } }
   .keto-cleanse .atf-kcp:after {
-    bottom: 0;
+    bottom: -1px;
     background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-desktop@2x.png");
     background-position: bottom; }
     @media (max-width: 767px) {
@@ -8152,7 +8152,7 @@ input:checked + .accordion-horizontal__inner-box {
       .keto-cleanse.kcp-weekly .kcp-goals:before {
         background-image: none; } }
   .keto-cleanse.kcp-weekly .kcp-goals:after {
-    bottom: 0;
+    bottom: -1px;
     background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-desktop@2x.png");
     background-position: bottom; }
     @media (max-width: 767px) {
