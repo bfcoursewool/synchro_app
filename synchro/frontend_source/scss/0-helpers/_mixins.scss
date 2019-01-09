@@ -48,6 +48,17 @@
   color: $text-color;
 }
 // Elements
+@mixin background-retina($image-url, $image-type: "png", $size: auto, $position: center center, $repeat: no-repeat) {
+  $image1x_url: "https://cdn.besynchro.com/#{$image-url}.#{$image-type}";
+  $image2x_url: "https://cdn.besynchro.com/#{$image-url}@2x.#{$image-type}";
+  background-image: url("#{$image1x_url}");
+  background-size: $size;
+  background-position: $position;
+  background-repeat: $repeat;
+  @media all and (-webkit-min-device-pixel-ratio : 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    background-image: url("#{$image2x_url}");
+  }
+}
 @mixin sprite($position-x, $position-y, $width, $height) {
   background-image: url("");
   background-repeat: no-repeat;

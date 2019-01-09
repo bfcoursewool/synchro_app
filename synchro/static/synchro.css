@@ -7390,13 +7390,6 @@ input:checked + .accordion-horizontal__inner-box {
   background: #427074;
   color: #ffffff; }
 
-.keto-cleanse .main-header-container .main-header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  opacity: 0; }
-  .keto-cleanse .main-header-container .main-header.floated {
-    opacity: 1; }
-
 .keto-cleanse .atf-kcp {
   position: relative;
   text-align: center;
@@ -7434,11 +7427,14 @@ input:checked + .accordion-horizontal__inner-box {
         width: 70px; } }
   .keto-cleanse .atf-kcp__content-box {
     background: #F8F3F0;
-    max-width: 750px;
+    max-width: max-content;
     margin: 0 auto;
-    padding: 0 20px 20px; }
+    padding: 0 90px 20px; }
+    @media (max-width: 767px) {
+      .keto-cleanse .atf-kcp__content-box {
+        padding: 0 25px 20px; } }
   .keto-cleanse .atf-kcp__icon {
-    max-height: 120px;
+    max-height: 100px;
     display: block;
     margin: 30px auto; }
     @media (max-width: 767px) {
@@ -7458,22 +7454,20 @@ input:checked + .accordion-horizontal__inner-box {
         font-size: 18px; } }
   .keto-cleanse .atf-kcp__header {
     font-weight: 600;
-    font-size: 90px;
+    font-size: 80px;
     color: #427074;
     text-transform: uppercase;
-    letter-spacing: 4.5px;
-    margin: 0; }
+    letter-spacing: 0.05em;
+    margin: 10px 0; }
     @media (max-width: 767px) {
       .keto-cleanse .atf-kcp__header {
-        letter-spacing: 2.5px;
-        font-size: 50px;
-        margin: 10px 0; } }
+        font-size: 50px; } }
   .keto-cleanse .atf-kcp__description {
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 22px;
     color: #848280;
     text-transform: uppercase;
-    letter-spacing: 1.2px; }
+    letter-spacing: 0.05em; }
     @media (max-width: 767px) {
       .keto-cleanse .atf-kcp__description {
         font-size: 16px; } }
@@ -7589,13 +7583,23 @@ input:checked + .accordion-horizontal__inner-box {
   text-align: center;
   padding: 0 0 60px;
   overflow: auto;
-  background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-desktop%402x.jpg");
+  background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-desktop.jpg");
   background-size: 100%;
-  background-position: top; }
+  background-position: top;
+  background-repeat: repeat-y; }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    .keto-cleanse .how-it-works {
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-desktop@2x.jpg"); } }
   @media (max-width: 767px) {
     .keto-cleanse .how-it-works {
-      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-mobile%402x.jpg");
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-mobile.jpg");
+      background-size: 100%;
+      background-position: top;
+      background-repeat: repeat-y;
       padding: 0 20px 20px; } }
+  @media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
+    .keto-cleanse .how-it-works {
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-mobile@2x.jpg"); } }
   .keto-cleanse .how-it-works .p--title {
     color: #ffffff;
     border: 2px solid #ffffff; }
@@ -7658,29 +7662,60 @@ input:checked + .accordion-horizontal__inner-box {
     overflow: hidden; }
     @media (max-width: 767px) {
       .keto-cleanse .how-it-works__text {
-        display: none; } }
+        max-height: 0; } }
     .keto-cleanse .how-it-works__text.active {
-      max-height: 1000px; }
+      max-height: 900px; }
+  .keto-cleanse .how-it-works__icon {
+    transition: 0.5s ease-in-out all;
+    margin: -20px; }
+    .keto-cleanse .how-it-works__icon.active {
+      margin: 0; }
 
 .keto-cleanse .program {
   text-align: center;
   padding: 30px 0; }
   @media (max-width: 767px) {
     .keto-cleanse .program {
-      padding: 10px 20px; } }
+      padding: 10px 0; } }
   .keto-cleanse .program__header {
     max-width: 850px;
     font-size: 50px;
     font-weight: 500;
-    margin: 40px auto; }
+    margin: 40px auto;
+    padding: 0 20px; }
     @media (max-width: 767px) {
       .keto-cleanse .program__header {
         font-size: 36px; } }
+  .keto-cleanse .program__tab {
+    display: none; }
+    @media (max-width: 767px) {
+      .keto-cleanse .program__tab {
+        display: block; } }
+  .keto-cleanse .program__tab-week {
+    display: inline-block;
+    font-size: 16px;
+    background: #f4f4f5;
+    width: 33.33%;
+    height: 44px;
+    line-height: 44px;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.5;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    margin: 0; }
+    .keto-cleanse .program__tab-week.active {
+      background: #427074;
+      color: #ffffff;
+      opacity: 1; }
   .keto-cleanse .program__info {
     max-width: 1600px;
     margin: 0 auto;
     font-size: 0;
     padding: 0 1%; }
+    @media (max-width: 767px) {
+      .keto-cleanse .program__info {
+        padding: 0; } }
   .keto-cleanse .program__box {
     display: inline-block;
     width: 31%;
@@ -7689,9 +7724,12 @@ input:checked + .accordion-horizontal__inner-box {
     padding: 20px 10px; }
     @media (max-width: 767px) {
       .keto-cleanse .program__box {
-        width: 100%;
-        margin: 0;
-        padding: 10px 0; } }
+        display: none; }
+        .keto-cleanse .program__box.active {
+          display: block;
+          width: 100%;
+          margin: 0;
+          padding: 10px 20px; } }
   .keto-cleanse .program__week {
     display: inline-block;
     padding: 3px 40px;
@@ -7701,6 +7739,9 @@ input:checked + .accordion-horizontal__inner-box {
     letter-spacing: 2px;
     border: 2px solid #427074;
     text-transform: uppercase; }
+    @media (max-width: 767px) {
+      .keto-cleanse .program__week {
+        display: none; } }
   .keto-cleanse .program__title {
     font-size: 18px;
     font-weight: 600;
@@ -7712,12 +7753,23 @@ input:checked + .accordion-horizontal__inner-box {
 .keto-cleanse .weight-loss {
   text-align: center;
   padding: 60px;
-  background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-weight-loss-desktop%402x.jpg");
+  background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-weight-loss-desktop.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    .keto-cleanse .weight-loss {
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-weight-loss-desktop@2x.jpg"); } }
   @media (max-width: 767px) {
     .keto-cleanse .weight-loss {
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-weight-loss-mobile.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       padding: 40px 20px; } }
+  @media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
+    .keto-cleanse .weight-loss {
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-weight-loss-mobile@2x.jpg"); } }
   .keto-cleanse .weight-loss__header {
     max-width: 850px;
     font-size: 50px;
@@ -7770,15 +7822,23 @@ input:checked + .accordion-horizontal__inner-box {
   text-align: center;
   padding: 0 0 60px;
   overflow: auto;
-  background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-purchase-desktop%402x.jpg");
-  background-repeat: no-repeat;
+  background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-purchase-desktop.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    .keto-cleanse .purchase {
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-purchase-desktop@2x.jpg"); } }
   @media (max-width: 767px) {
     .keto-cleanse .purchase {
-      background-size: 150%;
-      background-position: top;
-      padding: 0; } }
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-purchase-mobile.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 0 20px 20px; } }
+  @media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
+    .keto-cleanse .purchase {
+      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-purchase-mobile@2x.jpg"); } }
   .keto-cleanse .purchase .p--title {
     color: #ffffff;
     border: 2px solid #ffffff; }
@@ -7802,9 +7862,6 @@ input:checked + .accordion-horizontal__inner-box {
     border-radius: 10px;
     padding: 30px;
     margin-top: 40px; }
-    @media (max-width: 767px) {
-      .keto-cleanse .purchase__box {
-        border-radius: 0; } }
   .keto-cleanse .purchase__items {
     font-weight: 600;
     text-transform: uppercase;
@@ -7847,7 +7904,8 @@ input:checked + .accordion-horizontal__inner-box {
     margin: 0 auto; }
   .keto-cleanse .footer__top {
     background: #404040;
-    color: #ffffff; }
+    color: #ffffff;
+    line-height: 30px; }
   .keto-cleanse .footer .synchro-logo {
     fill: #000000; }
 

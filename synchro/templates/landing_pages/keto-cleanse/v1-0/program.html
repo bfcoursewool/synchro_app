@@ -17,7 +17,12 @@
   </svg>
   <h2 class="program__header">A thoughtfully designed 3-week program</h2>
   <div class="program__info">
-    <div class="program__box">
+    <div class="program__tab">
+      <p class="program__tab-week active" data-tabs="weeks" id="week1">week 1</p>
+      <p class="program__tab-week" data-tabs="weeks" id="week2">week 2</p>
+      <p class="program__tab-week" data-tabs="weeks" id="week3">week 3</p>
+    </div>
+    <div class="program__box active" data-tabs="weeks" id="week1">
       <p class="program__week">week one</p>
       <div class="p--text program__goal">
         <p class="program__title">Goals</p>
@@ -28,7 +33,7 @@
         <p class="program__text">Using your low-carb meal plan and supplementing with Ketobasis, you’ll stabilize blood sugar and improve your body’s efficiency in oxidizing fats.</p>
       </div>
     </div>
-    <div class="program__box">
+    <div class="program__box" data-tabs="weeks" id="week2">
       <p class="program__week">week two</p>
       <div class="p--text program__goal">
         <p class="program__title">Goals</p>
@@ -40,7 +45,7 @@
           transition as smooth as possible.</p>
       </div>
     </div>
-    <div class="program__box">
+    <div class="program__box" data-tabs="weeks" id="week3">
       <p class="program__week">week three</p>
       <div class="p--text program__goal">
         <p class="program__title">Goals</p>

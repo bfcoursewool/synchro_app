@@ -3,18 +3,6 @@
     @include cta-custom($color-kcp, $color-ivory);
   }
 
-  .main-header-container {
-    .main-header {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      opacity: 0;
-
-      &.floated {
-        opacity: 1;
-      }
-    }
-  }
-
   .atf-kcp {
     position: relative;
     text-align: center;
@@ -35,13 +23,16 @@
 
     &__content-box {
       background: #F8F3F0;
-      max-width: 750px;
+      max-width: max-content;
       margin: 0 auto;
-      padding: 0 $gutter-small $gutter-small;
+      padding: 0 90px $gutter-small;
+      @include s-screen {
+        padding: 0 25px $gutter-small;
+      }
     }
 
     &__icon {
-      max-height: 120px;
+      max-height: 100px;
       display: block;
       margin: 30px auto;
       @include s-screen {
@@ -65,24 +56,22 @@
 
     &__header {
       font-weight: $font-demi;
-      font-size: 90px;
+      font-size: 80px;
       color: $color-kcp;
       text-transform: uppercase;
-      letter-spacing: 4.5px;
-      margin: 0;
+      letter-spacing: 0.05em;
+      margin: 10px 0;
       @include s-screen {
-        letter-spacing: 2.5px;
         font-size: 50px;
-        margin: 10px 0;
       }
     }
 
     &__description {
-      font-weight: $font-demi;
-      font-size: 24px;
+      font-weight: $font-medium;
+      font-size: 22px;
       color: #848280;
       text-transform: uppercase;
-      letter-spacing: 1.2px;
+      letter-spacing: 0.05em;
       @include s-screen {
         font-size: 16px;
       }
@@ -228,11 +217,9 @@
     text-align: center;
     padding: 0 0 $gutter-large;
     overflow: auto;
-    background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-desktop%402x.jpg");
-    background-size: 100%;
-    background-position: top;
+    @include background-retina (keto-cleanse/v1-0/kcp-benefits-desktop, jpg, 100%, top, repeat-y);
     @include s-screen {
-      background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-benefits-mobile%402x.jpg");
+      @include background-retina (keto-cleanse/v1-0/kcp-benefits-mobile, jpg, 100%, top, repeat-y);
       padding: 0 $gutter-small $gutter-small;
     }
 
@@ -312,11 +299,20 @@
       transition: 0.5s ease-in-out all;
       overflow: hidden;
       @include s-screen {
-        display: none;
+        max-height: 0;
       }
 
       &.active {
-        max-height: 1000px;
+        max-height: 900px;
+      }
+    }
+
+    &__icon {
+      transition: 0.5s ease-in-out all;
+      margin: -20px;
+
+      &.active {
+        margin: 0;
       }
     }
   }
@@ -325,7 +321,7 @@
     text-align: center;
     padding: 30px 0;
     @include s-screen {
-      padding: 10px 20px;
+      padding: 10px 0;
     }
 
     &__header {
@@ -333,8 +329,37 @@
       font-size: 50px;
       font-weight: $font-medium;
       margin: 40px auto;
+      padding: 0 20px;
       @include s-screen {
         font-size: 36px;
+      }
+    }
+
+    &__tab {
+      display: none;
+      @include s-screen {
+        display: block;
+      }
+    }
+
+    &__tab-week {
+      display: inline-block;
+      font-size: 16px;
+      background: $color-silver-light;
+      width: 33.33%;
+      height: 44px;
+      line-height: 44px;
+      text-transform: uppercase;
+      font-weight: $font-demi;
+      opacity: 0.5;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      margin: 0;
+
+      &.active {
+        background: $color-kcp;
+        color: $color-ivory;
+        opacity: 1;
       }
     }
 
@@ -343,6 +368,9 @@
       margin: 0 auto;
       font-size: 0;
       padding: 0 1%;
+      @include s-screen {
+        padding: 0;
+      }
     }
 
     &__box {
@@ -352,9 +380,14 @@
       margin: 0 1%;
       padding: 20px 10px;
       @include s-screen {
-        width: 100%;
-        margin: 0;
-        padding: 10px 0;
+        display: none;
+
+        &.active {
+          display: block;
+          width: 100%;
+          margin: 0;
+          padding: 10px 20px;
+        }
       }
     }
 
@@ -367,6 +400,9 @@
       letter-spacing: 2px;
       border: 2px solid $color-kcp;
       text-transform: uppercase;
+      @include s-screen {
+        display: none;
+      }
     }
 
     &__title {
@@ -384,10 +420,9 @@
   .weight-loss {
     text-align: center;
     padding: 60px;
-    background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-weight-loss-desktop%402x.jpg");
-    background-size: cover;
-    background-position: center;
+    @include background-retina (keto-cleanse/v1-0/kcp-weight-loss-desktop, jpg, cover, center, no-repeat);
     @include s-screen {
+      @include background-retina (keto-cleanse/v1-0/kcp-weight-loss-mobile, jpg, cover, center, no-repeat);
       padding: $gutter-medium $gutter-small;
     }
 
@@ -472,16 +507,12 @@
 
   .purchase {
     text-align: center;
-    padding: 0 0 60px;
+    padding: 0 0 $gutter-large;
     overflow: auto;
-    background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-purchase-desktop%402x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    @include background-retina (keto-cleanse/v1-0/kcp-purchase-desktop, jpg, cover, center, no-repeat);
     @include s-screen {
-      background-size: 150%;
-      background-position: top;
-      padding: 0;
+      @include background-retina (keto-cleanse/v1-0/kcp-purchase-mobile, jpg, cover, center, no-repeat);
+      padding: 0 $gutter-small $gutter-small;
     }
 
     .p--title {
@@ -511,9 +542,6 @@
       border-radius: 10px;
       padding: 30px;
       margin-top: 40px;
-      @include s-screen {
-        border-radius: 0;
-      }
     }
 
     &__items {
@@ -578,6 +606,7 @@
     &__top {
       background: $color-silver-dark;
       color: $color-ivory;
+      line-height: 30px;
     }
 
     .synchro-logo {
