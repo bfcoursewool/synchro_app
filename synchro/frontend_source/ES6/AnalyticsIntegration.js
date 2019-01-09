@@ -27,7 +27,10 @@ class AnalyticsIntegration extends EventsBase {
         $(target).trigger('click');
       })
     } else {
-      window.location.href = $(target).find('a').attr('href');
+      let href = $(target).find('a').attr('href');
+      if(href) {
+        window.location.href = $(target).find('a').attr('href');        
+      }
     }
   }
 
