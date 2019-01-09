@@ -167,7 +167,7 @@ def landing_page(page, version, prod_category):
     version = 'v0'
     noindex = True
 
-  # Assert that each version entry in the info_dict contains both a template to render and a list of scripts to include.
+  # Assert that each version entry in the info_dict contains a template to render.
   # A failed assertion should happen only during development, so this helps ensure developer consistency.
   assert 'template' in endpoint_info_dict[page][version]
 
