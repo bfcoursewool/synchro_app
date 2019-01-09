@@ -360,6 +360,10 @@
         background: $color-kcp;
         color: $color-ivory;
         opacity: 1;
+
+        &:after {
+          border-color: $color-kcp transparent transparent;
+        }
       }
     }
 
@@ -379,6 +383,7 @@
       vertical-align: top;
       margin: 0 1%;
       padding: 20px 10px;
+      max-height: initial;
       @include s-screen {
         display: none;
 

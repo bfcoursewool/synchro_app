@@ -7708,6 +7708,8 @@ input:checked + .accordion-horizontal__inner-box {
       background: #427074;
       color: #ffffff;
       opacity: 1; }
+      .keto-cleanse .program__tab-week.active:after {
+        border-color: #427074 transparent transparent; }
   .keto-cleanse .program__info {
     max-width: 1600px;
     margin: 0 auto;
@@ -7721,7 +7723,8 @@ input:checked + .accordion-horizontal__inner-box {
     width: 31%;
     vertical-align: top;
     margin: 0 1%;
-    padding: 20px 10px; }
+    padding: 20px 10px;
+    max-height: initial; }
     @media (max-width: 767px) {
       .keto-cleanse .program__box {
         display: none; }
