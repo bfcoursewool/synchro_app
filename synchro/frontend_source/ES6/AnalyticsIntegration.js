@@ -29,7 +29,7 @@ class AnalyticsIntegration extends EventsBase {
     } else {
       let href = $(target).find('a').attr('href');
       if(href) {
-        window.location.href = $(target).find('a').attr('href');        
+        window.location.href = href;        
       }
     }
   }
