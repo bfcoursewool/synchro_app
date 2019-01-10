@@ -7983,7 +7983,8 @@ input:checked + .accordion-horizontal__inner-box {
 .keto-cleanse.kcp-home .kcp-intro {
   padding: 20px; }
   .keto-cleanse.kcp-home .kcp-intro__text {
-    font-size: 20px; }
+    font-size: 20px;
+    margin: 20px auto; }
 
 .keto-cleanse.kcp-home .kcp-program {
   text-align: center;
@@ -8045,9 +8046,51 @@ input:checked + .accordion-horizontal__inner-box {
     font-weight: 600;
     margin: 0; }
 
-.keto-cleanse.kcp-home .kcp-recipes {
+.keto-cleanse.kcp-home .kcp-guides {
   text-align: center;
   overflow: auto; }
+  @media (max-width: 767px) {
+    .keto-cleanse.kcp-home .kcp-guides {
+      padding: 0 20px; } }
+  .keto-cleanse.kcp-home .kcp-guides__intro {
+    max-width: 700px; }
+  .keto-cleanse.kcp-home .kcp-guides__recipes {
+    max-width: 1300px;
+    margin: 40px auto 10px;
+    font-size: 0;
+    padding: 0 1%; }
+  .keto-cleanse.kcp-home .kcp-guides__box {
+    display: inline-block;
+    width: 31%;
+    margin: 0 1% 30px;
+    vertical-align: top; }
+    @media (max-width: 1199px) {
+      .keto-cleanse.kcp-home .kcp-guides__box {
+        width: 48%; } }
+    @media (max-width: 767px) {
+      .keto-cleanse.kcp-home .kcp-guides__box {
+        width: 100%;
+        margin: 0 0 30px; } }
+  .keto-cleanse.kcp-home .kcp-guides__image {
+    height: 214px;
+    background-size: cover;
+    background-position: center; }
+    .keto-cleanse.kcp-home .kcp-guides__image.guide-1 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/PG519949-C286EFD4-1E44-47FB-89F0-8C8D0886BDC7_grande.jpg?v=1504020472"); }
+    .keto-cleanse.kcp-home .kcp-guides__image.guide-2 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC06462_1024x1024.jpg?v=1535359640"); }
+    .keto-cleanse.kcp-home .kcp-guides__image.guide-3 {
+      background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC06531_1024x1024.jpg?v=1534885730"); }
+  .keto-cleanse.kcp-home .kcp-guides__details {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 15px 0 0;
+    text-transform: capitalize; }
+
+.keto-cleanse.kcp-home .kcp-recipes {
+  text-align: center;
+  overflow: auto;
+  background: #F8F3F0; }
   @media (max-width: 767px) {
     .keto-cleanse.kcp-home .kcp-recipes {
       padding: 0 20px; } }
@@ -8100,9 +8143,13 @@ input:checked + .accordion-horizontal__inner-box {
     margin: 15px 0 0;
     text-transform: capitalize; }
 
+.keto-cleanse.kcp-home .kcp-videos {
+  background: none; }
+
 .keto-cleanse.kcp-home .kcp-readings {
   text-align: center;
-  overflow: auto; }
+  overflow: auto;
+  background: #F8F3F0; }
   @media (max-width: 767px) {
     .keto-cleanse.kcp-home .kcp-readings {
       padding: 0 20px; } }
