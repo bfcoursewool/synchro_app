@@ -3,6 +3,16 @@
     @include cta-custom($color-kcp, $color-ivory);
   }
 
+  .icon-learn-more {
+    &__circle {
+      stroke: #5d9ca2;
+    }
+
+    &__plus {
+      fill: #5d9ca2;
+    }
+  }
+
   .atf-kcp {
     position: relative;
     text-align: center;
@@ -89,9 +99,9 @@
   }
 
   .benefits {
-    padding: $gutter-small;
+    padding-bottom: $gutter-small;
     text-align: center;
-    @include m-screen {
+    @include sm-screen {
       padding: 0;
     }
     @include s-screen {
@@ -99,9 +109,7 @@
     }
 
     .p--title {
-      display: none;
       @include s-screen {
-        display: block;
         margin-top: $gutter-medium;
       }
     }
@@ -117,12 +125,18 @@
     &__icon {
       display: inline-block;
       width: 130px;
-      margin: 40px;
+      margin: 0 40px 40px;
+      @include m-screen {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
       @include sm-screen {
-        margin: 40px 20px;
+        margin-left: 20px;
+        margin-right: 20px;
       }
       @include s-screen {
-        margin: 0 10px 40px;
+        margin-left: 10px;
+        margin-right: 10px;
       }
       @include xs-screen {
         margin: 0 20px 40px;
@@ -193,7 +207,7 @@
     }
 
     &__text {
-      max-width: 600px;
+      max-width: 650px;
       font-size: 36px;
       margin: 40px auto;
       @include s-screen {
@@ -206,7 +220,7 @@
       display: block;
       margin: 50px auto;
       width: 100%;
-      max-width: 1050px;
+      max-width: 650px;
       @include s-screen {
         margin: 40px auto;
       }
@@ -309,7 +323,9 @@
 
     &__icon {
       transition: 0.5s ease-in-out all;
-      margin: -20px;
+      @include s-screen {
+        margin: -20px;
+      }
 
       &.active {
         margin: 0;
@@ -446,12 +462,12 @@
       color: $color-ivory;
       max-width: 850px;
       font-size: 22px;
-      max-height: 130px;
+      max-height: 100px;
       overflow: hidden;
       transition: 0.5s ease-in-out all;
 
       &.active {
-        max-height: 1100px;
+        max-height: 550px;
       }
     }
 
@@ -486,6 +502,9 @@
 
       &__header {
         margin-bottom: 30px;
+        padding-bottom: 30px;
+        letter-spacing: 0.05em;
+        border-bottom: 1px solid $color-silver;
       }
 
       &__item {
@@ -506,6 +525,17 @@
 
       &__icon {
         height: 50px;
+      }
+
+      &__value {
+        margin-top: 30px;
+        padding-top: 30px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-weight: $font-demi;
+        font-size: 18px;
+        color: $color-kcp;
+        border-top: 1px solid $color-silver;
       }
     }
   }
