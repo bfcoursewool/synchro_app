@@ -29,7 +29,7 @@ export default class LPEffects extends EventsBase {
       'click .vjs-big-play-button': 'hideBenefitsText',
       'click .product-card__ingredients': 'toggleInfoText',  // On Keto-Bundle page  TODO -- Refactor front-end build by page somehow...
       'click .product-card__nutrition': 'toggleInfoText', // Same ^^
-      'click .kcp-timeline__event': 'toggleTimelineText',
+      'click .kcp-timeline__event-box': 'toggleTimelineText',
       'click .how-it-works__icon': 'toggleHowItWorks',
       'click .weight-loss__icon': 'toggleWeightLoss',
     }
@@ -57,9 +57,11 @@ export default class LPEffects extends EventsBase {
     if($(target).is('.active')) {
       $(target).removeClass('active');
       $(target).siblings('div').removeClass('active');
+      $(target).find('.kcp-timeline__event').removeClass('active');
     } else {
       $(target).addClass('active');
       $(target).siblings('div').addClass('active');
+      $(target).find('.kcp-timeline__event').addClass('active');
     }
   }
 
