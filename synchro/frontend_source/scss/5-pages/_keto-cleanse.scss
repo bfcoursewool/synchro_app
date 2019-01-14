@@ -462,13 +462,22 @@
       color: $color-ivory;
       max-width: 850px;
       font-size: 22px;
-      max-height: 100px;
-      overflow: hidden;
-      transition: 0.5s ease-in-out all;
+      @include s-screen {
+        max-height: 65px;
+        overflow: hidden;
+        transition: 0.5s ease-in-out all;
 
-      &.active {
-        max-height: 550px;
+        &.active {
+          max-height: 700px;
+        }
       }
+    }
+
+    &__icon {
+      display: none;
+      @include s-screen {
+        display: initial;
+      };
     }
 
     .icon-learn-more {

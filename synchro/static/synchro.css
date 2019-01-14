@@ -7796,12 +7796,19 @@ input:checked + .accordion-horizontal__inner-box {
   .keto-cleanse .weight-loss__text {
     color: #ffffff;
     max-width: 850px;
-    font-size: 22px;
-    max-height: 100px;
-    overflow: hidden;
-    transition: 0.5s ease-in-out all; }
-    .keto-cleanse .weight-loss__text.active {
-      max-height: 550px; }
+    font-size: 22px; }
+    @media (max-width: 767px) {
+      .keto-cleanse .weight-loss__text {
+        max-height: 65px;
+        overflow: hidden;
+        transition: 0.5s ease-in-out all; }
+        .keto-cleanse .weight-loss__text.active {
+          max-height: 700px; } }
+  .keto-cleanse .weight-loss__icon {
+    display: none; }
+    @media (max-width: 767px) {
+      .keto-cleanse .weight-loss__icon {
+        display: initial; } }
   .keto-cleanse .weight-loss .icon-learn-more__circle {
     stroke: #ffffff; }
   .keto-cleanse .weight-loss .icon-learn-more__plus {
