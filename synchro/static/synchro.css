@@ -6619,7 +6619,6 @@ input:checked + .accordion-horizontal__inner-box {
       max-width: none; } }
   @media (max-width: 680px) {
     .genesis-lp .atf__header {
-      padding-top: 50px;
       max-width: 370px; } }
 
 .genesis-lp .ingredients__genesis {
@@ -6678,7 +6677,8 @@ input:checked + .accordion-horizontal__inner-box {
     .genesis-lp .facts__genesis {
       padding: 20px; } }
   .genesis-lp .facts__genesis img {
-    max-height: 685px; }
+    max-height: 685px;
+    max-width: 100%; }
 
 .genesis-lp .directions__genesis {
   padding: 60px 60px 0; }
