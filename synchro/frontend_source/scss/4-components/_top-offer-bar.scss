@@ -7,6 +7,8 @@
   background: $color-ebony;
   z-index: $header-z-index;
   padding: 5px;
+  max-width: 2000px;
+  margin: 0 auto;
 
   &.pseudo {
     position: relative;

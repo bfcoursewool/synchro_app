@@ -5841,7 +5841,9 @@ p {
   text-align: center;
   background: #000000;
   z-index: 100;
-  padding: 5px; }
+  padding: 5px;
+  max-width: 2000px;
+  margin: 0 auto; }
   .top-offer-bar.pseudo {
     position: relative;
     visibility: hidden; }
@@ -7386,6 +7388,9 @@ input:checked + .accordion-horizontal__inner-box {
   text-align: center;
   margin: 10px 0 20px; }
 
+.keto-cleanse .top-offer-bar {
+  background: #C69B82; }
+
 .keto-cleanse .a--cta {
   background: #427074;
   color: #ffffff; }
@@ -7571,6 +7576,29 @@ input:checked + .accordion-horizontal__inner-box {
       @media (max-width: 767px) {
         .keto-cleanse .kcp-intro__img::after {
           display: none; } }
+  .keto-cleanse .kcp-intro__plus {
+    border: 2px solid #c69b82;
+    color: #c69b82;
+    padding: 1px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 20px;
+    letter-spacing: 0.05em; }
+  .keto-cleanse .kcp-intro__ebooks {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #777777; }
+    .keto-cleanse .kcp-intro__ebooks span {
+      display: inline-block; }
+    .keto-cleanse .kcp-intro__ebooks i {
+      font-size: 12px;
+      color: #5d9ca2;
+      margin: 0 5px 0 10px; }
   .keto-cleanse .kcp-intro__text {
     max-width: 650px;
     font-size: 36px;
@@ -7857,7 +7885,7 @@ input:checked + .accordion-horizontal__inner-box {
   overflow: auto;
   background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-purchase-desktop.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center right;
   background-repeat: no-repeat; }
   @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
     .keto-cleanse .purchase {
@@ -7868,7 +7896,7 @@ input:checked + .accordion-horizontal__inner-box {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      padding: 0 20px 20px; } }
+      padding: 0 20px 40px; } }
   @media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
     .keto-cleanse .purchase {
       background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-purchase-mobile@2x.jpg"); } }
@@ -7893,16 +7921,44 @@ input:checked + .accordion-horizontal__inner-box {
     max-width: 500px;
     margin: 0 auto;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px 10px 30px;
     margin-top: 40px; }
-  .keto-cleanse .purchase__items {
-    font-weight: 600;
+    .keto-cleanse .purchase__box img {
+      width: 100%; }
+  .keto-cleanse .purchase__plus {
+    border: 2px solid #c69b82;
+    color: #c69b82;
+    padding: 1px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 16px;
-    letter-spacing: 0.8px; }
+    display: inline-block;
+    margin: 10px 20px 20px;
+    letter-spacing: 0.05em; }
+  .keto-cleanse .purchase__ebooks {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    max-width: 350px; }
+    @media (max-width: 767px) {
+      .keto-cleanse .purchase__ebooks {
+        margin: 0 20px;
+        max-width: none; } }
+    .keto-cleanse .purchase__ebooks span {
+      display: inline-block;
+      margin: 0 5px; }
+    .keto-cleanse .purchase__ebooks i {
+      font-size: 12px;
+      color: #5d9ca2;
+      margin-right: 5px; }
   .keto-cleanse .purchase__pricing {
+    background: #F8F3F0;
     width: 200px;
-    margin: 25px auto 10px; }
+    margin: 20px auto;
+    overflow: auto; }
   .keto-cleanse .purchase__offer {
     background: #C69B82;
     color: #ffffff;
@@ -7913,15 +7969,23 @@ input:checked + .accordion-horizontal__inner-box {
     letter-spacing: 1px;
     margin: 0; }
   .keto-cleanse .purchase__price {
-    background: #F8F3F0;
-    line-height: 90px;
     font-size: 54px;
     font-weight: 500;
     letter-spacing: 2.5px;
     margin: 0; }
   .keto-cleanse .purchase__original {
     text-transform: uppercase;
-    text-decoration: line-through; }
+    text-decoration: line-through;
+    margin-bottom: 10px;
+    font-size: 14px;
+    letter-spacing: 1px; }
+  .keto-cleanse .purchase__shipping {
+    text-transform: uppercase;
+    color: #d26565;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 20px 0;
+    letter-spacing: 0.05em; }
   .keto-cleanse .purchase .a--cta {
     width: 90%; }
 
@@ -8343,7 +8407,7 @@ input:checked + .accordion-horizontal__inner-box {
     .keto-cleanse.kcp-weekly .kcp-timeline__event-box::before {
       content: "";
       position: absolute;
-      background-image: url(https://storage.googleapis.com/synchro-assets/keto-cleanse/v1-0/timeline-8.png);
+      background-image: url("https://storage.googleapis.com/synchro-assets/keto-cleanse/v1-0/timeline-8.png");
       height: 40px;
       width: 40px;
       left: -55px;

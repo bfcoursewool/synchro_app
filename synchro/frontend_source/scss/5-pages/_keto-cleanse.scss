@@ -1,4 +1,8 @@
 .keto-cleanse {
+  .top-offer-bar {
+    background: #C69B82;
+  }
+
   .a--cta {
     @include cta-custom($color-kcp, $color-ivory);
   }
@@ -203,6 +207,37 @@
         @include s-screen {
           display: none;
         }
+      }
+    }
+
+    &__plus {
+      border: 2px solid #c69b82;
+      color: #c69b82;
+      padding: 1px 5px;
+      border-radius: 5px;
+      font-size: 12px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      display: inline-block;
+      margin: 20px;
+      letter-spacing: 0.05em;
+    }
+
+    &__ebooks {
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: $font-medium;
+      letter-spacing: 0.05em;
+      color: #777777;
+
+      span {
+        display: inline-block;
+      }
+
+      i {
+        font-size: 12px;
+        color: #5d9ca2;
+        margin: 0 5px 0 10px;
       }
     }
 
@@ -553,10 +588,10 @@
     text-align: center;
     padding: 0 0 $gutter-large;
     overflow: auto;
-    @include background-retina (keto-cleanse/v1-0/kcp-purchase-desktop, jpg, cover, center, no-repeat);
+    @include background-retina (keto-cleanse/v1-0/kcp-purchase-desktop, jpg, cover, center right, no-repeat);
     @include s-screen {
       @include background-retina (keto-cleanse/v1-0/kcp-purchase-mobile, jpg, cover, center, no-repeat);
-      padding: 0 $gutter-small $gutter-small;
+      padding: 0 $gutter-small $gutter-medium;
     }
 
     .p--title {
@@ -584,20 +619,56 @@
       max-width: 500px;
       margin: 0 auto;
       border-radius: 10px;
-      padding: 30px;
+      padding: 20px 10px 30px;
       margin-top: 40px;
+
+      img {
+        width: 100%;
+      }
     }
 
-    &__items {
-      font-weight: $font-demi;
+    &__plus {
+      border: 2px solid #c69b82;
+      color: #c69b82;
+      padding: 1px 5px;
+      border-radius: 5px;
+      font-size: 12px;
+      font-weight: $font-bold;
       text-transform: uppercase;
-      font-size: 16px;
-      letter-spacing: 0.8px;
+      display: inline-block;
+      margin: 10px 20px 20px;
+      letter-spacing: 0.05em;
+    }
+
+    &__ebooks {
+      margin: 0 auto;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: $font-medium;
+      letter-spacing: 0.05em;
+      max-width: 350px;
+      @include s-screen {
+        margin: 0 20px;
+        max-width: none;
+      }
+
+      span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      i {
+        font-size: 12px;
+        color: #5d9ca2;
+        margin-right: 5px;
+      }
     }
 
     &__pricing {
+      background: #F8F3F0;
       width: 200px;
-      margin: 25px auto 10px;
+      margin: 20px auto;
+      overflow: auto;
     }
 
     &__offer {
@@ -612,8 +683,6 @@
     }
 
     &__price {
-      background: #F8F3F0;
-      line-height: 90px;
       font-size: 54px;
       font-weight: $font-medium;
       letter-spacing: 2.5px;
@@ -623,6 +692,18 @@
     &__original {
       text-transform: uppercase;
       text-decoration: line-through;
+      margin-bottom: 10px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    &__shipping {
+      text-transform: uppercase;
+      color: #d26565;
+      font-weight: $font-demi;
+      font-size: 14px;
+      margin: 20px 0;
+      letter-spacing: 0.05em;
     }
 
     .a--cta {
@@ -1186,7 +1267,7 @@
         &::before {
           content: "";
           position: absolute;
-          background-image: url(https://storage.googleapis.com/synchro-assets/keto-cleanse/v1-0/timeline-8.png);
+          background-image: url("https://storage.googleapis.com/synchro-assets/keto-cleanse/v1-0/timeline-8.png");
           height: 40px;
           width: 40px;
           left: -55px;
