@@ -11,13 +11,13 @@ import Toggle from './ES6/toggle';
 import Tabs from './ES6/tabs';
 import Slider from './ES6/slider';
 import { loadHeroImg } from './ES6/hero_image';
-import susanEffects from './ES6/susan/effects';
+// import susanEffects from './ES6/susan/effects'; "Disabling this for now so we can see if anything stops working... should be redudant."
 
 console.log(`release_tag: ${process.env.RELEASE_TAG}`)
 
 const lpEffectsObj = new LPEffects();
-const fbPixelObj = new FaceBookPixel(); 
-const gradientObj = new GradientEffect(); 
+const fbPixelObj = new FaceBookPixel();
+const gradientObj = new GradientEffect();
 const svgObj = new SVGLoader();
 const toggle = new Toggle();
 const tabs = new Tabs();

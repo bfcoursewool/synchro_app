@@ -42,7 +42,6 @@
         max-width: none;
       }
       @include xs-screen {
-        padding-top: 50px;
         max-width: 370px;
       }
     }
@@ -120,6 +119,7 @@
 
       img {
         max-height: 685px;
+        max-width: 100%;
       }
     }
   }
