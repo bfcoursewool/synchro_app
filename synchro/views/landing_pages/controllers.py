@@ -9,6 +9,7 @@ from flask import (
 )
 from flask_cdn import url_for
 from synchro import const
+import random
 
 landing_pages = Blueprint('landing_pages', __name__)
 
@@ -214,6 +215,21 @@ def landing_page(page, version, prod_category):
   if 'template_vars' in endpoint_info_dict[page][version]:
     template_vars = endpoint_info_dict[page][version]['template_vars']
     template_vars['is_variant'] = noindex
+
+  ## This is just some random stuff to make our keto-cleanse-program page appear to be tracking
+  ## users and assigning them a "participant_id". We just cookie them and make sure to tack the saved
+  ## participant_id onto the URL they accessed... easy. 
+  if 'keto-cleanse-program' in version:
+    url_participant_id = request.args.get('participant_id')
+    if not url_participant_id:
+      fake_participant_id = request.cookies.get('participant_id')
+      if fake_participant_id:
+        return redirect('%s?participant_id=%s' % (request.url, fake_participant_id), code=302)
+      else:
+        fake_participant_id = random.randint(1, 500000)
+        resp = make_response(redirect('%s?participant_id=%s' % (request.url, fake_participant_id), code=302))
+        resp.set_cookie('participant_id', str(fake_participant_id))
+        return resp
 
   return render_template(
     endpoint_info_dict[page][version]['template'],
