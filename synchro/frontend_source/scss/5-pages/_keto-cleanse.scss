@@ -103,13 +103,9 @@
   }
 
   .benefits {
-    padding-bottom: $gutter-small;
     text-align: center;
     @include sm-screen {
       padding: 0;
-    }
-    @include s-screen {
-      border-bottom: 1px solid $color-silver;
     }
 
     .p--title {
@@ -163,9 +159,9 @@
 
   .kcp-intro {
     text-align: center;
-    padding: 0 $gutter-large;
+    padding: 0 $gutter-large $gutter-large;
     @include s-screen {
-      padding: 0 $gutter-small;
+      padding: 0 $gutter-small $gutter-medium;
     }
 
     &__img {
@@ -253,11 +249,11 @@
 
     &__video {
       display: block;
-      margin: 50px auto;
+      margin: 0 auto 80px;
       width: 100%;
       max-width: 650px;
       @include s-screen {
-        margin: 40px auto;
+        margin-bottom: 40px;
       }
     }
   }
@@ -1184,6 +1180,13 @@
           margin: 10px 0 0;
         }
       }
+
+      &__video {
+        margin: $gutter-small auto 50px;
+        @include s-screen {
+          margin-bottom: $gutter-medium;
+        }
+      }
     }
 
     .kcp-timeline {
@@ -1288,8 +1291,9 @@
           width: 40px;
           right: 0;
           top: 0;
+          margin-top: -10px;
           transition: 0.2s ease-in-out all;
-          background-size: 14px;
+          background-size: 26px;
           background-repeat: no-repeat;
           background-position: center;
         }
@@ -1297,6 +1301,7 @@
         &.active {
           &::after {
             transform: rotate(45deg);
+            margin-top: 0;
           }
         }
       }
@@ -1330,13 +1335,17 @@
           right: 0;
           top: 0;
           transition: 0.2s ease-in-out all;
-          background-size: 14px;
+          background-size: contain;
           background-color: $color-kcp;
+          background-image: url("https://storage.googleapis.com/synchro-assets/keto-cleanse/v1-0/timeline-toggle-why@2x.png");
+          background-position: center;
+          background-repeat: no-repeat;
         }
         // icon toggle
         &.active {
           &::after {
             background-color: #b2b2b2;
+            background-position-x: 50px;
           }
         }
       }

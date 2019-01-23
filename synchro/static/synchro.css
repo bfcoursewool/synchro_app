@@ -7492,14 +7492,10 @@ input:checked + .accordion-horizontal__inner-box {
         margin: 10px; } }
 
 .keto-cleanse .benefits {
-  padding-bottom: 20px;
   text-align: center; }
   @media (max-width: 854px) {
     .keto-cleanse .benefits {
       padding: 0; } }
-  @media (max-width: 767px) {
-    .keto-cleanse .benefits {
-      border-bottom: 1px solid #E6E6E5; } }
   @media (max-width: 767px) {
     .keto-cleanse .benefits .p--title {
       margin-top: 40px; } }
@@ -7538,10 +7534,10 @@ input:checked + .accordion-horizontal__inner-box {
 
 .keto-cleanse .kcp-intro {
   text-align: center;
-  padding: 0 60px; }
+  padding: 0 60px 60px; }
   @media (max-width: 767px) {
     .keto-cleanse .kcp-intro {
-      padding: 0 20px; } }
+      padding: 0 20px 40px; } }
   .keto-cleanse .kcp-intro__img {
     max-width: 620px;
     position: relative;
@@ -7609,12 +7605,12 @@ input:checked + .accordion-horizontal__inner-box {
         margin: 20px; } }
   .keto-cleanse .kcp-intro__video {
     display: block;
-    margin: 50px auto;
+    margin: 0 auto 80px;
     width: 100%;
     max-width: 650px; }
     @media (max-width: 767px) {
       .keto-cleanse .kcp-intro__video {
-        margin: 40px auto; } }
+        margin-bottom: 40px; } }
 
 .keto-cleanse .how-it-works {
   text-align: center;
@@ -8345,6 +8341,11 @@ input:checked + .accordion-horizontal__inner-box {
     @media (max-width: 680px) {
       .keto-cleanse.kcp-weekly .kcp-goals__goal {
         margin: 10px 0 0; } }
+  .keto-cleanse.kcp-weekly .kcp-goals__video {
+    margin: 20px auto 50px; }
+    @media (max-width: 767px) {
+      .keto-cleanse.kcp-weekly .kcp-goals__video {
+        margin-bottom: 40px; } }
 
 .keto-cleanse.kcp-weekly .kcp-timeline {
   max-width: 1200px;
@@ -8428,12 +8429,14 @@ input:checked + .accordion-horizontal__inner-box {
       width: 40px;
       right: 0;
       top: 0;
+      margin-top: -10px;
       transition: 0.2s ease-in-out all;
-      background-size: 14px;
+      background-size: 26px;
       background-repeat: no-repeat;
       background-position: center; }
     .keto-cleanse.kcp-weekly .kcp-timeline__event-box.active::after {
-      transform: rotate(45deg); }
+      transform: rotate(45deg);
+      margin-top: 0; }
   .keto-cleanse.kcp-weekly .kcp-timeline__event {
     font-weight: 600;
     font-size: 22px;
@@ -8460,10 +8463,14 @@ input:checked + .accordion-horizontal__inner-box {
       right: 0;
       top: 0;
       transition: 0.2s ease-in-out all;
-      background-size: 14px;
-      background-color: #427074; }
+      background-size: contain;
+      background-color: #427074;
+      background-image: url("https://storage.googleapis.com/synchro-assets/keto-cleanse/v1-0/timeline-toggle-why@2x.png");
+      background-position: center;
+      background-repeat: no-repeat; }
     .keto-cleanse.kcp-weekly .kcp-timeline__event.active::after {
-      background-color: #b2b2b2; }
+      background-color: #b2b2b2;
+      background-position-x: 50px; }
   .keto-cleanse.kcp-weekly .kcp-timeline__time {
     display: block;
     letter-spacing: 1px;
