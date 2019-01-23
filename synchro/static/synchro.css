@@ -7611,6 +7611,17 @@ input:checked + .accordion-horizontal__inner-box {
     @media (max-width: 767px) {
       .keto-cleanse .kcp-intro__video {
         margin-bottom: 40px; } }
+    .keto-cleanse .kcp-intro__video .iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0; }
+    .keto-cleanse .kcp-intro__video .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
 
 .keto-cleanse .how-it-works {
   text-align: center;
@@ -8016,6 +8027,17 @@ input:checked + .accordion-horizontal__inner-box {
     margin: 40px auto 10px;
     font-size: 0;
     padding: 0 1%; }
+    .keto-cleanse .kcp-videos__videos .iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0; }
+    .keto-cleanse .kcp-videos__videos .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
   .keto-cleanse .kcp-videos__box {
     display: inline-block;
     width: 31%;
@@ -8489,6 +8511,17 @@ input:checked + .accordion-horizontal__inner-box {
     padding-left: 1.2em; }
   .keto-cleanse.kcp-weekly .kcp-timeline__video {
     width: 100%; }
+    .keto-cleanse.kcp-weekly .kcp-timeline__video .iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0; }
+    .keto-cleanse.kcp-weekly .kcp-timeline__video .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
 
 .keto-cleanse.kcp-weekly.week-1 .atf-kcp {
   background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-week-1-atf-desktop%402x.jpg"); }
@@ -8806,4 +8839,4 @@ svg.external {
     letter-spacing: 1px;
     opacity: 0.5; }
 
-/*# sourceMappingURL=synchro.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
