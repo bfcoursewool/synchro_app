@@ -1,0 +1,67 @@
+@import '../synchro';
+
+.cro013-01 {
+  a.anchor {
+    top: -40px;
+  }
+
+  .top-offer-bar {
+    .a--cta {
+      margin: 3px;
+      color: $color-ebony !important;
+    }
+  }
+
+  .main-header {
+    position: initial;
+  }
+
+  .purchase {
+    &__item {
+      padding: $gutter-medium $gutter-large;
+      @include m-screen {
+        padding: $gutter-medium $gutter-small;
+      }
+    }
+
+    &__item-plan {
+      min-height: 0;
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin: 20px 0 10px;
+    }
+
+    &__item-qty {
+      margin: 10px 0;
+      font-size: 18px;
+      opacity: 0.5;
+    }
+
+    &__item-servings {
+      color: #e85050;
+      font-weight: $font-demi;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
+    &__item-pricing {
+      margin-bottom: 20px;
+    }
+
+    &__item-price {
+      margin: 10px 0;
+    }
+
+    &__item-off {
+      font-weight: $font-demi;
+      margin: 10px 0;
+      font-size: 15px;
+
+      span {
+        font-weight: $font-medium;
+        letter-spacing: 1px;
+        opacity: 0.5;
+      }
+    }
+  }
+}

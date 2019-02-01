@@ -1,5 +1,21 @@
 .ketomanna-lp {
+  a.anchor {
+    top: 50px;
+    @include s-screen {
+      top: 90px;
+    }
+  }
+
+  .top-offer-bar {
+    .a--cta {
+      margin: 3px;
+      color: $color-ebony !important;
+    }
+  }
+
   .main-header {
+    position: initial;
+
     .a--cta {
       display: none;
     }
@@ -286,13 +302,6 @@
 }
 
 .ketomanna-paid-r {
-  a.anchor {
-    top: 40px;
-    @include s-screen {
-      top: 90px;
-    }
-  }
-
   .top-offer-bar {
     &__text {
       font-size: 18px;
@@ -317,16 +326,12 @@
 
   .purchase {
     &__item-servings {
-      margin: 15px 0 10px;
-    }
-
-    &__item-off {
       font-size: 22px;
       font-weight: $font-demi;
       background: #C4A498;
       color: white;
       width: fit-content;
-      margin: 0 auto;
+      margin: 20px auto 10px;
       padding: 2px 15px;
     }
   }

@@ -1,5 +1,21 @@
 .gold-lp {
+  a.anchor {
+    top: 40px;
+    @include s-screen {
+      top: 90px;
+    }
+  }
+
+  .top-offer-bar {
+    .a--cta {
+      margin: 3px;
+      color: $color-ebony !important;
+    }
+  }
+
   .main-header {
+    position: initial;
+
     .a--cta {
       @include cta-custom($color-gold, white);
       display: none;

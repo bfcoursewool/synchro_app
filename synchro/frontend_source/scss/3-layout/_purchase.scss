@@ -12,13 +12,13 @@
     text-align: center;
     max-width: 450px;
     margin: 0 auto;
-    padding: $gutter-large;
+    padding: $gutter-medium $gutter-large;
 
     &:hover {
       transform: scale(1.025);
     }
     @include m-screen {
-      padding: $gutter-medium;
+      padding: $gutter-medium $gutter-small;
     }
     @include s-screen {
       &:nth-child(2) {
@@ -28,11 +28,12 @@
   }
 
   &__item-plan {
-    min-height: 45px;
+    min-height: 0;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
     font-weight: $font-demi;
+    margin: 20px 0 10px;
   }
 
   &__item-img {
@@ -44,30 +45,43 @@
   }
 
   &__item-qty {
-    margin-top: 10px;
+    margin-top: 10px 0;
     font-weight: $font-normal;
     line-height: 1.4;
+    font-size: 18px;
+    opacity: 0.5;
   }
 
   &__item-servings {
-    color: #4e4e4e;
+    color: #e85050;
+    font-weight: $font-demi;
+    font-size: 14px;
+    margin: 10px 0;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
 
   &__item-off {
-    font-weight: bold;
+    font-weight: $font-demi;
+    margin: 10px 0;
+    font-size: 15px;
     text-transform: uppercase;
 
     span {
-      font-weight: normal;
+      font-weight: $font-medium;
+      letter-spacing: 1px;
+      opacity: 0.5;
       text-decoration: line-through;
     }
   }
 
+  &__item-pricing {
+    margin-bottom: 20px;
+  }
+
   &__item-price {
     font-size: 64px;
-    margin-top: 15px;
+    margin: 10px 0;
     color: $color-ebony;
     opacity: 0.9;
     line-height: 72px;

@@ -5679,21 +5679,22 @@ p {
     text-align: center;
     max-width: 450px;
     margin: 0 auto;
-    padding: 60px; }
+    padding: 40px 60px; }
     .purchase__item:hover {
       transform: scale(1.025); }
     @media (max-width: 1199px) {
       .purchase__item {
-        padding: 40px; } }
+        padding: 40px 20px; } }
     @media (max-width: 767px) {
       .purchase__item:nth-child(2) {
         border-bottom: 1px solid #e2e2e2; } }
   .purchase__item-plan {
-    min-height: 45px;
+    min-height: 0;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
-    font-weight: 600; }
+    font-weight: 600;
+    margin: 20px 0 10px; }
   .purchase__item-img {
     transition: transform 0.3s ease-in-out;
     height: 220px;
@@ -5701,22 +5702,33 @@ p {
     background-repeat: no-repeat;
     background-size: contain; }
   .purchase__item-qty {
-    margin-top: 10px;
+    margin-top: 10px 0;
     font-weight: 400;
-    line-height: 1.4; }
+    line-height: 1.4;
+    font-size: 18px;
+    opacity: 0.5; }
   .purchase__item-servings {
-    color: #4e4e4e;
+    color: #e85050;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 10px 0;
     text-transform: uppercase;
     letter-spacing: 1px; }
   .purchase__item-off {
-    font-weight: bold;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 15px;
     text-transform: uppercase; }
     .purchase__item-off span {
-      font-weight: normal;
+      font-weight: 500;
+      letter-spacing: 1px;
+      opacity: 0.5;
       text-decoration: line-through; }
+  .purchase__item-pricing {
+    margin-bottom: 20px; }
   .purchase__item-price {
     font-size: 64px;
-    margin-top: 15px;
+    margin: 10px 0;
     color: #000000;
     opacity: 0.9;
     line-height: 72px; }
@@ -6409,16 +6421,26 @@ input:checked + .accordion-horizontal__inner-box {
     .rating__count:before {
       content: "100+"; }
 
-.gold-lp .main-header .a--cta {
-  background: #eca846;
-  color: white;
-  display: none; }
+.gold-lp a.anchor {
+  top: 40px; }
+  @media (max-width: 767px) {
+    .gold-lp a.anchor {
+      top: 90px; } }
 
-.gold-lp .main-header.floated .a--cta {
-  display: block; }
+.gold-lp .top-offer-bar .a--cta {
+  margin: 3px;
+  color: #000000 !important; }
 
-.gold-lp .main-header__content {
-  height: 47px; }
+.gold-lp .main-header {
+  position: initial; }
+  .gold-lp .main-header .a--cta {
+    background: #eca846;
+    color: white;
+    display: none; }
+  .gold-lp .main-header.floated .a--cta {
+    display: block; }
+  .gold-lp .main-header__content {
+    height: 47px; }
 
 .gold-lp .atf.bg-full-width {
   background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf.jpg");
@@ -6767,15 +6789,25 @@ input:checked + .accordion-horizontal__inner-box {
     right: -15px;
     border-right-color: transparent; }
 
-.ketomanna-lp .main-header .a--cta {
-  display: none; }
+.ketomanna-lp a.anchor {
+  top: 50px; }
+  @media (max-width: 767px) {
+    .ketomanna-lp a.anchor {
+      top: 90px; } }
 
-.ketomanna-lp .main-header.floated .a--cta {
-  display: block;
-  background: #6c5851; }
+.ketomanna-lp .top-offer-bar .a--cta {
+  margin: 3px;
+  color: #000000 !important; }
 
-.ketomanna-lp .main-header__content {
-  height: 47px; }
+.ketomanna-lp .main-header {
+  position: initial; }
+  .ketomanna-lp .main-header .a--cta {
+    display: none; }
+  .ketomanna-lp .main-header.floated .a--cta {
+    display: block;
+    background: #6c5851; }
+  .ketomanna-lp .main-header__content {
+    height: 47px; }
 
 .ketomanna-lp .atf.bg-full-width {
   background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf.jpg");
@@ -7053,12 +7085,6 @@ input:checked + .accordion-horizontal__inner-box {
     right: -15px;
     border-right-color: transparent; }
 
-.ketomanna-paid-r a.anchor {
-  top: 40px; }
-  @media (max-width: 767px) {
-    .ketomanna-paid-r a.anchor {
-      top: 90px; } }
-
 .ketomanna-paid-r .top-offer-bar__text {
   font-size: 18px;
   display: inline; }
@@ -7107,15 +7133,12 @@ input:checked + .accordion-horizontal__inner-box {
   position: initial; }
 
 .ketomanna-paid-r .purchase__item-servings {
-  margin: 15px 0 10px; }
-
-.ketomanna-paid-r .purchase__item-off {
   font-size: 22px;
   font-weight: 600;
   background: #C4A498;
   color: white;
   width: fit-content;
-  margin: 0 auto;
+  margin: 20px auto 10px;
   padding: 2px 15px; }
 
 .keto-bundle-lp .main-header-container .main-header {
@@ -8779,64 +8802,5 @@ svg.external {
   }
 }
 */
-.cro012-01 a.anchor,
-.cro013-01 a.anchor {
-  top: -40px; }
-
-.cro012-01 .top-offer-bar .a--cta,
-.cro013-01 .top-offer-bar .a--cta {
-  margin: 3px;
-  color: #000000 !important; }
-
-.cro012-01 .main-header,
-.cro013-01 .main-header {
-  position: initial; }
-
-.cro012-01 .purchase__item,
-.cro013-01 .purchase__item {
-  padding: 40px 60px; }
-  @media (max-width: 1199px) {
-    .cro012-01 .purchase__item,
-    .cro013-01 .purchase__item {
-      padding: 40px 20px; } }
-
-.cro012-01 .purchase__item-plan,
-.cro013-01 .purchase__item-plan {
-  min-height: 0;
-  font-size: 18px;
-  letter-spacing: 1px;
-  margin: 20px 0 10px; }
-
-.cro012-01 .purchase__item-qty,
-.cro013-01 .purchase__item-qty {
-  margin: 10px 0;
-  font-size: 18px;
-  opacity: 0.5; }
-
-.cro012-01 .purchase__item-servings,
-.cro013-01 .purchase__item-servings {
-  color: #e85050;
-  font-weight: 600;
-  font-size: 14px;
-  margin: 10px 0; }
-
-.cro012-01 .purchase__item-pricing,
-.cro013-01 .purchase__item-pricing {
-  margin-bottom: 20px; }
-
-.cro012-01 .purchase__item-price,
-.cro013-01 .purchase__item-price {
-  margin: 10px 0; }
-
-.cro012-01 .purchase__item-off,
-.cro013-01 .purchase__item-off {
-  font-weight: 600;
-  margin: 10px 0;
-  font-size: 15px; }
-  .cro012-01 .purchase__item-off span,
-  .cro013-01 .purchase__item-off span {
-    font-weight: 500;
-    letter-spacing: 1px;
-    opacity: 0.5; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
