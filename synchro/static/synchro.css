@@ -6422,7 +6422,7 @@ input:checked + .accordion-horizontal__inner-box {
       content: "100+"; }
 
 .gold-lp a.anchor {
-  top: 40px; }
+  top: 50px; }
   @media (max-width: 767px) {
     .gold-lp a.anchor {
       top: 90px; } }

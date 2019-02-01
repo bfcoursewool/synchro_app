@@ -137,17 +137,9 @@ endpoint_info_dict = {
       }
     }
   },
-  'cro012': {
+  'cro014': {
     'v1': {
-      'template': 'landing_pages/experiments/cro012/v1/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
-  'cro013': {
-    'v1': {
-      'template': 'landing_pages/experiments/cro013/v1/0-index.html',
+      'template': 'landing_pages/experiments/cro014/v1/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
