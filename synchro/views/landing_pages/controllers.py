@@ -212,7 +212,7 @@ def landing_page(page, version, prod_category):
   ## This is just some random stuff to make our keto-cleanse-program page appear to be tracking
   ## users and assigning them a "participant_id". We just cookie them and make sure to tack the saved
   ## participant_id onto the URL they accessed... easy. 
-  if 'keto-cleanse-program' in version:
+  if 'keto-cleanse-program-' in version:
     url_participant_id = request.args.get('participant_id')
     if not url_participant_id:
       current_query_string = urlencode(request.args)
