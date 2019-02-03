@@ -8,6 +8,7 @@ from flask import (
   request,
   redirect
 )
+import random
 from flask_cdn import url_for
 from synchro import const
 
