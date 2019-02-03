@@ -215,16 +215,15 @@ def landing_page(page, version, prod_category):
   if 'keto-cleanse-program' in version:
     url_participant_id = request.args.get('participant_id')
     if not url_participant_id:
+      current_query_string = urlencode(request.args)
       fake_participant_id = request.cookies.get('participant_id')
       if fake_participant_id:
-        request.args['participant_id'] = fake_participant_id
-        query_string = urlencode(request.args)
-        return redirect('%s?%s' % (request.url, query_string), code=302)
+        query_string = "participant_id=%s&%s" % (fake_participant_id, current_query_string)
+        return redirect('%s?%s' % (request.base_url, query_string), code=302)
       else:
         fake_participant_id = random.randint(1, 500000)
-        request.args['participant_id'] = fake_participant_id
-        query_string = urlencode(request.args)
-        resp = make_response(redirect('%s?%s' % (request.url, query_string), code=302))
+        query_string = "participant_id=%s&%s" % (fake_participant_id, current_query_string)
+        resp = make_response(redirect('%s?%s' % (request.base_url, query_string), code=302))
         resp.set_cookie('participant_id', str(fake_participant_id))
         return resp
 
