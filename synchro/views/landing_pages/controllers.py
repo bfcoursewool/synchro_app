@@ -17,18 +17,30 @@ landing_pages = Blueprint('landing_pages', __name__)
 endpoint_info_dict = {
   'gold': {
     'v0': {
-      'template': 'landing_pages/gold/v2-0/0-index.html',
+      'template': 'landing_pages/gold-og/v1-0/0-index.html',
       'template_vars': {
         'is_variant': False,
       }
     },
     'v2': {
-      'template': 'landing_pages/gold/v2-0/0-index.html',
+      'template': 'landing_pages/gold-og/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
     'turmeric-supplement': {
+      'template': 'landing_pages/gold-og/v1-0-paid/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    'lemon-ginger': {
+      'template': 'landing_pages/gold/v2-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
+    'lemon-ginger-turmeric-supplement': {
       'template': 'landing_pages/gold/v2-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
@@ -211,7 +223,7 @@ def landing_page(page, version, prod_category):
 
   ## This is just some random stuff to make our keto-cleanse-program page appear to be tracking
   ## users and assigning them a "participant_id". We just cookie them and make sure to tack the saved
-  ## participant_id onto the URL they accessed... easy. 
+  ## participant_id onto the URL they accessed... easy.
   if 'keto-cleanse-program-' in version:
     url_participant_id = request.args.get('participant_id')
     if not url_participant_id:

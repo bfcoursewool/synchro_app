@@ -6599,6 +6599,18 @@ input:checked + .accordion-horizontal__inner-box {
     right: -15px;
     border-right-color: transparent; }
 
+.gold-og .intro {
+  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/synchro-gold-og-effective-turmeric-supplement.jpg"); }
+
+.gold-og .purchase .option-1 {
+  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png"); }
+
+.gold-og .purchase .option-2 {
+  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png"); }
+
+.gold-og .purchase .option-3 {
+  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png"); }
+
 .gold-adwords .technology {
   padding-bottom: 60px; }
 
