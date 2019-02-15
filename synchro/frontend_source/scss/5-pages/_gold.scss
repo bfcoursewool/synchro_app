@@ -149,6 +149,9 @@
 .gold-og {
   .intro {
     background-image: url("https://cdn.besynchro.com/gold/og-v1-0/synchro-gold-og-effective-turmeric-supplement.jpg");
+    @include s-screen {
+      background-image: none;
+    }
   }
 
   .purchase {
