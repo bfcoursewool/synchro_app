@@ -6420,7 +6420,7 @@ input:checked + .accordion-horizontal__inner-box {
     letter-spacing: 1px;
     margin: 0; }
     .rating__count:before {
-      content: "100+"; }
+      content: "200+"; }
 
 .gold-lp a.anchor {
   top: 50px; }
