@@ -223,6 +223,29 @@
 }
 
 .cro016-01 {
+  .top-offer-bar .a--cta {
+    background: $color-ivory;
+  }
+
+  .a--cta {
+    background: $color-genesis;
+  }
+
+  .atf {
+    &.bg-full-width {
+      background-image: url("https://cdn.besynchro.com/experiments/km-product-atf-cro016.jpg");
+      @include sm-screen {
+        background: none;
+      }
+    }
+
+    &__mobile {
+      @include sm-screen {
+        background-image: url("https://cdn.besynchro.com/experiments/km-product-atf-mobile-cro016.jpg");
+      }
+    }
+  }
+
   .synchro-reviews {
     border-top: 0;
   }

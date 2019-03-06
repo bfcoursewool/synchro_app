@@ -8986,6 +8986,22 @@ svg.external {
   .cro015-01 .benefits__icons .p--title {
     margin-bottom: 60px; }
 
+.cro016-01 .top-offer-bar .a--cta {
+  background: #ffffff; }
+
+.cro016-01 .a--cta {
+  background: #5da8a6; }
+
+.cro016-01 .atf.bg-full-width {
+  background-image: url("https://cdn.besynchro.com/experiments/km-product-atf-cro016.jpg"); }
+  @media (max-width: 854px) {
+    .cro016-01 .atf.bg-full-width {
+      background: none; } }
+
+@media (max-width: 854px) {
+  .cro016-01 .atf__mobile {
+    background-image: url("https://cdn.besynchro.com/experiments/km-product-atf-mobile-cro016.jpg"); } }
+
 .cro016-01 .synchro-reviews {
   border-top: 0; }
 
