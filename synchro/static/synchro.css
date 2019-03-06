@@ -5827,7 +5827,7 @@ p {
     width: 30px;
     height: 30px;
     margin-right: auto;
-    line-height: 27px;
+    line-height: 31px;
     font-size: 15px; }
 
 .product-info {
@@ -8046,8 +8046,7 @@ input:checked + .accordion-horizontal__inner-box {
     margin: 0 auto; }
   .keto-cleanse .footer__top {
     background: #404040;
-    color: #ffffff;
-    line-height: 30px; }
+    color: #ffffff; }
   .keto-cleanse .footer .synchro-logo {
     fill: #000000; }
 
