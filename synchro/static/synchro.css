@@ -5245,6 +5245,7 @@ p {
   margin: 60px auto 50px;
   padding: 5px 20px;
   width: fit-content;
+  max-width: 80%;
   border: 2px solid #000000; }
 
 .p--header {
@@ -9036,5 +9037,37 @@ svg.external {
     height: 30px;
     margin: 15px;
     display: inline-block; }
+
+.cro016-01 .social-posts {
+  background: #f4f4f5;
+  overflow: auto;
+  padding: 0 60px 60px;
+  font-size: 0;
+  text-align: center; }
+  @media (max-width: 854px) {
+    .cro016-01 .social-posts {
+      padding: 0 40px 60px; } }
+  @media (max-width: 767px) {
+    .cro016-01 .social-posts {
+      padding: 0 20px 60px; } }
+  .cro016-01 .social-posts__post {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px; }
+    @media (max-width: 1599px) {
+      .cro016-01 .social-posts__post {
+        width: 33.33%; }
+        .cro016-01 .social-posts__post:nth-child(4) {
+          display: none; } }
+    @media (max-width: 1199px) {
+      .cro016-01 .social-posts__post {
+        width: 50%; }
+        .cro016-01 .social-posts__post:nth-child(3) {
+          display: none; } }
+    @media (max-width: 767px) {
+      .cro016-01 .social-posts__post {
+        width: 100%;
+        max-width: 550px; } }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

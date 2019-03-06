@@ -288,4 +288,43 @@
       display: inline-block;
     }
   }
+
+  .social-posts {
+    background: #f4f4f5;
+    overflow: auto;
+    padding: 0 $gutter-large $gutter-large;
+    font-size: 0;
+    text-align: center;
+    @include sm-screen {
+      padding: 0 $gutter-medium $gutter-large;
+    }
+    @include s-screen {
+      padding: 0 $gutter-small $gutter-large;
+    }
+
+    &__post {
+      width: 25%;
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 10px;
+      @include l-screen {
+        width: 33.33%;
+
+        &:nth-child(4) {
+          display: none;
+        }
+      }
+      @include m-screen {
+        width: 50%;
+
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+      @include s-screen {
+        width: 100%;
+        max-width: 550px;
+      }
+    }
+  }
 }
