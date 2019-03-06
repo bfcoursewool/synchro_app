@@ -8987,4 +8987,39 @@ svg.external {
   .cro015-01 .benefits__icons .p--title {
     margin-bottom: 60px; }
 
+.cro016-01 .synchro-reviews {
+  border-top: 0; }
+
+.cro016-01 .purchase {
+  padding-bottom: 0; }
+  .cro016-01 .purchase__methods {
+    margin-top: 60px;
+    background: #f4f4f5;
+    text-align: center;
+    padding: 15px 0; }
+    @media (max-width: 767px) {
+      .cro016-01 .purchase__methods {
+        margin-top: 20px; } }
+    @media (max-width: 680px) {
+      .cro016-01 .purchase__methods {
+        margin-top: 0; } }
+  .cro016-01 .purchase__method-copy {
+    display: inline-block;
+    padding: 5px 13px;
+    margin: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #ffffff; }
+    @media (max-width: 680px) {
+      .cro016-01 .purchase__method-copy {
+        display: block;
+        width: fit-content;
+        margin: 15px auto; } }
+  .cro016-01 .purchase__method-img {
+    height: 30px;
+    margin: 15px;
+    display: inline-block; }
+
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
