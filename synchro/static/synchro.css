@@ -5683,9 +5683,6 @@ p {
     @media (max-width: 1199px) {
       .purchase__item {
         padding: 40px 20px; } }
-    @media (max-width: 767px) {
-      .purchase__item:nth-child(2) {
-        border-bottom: 1px solid #e2e2e2; } }
   .purchase__item-plan {
     min-height: 0;
     text-transform: uppercase;

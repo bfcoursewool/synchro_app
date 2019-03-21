@@ -20,11 +20,6 @@
     @include m-screen {
       padding: $gutter-medium $gutter-small;
     }
-    @include s-screen {
-      &:nth-child(2) {
-        border-bottom: 1px solid #e2e2e2;
-      }
-    }
   }
 
   &__item-plan {
