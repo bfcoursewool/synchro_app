@@ -6419,6 +6419,38 @@ input:checked + .accordion-horizontal__inner-box {
     .rating__count:before {
       content: "200+"; }
 
+.payment {
+  padding-bottom: 0; }
+  .payment__methods {
+    margin-top: 60px;
+    background: #f4f4f5;
+    text-align: center;
+    padding: 15px 0; }
+    @media (max-width: 767px) {
+      .payment__methods {
+        margin-top: 20px; } }
+    @media (max-width: 680px) {
+      .payment__methods {
+        margin-top: 0; } }
+  .payment__method-copy {
+    display: inline-block;
+    padding: 5px 13px;
+    margin: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #ffffff; }
+    @media (max-width: 680px) {
+      .payment__method-copy {
+        display: block;
+        width: fit-content;
+        margin: 15px auto; } }
+  .payment__method-img {
+    height: 30px;
+    margin: 15px;
+    display: inline-block; }
+
 .gold-lp a.anchor {
   top: 50px; }
   @media (max-width: 767px) {

@@ -1,0 +1,38 @@
+.payment {
+  padding-bottom: 0;
+
+  &__methods {
+    margin-top: 60px;
+    background: $color-silver-light;
+    text-align: center;
+    padding: 15px 0;
+    @include s-screen {
+      margin-top: 20px;
+    }
+    @include xs-screen {
+      margin-top: 0;
+    }
+  }
+
+  &__method-copy {
+    display: inline-block;
+    padding: 5px 13px;
+    margin: 15px;
+    text-transform: uppercase;
+    font-weight: $font-medium;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: $color-ivory;
+    @include xs-screen {
+      display: block;
+      width: fit-content;
+      margin: 15px auto;
+    }
+  }
+
+  &__method-img {
+    height: 30px;
+    margin: 15px;
+    display: inline-block;
+  }
+}
