@@ -1,11 +1,8 @@
 // BENEFITS
 
 .benefits {
-  &__icons {
-    padding-bottom: $gutter-large;
-    @include s-screen {
-      padding-bottom: $gutter-small;
-    }
+  .p--title {
+    margin-bottom: 60px;
   }
 
   &__icon {

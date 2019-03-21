@@ -5468,11 +5468,8 @@ p {
     color: #7b858b;
     margin-bottom: 0; }
 
-.benefits__icons {
-  padding-bottom: 60px; }
-  @media (max-width: 767px) {
-    .benefits__icons {
-      padding-bottom: 20px; } }
+.benefits .p--title {
+  margin-bottom: 60px; }
 
 .benefits__icon {
   text-align: center; }
@@ -6443,122 +6440,181 @@ input:checked + .accordion-horizontal__inner-box {
   .gold-lp .main-header__content {
     height: 47px; }
 
-.gold-lp .atf.bg-full-width {
-  background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf.jpg");
-  background-color: #f0f3f4;
-  background-position: center; }
-  @media (max-width: 854px) {
-    .gold-lp .atf.bg-full-width {
-      background: none; }
-      .gold-lp .atf.bg-full-width:after {
-        content: none; } }
-  .gold-lp .atf.bg-full-width:after, .gold-lp .atf.bg-full-width:before {
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 100%;
-    background-size: 100%;
-    left: 0;
-    background-repeat: no-repeat; }
-  .gold-lp .atf.bg-full-width:before {
-    top: 0;
-    background-image: none; }
-    @media (max-width: 767px) {
-      .gold-lp .atf.bg-full-width:before {
-        background-image: none; } }
-  .gold-lp .atf.bg-full-width:after {
-    bottom: -1px;
-    background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-desktop@2x.png");
-    background-position: bottom; }
-    @media (max-width: 767px) {
-      .gold-lp .atf.bg-full-width:after {
-        background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-mobile@2x.png"); } }
-
-.gold-lp .atf__content-box {
-  position: absolute;
-  top: 53%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 400px;
-  text-align: center; }
-  @media (max-width: 854px) {
-    .gold-lp .atf__content-box {
-      position: initial;
-      transform: none;
-      margin: 20px auto 0;
-      max-width: 80%; } }
-
-.gold-lp .atf__header {
-  position: initial;
-  transform: none;
-  font-size: 45px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  background: white;
-  width: 350px;
-  padding: 14px;
-  opacity: 0.8; }
-  @media (max-width: 854px) {
-    .gold-lp .atf__header {
-      background: none;
-      padding: 0;
-      width: initial; } }
-  @media (max-width: 680px) {
-    .gold-lp .atf__header {
-      font-size: 40px; } }
-
-.gold-lp .atf__description {
-  font-size: 26px; }
-  @media (max-width: 854px) {
-    .gold-lp .atf__description {
-      margin: 0 auto 20px;
-      font-size: 22px; } }
-
-.gold-lp .atf .a--cta {
-  margin: 5px; }
-  .gold-lp .atf .a--cta.cta--secondary {
-    background: none;
-    color: #000000; }
-
-.gold-lp .atf__mobile {
-  display: none; }
-  @media (max-width: 854px) {
-    .gold-lp .atf__mobile {
-      display: block;
+.gold-lp .atf {
+  display: table; }
+  .gold-lp .atf__video {
+    position: relative;
+    width: 60%;
+    display: table-cell;
+    background-image: url("https://cdn.besynchro.com/experiments/cro015-atf-video%402x.jpg");
+    background-size: cover;
+    background-position: right; }
+    @media (max-width: 854px) {
+      .gold-lp .atf__video {
+        display: none; } }
+    .gold-lp .atf__video .modal-dialog {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      width: 90%;
+      max-width: 1000px; }
+    .gold-lp .atf__video .modal-body {
+      padding: 5px; }
+    .gold-lp .atf__video .embed-container {
+      position: relative; }
+    .gold-lp .atf__video .close {
+      position: absolute;
+      right: -40px;
+      font-size: 40px;
+      color: rgba(0, 0, 0, 0.5);
+      opacity: 1;
+      font-weight: 100;
+      outline: none;
+      background: white;
+      padding: 1px 10px;
+      z-index: -1;
+      border-radius: 0 10px 10px 0; }
+    .gold-lp .atf__video .iframe-container {
       position: relative;
-      background-image: url("https://cdn.besynchro.com/experiments/gold-og-lg-bg-mobile.jpg");
-      background-size: cover;
-      height: 300px;
-      background-position: center; }
-      .gold-lp .atf__mobile:after, .gold-lp .atf__mobile:before {
-        content: "";
-        position: absolute;
-        height: 20px;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0; }
+    .gold-lp .atf__video .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .gold-lp .atf__video-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: none;
+    border: 0;
+    outline: none;
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-font-smoothing: antialiased; }
+    .gold-lp .atf__video-btn i {
+      display: block;
+      font-size: 60px;
+      padding-bottom: 15px; }
+  .gold-lp .atf__video-mobile {
+    display: none; }
+    @media (max-width: 854px) {
+      .gold-lp .atf__video-mobile {
+        display: block;
+        padding: 0 40px; } }
+    @media (max-width: 767px) {
+      .gold-lp .atf__video-mobile {
+        padding: 0; } }
+    .gold-lp .atf__video-mobile .iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0; }
+    .gold-lp .atf__video-mobile .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .gold-lp .atf__copy {
+    width: 40%;
+    min-width: 480px;
+    display: table-cell;
+    background: #f4f4f5;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .gold-lp .atf__copy {
         width: 100%;
-        background-size: 100%;
-        left: 0;
-        background-repeat: no-repeat; }
-      .gold-lp .atf__mobile:before {
-        top: 0;
-        background-image: none; } }
-    @media (max-width: 854px) and (max-width: 767px) {
-      .gold-lp .atf__mobile:before {
-        background-image: none; } }
-  @media (max-width: 854px) {
-      .gold-lp .atf__mobile:after {
-        bottom: -1px;
-        background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-desktop@2x.png");
-        background-position: bottom; } }
-    @media (max-width: 854px) and (max-width: 767px) {
-      .gold-lp .atf__mobile:after {
-        background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-mobile@2x.png"); } }
+        min-width: initial; } }
+  .gold-lp .atf__header {
+    position: initial;
+    transform: none;
+    font-size: 45px;
+    padding: 14px;
+    letter-spacing: 0;
+    text-transform: none;
+    background: none;
+    width: auto;
+    margin: 30px 40px 0;
+    line-height: initial; }
+    @media (max-width: 854px) {
+      .gold-lp .atf__header {
+        background: none;
+        padding: 0;
+        width: initial; } }
+    @media (max-width: 680px) {
+      .gold-lp .atf__header {
+        font-size: 40px; } }
+  .gold-lp .atf__benefits {
+    margin: 25px 40px; }
+    @media (max-width: 854px) {
+      .gold-lp .atf__benefits {
+        margin: 20px 20px 30px; } }
+  .gold-lp .atf__benefit {
+    margin: 10px 0; }
+    @media (max-width: 854px) {
+      .gold-lp .atf__benefit {
+        float: left;
+        width: 50%;
+        padding: 0 5px; } }
+  .gold-lp .atf__benefit-img {
+    height: 40px;
+    display: inline-block; }
+    @media (max-width: 767px) {
+      .gold-lp .atf__benefit-img {
+        height: 70px;
+        margin: 20px auto 10px;
+        display: block; } }
+  .gold-lp .atf__benefit-point {
+    display: inline-block;
+    font-size: 22px;
+    opacity: 0.65;
+    padding-left: 15px;
+    margin: 0;
+    vertical-align: middle; }
+    @media (max-width: 767px) {
+      .gold-lp .atf__benefit-point {
+        padding: 0;
+        font-size: 20px; } }
+  .gold-lp .atf .a--cta {
+    height: 60px;
+    font-size: 18px;
+    background: #eca846;
+    padding: 16px 35px;
+    margin: 5px; }
+    .gold-lp .atf .a--cta.cta--secondary {
+      background: none;
+      color: #000000; }
+    .gold-lp .atf .a--cta.cta-desktop {
+      margin-bottom: 40px; }
+      @media (max-width: 854px) {
+        .gold-lp .atf .a--cta.cta-desktop {
+          display: none; } }
+    .gold-lp .atf .a--cta.cta-mobile {
+      display: none; }
+      @media (max-width: 854px) {
+        .gold-lp .atf .a--cta.cta-mobile {
+          display: inline-block;
+          margin-top: 40px; } }
+
+.gold-lp .rating__stars #rating__star {
+  height: 28px; }
 
 .gold-lp .rating__count:before {
   content: "1500+"; }
-
-@media (max-width: 767px) {
-  .gold-lp .benefits {
-    border-top: 1px solid #e6e6e5; } }
 
 .gold-lp .purchase .option-1 {
   background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png"); }
@@ -8817,176 +8873,6 @@ svg.external {
   }
 }
 */
-.cro015-01 .atf {
-  display: table; }
-  .cro015-01 .atf__video {
-    position: relative;
-    width: 60%;
-    display: table-cell;
-    background-image: url("https://cdn.besynchro.com/experiments/cro015-atf-video%402x.jpg");
-    background-size: cover;
-    background-position: right; }
-    @media (max-width: 854px) {
-      .cro015-01 .atf__video {
-        display: none; } }
-    .cro015-01 .atf__video .modal-dialog {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0;
-      width: 90%;
-      max-width: 1000px; }
-    .cro015-01 .atf__video .modal-body {
-      padding: 5px; }
-    .cro015-01 .atf__video .embed-container {
-      position: relative; }
-    .cro015-01 .atf__video .close {
-      position: absolute;
-      right: -40px;
-      font-size: 40px;
-      color: rgba(0, 0, 0, 0.5);
-      opacity: 1;
-      font-weight: 100;
-      outline: none;
-      background: white;
-      padding: 1px 10px;
-      z-index: -1;
-      border-radius: 0 10px 10px 0; }
-    .cro015-01 .atf__video .iframe-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0; }
-    .cro015-01 .atf__video .iframe-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-  .cro015-01 .atf__video-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
-    font-weight: 600;
-    font-size: 16px;
-    color: #ffffff;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: none;
-    border: 0;
-    outline: none;
-    -webkit-appearance: button;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-font-smoothing: antialiased; }
-    .cro015-01 .atf__video-btn i {
-      display: block;
-      font-size: 60px;
-      padding-bottom: 15px; }
-  .cro015-01 .atf__video-mobile {
-    display: none; }
-    @media (max-width: 854px) {
-      .cro015-01 .atf__video-mobile {
-        display: block;
-        padding: 0 40px; } }
-    @media (max-width: 767px) {
-      .cro015-01 .atf__video-mobile {
-        padding: 0; } }
-    .cro015-01 .atf__video-mobile .iframe-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0; }
-    .cro015-01 .atf__video-mobile .iframe-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-  .cro015-01 .atf__copy {
-    width: 40%;
-    min-width: 480px;
-    display: table-cell;
-    background: #f4f4f5;
-    text-align: center; }
-    @media (max-width: 767px) {
-      .cro015-01 .atf__copy {
-        width: 100%;
-        min-width: initial; } }
-  .cro015-01 .atf__header {
-    letter-spacing: 0;
-    text-transform: none;
-    background: none;
-    width: auto;
-    margin: 30px 40px 0;
-    opacity: 1;
-    line-height: initial; }
-    @media (max-width: 854px) {
-      .cro015-01 .atf__header {
-        background: none;
-        padding: 0;
-        width: initial; } }
-    @media (max-width: 680px) {
-      .cro015-01 .atf__header {
-        font-size: 40px; } }
-  .cro015-01 .atf .rating__stars #rating__star {
-    height: 28px; }
-  .cro015-01 .atf__benefits {
-    margin: 25px 40px; }
-    @media (max-width: 854px) {
-      .cro015-01 .atf__benefits {
-        margin: 20px 20px 30px; } }
-  .cro015-01 .atf__benefit {
-    margin: 10px 0; }
-    @media (max-width: 854px) {
-      .cro015-01 .atf__benefit {
-        float: left;
-        width: 50%;
-        padding: 0 5px; } }
-  .cro015-01 .atf__benefit-img {
-    height: 40px;
-    display: inline-block; }
-    @media (max-width: 767px) {
-      .cro015-01 .atf__benefit-img {
-        height: 70px;
-        margin: 20px auto 10px;
-        display: block; } }
-  .cro015-01 .atf__benefit-point {
-    display: inline-block;
-    font-size: 22px;
-    opacity: 0.65;
-    padding-left: 15px;
-    margin: 0;
-    vertical-align: middle; }
-    @media (max-width: 767px) {
-      .cro015-01 .atf__benefit-point {
-        padding: 0;
-        font-size: 20px; } }
-  .cro015-01 .atf .a--cta {
-    height: 60px;
-    font-size: 18px;
-    background: #eca846;
-    padding: 16px 35px; }
-    .cro015-01 .atf .a--cta.cta-desktop {
-      margin-bottom: 40px; }
-      @media (max-width: 854px) {
-        .cro015-01 .atf .a--cta.cta-desktop {
-          display: none; } }
-    .cro015-01 .atf .a--cta.cta-mobile {
-      display: none; }
-      @media (max-width: 854px) {
-        .cro015-01 .atf .a--cta.cta-mobile {
-          display: inline-block;
-          margin-top: 40px; } }
-
-.cro015-01 .benefits__icons {
-  padding-bottom: 0; }
-  .cro015-01 .benefits__icons .p--title {
-    margin-bottom: 60px; }
-
 .cro016-01 .top-offer-bar .a--cta {
   background: #ffffff; }
 

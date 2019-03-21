@@ -33,32 +33,128 @@
   }
 
   .atf {
-    &.bg-full-width {
-      background-image: url("https://cdn.besynchro.com/experiments/gold-product-atf.jpg");
-      background-color: #f0f3f4;
-      background-position: center;
-      @include sm-screen {
-        background: none;
+    display: table;
 
-        &:after {
-          content: none;
-        }
+    &__video {
+      position: relative;
+      width: 60%;
+      display: table-cell;
+      background-image: url("https://cdn.besynchro.com/experiments/cro015-atf-video%402x.jpg");
+      background-size: cover;
+      background-position: right;
+      @include sm-screen {
+        display: none;
       }
-      @include image-curve (none, none, $curve-out-bottom-white-desktop, $curve-out-bottom-white-mobile);
+
+      .modal-dialog {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        width: 90%;
+        max-width: 1000px;
+      }
+
+      .modal-body {
+        padding: 5px;
+      }
+
+      .embed-container {
+        position: relative;
+      }
+
+      .close {
+        position: absolute;
+        right: -40px;
+        font-size: 40px;
+        color: rgba(0,0,0,0.5);
+        opacity: 1;
+        font-weight: 100;
+        outline: none;
+        background: white;
+        padding: 1px 10px;
+        z-index: -1;
+        border-radius: 0 10px 10px 0;
+      }
+
+      .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+      }
+
+      .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     }
 
-    &__content-box {
+    &__video-btn {
       position: absolute;
-      top: 53%;
+      top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 400px;
-      text-align: center;
+      cursor: pointer;
+      transform: translate(-50%,-50%);
+      font-weight: $font-demi;
+      font-size: 16px;
+      color: $color-ivory;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: none;
+      border: 0;
+      outline: none;
+      -webkit-appearance: button;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -webkit-font-smoothing: antialiased;
+
+      i {
+        display: block;
+        font-size: 60px;
+        padding-bottom: 15px;
+      }
+    }
+
+    &__video-mobile {
+      display: none;
       @include sm-screen {
-        position: initial;
-        transform: none;
-        margin: 20px auto 0;
-        max-width: 80%;
+        display: block;
+        padding: 0 40px;
+      }
+      @include s-screen {
+        padding: 0;
+      }
+
+      .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+      }
+
+      .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__copy {
+      width: 40%;
+      min-width: 480px;
+      display: table-cell;
+      background: $color-silver-light;
+      text-align: center;
+      @include s-screen {
+        width: 100%;
+        min-width: initial;
       }
     }
 
@@ -66,12 +162,13 @@
       position: initial;
       transform: none;
       font-size: 45px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      background: white;
-      width: 350px;
       padding: 14px;
-      opacity: 0.8;
+      letter-spacing: 0;
+      text-transform: none;
+      background: none;
+      width: auto;
+      margin: 30px 40px 0;
+      line-height: initial;
       @include sm-screen {
         background: none;
         padding: 0;
@@ -82,48 +179,85 @@
       }
     }
 
-    &__description {
-      font-size: 26px;
+    &__benefits {
+      margin: 25px 40px;
       @include sm-screen {
-        margin: 0 auto 20px;
-        font-size: 22px;
+        margin: 20px 20px 30px;
+      }
+    }
+
+    &__benefit {
+      margin: 10px 0;
+      @include sm-screen {
+        float: left;
+        width: 50%;
+        padding: 0 5px;
+      }
+    }
+
+    &__benefit-img {
+      height: 40px;
+      display: inline-block;
+      @include s-screen {
+        height: 70px;
+        margin: 20px auto 10px;
+        display: block;
+      }
+    }
+
+    &__benefit-point {
+      display: inline-block;
+      font-size: 22px;
+      opacity: 0.65;
+      padding-left: 15px;
+      margin: 0;
+      vertical-align: middle;
+      @include s-screen {
+        padding: 0;
+        font-size: 20px;
       }
     }
 
     .a--cta {
+      height: 60px;
+      font-size: 18px;
+      background: $color-gold;
+      padding: 16px 35px;
       margin: 5px;
 
       &.cta--secondary {
         background: none;
         color: $color-ebony;
       }
-    }
 
-    &__mobile {
-      display: none;
-      @include sm-screen {
-        display: block;
-        position: relative;
-        background-image: url("https://cdn.besynchro.com/experiments/gold-og-lg-bg-mobile.jpg");
-        background-size: cover;
-        height: 300px;
-        background-position: center;
-        @include image-curve (none, none, $curve-out-bottom-white-desktop, $curve-out-bottom-white-mobile);
+      &.cta-desktop {
+        margin-bottom: 40px;
+        @include sm-screen {
+          display: none;
+        }
+      }
+
+      &.cta-mobile {
+        display: none;
+        @include sm-screen {
+          display: inline-block;
+          margin-top: 40px;
+        }
       }
     }
   }
 
   .rating {
+    &__stars {
+      #rating__star {
+        height: 28px;
+      }
+    }
+
     &__count {
       &:before {
         content: "1500+";
       }
-    }
-  }
-
-  .benefits {
-    @include s-screen {
-      border-top: 1px solid #e6e6e5;
     }
   }
 
@@ -145,6 +279,8 @@
     }
   }
 }
+
+// STYLES FOR GOLD ORIGINAL ONLY
 
 .gold-og {
   .intro {
