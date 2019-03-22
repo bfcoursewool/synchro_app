@@ -5567,7 +5567,7 @@ p {
     overflow: auto;
     font-size: 0;
     padding: 0 60px; }
-    @media (max-width: 680px) {
+    @media (max-width: 854px) {
       .ingredients__icons {
         padding: 0 20px; } }
   .ingredients__icon-box {
@@ -5576,9 +5576,9 @@ p {
     width: 20%;
     vertical-align: top;
     padding-bottom: 30px; }
-    @media (max-width: 854px) {
+    @media (max-width: 1199px) {
       .ingredients__icon-box {
-        width: 33%; } }
+        width: 25%; } }
     @media (max-width: 680px) {
       .ingredients__icon-box {
         width: 50%; } }
@@ -5619,7 +5619,7 @@ p {
       height: auto; } }
 
 .ingredients__image {
-  max-height: 220px;
+  max-height: 150px;
   max-width: 100%; }
 
 .ingredients__copy .p--header {

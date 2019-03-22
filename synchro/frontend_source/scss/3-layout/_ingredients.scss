@@ -6,7 +6,7 @@
     overflow: auto;
     font-size: 0;
     padding: 0 $gutter-large;
-    @include xs-screen {
+    @include sm-screen {
       padding: 0 $gutter-small;
     }
   }
@@ -17,8 +17,8 @@
     width: 20%;
     vertical-align: top;
     padding-bottom: 30px;
-    @include sm-screen {
-      width: 33%;
+    @include m-screen {
+      width: 25%;
     }
     @include xs-screen {
       width: 50%;
@@ -70,7 +70,7 @@
   }
 
   &__image {
-    max-height: 220px;
+    max-height: 150px;
     max-width: 100%;
   }
 
