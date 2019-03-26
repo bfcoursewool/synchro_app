@@ -29,7 +29,7 @@
     }
 
     &__content {
-      height: 47px;
+      height: 40px;
     }
   }
 
@@ -96,7 +96,7 @@
 
     &__video-btn {
       position: absolute;
-      top: 50%;
+      top: 53%;
       left: 50%;
       cursor: pointer;
       transform: translate(-50%,-50%);
@@ -114,10 +114,46 @@
       -ms-user-select: none;
       -webkit-font-smoothing: antialiased;
 
-      i {
+      &::before {
+        content: "";
         display: block;
-        font-size: 60px;
-        padding-bottom: 15px;
+        position: relative;
+        left: 50%;
+        transform: translate(-26px, -15px);
+        border-top: 32px solid transparent;
+        border-left: 52px solid white;
+        border-bottom: 32px solid transparent;
+      }
+    }
+
+    &__video-bar {
+      position: absolute;
+      left: 55px;
+      right: 30px;
+      bottom: 28px;
+      background: rgba(255,255,255,0.5);
+      height: 2px;
+
+      &::before {
+        content: "";
+        display: block;
+        position: relative;
+        left: -25px;
+        top: -7px;
+        border-top: 8px solid transparent;
+        border-left: 12px solid white;
+        border-bottom: 8px solid transparent;
+      }
+
+      &::after {
+        content: "";
+        height: 18px;
+        width: 18px;
+        background: white;
+        top: -23px;
+        position: relative;
+        display: block;
+        border-radius: 9px;
       }
     }
 
@@ -125,10 +161,6 @@
       display: none;
       @include sm-screen {
         display: block;
-        padding: 0 40px;
-      }
-      @include s-screen {
-        padding: 0;
       }
 
       .iframe-container {
@@ -151,7 +183,7 @@
       width: 40%;
       min-width: 480px;
       display: table-cell;
-      background: $color-silver-light;
+      background: $color-gold;
       text-align: center;
       @include s-screen {
         width: 100%;
@@ -162,28 +194,23 @@
     &__header {
       position: initial;
       transform: none;
-      font-size: 45px;
-      padding: 14px;
-      letter-spacing: 0;
-      text-transform: none;
-      background: none;
+      font-size: 50px;
+      letter-spacing: 2px;
+      color: $color-ivory;
       width: auto;
-      margin: 30px 40px 0;
+      margin: 30px $gutter-medium 20px;
       line-height: initial;
-      @include sm-screen {
-        background: none;
-        padding: 0;
-        width: initial;
-      }
-      @include xs-screen {
-        font-size: 40px;
+      font-weight: 600;
+      @include s-screen {
+        margin: 30px $gutter-small 15px;
+        font-size: 35px;
       }
     }
 
     &__benefits {
-      margin: 25px 40px;
+      margin: 10px 40px 0;
       @include sm-screen {
-        margin: 20px 20px 30px;
+        display: none;
       }
     }
 
@@ -206,13 +233,17 @@
       }
     }
 
+    &__benefit-check {
+      color: #8C5300;
+    }
+
     &__benefit-point {
       display: inline-block;
       font-size: 22px;
-      opacity: 0.65;
-      padding-left: 15px;
+      color: $color-ivory;
+      padding-left: 10px;
       margin: 0;
-      vertical-align: middle;
+      line-height: 1.2;
       @include s-screen {
         padding: 0;
         font-size: 20px;
@@ -220,44 +251,47 @@
     }
 
     .a--cta {
-      height: 60px;
       font-size: 18px;
-      background: $color-gold;
       padding: 16px 35px;
-      margin: 5px;
+      margin: 20px 0 40px;
+      @include sm-screen {
+        margin-bottom: 20px;
+      }
 
       &.cta--secondary {
         background: none;
         color: $color-ebony;
       }
-
-      &.cta-desktop {
-        margin-bottom: 40px;
-        @include sm-screen {
-          display: none;
-        }
-      }
-
-      &.cta-mobile {
-        display: none;
-        @include sm-screen {
-          display: inline-block;
-          margin-top: 40px;
-        }
-      }
     }
   }
 
   .rating {
+    margin: 0;
+
     &__stars {
       #rating__star {
-        height: 28px;
+        height: 32px;
       }
     }
 
+    &__icon {
+      fill: #8C5300;
+    }
+
     &__count {
+      font-weight: $font-demi;
+      color: $color-ivory;
+      text-align: center;
+      font-style: italic;
+      opacity: 1;
+      margin: 5px 0 20px;
+
       &:before {
-        content: "1500+";
+        content: "Over 1500";
+      }
+
+      &:after {
+        content: "...";
       }
     }
   }
