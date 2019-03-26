@@ -5531,24 +5531,61 @@ p {
       text-align: center; } }
 
 .intro {
-  background: #f3f5f7;
-  background-image: url("https://cdn.besynchro.com/gold/v2-0/synchro-gold-effective-turmeric-supplement.jpg");
-  background-size: 1400px;
-  background-position: center center;
-  background-repeat: no-repeat; }
-  @media (max-width: 767px) {
-    .intro {
-      background-image: none; } }
-  .intro__image {
-    width: 100%; }
+  display: table; }
+  .intro__image-mobile {
+    display: none; }
+    @media (max-width: 767px) {
+      .intro__image-mobile {
+        display: block; } }
+    .intro__image-mobile img {
+      width: 100%; }
   .intro__copy {
-    text-align: center; }
+    display: table-cell;
+    text-align: center;
+    width: 50%;
+    background: #eca846;
+    padding: 0 5% 50px; }
+    @media (max-width: 767px) {
+      .intro__copy {
+        display: block;
+        width: 100%;
+        overflow: auto;
+        padding: 0 20px 14px; } }
+    .intro__copy .p--title {
+      margin-top: 50px;
+      color: #ffffff;
+      border: 2px solid #ffffff; }
+      @media (max-width: 767px) {
+        .intro__copy .p--title {
+          margin-top: 40px; } }
     .intro__copy .p--header {
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto; }
+      margin: 0 auto;
+      font-weight: 600;
+      font-size: 40px;
+      color: #ffffff;
+      letter-spacing: 0.05em; }
+      @media (max-width: 767px) {
+        .intro__copy .p--header {
+          font-size: 35px; } }
+    .intro__copy .p--text {
+      font-size: 24px;
+      color: #ffffff; }
+  .intro__image {
+    display: table-cell;
+    width: 50%;
+    background: #f3f5f7;
+    background-image: url("https://cdn.besynchro.com/gold/v2-0/benefits-inflammationfighting.jpg");
+    background-size: cover;
+    background-position: center; }
+    @media (max-width: 767px) {
+      .intro__image {
+        display: none; } }
   .intro .a--cta {
-    margin: 30px auto 60px; }
+    font-size: 18px;
+    padding: 16px 35px; }
+    @media (max-width: 767px) {
+      .intro .a--cta {
+        display: none; } }
 
 .technology {
   text-align: center; }
@@ -6749,12 +6786,6 @@ input:checked + .accordion-horizontal__inner-box {
     .gold-lp .purchase .discount:after {
       right: -15px;
       border-right-color: transparent; }
-
-.gold-og .intro {
-  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/synchro-gold-og-effective-turmeric-supplement.jpg"); }
-  @media (max-width: 767px) {
-    .gold-og .intro {
-      background-image: none; } }
 
 .gold-og .purchase .option-1 {
   background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png"); }
