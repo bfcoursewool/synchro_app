@@ -7,9 +7,10 @@
   }
 
   .top-offer-bar {
-    .a--cta {
-      margin: 3px;
-      color: $color-ebony !important;
+    @include xs-screen {
+      .a--cta {
+        display: none;
+      }
     }
   }
 
@@ -279,7 +280,6 @@
     }
   }
 }
-
 // STYLES FOR GOLD ORIGINAL ONLY
 
 .gold-og {

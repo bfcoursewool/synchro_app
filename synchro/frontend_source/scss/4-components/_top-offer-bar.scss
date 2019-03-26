@@ -4,9 +4,8 @@
   left: 0;
   right: 0;
   text-align: center;
-  background: $color-ebony;
+  background: $color-silver;
   z-index: $header-z-index;
-  padding: 5px;
   max-width: 2000px;
   margin: 0 auto;
 
@@ -17,14 +16,13 @@
 
   &__text {
     display: inline-block;
-    color: $color-ivory;
-    margin: 0 5px;
-    line-height: 32px;
+    color: $color-ebony;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
     font-size: 16px;
     vertical-align: middle;
+    margin: 8px 10px;
   }
 
   &__desktop {
@@ -49,12 +47,7 @@
   }
 
   .a--cta {
-    height: 30px;
-    margin: 7px 3px;
-    line-height: 30px;
-    padding: 0 14px;
+    padding: 10px 20px;
     vertical-align: middle;
-    background: $color-ivory;
-    color: $color-ebony;
   }
 }
