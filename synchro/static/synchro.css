@@ -5247,6 +5247,9 @@ p {
   width: fit-content;
   max-width: 80%;
   border: 2px solid #000000; }
+  @media (max-width: 767px) {
+    .p--title {
+      margin: 40px auto; } }
 
 .p--header {
   line-height: 1.2;
@@ -5470,6 +5473,9 @@ p {
 
 .benefits .p--title {
   margin-bottom: 60px; }
+  @media (max-width: 767px) {
+    .benefits .p--title {
+      margin-bottom: 40px; } }
 
 .benefits__icon {
   text-align: center; }
@@ -6441,267 +6447,308 @@ input:checked + .accordion-horizontal__inner-box {
     margin: 15px;
     display: inline-block; }
 
-.gold-lp a.anchor {
-  top: 50px; }
-  @media (max-width: 767px) {
-    .gold-lp a.anchor {
-      top: 90px; } }
-
-@media (max-width: 680px) {
-  .gold-lp .top-offer-bar .a--cta {
-    display: none; } }
-
-.gold-lp .main-header {
-  position: initial; }
-  .gold-lp .main-header .a--cta {
-    background: #eca846;
-    color: white;
-    display: none; }
-  .gold-lp .main-header.floated .a--cta {
-    display: block; }
-  .gold-lp .main-header__content {
-    height: 40px; }
-
-.gold-lp .atf {
-  display: table; }
-  .gold-lp .atf__video {
-    position: relative;
-    width: 60%;
-    display: table-cell;
-    background-image: url("https://cdn.besynchro.com/experiments/cro015-atf-video%402x.jpg");
-    background-size: cover;
-    background-position: right; }
-    @media (max-width: 854px) {
-      .gold-lp .atf__video {
-        display: none; } }
-    .gold-lp .atf__video .modal-dialog {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0;
-      width: 90%;
-      max-width: 1000px; }
-    .gold-lp .atf__video .modal-body {
-      padding: 5px; }
-    .gold-lp .atf__video .embed-container {
-      position: relative; }
-    .gold-lp .atf__video .close {
-      position: absolute;
-      right: -40px;
-      font-size: 40px;
-      color: rgba(0, 0, 0, 0.5);
-      opacity: 1;
-      font-weight: 100;
-      outline: none;
-      background: white;
-      padding: 1px 10px;
-      z-index: -1;
-      border-radius: 0 10px 10px 0; }
-    .gold-lp .atf__video .iframe-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0; }
-    .gold-lp .atf__video .iframe-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-  .gold-lp .atf__video-btn {
-    position: absolute;
-    top: 53%;
-    left: 50%;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
-    font-weight: 600;
-    font-size: 16px;
-    color: #ffffff;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: none;
-    border: 0;
-    outline: none;
-    -webkit-appearance: button;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-font-smoothing: antialiased; }
-    .gold-lp .atf__video-btn::before {
-      content: "";
-      display: block;
-      position: relative;
-      left: 50%;
-      transform: translate(-26px, -15px);
-      border-top: 32px solid transparent;
-      border-left: 52px solid white;
-      border-bottom: 32px solid transparent; }
-  .gold-lp .atf__video-bar {
-    position: absolute;
-    left: 55px;
-    right: 30px;
-    bottom: 28px;
-    background: rgba(255, 255, 255, 0.5);
-    height: 2px; }
-    .gold-lp .atf__video-bar::before {
-      content: "";
-      display: block;
-      position: relative;
-      left: -25px;
-      top: -7px;
-      border-top: 8px solid transparent;
-      border-left: 12px solid white;
-      border-bottom: 8px solid transparent; }
-    .gold-lp .atf__video-bar::after {
-      content: "";
-      height: 18px;
-      width: 18px;
-      background: white;
-      top: -23px;
-      position: relative;
-      display: block;
-      border-radius: 9px; }
-  .gold-lp .atf__video-mobile {
-    display: none; }
-    @media (max-width: 854px) {
-      .gold-lp .atf__video-mobile {
-        display: block; } }
-    .gold-lp .atf__video-mobile .iframe-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0; }
-    .gold-lp .atf__video-mobile .iframe-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-  .gold-lp .atf__copy {
-    width: 40%;
-    min-width: 480px;
-    display: table-cell;
-    background: #eca846;
-    text-align: center; }
+.gold-lp {
+  /*****/ }
+  .gold-lp a.anchor {
+    top: 50px; }
     @media (max-width: 767px) {
-      .gold-lp .atf__copy {
+      .gold-lp a.anchor {
+        top: 90px; } }
+  @media (max-width: 680px) {
+    .gold-lp .top-offer-bar .a--cta {
+      display: none; } }
+  .gold-lp .main-header {
+    position: initial; }
+    .gold-lp .main-header .a--cta {
+      background: #eca846;
+      color: white;
+      display: none; }
+    .gold-lp .main-header.floated .a--cta {
+      display: block; }
+    .gold-lp .main-header__content {
+      height: 40px; }
+  .gold-lp .atf {
+    display: table; }
+    .gold-lp .atf__video {
+      position: relative;
+      width: 60%;
+      display: table-cell;
+      background-image: url("https://cdn.besynchro.com/experiments/cro015-atf-video%402x.jpg");
+      background-size: cover;
+      background-position: right; }
+      @media (max-width: 854px) {
+        .gold-lp .atf__video {
+          display: none; } }
+      .gold-lp .atf__video .modal-dialog {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        width: 90%;
+        max-width: 1000px; }
+      .gold-lp .atf__video .modal-body {
+        padding: 5px; }
+      .gold-lp .atf__video .embed-container {
+        position: relative; }
+      .gold-lp .atf__video .close {
+        position: absolute;
+        right: -40px;
+        font-size: 40px;
+        color: rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        font-weight: 100;
+        outline: none;
+        background: white;
+        padding: 1px 10px;
+        z-index: -1;
+        border-radius: 0 10px 10px 0; }
+      .gold-lp .atf__video .iframe-container {
+        position: relative;
         width: 100%;
-        min-width: initial; } }
-  .gold-lp .atf__header {
-    position: initial;
-    transform: none;
-    font-size: 50px;
-    letter-spacing: 2px;
-    color: #ffffff;
-    width: auto;
-    margin: 30px 40px 20px;
-    line-height: initial;
-    font-weight: 600; }
-    @media (max-width: 767px) {
-      .gold-lp .atf__header {
-        margin: 30px 20px 15px;
-        font-size: 35px; } }
-  .gold-lp .atf__benefits {
-    margin: 10px 40px 0; }
-    @media (max-width: 854px) {
-      .gold-lp .atf__benefits {
-        display: none; } }
-  .gold-lp .atf__benefit {
-    margin: 10px 0; }
-    @media (max-width: 854px) {
-      .gold-lp .atf__benefit {
-        float: left;
-        width: 50%;
-        padding: 0 5px; } }
-  .gold-lp .atf__benefit-img {
-    height: 40px;
-    display: inline-block; }
-    @media (max-width: 767px) {
-      .gold-lp .atf__benefit-img {
-        height: 70px;
-        margin: 20px auto 10px;
-        display: block; } }
-  .gold-lp .atf__benefit-check {
-    color: #8C5300; }
-  .gold-lp .atf__benefit-point {
-    display: inline-block;
-    font-size: 22px;
-    color: #ffffff;
-    padding-left: 10px;
-    margin: 0;
-    line-height: 1.2; }
-    @media (max-width: 767px) {
-      .gold-lp .atf__benefit-point {
-        padding: 0;
-        font-size: 20px; } }
-  .gold-lp .atf .a--cta {
-    font-size: 18px;
-    padding: 16px 35px;
-    margin: 20px 0 40px; }
-    @media (max-width: 854px) {
-      .gold-lp .atf .a--cta {
-        margin-bottom: 20px; } }
-    .gold-lp .atf .a--cta.cta--secondary {
+        padding-bottom: 56.25%;
+        height: 0; }
+      .gold-lp .atf__video .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+    .gold-lp .atf__video-btn {
+      position: absolute;
+      top: 53%;
+      left: 50%;
+      cursor: pointer;
+      transform: translate(-50%, -50%);
+      font-weight: 600;
+      font-size: 16px;
+      color: #ffffff;
+      letter-spacing: 1px;
+      text-transform: uppercase;
       background: none;
-      color: #000000; }
-
-.gold-lp .rating {
-  margin: 0; }
-  .gold-lp .rating__stars #rating__star {
-    height: 32px; }
-  .gold-lp .rating__icon {
-    fill: #8C5300; }
-  .gold-lp .rating__count {
-    font-weight: 600;
-    color: #ffffff;
-    text-align: center;
-    font-style: italic;
-    opacity: 1;
-    margin: 5px 0 20px; }
-    .gold-lp .rating__count:before {
-      content: "Over 1500"; }
-    .gold-lp .rating__count:after {
-      content: "..."; }
-
-.gold-lp .purchase .option-1 {
-  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png"); }
-
-.gold-lp .purchase .option-2 {
-  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png"); }
-
-.gold-lp .purchase .option-3 {
-  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png"); }
-
-.gold-lp .purchase .discount {
-  display: block;
-  width: 110px;
-  height: 26px;
-  background-color: #eca846;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.2);
-  color: #ffffff;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  line-height: 26px;
-  text-transform: uppercase;
-  z-index: 90;
-  transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out; }
-  .gold-lp .purchase .discount:after, .gold-lp .purchase .discount:before {
-    content: "";
+      border: 0;
+      outline: none;
+      -webkit-appearance: button;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -webkit-font-smoothing: antialiased; }
+      .gold-lp .atf__video-btn::before {
+        content: "";
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translate(-26px, -15px);
+        border-top: 32px solid transparent;
+        border-left: 52px solid white;
+        border-bottom: 32px solid transparent; }
+    .gold-lp .atf__video-bar {
+      position: absolute;
+      left: 55px;
+      right: 30px;
+      bottom: 28px;
+      background: rgba(255, 255, 255, 0.5);
+      height: 2px; }
+      .gold-lp .atf__video-bar::before {
+        content: "";
+        display: block;
+        position: relative;
+        left: -25px;
+        top: -7px;
+        border-top: 8px solid transparent;
+        border-left: 12px solid white;
+        border-bottom: 8px solid transparent; }
+      .gold-lp .atf__video-bar::after {
+        content: "";
+        height: 18px;
+        width: 18px;
+        background: white;
+        top: -23px;
+        position: relative;
+        display: block;
+        border-radius: 9px; }
+    .gold-lp .atf__video-mobile {
+      display: none; }
+      @media (max-width: 854px) {
+        .gold-lp .atf__video-mobile {
+          display: block; } }
+      .gold-lp .atf__video-mobile .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0; }
+      .gold-lp .atf__video-mobile .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+    .gold-lp .atf__copy {
+      width: 40%;
+      min-width: 480px;
+      display: table-cell;
+      background: #eca846;
+      text-align: center; }
+      @media (max-width: 767px) {
+        .gold-lp .atf__copy {
+          width: 100%;
+          min-width: initial; } }
+    .gold-lp .atf__header {
+      position: initial;
+      transform: none;
+      font-size: 50px;
+      letter-spacing: 2px;
+      color: #ffffff;
+      width: auto;
+      margin: 30px 40px 20px;
+      line-height: initial;
+      font-weight: 600; }
+      @media (max-width: 767px) {
+        .gold-lp .atf__header {
+          margin: 30px 20px 15px;
+          font-size: 35px; } }
+    .gold-lp .atf__benefits {
+      margin: 10px 40px 0; }
+      @media (max-width: 854px) {
+        .gold-lp .atf__benefits {
+          display: none; } }
+    .gold-lp .atf__benefit {
+      margin: 10px 0; }
+      @media (max-width: 854px) {
+        .gold-lp .atf__benefit {
+          float: left;
+          width: 50%;
+          padding: 0 5px; } }
+    .gold-lp .atf__benefit-img {
+      height: 40px;
+      display: inline-block; }
+      @media (max-width: 767px) {
+        .gold-lp .atf__benefit-img {
+          height: 70px;
+          margin: 20px auto 10px;
+          display: block; } }
+    .gold-lp .atf__benefit-check {
+      color: #8C5300; }
+    .gold-lp .atf__benefit-point {
+      display: inline-block;
+      font-size: 22px;
+      color: #ffffff;
+      padding-left: 10px;
+      margin: 0;
+      line-height: 1.2; }
+      @media (max-width: 767px) {
+        .gold-lp .atf__benefit-point {
+          padding: 0;
+          font-size: 20px; } }
+    .gold-lp .atf .a--cta {
+      font-size: 18px;
+      padding: 16px 35px;
+      margin: 20px 0 40px; }
+      @media (max-width: 854px) {
+        .gold-lp .atf .a--cta {
+          margin-bottom: 20px; } }
+      .gold-lp .atf .a--cta.cta--secondary {
+        background: none;
+        color: #000000; }
+  .gold-lp .rating {
+    margin: 0; }
+    .gold-lp .rating__stars #rating__star {
+      height: 32px; }
+    .gold-lp .rating__icon {
+      fill: #8C5300; }
+    .gold-lp .rating__count {
+      font-weight: 600;
+      color: #ffffff;
+      text-align: center;
+      font-style: italic;
+      opacity: 1;
+      margin: 5px 0 20px; }
+      .gold-lp .rating__count:before {
+        content: "Over 1500"; }
+      .gold-lp .rating__count:after {
+        content: "..."; }
+  .gold-lp .benefits {
+    padding: 0 20px 20px; }
+    .gold-lp .benefits__point {
+      max-width: none;
+      text-align: center;
+      width: 25%;
+      float: left;
+      padding: 0 15px;
+      margin: 0 0 40px; }
+      @media (max-width: 1199px) {
+        .gold-lp .benefits__point {
+          width: 50%; } }
+      @media (max-width: 680px) {
+        .gold-lp .benefits__point {
+          padding: 0;
+          width: 100%; } }
+    .gold-lp .benefits__icon {
+      height: 50px; }
+      @media (max-width: 767px) {
+        .gold-lp .benefits__icon {
+          height: 55px; } }
+    .gold-lp .benefits__header {
+      max-width: 240px;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      text-align: center;
+      text-transform: uppercase; }
+      @media (max-width: 680px) {
+        .gold-lp .benefits__header {
+          max-width: none; } }
+    .gold-lp .benefits__copy {
+      background: #f4f4f5; }
+    .gold-lp .benefits__image {
+      width: 100%; }
+    .gold-lp .benefits__text {
+      padding: 0 20px;
+      overflow: auto; }
+      .gold-lp .benefits__text .p--text {
+        font-size: 20px; }
+  .gold-lp .benefits-cta {
+    display: none; }
+    @media (max-width: 854px) {
+      .gold-lp .benefits-cta {
+        display: block;
+        margin-bottom: 50px;
+        text-align: center; } }
+  .gold-lp .purchase .option-1 {
+    background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png"); }
+  .gold-lp .purchase .option-2 {
+    background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png"); }
+  .gold-lp .purchase .option-3 {
+    background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png"); }
+  .gold-lp .purchase .discount {
+    display: block;
+    width: 110px;
+    height: 26px;
+    background-color: #eca846;
     position: absolute;
     top: 0;
-    border: 13px solid #eca846;
-    border-left-width: 8px;
-    border-right-width: 8px;
-    z-index: -1; }
-  .gold-lp .purchase .discount:before {
-    left: -15px;
-    border-left-color: transparent; }
-  .gold-lp .purchase .discount:after {
-    right: -15px;
-    border-right-color: transparent; }
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    text-transform: uppercase;
+    z-index: 90;
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out; }
+    .gold-lp .purchase .discount:after, .gold-lp .purchase .discount:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      border: 13px solid #eca846;
+      border-left-width: 8px;
+      border-right-width: 8px;
+      z-index: -1; }
+    .gold-lp .purchase .discount:before {
+      left: -15px;
+      border-left-color: transparent; }
+    .gold-lp .purchase .discount:after {
+      right: -15px;
+      border-right-color: transparent; }
 
 .gold-og .intro {
   background-image: url("https://cdn.besynchro.com/gold/og-v1-0/synchro-gold-og-effective-turmeric-supplement.jpg"); }
@@ -7528,6 +7575,8 @@ input:checked + .accordion-horizontal__inner-box {
 
 .keto-cleanse .top-offer-bar {
   background: #C69B82; }
+  .keto-cleanse .top-offer-bar__text {
+    color: #ffffff; }
 
 .keto-cleanse .a--cta {
   background: #427074;

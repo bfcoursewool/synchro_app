@@ -13,6 +13,7 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 // Section Title
+
 .p--title {
   display: block;
   letter-spacing: 2px;
@@ -24,8 +25,12 @@ p {
   width: fit-content;
   max-width: 80%;
   border: 2px solid $color-ebony;
+  @include s-screen {
+    margin: 40px auto;
+  }
 }
 // Header
+
 .p--header {
   line-height: 1.2;
   font-weight: $font-normal;
@@ -35,6 +40,7 @@ p {
   }
 }
 // Paragraph text
+
 .p--text {
   font-weight: $font-normal;
   line-height: 1.5;
@@ -42,6 +48,7 @@ p {
   margin: 1em auto;
 }
 // Quick-access classes
+
 .p--demi {
   font-weight: $font-demi;
 }

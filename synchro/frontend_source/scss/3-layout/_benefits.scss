@@ -3,6 +3,9 @@
 .benefits {
   .p--title {
     margin-bottom: 60px;
+    @include s-screen {
+      margin-bottom: 40px;
+    }
   }
 
   &__icon {

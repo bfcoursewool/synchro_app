@@ -1,6 +1,10 @@
 .keto-cleanse {
   .top-offer-bar {
     background: #C69B82;
+
+    &__text {
+      color: $color-ivory;
+    }
   }
 
   .a--cta {

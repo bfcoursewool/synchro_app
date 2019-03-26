@@ -295,7 +295,72 @@
       }
     }
   }
+  // BENEFITS
+  .benefits {
+    padding: 0 $gutter-small $gutter-small;
 
+    &__point {
+      max-width: none;
+      text-align: center;
+      width: 25%;
+      float: left;
+      padding: 0 15px;
+      margin: 0 0 40px;
+      @include m-screen {
+        width: 50%;
+      }
+      @include xs-screen {
+        padding: 0;
+        width: 100%;
+      }
+    }
+
+    &__icon {
+      height: 50px;
+      @include s-screen {
+        height: 55px;
+      }
+    }
+
+    &__header {
+      max-width: 240px;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: $spacing-normal;
+      text-align: center;
+      text-transform: uppercase;
+      @include xs-screen {
+        max-width: none;
+      }
+    }
+
+    &__copy {
+      background: $color-silver-light;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__text {
+      padding: 0 20px;
+      overflow: auto;
+
+      .p--text {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .benefits-cta {
+    display: none;
+    @include sm-screen {
+      display: block;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  }
+  /*****/
   .purchase {
     .option-1 {
       background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png");
