@@ -375,6 +375,32 @@
     }
   }
 
+  .ingredients {
+    &__icon-box {
+      padding-bottom: 15px;
+    }
+
+    &__icons {
+      background: $color-gold;
+      padding: 50px 50px 15px;
+      @include s-screen {
+        background: $color-silver-light;
+        padding: 40px 20px 10px;
+      }
+    }
+
+    &__icon-box {
+      .p--text {
+        color: $color-ivory;
+        font-weight: $font-demi;
+        @include s-screen {
+          color: $color-ebony;
+          font-weight: $font-medium;
+        }
+      }
+    }
+  }
+
   .purchase {
     .option-1 {
       background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png");

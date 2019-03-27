@@ -5666,12 +5666,9 @@ p {
   .ingredients__icon-box {
     display: inline-block;
     text-align: center;
-    width: 20%;
+    width: 25%;
     vertical-align: top;
     padding-bottom: 30px; }
-    @media (max-width: 1199px) {
-      .ingredients__icon-box {
-        width: 25%; } }
     @media (max-width: 680px) {
       .ingredients__icon-box {
         width: 50%; } }
@@ -6779,6 +6776,22 @@ input:checked + .accordion-horizontal__inner-box {
     fill: #eca846; }
   .gold-lp .icon-learn-more__plus {
     fill: #ffffff; }
+  .gold-lp .ingredients__icon-box {
+    padding-bottom: 15px; }
+  .gold-lp .ingredients__icons {
+    background: #eca846;
+    padding: 50px 50px 15px; }
+    @media (max-width: 767px) {
+      .gold-lp .ingredients__icons {
+        background: #f4f4f5;
+        padding: 40px 20px 10px; } }
+  .gold-lp .ingredients__icon-box .p--text {
+    color: #ffffff;
+    font-weight: 600; }
+    @media (max-width: 767px) {
+      .gold-lp .ingredients__icon-box .p--text {
+        color: #000000;
+        font-weight: 500; } }
   .gold-lp .purchase .option-1 {
     background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png"); }
   .gold-lp .purchase .option-2 {

@@ -14,12 +14,9 @@
   &__icon-box {
     display: inline-block;
     text-align: center;
-    width: 20%;
+    width: 25%;
     vertical-align: top;
     padding-bottom: 30px;
-    @include m-screen {
-      width: 25%;
-    }
     @include xs-screen {
       width: 50%;
     }
