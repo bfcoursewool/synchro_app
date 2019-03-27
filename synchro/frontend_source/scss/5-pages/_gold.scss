@@ -1,6 +1,5 @@
 .gold-lp {
   a.anchor {
-    top: 50px;
     @include s-screen {
       top: 90px;
     }
@@ -75,7 +74,6 @@
         background: white;
         padding: 1px 10px;
         z-index: -1;
-        border-radius: 0 10px 10px 0;
       }
 
       .iframe-container {
@@ -463,6 +461,8 @@
   }
 
   .purchase {
+    padding-bottom: 0;
+
     .option-1 {
       background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png");
     }
@@ -478,6 +478,10 @@
     .discount {
       @include discount ($color-gold)
     }
+  }
+
+  .synchro-reviews {
+    border: 0;
   }
 }
 // STYLES FOR GOLD ORIGINAL ONLY
@@ -501,6 +505,12 @@
 .gold-adwords {
   .technology {
     padding-bottom: $gutter-large;
+    @include sm-screen {
+      padding-bottom: $gutter-medium;
+    }
+    @include s-screen {
+      padding-bottom: 0;
+    }
   }
 
   &.no-wave {

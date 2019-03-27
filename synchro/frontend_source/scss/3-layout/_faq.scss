@@ -1,19 +1,50 @@
 .faq {
   background: $color-silver-light;
   overflow: auto;
+  font-size: 0;
+  padding: 0 $gutter-large 30px;
+  @include l-screen {
+    padding: 0 $gutter-medium 10px;
+  }
   @include s-screen {
-    padding: 0 $gutter-small;
+    padding: 0 $gutter-small 30px;
+  }
+
+  #faq-columns {
+    column-gap: 30px;
+    margin: 0 auto;
+    column-count: 4;
+    @include l-screen {
+      column-count: 3;
+    }
+    @include m-screen {
+      column-count: 2;
+    }
+    @include s-screen {
+      column-count: 1;
+    }
+  }
+
+  &__card {
+    display: inline-block;
+    padding-bottom: 30px;
+    @include s-screen {
+      padding-bottom: 10px;
+    }
   }
 
   &__text {
+    background: $color-ivory;
+    padding: $gutter-small $gutter-small 0;
     text-align: center;
+    overflow: auto;
 
     .p--header {
-      font-size: 30px;
+      font-size: 21px;
+      font-weight: $font-demi;
     }
 
     .p--text {
-      margin-bottom: 40px;
       max-width: 900px;
     }
 
