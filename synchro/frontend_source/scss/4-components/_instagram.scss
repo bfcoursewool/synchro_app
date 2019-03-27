@@ -1,0 +1,87 @@
+.instagram {
+  background: $color-silver-light;
+  overflow: auto;
+  padding: 0 $gutter-large $gutter-large;
+  @include l-screen {
+    padding: 0 $gutter-small $gutter-large;
+  }
+  @include s-screen {
+    padding-bottom: $gutter-medium;
+  }
+  @include xs-screen {
+    padding-bottom: 10px;
+  }
+
+  &__card {
+    width: 25%;
+    float: left;
+    padding: 0 15px;
+    @include m-screen {
+      width: 33.33%;
+
+      &.tweet-4 {
+        display: none;
+      }
+    }
+    @include sm-screen {
+      width: 50%;
+
+      &.tweet-3 {
+        display: none;
+      }
+    }
+    @include xs-screen {
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 0;
+    }
+  }
+
+  &__content {
+    background: $color-ivory;
+    overflow: auto;
+  }
+
+  &__user {
+    padding: 10px;
+
+    img {
+      display: inline-block;
+      width: 30px;
+      border-radius: 15px;
+      margin-right: 10px;
+    }
+
+    .p--text {
+      display: inline-block;
+      margin: 0;
+      font-weight: $font-medium;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__likes {
+    margin: 20px;
+    font-size: 18px;
+    font-weight: $font-medium;
+
+    i {
+      color: #ED4956;
+    }
+  }
+
+  &__comment {
+    margin: 20px;
+    font-size: 21px;
+
+    span {
+      display: block;
+      color: $color-genesis;
+    }
+  }
+}

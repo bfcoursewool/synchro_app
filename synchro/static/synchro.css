@@ -6501,6 +6501,69 @@ input:checked + .accordion-horizontal__inner-box {
     margin: 15px;
     display: inline-block; }
 
+.instagram {
+  background: #f4f4f5;
+  overflow: auto;
+  padding: 0 60px 60px; }
+  @media (max-width: 1599px) {
+    .instagram {
+      padding: 0 20px 60px; } }
+  @media (max-width: 767px) {
+    .instagram {
+      padding-bottom: 40px; } }
+  @media (max-width: 680px) {
+    .instagram {
+      padding-bottom: 10px; } }
+  .instagram__card {
+    width: 25%;
+    float: left;
+    padding: 0 15px; }
+    @media (max-width: 1199px) {
+      .instagram__card {
+        width: 33.33%; }
+        .instagram__card.tweet-4 {
+          display: none; } }
+    @media (max-width: 854px) {
+      .instagram__card {
+        width: 50%; }
+        .instagram__card.tweet-3 {
+          display: none; } }
+    @media (max-width: 680px) {
+      .instagram__card {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0; } }
+  .instagram__content {
+    background: #ffffff;
+    overflow: auto; }
+  .instagram__user {
+    padding: 10px; }
+    .instagram__user img {
+      display: inline-block;
+      width: 30px;
+      border-radius: 15px;
+      margin-right: 10px; }
+    .instagram__user .p--text {
+      display: inline-block;
+      margin: 0;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px; }
+  .instagram__image {
+    width: 100%; }
+  .instagram__likes {
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 500; }
+    .instagram__likes i {
+      color: #ED4956; }
+  .instagram__comment {
+    margin: 20px;
+    font-size: 21px; }
+    .instagram__comment span {
+      display: block;
+      color: #5da8a6; }
+
 .gold-lp {
   /*****/ }
   .gold-lp a.anchor {
