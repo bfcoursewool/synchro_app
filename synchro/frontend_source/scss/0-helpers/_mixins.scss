@@ -202,3 +202,61 @@
     }
   }
 }
+@mixin animate-fill($speed: 1s, $start-fill: 1, $mid-fill: 0.8) {
+  -webkit-animation: fill $speed infinite;
+  -moz-animation: fill $speed infinite;
+  -o-animation: fill $speed infinite;
+  animation: fill $speed infinite;
+  @-webkit-keyframes fill {
+    0% {
+      fill: $start-fill;
+    }
+
+    50% {
+      fill: $mid-fill;
+    }
+
+    100% {
+      fill: $start-fill;
+    }
+  }
+  @-moz-keyframes fill {
+    0% {
+      fill: $start-fill;
+    }
+
+    50% {
+      fill: $mid-fill;
+    }
+
+    100% {
+      fill: $start-fill;
+    }
+  }
+  @-o-keyframes fill {
+    0% {
+      fill: $start-fill;
+    }
+
+    50% {
+      fill: $mid-fill;
+    }
+
+    100% {
+      fill: $start-fill;
+    }
+  }
+  @keyframes fill {
+    0% {
+      fill: $start-fill;
+    }
+
+    50% {
+      fill: $mid-fill;
+    }
+
+    100% {
+      fill: $start-fill;
+    }
+  }
+}

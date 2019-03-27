@@ -6708,7 +6708,42 @@ input:checked + .accordion-horizontal__inner-box {
     .gold-lp .rating__stars #rating__star {
       height: 32px; }
     .gold-lp .rating__icon {
-      fill: #8C5300; }
+      -webkit-animation: fill 1.5s infinite;
+      -moz-animation: fill 1.5s infinite;
+      -o-animation: fill 1.5s infinite;
+      animation: fill 1.5s infinite; }
+
+@-webkit-keyframes fill {
+  0% {
+    fill: #000000; }
+  50% {
+    fill: #9F6614; }
+  100% {
+    fill: #000000; } }
+
+@-moz-keyframes fill {
+  0% {
+    fill: #000000; }
+  50% {
+    fill: #9F6614; }
+  100% {
+    fill: #000000; } }
+
+@-o-keyframes fill {
+  0% {
+    fill: #000000; }
+  50% {
+    fill: #9F6614; }
+  100% {
+    fill: #000000; } }
+
+@keyframes fill {
+  0% {
+    fill: #000000; }
+  50% {
+    fill: #9F6614; }
+  100% {
+    fill: #000000; } }
     .gold-lp .rating__count {
       font-weight: 600;
       color: #ffffff;

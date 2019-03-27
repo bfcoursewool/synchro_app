@@ -275,7 +275,7 @@
     }
 
     &__icon {
-      fill: #8C5300;
+      @include animate-fill(1.5s, $color-ebony, #9F6614);
     }
 
     &__count {
