@@ -5544,7 +5544,7 @@ p {
     text-align: center;
     width: 50%;
     background: #eca846;
-    padding: 0 5% 50px; }
+    padding: 0 5% 36px; }
     @media (max-width: 767px) {
       .intro__copy {
         display: block;
@@ -5552,7 +5552,6 @@ p {
         overflow: auto;
         padding: 0 20px 14px; } }
     .intro__copy .p--title {
-      margin-top: 50px;
       color: #ffffff;
       border: 2px solid #ffffff; }
       @media (max-width: 767px) {
@@ -5589,19 +5588,70 @@ p {
 
 .technology {
   text-align: center; }
-  .technology .p--header {
-    text-transform: uppercase;
-    letter-spacing: 1px; }
+  .technology__wrapper {
+    display: table; }
+  .technology__image-mobile {
+    display: none; }
+    @media (max-width: 767px) {
+      .technology__image-mobile {
+        display: block; } }
+    .technology__image-mobile img {
+      width: 100%; }
+  .technology__copy {
+    display: table-cell;
+    text-align: center;
+    width: 50%;
+    background: #eca846;
+    padding: 0 5% 36px; }
+    @media (min-width: 1600px) {
+      .technology__copy {
+        padding: 0 10% 36px; } }
+    @media (max-width: 767px) {
+      .technology__copy {
+        display: block;
+        width: 100%;
+        overflow: auto;
+        padding: 0 20px 14px; } }
+    .technology__copy .p--title {
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      margin-bottom: 30px; }
+      @media (max-width: 767px) {
+        .technology__copy .p--title {
+          margin-top: 40px; } }
+    .technology__copy .p--header {
+      font-weight: 600;
+      font-size: 40px;
+      color: #ffffff;
+      letter-spacing: 0.05em; }
+      @media (max-width: 767px) {
+        .technology__copy .p--header {
+          font-size: 35px; } }
+    .technology__copy .p--text {
+      font-size: 24px;
+      color: #ffffff; }
+  .technology__image {
+    display: table-cell;
+    background-image: url("https://cdn.besynchro.com/gold/v2-0/benefits-inflammationfighting.jpg");
+    background-size: cover;
+    background-position: center; }
+    @media (max-width: 767px) {
+      .technology__image {
+        display: none; } }
+  .technology__tabs-wrapper {
+    padding: 60px 60px 0; }
+    @media (max-width: 854px) {
+      .technology__tabs-wrapper {
+        padding: 40px 40px 0; } }
+    @media (max-width: 767px) {
+      .technology__tabs-wrapper {
+        padding: 0 20px 40px;
+        background: #eca846; } }
   .technology__tabs {
-    margin-top: 50px;
-    border-radius: 12px;
-    box-shadow: inset 0 0 1px #bdbdbd; }
+    box-shadow: inset 0 0 1px #404040; }
     @media (max-width: 767px) {
       .technology__tabs {
         box-shadow: none; } }
-    @media (max-width: 680px) {
-      .technology__tabs {
-        margin-bottom: 30px; } }
 
 .ingredients {
   text-align: center; }
@@ -6011,7 +6061,7 @@ p {
 
 .content-toggle {
   padding: 30px; }
-  @media (max-width: 680px) {
+  @media (max-width: 767px) {
     .content-toggle {
       display: none; } }
   .content-toggle__button {
@@ -6022,42 +6072,15 @@ p {
     border: none; }
     .content-toggle__button:focus {
       outline: none; }
+    .content-toggle__button.opened .icon-learn-more__svg {
+      transform: rotate(45deg); }
+    .content-toggle__button.opened .icon-learn-more__circle {
+      fill: #B2B2B2; }
   .content-toggle__text {
     display: block;
+    text-decoration: underline;
     margin-bottom: 15px;
     font-size: 20px; }
-  .content-toggle__icon {
-    position: relative;
-    background-color: #eca846;
-    display: inline-block;
-    width: 2.4375rem;
-    height: 2.4375rem;
-    border-radius: 50%;
-    z-index: 90;
-    transition: transform ease-out 0.4s, background-color ease-out 0.4s; }
-    .content-toggle__icon:after, .content-toggle__icon:before {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      content: "";
-      background-color: #ffffff;
-      transform: translate(-50%, -50%); }
-    .content-toggle__icon:before {
-      width: 1px;
-      height: 30%;
-      animation: shrink-n-grow-height-to-plus 0.4s; }
-    .content-toggle__icon:after {
-      width: 30%;
-      height: 1px;
-      animation: shrink-n-grow-width-to-plus 0.4s; }
-    .opened .content-toggle__icon {
-      transform: rotate(225deg); }
-      .opened .content-toggle__icon:before {
-        height: 30%;
-        animation: shrink-n-grow-height-to-x 0.4s; }
-      .opened .content-toggle__icon:after {
-        width: 30%;
-        animation: shrink-n-grow-width-to-x 0.4s; }
 
 .extended-content {
   text-align: center;
@@ -6097,35 +6120,15 @@ p {
   height: auto;
   display: none; }
 
-.extended-content--image {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 60%;
-  overflow: hidden; }
-
-.extended-content--image--wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-  .extended-content--image--wrapper img {
-    width: 100%;
-    height: auto; }
-
 .tabs-inner {
   font-size: 0;
   height: 115px;
   width: 100%;
-  border-radius: 12px 12px 0 0;
   overflow: hidden;
   padding: 0;
   margin: 0; }
   @media (max-width: 767px) {
     .tabs-inner {
-      padding: 0 20px;
-      border-radius: 0;
       height: initial; } }
 
 .tab-box {
@@ -6133,25 +6136,25 @@ p {
   width: 25%; }
   @media (max-width: 767px) {
     .tab-box {
+      background: #ffffff;
       width: 100%;
-      box-shadow: inset 0 0 1px #e2e2e2;
-      border-radius: 6px;
-      margin: 5px 0;
-      overflow: hidden; }
-      .tab-box.active {
-        box-shadow: inset 0 0 1px #eca846; } }
+      border-radius: 5px;
+      margin: 5px 0; } }
 
 .tab {
   background: #f4f4f5;
   position: relative;
   line-height: 100px;
-  font-size: 20px;
   cursor: pointer;
   outline: 1px solid #ffffff;
   padding: 0 20px; }
   @media (max-width: 767px) {
     .tab {
-      line-height: 50px; } }
+      transition: 0.3s ease-in-out all;
+      background: none;
+      outline: none;
+      line-height: 30px;
+      padding: 10px; } }
   .tab:after {
     content: "";
     display: block;
@@ -6167,41 +6170,59 @@ p {
         display: none; } }
   .tab h6 {
     display: inline-block;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     vertical-align: middle;
-    line-height: 1.4; }
+    line-height: 1.4;
+    margin: 0; }
+    @media (max-width: 767px) {
+      .tab h6 {
+        letter-spacing: 0.05em;
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase; } }
   .tab:hover {
     color: #4e4e4e; }
   .tab.active {
-    background: linear-gradient(to bottom, #FED649 0%, #eca846 100%);
-    color: #ffffff; }
+    background: #eca846; }
+    @media (max-width: 767px) {
+      .tab.active {
+        background: none;
+        padding-top: 20px;
+        padding-bottom: 0; } }
+    .tab.active h6 {
+      color: #ffffff;
+      font-weight: 500; }
+      @media (max-width: 767px) {
+        .tab.active h6 {
+          color: initial;
+          font-weight: 600; } }
     .tab.active:after {
       border-color: #eca846 transparent transparent; }
-      @media (max-width: 767px) {
-        .tab.active:after {
-          display: block; } }
 
 .tab-pane {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-out;
+  transition: 0.3s ease-in-out all;
   max-width: 900px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  top: -10px; }
+  @media (max-width: 767px) {
+    .tab-pane {
+      padding: 0 20px; } }
   .tab-pane.active {
     max-height: 650px;
-    padding: 30px; }
-    @media (max-width: 767px) {
-      .tab-pane.active {
-        padding-bottom: 10px; } }
+    top: 0; }
 
 .tab-content--header {
   margin-top: 10px;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 40px; }
   @media (max-width: 767px) {
     .tab-content--header {
-      font-size: 32px; } }
+      display: none; } }
 
 .slider {
   background-color: #272727;
@@ -6705,6 +6726,9 @@ input:checked + .accordion-horizontal__inner-box {
         content: "..."; }
   .gold-lp .benefits {
     padding: 0 20px 20px; }
+    @media (max-width: 767px) {
+      .gold-lp .benefits {
+        padding-bottom: 0; } }
     .gold-lp .benefits__point {
       max-width: none;
       text-align: center;
@@ -6750,6 +6774,11 @@ input:checked + .accordion-horizontal__inner-box {
         display: block;
         margin-bottom: 50px;
         text-align: center; } }
+  .gold-lp .icon-learn-more__circle {
+    stroke: none;
+    fill: #eca846; }
+  .gold-lp .icon-learn-more__plus {
+    fill: #ffffff; }
   .gold-lp .purchase .option-1 {
     background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png"); }
   .gold-lp .purchase .option-2 {

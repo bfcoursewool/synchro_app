@@ -17,7 +17,7 @@
     text-align: center;
     width: 50%;
     background: $color-gold;
-    padding: 0 5% 50px;
+    padding: 0 5% 36px;
     @include s-screen {
       display: block;
       width: 100%;
@@ -26,7 +26,6 @@
     }
 
     .p--title {
-      margin-top: 50px;
       color: $color-ivory;
       border: 2px solid $color-ivory;
       @include s-screen {

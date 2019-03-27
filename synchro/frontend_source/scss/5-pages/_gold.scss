@@ -298,6 +298,9 @@
   // BENEFITS
   .benefits {
     padding: 0 $gutter-small $gutter-small;
+    @include s-screen {
+      padding-bottom: 0;
+    }
 
     &__point {
       max-width: none;
@@ -361,6 +364,17 @@
     }
   }
   /*****/
+  .icon-learn-more {
+    &__circle {
+      stroke: none;
+      fill: $color-gold;
+    }
+
+    &__plus {
+      fill: $color-ivory;
+    }
+  }
+
   .purchase {
     .option-1 {
       background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png");
@@ -382,7 +396,6 @@
 // STYLES FOR GOLD ORIGINAL ONLY
 
 .gold-og {
-
   .purchase {
     .option-1 {
       background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png");
