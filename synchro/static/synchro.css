@@ -5245,7 +5245,6 @@ p {
   margin: 60px auto 50px;
   padding: 5px 20px;
   width: fit-content;
-  max-width: 80%;
   border: 2px solid #000000; }
   @media (max-width: 767px) {
     .p--title {
@@ -6792,6 +6791,55 @@ input:checked + .accordion-horizontal__inner-box {
       .gold-lp .ingredients__icon-box .p--text {
         color: #000000;
         font-weight: 500; } }
+  .gold-lp .ingredients__details {
+    padding: 0 60px 40px;
+    font-size: 0; }
+    @media (max-width: 1199px) {
+      .gold-lp .ingredients__details {
+        padding: 0 40px; } }
+    @media (max-width: 767px) {
+      .gold-lp .ingredients__details {
+        padding: 0 20px 20px; } }
+  .gold-lp .ingredients__facts {
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle; }
+    @media (max-width: 1199px) {
+      .gold-lp .ingredients__facts {
+        width: 100%; } }
+    .gold-lp .ingredients__facts img {
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); }
+  .gold-lp .ingredients__images {
+    width: 60%;
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle; }
+    @media (max-width: 1199px) {
+      .gold-lp .ingredients__images {
+        width: 100%;
+        margin-top: 40px; } }
+  .gold-lp .ingredients__item-box {
+    margin-bottom: 20px;
+    width: 33%;
+    display: inline-block; }
+    @media (max-width: 1599px) {
+      .gold-lp .ingredients__item-box {
+        width: 50%; } }
+    @media (max-width: 1199px) {
+      .gold-lp .ingredients__item-box {
+        width: 33%; } }
+    @media (max-width: 767px) {
+      .gold-lp .ingredients__item-box {
+        width: 50%;
+        margin-bottom: 0; } }
+  .gold-lp .ingredients__header {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 20px 0; }
   .gold-lp .purchase .option-1 {
     background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png"); }
   .gold-lp .purchase .option-2 {
