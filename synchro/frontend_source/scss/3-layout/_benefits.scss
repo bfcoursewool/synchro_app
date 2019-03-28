@@ -27,6 +27,12 @@
       margin-bottom: 40px;
     }
 
+    .icon-toggle-more {
+      &.active {
+        margin-top: 20px;
+      }
+    }
+
     span {
       @include m-screen {
         display: none;

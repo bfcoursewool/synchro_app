@@ -5492,6 +5492,8 @@ p {
   @media (max-width: 767px) {
     .benefits__point {
       margin-bottom: 40px; } }
+  .benefits__point .icon-toggle-more.active {
+    margin-top: 20px; }
   @media (max-width: 1199px) {
     .benefits__point span {
       display: none; } }
@@ -5679,8 +5681,6 @@ p {
     max-height: 15px;
     overflow: hidden;
     transition: 0.3s ease-in-out all; }
-  .technology .icon-toggle-more {
-    margin: 0 auto; }
 
 .ingredients {
   text-align: center; }
@@ -5911,8 +5911,6 @@ p {
     @media (max-width: 767px) {
       .faq__card {
         margin-bottom: 10px; } }
-    .faq__card .icon-toggle-more {
-      margin: 0 auto; }
     .faq__card.active .faq__copy {
       max-height: 800px; }
     .faq__card .p--header {
@@ -5932,10 +5930,12 @@ p {
       padding: 0 20px 20px; } }
   .references__wrapper.active .references__text {
     max-height: 2500px; }
-  .references__wrapper .icon-toggle-more:before {
-    content: "view all"; }
-  .references__wrapper .icon-toggle-more.active:before {
-    content: "view less"; }
+  .references__wrapper .icon-toggle-more {
+    margin: 20px auto; }
+    .references__wrapper .icon-toggle-more:before {
+      content: "view all"; }
+    .references__wrapper .icon-toggle-more.active:before {
+      content: "view less"; }
   .references__text {
     text-align: center;
     max-height: 122px;
@@ -6130,7 +6130,7 @@ p {
   border-radius: 20px;
   width: fit-content;
   padding: 4px 12px;
-  margin: 20px auto;
+  margin: 0 auto;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.05em;
