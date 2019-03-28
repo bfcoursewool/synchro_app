@@ -5938,7 +5938,7 @@ p {
     content: "view less"; }
   .references__text {
     text-align: center;
-    max-height: 124px;
+    max-height: 122px;
     overflow: hidden;
     transition: 0.5s ease-in-out all; }
     .references__text .p--text {
