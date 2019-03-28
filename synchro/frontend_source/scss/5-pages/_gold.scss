@@ -512,13 +512,10 @@
 }
 
 .gold-adwords {
-  .technology {
+  .technology__tabs-desktop {
     padding-bottom: $gutter-large;
     @include sm-screen {
       padding-bottom: $gutter-medium;
-    }
-    @include s-screen {
-      padding-bottom: 0;
     }
   }
 
