@@ -5933,7 +5933,7 @@ p {
   .references__wrapper.active .references__text {
     max-height: 2500px; }
   .references__wrapper .icon-toggle-more:before {
-    content: "view more"; }
+    content: "view all"; }
   .references__wrapper .icon-toggle-more.active:before {
     content: "view less"; }
   .references__text {
