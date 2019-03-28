@@ -1,13 +1,36 @@
 .references {
+  padding-bottom: $gutter-medium;
   @include s-screen {
-    padding: 0 $gutter-small;
+    padding: 0 $gutter-small $gutter-small;
+  }
+
+  &__wrapper {
+    &.active {
+      .references__text {
+        max-height: 2500px;
+      }
+    }
+
+    .icon-toggle-more {
+      &:before {
+        content: "view more";
+      }
+
+      &.active {
+        &:before {
+          content: "view less";
+        }
+      }
+    }
   }
 
   &__text {
     text-align: center;
+    max-height: 124px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out all;
 
     .p--text {
-      margin-bottom: 40px;
       max-width: 900px;
     }
 
