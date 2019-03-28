@@ -32,6 +32,16 @@ export default class LPEffects extends EventsBase {
       'click .kcp-timeline__event-box': 'toggleTimelineText',
       'click .how-it-works__icon': 'toggleHowItWorks',
       'click .weight-loss__icon': 'toggleWeightLoss',
+      'click .icon-toggle-more': 'toggleMore',  // Use this toggle event for this element globally
+    }
+  }
+  toggleMore(target) {
+    if($(target).is('.active')) {
+      $(target).removeClass('active');
+      $(target).parent().removeClass('active');
+    } else {
+      $(target).addClass('active');
+      $(target).parent().addClass('active');
     }
   }
   toggleWeightLoss(target) {

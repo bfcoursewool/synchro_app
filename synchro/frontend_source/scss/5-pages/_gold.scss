@@ -273,7 +273,7 @@
     }
 
     &__icon {
-      @include animate-fill(1.5s, $color-ebony, #9F6614);
+      fill: $color-ebony;
     }
 
     &__count {
@@ -314,6 +314,12 @@
         padding: 0;
         width: 100%;
       }
+
+      &.active {
+        .benefits__copy {
+          max-height: 850px;
+        }
+      }
     }
 
     &__icon {
@@ -337,6 +343,9 @@
 
     &__copy {
       background: $color-silver-light;
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.5s ease-in-out all;
     }
 
     &__image {

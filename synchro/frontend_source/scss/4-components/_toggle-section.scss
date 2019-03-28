@@ -38,17 +38,19 @@
 
 .extended-content {
   text-align: center;
-  background-color: $color-silver-dark;
+  background-color: $color-silver-light;
   margin-right: 0;
   margin-left: 0;
   padding: $gutter-large;
   font-size: 0;
-  @include sm-screen {
+  @include m-screen {
     padding: $gutter-medium;
+  }
+  @include s-screen {
+    display: none;
   }
 
   .p--header {
-    color: $color-ivory;
     max-width: 850px;
     margin: 0 auto;
     @include sm-screen {
@@ -68,13 +70,11 @@
     }
 
     .p--title {
-      color: $color-ivory;
-      font-size: 20px;
-      border: 2px solid $color-ivory;
+      margin-bottom: 40px;
     }
 
     .p--text {
-      color: $color-ivory;
+      margin: 0;
     }
   }
 }
