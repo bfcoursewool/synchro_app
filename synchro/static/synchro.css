@@ -5903,23 +5903,27 @@ p {
       .faq #faq-columns {
         column-count: 1; } }
   .faq__card {
+    background: #ffffff;
+    padding: 20px;
     display: inline-block;
-    padding-bottom: 30px; }
+    margin-bottom: 30px;
+    text-align: center; }
     @media (max-width: 767px) {
       .faq__card {
-        padding-bottom: 10px; } }
-  .faq__text {
-    background: #ffffff;
-    padding: 20px 20px 0;
-    text-align: center;
-    overflow: auto; }
-    .faq__text .p--header {
+        margin-bottom: 10px; } }
+    .faq__card .icon-toggle-more {
+      margin: 0 auto; }
+    .faq__card.active .faq__copy {
+      max-height: 800px; }
+    .faq__card .p--header {
       font-size: 21px;
       font-weight: 600; }
-    .faq__text .p--text {
-      max-width: 900px; }
-    .faq__text .footnote {
+    .faq__card .footnote {
       font-size: 15px; }
+  .faq__copy {
+    max-height: 20px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out all; }
 
 @media (max-width: 767px) {
   .references {

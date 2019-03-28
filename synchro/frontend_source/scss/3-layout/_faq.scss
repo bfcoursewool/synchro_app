@@ -26,30 +26,38 @@
   }
 
   &__card {
-    display: inline-block;
-    padding-bottom: 30px;
-    @include s-screen {
-      padding-bottom: 10px;
-    }
-  }
-
-  &__text {
     background: $color-ivory;
-    padding: $gutter-small $gutter-small 0;
+    padding: $gutter-small;
+    display: inline-block;
+    margin-bottom: 30px;
     text-align: center;
-    overflow: auto;
+    @include s-screen {
+      margin-bottom: 10px;
+    }
+
+    .icon-toggle-more {
+      margin: 0 auto;
+    }
+
+    &.active {
+      .faq__copy {
+        max-height: 800px;
+      }
+    }
 
     .p--header {
       font-size: 21px;
       font-weight: $font-demi;
     }
 
-    .p--text {
-      max-width: 900px;
-    }
-
     .footnote {
       font-size: 15px;
     }
+  }
+
+  &__copy {
+    max-height: 20px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out all;
   }
 }
