@@ -32,16 +32,36 @@ export default class LPEffects extends EventsBase {
       'click .kcp-timeline__event-box': 'toggleTimelineText',
       'click .how-it-works__icon': 'toggleHowItWorks',
       'click .weight-loss__icon': 'toggleWeightLoss',
-      'click .icon-toggle-more': 'toggleMore',  // Use this toggle event for this element globally
+      'click .toggle-single-view': 'toggleSingleView', // Only ONE element is visible at one time. Use this toggle event for this element globally.
+      'click .toggle-multiple-view': 'toggleMultipleView', // MULTIPLE element are visible at one time. Use this toggle event for this element globally.
     }
   }
-  toggleMore(target) {
+  toggleMultipleView(target) {
     if($(target).is('.active')) {
       $(target).removeClass('active');
       $(target).parent().removeClass('active');
+      $(target).children().removeClass('active');
+      $(target).parent().siblings().removeClass('active');
+      $(target).parent().siblings().find('.toggle-multiple-view').removeClass('active');
+      $(target).parent().siblings().find('.toggle-multiple-view').children().removeClass('active');
     } else {
       $(target).addClass('active');
       $(target).parent().addClass('active');
+      $(target).children().addClass('active');
+    }
+  }
+  toggleSingleView(target) {
+    if($(target).is('.active')) {
+      $(target).removeClass('active');
+      $(target).parent().removeClass('active');
+      $(target).children().removeClass('active');
+    } else {
+      $(target).addClass('active');
+      $(target).parent().addClass('active');
+      $(target).children().addClass('active');
+      $(target).parent().siblings().removeClass('active');
+      $(target).parent().siblings().find('.toggle-single-view').removeClass('active');
+      $(target).parent().siblings().find('.toggle-single-view').children().removeClass('active');
     }
   }
   toggleWeightLoss(target) {
