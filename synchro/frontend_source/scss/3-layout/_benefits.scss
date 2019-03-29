@@ -1,30 +1,24 @@
-// BENEFITS
-
 .benefits {
-  .p--title {
-    margin-bottom: 60px;
-    @include s-screen {
-      margin-bottom: 40px;
-    }
-  }
-
-  &__icon {
-    text-align: center;
-  }
-
-  &__img {
-    height: 80px;
-    @include s-screen {
-      height: 55px;
-    }
+  font-size: 0;
+  padding: 0 $gutter-small $gutter-small;
+  @include s-screen {
+    padding-bottom: 0;
   }
 
   &__point {
-    font-size: 20px;
-    max-width: 80%;
-    margin: 30px auto 0;
-    @include s-screen {
-      margin-bottom: 40px;
+    max-width: none;
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    padding: 0 15px;
+    margin: 0 0 40px;
+    vertical-align: top;
+    @include m-screen {
+      width: 50%;
+    }
+    @include xs-screen {
+      padding: 0;
+      width: 100%;
     }
 
     .icon-toggle-more {
@@ -33,44 +27,46 @@
       }
     }
 
-    span {
-      @include m-screen {
-        display: none;
+    &.active {
+      .benefits__copy {
+        max-height: 850px;
       }
     }
   }
 
-  .extended-benefits {
-    display: table;
+  &__icon {
+    height: 60px;
+  }
 
-    &__item {
-      width: 50%;
-      display: inline-block;
-      vertical-align: top;
-      @include s-screen {
-        width: 100%;
-      }
+  &__header {
+    max-width: 240px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: $spacing-normal;
+    text-align: center;
+    text-transform: uppercase;
+    @include xs-screen {
+      max-width: none;
     }
+  }
 
-    &__image {
-      width: 100%;
-    }
+  &__copy {
+    background: $color-silver-light;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out all;
+  }
 
-    &__copy {
-      margin: 50px $gutter-large;
-      @include m-screen {
-        margin: 40px $gutter-medium;
-      }
-      @include s-screen {
-        margin: 40px $gutter-small;
-      }
-    }
+  &__image {
+    width: 100%;
+  }
 
-    &__header {
-      font-weight: $font-normal;
-      color: $color-ebony;
-      font-size: 30px;
-      margin-bottom: 40px;
+  &__text {
+    padding: 0 20px;
+    overflow: auto;
+
+    .p--text {
+      font-size: 20px;
     }
   }
 }
@@ -83,3 +79,4 @@
     text-align: center;
   }
 }
+/*****/

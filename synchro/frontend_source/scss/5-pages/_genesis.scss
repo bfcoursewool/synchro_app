@@ -47,6 +47,28 @@
     }
   }
 
+  .benefits {
+    max-width: 1600px;
+    margin: 0 auto;
+
+    &__icon {
+      height: 80px;
+      @include s-screen {
+        height: 60px;
+      }
+    }
+
+    &__point {
+      margin-bottom: 25px;
+      @include m-screen {
+        width: 25%;
+      }
+      @include sm-screen {
+        width: 50%;
+      }
+    }
+  }
+
   .ingredients {
     &__genesis {
       font-size: 0;

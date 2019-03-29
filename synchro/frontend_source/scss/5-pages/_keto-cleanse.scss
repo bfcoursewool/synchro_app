@@ -107,57 +107,25 @@
   }
 
   .benefits {
-    text-align: center;
-    @include sm-screen {
-      padding: 0;
-    }
-
-    .p--title {
-      @include s-screen {
-        margin-top: $gutter-medium;
-      }
-    }
-
-    &__icons {
-      padding: 0;
-    }
-
-    &__container {
-      display: inline-block;
-    }
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-bottom: 0;
 
     &__icon {
-      display: inline-block;
-      width: 130px;
-      margin: 0 40px 40px;
-      @include m-screen {
-        margin-left: 30px;
-        margin-right: 30px;
-      }
-      @include sm-screen {
-        margin-left: 20px;
-        margin-right: 20px;
-      }
+      height: 80px;
       @include s-screen {
-        margin-left: 10px;
-        margin-right: 10px;
+        height: 60px;
       }
-      @include xs-screen {
-        margin: 0 20px 40px;
-      }
-    }
-
-    &__img {
-      height: 70px;
     }
 
     &__point {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      max-width: none;
-      font-weight: $font-medium;
-      margin: 20px 0 0;
+      margin-bottom: 25px;
+      @include m-screen {
+        width: 25%;
+      }
+      @include sm-screen {
+        width: 50%;
+      }
     }
   }
 
