@@ -15,7 +15,7 @@
     background: $color-ketobasis;
 
     .a--cta {
-      background: $color-ebony;;
+      background: $color-ebony;
       color: $color-ivory;
     }
   }
@@ -66,52 +66,10 @@
   }
 
   .intro {
-    position: relative;
-    @include sm-screen {
-      background: $color-ivory;
-    }
+    background-color: $color-ketobasis;
 
-    .bg-full-width {
-      position: relative;
-      min-height: inherit;
-      height: 488px;
+    &__image {
       background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-intro-desktop@2x.jpg");
-      background-color: $color-silver;
-      background-position: center;
-      @include image-curve ($curve-in-top-white-desktop, $curve-in-top-white-mobile, $curve-in-bottom-silver-desktop, $curve-in-bottom-white-mobile);
-      @include sm-screen {
-        background-position-x: calc(50% - 90px);
-      }
-      @include s-screen {
-        background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-intro-mobile@2x.jpg");
-        background-position: center;
-      }
-      @include xs-screen {
-        height: 234px;
-      }
-    }
-
-    &__copy {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      max-width: 500px;
-      transform: translate(-87% , -50%);
-      text-align: left;
-      @include s-screen {
-        position: initial;
-        transform: none;
-        text-align: center;
-        padding: $gutter-medium;
-        max-width: none;
-      }
-      @include xs-screen {
-        padding: 30px $gutter-small 10px;
-      }
-
-      .p--header {
-        max-width: initial;
-      }
     }
   }
 

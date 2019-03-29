@@ -1,5 +1,9 @@
 .intro {
-  display: table;
+  background: $color-gold;
+
+  &__wrapper {
+    display: table;
+  }
 
   &__image-mobile {
     display: none;
@@ -16,29 +20,30 @@
     display: table-cell;
     text-align: center;
     width: 50%;
-    background: $color-gold;
-    padding: 0 5% 36px;
+    padding: $gutter-large 5%;
+    @include xl-screen {
+      padding: $gutter-large 7%;
+    }
+    @include m-screen {
+      padding: $gutter-large $gutter-medium;
+    }
     @include s-screen {
-      display: block;
-      width: 100%;
-      overflow: auto;
-      padding: 0 $gutter-small 14px;
+      padding: $gutter-medium $gutter-small;
     }
 
     .p--title {
       color: $color-ivory;
       border: 2px solid $color-ivory;
+      margin-bottom: 30px;
       @include s-screen {
         margin-top: 40px;
       }
     }
 
     .p--header {
-      margin: 0 auto;
-      font-weight: 600;
+      font-weight: $font-medium;
       font-size: 40px;
       color: $color-ivory;
-      letter-spacing: $spacing-normal;
       @include s-screen {
         font-size: 35px;
       }
@@ -52,8 +57,6 @@
 
   &__image {
     display: table-cell;
-    width: 50%;
-    background: #f3f5f7;
     background-image: url("https://cdn.besynchro.com/gold/v2-0/benefits-inflammationfighting.jpg");
     background-size: cover;
     background-position: center;
@@ -65,8 +68,5 @@
   .a--cta {
     font-size: 18px;
     padding: 16px 35px;
-    @include s-screen {
-      display: none;
-    }
   }
 }

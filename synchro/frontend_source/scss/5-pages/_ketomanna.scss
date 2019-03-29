@@ -105,36 +105,10 @@
   }
 
   .intro {
-    background-color: #E6E6E5;
-    background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro.jpg");
-    background-size: cover;
-    padding-bottom: $gutter-large;
-    @include s-screen {
-      background: none;
-      border-bottom: 1px solid #E6E6E5;
-      padding-bottom: $gutter-medium;
-    }
+    background-color: $color-ketomanna;
 
-    &__copy {
-      padding-top: $gutter-large;
-      text-align: left;
-      @include s-screen {
-        text-align: center;
-        padding-top: $gutter-medium;
-      }
-
-      .p--title {
-        margin-left: 0;
-      }
-
-      .p--header {
-        max-width: none;
-        margin: initial;
-      }
-    }
-
-    .a--cta {
-      margin-bottom: 0;
+    &__image {
+      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro-mobile.jpg");
     }
   }
 

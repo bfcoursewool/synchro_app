@@ -5532,7 +5532,9 @@ p {
       text-align: center; } }
 
 .intro {
-  display: table; }
+  background: #eca846; }
+  .intro__wrapper {
+    display: table; }
   .intro__image-mobile {
     display: none; }
     @media (max-width: 767px) {
@@ -5544,26 +5546,27 @@ p {
     display: table-cell;
     text-align: center;
     width: 50%;
-    background: #eca846;
-    padding: 0 5% 36px; }
+    padding: 60px 5%; }
+    @media (min-width: 1600px) {
+      .intro__copy {
+        padding: 60px 7%; } }
+    @media (max-width: 1199px) {
+      .intro__copy {
+        padding: 60px 40px; } }
     @media (max-width: 767px) {
       .intro__copy {
-        display: block;
-        width: 100%;
-        overflow: auto;
-        padding: 0 20px 14px; } }
+        padding: 40px 20px; } }
     .intro__copy .p--title {
       color: #ffffff;
-      border: 2px solid #ffffff; }
+      border: 2px solid #ffffff;
+      margin-bottom: 30px; }
       @media (max-width: 767px) {
         .intro__copy .p--title {
           margin-top: 40px; } }
     .intro__copy .p--header {
-      margin: 0 auto;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 40px;
-      color: #ffffff;
-      letter-spacing: 0.05em; }
+      color: #ffffff; }
       @media (max-width: 767px) {
         .intro__copy .p--header {
           font-size: 35px; } }
@@ -5572,8 +5575,6 @@ p {
       color: #ffffff; }
   .intro__image {
     display: table-cell;
-    width: 50%;
-    background: #f3f5f7;
     background-image: url("https://cdn.besynchro.com/gold/v2-0/benefits-inflammationfighting.jpg");
     background-size: cover;
     background-position: center; }
@@ -5583,9 +5584,6 @@ p {
   .intro .a--cta {
     font-size: 18px;
     padding: 16px 35px; }
-    @media (max-width: 767px) {
-      .intro .a--cta {
-        display: none; } }
 
 .technology {
   background: #eca846;
@@ -7373,29 +7371,9 @@ input:checked + .accordion-horizontal__inner-box {
         background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-mobile@2x.png"); } }
 
 .ketomanna-lp .intro {
-  background-color: #E6E6E5;
-  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro.jpg");
-  background-size: cover;
-  padding-bottom: 60px; }
-  @media (max-width: 767px) {
-    .ketomanna-lp .intro {
-      background: none;
-      border-bottom: 1px solid #E6E6E5;
-      padding-bottom: 40px; } }
-  .ketomanna-lp .intro__copy {
-    padding-top: 60px;
-    text-align: left; }
-    @media (max-width: 767px) {
-      .ketomanna-lp .intro__copy {
-        text-align: center;
-        padding-top: 40px; } }
-    .ketomanna-lp .intro__copy .p--title {
-      margin-left: 0; }
-    .ketomanna-lp .intro__copy .p--header {
-      max-width: none;
-      margin: initial; }
-  .ketomanna-lp .intro .a--cta {
-    margin-bottom: 0; }
+  background-color: #6c5851; }
+  .ketomanna-lp .intro__image {
+    background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro-mobile.jpg"); }
 
 .ketomanna-lp .ingredients__icons {
   padding-top: 60px;
@@ -7648,67 +7626,9 @@ input:checked + .accordion-horizontal__inner-box {
     width: 100%; } }
 
 .keto-bundle-lp .intro {
-  position: relative; }
-  @media (max-width: 854px) {
-    .keto-bundle-lp .intro {
-      background: #ffffff; } }
-  .keto-bundle-lp .intro .bg-full-width {
-    position: relative;
-    min-height: inherit;
-    height: 488px;
-    background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-intro-desktop@2x.jpg");
-    background-color: #E6E6E5;
-    background-position: center; }
-    .keto-bundle-lp .intro .bg-full-width:after, .keto-bundle-lp .intro .bg-full-width:before {
-      content: "";
-      position: absolute;
-      height: 20px;
-      width: 100%;
-      background-size: 100%;
-      left: 0;
-      background-repeat: no-repeat; }
-    .keto-bundle-lp .intro .bg-full-width:before {
-      top: 0;
-      background-image: url("https://cdn.besynchro.com/global/curve-in-top-white-desktop@2x.png"); }
-      @media (max-width: 767px) {
-        .keto-bundle-lp .intro .bg-full-width:before {
-          background-image: url("https://cdn.besynchro.com/global/curve-in-top-white-mobile@2x.png"); } }
-    .keto-bundle-lp .intro .bg-full-width:after {
-      bottom: -1px;
-      background-image: url("https://cdn.besynchro.com/global/curve-in-bottom-silver-desktop@2x.png");
-      background-position: bottom; }
-      @media (max-width: 767px) {
-        .keto-bundle-lp .intro .bg-full-width:after {
-          background-image: url("https://cdn.besynchro.com/global/curve-in-bottom-white-mobile@2x.png"); } }
-    @media (max-width: 854px) {
-      .keto-bundle-lp .intro .bg-full-width {
-        background-position-x: calc(50% - 90px); } }
-    @media (max-width: 767px) {
-      .keto-bundle-lp .intro .bg-full-width {
-        background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-intro-mobile@2x.jpg");
-        background-position: center; } }
-    @media (max-width: 680px) {
-      .keto-bundle-lp .intro .bg-full-width {
-        height: 234px; } }
-  .keto-bundle-lp .intro__copy {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    max-width: 500px;
-    transform: translate(-87%, -50%);
-    text-align: left; }
-    @media (max-width: 767px) {
-      .keto-bundle-lp .intro__copy {
-        position: initial;
-        transform: none;
-        text-align: center;
-        padding: 40px;
-        max-width: none; } }
-    @media (max-width: 680px) {
-      .keto-bundle-lp .intro__copy {
-        padding: 30px 20px 10px; } }
-    .keto-bundle-lp .intro__copy .p--header {
-      max-width: initial; }
+  background-color: #8b79b3; }
+  .keto-bundle-lp .intro__image {
+    background-image: url("https://cdn.besynchro.com/keto-bundle/v1-0/keto-intro-desktop@2x.jpg"); }
 
 .keto-bundle-lp .consumption {
   text-align: center;
