@@ -5872,6 +5872,7 @@ p {
   background: #f4f4f5;
   overflow: auto;
   font-size: 0;
+  text-align: center;
   padding: 0 60px 30px; }
   @media (max-width: 1599px) {
     .faq {

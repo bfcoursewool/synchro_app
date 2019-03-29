@@ -2,6 +2,7 @@
   background: $color-silver-light;
   overflow: auto;
   font-size: 0;
+  text-align: center;
   padding: 0 $gutter-large 30px;
   @include l-screen {
     padding: 0 $gutter-medium 10px;
