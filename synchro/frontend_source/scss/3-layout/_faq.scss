@@ -5,35 +5,20 @@
   text-align: center;
   padding: 0 $gutter-large 30px;
   @include l-screen {
-    padding: 0 $gutter-medium 10px;
-  }
-  @include s-screen {
     padding: 0 $gutter-small 30px;
   }
 
-  #faq-columns {
-    column-gap: 30px;
-    margin: 0 auto;
-    column-count: 4;
-    @include l-screen {
-      column-count: 3;
-    }
-    @include m-screen {
-      column-count: 2;
-    }
-    @include s-screen {
-      column-count: 1;
-    }
-  }
-
   &__card {
-    background: $color-ivory;
-    padding: $gutter-small;
+    width: 33.33%;
     display: inline-block;
-    margin-bottom: 30px;
-    text-align: center;
-    @include s-screen {
-      margin-bottom: 10px;
+    padding: 0 15px 30px;
+    vertical-align: top;
+    @include m-screen {
+      width: 50%;
+    }
+    @include sm-screen {
+      padding: 0 0 10px;
+      width: 100%;
     }
 
     &.active {
@@ -41,6 +26,16 @@
         max-height: 800px;
       }
     }
+
+    .toggle-single-view {
+      background: $color-ivory;
+      padding-bottom: $gutter-small;
+    }
+  }
+
+  &__inner {
+    background: $color-ivory;
+    padding: $gutter-small $gutter-small 0;
 
     .p--header {
       font-size: 21px;

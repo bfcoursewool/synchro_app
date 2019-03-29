@@ -5876,38 +5876,31 @@ p {
   padding: 0 60px 30px; }
   @media (max-width: 1599px) {
     .faq {
-      padding: 0 40px 10px; } }
-  @media (max-width: 767px) {
-    .faq {
       padding: 0 20px 30px; } }
-  .faq #faq-columns {
-    column-gap: 30px;
-    margin: 0 auto;
-    column-count: 4; }
-    @media (max-width: 1599px) {
-      .faq #faq-columns {
-        column-count: 3; } }
-    @media (max-width: 1199px) {
-      .faq #faq-columns {
-        column-count: 2; } }
-    @media (max-width: 767px) {
-      .faq #faq-columns {
-        column-count: 1; } }
   .faq__card {
-    background: #ffffff;
-    padding: 20px;
+    width: 33.33%;
     display: inline-block;
-    margin-bottom: 30px;
-    text-align: center; }
-    @media (max-width: 767px) {
+    padding: 0 15px 30px;
+    vertical-align: top; }
+    @media (max-width: 1199px) {
       .faq__card {
-        margin-bottom: 10px; } }
+        width: 50%; } }
+    @media (max-width: 854px) {
+      .faq__card {
+        padding: 0 0 10px;
+        width: 100%; } }
     .faq__card.active .faq__copy {
       max-height: 800px; }
-    .faq__card .p--header {
+    .faq__card .toggle-single-view {
+      background: #ffffff;
+      padding-bottom: 20px; }
+  .faq__inner {
+    background: #ffffff;
+    padding: 20px 20px 0; }
+    .faq__inner .p--header {
       font-size: 21px;
       font-weight: 600; }
-    .faq__card .footnote {
+    .faq__inner .footnote {
       font-size: 15px; }
   .faq__copy {
     max-height: 20px;
@@ -7299,7 +7292,7 @@ input:checked + .accordion-horizontal__inner-box {
 .ketomanna-lp .intro {
   background-color: #6c5851; }
   .ketomanna-lp .intro__image {
-    background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro-mobile.jpg"); }
+    background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro.jpg"); }
 
 @media (max-width: 854px) {
   .ketomanna-lp .ingredients__icons {
