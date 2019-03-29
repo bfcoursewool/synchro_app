@@ -114,29 +114,34 @@
 
   .ingredients {
     &__icons {
-      padding-top: $gutter-large;
-      padding-bottom: 30px;
-      background: none;
+      @include sm-screen {
+        background: $color-silver-light;
+      }
       @include s-screen {
-        border-top: 1px solid #e6e6e5;
         margin-top: 20px;
-        padding-top: $gutter-medium;
-        padding-bottom: 0;
       }
     }
 
     &__icon-box {
-      width: 25%;
-      max-width: 300px;
-      @include s-screen {
-        width: 50%;
+      .p--text {
+        color: $color-ebony;
+        font-weight: $font-medium;
       }
     }
 
     &__items {
-      padding: 10px $gutter-large 40px;
+      padding: $gutter-large 0 20px;
+      text-align: center;
+      @include m-screen {
+        padding: $gutter-medium 0 0;
+      }
+    }
+
+    &__item-box {
+      width: 50%;
       @include s-screen {
-        padding: 0 $gutter-small $gutter-small;
+        width: 100%;
+        margin-bottom: 20px;
       }
     }
 

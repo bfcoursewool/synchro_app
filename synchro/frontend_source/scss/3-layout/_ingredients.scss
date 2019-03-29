@@ -1,30 +1,38 @@
 .ingredients {
   text-align: center;
 
+  .p--title {
+    color: $color-ivory;
+    border: 1px solid $color-ivory;
+    margin-top: 10px;
+  }
+
   &__icons {
-    background: #F2F2F2;
-    overflow: auto;
+    padding: 50px 50px 15px;
     font-size: 0;
-    padding: 0 $gutter-large;
-    @include sm-screen {
-      padding: 0 $gutter-small;
+    @include s-screen {
+      padding: 40px 20px 10px;
     }
   }
 
   &__icon-box {
     display: inline-block;
     text-align: center;
-    width: 25%;
+    width: 20%;
     vertical-align: top;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
+    @include l-screen {
+      width: 25%;
+    }
     @include xs-screen {
       width: 50%;
     }
 
     .p--text {
+      color: $color-ivory;
       font-size: 16px;
       letter-spacing: 1.5px;
-      font-weight: $font-medium;
+      font-weight: $font-demi;
       text-transform: uppercase;
     }
   }
@@ -32,37 +40,12 @@
   &__icon {
     max-width: 90px;
   }
-}
 
-.ingredients {
   &__items {
-    padding: 0 $gutter-large $gutter-large;
+    padding: $gutter-large 0 20px;
     font-size: 0;
-    @include m-screen {
-      padding-left: $gutter-small;
-      padding-right: $gutter-small;
-      padding-bottom: $gutter-medium;
-    }
     @include s-screen {
-      padding-bottom: $gutter-small;
-    }
-  }
-
-  &__item-box {
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
-    padding: 0 5%;
-    @include s-screen {
-      display: block;
-      width: 100%;
-    }
-  }
-
-  &__image-box {
-    margin: 50px 0 30px;
-    @include s-screen {
-      height: auto;
+      padding-top: $gutter-medium;
     }
   }
 
@@ -73,57 +56,70 @@
 
   &__copy {
     .p--header {
-      font-size: 35px;
-      border-width: 0 0 2px;
+      font-size: 24px;
     }
   }
-}
 
-.gold-ingredients__img {
-  height: 100px;
-  -webkit-filter: drop-shadow(0 0 3px rgba(0,0,0,0.1));
-  filter: drop-shadow(0 0 3px rgba(0,0,0,0.1));
-  @include s-screen {
-    height: 70px;
-  }
-}
-
-.ingredients--extended-content {
-  padding-bottom: 70px;
-  margin-top: 20px;
-  @include s-screen {
-    margin-top: 0;
+  &__details {
+    padding: 0 $gutter-large $gutter-medium;
+    font-size: 0;
+    @include m-screen {
+      padding: 0 $gutter-medium;
+    }
+    @include s-screen {
+      padding: 0 $gutter-small $gutter-small;
+    }
   }
 
-  .extended-content--image {
-    padding-bottom: 47%;
+  &__facts {
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    @include m-screen {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
   }
 
-  .gold-ingredients__header {
-    font-size: 31px;
-    color: #4e4e4e;
-    margin-top: 20px;
+  &__images {
+    width: 60%;
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+    @include m-screen {
+      width: 100%;
+      margin-top: 40px;
+    }
   }
 
-  .gold-ingredients__item,
-  .gold-ingredients__item__single {
+  &__item-box {
     vertical-align: top;
-    padding: 80px 50px 0;
-    @media (max-width: 480px) {
-      padding: 60px 20px 0;
+    margin-bottom: 20px;
+    width: 33%;
+    display: inline-block;
+    padding: 0 5%;
+    @include l-screen {
+      width: 50%;
     }
-
-    .gold-ingredients__img {
-      transform: scale(0.8);
+    @include m-screen {
+      width: 33%;
     }
-
-    & + .gold-ingredients__item .gold-ingredients__img {
-      transform: none;
+    @include s-screen {
+      width: 50%;
+      margin-bottom: 0;
     }
   }
 
-  .gold-ingredients__img {
-    width: auto;
-    height: 100%;
+  &__header {
+    font-weight: $font-medium;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: $spacing-normal;
+    margin: 20px 0;
   }
 }
