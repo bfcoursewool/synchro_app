@@ -1,9 +1,17 @@
 .keto-cleanse {
-  .top-offer-bar {
-    background: #C69B82;
+  a.anchor {
+    top: -35px;
+  }
 
-    &__text {
-      color: $color-ivory;
+  .top-offer-bar {
+    @include xs-screen {
+      .a--cta {
+        display: none;
+      }
+    }
+
+    .a--cta {
+      background: $color-ebony;
     }
   }
 

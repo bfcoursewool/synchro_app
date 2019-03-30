@@ -6648,9 +6648,8 @@ input:checked + .accordion-horizontal__inner-box {
       display: block;
       color: #5da8a6; }
 
-@media (max-width: 767px) {
-  .gold-lp a.anchor {
-    top: 90px; } }
+.gold-lp a.anchor {
+  top: -35px; }
 
 @media (max-width: 680px) {
   .gold-lp .top-offer-bar .a--cta {
@@ -7166,10 +7165,11 @@ input:checked + .accordion-horizontal__inner-box {
     border-right-color: transparent; }
 
 .ketomanna-lp a.anchor {
-  top: 50px; }
-  @media (max-width: 767px) {
-    .ketomanna-lp a.anchor {
-      top: 90px; } }
+  top: -35px; }
+
+@media (max-width: 680px) {
+  .ketomanna-lp .top-offer-bar .a--cta {
+    display: none; } }
 
 .ketomanna-lp .main-header {
   position: initial; }
@@ -7546,6 +7546,10 @@ input:checked + .accordion-horizontal__inner-box {
   .keto-bundle-lp .ingredients__icon-box {
     width: 100%; } }
 
+.keto-bundle-lp .ingredients__icon-box .p--text {
+  color: #000000;
+  font-weight: 500; }
+
 .keto-bundle-lp .intro {
   background-color: #8b79b3; }
   .keto-bundle-lp .intro__image {
@@ -7707,10 +7711,15 @@ input:checked + .accordion-horizontal__inner-box {
   text-align: center;
   margin: 10px 0 20px; }
 
-.keto-cleanse .top-offer-bar {
-  background: #C69B82; }
-  .keto-cleanse .top-offer-bar__text {
-    color: #ffffff; }
+.keto-cleanse a.anchor {
+  top: -35px; }
+
+@media (max-width: 680px) {
+  .keto-cleanse .top-offer-bar .a--cta {
+    display: none; } }
+
+.keto-cleanse .top-offer-bar .a--cta {
+  background: #000000; }
 
 .keto-cleanse .a--cta {
   background: #427074;

@@ -1,8 +1,13 @@
 .ketomanna-lp {
   a.anchor {
-    top: 50px;
-    @include s-screen {
-      top: 90px;
+    top: -35px;
+  }
+
+  .top-offer-bar {
+    @include xs-screen {
+      .a--cta {
+        display: none;
+      }
     }
   }
 
