@@ -8600,7 +8600,7 @@ input:checked + .accordion-horizontal__inner-box {
 
 .keto-cleanse.kcp-weekly .kcp-goals {
   padding: 0 60px 10px;
-  overflow: auto;
+  overflow: hidden;
   background: #F8F3F0;
   position: relative;
   text-align: center; }
