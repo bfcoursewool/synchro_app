@@ -9149,4 +9149,21 @@ svg.external {
 .cro016-01 .purchase {
   padding-bottom: 0; }
 
+@media (max-width: 854px) {
+  .cro017-01 .top-offer-bar .a--cta {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .cro017-01 .top-offer-bar__desktop {
+    display: none; } }
+
+.cro017-01 .purchase .option-1 {
+  background-image: url("https://cdn.besynchro.com/experiments/gold-og1-cro017.png"); }
+
+.cro017-01 .purchase .option-2 {
+  background-image: url("https://cdn.besynchro.com/experiments/gold-og2-cro017.png"); }
+
+.cro017-01 .purchase .option-3 {
+  background-image: url("https://cdn.besynchro.com/experiments/gold-og4-cro017.png"); }
+
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
