@@ -6,25 +6,6 @@
   }
 
   .atf {
-    &.bg-full-width {
-      background-image: url("https://cdn.besynchro.com/experiments/km-product-atf-cro016.jpg");
-      @include sm-screen {
-        min-height: initial;
-        background: none;
-      }
-    }
-
-    &__mobile {
-      @include sm-screen {
-        background-image: url("https://cdn.besynchro.com/experiments/km-product-atf-mobile-cro016.jpg");
-        height: 360px;
-      }
-    }
-
-    &__content-box {
-      top: 48%;
-    }
-
     &__header {
       font-size: 60px;
       letter-spacing: 2px;
@@ -53,37 +34,6 @@
   .rating__icon {
     fill: #39447c;
     stroke: none;
-  }
-
-  .intro {
-    &__copy {
-      .a--cta {
-        background: $color-ebony;
-      }
-    }
-  }
-
-  .ingredients {
-    &__icons {
-      @include sm-screen {
-        margin-top: 60px;
-      }
-      @include xs-screen {
-        margin-top: 40px;
-      }
-    }
-  }
-
-  .instagram__user .p--text {
-    font-size: 18px;
-  }
-
-  .synchro-reviews {
-    border-top: 0;
-  }
-
-  .purchase {
-    padding-bottom: 0;
   }
 }
 

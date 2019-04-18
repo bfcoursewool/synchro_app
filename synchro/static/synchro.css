@@ -6542,7 +6542,6 @@ input:checked + .accordion-horizontal__inner-box {
     height: 20px; }
   .rating__icon {
     fill: #eca846;
-    stroke: #eca846;
     fill-rule: nonzero; }
   .rating__count {
     font-weight: 500;
@@ -7168,6 +7167,9 @@ input:checked + .accordion-horizontal__inner-box {
 .ketomanna-lp a.anchor {
   top: -35px; }
 
+.ketomanna-lp .a--cta {
+  background: #39447c; }
+
 @media (max-width: 680px) {
   .ketomanna-lp .top-offer-bar .a--cta {
     display: none; } }
@@ -7183,7 +7185,7 @@ input:checked + .accordion-horizontal__inner-box {
     height: 47px; }
 
 .ketomanna-lp .atf.bg-full-width {
-  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf.jpg");
+  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf-2.jpg");
   background-color: #f0f3f4;
   background-position: center; }
   @media (max-width: 854px) {
@@ -7215,42 +7217,50 @@ input:checked + .accordion-horizontal__inner-box {
 
 .ketomanna-lp .atf__content-box {
   position: absolute;
-  top: 56%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 400px;
-  text-align: center; }
+  text-align: center;
+  max-width: 450px; }
   @media (max-width: 854px) {
     .ketomanna-lp .atf__content-box {
       position: initial;
       transform: none;
-      margin: 20px auto 0;
-      max-width: 80%; } }
+      margin: 40px;
+      max-width: none; } }
+  @media (max-width: 680px) {
+    .ketomanna-lp .atf__content-box {
+      margin: 40px 20px; } }
 
 .ketomanna-lp .atf__header {
   position: initial;
   transform: none;
-  font-size: 40px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  background: white;
-  width: 320px;
-  padding: 14px;
-  opacity: 0.8; }
+  font-size: 60px;
+  color: #39447c;
+  font-weight: 600;
+  letter-spacing: 0.05em; }
   @media (max-width: 854px) {
     .ketomanna-lp .atf__header {
+      font-size: 50px;
       background: none;
       padding: 0;
       width: initial; } }
   @media (max-width: 680px) {
     .ketomanna-lp .atf__header {
       font-size: 40px; } }
+  .ketomanna-lp .atf__header span {
+    display: block;
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 1px; }
+    @media (max-width: 854px) {
+      .ketomanna-lp .atf__header span {
+        margin-top: 10px; } }
 
 .ketomanna-lp .atf__description {
   font-size: 26px; }
   @media (max-width: 854px) {
     .ketomanna-lp .atf__description {
-      margin: 0 auto 20px;
       font-size: 22px; } }
 
 .ketomanna-lp .atf .a--cta.cta--secondary {
@@ -7263,9 +7273,9 @@ input:checked + .accordion-horizontal__inner-box {
     .ketomanna-lp .atf__mobile {
       display: block;
       position: relative;
-      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf-mobile2.jpg");
+      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf-mobile-2.jpg");
       background-size: cover;
-      height: 300px;
+      height: 360px;
       background-position: center; }
       .ketomanna-lp .atf__mobile:after, .ketomanna-lp .atf__mobile:before {
         content: "";
@@ -7290,8 +7300,14 @@ input:checked + .accordion-horizontal__inner-box {
       .ketomanna-lp .atf__mobile:after {
         background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-mobile@2x.png"); } }
 
+.ketomanna-lp .rating__icon {
+  fill: #39447c; }
+
 .ketomanna-lp .intro {
-  background-color: #6c5851; }
+  background-image: linear-gradient(90deg, #ded5c4, #e6c1c8); }
+  .ketomanna-lp .intro__copy .p--header,
+  .ketomanna-lp .intro__copy .p--text {
+    color: #39447c; }
   .ketomanna-lp .intro__image {
     background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro.jpg"); }
 
@@ -7333,28 +7349,44 @@ input:checked + .accordion-horizontal__inner-box {
 
 .ketomanna-lp .facts__ketomanna {
   text-align: center;
-  background: url("https://cdn.besynchro.com/ketomanna/v1-0/km-background.png") center;
-  background-size: cover;
-  padding: 60px 60px 30px; }
+  background-image: linear-gradient(90deg, #ded5c4, #e6c1c8);
+  padding: 60px 0; }
   @media (max-width: 854px) {
     .ketomanna-lp .facts__ketomanna {
-      padding: 40px; } }
+      padding: 40px 40px 14px; } }
   @media (max-width: 767px) {
     .ketomanna-lp .facts__ketomanna {
-      padding: 20px; } }
+      padding-left: 20px;
+      padding-right: 20px; } }
   .ketomanna-lp .facts__ketomanna img {
-    max-height: 550px;
-    max-width: 100%; }
+    max-height: 400px;
+    max-width: 100%;
+    padding: 0 25px; }
+    @media (max-width: 854px) {
+      .ketomanna-lp .facts__ketomanna img {
+        padding: 0; } }
   .ketomanna-lp .facts__ketomanna .p--title {
-    border-color: #ffffff;
-    color: #ffffff; }
+    border-color: #39447c;
+    color: #39447c; }
   .ketomanna-lp .facts__ketomanna .p--text {
-    color: #ffffff;
-    font-size: 30px;
+    color: #39447c;
+    font-size: 26px;
     max-width: 700px; }
     @media (max-width: 767px) {
       .ketomanna-lp .facts__ketomanna .p--text {
-        font-size: 20px; } }
+        font-size: 22px; } }
+
+.ketomanna-lp .facts__copy {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 34px;
+  max-width: 45%;
+  padding: 0 25px; }
+  @media (max-width: 854px) {
+    .ketomanna-lp .facts__copy {
+      max-width: none;
+      margin: 0;
+      padding: 0; } }
 
 .ketomanna-lp .consumption {
   font-size: 0;
@@ -7392,63 +7424,63 @@ input:checked + .accordion-horizontal__inner-box {
   .ketomanna-lp .consumption__image {
     width: 100%; }
 
-.ketomanna-lp .slider .slick-active [type="button"] {
-  background-color: #988177; }
+.ketomanna-lp .instagram__user .p--text {
+  font-size: 18px; }
 
-@media (max-width: 767px) {
-  .ketomanna-lp .purchase__item:nth-child(2) {
-    border-bottom: none;
-    border-top: 1px solid #e2e2e2; } }
-
-.ketomanna-lp .purchase .option-1 {
-  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png"); }
-
-.ketomanna-lp .purchase .option-2 {
-  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png"); }
-
-.ketomanna-lp .purchase .option-3 {
-  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png"); }
-
-.ketomanna-lp .purchase .discount {
-  display: block;
-  width: 110px;
-  height: 26px;
-  background-color: #6c5851;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.2);
-  color: #ffffff;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  line-height: 26px;
-  text-transform: uppercase;
-  z-index: 90;
-  transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out; }
-  .ketomanna-lp .purchase .discount:after, .ketomanna-lp .purchase .discount:before {
-    content: "";
+.ketomanna-lp .purchase {
+  padding-bottom: 0; }
+  @media (max-width: 767px) {
+    .ketomanna-lp .purchase__item:nth-child(2) {
+      border-bottom: none;
+      border-top: 1px solid #e2e2e2; } }
+  .ketomanna-lp .purchase .option-1 {
+    background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png"); }
+  .ketomanna-lp .purchase .option-2 {
+    background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png"); }
+  .ketomanna-lp .purchase .option-3 {
+    background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png"); }
+  .ketomanna-lp .purchase .discount {
+    display: block;
+    width: 110px;
+    height: 26px;
+    background-color: #6c5851;
     position: absolute;
     top: 0;
-    border: 13px solid #6c5851;
-    border-left-width: 8px;
-    border-right-width: 8px;
-    z-index: -1; }
-  .ketomanna-lp .purchase .discount:before {
-    left: -15px;
-    border-left-color: transparent; }
-  .ketomanna-lp .purchase .discount:after {
-    right: -15px;
-    border-right-color: transparent; }
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    text-transform: uppercase;
+    z-index: 90;
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out; }
+    .ketomanna-lp .purchase .discount:after, .ketomanna-lp .purchase .discount:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      border: 13px solid #6c5851;
+      border-left-width: 8px;
+      border-right-width: 8px;
+      z-index: -1; }
+    .ketomanna-lp .purchase .discount:before {
+      left: -15px;
+      border-left-color: transparent; }
+    .ketomanna-lp .purchase .discount:after {
+      right: -15px;
+      border-right-color: transparent; }
 
-.ketomanna-paid-r .top-offer-bar__text {
-  font-size: 18px;
-  display: inline; }
+.ketomanna-lp .synchro-reviews {
+  border-top: 0; }
 
 .ketomanna-paid-r .top-offer-bar .a--cta {
   -webkit-animation: flash 1s infinite;
   -moz-animation: flash 1s infinite;
   -o-animation: flash 1s infinite;
   animation: flash 1s infinite; }
+  @media (max-width: 854px) {
+    .ketomanna-paid-r .top-offer-bar .a--cta {
+      display: none; } }
 
 @-webkit-keyframes flash {
   0% {
@@ -7481,11 +7513,6 @@ input:checked + .accordion-horizontal__inner-box {
     opacity: 0.8; }
   100% {
     opacity: 1; } }
-  .ketomanna-paid-r .top-offer-bar .a--cta:active, .ketomanna-paid-r .top-offer-bar .a--cta:focus, .ketomanna-paid-r .top-offer-bar .a--cta:hover, .ketomanna-paid-r .top-offer-bar .a--cta:visited {
-    color: #000000; }
-
-.ketomanna-paid-r .main-header-container .main-header {
-  position: initial; }
 
 .ketomanna-paid-r .purchase__item-servings {
   font-size: 22px;
@@ -9089,21 +9116,6 @@ svg.external {
 .cro016-01 .a--cta {
   background: #8b79b3; }
 
-.cro016-01 .atf.bg-full-width {
-  background-image: url("https://cdn.besynchro.com/experiments/km-product-atf-cro016.jpg"); }
-  @media (max-width: 854px) {
-    .cro016-01 .atf.bg-full-width {
-      min-height: initial;
-      background: none; } }
-
-@media (max-width: 854px) {
-  .cro016-01 .atf__mobile {
-    background-image: url("https://cdn.besynchro.com/experiments/km-product-atf-mobile-cro016.jpg");
-    height: 360px; } }
-
-.cro016-01 .atf__content-box {
-  top: 48%; }
-
 .cro016-01 .atf__header {
   font-size: 60px;
   letter-spacing: 2px;
@@ -9128,26 +9140,6 @@ svg.external {
 .cro016-01 .rating__icon {
   fill: #39447c;
   stroke: none; }
-
-.cro016-01 .intro__copy .a--cta {
-  background: #000000; }
-
-@media (max-width: 854px) {
-  .cro016-01 .ingredients__icons {
-    margin-top: 60px; } }
-
-@media (max-width: 680px) {
-  .cro016-01 .ingredients__icons {
-    margin-top: 40px; } }
-
-.cro016-01 .instagram__user .p--text {
-  font-size: 18px; }
-
-.cro016-01 .synchro-reviews {
-  border-top: 0; }
-
-.cro016-01 .purchase {
-  padding-bottom: 0; }
 
 @media (max-width: 854px) {
   .cro017-01 .top-offer-bar .a--cta {

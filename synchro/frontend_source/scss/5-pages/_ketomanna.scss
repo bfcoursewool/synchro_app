@@ -3,6 +3,10 @@
     top: -35px;
   }
 
+  .a--cta {
+    background: #39447c;
+  }
+
   .top-offer-bar {
     @include xs-screen {
       .a--cta {
@@ -32,7 +36,7 @@
 
   .atf {
     &.bg-full-width {
-      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf.jpg");
+      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf-2.jpg");
       background-color: #f0f3f4;
       background-position: center;
       @include sm-screen {
@@ -47,30 +51,31 @@
 
     &__content-box {
       position: absolute;
-      top: 56%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      max-width: 400px;
       text-align: center;
+      max-width: 450px;
       @include sm-screen {
         position: initial;
         transform: none;
-        margin: 20px auto 0;
-        max-width: 80%;
+        margin: $gutter-medium;
+        max-width: none;
+      }
+      @include xs-screen {
+        margin: $gutter-medium $gutter-small;
       }
     }
 
     &__header {
       position: initial;
       transform: none;
-      font-size: 40px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      background: white;
-      width: 320px;
-      padding: 14px;
-      opacity: 0.8;
+      font-size: 60px;
+      color: #39447c;
+      font-weight: $font-demi;
+      letter-spacing: 0.05em;
       @include sm-screen {
+        font-size: 50px;
         background: none;
         padding: 0;
         width: initial;
@@ -78,12 +83,21 @@
       @include xs-screen {
         font-size: 40px;
       }
+
+      span {
+        display: block;
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        @include sm-screen {
+          margin-top: 10px;
+        }
+      }
     }
 
     &__description {
       font-size: 26px;
       @include sm-screen {
-        margin: 0 auto 20px;
         font-size: 22px;
       }
     }
@@ -100,17 +114,28 @@
       @include sm-screen {
         display: block;
         position: relative;
-        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf-mobile2.jpg");
+        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf-mobile-2.jpg");
         background-size: cover;
-        height: 300px;
+        height: 360px;
         background-position: center;
         @include image-curve (none, none, $curve-out-bottom-white-desktop, $curve-out-bottom-white-mobile);
       }
     }
   }
 
+  .rating__icon {
+    fill: #39447c;
+  }
+
   .intro {
-    background-color: $color-ketomanna;
+    background-image: linear-gradient(90deg, #ded5c4, #e6c1c8);
+
+    &__copy {
+      .p--header,
+      .p--text {
+        color: #39447c;
+      }
+    }
 
     &__image {
       background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro.jpg");
@@ -166,33 +191,50 @@
   .facts {
     &__ketomanna {
       text-align: center;
-      background: url("https://cdn.besynchro.com/ketomanna/v1-0/km-background.png") center;
-      background-size: cover;
-      padding: $gutter-large $gutter-large 30px;
+      background-image: linear-gradient(90deg, #ded5c4, #e6c1c8);
+      padding: $gutter-large 0;
       @include sm-screen {
-        padding: $gutter-medium;
+        padding: $gutter-medium $gutter-medium 14px;
       }
       @include s-screen {
-        padding: $gutter-small;
+        padding-left: $gutter-small;
+        padding-right: $gutter-small;
       }
 
       img {
-        max-height: 550px;
+        max-height: 400px;
         max-width: 100%;
+        padding: 0 25px;
+        @include sm-screen {
+          padding: 0;
+        }
       }
 
       .p--title {
-        border-color: $color-ivory;
-        color: $color-ivory;
+        border-color: #39447c;
+        color: #39447c;
       }
 
       .p--text {
-        color: $color-ivory;
-        font-size: 30px;
+        color: #39447c;
+        font-size: 26px;
         max-width: 700px;
         @include s-screen {
-          font-size: 20px;
+          font-size: 22px;
         }
+      }
+    }
+
+    &__copy {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 34px;
+      max-width: 45%;
+      padding: 0 25px;
+      @include sm-screen {
+        max-width: none;
+        margin: 0;
+        padding: 0;
       }
     }
   }
@@ -244,15 +286,14 @@
     }
   }
 
-  .slider {
-    .slick-active {
-      [type="button"] {
-        background-color: #988177;
-      }
+  .instagram__user {
+    .p--text {
+      font-size: 18px;
     }
   }
 
   .purchase {
+    padding-bottom: 0;
     @include s-screen {
       &__item:nth-child(2) {
         border-bottom: none;
@@ -276,29 +317,20 @@
       @include discount ($color-ketomanna)
     }
   }
+
+  .synchro-reviews {
+    border-top: 0;
+  }
 }
 
 .ketomanna-paid-r {
   .top-offer-bar {
-    &__text {
-      font-size: 18px;
-      display: inline;
-    }
-
     .a--cta {
-      @include animate-flash;
-
-      &:active,
-      &:focus,
-      &:hover,
-      &:visited {
-        color: $color-ebony;
+      @include sm-screen {
+        display: none;
       }
+      @include animate-flash;
     }
-  }
-
-  .main-header-container .main-header {
-    position: initial;
   }
 
   .purchase {
