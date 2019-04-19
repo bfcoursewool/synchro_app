@@ -7170,6 +7170,10 @@ input:checked + .accordion-horizontal__inner-box {
 .ketomanna-lp .a--cta {
   background: #39447c; }
 
+.ketomanna-lp .p--title {
+  border-color: #39447c;
+  color: #39447c; }
+
 @media (max-width: 680px) {
   .ketomanna-lp .top-offer-bar .a--cta {
     display: none; } }
@@ -7178,9 +7182,6 @@ input:checked + .accordion-horizontal__inner-box {
   position: initial; }
   .ketomanna-lp .main-header .a--cta {
     display: none; }
-  .ketomanna-lp .main-header.floated .a--cta {
-    display: block;
-    background: #6c5851; }
   .ketomanna-lp .main-header__content {
     height: 47px; }
 
@@ -7235,7 +7236,6 @@ input:checked + .accordion-horizontal__inner-box {
 .ketomanna-lp .atf__header {
   position: initial;
   transform: none;
-  font-size: 60px;
   color: #39447c;
   font-weight: 600;
   letter-spacing: 0.05em; }
@@ -7262,10 +7262,6 @@ input:checked + .accordion-horizontal__inner-box {
   @media (max-width: 854px) {
     .ketomanna-lp .atf__description {
       font-size: 22px; } }
-
-.ketomanna-lp .atf .a--cta.cta--secondary {
-  background: none;
-  color: #000000; }
 
 .ketomanna-lp .atf__mobile {
   display: none; }
@@ -7365,9 +7361,6 @@ input:checked + .accordion-horizontal__inner-box {
     @media (max-width: 854px) {
       .ketomanna-lp .facts__ketomanna img {
         padding: 0; } }
-  .ketomanna-lp .facts__ketomanna .p--title {
-    border-color: #39447c;
-    color: #39447c; }
   .ketomanna-lp .facts__ketomanna .p--text {
     color: #39447c;
     font-size: 26px;
@@ -7424,8 +7417,10 @@ input:checked + .accordion-horizontal__inner-box {
   .ketomanna-lp .consumption__image {
     width: 100%; }
 
-.ketomanna-lp .instagram__user .p--text {
-  font-size: 18px; }
+.ketomanna-lp .instagram {
+  background-image: linear-gradient(90deg, #ded5c4, #e6c1c8); }
+  .ketomanna-lp .instagram__user .p--text {
+    font-size: 18px; }
 
 .ketomanna-lp .purchase {
   padding-bottom: 0; }
@@ -7472,6 +7467,11 @@ input:checked + .accordion-horizontal__inner-box {
 
 .ketomanna-lp .synchro-reviews {
   border-top: 0; }
+
+.ketomanna-lp .footer {
+  background-image: linear-gradient(90deg, #ded5c4, #e6c1c8); }
+  .ketomanna-lp .footer__top {
+    color: #e6c1c8; }
 
 .ketomanna-paid-r .top-offer-bar .a--cta {
   -webkit-animation: flash 1s infinite;

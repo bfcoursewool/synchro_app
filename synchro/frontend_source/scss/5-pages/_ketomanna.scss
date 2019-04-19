@@ -7,6 +7,11 @@
     background: #39447c;
   }
 
+  .p--title {
+    border-color: #39447c;
+    color: #39447c;
+  }
+
   .top-offer-bar {
     @include xs-screen {
       .a--cta {
@@ -20,13 +25,6 @@
 
     .a--cta {
       display: none;
-    }
-
-    &.floated {
-      .a--cta {
-        display: block;
-        background: $color-ketomanna;
-      }
     }
 
     &__content {
@@ -70,7 +68,6 @@
     &__header {
       position: initial;
       transform: none;
-      font-size: 60px;
       color: #39447c;
       font-weight: $font-demi;
       letter-spacing: 0.05em;
@@ -99,13 +96,6 @@
       font-size: 26px;
       @include sm-screen {
         font-size: 22px;
-      }
-    }
-
-    .a--cta {
-      &.cta--secondary {
-        background: none;
-        color: $color-ebony;
       }
     }
 
@@ -210,11 +200,6 @@
         }
       }
 
-      .p--title {
-        border-color: #39447c;
-        color: #39447c;
-      }
-
       .p--text {
         color: #39447c;
         font-size: 26px;
@@ -286,9 +271,13 @@
     }
   }
 
-  .instagram__user {
-    .p--text {
-      font-size: 18px;
+  .instagram {
+    background-image: linear-gradient(90deg, #ded5c4, #e6c1c8);
+
+    &__user {
+      .p--text {
+        font-size: 18px;
+      }
     }
   }
 
@@ -320,6 +309,14 @@
 
   .synchro-reviews {
     border-top: 0;
+  }
+
+  .footer {
+    background-image: linear-gradient(90deg, #ded5c4, #e6c1c8);
+
+    &__top {
+      color: #e6c1c8;
+    }
   }
 }
 
