@@ -1,42 +1,5 @@
 // STYLES FOR ONGOING EXPERIMENTS/TESTS
 
-.cro016-01 {
-  .a--cta {
-    background: $color-ketobasis;
-  }
-
-  .atf {
-    &__header {
-      font-size: 60px;
-      letter-spacing: 2px;
-      text-transform: none;
-      opacity: 1;
-      font-weight: $font-demi;
-      width: initial;
-      color: #39447c;
-      background: none;
-      line-height: 1.2;
-      @include sm-screen {
-        font-size: 50px;
-      }
-
-      span {
-        display: block;
-        font-size: 30px;
-        margin-top: 40px;
-        @include sm-screen {
-          margin-top: 10px;
-        }
-      }
-    }
-  }
-
-  .rating__icon {
-    fill: #39447c;
-    stroke: none;
-  }
-}
-
 .cro017-01 {
   .top-offer-bar {
     @include sm-screen {

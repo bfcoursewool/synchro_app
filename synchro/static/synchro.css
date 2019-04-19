@@ -9113,34 +9113,6 @@ svg.external {
   }
 }
 */
-.cro016-01 .a--cta {
-  background: #8b79b3; }
-
-.cro016-01 .atf__header {
-  font-size: 60px;
-  letter-spacing: 2px;
-  text-transform: none;
-  opacity: 1;
-  font-weight: 600;
-  width: initial;
-  color: #39447c;
-  background: none;
-  line-height: 1.2; }
-  @media (max-width: 854px) {
-    .cro016-01 .atf__header {
-      font-size: 50px; } }
-  .cro016-01 .atf__header span {
-    display: block;
-    font-size: 30px;
-    margin-top: 40px; }
-    @media (max-width: 854px) {
-      .cro016-01 .atf__header span {
-        margin-top: 10px; } }
-
-.cro016-01 .rating__icon {
-  fill: #39447c;
-  stroke: none; }
-
 @media (max-width: 854px) {
   .cro017-01 .top-offer-bar .a--cta {
     display: none; } }
