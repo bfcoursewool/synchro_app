@@ -7238,7 +7238,7 @@ input:checked + .accordion-horizontal__inner-box {
   transform: none;
   color: #39447c;
   font-weight: 600;
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.03em; }
   @media (max-width: 854px) {
     .ketomanna-lp .atf__header {
       font-size: 50px;
