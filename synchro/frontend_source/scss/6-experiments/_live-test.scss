@@ -1,1 +1,13 @@
 // STYLES FOR ONGOING EXPERIMENTS/TESTS
+
+.cro018-01 {
+  .benefits {
+    .toggle-multiple-view {
+      display: none;
+    }
+
+    &__copy {
+      max-height: none;
+    }
+  }
+}

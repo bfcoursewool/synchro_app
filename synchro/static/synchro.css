@@ -9158,5 +9158,10 @@ svg.external {
   }
 }
 */
+.cro018-01 .benefits .toggle-multiple-view {
+  display: none; }
+
+.cro018-01 .benefits__copy {
+  max-height: none; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
