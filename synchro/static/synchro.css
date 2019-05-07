@@ -7185,116 +7185,165 @@ input:checked + .accordion-horizontal__inner-box {
   .ketomanna-lp .main-header__content {
     height: 47px; }
 
-.ketomanna-lp .atf.bg-full-width {
-  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf-2.jpg");
-  background-color: #f0f3f4;
-  background-position: center; }
-  @media (max-width: 854px) {
-    .ketomanna-lp .atf.bg-full-width {
-      background: none; }
-      .ketomanna-lp .atf.bg-full-width:after {
-        content: none; } }
-  .ketomanna-lp .atf.bg-full-width:after, .ketomanna-lp .atf.bg-full-width:before {
-    content: "";
+.ketomanna-lp .atf {
+  display: flex; }
+  .ketomanna-lp .atf__video {
+    position: relative;
+    width: 50%;
+    background-image: url("https://cdn.besynchro.com/experiments/cro016-atf-video%402x.jpg");
+    background-size: cover;
+    background-position: center; }
+    @media (max-width: 767px) {
+      .ketomanna-lp .atf__video {
+        display: none; } }
+    .ketomanna-lp .atf__video .modal-dialog {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      width: 90%;
+      max-width: 1000px; }
+    .ketomanna-lp .atf__video .modal-body {
+      padding: 5px; }
+    .ketomanna-lp .atf__video .embed-container {
+      position: relative; }
+    .ketomanna-lp .atf__video .close {
+      position: absolute;
+      right: -40px;
+      font-size: 40px;
+      color: rgba(0, 0, 0, 0.5);
+      opacity: 1;
+      font-weight: 100;
+      outline: none;
+      background: white;
+      padding: 1px 10px;
+      z-index: -1; }
+    .ketomanna-lp .atf__video .iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0; }
+    .ketomanna-lp .atf__video .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .ketomanna-lp .atf__video-btn {
     position: absolute;
-    height: 20px;
-    width: 100%;
-    background-size: 100%;
-    left: 0;
-    background-repeat: no-repeat; }
-  .ketomanna-lp .atf.bg-full-width:before {
-    top: 0;
-    background-image: none; }
-    @media (max-width: 767px) {
-      .ketomanna-lp .atf.bg-full-width:before {
-        background-image: none; } }
-  .ketomanna-lp .atf.bg-full-width:after {
-    bottom: -1px;
-    background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-desktop@2x.png");
-    background-position: bottom; }
-    @media (max-width: 767px) {
-      .ketomanna-lp .atf.bg-full-width:after {
-        background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-mobile@2x.png"); } }
-
-.ketomanna-lp .atf__content-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  max-width: 450px; }
-  @media (max-width: 854px) {
-    .ketomanna-lp .atf__content-box {
-      position: initial;
-      transform: none;
-      margin: 40px;
-      max-width: none; } }
-  @media (max-width: 680px) {
-    .ketomanna-lp .atf__content-box {
-      margin: 40px 20px; } }
-
-.ketomanna-lp .atf__header {
-  position: initial;
-  transform: none;
-  color: #39447c;
-  font-weight: 600;
-  letter-spacing: 0.03em; }
-  @media (max-width: 854px) {
-    .ketomanna-lp .atf__header {
-      font-size: 50px;
-      background: none;
-      padding: 0;
-      width: initial; } }
-  @media (max-width: 680px) {
-    .ketomanna-lp .atf__header {
-      font-size: 40px; } }
-  .ketomanna-lp .atf__header span {
-    display: block;
-    font-size: 30px;
-    margin-top: 20px;
-    letter-spacing: 1px; }
-    @media (max-width: 854px) {
-      .ketomanna-lp .atf__header span {
-        margin-top: 10px; } }
-
-.ketomanna-lp .atf__description {
-  font-size: 26px; }
-  @media (max-width: 854px) {
-    .ketomanna-lp .atf__description {
-      font-size: 22px; } }
-
-.ketomanna-lp .atf__mobile {
-  display: none; }
-  @media (max-width: 854px) {
-    .ketomanna-lp .atf__mobile {
+    top: 53%;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: none;
+    border: 0;
+    outline: none;
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-font-smoothing: antialiased; }
+    .ketomanna-lp .atf__video-btn::before {
+      content: "";
       display: block;
       position: relative;
-      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-product-atf-mobile-2.jpg");
-      background-size: cover;
-      height: 360px;
-      background-position: center; }
-      .ketomanna-lp .atf__mobile:after, .ketomanna-lp .atf__mobile:before {
-        content: "";
-        position: absolute;
-        height: 20px;
+      left: 50%;
+      transform: translate(-26px, -15px);
+      border-top: 32px solid transparent;
+      border-left: 52px solid white;
+      border-bottom: 32px solid transparent; }
+  .ketomanna-lp .atf__video-bar {
+    position: absolute;
+    left: 55px;
+    right: 30px;
+    bottom: 28px;
+    background: rgba(255, 255, 255, 0.5);
+    height: 2px; }
+    .ketomanna-lp .atf__video-bar::before {
+      content: "";
+      display: block;
+      position: relative;
+      left: -25px;
+      top: -7px;
+      border-top: 8px solid transparent;
+      border-left: 12px solid white;
+      border-bottom: 8px solid transparent; }
+    .ketomanna-lp .atf__video-bar::after {
+      content: "";
+      height: 18px;
+      width: 18px;
+      background: white;
+      top: -23px;
+      position: relative;
+      display: block;
+      border-radius: 9px; }
+  .ketomanna-lp .atf__video-mobile {
+    display: none; }
+    @media (max-width: 767px) {
+      .ketomanna-lp .atf__video-mobile {
+        display: block; } }
+    .ketomanna-lp .atf__video-mobile .iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0; }
+    .ketomanna-lp .atf__video-mobile .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .ketomanna-lp .atf__copy {
+    width: 50%;
+    min-width: 450px;
+    text-align: center;
+    background: #f4f4f5; }
+    @media (max-width: 767px) {
+      .ketomanna-lp .atf__copy {
         width: 100%;
-        background-size: 100%;
-        left: 0;
-        background-repeat: no-repeat; }
-      .ketomanna-lp .atf__mobile:before {
-        top: 0;
-        background-image: none; } }
-    @media (max-width: 854px) and (max-width: 767px) {
-      .ketomanna-lp .atf__mobile:before {
-        background-image: none; } }
-  @media (max-width: 854px) {
-      .ketomanna-lp .atf__mobile:after {
-        bottom: -1px;
-        background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-desktop@2x.png");
-        background-position: bottom; } }
-    @media (max-width: 854px) and (max-width: 767px) {
-      .ketomanna-lp .atf__mobile:after {
-        background-image: url("https://cdn.besynchro.com/global/curve-out-bottom-white-mobile@2x.png"); } }
+        min-width: initial; } }
+  .ketomanna-lp .atf__header {
+    position: initial;
+    transform: none;
+    color: #39447c;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    font-size: 50px;
+    width: auto;
+    margin: 30px 40px 20px;
+    line-height: initial; }
+    @media (max-width: 854px) {
+      .ketomanna-lp .atf__header {
+        font-size: 50px;
+        background: none;
+        padding: 0;
+        width: initial; } }
+    @media (max-width: 767px) {
+      .ketomanna-lp .atf__header {
+        margin: 30px 20px 15px; } }
+    @media (max-width: 680px) {
+      .ketomanna-lp .atf__header {
+        font-size: 40px; } }
+    .ketomanna-lp .atf__header span {
+      display: block;
+      font-size: 30px;
+      margin-top: 20px;
+      letter-spacing: 1px; }
+      @media (max-width: 854px) {
+        .ketomanna-lp .atf__header span {
+          margin-top: 10px; } }
+  .ketomanna-lp .atf__description {
+    font-size: 26px; }
+    @media (max-width: 854px) {
+      .ketomanna-lp .atf__description {
+        font-size: 22px; } }
+  .ketomanna-lp .atf .a--cta {
+    margin: 10px 0 40px; }
 
 .ketomanna-lp .rating__icon {
   fill: #39447c; }
@@ -7307,13 +7356,9 @@ input:checked + .accordion-horizontal__inner-box {
   .ketomanna-lp .intro__image {
     background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro.jpg"); }
 
-@media (max-width: 854px) {
-  .ketomanna-lp .ingredients__icons {
-    background: #f4f4f5; } }
-
-@media (max-width: 767px) {
-  .ketomanna-lp .ingredients__icons {
-    margin-top: 20px; } }
+.ketomanna-lp .ingredients__icons {
+  background: none;
+  margin-top: 0; }
 
 .ketomanna-lp .ingredients__icon-box .p--text {
   color: #000000;
@@ -9113,158 +9158,5 @@ svg.external {
   }
 }
 */
-.cro016-01 .atf {
-  display: flex; }
-  .cro016-01 .atf__video {
-    position: relative;
-    width: 50%;
-    background-image: url("https://cdn.besynchro.com/experiments/cro016-atf-video%402x.jpg");
-    background-size: cover;
-    background-position: center; }
-    @media (max-width: 767px) {
-      .cro016-01 .atf__video {
-        display: none; } }
-    .cro016-01 .atf__video .modal-dialog {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0;
-      width: 90%;
-      max-width: 1000px; }
-    .cro016-01 .atf__video .modal-body {
-      padding: 5px; }
-    .cro016-01 .atf__video .embed-container {
-      position: relative; }
-    .cro016-01 .atf__video .close {
-      position: absolute;
-      right: -40px;
-      font-size: 40px;
-      color: rgba(0, 0, 0, 0.5);
-      opacity: 1;
-      font-weight: 100;
-      outline: none;
-      background: white;
-      padding: 1px 10px;
-      z-index: -1; }
-    .cro016-01 .atf__video .iframe-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0; }
-    .cro016-01 .atf__video .iframe-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-  .cro016-01 .atf__video-btn {
-    position: absolute;
-    top: 53%;
-    left: 50%;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
-    font-weight: 600;
-    font-size: 16px;
-    color: #ffffff;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: none;
-    border: 0;
-    outline: none;
-    -webkit-appearance: button;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-font-smoothing: antialiased; }
-    .cro016-01 .atf__video-btn::before {
-      content: "";
-      display: block;
-      position: relative;
-      left: 50%;
-      transform: translate(-26px, -15px);
-      border-top: 32px solid transparent;
-      border-left: 52px solid white;
-      border-bottom: 32px solid transparent; }
-  .cro016-01 .atf__video-bar {
-    position: absolute;
-    left: 55px;
-    right: 30px;
-    bottom: 28px;
-    background: rgba(255, 255, 255, 0.5);
-    height: 2px; }
-    .cro016-01 .atf__video-bar::before {
-      content: "";
-      display: block;
-      position: relative;
-      left: -25px;
-      top: -7px;
-      border-top: 8px solid transparent;
-      border-left: 12px solid white;
-      border-bottom: 8px solid transparent; }
-    .cro016-01 .atf__video-bar::after {
-      content: "";
-      height: 18px;
-      width: 18px;
-      background: white;
-      top: -23px;
-      position: relative;
-      display: block;
-      border-radius: 9px; }
-  .cro016-01 .atf__video-mobile {
-    display: none; }
-    @media (max-width: 767px) {
-      .cro016-01 .atf__video-mobile {
-        display: block; } }
-    .cro016-01 .atf__video-mobile .iframe-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0; }
-    .cro016-01 .atf__video-mobile .iframe-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-  .cro016-01 .atf__copy {
-    width: 50%;
-    min-width: 450px;
-    text-align: center;
-    background: #f4f4f5; }
-    @media (max-width: 767px) {
-      .cro016-01 .atf__copy {
-        width: 100%;
-        min-width: initial; } }
-  .cro016-01 .atf__header {
-    font-size: 50px;
-    width: auto;
-    margin: 30px 40px 20px;
-    line-height: initial; }
-    @media (max-width: 767px) {
-      .cro016-01 .atf__header {
-        margin: 30px 20px 15px; } }
-  .cro016-01 .atf .a--cta {
-    margin: 10px 0 40px; }
-
-.cro016-01 .ingredients__icons {
-  background: none;
-  margin-top: 0; }
-
-@media (max-width: 854px) {
-  .cro017-01 .top-offer-bar .a--cta {
-    display: none; } }
-
-@media (max-width: 767px) {
-  .cro017-01 .top-offer-bar__desktop {
-    display: none; } }
-
-.cro017-01 .purchase .option-1 {
-  background-image: url("https://cdn.besynchro.com/experiments/gold-lg1-cro017.png"); }
-
-.cro017-01 .purchase .option-2 {
-  background-image: url("https://cdn.besynchro.com/experiments/gold-lg2-cro017.png"); }
-
-.cro017-01 .purchase .option-3 {
-  background-image: url("https://cdn.besynchro.com/experiments/gold-lg4-cro017.png"); }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

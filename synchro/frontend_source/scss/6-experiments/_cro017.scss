@@ -1,0 +1,31 @@
+@import '../synchro';
+
+.cro017-01 {
+  .top-offer-bar {
+    @include sm-screen {
+      .a--cta {
+        display: none;
+      }
+    }
+
+    &__desktop {
+      @include s-screen {
+        display: none;
+      }
+    }
+  }
+
+  .purchase {
+    .option-1 {
+      background-image: url("https://cdn.besynchro.com/experiments/gold-lg1-cro017.png");
+    }
+
+    .option-2 {
+      background-image: url("https://cdn.besynchro.com/experiments/gold-lg2-cro017.png");
+    }
+
+    .option-3 {
+      background-image: url("https://cdn.besynchro.com/experiments/gold-lg4-cro017.png");
+    }
+  }
+}
