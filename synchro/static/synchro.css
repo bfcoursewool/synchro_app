@@ -5988,7 +5988,7 @@ p {
   left: 0;
   right: 0;
   text-align: center;
-  background: #E6E6E5;
+  background: #A09B8C;
   z-index: 100;
   max-width: 2000px;
   margin: 0 auto; }
@@ -5997,7 +5997,7 @@ p {
     visibility: hidden; }
   .top-offer-bar__text {
     display: inline-block;
-    color: #000000;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
@@ -6051,6 +6051,7 @@ p {
     .top-offer-bar__code:active, .top-offer-bar__code:focus, .top-offer-bar__code:hover, .top-offer-bar__code:visited {
       color: #000000; }
   .top-offer-bar .a--cta {
+    background: #736E5F !important;
     padding: 10px 20px;
     vertical-align: middle; }
 
@@ -6651,10 +6652,6 @@ input:checked + .accordion-horizontal__inner-box {
 .gold-lp a.anchor {
   top: -35px; }
 
-@media (max-width: 680px) {
-  .gold-lp .top-offer-bar .a--cta {
-    display: none; } }
-
 .gold-lp .main-header {
   position: initial; }
   .gold-lp .main-header .a--cta {
@@ -6923,6 +6920,14 @@ input:checked + .accordion-horizontal__inner-box {
     .gold-lp .purchase .discount:after {
       right: -15px;
       border-right-color: transparent; }
+  .gold-lp .purchase__item-discount {
+    font-size: 22px;
+    font-weight: 600;
+    background: #A09B8C;
+    color: white;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 2px 15px; }
 
 .gold-lp .synchro-reviews {
   border: 0; }
@@ -7173,10 +7178,6 @@ input:checked + .accordion-horizontal__inner-box {
 .ketomanna-lp .p--title {
   border-color: #39447c;
   color: #39447c; }
-
-@media (max-width: 680px) {
-  .ketomanna-lp .top-offer-bar .a--cta {
-    display: none; } }
 
 .ketomanna-lp .main-header {
   position: initial; }
@@ -7473,6 +7474,14 @@ input:checked + .accordion-horizontal__inner-box {
     .ketomanna-lp .purchase__item:nth-child(2) {
       border-bottom: none;
       border-top: 1px solid #e2e2e2; } }
+  .ketomanna-lp .purchase__item-servings {
+    font-size: 22px;
+    font-weight: 600;
+    background: #A09B8C;
+    color: white;
+    width: fit-content;
+    margin: 20px auto 10px;
+    padding: 2px 15px; }
   .ketomanna-lp .purchase .option-1 {
     background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png"); }
   .ketomanna-lp .purchase .option-2 {
@@ -7558,15 +7567,6 @@ input:checked + .accordion-horizontal__inner-box {
     opacity: 0.8; }
   100% {
     opacity: 1; } }
-
-.ketomanna-paid-r .purchase__item-servings {
-  font-size: 22px;
-  font-weight: 600;
-  background: #C4A498;
-  color: white;
-  width: fit-content;
-  margin: 20px auto 10px;
-  padding: 2px 15px; }
 
 .keto-bundle-lp .main-header-container .main-header {
   padding-top: 10px;
@@ -9164,4 +9164,4 @@ svg.external {
 .cro018-01 .benefits__copy {
   max-height: none; }
 
-/*# sourceMappingURL=synchro.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
