@@ -2,13 +2,15 @@
   a.anchor {
     top: -35px;
   }
-  // .top-offer-bar {
-  //   @include xs-screen {
-  //     .a--cta {
-  //       display: none;
-  //     }
-  //   }
-  // }
+
+  .top-offer-bar {
+    @include xs-screen {
+      .a--cta {
+        display: none;
+      }
+    }
+  }
+
   .main-header {
     position: initial;
 
@@ -337,16 +339,6 @@
 
     .discount {
       @include discount ($color-gold)
-    }
-
-    &__item-discount {
-      font-size: 22px;
-      font-weight: $font-demi;
-      background: #A09B8C;
-      color: white;
-      width: fit-content;
-      margin: 20px auto;
-      padding: 2px 15px;
     }
   }
 

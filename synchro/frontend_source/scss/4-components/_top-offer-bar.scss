@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   text-align: center;
-  background: #A09B8C;
+  background: $color-silver;
   z-index: $header-z-index;
   max-width: 2000px;
   margin: 0 auto;
@@ -16,7 +16,7 @@
 
   &__text {
     display: inline-block;
-    color: $color-ivory;
+    color: $color-ebony;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
@@ -47,7 +47,6 @@
   }
 
   .a--cta {
-    background: #736E5F !important;
     padding: 10px 20px;
     vertical-align: middle;
   }

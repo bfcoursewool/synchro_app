@@ -11,13 +11,15 @@
     border-color: #39447c;
     color: #39447c;
   }
-  // .top-offer-bar {
-  //   @include xs-screen {
-  //     .a--cta {
-  //       display: none;
-  //     }
-  //   }
-  // }
+
+  .top-offer-bar {
+    @include xs-screen {
+      .a--cta {
+        display: none;
+      }
+    }
+  }
+
   .main-header {
     position: initial;
 
@@ -404,16 +406,6 @@
       }
     }
 
-    &__item-servings {
-      font-size: 22px;
-      font-weight: $font-demi;
-      background: #A09B8C;
-      color: white;
-      width: fit-content;
-      margin: 20px auto 10px;
-      padding: 2px 15px;
-    }
-
     .option-1 {
       background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png");
     }
@@ -451,6 +443,18 @@
         display: none;
       }
       @include animate-flash;
+    }
+  }
+
+  .purchase {
+    &__item-servings {
+      font-size: 22px;
+      font-weight: $font-demi;
+      background: #C4A498;
+      color: white;
+      width: fit-content;
+      margin: 20px auto 10px;
+      padding: 2px 15px;
     }
   }
 }
