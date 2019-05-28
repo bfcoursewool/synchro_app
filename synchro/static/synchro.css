@@ -6927,6 +6927,9 @@ input:checked + .accordion-horizontal__inner-box {
     .gold-lp .purchase .discount:after {
       right: -15px;
       border-right-color: transparent; }
+  @media (max-width: 767px) {
+    .gold-lp .purchase .premium-item {
+      margin-bottom: 60px; } }
 
 .gold-lp .synchro-reviews {
   border: 0; }
@@ -7122,11 +7125,6 @@ input:checked + .accordion-horizontal__inner-box {
       .genesis-lp .directions__genesis-image {
         max-height: none;
         width: 100%; } }
-
-@media (max-width: 767px) {
-  .genesis-lp .purchase__item:nth-child(2) {
-    border-bottom: none;
-    border-top: 1px solid #e2e2e2; } }
 
 .genesis-lp .purchase .option-1 {
   background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-1.png"); }
@@ -7473,10 +7471,6 @@ input:checked + .accordion-horizontal__inner-box {
 
 .ketomanna-lp .purchase {
   padding-bottom: 0; }
-  @media (max-width: 767px) {
-    .ketomanna-lp .purchase__item:nth-child(2) {
-      border-bottom: none;
-      border-top: 1px solid #e2e2e2; } }
   .ketomanna-lp .purchase .option-1 {
     background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png"); }
   .ketomanna-lp .purchase .option-2 {
@@ -7513,6 +7507,9 @@ input:checked + .accordion-horizontal__inner-box {
     .ketomanna-lp .purchase .discount:after {
       right: -15px;
       border-right-color: transparent; }
+  @media (max-width: 767px) {
+    .ketomanna-lp .purchase .premium-item {
+      margin-bottom: 60px; } }
 
 .ketomanna-lp .synchro-reviews {
   border-top: 0; }

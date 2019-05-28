@@ -340,6 +340,12 @@
     .discount {
       @include discount ($color-gold)
     }
+
+    .premium-item {
+      @include s-screen {
+        margin-bottom: 60px;
+      }
+    }
   }
 
   .synchro-reviews {

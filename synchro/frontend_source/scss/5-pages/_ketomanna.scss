@@ -399,12 +399,6 @@
 
   .purchase {
     padding-bottom: 0;
-    @include s-screen {
-      &__item:nth-child(2) {
-        border-bottom: none;
-        border-top: 1px solid #e2e2e2;
-      }
-    }
 
     .option-1 {
       background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png");
@@ -420,6 +414,12 @@
 
     .discount {
       @include discount ($color-ketomanna)
+    }
+
+    .premium-item {
+      @include s-screen {
+        margin-bottom: 60px;
+      }
     }
   }
 
