@@ -52,9 +52,6 @@
 
   &__copy {
     background: $color-silver-light;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.5s ease-in-out all;
   }
 
   &__image {

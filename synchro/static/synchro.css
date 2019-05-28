@@ -5508,10 +5508,7 @@ p {
       .benefits__header {
         max-width: none; } }
   .benefits__copy {
-    background: #f4f4f5;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.5s ease-in-out all; }
+    background: #f4f4f5; }
   .benefits__image {
     width: 100%; }
   .benefits__text {
@@ -9156,10 +9153,5 @@ svg.external {
   }
 }
 */
-.cro018-01 .benefits .toggle-multiple-view {
-  display: none; }
-
-.cro018-01 .benefits__copy {
-  max-height: none; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
