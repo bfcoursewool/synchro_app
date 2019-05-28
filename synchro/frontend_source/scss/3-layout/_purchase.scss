@@ -22,6 +22,14 @@
     }
   }
 
+  &__item-img {
+    transition: transform 0.3s ease-in-out;
+    height: 220px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
   &__item-plan {
     min-height: 0;
     text-transform: uppercase;
@@ -29,14 +37,6 @@
     letter-spacing: 1px;
     font-weight: $font-demi;
     margin: 20px 0 10px;
-  }
-
-  &__item-img {
-    transition: transform 0.3s ease-in-out;
-    height: 220px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   &__item-qty {
@@ -47,27 +47,23 @@
     opacity: 0.5;
   }
 
-  &__item-servings {
+  &__item-discount {
+    font-size: 22px;
+    font-weight: $font-demi;
+    background: #C4A498;
+    color: white;
+    width: fit-content;
+    margin: 20px auto 10px;
+    padding: 2px 15px;
+  }
+
+  &__item-special {
     color: #e85050;
     font-weight: $font-demi;
     font-size: 14px;
     margin: 10px 0;
     text-transform: uppercase;
     letter-spacing: 1px;
-  }
-
-  &__item-off {
-    font-weight: $font-demi;
-    margin: 10px 0;
-    font-size: 15px;
-    text-transform: uppercase;
-
-    span {
-      font-weight: $font-medium;
-      letter-spacing: 1px;
-      opacity: 0.5;
-      text-decoration: line-through;
-    }
   }
 
   &__item-pricing {
@@ -101,11 +97,25 @@
     border-bottom: 2px solid #e9e9ea;
     margin-left: 3px;
   }
-}
 
-.premium-item {
-  background: #fbfaf9;
-  @include s-screen {
-    margin-top: 30px;
+  &__item-off {
+    font-weight: $font-demi;
+    margin: 10px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+
+    span {
+      font-weight: $font-medium;
+      letter-spacing: 1px;
+      opacity: 0.5;
+      text-decoration: line-through;
+    }
+  }
+
+  .premium-item {
+    background: #fbfaf9;
+    @include s-screen {
+      margin-top: 30px;
+    }
   }
 }

@@ -445,16 +445,4 @@
       @include animate-flash;
     }
   }
-
-  .purchase {
-    &__item-servings {
-      font-size: 22px;
-      font-weight: $font-demi;
-      background: #C4A498;
-      color: white;
-      width: fit-content;
-      margin: 20px auto 10px;
-      padding: 2px 15px;
-    }
-  }
 }
