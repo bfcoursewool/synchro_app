@@ -18,8 +18,6 @@
       letter-spacing: 0.05em;
       height: 22px;
       line-height: 22px;
-      padding: 0 12px 0 10px;
-      width: fit-content;
       left: 100%;
       font-size: 11px;
       transform: translate(-100%, -50%);
@@ -60,10 +58,14 @@
 
       .option-1 {
         background-color: #DED5C4;
+        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png");
+        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8);
       }
 
       .option-2 {
         background-color: #DED5C4;
+        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png");
+        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8);
       }
 
       .option-3 {
