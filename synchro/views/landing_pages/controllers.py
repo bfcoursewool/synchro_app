@@ -151,6 +151,12 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': True,
       }
+    },
+    'v2': {
+      'template': 'landing_pages/experiments/km003/v2/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
     }
   }
 }
