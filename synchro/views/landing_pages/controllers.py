@@ -145,9 +145,9 @@ endpoint_info_dict = {
       }
     }
   },
-  'cro018': {
+  'km003': {
     'v1': {
-      'template': 'landing_pages/experiments/cro018/v1/0-index.html',
+      'template': 'landing_pages/experiments/km003/v1/0-index.html',
       'template_vars': {
         'is_variant': True,
       }

@@ -1,0 +1,37 @@
+<a class="anchor" name="top"></a>
+<section class="atf">
+  <div class="atf__video">
+    <!-- Button to Open the Modal -->
+    <button class="video-modal atf__video-btn" data-video="https://www.youtube.com/embed/m7b7MCIE154" data-toggle="modal" data-target="#videoModal">Watch the video</button>
+    <div class="atf__video-bar"></div>
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="embed-container">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="iframe-container">
+                <iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="atf__copy">
+    <div class="atf__video-mobile">
+      <div class="iframe-container">
+        <iframe src="https://www.youtube.com/embed/m7b7MCIE154?modestbranding=1&rel=0&cc_load_policy=1&theme=light&color=white" width="560" height="315" frameborder="0"></iframe>
+      </div>
+    </div>
+    <h1 class="atf__header">Too delicious to be keto<span>(it's keto, we promise)</span></h1>
+    <h2 class="atf__description p--text">Perfect ketogenic nutrition, on-the-go.<br>Delicious enough to be dessert.</h2>
+    {% include 'landing_pages/global/rating-stars.html' %}
+    <div>
+      <a role="button" href="#purchase">
+        <div class="a--cta">Buy now</div>
+      </a>
+    </div>
+  </div>
+</section>
