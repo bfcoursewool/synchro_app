@@ -9225,6 +9225,9 @@ svg.external {
   .km003-01 .purchase__item-img,
   .km003-02 .purchase__item-img {
     position: relative; }
+  .km003-01 .purchase__item-info,
+  .km003-02 .purchase__item-info {
+    margin: 15px 0 10px; }
   .km003-01 .purchase__item-plan,
   .km003-02 .purchase__item-plan {
     margin: 30px 0 10px; }
@@ -9234,18 +9237,18 @@ svg.external {
         display: none; } }
   .km003-01 .purchase__item-qty,
   .km003-02 .purchase__item-qty {
-    opacity: 0.6; }
+    opacity: 0.6;
+    margin: 0; }
     @media (max-width: 854px) {
       .km003-01 .purchase__item-qty,
       .km003-02 .purchase__item-qty {
-        margin: 15px 0 0;
         font-size: 16px; } }
   .km003-01 .purchase__item-original,
   .km003-02 .purchase__item-original {
     opacity: 0.4;
     font-size: 25px;
     text-decoration: line-through;
-    margin: 0;
+    margin: 0 5px 0 0;
     display: inline-block;
     vertical-align: middle; }
     @media (max-width: 854px) {
@@ -9277,7 +9280,7 @@ svg.external {
     font-size: 15px;
     color: #E85151;
     letter-spacing: 0.5px;
-    margin: 10px 0 0; }
+    margin: 0; }
     @media (max-width: 854px) {
       .km003-01 .purchase__item-off,
       .km003-02 .purchase__item-off {
