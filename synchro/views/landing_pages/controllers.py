@@ -17,13 +17,13 @@ landing_pages = Blueprint('landing_pages', __name__)
 endpoint_info_dict = {
   'gold': {
     'v0': {
-      'template': 'landing_pages/gold/v2-0/0-index.html',
+      'template': 'landing_pages/gold-og/v1-0/0-index.html',
       'template_vars': {
         'is_variant': False,
       }
     },
     'turmeric-supplement': {
-      'template': 'landing_pages/gold/v2-0-paid/0-index.html',
+      'template': 'landing_pages/gold-og/v1-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
