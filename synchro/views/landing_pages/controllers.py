@@ -158,6 +158,20 @@ endpoint_info_dict = {
         'is_variant': True,
       }
     }
+  },
+  'go004': {
+    'v1': {
+      'template': 'landing_pages/experiments/go004/v1/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    'v2': {
+      'template': 'landing_pages/experiments/go004/v2/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    }
   }
 }
 

@@ -1,5 +1,7 @@
 // STYLES FOR ONGOING EXPERIMENTS/TESTS
 
+.go004-01,
+.go004-02,
 .km003-01,
 .km003-02 {
   .purchase {
@@ -55,24 +57,6 @@
           width: 100%;
           margin: 0;
         }
-      }
-
-      .option-1 {
-        background-color: #DED5C4;
-        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png");
-        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8);
-      }
-
-      .option-2 {
-        background-color: #DED5C4;
-        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png");
-        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8);
-      }
-
-      .option-3 {
-        background-color: #DED5C4;
-        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png");
-        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8);
       }
     }
 
@@ -152,6 +136,56 @@
 
     .a--cta {
       width: 100%;
+    }
+  }
+}
+
+.km003-01,
+.km003-02 {
+  .purchase {
+    &__item {
+      .option-1 {
+        background-color: #DED5C4;
+        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png");
+        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8);
+      }
+
+      .option-2 {
+        background-color: #DED5C4;
+        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png");
+        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8);
+      }
+
+      .option-3 {
+        background-color: #DED5C4;
+        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png");
+        background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8);
+      }
+    }
+  }
+}
+
+.go004-01,
+.go004-02 {
+  .purchase {
+    &__item {
+      .option-1 {
+        background-color: #eda267;
+        background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png");
+        background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png"), linear-gradient(90deg, #eda267, #edbe67);
+      }
+
+      .option-2 {
+        background-color: #eda267;
+        background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png");
+        background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png"), linear-gradient(90deg, #eda267, #edbe67);
+      }
+
+      .option-3 {
+        background-color: #eda267;
+        background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png");
+        background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png"), linear-gradient(90deg, #eda267, #edbe67);
+      }
     }
   }
 }
