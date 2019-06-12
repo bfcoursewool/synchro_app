@@ -16,45 +16,52 @@ landing_pages = Blueprint('landing_pages', __name__)
 
 endpoint_info_dict = {
   'gold': {
+    # Base/Fallback Gold LP (never link directly to this version)
     'v0': {
       'template': 'landing_pages/gold-og/v1-0/0-index.html',
       'template_vars': {
-        'is_variant': False,
+        'is_variant': True,
       }
     },
+    # Gold LP for Paid Facebook/Instagram Traffic
+    'fb': {
+      'template': 'landing_pages/gold-og/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    # Gold LP for Paid Adwords Traffic
     'turmeric-supplement': {
       'template': 'landing_pages/gold-og/v1-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
+    # Gold Original LP for Organic Traffic
     'original': {
       'template': 'landing_pages/gold-og/v1-0/0-index.html',
       'template_vars': {
         'is_variant': False,
       }
     },
-    'original-turmeric-supplement': {
-      'template': 'landing_pages/gold-og/v1-0-paid/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
+    # Gold Lemon Ginger LP for Organic Traffic
     'lemon-ginger': {
       'template': 'landing_pages/gold-lg/v2-0/0-index.html',
       'template_vars': {
-        'is_variant': True,
-      }
-    },
-    'lemon-ginger-turmeric-supplement': {
-      'template': 'landing_pages/gold-lg/v2-0-paid/0-index.html',
-      'template_vars': {
-        'is_variant': True,
+        'is_variant': False,
       }
     }
   },
   'genesis': {
+    # Base/Fallback Genesis LP (never link directly to this version)
     'v0': {
+      'template': 'landing_pages/genesis/v2-0/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    # Genesis LP for Organic Traffic
+    'powerfood': {
       'template': 'landing_pages/genesis/v2-0/0-index.html',
       'template_vars': {
         'is_variant': False,
@@ -62,18 +69,21 @@ endpoint_info_dict = {
     }
   },
   'ketomanna': {
+    # Base/Fallback Ketomanna LP (never link directly to this version)
     'v0': {
       'template': 'landing_pages/ketomanna/v1-0/0-index.html',
       'template_vars': {
-        'is_variant': False,
+        'is_variant': True,
       }
     },
-    'keto-chocolate-fudge': {
+    # Ketomanna LP for Paid Facebook/Instagram Traffic
+    'fb': {
       'template': 'landing_pages/ketomanna/v1-0-paid-a/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
+    # Ketomanna LP for Retargeting Facebook/Instagram Traffic
     'keto-chocolate-fudge-r': {
       'template': 'landing_pages/ketomanna/v1-0-paid-r/0-index.html',
       'template_vars': {
@@ -82,60 +92,70 @@ endpoint_info_dict = {
     }
   },
   'keto': {
+    # Base/Fallback Keto LP (never link directly to this version)
     'v0': {
+      'template': 'landing_pages/keto-bundle/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    # Ketoplan LP for Organic Traffic
+    'ketoplan': {
       'template': 'landing_pages/keto-bundle/v1-0/0-index.html',
       'template_vars': {
         'is_variant': False,
       }
     },
-    'ketoplan': {
-      'template': 'landing_pages/keto-bundle/v1-0/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
+    # Ketomanna LP for Organic Traffic
     'ketomanna': {
       'template': 'landing_pages/ketomanna/v1-0/0-index.html',
       'template_vars': {
-        'is_variant': True,
+        'is_variant': False,
       }
     },
-    'keto-chocolate-fudge': {
+    # Ketomanna LP for Paid Facebook/Instagram Traffic
+    'keto-chocolate-fudge-fb': {
       'template': 'landing_pages/ketomanna/v1-0-paid-a/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
+    # Ketomanna LP for Retargeting Facebook/Instagram Traffic
     'keto-chocolate-fudge-r': {
       'template': 'landing_pages/ketomanna/v1-0-paid-r/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
+    # Keto Cleanse Program LP for Paid/Organic Traffic
     'keto-cleanse-program': {
       'template': 'landing_pages/keto-cleanse/v1-0/0-index.html',
       'template_vars': {
         'is_variant': False,
       }
     },
+    # Keto Cleanse Program Home Page for Direct Traffic
     'keto-cleanse-program-home': {
       'template': 'landing_pages/keto-cleanse/directory/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
+    # Keto Cleanse Program Weekly Page for Direct Traffic
     'keto-cleanse-program-1': {
       'template': 'landing_pages/keto-cleanse/week-1/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
+    # Keto Cleanse Program Weekly Page for Direct Traffic
     'keto-cleanse-program-2': {
       'template': 'landing_pages/keto-cleanse/week-2/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
+    # Keto Cleanse Program Weekly Page for Direct Traffic
     'keto-cleanse-program-3': {
       'template': 'landing_pages/keto-cleanse/week-3/v1-0/0-index.html',
       'template_vars': {
@@ -144,12 +164,14 @@ endpoint_info_dict = {
     }
   },
   'km003': {
+    # Testing Variant 1
     'v1': {
       'template': 'landing_pages/experiments/km003/v1/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
+    # Testing Variant 2
     'v2': {
       'template': 'landing_pages/experiments/km003/v2/0-index.html',
       'template_vars': {
@@ -158,12 +180,14 @@ endpoint_info_dict = {
     }
   },
   'go004': {
+    # Testing Variant 1
     'v1': {
       'template': 'landing_pages/experiments/go004/v1/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
+    # Testing Variant 2
     'v2': {
       'template': 'landing_pages/experiments/go004/v2/0-index.html',
       'template_vars': {
