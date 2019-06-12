@@ -41,13 +41,13 @@ endpoint_info_dict = {
       }
     },
     'lemon-ginger': {
-      'template': 'landing_pages/gold/v2-0/0-index.html',
+      'template': 'landing_page/gold-lg/v2-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
     'lemon-ginger-turmeric-supplement': {
-      'template': 'landing_pages/gold/v2-0-paid/0-index.html',
+      'template': 'landing_page/gold-lg/v2-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
@@ -94,6 +94,12 @@ endpoint_info_dict = {
         'is_variant': True,
       }
     },
+    'ketomanna': {
+      'template': 'landing_pages/ketomanna/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
     'keto-chocolate-fudge': {
       'template': 'landing_pages/ketomanna/v1-0-paid-a/0-index.html',
       'template_vars': {
@@ -134,14 +140,6 @@ endpoint_info_dict = {
       'template': 'landing_pages/keto-cleanse/week-3/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
-      }
-    }
-  },
-  'cognos': {
-    'v0': {
-      'template': 'landing_pages/cognos/v1-0/0-index.html',
-      'template_vars': {
-        'is_variant': False,
       }
     }
   },
