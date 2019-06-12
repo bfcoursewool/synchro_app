@@ -41,13 +41,13 @@ endpoint_info_dict = {
       }
     },
     'lemon-ginger': {
-      'template': 'landing_page/gold-lg/v2-0/0-index.html',
+      'template': 'landing_pages/gold-lg/v2-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
     'lemon-ginger-turmeric-supplement': {
-      'template': 'landing_page/gold-lg/v2-0-paid/0-index.html',
+      'template': 'landing_pages/gold-lg/v2-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
