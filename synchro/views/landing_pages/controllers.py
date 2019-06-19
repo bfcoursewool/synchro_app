@@ -297,13 +297,19 @@ def landing_page(page, version, prod_category):
     # we have to do a little shifting around of values, because in each URL the subdomain is serving
     # as either the <page> or the <prod_category>, while the URI values are themselves serving as
     # different values.
-    if page is not 'none' and version is not 'v0':
-      prod_category = subdomain
-    elif page is not 'none':
-      version = page
-      page = subdomain
+    # Only do this whole page/version/category switcharoo for the old subdodmains... live.besynchro.com
+    # should work basically exactly like the dev site. 
+    if subdomain is not 'live':
+      if page is not 'none' and version is not 'v0':
+        prod_category = subdomain
+      elif page is not 'none':
+        version = page
+        page = subdomain
+      else:
+        page = subdomain
     else:
-      page = subdomain
+      if page is 'none':
+        return redirect('https://besynchro.com', code=301)
 
     ## Redirect to https if this isn't a health-checker request
     if request.headers.get('X-Forwarded-Proto', '').lower() != "https":
