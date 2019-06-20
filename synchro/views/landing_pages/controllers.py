@@ -299,7 +299,7 @@ def landing_page(page, version, prod_category):
     # different values.
     # Only do this whole page/version/category switcharoo for the old subdodmains... live.besynchro.com
     # should work basically exactly like the dev site. 
-    if subdomain is not 'live':
+    if subdomain != 'live':
       if page is not 'none' and version is not 'v0':
         prod_category = subdomain
       elif page is not 'none':
