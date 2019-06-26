@@ -9407,44 +9407,31 @@ svg.external {
   padding: 16px 35px; }
 
 .km005-01 .atf__video {
-  width: 66%; }
-  @media (max-width: 1599px) {
+  background-image: url(https://cdn.besynchro.com/experiments/km005-v1-atf-horizontal.gif), linear-gradient(90deg, #d9ccbd 20%, #e2b8c0 80%);
+  width: 60%;
+  display: block;
+  text-align: center;
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat; }
+  @media (max-width: 1199px) {
     .km005-01 .atf__video {
-      display: none; } }
-
-.km005-01 .atf__video-tablet {
-  display: none; }
-  @media (max-width: 1599px) {
-    .km005-01 .atf__video-tablet {
-      background-image: url(https://cdn.besynchro.com/experiments/km005-v1-atf-mobile.gif), linear-gradient(90deg, #d8d0bc 20%, #d8d0bc, #e0bbbe 80%);
-      width: 50%;
-      display: block;
-      text-align: center;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat; } }
+      background-image: url(https://cdn.besynchro.com/experiments/km005-v1-atf-vertical.gif), linear-gradient(90deg, #d8d0bc 20%, #e0bbbe 80%); } }
   @media (max-width: 767px) {
-    .km005-01 .atf__video-tablet {
-      display: none; } }
+    .km005-01 .atf__video {
+      background-image: url(https://cdn.besynchro.com/experiments/km005-v1-atf-horizontal.gif), linear-gradient(90deg, #d8d0bc, #e0bbbe);
+      padding-bottom: 56.25%;
+      width: 100%; } }
+  @media (max-width: 680px) {
+    .km005-01 .atf__video {
+      background-image: url(https://cdn.besynchro.com/experiments/km005-v1-atf-vertical.gif), linear-gradient(90deg, #d8d0bc, #e0bbbe);
+      padding-bottom: 125%; } }
 
-.km005-01 .atf__video-mobile {
-  display: none; }
+.km005-01 .atf__copy {
+  background-image: linear-gradient(90deg, #e0babe, #d8d0bc); }
   @media (max-width: 767px) {
-    .km005-01 .atf__video-mobile {
-      display: block;
-      width: 100%;
-      text-align: center;
-      background-image: linear-gradient(90deg, #d8d0bc, #e0babe); }
-      .km005-01 .atf__video-mobile img {
-        width: 100%; } }
-
-@media (max-width: 1599px) {
-  .km005-01 .atf__copy {
-    background-image: linear-gradient(90deg, #e0babe, #d8d0bc); } }
-
-@media (max-width: 767px) {
-  .km005-01 .atf__copy {
-    background-image: linear-gradient(90deg, #d8d0bc, #e0babe); } }
+    .km005-01 .atf__copy {
+      background-image: linear-gradient(90deg, #d8d0bc, #e0babe); } }
 
 .km005-01 .atf__header span {
   font-size: 35px;
