@@ -57,6 +57,13 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': True,
       }
+    },
+    # Gold LP for Retargeting Facebook/Instagram Traffic (NEW)
+    'r': {
+      'template': 'landing_pages/gold-og/v1-0-paid-r/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
     }
   },
   'genesis': {
@@ -82,7 +89,6 @@ endpoint_info_dict = {
       }
     }
   },
-  ## 'ketomanna' subdomain to be gradually ported over to 'keto'
   'ketomanna': {
     # Ketomanna LP for Organic Traffic (NEW)
     'v0': {
@@ -119,7 +125,7 @@ endpoint_info_dict = {
         'is_variant': True,
       }
     },
-    # Ketomanna LP for Retargeting Facebook/Instagram Traffic (to be phased out)
+    # (to be phased out)
     'keto-chocolate-fudge-r': {
       'template': 'landing_pages/ketomanna/v1-0-paid-r/0-index.html',
       'template_vars': {
@@ -203,42 +209,36 @@ endpoint_info_dict = {
   },
   ## This subpath to be phased out once new subdomain is live
   'keto': {
-    # Ketoplan LP for Organic Traffic
     'v0': {
       'template': 'landing_pages/keto-bundle/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
-    # Keto Cleanse Program LP for Paid/Organic Traffic
     'keto-cleanse-program': {
       'template': 'landing_pages/keto-cleanse/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
-    # Keto Cleanse Program Home Page for Direct Traffic
     'keto-cleanse-program-home': {
       'template': 'landing_pages/keto-cleanse/directory/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
-    # Keto Cleanse Program Weekly Page for Direct Traffic
     'keto-cleanse-program-1': {
       'template': 'landing_pages/keto-cleanse/week-1/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
-    # Keto Cleanse Program Weekly Page for Direct Traffic
     'keto-cleanse-program-2': {
       'template': 'landing_pages/keto-cleanse/week-2/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
-    # Keto Cleanse Program Weekly Page for Direct Traffic
     'keto-cleanse-program-3': {
       'template': 'landing_pages/keto-cleanse/week-3/v1-0/0-index.html',
       'template_vars': {
