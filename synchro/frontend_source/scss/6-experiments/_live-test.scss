@@ -190,44 +190,22 @@
   }
 }
 
-.km005-01 {}
-
+.km005-01,
 .km005-02 {
   .atf {
     @include s-screen {
       display: block;
     }
 
-    &__video {
-      background-image: url("https://cdn.besynchro.com/experiments/km005-v2-atf-desktop%402x.jpg");
-      background-position: left;
-      @include m-screen {
-        background-image: url("https://cdn.besynchro.com/experiments/km005-v2-atf-mobile%402x.jpg");
-        background-position: center;
-      }
-      @include s-screen {
-        display: block;
-        height: 400px;
-        height: 70vh;
-        width: 100%;
-        margin: 0;
-      }
-    }
-
     &__copy {
       overflow: auto;
-      background-image: linear-gradient(90deg, #ded5c4, #e6c1c8);
+      background-image: linear-gradient(90deg, #e6c1c8, #ded5c4);
       padding: 0 $gutter-medium;
     }
 
     &__header {
       max-width: 530px;
-      margin: 30px auto 0;
-    }
-
-    &__description {
-      font-size: 30px;
-      margin: 15px auto;
+      margin: 30px auto 15px;
     }
 
     &__benefits {
@@ -238,7 +216,11 @@
       letter-spacing: 0.5px;
       font-weight: 500;
       border-radius: 6px;
-      margin: 5px;
+      margin: 10px 5px;
+    }
+
+    &__description {
+      margin: 15px auto;
     }
 
     .rating__stars #rating__star {
@@ -257,6 +239,94 @@
     .a--cta {
       font-size: 18px;
       padding: 16px 35px;
+    }
+  }
+}
+
+.km005-01 {
+  .atf {
+    &__video {
+      width: 66%;
+      @include l-screen {
+        display: none;
+      }
+    }
+
+    &__video-tablet {
+      display: none;
+      @include l-screen {
+        background-image: url(https://cdn.besynchro.com/experiments/km005-v1-atf-mobile.gif), linear-gradient(90deg, #d8d0bc 20%, #d8d0bc, #e0bbbe 80%);
+        width: 50%;
+        display: block;
+        text-align: center;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      @include s-screen {
+        display: none;
+      }
+    }
+
+    &__video-mobile {
+      display: none;
+      @include s-screen {
+        display: block;
+        width: 100%;
+        text-align: center;
+          background-image: linear-gradient(90deg, #d8d0bc, #e0babe);
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &__copy {
+      @include l-screen {
+        background-image: linear-gradient(90deg, #e0babe, #d8d0bc);
+      }
+      @include s-screen {
+        background-image: linear-gradient(90deg, #d8d0bc, #e0babe);
+      }
+    }
+
+    &__header {
+      span {
+        font-size: 35px;
+        font-weight: $font-medium;
+        @include s-screen {
+          font-size: 25px;
+        }
+      }
+    }
+
+    &__description {
+      font-size: 28px;
+    }
+  }
+}
+
+.km005-02 {
+  .atf {
+    &__video {
+      background-image: url("https://cdn.besynchro.com/experiments/km005-v2-atf-desktop%402x.jpg");
+      background-position: left;
+      @include m-screen {
+        background-image: url("https://cdn.besynchro.com/experiments/km005-v2-atf-mobile%402x.jpg");
+        background-position: center;
+      }
+      @include s-screen {
+        display: block;
+        height: 400px;
+        height: 70vh;
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    &__description {
+      font-size: 30px;
     }
   }
 }

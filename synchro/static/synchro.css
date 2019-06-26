@@ -9359,8 +9359,102 @@ svg.external {
   background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png"), linear-gradient(90deg, #eda267, #edbe67); }
 
 @media (max-width: 767px) {
+  .km005-01 .atf,
   .km005-02 .atf {
     display: block; } }
+
+.km005-01 .atf__copy,
+.km005-02 .atf__copy {
+  overflow: auto;
+  background-image: linear-gradient(90deg, #e6c1c8, #ded5c4);
+  padding: 0 40px; }
+
+.km005-01 .atf__header,
+.km005-02 .atf__header {
+  max-width: 530px;
+  margin: 30px auto 15px; }
+
+.km005-01 .atf__benefits,
+.km005-02 .atf__benefits {
+  background: white;
+  display: inline-block;
+  padding: 4px 13px;
+  color: #37447D;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  border-radius: 6px;
+  margin: 10px 5px; }
+
+.km005-01 .atf__description,
+.km005-02 .atf__description {
+  margin: 15px auto; }
+
+.km005-01 .atf .rating__stars #rating__star,
+.km005-02 .atf .rating__stars #rating__star {
+  height: 26px; }
+
+.km005-01 .atf .rating__count,
+.km005-02 .atf .rating__count {
+  font-style: italic;
+  font-weight: 600; }
+  .km005-01 .atf .rating__count:before,
+  .km005-02 .atf .rating__count:before {
+    content: "260+ 5 star"; }
+
+.km005-01 .atf .a--cta,
+.km005-02 .atf .a--cta {
+  font-size: 18px;
+  padding: 16px 35px; }
+
+.km005-01 .atf__video {
+  width: 66%; }
+  @media (max-width: 1599px) {
+    .km005-01 .atf__video {
+      display: none; } }
+
+.km005-01 .atf__video-tablet {
+  display: none; }
+  @media (max-width: 1599px) {
+    .km005-01 .atf__video-tablet {
+      background-image: url(https://cdn.besynchro.com/experiments/km005-v1-atf-mobile.gif), linear-gradient(90deg, #d8d0bc 20%, #d8d0bc, #e0bbbe 80%);
+      width: 50%;
+      display: block;
+      text-align: center;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; } }
+  @media (max-width: 767px) {
+    .km005-01 .atf__video-tablet {
+      display: none; } }
+
+.km005-01 .atf__video-mobile {
+  display: none; }
+  @media (max-width: 767px) {
+    .km005-01 .atf__video-mobile {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background-image: linear-gradient(90deg, #d8d0bc, #e0babe); }
+      .km005-01 .atf__video-mobile img {
+        width: 100%; } }
+
+@media (max-width: 1599px) {
+  .km005-01 .atf__copy {
+    background-image: linear-gradient(90deg, #e0babe, #d8d0bc); } }
+
+@media (max-width: 767px) {
+  .km005-01 .atf__copy {
+    background-image: linear-gradient(90deg, #d8d0bc, #e0babe); } }
+
+.km005-01 .atf__header span {
+  font-size: 35px;
+  font-weight: 500; }
+  @media (max-width: 767px) {
+    .km005-01 .atf__header span {
+      font-size: 25px; } }
+
+.km005-01 .atf__description {
+  font-size: 28px; }
 
 .km005-02 .atf__video {
   background-image: url("https://cdn.besynchro.com/experiments/km005-v2-atf-desktop%402x.jpg");
@@ -9377,40 +9471,7 @@ svg.external {
       width: 100%;
       margin: 0; } }
 
-.km005-02 .atf__copy {
-  overflow: auto;
-  background-image: linear-gradient(90deg, #ded5c4, #e6c1c8);
-  padding: 0 40px; }
-
-.km005-02 .atf__header {
-  max-width: 530px;
-  margin: 30px auto 0; }
-
 .km005-02 .atf__description {
-  font-size: 30px;
-  margin: 15px auto; }
-
-.km005-02 .atf__benefits {
-  background: white;
-  display: inline-block;
-  padding: 4px 13px;
-  color: #37447D;
-  letter-spacing: 0.5px;
-  font-weight: 500;
-  border-radius: 6px;
-  margin: 5px; }
-
-.km005-02 .atf .rating__stars #rating__star {
-  height: 26px; }
-
-.km005-02 .atf .rating__count {
-  font-style: italic;
-  font-weight: 600; }
-  .km005-02 .atf .rating__count:before {
-    content: "260+ 5 star"; }
-
-.km005-02 .atf .a--cta {
-  font-size: 18px;
-  padding: 16px 35px; }
+  font-size: 30px; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
