@@ -331,9 +331,11 @@ def landing_page(page, version, prod_category):
 
   # Fail if we don't have a valid page, and default to v0 if the version is invalid
   noindex = False
+  variant_default = False
   assert page in endpoint_info_dict
   if version not in endpoint_info_dict[page]:
     version = 'v0'
+    variant_default = True
     noindex = True
 
   # Assert that each version entry in the info_dict contains a template to render.
@@ -344,7 +346,8 @@ def landing_page(page, version, prod_category):
   template_vars = {}
   if 'template_vars' in endpoint_info_dict[page][version]:
     template_vars = endpoint_info_dict[page][version]['template_vars']
-    template_vars['is_variant'] = noindex
+    if variant_default:
+      template_vars['is_variant'] = noindex
 
   ## This is just some random stuff to make our keto-cleanse-program page appear to be tracking
   ## users and assigning them a "participant_id". We just cookie them and make sure to tack the saved
