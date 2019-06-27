@@ -324,15 +324,21 @@
 
   .purchase {
     .option-1 {
+      background-color: #eda267;
       background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png");
+      background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png"), linear-gradient(90deg, #eda267, #edbe67);
     }
 
     .option-2 {
+      background-color: #eda267;
       background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png");
+      background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png"), linear-gradient(90deg, #eda267, #edbe67);
     }
 
     .option-3 {
+      background-color: #eda267;
       background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png");
+      background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png"), linear-gradient(90deg, #eda267, #edbe67);
     }
   }
 
@@ -363,6 +369,7 @@
     }
   }
 }
+// STYLES FOR GOLD ADWORDS ONLY
 
 .gold-adwords {
   .technology__tabs-desktop {

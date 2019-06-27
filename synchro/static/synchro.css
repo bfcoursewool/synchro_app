@@ -6967,13 +6967,19 @@ input:checked + .accordion-horizontal__inner-box {
     font-weight: 500; } }
 
 .gold-lp .purchase .option-1 {
-  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png"); }
+  background-color: #eda267;
+  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png");
+  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png"), linear-gradient(90deg, #eda267, #edbe67); }
 
 .gold-lp .purchase .option-2 {
-  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png"); }
+  background-color: #eda267;
+  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png");
+  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png"), linear-gradient(90deg, #eda267, #edbe67); }
 
 .gold-lp .purchase .option-3 {
-  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png"); }
+  background-color: #eda267;
+  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png");
+  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png"), linear-gradient(90deg, #eda267, #edbe67); }
 
 .gold-lp .synchro-reviews {
   border: 0; }
