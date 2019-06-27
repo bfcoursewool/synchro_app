@@ -101,7 +101,7 @@
       font-size: 18px;
     }
   }
-  /** to be phased out **/
+
   &__item-discount {
     font-size: 22px;
     font-weight: $font-demi;
@@ -110,8 +110,11 @@
     width: fit-content;
     margin: 20px auto 10px;
     padding: 2px 15px;
+    @include sm-screen {
+      margin-top: 10px;
+    }
   }
-
+  /** to be phased out **/
   &__item-special {
     color: #e85050;
     font-weight: $font-demi;

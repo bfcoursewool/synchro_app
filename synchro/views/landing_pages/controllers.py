@@ -246,38 +246,6 @@ endpoint_info_dict = {
       }
     }
   },
-  'km003': {
-    # Test Variant 1
-    'v1': {
-      'template': 'landing_pages/experiments/km003/v1/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Test Variant 2
-    'v2': {
-      'template': 'landing_pages/experiments/km003/v2/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
-  'go004': {
-    # Test Variant 1
-    'v1': {
-      'template': 'landing_pages/experiments/go004/v1/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Test Variant 2
-    'v2': {
-      'template': 'landing_pages/experiments/go004/v2/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
   'km005': {
     # Test Variant 1
     'v1': {
@@ -314,7 +282,7 @@ def landing_page(page, version, prod_category):
     # as either the <page> or the <prod_category>, while the URI values are themselves serving as
     # different values.
     # Only do this whole page/version/category switcharoo for the old subdodmains... live.besynchro.com
-    # should work basically exactly like the dev site. 
+    # should work basically exactly like the dev site.
     if subdomain != 'live':
       if page is not 'none' and version is not 'v0':
         prod_category = subdomain

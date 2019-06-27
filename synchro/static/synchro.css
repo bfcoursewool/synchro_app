@@ -5885,6 +5885,9 @@ p {
     width: fit-content;
     margin: 20px auto 10px;
     padding: 2px 15px; }
+    @media (max-width: 854px) {
+      .purchase__item-discount {
+        margin-top: 10px; } }
   .purchase__item-special {
     color: #e85050;
     font-weight: 600;
@@ -7577,6 +7580,12 @@ input:checked + .accordion-horizontal__inner-box {
   100% {
     opacity: 1; } }
 
+.ketomanna-paid-r .purchase__item-off {
+  color: #000000;
+  opacity: 0.5;
+  text-decoration: line-through;
+  font-weight: 500; }
+
 .keto-bundle-lp .main-header-container .main-header {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -9167,24 +9176,6 @@ svg.external {
   }
 }
 */
-.go004-01 .purchase__item .option-1,
-.go004-02 .purchase__item .option-1 {
-  background-color: #eda267;
-  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png");
-  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png"), linear-gradient(90deg, #eda267, #edbe67); }
-
-.go004-01 .purchase__item .option-2,
-.go004-02 .purchase__item .option-2 {
-  background-color: #eda267;
-  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png");
-  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png"), linear-gradient(90deg, #eda267, #edbe67); }
-
-.go004-01 .purchase__item .option-3,
-.go004-02 .purchase__item .option-3 {
-  background-color: #eda267;
-  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png");
-  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png"), linear-gradient(90deg, #eda267, #edbe67); }
-
 @media (max-width: 767px) {
   .km005-01 .atf,
   .km005-02 .atf {

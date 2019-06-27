@@ -439,4 +439,13 @@
       @include animate-flash;
     }
   }
+
+  .purchase {
+    &__item-off {
+      color: $color-ebony;
+      opacity: 0.5;
+      text-decoration: line-through;
+      font-weight: $font-medium;
+    }
+  }
 }
