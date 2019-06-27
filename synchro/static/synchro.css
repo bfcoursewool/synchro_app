@@ -5774,9 +5774,6 @@ p {
   padding: 0 40px;
   /** to be phased out **/
   /** end **/ }
-  @media (max-width: 1199px) {
-    .purchase {
-      padding-bottom: 40px; } }
   @media (max-width: 854px) {
     .purchase {
       padding: 10px; } }
@@ -5794,9 +5791,6 @@ p {
     vertical-align: top; }
     .purchase__item:hover {
       transform: scale(1.025); }
-    @media (max-width: 1199px) {
-      .purchase__item {
-        padding: 40px 20px; } }
     @media (max-width: 854px) {
       .purchase__item {
         float: left;
@@ -5942,7 +5936,6 @@ p {
 
 .synchro-reviews {
   display: block;
-  border-top: 1px solid #e3e3e3;
   text-align: center;
   padding: 0 60px 60px; }
   @media (max-width: 767px) {
@@ -6641,10 +6634,7 @@ input:checked + .accordion-horizontal__inner-box {
     background: #f4f4f5;
     text-align: center;
     padding: 15px 0; }
-    @media (max-width: 767px) {
-      .payment__methods {
-        margin-top: 20px; } }
-    @media (max-width: 680px) {
+    @media (max-width: 854px) {
       .payment__methods {
         margin-top: 0; } }
   .payment__method-copy {
@@ -6981,9 +6971,6 @@ input:checked + .accordion-horizontal__inner-box {
   background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png");
   background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png"), linear-gradient(90deg, #eda267, #edbe67); }
 
-.gold-lp .synchro-reviews {
-  border: 0; }
-
 .gold-og .purchase .option-1 {
   background-color: #eda267;
   background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png");
@@ -7008,7 +6995,7 @@ input:checked + .accordion-horizontal__inner-box {
 .gold-adwords.no-wave .atf:after {
   content: none; }
 
-.genesis-lp .main-header .a--cta {
+.genesis-lp .a--cta {
   background: #5da8a6; }
 
 .genesis-lp .top-offer-bar {
@@ -7183,41 +7170,19 @@ input:checked + .accordion-horizontal__inner-box {
         width: 100%; } }
 
 .genesis-lp .purchase .option-1 {
-  background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-1.png"); }
+  background-color: #C4CBDD;
+  background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-1.png");
+  background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-1.png"), linear-gradient(90deg, #C4CBDD, #C0E3DF); }
 
 .genesis-lp .purchase .option-2 {
-  background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-2.png"); }
+  background-color: #C4CBDD;
+  background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-2.png");
+  background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-2.png"), linear-gradient(90deg, #C4CBDD, #C0E3DF); }
 
 .genesis-lp .purchase .option-3 {
-  background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-bag.png"); }
-
-.genesis-lp .purchase .discount {
-  position: absolute;
-  display: block;
-  background-color: #5da8a6;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  height: 22px;
-  width: 110px;
-  line-height: 22px;
-  left: 100%;
-  top: 0;
-  font-size: 11px;
-  color: #ffffff;
-  text-transform: uppercase;
-  z-index: 90;
-  transform: translate(-100%, -50%);
-  transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out; }
-  .genesis-lp .purchase .discount:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    border: 11px solid #5da8a6;
-    border-left-color: transparent;
-    border-left-width: 8px;
-    border-right-width: 1px;
-    z-index: -1;
-    left: -8px; }
+  background-color: #C4CBDD;
+  background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-bag.png");
+  background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-bag.png"), linear-gradient(90deg, #C4CBDD, #C0E3DF); }
 
 .ketomanna-lp a.anchor {
   top: -35px; }
@@ -7537,9 +7502,6 @@ input:checked + .accordion-horizontal__inner-box {
   background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png");
   background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8); }
 
-.ketomanna-lp .synchro-reviews {
-  border-top: 0; }
-
 .ketomanna-lp .footer {
   background-image: linear-gradient(90deg, #ded5c4, #e6c1c8); }
   .ketomanna-lp .footer__top {
@@ -7765,9 +7727,6 @@ input:checked + .accordion-horizontal__inner-box {
   .keto-bundle-lp .purchase__item-cents {
     line-height: 45px;
     font-size: 25px; }
-
-.keto-bundle-lp .synchro-reviews {
-  border: 0; }
 
 .keto-cleanse a.anchor {
   top: -35px; }

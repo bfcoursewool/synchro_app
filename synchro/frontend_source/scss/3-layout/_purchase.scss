@@ -1,8 +1,5 @@
 .purchase {
   padding: 0 $gutter-medium;
-  @include m-screen {
-    padding-bottom: $gutter-medium;
-  }
   @include sm-screen {
     padding: 10px;
   }
@@ -24,9 +21,6 @@
 
     &:hover {
       transform: scale(1.025);
-    }
-    @include m-screen {
-      padding: $gutter-medium $gutter-small;
     }
     @include sm-screen {
       float: left;

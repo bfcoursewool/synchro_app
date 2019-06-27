@@ -1,56 +1,53 @@
 <a class="anchor" name="purchase"></a>
 <section class="purchase">
-  <div class="container-fluid">
-    <div class="row">
-      <h3 class="p--title">Purchase Options</h3>
-      <div class="purchase__options" data-fb-property="Synchro-Genesis">
-        <div class="purchase__item col-md-4">
-          <a href="https://besynchro.com/a/secure/checkout/cnlu0Pce7DY5NkaBN0Ub?variant_id=2362780975113">
-            <div class="purchase__item-img option-1"></div>
-            <div class="purchase__item-info">
-              <h4 class="purchase__item-plan">14 Servings</h4>
-              <h5 class="purchase__item-qty">1 Canister</h5>
-              <!-- <p class="purchase__item-special">&nbsp;</p> -->
-            </div>
-            <div class="purchase__item-pricing">
-              <p class="purchase__item-price">$29<span class="purchase__item-cents">.97</span></p>
-              <p class="purchase__item-off">&nbsp;</p>
-            </div>
-            <div class="a--cta">Buy Now</div>
-          </a>
-        </div>
-        <div class="purchase__item premium-item col-md-4">
-          <div class="discount">Most Savings</div>
-          <a href="https://besynchro.com/a/secure/checkout/cnlu0Pce7DY5NkaBN0Ub?variant_id=2383399059465">
-            <div class="purchase__item-img option-3"></div>
-            <div class="purchase__item-info">
-              <h4 class="purchase__item-plan">56 Servings</h4>
-              <h5 class="purchase__item-qty">2kg Bag</h5>
-              <!-- <p class="purchase__item-special">&nbsp;</p> -->
-            </div>
-            <div class="purchase__item-pricing">
-              <p class="purchase__item-price">$99<span class="purchase__item-cents">.97</span></p>
-              <p class="purchase__item-off"><span>Original $116</span></p>
-            </div>
-            <div class="a--cta">Buy Now</div>
-          </a>
-        </div>
-        <div class="purchase__item col-md-4">
-          <a href="https://besynchro.com/a/secure/checkout/cnlu0Pce7DY5NkaBN0Ub?variant_id=2362784841737">
-            <div class="purchase__item-img option-2"></div>
-            <div class="purchase__item-info">
-              <h4 class="purchase__item-plan">28 Servings</h4>
-              <h5 class="purchase__item-qty">2 Canisters</h5>
-              <!-- <p class="purchase__item-special">&nbsp;</p> -->
-            </div>
-            <div class="purchase__item-pricing">
-              <p class="purchase__item-price">$58<span class="purchase__item-cents">.97</span></p>
-              <p class="purchase__item-off"><span>Original $58</span></p>
-            </div>
-            <div class="a--cta">Buy Now</div>
-          </a>
-        </div>
+  <h3 class="p--title">Purchase Options</h3>
+  <div class="purchase__options" data-fb-property="Synchro-Genesis">
+    <div class="purchase__item premium-item">
+      <div class="purchase__item-inner">
+        <a href="https://besynchro.com/a/secure/checkout/cnlu0Pce7DY5NkaBN0Ub?variant_id=2383399059465">
+          <div class="purchase__item-img option-3">
+            <div class="discount">Most Savings</div>
+          </div>
+          <div class="purchase__item-info">
+            <h4 class="purchase__item-plan">56 Servings</h4>
+            <h5 class="purchase__item-qty">2kg Bag</h5><p class="purchase__item-discount">14% off</p>
+            <p class="purchase__item-original">$116</p>
+            <p class="purchase__item-price">$99<span class="purchase__item-cents">.97</span></p>
+          </div>
+          <div class="a--cta">Buy Now</div>
+        </a>
+      </div>
+    </div>
+    <div class="purchase__item">
+      <div class="purchase__item-inner">
+        <a href="https://besynchro.com/a/secure/checkout/cnlu0Pce7DY5NkaBN0Ub?variant_id=2362784841737">
+          <div class="purchase__item-img option-2">
+            <div class="discount">Most Popular</div>
+          </div>
+          <div class="purchase__item-info">
+            <h4 class="purchase__item-plan">28 Servings</h4>
+            <h5 class="purchase__item-qty">2 Canisters</h5><p class="purchase__item-discount">2% off</p>
+            <p class="purchase__item-original">$60</p>
+            <p class="purchase__item-price">$58<span class="purchase__item-cents">.97</span></p>
+          </div>
+          <div class="a--cta">Buy Now</div>
+        </a>
+      </div>
+    </div>
+    <div class="purchase__item">
+      <div class="purchase__item-inner">
+        <a href="https://besynchro.com/a/secure/checkout/cnlu0Pce7DY5NkaBN0Ub?variant_id=2362780975113">
+          <div class="purchase__item-img option-1"></div>
+          <div class="purchase__item-info">
+            <h4 class="purchase__item-plan">14 Servings</h4>
+            <h5 class="purchase__item-qty">1 Canister</h5>
+            <p class="purchase__item-price">$29<span class="purchase__item-cents">.97</span></p>
+          </div>
+          <div class="a--cta">Buy Now</div>
+        </a>
       </div>
     </div>
   </div>
+  <div class="clearfix"></div>
 </section>
+{% include 'landing_pages/global/payment-methods.html' %}

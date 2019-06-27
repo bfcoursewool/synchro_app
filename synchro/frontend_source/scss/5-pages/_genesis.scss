@@ -1,8 +1,6 @@
 .genesis-lp {
-  .main-header {
-    .a--cta {
-      background: $color-genesis;
-    }
+  .a--cta {
+    background: $color-genesis;
   }
 
   .top-offer-bar {
@@ -222,19 +220,21 @@
 
   .purchase {
     .option-1 {
+      background-color: #C4CBDD;
       background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-1.png");
+      background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-1.png"), linear-gradient(90deg, #C4CBDD, #C0E3DF);
     }
 
     .option-2 {
+      background-color: #C4CBDD;
       background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-2.png");
+      background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-2.png"), linear-gradient(90deg, #C4CBDD, #C0E3DF);
     }
 
     .option-3 {
+      background-color: #C4CBDD;
       background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-bag.png");
-    }
-
-    .discount {
-      @include discount ($color-genesis)
+      background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-bag.png"), linear-gradient(90deg, #C4CBDD, #C0E3DF);
     }
   }
 }
