@@ -5771,43 +5771,112 @@ p {
     margin: 20px 0; }
 
 .purchase {
-  padding-bottom: 60px; }
+  padding: 0 40px;
+  /** to be phased out **/
+  /** end **/ }
   @media (max-width: 1199px) {
     .purchase {
       padding-bottom: 40px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 854px) {
     .purchase {
-      padding: 20px; } }
+      padding: 10px; } }
+  .purchase__options {
+    text-align: center; }
   .purchase__item {
+    padding: 0 10px;
+    width: 33%;
+    display: inline-block;
+    background: none;
     transition: transform 0.3s ease-in-out;
     text-align: center;
     max-width: 450px;
-    margin: 0 auto;
-    padding: 40px 60px; }
+    margin: 0;
+    vertical-align: top; }
     .purchase__item:hover {
       transform: scale(1.025); }
     @media (max-width: 1199px) {
       .purchase__item {
         padding: 40px 20px; } }
+    @media (max-width: 854px) {
+      .purchase__item {
+        float: left;
+        width: 50%;
+        max-width: none;
+        padding: 0 10px 30px; } }
+  @media (max-width: 854px) {
+    .purchase .premium-item {
+      width: 100%;
+      margin: 0; } }
+  .purchase__item-inner {
+    -webkit-box-shadow: inset 0 0 0 1px #f4f4f5;
+    -moz-box-shadow: inset 0 0 0 1px #f4f4f5;
+    box-shadow: inset 0 0 0 1px #f4f4f5;
+    background: #ffffff; }
   .purchase__item-img {
+    position: relative;
     transition: transform 0.3s ease-in-out;
     height: 220px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain; }
+  .purchase .discount {
+    position: absolute;
+    display: block;
+    background-color: #E85050;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    height: 22px;
+    width: 110px;
+    line-height: 22px;
+    left: 100%;
+    top: 0;
+    font-size: 11px;
+    color: #ffffff;
+    text-transform: uppercase;
+    z-index: 90;
+    transform: translate(-100%, -50%);
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out; }
+    .purchase .discount:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      border: 11px solid #E85050;
+      border-left-color: transparent;
+      border-left-width: 8px;
+      border-right-width: 1px;
+      z-index: -1;
+      left: -8px; }
+  .purchase__item-info {
+    margin: 15px 0 10px; }
   .purchase__item-plan {
     min-height: 0;
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: 1px;
     font-weight: 600;
-    margin: 20px 0 10px; }
+    margin: 30px 0 10px; }
+    @media (max-width: 854px) {
+      .purchase__item-plan {
+        display: none; } }
   .purchase__item-qty {
-    margin-top: 10px 0;
+    margin: 0;
     font-weight: 400;
     line-height: 1.4;
     font-size: 18px;
-    opacity: 0.5; }
+    opacity: 0.6; }
+    @media (max-width: 854px) {
+      .purchase__item-qty {
+        font-size: 16px; } }
+  .purchase__item-original {
+    opacity: 0.4;
+    font-size: 25px;
+    text-decoration: line-through;
+    margin: 0 5px 0 0;
+    display: inline-block;
+    vertical-align: middle; }
+    @media (max-width: 854px) {
+      .purchase__item-original {
+        font-size: 18px; } }
   .purchase__item-discount {
     font-size: 22px;
     font-weight: 600;
@@ -5826,42 +5895,47 @@ p {
   .purchase__item-pricing {
     margin-bottom: 20px; }
   .purchase__item-price {
-    font-size: 64px;
+    font-size: 45px;
     margin: 10px 0;
     color: #000000;
     opacity: 0.9;
-    line-height: 72px; }
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal; }
     @media (max-width: 854px) {
       .purchase__item-price {
-        font-size: 53px;
-        line-height: 60px; } }
-    .purchase__item-price.premium-animate {
-      opacity: 1;
-      font-size: 72px; }
-      @media (max-width: 854px) {
-        .purchase__item-price.premium-animate {
-          font-size: 60px; } }
+        font-size: 26px;
+        font-weight: 500;
+        margin: 0; } }
   .purchase__item-cents {
     font-size: 25px;
     vertical-align: top;
     line-height: 45px;
     border-bottom: 2px solid #e9e9ea;
     margin-left: 3px; }
+    @media (max-width: 854px) {
+      .purchase__item-cents {
+        line-height: 29px;
+        font-size: 17px; } }
   .purchase__item-off {
+    background: #f4f4f5;
+    padding: 7px;
     font-weight: 600;
-    margin: 10px 0;
+    margin: 0;
+    color: #E85151;
+    letter-spacing: 0.5px;
     font-size: 15px;
     text-transform: uppercase; }
+    @media (max-width: 854px) {
+      .purchase__item-off {
+        font-size: 13px; } }
     .purchase__item-off span {
       font-weight: 500;
       letter-spacing: 1px;
       opacity: 0.5;
       text-decoration: line-through; }
-  .purchase .premium-item {
-    background: #fbfaf9; }
-    @media (max-width: 767px) {
-      .purchase .premium-item {
-        margin-top: 30px; } }
+  .purchase .a--cta {
+    width: 100%; }
 
 .synchro-reviews {
   display: block;
@@ -6889,59 +6963,32 @@ input:checked + .accordion-horizontal__inner-box {
     color: #000000;
     font-weight: 500; } }
 
-.gold-lp .purchase {
-  padding-bottom: 0; }
-  .gold-lp .purchase .option-1 {
-    background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png"); }
-  .gold-lp .purchase .option-2 {
-    background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png"); }
-  .gold-lp .purchase .option-3 {
-    background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png"); }
-  .gold-lp .purchase .discount {
-    display: block;
-    width: 110px;
-    height: 26px;
-    background-color: #eca846;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.2);
-    color: #ffffff;
-    font-size: 12px;
-    letter-spacing: 0.5px;
-    line-height: 26px;
-    text-transform: uppercase;
-    z-index: 90;
-    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out; }
-    .gold-lp .purchase .discount:after, .gold-lp .purchase .discount:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      border: 13px solid #eca846;
-      border-left-width: 8px;
-      border-right-width: 8px;
-      z-index: -1; }
-    .gold-lp .purchase .discount:before {
-      left: -15px;
-      border-left-color: transparent; }
-    .gold-lp .purchase .discount:after {
-      right: -15px;
-      border-right-color: transparent; }
-  @media (max-width: 767px) {
-    .gold-lp .purchase .premium-item {
-      margin-bottom: 60px; } }
+.gold-lp .purchase .option-1 {
+  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png"); }
+
+.gold-lp .purchase .option-2 {
+  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png"); }
+
+.gold-lp .purchase .option-3 {
+  background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png"); }
 
 .gold-lp .synchro-reviews {
   border: 0; }
 
 .gold-og .purchase .option-1 {
-  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png"); }
+  background-color: #eda267;
+  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png");
+  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png"), linear-gradient(90deg, #eda267, #edbe67); }
 
 .gold-og .purchase .option-2 {
-  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png"); }
+  background-color: #eda267;
+  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png");
+  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png"), linear-gradient(90deg, #eda267, #edbe67); }
 
 .gold-og .purchase .option-3 {
-  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png"); }
+  background-color: #eda267;
+  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png");
+  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png"), linear-gradient(90deg, #eda267, #edbe67); }
 
 .gold-adwords .technology__tabs-desktop {
   padding-bottom: 60px; }
@@ -7136,35 +7183,32 @@ input:checked + .accordion-horizontal__inner-box {
   background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-bag.png"); }
 
 .genesis-lp .purchase .discount {
-  display: block;
-  width: 110px;
-  height: 26px;
-  background-color: #5da8a6;
   position: absolute;
+  display: block;
+  background-color: #5da8a6;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  height: 22px;
+  width: 110px;
+  line-height: 22px;
+  left: 100%;
   top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.2);
+  font-size: 11px;
   color: #ffffff;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  line-height: 26px;
   text-transform: uppercase;
   z-index: 90;
+  transform: translate(-100%, -50%);
   transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out; }
-  .genesis-lp .purchase .discount:after, .genesis-lp .purchase .discount:before {
+  .genesis-lp .purchase .discount:before {
     content: "";
     position: absolute;
     top: 0;
-    border: 13px solid #5da8a6;
+    border: 11px solid #5da8a6;
+    border-left-color: transparent;
     border-left-width: 8px;
-    border-right-width: 8px;
-    z-index: -1; }
-  .genesis-lp .purchase .discount:before {
-    left: -15px;
-    border-left-color: transparent; }
-  .genesis-lp .purchase .discount:after {
-    right: -15px;
-    border-right-color: transparent; }
+    border-right-width: 1px;
+    z-index: -1;
+    left: -8px; }
 
 .ketomanna-lp a.anchor {
   top: -35px; }
@@ -7469,47 +7513,20 @@ input:checked + .accordion-horizontal__inner-box {
   .ketomanna-lp .instagram__user .p--text {
     font-size: 18px; }
 
-.ketomanna-lp .purchase {
-  padding-bottom: 0; }
-  .ketomanna-lp .purchase .option-1 {
-    background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png"); }
-  .ketomanna-lp .purchase .option-2 {
-    background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png"); }
-  .ketomanna-lp .purchase .option-3 {
-    background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png"); }
-  .ketomanna-lp .purchase .discount {
-    display: block;
-    width: 110px;
-    height: 26px;
-    background-color: #6c5851;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.2);
-    color: #ffffff;
-    font-size: 12px;
-    letter-spacing: 0.5px;
-    line-height: 26px;
-    text-transform: uppercase;
-    z-index: 90;
-    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out; }
-    .ketomanna-lp .purchase .discount:after, .ketomanna-lp .purchase .discount:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      border: 13px solid #6c5851;
-      border-left-width: 8px;
-      border-right-width: 8px;
-      z-index: -1; }
-    .ketomanna-lp .purchase .discount:before {
-      left: -15px;
-      border-left-color: transparent; }
-    .ketomanna-lp .purchase .discount:after {
-      right: -15px;
-      border-right-color: transparent; }
-  @media (max-width: 767px) {
-    .ketomanna-lp .purchase .premium-item {
-      margin-bottom: 60px; } }
+.ketomanna-lp .purchase .option-1 {
+  background-color: #DED5C4;
+  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png");
+  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8); }
+
+.ketomanna-lp .purchase .option-2 {
+  background-color: #DED5C4;
+  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png");
+  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8); }
+
+.ketomanna-lp .purchase .option-3 {
+  background-color: #DED5C4;
+  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png");
+  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8); }
 
 .ketomanna-lp .synchro-reviews {
   border-top: 0; }
@@ -9150,196 +9167,6 @@ svg.external {
   }
 }
 */
-.go004-01 .purchase,
-.go004-02 .purchase,
-.km003-01 .purchase,
-.km003-02 .purchase {
-  padding: 0 40px; }
-  @media (max-width: 854px) {
-    .go004-01 .purchase,
-    .go004-02 .purchase,
-    .km003-01 .purchase,
-    .km003-02 .purchase {
-      padding: 10px; } }
-  .go004-01 .purchase__options,
-  .go004-02 .purchase__options,
-  .km003-01 .purchase__options,
-  .km003-02 .purchase__options {
-    text-align: center; }
-  .go004-01 .purchase .discount,
-  .go004-02 .purchase .discount,
-  .km003-01 .purchase .discount,
-  .km003-02 .purchase .discount {
-    position: absolute;
-    background-color: #E85050;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    height: 22px;
-    line-height: 22px;
-    left: 100%;
-    font-size: 11px;
-    transform: translate(-100%, -50%); }
-    .go004-01 .purchase .discount:after,
-    .go004-02 .purchase .discount:after,
-    .km003-01 .purchase .discount:after,
-    .km003-02 .purchase .discount:after {
-      display: none; }
-    .go004-01 .purchase .discount:before,
-    .go004-02 .purchase .discount:before,
-    .km003-01 .purchase .discount:before,
-    .km003-02 .purchase .discount:before {
-      border: 11px solid #E85050;
-      border-left-color: transparent;
-      border-left-width: 8px;
-      border-right-width: 1px;
-      left: -8px; }
-  .go004-01 .purchase__item,
-  .go004-02 .purchase__item,
-  .km003-01 .purchase__item,
-  .km003-02 .purchase__item {
-    padding: 0 10px;
-    width: 33%;
-    display: inline-block;
-    background: none;
-    margin: 0;
-    vertical-align: top; }
-    @media (max-width: 854px) {
-      .go004-01 .purchase__item,
-      .go004-02 .purchase__item,
-      .km003-01 .purchase__item,
-      .km003-02 .purchase__item {
-        float: left;
-        width: 50%;
-        max-width: none;
-        padding: 0 10px 30px; } }
-    @media (max-width: 854px) {
-      .go004-01 .purchase__item.premium-item,
-      .go004-02 .purchase__item.premium-item,
-      .km003-01 .purchase__item.premium-item,
-      .km003-02 .purchase__item.premium-item {
-        width: 100%;
-        margin: 0; } }
-  .go004-01 .purchase__item-inner,
-  .go004-02 .purchase__item-inner,
-  .km003-01 .purchase__item-inner,
-  .km003-02 .purchase__item-inner {
-    -webkit-box-shadow: inset 0 0 0 1px #f4f4f5;
-    -moz-box-shadow: inset 0 0 0 1px #f4f4f5;
-    box-shadow: inset 0 0 0 1px #f4f4f5;
-    background: #ffffff; }
-  .go004-01 .purchase__item-img,
-  .go004-02 .purchase__item-img,
-  .km003-01 .purchase__item-img,
-  .km003-02 .purchase__item-img {
-    position: relative; }
-  .go004-01 .purchase__item-info,
-  .go004-02 .purchase__item-info,
-  .km003-01 .purchase__item-info,
-  .km003-02 .purchase__item-info {
-    margin: 15px 0 10px; }
-  .go004-01 .purchase__item-plan,
-  .go004-02 .purchase__item-plan,
-  .km003-01 .purchase__item-plan,
-  .km003-02 .purchase__item-plan {
-    margin: 30px 0 10px; }
-    @media (max-width: 854px) {
-      .go004-01 .purchase__item-plan,
-      .go004-02 .purchase__item-plan,
-      .km003-01 .purchase__item-plan,
-      .km003-02 .purchase__item-plan {
-        display: none; } }
-  .go004-01 .purchase__item-qty,
-  .go004-02 .purchase__item-qty,
-  .km003-01 .purchase__item-qty,
-  .km003-02 .purchase__item-qty {
-    opacity: 0.6;
-    margin: 0; }
-    @media (max-width: 854px) {
-      .go004-01 .purchase__item-qty,
-      .go004-02 .purchase__item-qty,
-      .km003-01 .purchase__item-qty,
-      .km003-02 .purchase__item-qty {
-        font-size: 16px; } }
-  .go004-01 .purchase__item-original,
-  .go004-02 .purchase__item-original,
-  .km003-01 .purchase__item-original,
-  .km003-02 .purchase__item-original {
-    opacity: 0.4;
-    font-size: 25px;
-    text-decoration: line-through;
-    margin: 0 5px 0 0;
-    display: inline-block;
-    vertical-align: middle; }
-    @media (max-width: 854px) {
-      .go004-01 .purchase__item-original,
-      .go004-02 .purchase__item-original,
-      .km003-01 .purchase__item-original,
-      .km003-02 .purchase__item-original {
-        font-size: 18px; } }
-  .go004-01 .purchase__item-price,
-  .go004-02 .purchase__item-price,
-  .km003-01 .purchase__item-price,
-  .km003-02 .purchase__item-price {
-    font-size: 45px;
-    line-height: normal;
-    display: inline-block;
-    vertical-align: middle; }
-    @media (max-width: 854px) {
-      .go004-01 .purchase__item-price,
-      .go004-02 .purchase__item-price,
-      .km003-01 .purchase__item-price,
-      .km003-02 .purchase__item-price {
-        font-size: 26px;
-        font-weight: 500;
-        margin: 0; } }
-  @media (max-width: 854px) {
-    .go004-01 .purchase__item-cents,
-    .go004-02 .purchase__item-cents,
-    .km003-01 .purchase__item-cents,
-    .km003-02 .purchase__item-cents {
-      line-height: 29px;
-      font-size: 17px; } }
-  .go004-01 .purchase__item-off,
-  .go004-02 .purchase__item-off,
-  .km003-01 .purchase__item-off,
-  .km003-02 .purchase__item-off {
-    background: #f4f4f5;
-    padding: 7px;
-    font-weight: 600;
-    font-size: 15px;
-    color: #E85151;
-    letter-spacing: 0.5px;
-    margin: 0; }
-    @media (max-width: 854px) {
-      .go004-01 .purchase__item-off,
-      .go004-02 .purchase__item-off,
-      .km003-01 .purchase__item-off,
-      .km003-02 .purchase__item-off {
-        font-size: 13px; } }
-  .go004-01 .purchase .a--cta,
-  .go004-02 .purchase .a--cta,
-  .km003-01 .purchase .a--cta,
-  .km003-02 .purchase .a--cta {
-    width: 100%; }
-
-.km003-01 .purchase__item .option-1,
-.km003-02 .purchase__item .option-1 {
-  background-color: #DED5C4;
-  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png");
-  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8); }
-
-.km003-01 .purchase__item .option-2,
-.km003-02 .purchase__item .option-2 {
-  background-color: #DED5C4;
-  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png");
-  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8); }
-
-.km003-01 .purchase__item .option-3,
-.km003-02 .purchase__item .option-3 {
-  background-color: #DED5C4;
-  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png");
-  background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8); }
-
 .go004-01 .purchase__item .option-1,
 .go004-02 .purchase__item .option-1 {
   background-color: #eda267;

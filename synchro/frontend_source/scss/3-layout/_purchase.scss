@@ -1,18 +1,26 @@
 .purchase {
-  padding-bottom: $gutter-large;
+  padding: 0 $gutter-medium;
   @include m-screen {
     padding-bottom: $gutter-medium;
   }
-  @include s-screen {
-    padding: $gutter-small;
+  @include sm-screen {
+    padding: 10px;
+  }
+
+  &__options {
+    text-align: center;
   }
 
   &__item {
+    padding: 0 10px;
+    width: 33%;
+    display: inline-block;
+    background: none;
     transition: transform 0.3s ease-in-out;
     text-align: center;
     max-width: 450px;
-    margin: 0 auto;
-    padding: $gutter-medium $gutter-large;
+    margin: 0;
+    vertical-align: top;
 
     &:hover {
       transform: scale(1.025);
@@ -20,14 +28,43 @@
     @include m-screen {
       padding: $gutter-medium $gutter-small;
     }
+    @include sm-screen {
+      float: left;
+      width: 50%;
+      max-width: none;
+      padding: 0 10px 30px;
+    }
+  }
+
+  .premium-item {
+    @include sm-screen {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  &__item-inner {
+    -webkit-box-shadow: inset 0 0 0 1px $color-silver-light;
+    -moz-box-shadow: inset 0 0 0 1px $color-silver-light;
+    box-shadow: inset 0 0 0 1px $color-silver-light;
+    background: $color-ivory;
   }
 
   &__item-img {
+    position: relative;
     transition: transform 0.3s ease-in-out;
     height: 220px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  .discount {
+    @include discount
+  }
+
+  &__item-info {
+    margin: 15px 0 10px;
   }
 
   &__item-plan {
@@ -36,17 +73,35 @@
     font-size: 18px;
     letter-spacing: 1px;
     font-weight: $font-demi;
-    margin: 20px 0 10px;
+    margin: 30px 0 10px;
+    @include sm-screen {
+      display: none;
+    }
   }
 
   &__item-qty {
-    margin-top: 10px 0;
+    margin: 0;
     font-weight: $font-normal;
     line-height: 1.4;
     font-size: 18px;
-    opacity: 0.5;
+    opacity: 0.6;
+    @include sm-screen {
+      font-size: 16px;
+    }
   }
 
+  &__item-original {
+    opacity: 0.4;
+    font-size: 25px;
+    text-decoration: line-through;
+    margin: 0 5px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    @include sm-screen {
+      font-size: 18px;
+    }
+  }
+  /** to be phased out **/
   &__item-discount {
     font-size: 22px;
     font-weight: $font-demi;
@@ -69,24 +124,19 @@
   &__item-pricing {
     margin-bottom: 20px;
   }
-
+  /** end **/
   &__item-price {
-    font-size: 64px;
+    font-size: 45px;
     margin: 10px 0;
     color: $color-ebony;
     opacity: 0.9;
-    line-height: 72px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
     @include sm-screen {
-      font-size: 53px;
-      line-height: 60px;
-    }
-
-    &.premium-animate {
-      opacity: 1;
-      font-size: 72px;
-      @include sm-screen {
-        font-size: 60px;
-      }
+      font-size: 26px;
+      font-weight: $font-medium;
+      margin: 0;
     }
   }
 
@@ -96,13 +146,24 @@
     line-height: 45px;
     border-bottom: 2px solid #e9e9ea;
     margin-left: 3px;
+    @include sm-screen {
+      line-height: 29px;
+      font-size: 17px;
+    }
   }
 
   &__item-off {
+    background: $color-silver-light;
+    padding: 7px;
     font-weight: $font-demi;
-    margin: 10px 0;
+    margin: 0;
+    color: #E85151;
+    letter-spacing: 0.5px;
     font-size: 15px;
     text-transform: uppercase;
+    @include sm-screen {
+      font-size: 13px;
+    }
 
     span {
       font-weight: $font-medium;
@@ -112,10 +173,7 @@
     }
   }
 
-  .premium-item {
-    background: #fbfaf9;
-    @include s-screen {
-      margin-top: 30px;
-    }
+  .a--cta {
+    width: 100%;
   }
 }
