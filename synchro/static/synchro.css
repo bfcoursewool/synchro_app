@@ -6855,7 +6855,7 @@ input:checked + .accordion-horizontal__inner-box {
     width: 40%;
     min-width: 480px;
     display: table-cell;
-    background: #eca846;
+    background-image: linear-gradient(90deg, #EDA267, #EDBE67);
     text-align: center; }
     @media (max-width: 767px) {
       .gold-lp .atf__copy {
@@ -6875,6 +6875,12 @@ input:checked + .accordion-horizontal__inner-box {
       .gold-lp .atf__header {
         margin: 30px 20px 15px;
         font-size: 35px; } }
+  .gold-lp .atf__subheader {
+    font-size: 30px;
+    font-weight: 400;
+    opacity: 0.6;
+    margin: 20px 40px;
+    line-height: 1.4; }
   .gold-lp .atf__benefits {
     margin: 10px 40px 0; }
     @media (max-width: 854px) {
@@ -6933,9 +6939,7 @@ input:checked + .accordion-horizontal__inner-box {
     opacity: 1;
     margin: 5px 0 20px; }
     .gold-lp .rating__count:before {
-      content: "Over 1500"; }
-    .gold-lp .rating__count:after {
-      content: "..."; }
+      content: "1300+ 5-Star"; }
 
 .gold-lp .icon-learn-more__circle {
   stroke: none;

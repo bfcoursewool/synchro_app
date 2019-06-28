@@ -179,7 +179,7 @@
       width: 40%;
       min-width: 480px;
       display: table-cell;
-      background: $color-gold;
+      background-image: linear-gradient(90deg, #EDA267, #EDBE67);
       text-align: center;
       @include s-screen {
         width: 100%;
@@ -201,6 +201,14 @@
         margin: 30px $gutter-small 15px;
         font-size: 35px;
       }
+    }
+
+    &__subheader {
+      font-size: 30px;
+      font-weight: $font-normal;
+      opacity: 0.6;
+      margin: $gutter-small $gutter-medium;
+      line-height: 1.4;
     }
 
     &__benefits {
@@ -283,11 +291,7 @@
       margin: 5px 0 20px;
 
       &:before {
-        content: "Over 1500";
-      }
-
-      &:after {
-        content: "...";
+        content: "1300+ 5-Star";
       }
     }
   }
