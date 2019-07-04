@@ -146,6 +146,11 @@
     &__video-mobile {
       width: 100%;
 
+      .atf__video-btn {
+        position: initial;
+        padding: 0;
+      }
+
       img {
         width: 100%;
       }
