@@ -9251,4 +9251,20 @@ svg.external {
 .km005-02 .atf__description {
   font-size: 30px; }
 
+.go005-01 .atf__video {
+  background-image: url("https://cdn.besynchro.com/experiments/go005-v1-atf.gif");
+  background-position: center; }
+
+.go005-01 .atf__video-btn {
+  width: 100%;
+  transform: none;
+  top: 0;
+  bottom: 0;
+  left: 0; }
+  .go005-01 .atf__video-btn::before {
+    display: none; }
+
+.go005-01 .atf__video-mobile img {
+  width: 100%; }
+
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
