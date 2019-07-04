@@ -142,7 +142,10 @@
         display: none;
       }
     }
+
     &__video-mobile {
+      width: 100%;
+
       img {
         width: 100%;
       }
