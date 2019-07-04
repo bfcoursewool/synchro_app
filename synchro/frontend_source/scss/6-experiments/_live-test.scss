@@ -157,3 +157,28 @@
     }
   }
 }
+
+.go005-02 {
+  .atf {
+    &__video {
+      background-color: #F3B37E;
+      background-image: url("https://cdn.besynchro.com/experiments/go005-v2-atf-large.png");
+      background-image: url("https://cdn.besynchro.com/experiments/go005-v2-atf-large.png"), linear-gradient(90deg, #F2C97F, #F3B37E);
+      background-position: bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
+      @include l-screen {
+        background-image: url("https://cdn.besynchro.com/experiments/go005-v2-atf.png");
+        background-image: url("https://cdn.besynchro.com/experiments/go005-v2-atf.png"), linear-gradient(90deg, #F2C97F, #F3B37E);
+        background-position: top;
+        background-size: cover;
+      }
+    }
+
+    &__video-mobile {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

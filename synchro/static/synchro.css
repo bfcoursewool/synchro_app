@@ -9278,4 +9278,21 @@ svg.external {
   .go005-01 .atf__video-mobile img {
     width: 100%; }
 
+.go005-02 .atf__video {
+  background-color: #F3B37E;
+  background-image: url("https://cdn.besynchro.com/experiments/go005-v2-atf-large.png");
+  background-image: url("https://cdn.besynchro.com/experiments/go005-v2-atf-large.png"), linear-gradient(90deg, #F2C97F, #F3B37E);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 1599px) {
+    .go005-02 .atf__video {
+      background-image: url("https://cdn.besynchro.com/experiments/go005-v2-atf.png");
+      background-image: url("https://cdn.besynchro.com/experiments/go005-v2-atf.png"), linear-gradient(90deg, #F2C97F, #F3B37E);
+      background-position: top;
+      background-size: cover; } }
+
+.go005-02 .atf__video-mobile img {
+  width: 100%; }
+
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
