@@ -88,7 +88,9 @@
       background-image: url("https://cdn.besynchro.com/experiments/cro015-atf-video%402x.jpg");
       background-size: cover;
       background-position: right;
-
+      @include sm-screen {
+        display: none;
+      }
     }
 
     &__video-btn {

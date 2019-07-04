@@ -6796,6 +6796,9 @@ input:checked + .accordion-horizontal__inner-box {
     background-image: url("https://cdn.besynchro.com/experiments/cro015-atf-video%402x.jpg");
     background-size: cover;
     background-position: right; }
+    @media (max-width: 854px) {
+      .gold-lp .atf__video {
+        display: none; } }
   .gold-lp .atf__video-btn {
     position: absolute;
     top: 53%;
