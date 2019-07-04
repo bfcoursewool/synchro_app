@@ -182,3 +182,21 @@
     }
   }
 }
+
+.go005-03 {
+  .atf {
+    &__video {
+      background-image: url("https://cdn.besynchro.com/experiments/go005-v3-atf.gif");
+      background-image: url("https://cdn.besynchro.com/experiments/go005-v3-atf.gif"), linear-gradient(90deg, #F2C97F, #F3B37E);
+      background-position: bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
+      @include sm-screen {
+        background-image: url("https://cdn.besynchro.com/experiments/go005-v3-atf.gif"), linear-gradient(90deg, #F3B37E, #F2C97F);
+        padding-bottom: 100%;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}

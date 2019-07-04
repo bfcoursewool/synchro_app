@@ -9295,4 +9295,17 @@ svg.external {
 .go005-02 .atf__video-mobile img {
   width: 100%; }
 
+.go005-03 .atf__video {
+  background-image: url("https://cdn.besynchro.com/experiments/go005-v3-atf.gif");
+  background-image: url("https://cdn.besynchro.com/experiments/go005-v3-atf.gif"), linear-gradient(90deg, #F2C97F, #F3B37E);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 854px) {
+    .go005-03 .atf__video {
+      background-image: url("https://cdn.besynchro.com/experiments/go005-v3-atf.gif"), linear-gradient(90deg, #F3B37E, #F2C97F);
+      padding-bottom: 100%;
+      display: block;
+      width: 100%; } }
+
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
