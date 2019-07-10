@@ -8,6 +8,7 @@ from flask import (
   request,
   redirect
 )
+import copy
 import random
 from flask_cdn import url_for
 from synchro import const
@@ -354,6 +355,7 @@ def landing_page(page, version, prod_category):
     variant_default = True
     noindex = True
 
+
   # Assert that each version entry in the info_dict contains a template to render.
   # A failed assertion should happen only during development, so this helps ensure developer consistency.
   assert 'template' in endpoint_info_dict[page][version]
@@ -361,7 +363,7 @@ def landing_page(page, version, prod_category):
   # If there is a dict of template vars, let's grab it and pass it as kwargs to render_template
   template_vars = {}
   if 'template_vars' in endpoint_info_dict[page][version]:
-    template_vars = endpoint_info_dict[page][version]['template_vars']
+    template_vars = copy.deepcopy(endpoint_info_dict[page][version]['template_vars'])
     if variant_default:
       template_vars['is_variant'] = noindex
 
