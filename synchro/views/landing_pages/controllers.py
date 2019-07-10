@@ -76,14 +76,14 @@ endpoint_info_dict = {
     },
     # Genesis LP for Paid Facebook/Instagram Traffic (NEW)
     'fb': {
-      'template': 'landing_pages/genesis/v2-0/0-index.html',
+      'template': 'landing_pages/genesis/v2-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
     # Genesis LP for Paid Google Traffic (NEW)
     'gg': {
-      'template': 'landing_pages/genesis/v2-0/0-index.html',
+      'template': 'landing_pages/genesis/v2-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
@@ -143,14 +143,14 @@ endpoint_info_dict = {
     },
     # Ketoplan LP for Paid Facebook/Instagram Traffic (NEW)
     'fb': {
-      'template': 'landing_pages/keto-bundle/v1-0/0-index.html',
+      'template': 'landing_pages/keto-bundle/v1-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
     # Ketoplan LP for Paid Google Traffic (NEW)
     'gg': {
-      'template': 'landing_pages/keto-bundle/v1-0/0-index.html',
+      'template': 'landing_pages/keto-bundle/v1-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
@@ -166,14 +166,14 @@ endpoint_info_dict = {
     },
     # Keto Cleanse LP for Paid Facebook/Instagram Traffic (NEW)
     'fb': {
-      'template': 'landing_pages/keto-cleanse/v1-0/0-index.html',
+      'template': 'landing_pages/keto-cleanse/v1-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
     # Keto Cleanse LP for Paid Google Traffic (NEW)
     'gg': {
-      'template': 'landing_pages/keto-cleanse/v1-0/0-index.html',
+      'template': 'landing_pages/keto-cleanse/v1-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
@@ -216,7 +216,7 @@ endpoint_info_dict = {
       }
     },
     'keto-cleanse-program': {
-      'template': 'landing_pages/keto-cleanse/v1-0/0-index.html',
+      'template': 'landing_pages/keto-cleanse/v1-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
