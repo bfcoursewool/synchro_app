@@ -39,7 +39,7 @@ endpoint_info_dict = {
     },
     # Gold LP for Paid Facebook/Instagram Traffic
     'fb': {
-      'template': 'landing_pages/gold-og/v1-0/0-index.html',
+      'template': 'landing_pages/gold-og/v1-0-paid-a/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
