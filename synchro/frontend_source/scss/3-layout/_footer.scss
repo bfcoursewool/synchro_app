@@ -43,3 +43,125 @@
     font-size: 15px;
   }
 }
+
+.footer-organic {
+  background: $color-ebony;
+  padding: $gutter-large;
+  position: relative;
+  @include s-screen {
+    padding: $gutter-medium $gutter-small 110px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    justify-items: left;
+    @include m-screen {
+      grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    }
+    @include s-screen {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__top {
+    background: $color-ivory;
+    font-family: $font-awesome;
+    width: 30px;
+    height: 30px;
+    line-height: 31px;
+    font-size: 15px;
+    text-align: center;
+    justify-self: center;
+    display: block;
+    @include m-screen {
+      justify-self: left;
+    }
+    @include s-screen {
+      margin: 0 auto;
+      position: absolute;
+      bottom: 40px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 25px;
+    @include s-screen {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    color: $color-ivory;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    @include s-screen {
+      font-weight: $font-demi;
+    }
+  }
+
+  &__item {
+    font-size: 16px;
+    color: #6F6F6F;
+    margin: 15px 0;
+    @include s-screen {
+      margin: 15px 10px 0;
+      display: inline-block;
+    }
+  }
+
+  &__logo {
+    justify-self: center;
+    @include s-screen {
+      margin: 40px 0;
+    }
+
+    .synchro-logo {
+      display: block;
+      margin: 10px auto;
+      fill: $color-ivory;
+      @include s-screen {
+        width: 120px;
+      }
+    }
+
+    .p--text {
+      color: #6F6F6F;
+      font-size: 16px;
+      font-weight: $font-medium;
+      margin: 0;
+    }
+  }
+
+  &__footnote {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    justify-items: left;
+    @include m-screen {
+      grid-template-columns: 1fr 8fr;
+    }
+    @include s-screen {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__footnote-copy {
+    grid-column-start: 2;
+    margin-top: 30px;
+
+    .p--text {
+      font-size: 16px;
+      color: #6F6F6F;
+      margin: 0;
+    }
+  }
+
+  &__copyright {
+    opacity: 0.8;
+    display: block;
+  }
+}
