@@ -40,7 +40,7 @@ endpoint_info_dict = {
     },
     # Gold LP for Paid Facebook/Instagram Traffic
     'fb': {
-      'template': 'landing_pages/gold-og/v1-0/0-index.html',
+      'template': 'landing_pages/gold-og/v1-0-paid-a/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
@@ -77,14 +77,14 @@ endpoint_info_dict = {
     },
     # Genesis LP for Paid Facebook/Instagram Traffic (NEW)
     'fb': {
-      'template': 'landing_pages/genesis/v2-0/0-index.html',
+      'template': 'landing_pages/genesis/v2-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
     # Genesis LP for Paid Google Traffic (NEW)
     'gg': {
-      'template': 'landing_pages/genesis/v2-0/0-index.html',
+      'template': 'landing_pages/genesis/v2-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
@@ -144,14 +144,14 @@ endpoint_info_dict = {
     },
     # Ketoplan LP for Paid Facebook/Instagram Traffic (NEW)
     'fb': {
-      'template': 'landing_pages/keto-bundle/v1-0/0-index.html',
+      'template': 'landing_pages/keto-bundle/v1-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
     # Ketoplan LP for Paid Google Traffic (NEW)
     'gg': {
-      'template': 'landing_pages/keto-bundle/v1-0/0-index.html',
+      'template': 'landing_pages/keto-bundle/v1-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
@@ -167,14 +167,14 @@ endpoint_info_dict = {
     },
     # Keto Cleanse LP for Paid Facebook/Instagram Traffic (NEW)
     'fb': {
-      'template': 'landing_pages/keto-cleanse/v1-0/0-index.html',
+      'template': 'landing_pages/keto-cleanse/v1-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
     # Keto Cleanse LP for Paid Google Traffic (NEW)
     'gg': {
-      'template': 'landing_pages/keto-cleanse/v1-0/0-index.html',
+      'template': 'landing_pages/keto-cleanse/v1-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
@@ -217,7 +217,7 @@ endpoint_info_dict = {
       }
     },
     'keto-cleanse-program': {
-      'template': 'landing_pages/keto-cleanse/v1-0/0-index.html',
+      'template': 'landing_pages/keto-cleanse/v1-0-paid/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
@@ -247,38 +247,6 @@ endpoint_info_dict = {
       }
     }
   },
-  'km003': {
-    # Test Variant 1
-    'v1': {
-      'template': 'landing_pages/experiments/km003/v1/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Test Variant 2
-    'v2': {
-      'template': 'landing_pages/experiments/km003/v2/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
-  'go004': {
-    # Test Variant 1
-    'v1': {
-      'template': 'landing_pages/experiments/go004/v1/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Test Variant 2
-    'v2': {
-      'template': 'landing_pages/experiments/go004/v2/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
   'km005': {
     # Test Variant 1
     'v1': {
@@ -290,6 +258,29 @@ endpoint_info_dict = {
     # Test Variant 2
     'v2': {
       'template': 'landing_pages/experiments/km005/v2/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    }
+  },
+  'go005': {
+    # Test Variant 1
+    'v1': {
+      'template': 'landing_pages/experiments/go005/v1/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    # Test Variant 2
+    'v2': {
+      'template': 'landing_pages/experiments/go005/v2/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    # Test Variant 3
+    'v3': {
+      'template': 'landing_pages/experiments/go005/v3/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
@@ -315,7 +306,7 @@ def landing_page(page, version, prod_category):
     # as either the <page> or the <prod_category>, while the URI values are themselves serving as
     # different values.
     # Only do this whole page/version/category switcharoo for the old subdodmains... live.besynchro.com
-    # should work basically exactly like the dev site. 
+    # should work basically exactly like the dev site.
     if subdomain != 'live':
       if page is not 'none' and version is not 'v0':
         prod_category = subdomain

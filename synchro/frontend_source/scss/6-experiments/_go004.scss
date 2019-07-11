@@ -1,0 +1,157 @@
+@import '../synchro';
+
+.go004-01,
+.go004-02 {
+  .purchase {
+    padding: 0 $gutter-medium;
+    @include sm-screen {
+      padding: 10px;
+    }
+
+    &__options {
+      text-align: center;
+    }
+
+    .discount {
+      position: absolute;
+      background-color: #E85050;
+      font-weight: $font-medium;
+      letter-spacing: 0.05em;
+      height: 22px;
+      line-height: 22px;
+      left: 100%;
+      font-size: 11px;
+      transform: translate(-100%, -50%);
+
+      &:after {
+        display: none;
+      }
+
+      &:before {
+        border: 11px solid #E85050;
+        border-left-color: transparent;
+        border-left-width: 8px;
+        border-right-width: 1px;
+        left: -8px;
+      }
+    }
+
+    &__item {
+      padding: 0 10px;
+      width: 33%;
+      display: inline-block;
+      background: none;
+      margin: 0;
+      vertical-align: top;
+      @include sm-screen {
+        float: left;
+        width: 50%;
+        max-width: none;
+        padding: 0 10px 30px;
+      }
+
+      &.premium-item {
+        @include sm-screen {
+          width: 100%;
+          margin: 0;
+        }
+      }
+
+      .option-1 {
+        background-color: #eda267;
+        background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png");
+        background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png"), linear-gradient(90deg, #eda267, #edbe67);
+      }
+
+      .option-2 {
+        background-color: #eda267;
+        background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png");
+        background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png"), linear-gradient(90deg, #eda267, #edbe67);
+      }
+
+      .option-3 {
+        background-color: #eda267;
+        background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png");
+        background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png"), linear-gradient(90deg, #eda267, #edbe67);
+      }
+    }
+
+    &__item-inner {
+      -webkit-box-shadow: inset 0 0 0 1px $color-silver-light;
+      -moz-box-shadow: inset 0 0 0 1px $color-silver-light;
+      box-shadow: inset 0 0 0 1px $color-silver-light;
+      background: $color-ivory;
+    }
+
+    &__item-img {
+      position: relative;
+    }
+
+    &__item-info {
+      margin: 15px 0 10px;
+    }
+
+    &__item-plan {
+      margin: 30px 0 10px;
+      @include sm-screen {
+        display: none;
+      }
+    }
+
+    &__item-qty {
+      opacity: 0.6;
+      margin: 0;
+      @include sm-screen {
+        font-size: 16px;
+      }
+    }
+
+    &__item-original {
+      opacity: 0.4;
+      font-size: 25px;
+      text-decoration: line-through;
+      margin: 0 5px 0 0;
+      display: inline-block;
+      vertical-align: middle;
+      @include sm-screen {
+        font-size: 18px;
+      }
+    }
+
+    &__item-price {
+      font-size: 45px;
+      line-height: normal;
+      display: inline-block;
+      vertical-align: middle;
+      @include sm-screen {
+        font-size: 26px;
+        font-weight: $font-medium;
+        margin: 0;
+      }
+    }
+
+    &__item-cents {
+      @include sm-screen {
+        line-height: 29px;
+        font-size: 17px;
+      }
+    }
+
+    &__item-off {
+      background: $color-silver-light;
+      padding: 7px;
+      font-weight: $font-demi;
+      font-size: 15px;
+      color: #E85151;
+      letter-spacing: 0.5px;
+      margin: 0;
+      @include sm-screen {
+        font-size: 13px;
+      }
+    }
+
+    .a--cta {
+      width: 100%;
+    }
+  }
+}

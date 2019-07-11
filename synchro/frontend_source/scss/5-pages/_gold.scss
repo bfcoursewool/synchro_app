@@ -30,63 +30,66 @@
     }
   }
 
+  #videoModal {
+    .modal-dialog {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .modal-body {
+      padding: 5px;
+    }
+
+    .embed-container {
+      position: relative;
+    }
+
+    .close {
+      position: absolute;
+      right: -40px;
+      font-size: 40px;
+      color: rgba(0,0,0,0.5);
+      opacity: 1;
+      font-weight: 100;
+      outline: none;
+      background: white;
+      padding: 1px 10px;
+      z-index: -1;
+    }
+
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .atf {
     display: table;
+    width: 100%;
 
     &__video {
       position: relative;
-      width: 60%;
+      width: 50%;
       display: table-cell;
       background-image: url("https://cdn.besynchro.com/experiments/cro015-atf-video%402x.jpg");
       background-size: cover;
       background-position: right;
       @include sm-screen {
         display: none;
-      }
-
-      .modal-dialog {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 0;
-        width: 90%;
-        max-width: 1000px;
-      }
-
-      .modal-body {
-        padding: 5px;
-      }
-
-      .embed-container {
-        position: relative;
-      }
-
-      .close {
-        position: absolute;
-        right: -40px;
-        font-size: 40px;
-        color: rgba(0,0,0,0.5);
-        opacity: 1;
-        font-weight: 100;
-        outline: none;
-        background: white;
-        padding: 1px 10px;
-        z-index: -1;
-      }
-
-      .iframe-container {
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%;
-        height: 0;
-      }
-
-      .iframe-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
       }
     }
 
@@ -176,31 +179,39 @@
     }
 
     &__copy {
-      width: 40%;
-      min-width: 480px;
+      width: 50%;
       display: table-cell;
-      background: $color-gold;
+      background-image: linear-gradient(90deg, #F3B37E, #F2C97F);
       text-align: center;
-      @include s-screen {
+      padding: 30px $gutter-medium;
+      @include sm-screen {
         width: 100%;
-        min-width: initial;
+        display: block;
       }
     }
 
     &__header {
       position: initial;
       transform: none;
-      font-size: 50px;
-      letter-spacing: 2px;
+      font-size: 45px;
+      letter-spacing: 1.5px;
       color: $color-ivory;
       width: auto;
-      margin: 30px $gutter-medium 20px;
+      max-width: 600px;
       line-height: initial;
       font-weight: 600;
       @include s-screen {
-        margin: 30px $gutter-small 15px;
+        max-width: 440px;
         font-size: 35px;
       }
+    }
+
+    &__subheader {
+      font-size: 24px;
+      color: $color-ivory;
+      margin: 25px auto;
+      line-height: 1.4;
+      max-width: 440px;
     }
 
     &__benefits {
@@ -249,45 +260,82 @@
     .a--cta {
       font-size: 18px;
       padding: 16px 35px;
-      margin: 20px 0 40px;
+      margin-bottom: 10px;
+      background-color: #39447C;
+      position: relative;
       @include sm-screen {
-        margin-bottom: 20px;
+        margin-bottom: 0;
       }
 
       &.cta--secondary {
         background: none;
         color: $color-ebony;
       }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        bottom: -4px;
+        right: -4px;
+        position: absolute;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 100%;
+        background-color: white;
+        bottom: -4px;
+        right: -4px;
+        position: absolute;
+      }
+
+      &:active {
+        position: relative;
+        left: 4px;
+        top: 4px;
+
+        &::after,
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .benefits {
+    margin-top: 40px;
+
+    &__header {
+      max-width: none;
     }
   }
 
   .rating {
-    margin: 0;
-
     &__stars {
       #rating__star {
-        height: 32px;
+        height: 30px;
+        margin: 0 2px;
       }
     }
 
     &__icon {
-      fill: $color-ebony;
+      fill: #39447C;
     }
 
     &__count {
       font-weight: $font-demi;
-      color: $color-ivory;
+      color: #39447C;
       text-align: center;
-      font-style: italic;
       opacity: 1;
       margin: 5px 0 20px;
 
       &:before {
-        content: "Over 1500";
-      }
-
-      &:after {
-        content: "...";
+        content: "1300+ 5-Star";
       }
     }
   }
@@ -323,53 +371,48 @@
   }
 
   .purchase {
-    padding-bottom: 0;
-
     .option-1 {
+      background-color: #eda267;
       background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png");
+      background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png"), linear-gradient(90deg, #eda267, #edbe67);
     }
 
     .option-2 {
+      background-color: #eda267;
       background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png");
+      background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png"), linear-gradient(90deg, #eda267, #edbe67);
     }
 
     .option-3 {
+      background-color: #eda267;
       background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png");
+      background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png"), linear-gradient(90deg, #eda267, #edbe67);
     }
-
-    .discount {
-      @include discount ($color-gold)
-    }
-
-    .premium-item {
-      @include s-screen {
-        margin-bottom: 60px;
-      }
-    }
-  }
-
-  .synchro-reviews {
-    border: 0;
   }
 }
 // STYLES FOR GOLD ORIGINAL ONLY
-
 .gold-og {
   .purchase {
     .option-1 {
+      background-color: #eda267;
       background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png");
+      background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png"), linear-gradient(90deg, #eda267, #edbe67);
     }
 
     .option-2 {
+      background-color: #eda267;
       background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png");
+      background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png"), linear-gradient(90deg, #eda267, #edbe67);
     }
 
     .option-3 {
+      background-color: #eda267;
       background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png");
+      background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png"), linear-gradient(90deg, #eda267, #edbe67);
     }
   }
 }
-
+// STYLES FOR GOLD ADWORDS ONLY
 .gold-adwords {
   .technology__tabs-desktop {
     padding-bottom: $gutter-large;

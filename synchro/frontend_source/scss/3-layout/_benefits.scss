@@ -11,14 +11,10 @@
     width: 25%;
     display: inline-block;
     padding: 0 15px;
-    margin: 0 0 40px;
+    margin: 0 0 20px;
     vertical-align: top;
     @include m-screen {
       width: 50%;
-    }
-    @include xs-screen {
-      padding: 0;
-      width: 100%;
     }
 
     .icon-toggle-more {
@@ -51,7 +47,20 @@
   }
 
   &__copy {
-    background: $color-silver-light;
+    max-width: none;
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    padding: 0 15px;
+    margin: 0 0 40px;
+    vertical-align: top;
+    @include m-screen {
+      width: 50%;
+    }
+    @include xs-screen {
+      padding: 0;
+      width: 100%;
+    }
   }
 
   &__image {
@@ -61,9 +70,10 @@
   &__text {
     padding: 0 20px;
     overflow: auto;
+    background: $color-silver-light;
 
     .p--text {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 }

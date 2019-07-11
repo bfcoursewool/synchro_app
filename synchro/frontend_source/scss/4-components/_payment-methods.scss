@@ -6,10 +6,7 @@
     background: $color-silver-light;
     text-align: center;
     padding: 15px 0;
-    @include s-screen {
-      margin-top: 20px;
-    }
-    @include xs-screen {
+    @include sm-screen {
       margin-top: 0;
     }
   }

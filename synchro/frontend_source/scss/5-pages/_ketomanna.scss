@@ -248,7 +248,7 @@
     }
 
     &__image {
-      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-intro.jpg");
+      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-on-the-go@2x.jpg");
     }
   }
 
@@ -398,33 +398,23 @@
   }
 
   .purchase {
-    padding-bottom: 0;
-
     .option-1 {
+      background-color: #DED5C4;
       background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png");
+      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-10ct-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8);
     }
 
     .option-2 {
+      background-color: #DED5C4;
       background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png");
+      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ct-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8);
     }
 
     .option-3 {
+      background-color: #DED5C4;
       background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png");
+      background-image: url("https://cdn.besynchro.com/ketomanna/v1-0/km-20ctx2-box%402x.png"), linear-gradient(90deg, #ded5c4, #e6c1c8);
     }
-
-    .discount {
-      @include discount ($color-ketomanna)
-    }
-
-    .premium-item {
-      @include s-screen {
-        margin-bottom: 60px;
-      }
-    }
-  }
-
-  .synchro-reviews {
-    border-top: 0;
   }
 
   .footer {
@@ -443,6 +433,15 @@
         display: none;
       }
       @include animate-flash;
+    }
+  }
+
+  .purchase {
+    &__item-off {
+      color: $color-ebony;
+      opacity: 0.5;
+      text-decoration: line-through;
+      font-weight: $font-medium;
     }
   }
 }
