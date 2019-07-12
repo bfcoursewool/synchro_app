@@ -9419,6 +9419,9 @@ svg.external {
   .km006-01 .top-offer-bar .a--cta {
     display: inline-block; } }
 
+.km006-02 a.anchor {
+  top: 0; }
+
 @media (max-width: 767px) {
   .km006-02 .top-offer-bar {
     display: none; } }

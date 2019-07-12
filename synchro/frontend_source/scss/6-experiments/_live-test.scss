@@ -212,6 +212,10 @@
 }
 
 .km006-02 {
+  a.anchor {
+    top: 0;
+  }
+
   .top-offer-bar {
     @include s-screen {
       display: none;
