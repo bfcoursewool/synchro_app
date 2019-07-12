@@ -252,8 +252,8 @@
         box-shadow: 0 0 10px 0 rgba(0,0,0,0.30);
         z-index: 100;
 
-        &:active {
-          opacity: 0;
+        &:hover {
+          opacity: 0.2;
         }
       }
     }
