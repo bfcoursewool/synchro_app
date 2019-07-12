@@ -200,3 +200,53 @@
     }
   }
 }
+
+.km006-01 {
+  .top-offer-bar {
+    .a--cta {
+      @include xs-screen {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.km006-02 {
+  .top-offer-bar {
+    @include s-screen {
+      display: none;
+    }
+  }
+}
+
+.km006-02,
+.km006-03 {
+  @keyframes slideInFromBottom {
+    0% {
+      bottom: -100px;
+    }
+
+    100% {
+      bottom: 20px;
+    }
+  }
+
+  .floating-cta {
+    display: none;
+    @include s-screen {
+      display: block;
+      position: fixed;
+      animation: 1s ease-in-out 0s 1 slideInFromBottom;
+      bottom: 20px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      border-radius: 50px;
+      font-size: 18px;
+      padding: 17px 30px;
+      background-image: linear-gradient(90deg, #38447C 0%, #4958A1 100%);
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.30);
+      width: fit-content;
+      z-index: 100;
+    }
+  }
+}
