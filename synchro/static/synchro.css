@@ -9429,12 +9429,16 @@ svg.external {
   100% {
     bottom: 27px; } }
 
-.km006-02 .floating-cta,
-.km006-03 .floating-cta {
+.km006-02 .floating-cta a,
+.km006-03 .floating-cta a {
+  opacity: 1; }
+
+.km006-02 .floating-cta .a--cta,
+.km006-03 .floating-cta .a--cta {
   display: none; }
   @media (max-width: 767px) {
-    .km006-02 .floating-cta,
-    .km006-03 .floating-cta {
+    .km006-02 .floating-cta .a--cta,
+    .km006-03 .floating-cta .a--cta {
       display: table;
       position: fixed;
       animation: 1s ease-in-out 0s 1 slideInFromBottom;
@@ -9446,6 +9450,9 @@ svg.external {
       padding: 18px 30px;
       background-image: linear-gradient(90deg, #38447C 0%, #4958A1 100%);
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-      z-index: 100; } }
+      z-index: 100; }
+      .km006-02 .floating-cta .a--cta:active,
+      .km006-03 .floating-cta .a--cta:active {
+        opacity: 0; } }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
