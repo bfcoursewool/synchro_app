@@ -9241,7 +9241,7 @@ svg.external {
 
 .km006-02 .floating-cta,
 .km006-03 .floating-cta {
-  visibility: hidden; }
+  display: none; }
 
 @keyframes slideInFromBottom {
   0% {
@@ -9252,7 +9252,7 @@ svg.external {
     .km006-02 .floating-cta,
     .km006-03 .floating-cta {
       position: fixed;
-      visibility: visible;
+      display: block;
       bottom: 30px;
       left: 50%;
       transform: translate(-50%, 0);

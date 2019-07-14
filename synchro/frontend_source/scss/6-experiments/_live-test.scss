@@ -111,10 +111,10 @@
         bottom: 27px;
       }
     }
-    visibility: hidden;
+    display: none;
     @include s-screen {
       position: fixed;
-      visibility: visible;
+      display: block;
       bottom: 30px;
       left: 50%;
       transform: translate(-50%, 0);
