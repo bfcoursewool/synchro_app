@@ -99,8 +99,26 @@
   }
 }
 
+.km006-04 {
+  .floating-cta {
+    @include s-screen {
+      bottom: 80px;
+    }
+  }
+}
+
 .km006-02,
 .km006-03 {
+  .floating-cta {
+    @include s-screen {
+      bottom: 30px;
+    }
+  }
+}
+
+.km006-02,
+.km006-03,
+.km006-04 {
   .floating-cta {
     @keyframes slideInFromBottom {
       0% {
@@ -115,7 +133,6 @@
     @include s-screen {
       position: fixed;
       display: block;
-      bottom: 80px;
       left: 50%;
       transform: translate(-50%, 0);
       z-index: 100;
