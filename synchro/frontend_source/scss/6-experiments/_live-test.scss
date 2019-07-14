@@ -111,16 +111,16 @@
         bottom: 27px;
       }
     }
-    display: none;
+    // display: none;
     @include s-screen {
       position: fixed;
-      display: block;
+      // display: block;
       bottom: 30px;
       left: 50%;
       transform: translate(-50%, 0);
       z-index: 100;
       white-space: nowrap;
-      animation: 1s ease-in-out 0s 1 slideInFromBottom;
+      // animation: 1s ease-in-out 0s 1 slideInFromBottom;
     }
 
     .a--cta {
