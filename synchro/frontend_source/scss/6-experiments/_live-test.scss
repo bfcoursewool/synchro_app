@@ -111,16 +111,16 @@
         bottom: 27px;
       }
     }
-    // display: none;
+    display: none;
     @include s-screen {
       position: fixed;
-      // display: block;
+      display: block;
       bottom: 30px;
       left: 50%;
       transform: translate(-50%, 0);
       z-index: 100;
       white-space: nowrap;
-      // animation: 1s ease-in-out 0s 1 slideInFromBottom;
+      animation: 1s ease-in-out 0s 1 slideInFromBottom;
     }
 
     .a--cta {
@@ -129,10 +129,10 @@
       padding: 15px 25px;
       background-image: linear-gradient(90deg, #38447C 0%, #4958A1 100%);
       box-shadow: 0 0 10px 0 rgba(0,0,0,0.30);
-
-      &:hover {
-        opacity: 0.2;
-      }
+      // 
+      // &:hover {
+      //   opacity: 0.2;
+      // }
     }
   }
 }
