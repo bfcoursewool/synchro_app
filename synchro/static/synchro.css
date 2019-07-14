@@ -7583,7 +7583,7 @@ input:checked + .accordion-horizontal__inner-box {
     color: #e6c1c8; }
 
 #gorgias-web-messenger-container {
-  bottom: 40px; }
+  bottom: 50px; }
 
 .ketomanna-paid-r .top-offer-bar .a--cta {
   -webkit-animation: flash 1s infinite;
@@ -9256,7 +9256,7 @@ svg.external {
     .km006-03 .floating-cta {
       position: fixed;
       display: block;
-      bottom: 70px;
+      bottom: 80px;
       left: 50%;
       transform: translate(-50%, 0);
       z-index: 100;
