@@ -9282,4 +9282,10 @@ svg.external {
     .km006-04 .floating-cta .a--cta:hover {
       opacity: 0.2; }
 
+.go006-01 .top-offer-bar .a--cta {
+  background-image: linear-gradient(90deg, #F3B37E 0%, #F2C97F 100%); }
+  @media (max-width: 680px) {
+    .go006-01 .top-offer-bar .a--cta {
+      display: inline-block; } }
+
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

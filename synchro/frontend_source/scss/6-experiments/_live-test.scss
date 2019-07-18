@@ -153,3 +153,14 @@
     }
   }
 }
+
+.go006-01 {
+  .top-offer-bar {
+    .a--cta {
+    background-image: linear-gradient(90deg, #F3B37E 0%, #F2C97F 100%);
+      @include xs-screen {
+        display: inline-block;
+      }
+    }
+  }
+}
