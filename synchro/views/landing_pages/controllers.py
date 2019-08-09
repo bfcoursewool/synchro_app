@@ -1,5 +1,6 @@
 from urlparse import urlparse
 from urllib import urlencode
+import json
 from flask import (
   Blueprint,
   render_template,
@@ -376,8 +377,23 @@ def landing_page(page, version, prod_category):
         resp.set_cookie('participant_id', str(fake_participant_id))
         return resp
 
-  return render_template(
+  ## Do some cookie magic so we can detect returning customers and offer them a discounted deal... 
+  previous_activity = request.cookies.get('synchro_purchase_tracking')
+  try: 
+    previous_activity = json.loads(previous_activity)
+  except:
+    previous_activity = {}
+  resp = make_response(render_template(
     endpoint_info_dict[page][version]['template'],
     kENV=const.kENVIRONMENT,
+    page=page,
+    returning=previous_activity.get(page, {}).get('purchased', False),
     **template_vars
-  )
+  ))
+  if page not in previous_activity:
+    previous_activity[page] = {
+      'visited': True,
+      'purchased': False
+    }
+  resp.set_cookie('synchro_purchase_tracking', json.dumps(previous_activity), domain=".besynchro.com")
+  return resp
