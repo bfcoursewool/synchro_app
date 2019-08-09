@@ -286,6 +286,66 @@ endpoint_info_dict = {
         'is_variant': True,
       }
     }
+  },
+  'km006': {
+    # Test Variant 1
+    'v1': {
+      'template': 'landing_pages/experiments/km006/v1/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    # Test Variant 2
+    'v2': {
+      'template': 'landing_pages/experiments/km006/v2/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    # Test Variant 3
+    'v3': {
+      'template': 'landing_pages/experiments/km006/v3/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    # Test Variant 4
+    'v4': {
+      'template': 'landing_pages/experiments/km006/v4/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    }
+  },
+  'go006': {
+    # Test Variant 1
+    'v1': {
+      'template': 'landing_pages/experiments/go006/v1/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    # Test Variant 2
+    'v2': {
+      'template': 'landing_pages/experiments/go006/v2/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    # Test Variant 3
+    'v3': {
+      'template': 'landing_pages/experiments/go006/v3/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    # Test Variant 4
+    'v4': {
+      'template': 'landing_pages/experiments/go006/v4/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    }
   }
 }
 

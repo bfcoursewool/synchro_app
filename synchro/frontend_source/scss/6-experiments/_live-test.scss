@@ -1,129 +1,5 @@
 // STYLES FOR ONGOING EXPERIMENTS/TESTS
 
-.km005-01,
-.km005-02 {
-  .atf {
-    @include s-screen {
-      display: block;
-    }
-
-    &__copy {
-      overflow: auto;
-      background-image: linear-gradient(90deg, #e6c1c8, #ded5c4);
-      padding: 0 $gutter-medium;
-    }
-
-    &__header {
-      max-width: 530px;
-      margin: 30px auto 15px;
-    }
-
-    &__benefits {
-      background: white;
-      display: inline-block;
-      padding: 4px 13px;
-      color: #37447D;
-      letter-spacing: 0.5px;
-      font-weight: 500;
-      border-radius: 6px;
-      margin: 10px 5px;
-    }
-
-    &__description {
-      margin: 15px auto;
-    }
-
-    .rating__stars #rating__star {
-      height: 26px;
-    }
-
-    .rating__count {
-      font-style: italic;
-      font-weight: 600;
-
-      &:before {
-        content: "260+ 5 star";
-      }
-    }
-
-    .a--cta {
-      font-size: 18px;
-      padding: 16px 35px;
-    }
-  }
-}
-
-.km005-01 {
-  .atf {
-    &__video {
-      background-image: url(https://cdn.besynchro.com/experiments/km005-v1-atf-horizontal.gif), linear-gradient(90deg, #d9ccbd 20%, #e2b8c0 80%);
-      width: 60%;
-      display: block;
-      text-align: center;
-      background-size: contain;
-      background-position: bottom center;
-      background-repeat: no-repeat;
-      @include m-screen {
-        background-image: url(https://cdn.besynchro.com/experiments/km005-v1-atf-vertical.gif), linear-gradient(90deg, #d8d0bc 20%, #e0bbbe 80%);
-      }
-      @include s-screen {
-        background-image: url(https://cdn.besynchro.com/experiments/km005-v1-atf-horizontal.gif), linear-gradient(90deg, #d8d0bc, #e0bbbe);
-        padding-bottom: 56.25%;
-        width: 100%;
-      }
-      @include xs-screen {
-        background-image: url(https://cdn.besynchro.com/experiments/km005-v1-atf-vertical.gif), linear-gradient(90deg, #d8d0bc, #e0bbbe);
-        padding-bottom: 125%;
-      }
-    }
-
-    &__copy {
-      background-image: linear-gradient(90deg, #e0babe, #d8d0bc);
-      @include s-screen {
-        background-image: linear-gradient(90deg, #d8d0bc, #e0babe);
-      }
-    }
-
-    &__header {
-      span {
-        font-size: 35px;
-        font-weight: $font-medium;
-        @include s-screen {
-          font-size: 25px;
-        }
-      }
-    }
-
-    &__description {
-      font-size: 28px;
-    }
-  }
-}
-
-.km005-02 {
-  .atf {
-    &__video {
-      background-image: url("https://cdn.besynchro.com/experiments/km005-v2-atf-desktop%402x.jpg");
-      background-position: left;
-      @include m-screen {
-        background-image: url("https://cdn.besynchro.com/experiments/km005-v2-atf-mobile%402x.jpg");
-        background-position: center;
-      }
-      @include s-screen {
-        display: block;
-        height: 400px;
-        height: 70vh;
-        width: 100%;
-        margin: 0;
-      }
-    }
-
-    &__description {
-      font-size: 30px;
-    }
-  }
-}
-
 .go005-01 {
   .atf {
     &__video {
@@ -196,6 +72,161 @@
         padding-bottom: 100%;
         display: block;
         width: 100%;
+      }
+    }
+  }
+}
+
+.km006-01 {
+  .top-offer-bar {
+    .a--cta {
+      @include xs-screen {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.km006-02 {
+  a.anchor {
+    top: 0;
+  }
+
+  .top-offer-bar {
+    @include s-screen {
+      display: none;
+    }
+  }
+}
+
+.km006-04 {
+  .floating-cta {
+    @include s-screen {
+      bottom: 80px;
+    }
+  }
+}
+
+.km006-02,
+.km006-03 {
+  .floating-cta {
+    @include s-screen {
+      bottom: 30px;
+    }
+  }
+}
+
+.km006-02,
+.km006-03,
+.km006-04 {
+  .floating-cta {
+    @keyframes slideInFromBottom {
+      0% {
+        bottom: -100px;
+      }
+
+      100% {
+        bottom: 27px;
+      }
+    }
+    display: none;
+    @include s-screen {
+      position: fixed;
+      display: block;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 100;
+      white-space: nowrap;
+      animation: 1s ease-in-out 0s 1 slideInFromBottom;
+    }
+
+    .a--cta {
+      border-radius: 50px;
+      font-size: 18px;
+      padding: 15px 25px;
+      background-image: linear-gradient(90deg, #38447C 0%, #4958A1 100%);
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.30);
+
+      &:hover {
+        opacity: 0.2;
+      }
+    }
+  }
+}
+
+.go006-01 {
+  .top-offer-bar {
+    .a--cta {
+    background-image: linear-gradient(90deg, #F3B37E 0%, #F2C97F 100%);
+      @include xs-screen {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.go006-02 {
+  a.anchor {
+    top: 0;
+  }
+
+  .top-offer-bar {
+    @include s-screen {
+      display: none;
+    }
+  }
+}
+
+.go006-04 {
+  .floating-cta {
+    @include s-screen {
+      bottom: 80px;
+    }
+  }
+}
+
+.go006-02,
+.go006-03 {
+  .floating-cta {
+    @include s-screen {
+      bottom: 30px;
+    }
+  }
+}
+
+.go006-02,
+.go006-03,
+.go006-04 {
+  .floating-cta {
+    @keyframes slideInFromBottom {
+      0% {
+        bottom: -100px;
+      }
+
+      100% {
+        bottom: 27px;
+      }
+    }
+    display: none;
+    @include s-screen {
+      position: fixed;
+      display: block;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 100;
+      white-space: nowrap;
+      animation: 1s ease-in-out 0s 1 slideInFromBottom;
+    }
+
+    .a--cta {
+      border-radius: 50px;
+      font-size: 18px;
+      padding: 15px 25px;
+      background-image: linear-gradient(90deg, #F3B37E 0%, #F2C97F 100%);
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.30);
+
+      &:hover {
+        opacity: 0.2;
       }
     }
   }
