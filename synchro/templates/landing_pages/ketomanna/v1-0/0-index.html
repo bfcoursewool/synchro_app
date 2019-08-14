@@ -3,7 +3,9 @@
 {% block content %}
 
 <section class="ketomanna-lp">
-  {% include 'landing_pages/ketomanna/v1-0/top-offer-bar.html' %}
+  {% if not returning %}
+    {% include 'landing_pages/ketomanna/v1-0/top-offer-bar.html' %}
+  {% endif %}
   {% include 'landing_pages/global/header.html' %}
   {% include 'landing_pages/ketomanna/v1-0/atf.html' %}
   {% include 'landing_pages/ketomanna/v1-0/about.html' %}
@@ -12,7 +14,12 @@
   {% include 'landing_pages/ketomanna/v1-0/facts.html' %}
   {% include 'landing_pages/ketomanna/v1-0/consumption.html' %}
   {% include 'landing_pages/ketomanna/v1-0/instagram.html' %}
-  {% include 'landing_pages/ketomanna/v1-0/purchase_options.html' %}
+  {% if not returning %}
+    {% include 'landing_pages/ketomanna/v1-0/purchase_options.html' %}
+  {% endif %}
+  {% if returning %}
+    {% include 'landing_pages/ketomanna/v1-0-returning/purchase_options.html' %}
+  {% endif %}
   {% include 'landing_pages/ketomanna/v1-0/reviews.html' %}
   {% include 'landing_pages/global/footer-organic.html' %}
 </section>
