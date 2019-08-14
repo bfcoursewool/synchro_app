@@ -46,13 +46,6 @@ endpoint_info_dict = {
         'is_variant': True,
       }
     },
-    # Gold LP for Returning Customers
-    '2': {
-      'template': 'landing_pages/gold-og/v1-0-returning/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
     # Gold LP for Paid Adwords Traffic
     'gg': {
       'template': 'landing_pages/gold-og/v1-0-paid/0-index.html',
@@ -102,13 +95,6 @@ endpoint_info_dict = {
     # Ketomanna LP for Paid Facebook/Instagram Traffic
     'fb': {
       'template': 'landing_pages/ketomanna/v1-0-paid-a/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Ketomanna LP for Returning Customers
-    '2': {
-      'template': 'landing_pages/ketomanna/v1-0-returning/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
