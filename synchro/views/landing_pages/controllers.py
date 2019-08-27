@@ -234,22 +234,7 @@ endpoint_info_dict = {
       }
     }
   },
-  'km005': {
-    # Test Variant 1
-    'v1': {
-      'template': 'landing_pages/experiments/km005/v1/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Test Variant 2
-    'v2': {
-      'template': 'landing_pages/experiments/km005/v2/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
+  ## Experiments
   'go005': {
     # Test Variant 1
     'v1': {
@@ -268,36 +253,6 @@ endpoint_info_dict = {
     # Test Variant 3
     'v3': {
       'template': 'landing_pages/experiments/go005/v3/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
-  'km006': {
-    # Test Variant 1
-    'v1': {
-      'template': 'landing_pages/experiments/km006/v1/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Test Variant 2
-    'v2': {
-      'template': 'landing_pages/experiments/km006/v2/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Test Variant 3
-    'v3': {
-      'template': 'landing_pages/experiments/km006/v3/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Test Variant 4
-    'v4': {
-      'template': 'landing_pages/experiments/km006/v4/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
@@ -423,9 +378,9 @@ def landing_page(page, version, prod_category):
         resp.set_cookie('participant_id', str(fake_participant_id))
         return resp
 
-  ## Do some cookie magic so we can detect returning customers and offer them a discounted deal... 
+  ## Do some cookie magic so we can detect returning customers and offer them a discounted deal...
   previous_activity = request.cookies.get('synchro_purchase_tracking')
-  try: 
+  try:
     previous_activity = json.loads(previous_activity)
   except:
     previous_activity = {}

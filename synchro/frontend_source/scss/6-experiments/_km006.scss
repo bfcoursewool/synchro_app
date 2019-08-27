@@ -1,0 +1,78 @@
+@import '../synchro';
+
+.km006-01 {
+  .top-offer-bar {
+    .a--cta {
+      @include xs-screen {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.km006-02 {
+  a.anchor {
+    top: 0;
+  }
+
+  .top-offer-bar {
+    @include s-screen {
+      display: none;
+    }
+  }
+}
+
+.km006-04 {
+  .floating-cta {
+    @include s-screen {
+      bottom: 80px;
+    }
+  }
+}
+
+.km006-02,
+.km006-03 {
+  .floating-cta {
+    @include s-screen {
+      bottom: 30px;
+    }
+  }
+}
+
+.km006-02,
+.km006-03,
+.km006-04 {
+  .floating-cta {
+    @keyframes slideInFromBottom {
+      0% {
+        bottom: -100px;
+      }
+
+      100% {
+        bottom: 27px;
+      }
+    }
+    display: none;
+    @include s-screen {
+      position: fixed;
+      display: block;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 100;
+      white-space: nowrap;
+      animation: 1s ease-in-out 0s 1 slideInFromBottom;
+    }
+
+    .a--cta {
+      border-radius: 50px;
+      font-size: 18px;
+      padding: 15px 25px;
+      background-image: linear-gradient(90deg, #38447C 0%, #4958A1 100%);
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.30);
+
+      &:hover {
+        opacity: 0.2;
+      }
+    }
+  }
+}
