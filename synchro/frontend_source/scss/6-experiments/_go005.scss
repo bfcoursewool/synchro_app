@@ -1,0 +1,78 @@
+@import '../synchro';
+
+.go005-01 {
+  .atf {
+    &__video {
+      background-image: url("https://cdn.besynchro.com/experiments/go005-v1-atf.gif");
+      background-position: center;
+    }
+
+    &__video-btn {
+      width: 100%;
+      transform: none;
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__video-mobile {
+      width: 100%;
+
+      .atf__video-btn {
+        position: initial;
+        padding: 0;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.go005-02 {
+  .atf {
+    &__video {
+      background-color: #F3B37E;
+      background-image: url("https://cdn.besynchro.com/experiments/go005-v2-atf-large.png");
+      background-image: url("https://cdn.besynchro.com/experiments/go005-v2-atf-large.png"), linear-gradient(90deg, #F2C97F, #F3B37E);
+      background-position: bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
+      @include l-screen {
+        background-image: url("https://cdn.besynchro.com/experiments/go005-v2-atf.png");
+        background-image: url("https://cdn.besynchro.com/experiments/go005-v2-atf.png"), linear-gradient(90deg, #F2C97F, #F3B37E);
+        background-position: top;
+        background-size: cover;
+      }
+    }
+
+    &__video-mobile {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.go005-03 {
+  .atf {
+    &__video {
+      background-image: url("https://cdn.besynchro.com/experiments/go005-v3-atf.gif");
+      background-image: url("https://cdn.besynchro.com/experiments/go005-v3-atf.gif"), linear-gradient(90deg, #F2C97F, #F3B37E);
+      background-position: bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
+      @include sm-screen {
+        background-image: url("https://cdn.besynchro.com/experiments/go005-v3-atf.gif"), linear-gradient(90deg, #F3B37E, #F2C97F);
+        padding-bottom: 100%;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
