@@ -39,6 +39,13 @@ endpoint_info_dict = {
         'is_variant': False,
       }
     },
+    # Gold Capsules LP for Organic Traffic (NEW)
+    'turmeric-capsules': {
+      'template': 'landing_pages/gold-capsules/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
     # Gold LP for Paid Facebook/Instagram Traffic
     'fb': {
       'template': 'landing_pages/gold-og/v1-0-paid-a/0-index.html',

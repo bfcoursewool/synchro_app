@@ -22,6 +22,7 @@ export default class LPEffects extends EventsBase {
       'click .vjs-big-play-button': 'hideBenefitsText',
       'click a[href*="#"]:not([href="#"])': 'parallaxScroll',
       'scroll window': 'navMenuTransition',
+      'scroll window': 'expandedNavMenuTransition',
       'click a[data-modal-id]': 'openModal',
       'click .js-modal-close': 'closeModal',
       'keyup window': 'closeModal',
@@ -164,6 +165,35 @@ export default class LPEffects extends EventsBase {
     // self-contained/reusable/configurable component instead of just trying to force it into
     // here and then hack it to work for all our various implementations.
     let navGradientLayer = $('.main-header>.gradient-layer');
+
+    if(scrollTop > maxScroll && !navbar.is('.floated')) {
+      navbar.addClass('floated');
+      if(navGradientLayer) {
+        navGradientLayer.addClass('show');
+      }
+    } else if(scrollTop < maxScroll && navbar.is('.floated')) {
+      navbar.removeClass('floated');
+      if(navGradientLayer) {
+        navGradientLayer.removeClass('show');
+      }
+    }
+
+    this.parallaxBackgroundScroll();
+  }
+
+  expandedNavMenuTransition() {
+    let navbar = $('.expanded-header');
+    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    let maxScroll = 100;
+    let scrollAtBannerBackgroundBottom = $('.expanded-header').attr('data-header-transition')
+    if(scrollAtBannerBackgroundBottom == 'background') {
+      maxScroll = $('.expanded-banner__background').height() - $('.expanded-header').outerHeight();
+    }
+
+    // TODO -- Man this is janky... Feels like the nav menu should really become its own
+    // self-contained/reusable/configurable component instead of just trying to force it into
+    // here and then hack it to work for all our various implementations.
+    let navGradientLayer = $('.expanded-header>.gradient-layer');
 
     if(scrollTop > maxScroll && !navbar.is('.floated')) {
       navbar.addClass('floated');

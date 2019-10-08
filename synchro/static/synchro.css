@@ -5404,6 +5404,45 @@ p {
         color: #5DA8A6;
         transition: all 0.2s ease; }
 
+.expanded-header-container .expanded-header {
+  max-width: 2000px;
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 100;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 0;
+  transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
+  /* FF 4 */
+  -webkit-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
+  /* Safari & Chrome */
+  -o-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
+  /* Opera */ }
+  .expanded-header-container .expanded-header.floated {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .expanded-header-container .expanded-header__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px; }
+  .expanded-header-container .expanded-header__logo .synchro-logo {
+    height: 20px;
+    transition: fill ease-in-out 0.5s; }
+  .expanded-header-container .expanded-header .main-navigation {
+    float: right;
+    margin: 12px 0; }
+    .expanded-header-container .expanded-header .main-navigation__item {
+      font-size: 18px;
+      padding-right: 40px; }
+      .expanded-header-container .expanded-header .main-navigation__item:hover {
+        color: #eca846;
+        transition: all 0.2s ease; }
+
 .atf {
   position: relative; }
   .atf__header {
@@ -7180,6 +7219,59 @@ input:checked + .accordion-horizontal__inner-box {
 
 .gold-adwords.no-wave .atf:after {
   content: none; }
+
+.gold-capsules .purchase-new {
+  /*Time for the CSS*/
+  /*Last thing remaining is to add transitions*/
+  /*Time to add the click effects*/
+  /*Clicking any thumbnail now should change its opacity(style)*/
+  /*Time to work on the main images*/
+  /*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+  /*Clicking on any thumbnail now should activate the image related to it*/
+  /*We are done :)*/ }
+  .gold-capsules .purchase-new * {
+    margin: 0;
+    padding: 0; }
+  .gold-capsules .purchase-new body {
+    background: #ccc; }
+  .gold-capsules .purchase-new .slider {
+    width: 640px;
+    /*Same as width of the large image*/
+    position: relative;
+    /*Instead of height we will use padding*/
+    padding-top: 320px;
+    /*That helps bring the labels down*/
+    margin: 100px auto;
+    /*Lets add a shadow*/
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75); }
+  .gold-capsules .purchase-new .slider > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s; }
+  .gold-capsules .purchase-new .slider input[name='slide_switch'] {
+    display: none; }
+  .gold-capsules .purchase-new .slider label {
+    /*Lets add some spacing for the thumbnails*/
+    margin: 18px 0 0 18px;
+    border: 3px solid #999;
+    float: left;
+    transition: all 0.5s;
+    /*Default style = low opacity*/
+    opacity: 0.6; }
+  .gold-capsules .purchase-new .slider label img {
+    display: block; }
+  .gold-capsules .purchase-new .slider input[name='slide_switch']:checked + label {
+    border-color: #666;
+    opacity: 1; }
+  .gold-capsules .purchase-new .slider input[name='slide_switch'] ~ img {
+    opacity: 0;
+    transform: scale(1.1); }
+  .gold-capsules .purchase-new .slider input[name='slide_switch']:checked + label + img {
+    opacity: 1;
+    transform: scale(1); }
 
 .genesis-lp .a--cta {
   background: #5da8a6; }
