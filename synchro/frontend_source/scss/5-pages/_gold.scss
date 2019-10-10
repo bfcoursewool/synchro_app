@@ -262,7 +262,7 @@
       padding: 16px 35px;
       margin-bottom: 10px;
       background-color: #39447C;
-      position: relative;
+      border-radius: 40px;
       @include sm-screen {
         margin-bottom: 0;
       }
@@ -270,39 +270,6 @@
       &.cta--secondary {
         background: none;
         color: $color-ebony;
-      }
-
-      &::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 4px;
-        background-color: white;
-        bottom: -4px;
-        right: -4px;
-        position: absolute;
-      }
-
-      &::after {
-        content: '';
-        display: block;
-        width: 4px;
-        height: 100%;
-        background-color: white;
-        bottom: -4px;
-        right: -4px;
-        position: absolute;
-      }
-
-      &:active {
-        position: relative;
-        left: 4px;
-        top: 4px;
-
-        &::after,
-        &::before {
-          display: none;
-        }
       }
     }
   }
@@ -433,6 +400,17 @@
 }
 
 .gold-capsules {
+  .atf {
+    &__header {
+      font-size: 60px;
+      font-weight: $font-bold;
+    }
+
+    &__subheader {
+      font-size: 35px;
+    }
+  }
+
   .purchase-new {
     /*Time for the CSS*/
     * {

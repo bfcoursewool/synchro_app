@@ -184,7 +184,7 @@ export default class LPEffects extends EventsBase {
   expandedNavMenuTransition() {
     let navbar = $('.expanded-header');
     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    let maxScroll = 100;
+    let maxScroll = 50;
     let scrollAtBannerBackgroundBottom = $('.expanded-header').attr('data-header-transition')
     if(scrollAtBannerBackgroundBottom == 'background') {
       maxScroll = $('.expanded-banner__background').height() - $('.expanded-header').outerHeight();
@@ -236,4 +236,40 @@ $(".video-modal").click(function () {
   $(theModal).on('hidden.bs.modal', function () {
     $(theModal + ' iframe').attr('src', videoSRC);
   });
+});
+
+
+// Horizontal scroll
+
+var scroller = {};
+scroller.e = document.getElementById("horizontal-scroll");
+
+if (scroller.e.addEventListener) {
+  scroller.e.addEventListener("mousewheel", MouseWheelHandler, false);
+  scroller.e.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+} else scroller.e.attachEvent("onmousewheel", MouseWheelHandler);
+
+function MouseWheelHandler(e) {
+  // cross-browser wheel delta
+  var e = window.event || e;
+  var delta = -30 * Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
+
+  var pst = $("#horizontal-scroll").scrollLeft() + delta;
+
+  if (pst < 0) {
+    pst = 0;
+  } else if (pst > $(".box-wrap").width()) {
+    pst = $(".box-wrap").width();
+  }
+
+  $("#horizontal-scroll").scrollLeft(pst);
+
+  return false;
+}
+
+$("#horizontal-scroll").off("mousewheel").on("mousewheel", function(ev) {
+  var el = $(ev.currentTarget);
+  return ev.originalEvent.deltaY > 0
+    ? el[0].scrollWidth - el.scrollLeft() <= el.innerWidth()
+    : el.scrollLeft() === 0;
 });

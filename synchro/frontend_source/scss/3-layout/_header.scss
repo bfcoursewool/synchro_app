@@ -122,14 +122,14 @@
   .expanded-header {
     max-width: 2000px;
     margin: 0 auto;
-    // position: fixed;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
     background: $color-ivory;
     z-index: $header-z-index;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     font-size: 0;
     transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
     -moz-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
@@ -138,28 +138,32 @@
     /* Safari & Chrome */
     -o-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
     /* Opera */
+    &.pseudo {
+      position: relative;
+      visibility: hidden;
+    }
+
     &.floated {
-      box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+      box-shadow: 0 1px 0 0 rgba(0,0,0,0.05);
       padding-top: 10px;
       padding-bottom: 10px;
     }
 
     &__content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 30px;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      justify-items: left;
+      align-items: center;
     }
 
     &__logo {
       .synchro-logo {
         height: 20px;
-        transition: fill ease-in-out 0.5s;
       }
     }
 
     .main-navigation {
-      float: right;
-      margin: 12px 0;
+      justify-self: right;
       // @include sm-screen {
       //   display: block;
       //   visibility: hidden;
@@ -213,6 +217,15 @@
           color: $color-gold;
           transition: all 0.2s ease;
         }
+      }
+
+      .a--cta {
+        background: #39447C;
+        border-radius: 30px;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0.88px;
+        padding: 10px 20px;
       }
     }
   }

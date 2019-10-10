@@ -252,3 +252,45 @@
     }
   }
 }
+@mixin rotate-cw ($speed: 5s) {
+  -webkit-animation: cw-rotation $speed infinite linear;
+  -moz-animation: cw-rotation $speed infinite linear;
+  -o-animation: cw-rotation $speed infinite linear;
+  animation: cw-rotation $speed infinite linear;
+  @keyframes cw-rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+@mixin rotate-ccw ($speed: 5s) {
+  -webkit-animation: ccw-rotation $speed infinite linear;
+  -moz-animation: ccw-rotation $speed infinite linear;
+  -o-animation: ccw-rotation $speed infinite linear;
+  animation: ccw-rotation $speed infinite linear;
+  @keyframes ccw-rotation {
+    from {
+      transform: rotate(360deg);
+    }
+
+    to {
+      transform: rotate(0deg);
+    }
+  }
+}
+@mixin horizontal-slide ($speed: 60s) {
+  -webkit-animation: slide $speed linear infinite;
+}
+@-webkit-keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -1000px 0;
+  }
+}

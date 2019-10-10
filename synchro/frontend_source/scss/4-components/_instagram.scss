@@ -85,3 +85,63 @@
     }
   }
 }
+
+.instagram-slider {
+  background: url("https://cdn.besynchro.com/gold/capsules/testimonial-bg%402x.png") repeat 0 0;
+  background-size: contain;
+  padding: $gutter-large 0;
+  @include horizontal-slide;
+  text-align: center;
+
+  &__post {
+    background: $color-ivory;
+    padding: 10px;
+    display: inline-block;
+    font-size: 0;
+  }
+
+  &__image {
+    background-image: url("https://images.unsplash.com/photo-1570631550756-1f66342cca65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1546&q=80");
+    background-size: cover;
+    height: 365px;
+    width: 365px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__content {
+    width: 410px;
+    vertical-align: middle;
+    text-align: left;
+    display: inline-block;
+    padding: 0 20px 0 30px;
+  }
+
+  &__profile {
+
+    img {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+  }
+
+  &__name {
+    font-size: 24px;
+    margin: 0;
+    line-height: 30px;
+    font-weight: $font-medium;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__quote {
+    margin: 15px 0;
+    line-height: initial;
+    font-weight: $font-demi;
+    font-size: 35px;
+  }
+}

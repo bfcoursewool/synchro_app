@@ -25,3 +25,42 @@
     }
   }
 }
+
+.rating-new {
+  margin: 20px;
+
+  &__stars {
+    display: inline-block;
+    background: $color-ivory;
+    padding: 10px 30px 5px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.05);
+
+    #rating-new__star {
+      height: 32px;
+      margin: 0 2px;
+    }
+  }
+
+  &__icon {
+    fill: #FA9865;
+    fill-rule: nonzero;
+  }
+
+  &__count {
+    font-weight: $font-bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    background: #FA9865;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    color: $color-ivory;
+
+    &:before {
+      content: "1,350+ 5-star";
+    }
+  }
+}

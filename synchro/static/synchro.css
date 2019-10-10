@@ -4900,6 +4900,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
+@-webkit-keyframes slide {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -1000px 0; } }
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5407,13 +5413,14 @@ p {
 .expanded-header-container .expanded-header {
   max-width: 2000px;
   margin: 0 auto;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   background: #ffffff;
   z-index: 100;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   font-size: 0;
   transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
   -moz-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
@@ -5422,26 +5429,35 @@ p {
   /* Safari & Chrome */
   -o-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
   /* Opera */ }
+  .expanded-header-container .expanded-header.pseudo {
+    position: relative;
+    visibility: hidden; }
   .expanded-header-container .expanded-header.floated {
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
     padding-top: 10px;
     padding-bottom: 10px; }
   .expanded-header-container .expanded-header__content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 30px; }
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: left;
+    align-items: center; }
   .expanded-header-container .expanded-header__logo .synchro-logo {
-    height: 20px;
-    transition: fill ease-in-out 0.5s; }
+    height: 20px; }
   .expanded-header-container .expanded-header .main-navigation {
-    float: right;
-    margin: 12px 0; }
+    justify-self: right; }
     .expanded-header-container .expanded-header .main-navigation__item {
       font-size: 18px;
       padding-right: 40px; }
       .expanded-header-container .expanded-header .main-navigation__item:hover {
         color: #eca846;
         transition: all 0.2s ease; }
+    .expanded-header-container .expanded-header .main-navigation .a--cta {
+      background: #39447C;
+      border-radius: 30px;
+      font-size: 14px;
+      color: #FFFFFF;
+      letter-spacing: 0.88px;
+      padding: 10px 20px; }
 
 .atf {
   position: relative; }
@@ -5584,7 +5600,51 @@ p {
       margin-bottom: 50px;
       text-align: center; } }
 
-/*****/
+.benefits-2 #horizontal-scroll {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: scroll;
+  overflow-y: hidden; }
+
+.benefits-2 .box-wrap {
+  margin: 0;
+  width: 5640px;
+  padding: 100px 0 100px 140px; }
+
+.benefits-2__text {
+  padding: 0;
+  width: 750px;
+  display: inline-block;
+  font-size: 30px;
+  text-align: left;
+  vertical-align: middle; }
+
+.benefits-2__icon {
+  height: 100px;
+  float: left;
+  margin-right: 30px;
+  position: relative;
+  top: 10px; }
+
+.benefits-2__header {
+  overflow: hidden;
+  width: auto;
+  font-weight: 700;
+  font-size: 55px; }
+
+.benefits-2__image {
+  height: 500px;
+  width: 500px;
+  margin: 0 140px;
+  border-radius: 250px;
+  object-fit: cover; }
+
+.benefits-2 .p--text {
+  font-size: 28px;
+  opacity: 0.5;
+  font-weight: 500; }
+
 .intro {
   background: #eca846; }
   .intro__wrapper {
@@ -5733,6 +5793,95 @@ p {
     max-height: 15px;
     overflow: hidden;
     transition: 0.3s ease-in-out all; }
+
+.technology-2 {
+  background: linear-gradient(0deg, #F3EEE7 15%, #FAF7F3 15%);
+  margin: 20px;
+  padding: 60px;
+  text-align: center; }
+  .technology-2__header {
+    max-width: 850px;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 auto; }
+  .technology-2__subheader {
+    max-width: 750px;
+    font-weight: 500;
+    font-size: 35px;
+    opacity: 0.5;
+    text-align: center;
+    margin: 30px auto 0; }
+  .technology-2__extraction, .technology-2__liposomal, .technology-2__pepper {
+    margin: 0 auto;
+    position: relative; }
+  .technology-2__liposomal {
+    width: 370px;
+    text-align: right;
+    right: 359px;
+    top: 100px; }
+    .technology-2__liposomal img {
+      position: absolute;
+      margin-left: 40px;
+      -webkit-animation: cw-rotation 5s infinite linear;
+      -moz-animation: cw-rotation 5s infinite linear;
+      -o-animation: cw-rotation 5s infinite linear;
+      animation: cw-rotation 5s infinite linear; }
+
+@keyframes cw-rotation {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+  .technology-2__pepper {
+    width: 370px;
+    text-align: left;
+    left: 406px;
+    top: 13px; }
+    .technology-2__pepper img {
+      position: absolute;
+      right: 100%;
+      margin-right: 40px;
+      -webkit-animation: ccw-rotation 5s infinite linear;
+      -moz-animation: ccw-rotation 5s infinite linear;
+      -o-animation: ccw-rotation 5s infinite linear;
+      animation: ccw-rotation 5s infinite linear; }
+
+@keyframes ccw-rotation {
+  from {
+    transform: rotate(360deg); }
+  to {
+    transform: rotate(0deg); } }
+  .technology-2__extraction {
+    width: 700px;
+    text-align: center;
+    top: -83px; }
+    .technology-2__extraction img {
+      margin-bottom: 30px;
+      -webkit-animation: cw-rotation 5s infinite linear;
+      -moz-animation: cw-rotation 5s infinite linear;
+      -o-animation: cw-rotation 5s infinite linear;
+      animation: cw-rotation 5s infinite linear; }
+
+@keyframes cw-rotation {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+  .technology-2__title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: initial; }
+  .technology-2__copy {
+    font-weight: 500;
+    font-size: 35px;
+    opacity: 0.7;
+    line-height: initial; }
+  .technology-2__image {
+    max-width: 500px;
+    margin: 0 auto; }
 
 .ingredients {
   text-align: center; }
@@ -6810,6 +6959,34 @@ input:checked + .accordion-horizontal__inner-box {
     .rating__count:before {
       content: "200+"; }
 
+.rating-new {
+  margin: 20px; }
+  .rating-new__stars {
+    display: inline-block;
+    background: #ffffff;
+    padding: 10px 30px 5px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05); }
+    .rating-new__stars #rating-new__star {
+      height: 32px;
+      margin: 0 2px; }
+  .rating-new__icon {
+    fill: #FA9865;
+    fill-rule: nonzero; }
+  .rating-new__count {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    background: #FA9865;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    color: #ffffff; }
+    .rating-new__count:before {
+      content: "1,350+ 5-star"; }
+
 .payment {
   padding-bottom: 0; }
   .payment__methods {
@@ -6901,6 +7078,50 @@ input:checked + .accordion-horizontal__inner-box {
     .instagram__comment span {
       display: block;
       color: #5da8a6; }
+
+.instagram-slider {
+  background: url("https://cdn.besynchro.com/gold/capsules/testimonial-bg%402x.png") repeat 0 0;
+  background-size: contain;
+  padding: 60px 0;
+  -webkit-animation: slide 60s linear infinite;
+  text-align: center; }
+  .instagram-slider__post {
+    background: #ffffff;
+    padding: 10px;
+    display: inline-block;
+    font-size: 0; }
+  .instagram-slider__image {
+    background-image: url("https://images.unsplash.com/photo-1570631550756-1f66342cca65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1546&q=80");
+    background-size: cover;
+    height: 365px;
+    width: 365px;
+    display: inline-block;
+    vertical-align: middle; }
+  .instagram-slider__content {
+    width: 410px;
+    vertical-align: middle;
+    text-align: left;
+    display: inline-block;
+    padding: 0 20px 0 30px; }
+  .instagram-slider__profile img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    vertical-align: middle;
+    margin-right: 15px; }
+  .instagram-slider__name {
+    font-size: 24px;
+    margin: 0;
+    line-height: 30px;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: middle; }
+  .instagram-slider__quote {
+    margin: 15px 0;
+    line-height: initial;
+    font-weight: 600;
+    font-size: 35px; }
 
 .gold-lp a.anchor {
   top: -35px; }
@@ -7109,37 +7330,13 @@ input:checked + .accordion-horizontal__inner-box {
     padding: 16px 35px;
     margin-bottom: 10px;
     background-color: #39447C;
-    position: relative; }
+    border-radius: 40px; }
     @media (max-width: 854px) {
       .gold-lp .atf .a--cta {
         margin-bottom: 0; } }
     .gold-lp .atf .a--cta.cta--secondary {
       background: none;
       color: #000000; }
-    .gold-lp .atf .a--cta::before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 4px;
-      background-color: white;
-      bottom: -4px;
-      right: -4px;
-      position: absolute; }
-    .gold-lp .atf .a--cta::after {
-      content: '';
-      display: block;
-      width: 4px;
-      height: 100%;
-      background-color: white;
-      bottom: -4px;
-      right: -4px;
-      position: absolute; }
-    .gold-lp .atf .a--cta:active {
-      position: relative;
-      left: 4px;
-      top: 4px; }
-      .gold-lp .atf .a--cta:active::after, .gold-lp .atf .a--cta:active::before {
-        display: none; }
 
 .gold-lp .benefits {
   margin-top: 40px; }
@@ -7219,6 +7416,13 @@ input:checked + .accordion-horizontal__inner-box {
 
 .gold-adwords.no-wave .atf:after {
   content: none; }
+
+.gold-capsules .atf__header {
+  font-size: 60px;
+  font-weight: 700; }
+
+.gold-capsules .atf__subheader {
+  font-size: 35px; }
 
 .gold-capsules .purchase-new {
   /*Time for the CSS*/
