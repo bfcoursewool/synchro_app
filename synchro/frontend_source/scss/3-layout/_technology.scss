@@ -128,26 +128,24 @@
 
 .technology-2 {
   background: linear-gradient(0deg, #F3EEE7 15%, #FAF7F3 15%);
-  margin: 20px;
+  margin: 0 20px 20px;
   padding: $gutter-large;
   text-align: center;
 
   &__header {
     max-width: 850px;
     font-weight: $font-bold;
-    font-size: 60px;
+    font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-align: center;
     margin: 0 auto;
   }
 
   &__subheader {
-    max-width: 750px;
+    max-width: 680px;
     font-weight: $font-medium;
-    font-size: 35px;
+    font-size: 30px;
     opacity: 0.5;
-    text-align: center;
     margin: 30px auto 0;
   }
 
@@ -156,61 +154,66 @@
   &__pepper {
     margin: 0 auto;
     position: relative;
+
+    img {
+      height: 120px;
+    }
   }
 
   &__liposomal {
-    width: 370px;
+    width: 400px;
     text-align: right;
-    right: 359px;
-    top: 100px;
+    right: 322px;
+    top: 62px;
 
     img {
       position: absolute;
-      margin-left: 40px;
+      margin-left: 30px;
       @include rotate-cw;
     }
   }
 
   &__pepper {
-    width: 370px;
+    width: 400px;
     text-align: left;
-    left: 406px;
-    top: 13px;
+    left: 356px;
+    top: -25px;
 
     img {
       position: absolute;
       right: 100%;
-      margin-right: 40px;
+      margin-right: 30px;
       @include rotate-ccw;
     }
   }
 
   &__extraction {
-    width: 700px;
+    max-width: 700px;
     text-align: center;
-    top: -83px;
+    top: -79px;
 
     img {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       @include rotate-cw;
     }
   }
 
   &__title {
     font-weight: $font-bold;
-    font-size: 45px;
+    font-size: 40px;
     line-height: initial;
+    margin-bottom: 10px;
   }
 
   &__copy {
     font-weight: $font-medium;
-    font-size: 35px;
+    font-size: 30px;
     opacity: 0.7;
     line-height: initial;
   }
 
   &__image {
-    max-width: 500px;
+    max-width: 430px;
     margin: 0 auto;
   }
 }

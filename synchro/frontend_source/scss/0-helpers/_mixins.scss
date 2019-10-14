@@ -252,13 +252,17 @@
     }
   }
 }
-@mixin rotate-cw ($speed: 5s) {
-  -webkit-animation: cw-rotation $speed infinite linear;
-  -moz-animation: cw-rotation $speed infinite linear;
-  -o-animation: cw-rotation $speed infinite linear;
-  animation: cw-rotation $speed infinite linear;
+@mixin rotate-cw ($speed: 6s) {
+  -webkit-animation: cw-rotation $speed infinite ease-in-out;
+  -moz-animation: cw-rotation $speed infinite ease-in-out;
+  -o-animation: cw-rotation $speed infinite ease-in-out;
+  animation: cw-rotation $speed infinite ease-in-out;
   @keyframes cw-rotation {
-    from {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    25% {
       transform: rotate(0deg);
     }
 
@@ -267,13 +271,17 @@
     }
   }
 }
-@mixin rotate-ccw ($speed: 5s) {
-  -webkit-animation: ccw-rotation $speed infinite linear;
-  -moz-animation: ccw-rotation $speed infinite linear;
-  -o-animation: ccw-rotation $speed infinite linear;
-  animation: ccw-rotation $speed infinite linear;
+@mixin rotate-ccw ($speed: 6s) {
+  -webkit-animation: ccw-rotation $speed infinite ease-in-out;
+  -moz-animation: ccw-rotation $speed infinite ease-in-out;
+  -o-animation: ccw-rotation $speed infinite ease-in-out;
+  animation: ccw-rotation $speed infinite ease-in-out;
   @keyframes ccw-rotation {
-    from {
+    0% {
+      transform: rotate(360deg);
+    }
+
+    25% {
       transform: rotate(360deg);
     }
 

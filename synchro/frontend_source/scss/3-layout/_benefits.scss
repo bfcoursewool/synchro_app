@@ -88,55 +88,102 @@
 }
 
 .benefits-2 {
-  #horizontal-scroll {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    overflow-x: scroll;
-    overflow-y: hidden;
+  font-size: 0;
+  padding: $gutter-large $gutter-large $gutter-medium;
+  @include s-screen {
+    padding-bottom: 0;
   }
 
-  .box-wrap {
-    margin: 0;
-    width: 5640px;
-    padding: 100px 0 100px 140px;
-  }
-
-  &__text {
-    padding: 0;
-    width: 750px;
+  &__copy {
+    width: 25%;
     display: inline-block;
-    font-size: 30px;
-    text-align: left;
-    vertical-align: middle;
-  }
-
-  &__icon {
-    height: 100px;
-    float: left;
-    margin-right: 30px;
-    position: relative;
-    top: 10px;
-  }
-
-  &__header {
-    overflow: hidden;
-    width: auto;
-    font-weight: $font-bold;
-    font-size: 55px;
+    padding: 0 15px;
+    vertical-align: top;
+    @include m-screen {
+      width: 50%;
+    }
+    @include xs-screen {
+      padding: 0;
+      width: 100%;
+    }
   }
 
   &__image {
-    height: 500px;
-    width: 500px;
-    margin: 0 140px;
-    border-radius: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+    border-radius: 100px;
   }
 
-  .p--text {
-    font-size: 28px;
-    opacity: 0.5;
-    font-weight: $font-medium;
+  &__text {
+    margin-top: 30px;
+
+    .p--text {
+      font-size: 20px;
+      font-weight: $font-medium;
+      opacity: 0.5;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: initial;
   }
 }
+
+// .benefits-3 {
+//   #horizontal-scroll {
+//     width: 100%;
+//     padding: 0;
+//     margin: 0;
+//     overflow-x: scroll;
+//     overflow-y: hidden;
+//   }
+//
+//   .box-wrap {
+//     margin: 0;
+//     width: 4670px;
+//     padding: 60px 0 60px 100px;
+//   }
+//
+//   &__text {
+//     padding: 0;
+//     width: 600px;
+//     display: inline-block;
+//     font-size: 24px;
+//     text-align: left;
+//     vertical-align: middle;
+//   }
+//
+//   &__icon {
+//     height: 80px;
+//     float: left;
+//     margin-right: 30px;
+//     position: relative;
+//     top: 10px;
+//   }
+//
+//   &__header {
+//     overflow: hidden;
+//     width: auto;
+//     font-weight: $font-bold;
+//     font-size: 45px;
+//     line-height: initial;
+//   }
+//
+//   &__image {
+//     height: 400px;
+//     width: 400px;
+//     margin: 0 140px;
+//     border-radius: 250px;
+//     object-fit: cover;
+//   }
+//
+//   .p--text {
+//     font-size: 24px;
+//     opacity: 0.5;
+//     font-weight: $font-medium;
+//   }
+// }

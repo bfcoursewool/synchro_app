@@ -34,13 +34,13 @@
   }
 
   &__top {
-    background: $color-ivory;
+    color: $color-ivory !important;
     font-family: $font-awesome;
     width: 30px;
     height: 30px;
     margin-right: auto;
-    line-height: 31px;
-    font-size: 15px;
+    line-height: 30px;
+    font-size: 18px;
   }
 }
 

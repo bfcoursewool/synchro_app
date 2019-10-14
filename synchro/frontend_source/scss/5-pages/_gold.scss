@@ -411,72 +411,62 @@
     }
   }
 
-  .purchase-new {
-    /*Time for the CSS*/
-    * {
-      margin: 0;
-      padding: 0;
+  .hero-cta {
+    padding: $gutter-medium $gutter-large $gutter-large;
+    text-align: center;
+
+    &__header {
+      font-weight: $font-bold;
+      font-size: 60px;
+      margin: 30px 0;
     }
 
-    body {
-      background: #ccc;
-    }
-
-    .slider {
-      width: 640px;
-      /*Same as width of the large image*/
-      position: relative;
-      /*Instead of height we will use padding*/
-      padding-top: 320px;
-      /*That helps bring the labels down*/
-      margin: 100px auto;
-      /*Lets add a shadow*/
-      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
-    }
-    /*Last thing remaining is to add transitions*/
-    .slider > img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      transition: all 0.5s;
-    }
-
-    .slider input[name='slide_switch'] {
-      display: none;
-    }
-
-    .slider label {
-      /*Lets add some spacing for the thumbnails*/
-      margin: 18px 0 0 18px;
-      border: 3px solid #999;
-      float: left;
-      transition: all 0.5s;
-      /*Default style = low opacity*/
-      opacity: 0.6;
-    }
-
-    .slider label img {
+    img {
+      max-width: 500px;
       display: block;
+      margin: 0 auto $gutter-large;
     }
-    /*Time to add the click effects*/
-    .slider input[name='slide_switch']:checked+label {
-      border-color: #666;
-      opacity: 1;
+
+    .a--cta {
+      font-size: 18px;
+      padding: 20px 35px;
+      margin-bottom: 10px;
+      background-color: #39447C;
+      border-radius: 40px;
     }
-    /*Clicking any thumbnail now should change its opacity(style)*/
-    /*Time to work on the main images*/
-    .slider input[name='slide_switch'] ~ img {
-      opacity: 0;
-      transform: scale(1.1);
+  }
+
+  .research {
+    background: $color-silver-light;
+    padding: $gutter-large $gutter-large $gutter-small;
+    font-size: 0;
+
+    &__intro {
+      font-weight: $font-demi;
+      font-size: 30px;
+      opacity: 0.6;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 25px;
     }
-    /*That hides all main images at a 110% size
-On click the images will be displayed at normal size to complete the effect
-*/
-    .slider input[name='slide_switch']:checked+label+img {
-      opacity: 1;
-      transform: scale(1);
+
+    &__point {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+      padding: 25px 40px;
     }
-    /*Clicking on any thumbnail now should activate the image related to it*/
-    /*We are done :)*/
+
+    &__header {
+      font-weight: $font-bold;
+      font-size: 50px;
+      line-height: initial;
+    }
+
+    &__copy {
+      font-weight: $font-medium;
+      font-size: 24px;
+      opacity: 0.5;
+    }
   }
 }
