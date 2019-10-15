@@ -131,14 +131,29 @@
   margin: 0 20px 20px;
   padding: $gutter-large;
   text-align: center;
+  @include m-screen {
+    margin: 0;
+  }
+  @include s-screen {
+    padding: $gutter-medium $gutter-small;
+  }
 
   &__header {
-    max-width: 850px;
+    max-width: 700px;
     font-weight: $font-bold;
     font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0 auto;
+    @include m-screen {
+      font-size: 45px;
+    }
+    @include sm-screen {
+      font-size: 40px;
+    }
+    @include s-screen {
+      font-size: 35px;
+    }
   }
 
   &__subheader {
@@ -147,16 +162,15 @@
     font-size: 30px;
     opacity: 0.5;
     margin: 30px auto 0;
-  }
-
-  &__extraction,
-  &__liposomal,
-  &__pepper {
-    margin: 0 auto;
-    position: relative;
-
-    img {
-      height: 120px;
+    @include m-screen {
+      font-size: 27px;
+    }
+    @include sm-screen {
+      font-size: 24px;
+    }
+    @include s-screen {
+      font-size: 22px;
+      margin: 20px auto;
     }
   }
 
@@ -165,11 +179,22 @@
     text-align: right;
     right: 322px;
     top: 62px;
+    @include m-screen {
+      width: 250px;
+      right: 248px;
+      top: 48px;
+    }
+    @include s-screen {
+      text-align: center;
+    }
 
     img {
       position: absolute;
       margin-left: 30px;
       @include rotate-cw;
+      @include s-screen {
+        position: initial;
+      }
     }
   }
 
@@ -178,12 +203,23 @@
     text-align: left;
     left: 356px;
     top: -25px;
+    @include m-screen {
+      width: 250px;
+      left: 280px;
+      top: -13px;
+    }
+    @include s-screen {
+      text-align: center;
+    }
 
     img {
       position: absolute;
       right: 100%;
       margin-right: 30px;
       @include rotate-ccw;
+      @include s-screen {
+        position: initial;
+      }
     }
   }
 
@@ -198,11 +234,32 @@
     }
   }
 
+  &__extraction,
+  &__liposomal,
+  &__pepper {
+    margin: 0 auto;
+    position: relative;
+    @include s-screen {
+      position: initial;
+    }
+
+    img {
+      height: 120px;
+      @include s-screen {
+        height: 100px;
+        margin: 20px;
+      }
+    }
+  }
+
   &__title {
     font-weight: $font-bold;
     font-size: 40px;
     line-height: initial;
     margin-bottom: 10px;
+    @include m-screen {
+      font-size: 30px;
+    }
   }
 
   &__copy {
@@ -210,10 +267,17 @@
     font-size: 30px;
     opacity: 0.7;
     line-height: initial;
+    @include m-screen {
+      font-size: 24px;
+    }
   }
 
   &__image {
     max-width: 430px;
     margin: 0 auto;
+    @include s-screen {
+      margin-top: $gutter-medium;
+      max-width: 90%;
+    }
   }
 }

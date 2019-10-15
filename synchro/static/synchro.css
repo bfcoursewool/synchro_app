@@ -5799,29 +5799,57 @@ p {
   margin: 0 20px 20px;
   padding: 60px;
   text-align: center; }
+  @media (max-width: 1199px) {
+    .technology-2 {
+      margin: 0; } }
+  @media (max-width: 767px) {
+    .technology-2 {
+      padding: 40px 20px; } }
   .technology-2__header {
-    max-width: 850px;
+    max-width: 700px;
     font-weight: 700;
     font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0 auto; }
+    @media (max-width: 1199px) {
+      .technology-2__header {
+        font-size: 45px; } }
+    @media (max-width: 854px) {
+      .technology-2__header {
+        font-size: 40px; } }
+    @media (max-width: 767px) {
+      .technology-2__header {
+        font-size: 35px; } }
   .technology-2__subheader {
     max-width: 680px;
     font-weight: 500;
     font-size: 30px;
     opacity: 0.5;
     margin: 30px auto 0; }
-  .technology-2__extraction, .technology-2__liposomal, .technology-2__pepper {
-    margin: 0 auto;
-    position: relative; }
-    .technology-2__extraction img, .technology-2__liposomal img, .technology-2__pepper img {
-      height: 120px; }
+    @media (max-width: 1199px) {
+      .technology-2__subheader {
+        font-size: 27px; } }
+    @media (max-width: 854px) {
+      .technology-2__subheader {
+        font-size: 24px; } }
+    @media (max-width: 767px) {
+      .technology-2__subheader {
+        font-size: 22px;
+        margin: 20px auto; } }
   .technology-2__liposomal {
     width: 400px;
     text-align: right;
     right: 322px;
     top: 62px; }
+    @media (max-width: 1199px) {
+      .technology-2__liposomal {
+        width: 250px;
+        right: 248px;
+        top: 48px; } }
+    @media (max-width: 767px) {
+      .technology-2__liposomal {
+        text-align: center; } }
     .technology-2__liposomal img {
       position: absolute;
       margin-left: 30px;
@@ -5837,11 +5865,22 @@ p {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+      @media (max-width: 767px) {
+        .technology-2__liposomal img {
+          position: initial; } }
   .technology-2__pepper {
     width: 400px;
     text-align: left;
     left: 356px;
     top: -25px; }
+    @media (max-width: 1199px) {
+      .technology-2__pepper {
+        width: 250px;
+        left: 280px;
+        top: -13px; } }
+    @media (max-width: 767px) {
+      .technology-2__pepper {
+        text-align: center; } }
     .technology-2__pepper img {
       position: absolute;
       right: 100%;
@@ -5858,6 +5897,9 @@ p {
     transform: rotate(360deg); }
   to {
     transform: rotate(0deg); } }
+      @media (max-width: 767px) {
+        .technology-2__pepper img {
+          position: initial; } }
   .technology-2__extraction {
     max-width: 700px;
     text-align: center;
@@ -5876,19 +5918,41 @@ p {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+  .technology-2__extraction, .technology-2__liposomal, .technology-2__pepper {
+    margin: 0 auto;
+    position: relative; }
+    @media (max-width: 767px) {
+      .technology-2__extraction, .technology-2__liposomal, .technology-2__pepper {
+        position: initial; } }
+    .technology-2__extraction img, .technology-2__liposomal img, .technology-2__pepper img {
+      height: 120px; }
+      @media (max-width: 767px) {
+        .technology-2__extraction img, .technology-2__liposomal img, .technology-2__pepper img {
+          height: 100px;
+          margin: 20px; } }
   .technology-2__title {
     font-weight: 700;
     font-size: 40px;
     line-height: initial;
     margin-bottom: 10px; }
+    @media (max-width: 1199px) {
+      .technology-2__title {
+        font-size: 30px; } }
   .technology-2__copy {
     font-weight: 500;
     font-size: 30px;
     opacity: 0.7;
     line-height: initial; }
+    @media (max-width: 1199px) {
+      .technology-2__copy {
+        font-size: 24px; } }
   .technology-2__image {
     max-width: 430px;
     margin: 0 auto; }
+    @media (max-width: 767px) {
+      .technology-2__image {
+        margin-top: 40px;
+        max-width: 90%; } }
 
 .ingredients {
   text-align: center; }
