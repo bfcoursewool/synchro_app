@@ -92,18 +92,25 @@
   padding: $gutter-large 0;
   @include horizontal-slide;
   text-align: center;
+  @include sm-screen {
+    padding: $gutter-medium $gutter-small;
+  }
 
   &__post {
     background: $color-ivory;
     padding: 10px;
     display: inline-block;
     font-size: 0;
+    @include sm-screen {
+      max-width: 340px;
+    }
   }
 
   &__image {
-    height: 365px;
     width: 365px;
-    object-fit: cover;
+    @include sm-screen {
+      width: 100%;
+    }
   }
 
   &__content {
@@ -112,6 +119,11 @@
     text-align: left;
     display: inline-block;
     padding: 0 20px 0 30px;
+    @include sm-screen {
+      width: initial;
+      padding: 20px 10px 10px;
+      display: block;
+    }
   }
 
   &__profile {
@@ -132,6 +144,9 @@
     font-weight: $font-medium;
     display: inline-block;
     vertical-align: middle;
+    @include sm-screen {
+      font-size: 20px;
+    }
   }
 
   &__quote {
@@ -139,5 +154,14 @@
     line-height: initial;
     font-weight: $font-demi;
     font-size: 35px;
+    @include sm-screen {
+      font-size: 26px;
+    }
+  }
+
+  &__stars {
+    @include sm-screen {
+      height: 26px;
+    }
   }
 }
