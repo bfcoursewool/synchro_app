@@ -89,22 +89,28 @@
 
 .benefits-2 {
   font-size: 0;
-  padding: $gutter-large $gutter-large $gutter-medium;
-  @include s-screen {
-    padding-bottom: 0;
+  padding: $gutter-medium $gutter-large;
+  @include l-screen {
+    padding: $gutter-medium;
+  }
+  @include m-screen {
+    padding-bottom: $gutter-small;
+  }
+  @include sm-screen {
+    padding: $gutter-small;
   }
 
   &__copy {
     width: 25%;
     display: inline-block;
-    padding: 0 15px;
+    padding: 20px 20px 0;
     vertical-align: top;
     @include m-screen {
       width: 50%;
     }
     @include xs-screen {
-      padding: 0;
       width: 100%;
+      text-align: center;
     }
   }
 
@@ -113,6 +119,11 @@
     height: 200px;
     object-fit: cover;
     border-radius: 100px;
+    @include xs-screen {
+      width: 250px;
+      height: 250px;
+      border-radius: 125px;
+    }
   }
 
   &__text {
@@ -126,64 +137,8 @@
   }
 
   &__title {
-    text-align: left;
     font-weight: 700;
     font-size: 30px;
     line-height: initial;
   }
 }
-
-// .benefits-3 {
-//   #horizontal-scroll {
-//     width: 100%;
-//     padding: 0;
-//     margin: 0;
-//     overflow-x: scroll;
-//     overflow-y: hidden;
-//   }
-//
-//   .box-wrap {
-//     margin: 0;
-//     width: 4670px;
-//     padding: 60px 0 60px 100px;
-//   }
-//
-//   &__text {
-//     padding: 0;
-//     width: 600px;
-//     display: inline-block;
-//     font-size: 24px;
-//     text-align: left;
-//     vertical-align: middle;
-//   }
-//
-//   &__icon {
-//     height: 80px;
-//     float: left;
-//     margin-right: 30px;
-//     position: relative;
-//     top: 10px;
-//   }
-//
-//   &__header {
-//     overflow: hidden;
-//     width: auto;
-//     font-weight: $font-bold;
-//     font-size: 45px;
-//     line-height: initial;
-//   }
-//
-//   &__image {
-//     height: 400px;
-//     width: 400px;
-//     margin: 0 140px;
-//     border-radius: 250px;
-//     object-fit: cover;
-//   }
-//
-//   .p--text {
-//     font-size: 24px;
-//     opacity: 0.5;
-//     font-weight: $font-medium;
-//   }
-// }
