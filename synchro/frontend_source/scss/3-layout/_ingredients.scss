@@ -125,8 +125,9 @@
 }
 
 .ingredients-2 {
-  padding: $gutter-large;
+  padding-top: $gutter-large;
   text-align: center;
+  font-size: 0;
 
   &__title {
     font-weight: $font-bold;
@@ -136,6 +137,7 @@
 
   &__details {
     font-size: 0;
+    padding: 0 $gutter-large;
   }
 
   &__item-box {
@@ -168,34 +170,42 @@
 
   &__facts {
     display: inline-block;
-    width: 50%;
-    max-width: 600px;
+    width: 66.66%;
+    padding: 20px;
+    background: #fef7e5;
+    text-align: center;
 
     img {
-      width: 100%;
+      max-height: 500px;
     }
   }
 
   &__icons {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 20px;
+    width: 33.33%;
+    text-align: left;
   }
 
   &__icon-box {
     text-align: left;
+    width: fit-content;
+    margin: 30px auto;
   }
 
   &__icon {
     display: inline-block;
-    width: 64px;
-    margin: 0 20px 0 30px;
+    width: 60px;
+    margin-right: 20px;
   }
 
   &__icon-text {
     display: inline-block;
-    font-weight: $font-bold;
-    font-size: 24px;
+    font-weight: $font-demi;
+    font-size: 16px;
     vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 200px;
   }
 }

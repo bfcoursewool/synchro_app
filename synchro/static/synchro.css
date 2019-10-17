@@ -6050,14 +6050,16 @@ p {
     margin: 20px 0; }
 
 .ingredients-2 {
-  padding: 60px;
-  text-align: center; }
+  padding-top: 60px;
+  text-align: center;
+  font-size: 0; }
   .ingredients-2__title {
     font-weight: 700;
     font-size: 50px;
     margin-bottom: 30px; }
   .ingredients-2__details {
-    font-size: 0; }
+    font-size: 0;
+    padding: 0 60px; }
   .ingredients-2__item-box {
     width: 33.33%;
     display: inline-block;
@@ -6078,25 +6080,33 @@ p {
     opacity: 0.5; }
   .ingredients-2__facts {
     display: inline-block;
-    width: 50%;
-    max-width: 600px; }
+    width: 66.66%;
+    padding: 20px;
+    background: #fef7e5;
+    text-align: center; }
     .ingredients-2__facts img {
-      width: 100%; }
+      max-height: 500px; }
   .ingredients-2__icons {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 20px; }
-  .ingredients-2__icon-box {
+    width: 33.33%;
     text-align: left; }
+  .ingredients-2__icon-box {
+    text-align: left;
+    width: fit-content;
+    margin: 30px auto; }
   .ingredients-2__icon {
     display: inline-block;
-    width: 64px;
-    margin: 0 20px 0 30px; }
+    width: 60px;
+    margin-right: 20px; }
   .ingredients-2__icon-text {
     display: inline-block;
-    font-weight: 700;
-    font-size: 24px;
-    vertical-align: middle; }
+    font-weight: 600;
+    font-size: 16px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 200px; }
 
 .purchase {
   padding: 0 40px;
@@ -6268,11 +6278,12 @@ p {
   background: linear-gradient(90deg, #fff 50%, #FAF7F3 50%); }
   .purchase-2__images {
     width: 50%;
-    padding: 60px; }
+    padding: 40px 60px; }
   .purchase-2__slider {
     width: 90%;
+    max-width: 400px;
     position: relative;
-    padding-top: 95%;
+    padding-top: 420px;
     text-align: center;
     overflow: hidden;
     margin: 0 auto; }
@@ -6299,25 +6310,25 @@ p {
     width: 100%; }
   .purchase-2__details {
     width: 50%;
-    padding: 60px; }
+    padding: 40px 60px; }
   .purchase-2__name {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     opacity: 0.5; }
   .purchase-2__quantity {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 35px;
     display: none; }
   .purchase-2__hr {
     width: 100%;
     height: 2px;
     background: #ffffff;
-    margin: 30px 0; }
+    margin: 20px 0; }
   .purchase-2__price-box {
     display: none; }
   .purchase-2__price {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     display: inline-block;
     margin: 0 10px 0 0;
     vertical-align: middle; }
@@ -6337,8 +6348,7 @@ p {
     .purchase-2__offer span {
       background: #76BB73;
       color: #ffffff;
-      padding: 4px 14px;
-      font-size: 20px;
+      padding: 3px 14px;
       border-radius: 20px;
       margin-right: 6px; }
   .purchase-2 .a--cta {
@@ -6358,13 +6368,13 @@ p {
     padding: 10px;
     margin: 10px 0; }
     .purchase-2__options img {
-      width: 90px;
+      width: 80px;
       display: inline-block;
       vertical-align: middle; }
   .purchase-2__options-details {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 20px; }
+    margin-left: 10px; }
   .purchase-2__options-quantity {
     font-weight: 700;
     font-size: 22px;
@@ -7705,10 +7715,11 @@ input:checked + .accordion-horizontal__inner-box {
   text-align: center; }
   .gold-capsules .hero-cta__header {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 50px;
     margin: 30px 0; }
   .gold-capsules .hero-cta img {
-    max-width: 500px;
+    width: 100%;
+    max-width: 450px;
     display: block;
     margin: 0 auto 60px; }
   .gold-capsules .hero-cta .a--cta {

@@ -35,18 +35,8 @@ export default class LPEffects extends EventsBase {
       'click .weight-loss__icon': 'toggleWeightLoss',
       'click .toggle-single-view': 'toggleSingleView', // Only ONE element is visible at one time. Use this toggle event for this element globally.
       'click .toggle-multiple-view': 'toggleMultipleView', // MULTIPLE element are visible at one time. Use this toggle event for this element globally.
-      // 'click .purchase-2__options': 'purchaseOptionSelection',
     }
   }
-
-  // purchaseOptionSelection(target) {
-  //   if ($(target).is('.selected')) {
-  //     $(target).find('.purchase-2__options').removeClass('selected');
-  //   } else {
-  //     $(target).addClass('selected');
-  //     $(target).find('.purchase-2__options').removeClass('selected');
-  //   }
-  // }
 
   toggleMultipleView(target) {
     if($(target).is('.active')) {
