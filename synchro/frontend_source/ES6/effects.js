@@ -19,6 +19,7 @@ export default class LPEffects extends EventsBase {
     return {
       'click .main-navigation__mobile': 'toggleNav',
       'click .main-navigation__item': 'toggleNav',
+      'click .main-navigation__cta': 'toggleNav',
       'click .vjs-big-play-button': 'hideBenefitsText',
       'click a[href*="#"]:not([href="#"])': 'parallaxScroll',
       'scroll window': 'navMenuTransition',

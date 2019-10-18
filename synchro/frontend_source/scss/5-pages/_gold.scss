@@ -401,28 +401,46 @@
 
 .gold-capsules {
   a.anchor {
-    top: -61px;
+    top: -60px;
   }
 
   .atf {
+    &__copy {
+      @include s-screen {
+        padding: 30px $gutter-small;
+      }
+    }
+
     &__header {
       font-size: 60px;
       font-weight: $font-bold;
+      @include s-screen {
+        font-size: 45px;
+      }
     }
 
     &__subheader {
       font-size: 35px;
+      @include s-screen {
+        font-size: 30px;
+      }
     }
   }
 
   .hero-cta {
     padding: $gutter-medium $gutter-large $gutter-large;
     text-align: center;
+    @include s-screen {
+      padding: $gutter-small $gutter-small $gutter-medium;
+    }
 
     &__header {
       font-weight: $font-bold;
       font-size: 50px;
       margin: 30px 0;
+      @include s-screen {
+        font-size: 40px;
+      }
     }
 
     img {
@@ -430,6 +448,9 @@
       max-width: 450px;
       display: block;
       margin: 0 auto $gutter-large;
+      @include s-screen {
+        margin-bottom: $gutter-medium;
+      }
     }
 
     .a--cta {
@@ -445,6 +466,9 @@
     background: $color-silver-light;
     padding: $gutter-large $gutter-large $gutter-small;
     font-size: 0;
+    @include s-screen {
+      display: none;
+    }
 
     &__intro {
       font-weight: $font-demi;
@@ -472,6 +496,21 @@
       font-weight: $font-medium;
       font-size: 24px;
       opacity: 0.5;
+    }
+  }
+
+  .references {
+    text-align: center;
+
+    &__title {
+      padding-top: $gutter-large;
+      font-weight: $font-bold;
+      font-size: 30px;
+      margin-bottom: 20px;
+      @include s-screen {
+        padding-top: 0;
+        font-size: 25px;
+      }
     }
   }
 }

@@ -61,10 +61,10 @@
         background: rgba(240,240,240,0.9);
         text-align: left;
         margin-top: 10px;
-        transition: all 0.35s ease;
-        -moz-transition: all 0.35s ease;
-        -webkit-transition: all 0.35s ease;
-        -o-transition: all 0.35s ease;
+        transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -webkit-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
       }
       @include s-screen {
         left: 0;
@@ -193,10 +193,10 @@
         text-align: center;
         margin-top: 10px;
         width: 100%;
-        transition: all 0.35s ease;
-        -moz-transition: all 0.35s ease;
-        -webkit-transition: all 0.35s ease;
-        -o-transition: all 0.35s ease;
+        transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -webkit-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
         z-index: -1;
         top: -400px;
       }
@@ -208,10 +208,15 @@
       }
 
       &__mobile {
-        cursor: pointer;
-        width: 22px;
-        outline: 0;
-        justify-self: right;
+        display: none;
+        @include s-screen {
+          display: block;
+          cursor: pointer;
+          width: 22px;
+          outline: 0;
+          margin-right: 10px;
+          justify-self: right;
+        }
       }
 
       &__hamburger {

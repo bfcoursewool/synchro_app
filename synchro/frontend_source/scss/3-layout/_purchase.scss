@@ -179,10 +179,18 @@
   display: flex;
   align-items: center;
   background: linear-gradient(90deg, #fff 50%, #FAF7F3 50%);
+  @include sm-screen {
+    display: initial;
+    background: none;
+  }
 
   &__images {
     width: 50%;
     padding: $gutter-medium $gutter-large;
+    @include sm-screen {
+      width: 100%;
+      padding: $gutter-small;
+    }
   }
 
   &__slider {
@@ -193,6 +201,11 @@
     text-align: center;
     overflow: hidden;
     margin: 0 auto;
+    @include xs-screen {
+      width: 100%;
+      max-width: none;
+      padding-top: 105%;
+    }
 
     label {
       margin: 10px 5px;
@@ -233,18 +246,32 @@
   &__details {
     width: 50%;
     padding: $gutter-medium $gutter-large;
+    @include s-screen {
+      width: 100%;
+      text-align: center;
+      padding: $gutter-small 0 10px;
+      background: #FAF7F3;
+    }
   }
 
   &__name {
     font-weight: $font-medium;
     font-size: 22px;
     opacity: 0.5;
+    @include s-screen {
+      font-size: 20px;
+      margin: 0 $gutter-small 10px;
+    }
   }
 
   &__quantity {
     font-weight: $font-bold;
     font-size: 35px;
     display: none;
+    @include s-screen {
+      font-size: 24px;
+      margin: 10px $gutter-small;
+    }
   }
 
   &__hr {
@@ -252,10 +279,16 @@
     height: 2px;
     background: $color-ivory;
     margin: 20px 0;
+    @include s-screen {
+      display: none;
+    }
   }
 
   &__price-box {
     display: none;
+    @include s-screen {
+      margin: 0 $gutter-small;
+    }
   }
 
   &__price {
@@ -264,6 +297,10 @@
     display: inline-block;
     margin: 0 10px 0 0;
     vertical-align: middle;
+    @include s-screen {
+      display: block;
+      margin: 10px 0;
+    }
 
     span {
       color: #B2B2B2;
@@ -300,17 +337,27 @@
     background-color: #39447C;
     border-radius: 40px;
     text-align: center;
+    @include s-screen {
+      margin: 15px 0;
+    }
   }
 
   &__options-title {
     font-weight: $font-medium;
     font-size: 24px;
+    @include s-screen {
+      font-size: 20px;
+      margin: 0;
+    }
   }
 
   &__options {
     background: $color-ivory;
     padding: 10px;
     margin: 10px 0;
+    @include s-screen {
+      margin: 10px 0 0;
+    }
 
     img {
       width: 80px;
@@ -323,6 +370,10 @@
     display: inline-block;
     vertical-align: middle;
     margin-left: 10px;
+    @include s-screen {
+      margin: 0;
+      text-align: left;
+    }
   }
 
   &__options-quantity {
