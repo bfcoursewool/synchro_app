@@ -33,13 +33,14 @@
   &__stars {
     display: inline-block;
     background: $color-ivory;
-    padding: 10px 30px 5px;
+    padding: 10px 25px;
     border-radius: 50px;
+    font-size: 0;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.05);
 
     #rating-new__star {
       height: 32px;
-      margin: 0 2px;
+      margin: 0 4px;
       @include s-screen {
         height: 28px;
       }

@@ -89,12 +89,12 @@
 
 .benefits-2 {
   font-size: 0;
-  padding: $gutter-medium $gutter-large;
+  padding: $gutter-medium $gutter-large $gutter-small;
   @include l-screen {
-    padding: $gutter-medium;
+    padding: $gutter-medium $gutter-medium $gutter-small;
   }
   @include m-screen {
-    padding-bottom: $gutter-small;
+    padding: $gutter-medium $gutter-small $gutter-small;
   }
   @include sm-screen {
     padding: $gutter-small;
@@ -107,9 +107,6 @@
     vertical-align: top;
     @include m-screen {
       width: 50%;
-    }
-    @include m-screen {
-      padding: 20px 0 0;
     }
     @include xs-screen {
       width: 100%;

@@ -405,9 +405,48 @@
   }
 
   .atf {
+    &__video {
+      width: 40%;
+    }
+
     &__copy {
+      font-size: 0;
+      padding: 30px 0 30px 40px;
       @include s-screen {
         padding: 30px $gutter-small;
+      }
+      @include xs-screen {
+        height: 800px;
+        overflow: hidden;
+      }
+    }
+
+    &__content {
+      width: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      @include l-screen {
+        width: 70%;
+      }
+      @include xs-screen {
+        width: 100%;
+      }
+    }
+
+    &__hero-image {
+      width: 40%;
+      display: inline-block;
+      padding-left: 20px;
+      @include l-screen {
+        width: 30%;
+      }
+      @include xs-screen {
+        padding: 20px 0 0;
+        width: 100%;
+      }
+
+      img {
+        max-width: 280px;
       }
     }
 
@@ -428,7 +467,9 @@
   }
 
   .hero-cta {
+    background: linear-gradient(0deg, #ffffff 35%, #F3EEE7 35%);
     padding: $gutter-medium $gutter-large $gutter-large;
+    margin-top: $gutter-small;
     text-align: center;
     @include s-screen {
       padding: $gutter-small $gutter-small $gutter-medium;
@@ -456,7 +497,6 @@
     .a--cta {
       font-size: 18px;
       padding: 20px 35px;
-      margin-bottom: 10px;
       background-color: #39447C;
       border-radius: 40px;
     }

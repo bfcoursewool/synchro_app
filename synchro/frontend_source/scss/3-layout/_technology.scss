@@ -128,6 +128,99 @@
 
 .technology-2 {
   background: linear-gradient(0deg, #F3EEE7 15%, #FAF7F3 15%);
+  padding: $gutter-large;
+  margin: $gutter-small;
+  font-size: 0;
+  @include m-screen {
+    text-align: center;
+  }
+  @include sm-screen {
+    padding: $gutter-medium;
+  }
+  @include s-screen {
+    margin: 0;
+    padding: $gutter-medium $gutter-small;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 300px;
+    @include m-screen {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__content {
+    display: inline-block;
+    width: calc(100% - 300px);
+    vertical-align: middle;
+    padding-left: 50px;
+    @include m-screen {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__header {
+    font-weight: $font-bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include s-screen {
+      font-size: 35px;
+    }
+  }
+
+  &__subheader {
+    font-weight: $font-medium;
+    font-size: 25px;
+    opacity: 0.5;
+  }
+
+  &__tech {
+    justify-content: space-between;
+    display: flex;
+    margin-top: $gutter-medium;
+    @include s-screen {
+      display: block;
+    }
+  }
+
+  &__extraction,
+  &__liposomal,
+  &__pepper {
+    width: 30%;
+    @include s-screen {
+      width: 100%;
+      margin-top: $gutter-medium;
+    }
+
+    img {
+      width: 100px;
+    }
+  }
+
+  &__extraction {
+    padding: 0;
+  }
+
+  &__title {
+    font-weight: $font-bold;
+    font-size: 34px;
+    line-height: initial;
+    margin: 15px 0 10px;
+  }
+
+  &__copy {
+    font-weight: $font-medium;
+    font-size: 26px;
+    opacity: 0.5;
+    line-height: initial;
+  }
+}
+
+.technology-3 {
+  background: linear-gradient(0deg, #F3EEE7 15%, #FAF7F3 15%);
   margin: 0 20px 20px;
   padding: $gutter-large;
   text-align: center;
