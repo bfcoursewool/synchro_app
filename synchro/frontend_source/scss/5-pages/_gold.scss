@@ -489,10 +489,7 @@
       width: 100%;
       max-width: 450px;
       display: block;
-      margin: 0 auto $gutter-large;
-      @include s-screen {
-        margin-bottom: $gutter-medium;
-      }
+      margin: 0 auto $gutter-medium;
     }
 
     .a--cta {

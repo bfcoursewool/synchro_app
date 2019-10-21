@@ -5860,10 +5860,11 @@ p {
     transition: 0.3s ease-in-out all; }
 
 .technology-2 {
-  background: linear-gradient(0deg, #F3EEE7 15%, #FAF7F3 15%);
+  background: url("https://cdn.besynchro.com/gold/capsules/technology-bg.jpg");
   padding: 60px;
   margin: 20px;
-  font-size: 0; }
+  font-size: 0;
+  background-size: cover; }
   @media (max-width: 1199px) {
     .technology-2 {
       padding: 40px 40px 20px;
@@ -5885,7 +5886,7 @@ p {
     display: inline-block;
     width: calc(100% - 300px);
     vertical-align: middle;
-    padding-left: 50px; }
+    padding-left: 60px; }
     @media (max-width: 1199px) {
       .technology-2__content {
         width: 100%;
@@ -8012,10 +8013,7 @@ input:checked + .accordion-horizontal__inner-box {
     width: 100%;
     max-width: 450px;
     display: block;
-    margin: 0 auto 60px; }
-    @media (max-width: 767px) {
-      .gold-capsules .hero-cta img {
-        margin-bottom: 40px; } }
+    margin: 0 auto 40px; }
   .gold-capsules .hero-cta .a--cta {
     font-size: 18px;
     padding: 20px 35px;

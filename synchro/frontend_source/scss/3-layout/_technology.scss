@@ -127,12 +127,13 @@
 }
 
 .technology-2 {
-  background: linear-gradient(0deg, #F3EEE7 15%, #FAF7F3 15%);
+  background: url("https://cdn.besynchro.com/gold/capsules/technology-bg.jpg");
   padding: $gutter-large;
   margin: $gutter-small;
   font-size: 0;
+  background-size: cover;
   @include m-screen {
-  padding: $gutter-medium $gutter-medium $gutter-small;
+    padding: $gutter-medium $gutter-medium $gutter-small;
     text-align: center;
   }
   @include sm-screen {
@@ -155,7 +156,7 @@
     display: inline-block;
     width: calc(100% - 300px);
     vertical-align: middle;
-    padding-left: 50px;
+    padding-left: $gutter-large;
     @include m-screen {
       width: 100%;
       padding: 0;
