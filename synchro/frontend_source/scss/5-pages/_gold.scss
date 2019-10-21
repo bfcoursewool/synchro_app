@@ -472,6 +472,7 @@
     margin-top: $gutter-small;
     text-align: center;
     @include s-screen {
+      background: linear-gradient(0deg, #faf7f3 35%, #F3EEE7 35%);
       padding: $gutter-small $gutter-small $gutter-medium;
     }
 
@@ -506,6 +507,9 @@
     background: $color-silver-light;
     padding: $gutter-large $gutter-large $gutter-small;
     font-size: 0;
+    @include m-screen {
+      padding: $gutter-medium $gutter-small 0;
+    }
     @include s-screen {
       display: none;
     }
@@ -517,6 +521,7 @@
       text-align: center;
       max-width: 800px;
       margin: 0 auto 25px;
+      padding: 0 40px;
     }
 
     &__point {
@@ -530,6 +535,9 @@
       font-weight: $font-bold;
       font-size: 50px;
       line-height: initial;
+      @include m-screen {
+        font-size: 40px;
+      }
     }
 
     &__copy {
@@ -541,14 +549,19 @@
 
   .references {
     text-align: center;
+    @include m-screen {
+      padding-bottom: $gutter-small;
+    }
 
     &__title {
       padding-top: $gutter-large;
       font-weight: $font-bold;
       font-size: 30px;
       margin-bottom: 20px;
+      @include m-screen {
+        padding-top: $gutter-medium;
+      }
       @include s-screen {
-        padding-top: 0;
         font-size: 25px;
       }
     }

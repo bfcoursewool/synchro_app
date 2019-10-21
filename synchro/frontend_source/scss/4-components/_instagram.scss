@@ -92,6 +92,9 @@
   padding: $gutter-large 0;
   @include horizontal-slide;
   text-align: center;
+  @include m-screen {
+    padding: $gutter-medium 0;
+  }
   @include sm-screen {
     padding: $gutter-medium $gutter-small;
   }

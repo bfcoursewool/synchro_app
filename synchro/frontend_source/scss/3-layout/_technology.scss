@@ -132,14 +132,15 @@
   margin: $gutter-small;
   font-size: 0;
   @include m-screen {
+  padding: $gutter-medium $gutter-medium $gutter-small;
     text-align: center;
   }
   @include sm-screen {
     padding: $gutter-medium;
   }
-  @include s-screen {
-    margin: 0;
-    padding: $gutter-medium $gutter-small;
+  @include xs-screen {
+    margin: 0 0 $gutter-small;
+    padding: $gutter-medium $gutter-small $gutter-small;
   }
 
   &__image {

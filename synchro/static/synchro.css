@@ -5667,13 +5667,16 @@ p {
   padding: 40px 60px 20px; }
   @media (max-width: 1599px) {
     .benefits-2 {
-      padding: 40px 40px 20px; } }
+      padding-left: 40px 40px 20px; } }
   @media (max-width: 1199px) {
     .benefits-2 {
-      padding: 40px 20px 20px; } }
+      padding: 40px 20px 0; } }
   @media (max-width: 854px) {
     .benefits-2 {
       padding: 20px; } }
+  @media (max-width: 680px) {
+    .benefits-2 {
+      padding: 20px 0; } }
   .benefits-2__copy {
     width: 25%;
     display: inline-block;
@@ -5863,14 +5866,15 @@ p {
   font-size: 0; }
   @media (max-width: 1199px) {
     .technology-2 {
+      padding: 40px 40px 20px;
       text-align: center; } }
   @media (max-width: 854px) {
     .technology-2 {
       padding: 40px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 680px) {
     .technology-2 {
-      margin: 0;
-      padding: 40px 20px; } }
+      margin: 0 0 20px;
+      padding: 40px 20px 20px; } }
   .technology-2__image {
     width: 100%;
     max-width: 300px; }
@@ -6185,7 +6189,7 @@ p {
   padding-top: 60px;
   text-align: center;
   font-size: 0; }
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     .ingredients-2 {
       padding-top: 40px; } }
   .ingredients-2__title {
@@ -6198,7 +6202,7 @@ p {
   .ingredients-2__details {
     font-size: 0;
     padding: 0 60px; }
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
       .ingredients-2__details {
         padding: 0 20px; } }
   .ingredients-2__item-box {
@@ -6236,6 +6240,9 @@ p {
     padding: 20px;
     background: #fef7e5;
     text-align: center; }
+    @media (max-width: 1199px) {
+      .ingredients-2__facts {
+        width: 60%; } }
     @media (max-width: 767px) {
       .ingredients-2__facts {
         padding: 10px;
@@ -6249,6 +6256,9 @@ p {
     vertical-align: middle;
     width: 33.33%;
     text-align: left; }
+    @media (max-width: 1199px) {
+      .ingredients-2__icons {
+        width: 40%; } }
     @media (max-width: 767px) {
       .ingredients-2__icons {
         display: block;
@@ -6258,6 +6268,9 @@ p {
     text-align: left;
     width: fit-content;
     margin: 30px auto; }
+    @media (max-width: 1199px) {
+      .ingredients-2__icon-box {
+        margin: 20px auto; } }
   .ingredients-2__icon {
     display: inline-block;
     width: 60px;
@@ -7571,6 +7584,9 @@ input:checked + .accordion-horizontal__inner-box {
   padding: 60px 0;
   -webkit-animation: slide 60s linear infinite;
   text-align: center; }
+  @media (max-width: 1199px) {
+    .instagram-slider {
+      padding: 40px 0; } }
   @media (max-width: 854px) {
     .instagram-slider {
       padding: 40px 20px; } }
@@ -7983,6 +7999,7 @@ input:checked + .accordion-horizontal__inner-box {
   text-align: center; }
   @media (max-width: 767px) {
     .gold-capsules .hero-cta {
+      background: linear-gradient(0deg, #faf7f3 35%, #F3EEE7 35%);
       padding: 20px 20px 40px; } }
   .gold-capsules .hero-cta__header {
     font-weight: 700;
@@ -8009,6 +8026,9 @@ input:checked + .accordion-horizontal__inner-box {
   background: #f4f4f5;
   padding: 60px 60px 20px;
   font-size: 0; }
+  @media (max-width: 1199px) {
+    .gold-capsules .research {
+      padding: 40px 20px 0; } }
   @media (max-width: 767px) {
     .gold-capsules .research {
       display: none; } }
@@ -8018,7 +8038,8 @@ input:checked + .accordion-horizontal__inner-box {
     opacity: 0.6;
     text-align: center;
     max-width: 800px;
-    margin: 0 auto 25px; }
+    margin: 0 auto 25px;
+    padding: 0 40px; }
   .gold-capsules .research__point {
     width: 50%;
     display: inline-block;
@@ -8028,6 +8049,9 @@ input:checked + .accordion-horizontal__inner-box {
     font-weight: 700;
     font-size: 50px;
     line-height: initial; }
+    @media (max-width: 1199px) {
+      .gold-capsules .research__header {
+        font-size: 40px; } }
   .gold-capsules .research__copy {
     font-weight: 500;
     font-size: 24px;
@@ -8035,14 +8059,19 @@ input:checked + .accordion-horizontal__inner-box {
 
 .gold-capsules .references {
   text-align: center; }
+  @media (max-width: 1199px) {
+    .gold-capsules .references {
+      padding-bottom: 20px; } }
   .gold-capsules .references__title {
     padding-top: 60px;
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 20px; }
+    @media (max-width: 1199px) {
+      .gold-capsules .references__title {
+        padding-top: 40px; } }
     @media (max-width: 767px) {
       .gold-capsules .references__title {
-        padding-top: 0;
         font-size: 25px; } }
 
 .genesis-lp .a--cta {

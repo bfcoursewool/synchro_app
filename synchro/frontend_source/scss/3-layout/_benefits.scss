@@ -91,13 +91,16 @@
   font-size: 0;
   padding: $gutter-medium $gutter-large $gutter-small;
   @include l-screen {
-    padding: $gutter-medium $gutter-medium $gutter-small;
+    padding-left: $gutter-medium $gutter-medium $gutter-small;
   }
   @include m-screen {
-    padding: $gutter-medium $gutter-small $gutter-small;
+    padding: $gutter-medium $gutter-small 0;
   }
   @include sm-screen {
     padding: $gutter-small;
+  }
+  @include xs-screen {
+    padding: $gutter-small 0;
   }
 
   &__copy {
