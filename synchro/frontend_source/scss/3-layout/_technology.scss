@@ -127,6 +127,101 @@
 }
 
 .technology-2 {
+  background: url("https://cdn.besynchro.com/gold/capsules/technology-bg.jpg");
+  padding: $gutter-large $gutter-medium $gutter-large $gutter-large;
+  margin: $gutter-small;
+  font-size: 0;
+  background-size: cover;
+  @include m-screen {
+    padding: $gutter-medium $gutter-medium $gutter-small;
+    text-align: center;
+  }
+  @include sm-screen {
+    padding: $gutter-medium;
+  }
+  @include xs-screen {
+    margin: 0 0 $gutter-small;
+    padding: $gutter-medium $gutter-small $gutter-small;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 260px;
+    @include m-screen {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__content {
+    display: inline-block;
+    width: calc(100% - 260px);
+    vertical-align: middle;
+    padding-left: $gutter-large;
+    @include m-screen {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__header {
+    font-weight: $font-bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include s-screen {
+      font-size: 35px;
+    }
+  }
+
+  &__subheader {
+    font-weight: $font-medium;
+    font-size: 25px;
+    opacity: 0.5;
+  }
+
+  &__tech {
+    justify-content: space-between;
+    display: flex;
+    margin-top: $gutter-medium;
+    @include s-screen {
+      display: block;
+    }
+  }
+
+  &__extraction,
+  &__liposomal,
+  &__pepper {
+    width: 30%;
+    @include s-screen {
+      width: 100%;
+      margin-top: $gutter-medium;
+    }
+
+    img {
+      width: 100px;
+    }
+  }
+
+  &__extraction {
+    padding: 0;
+  }
+
+  &__title {
+    font-weight: $font-bold;
+    font-size: 34px;
+    line-height: initial;
+    margin: 15px 0 10px;
+  }
+
+  &__copy {
+    font-weight: $font-medium;
+    font-size: 26px;
+    opacity: 0.5;
+    line-height: initial;
+  }
+}
+
+.technology-3 {
   background: linear-gradient(0deg, #F3EEE7 15%, #FAF7F3 15%);
   margin: 0 20px 20px;
   padding: $gutter-large;

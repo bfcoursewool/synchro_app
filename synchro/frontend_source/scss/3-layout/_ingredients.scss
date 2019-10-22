@@ -128,7 +128,7 @@
   padding-top: $gutter-large;
   text-align: center;
   font-size: 0;
-  @include s-screen {
+  @include m-screen {
     padding-top: $gutter-medium;
   }
 
@@ -144,7 +144,7 @@
   &__details {
     font-size: 0;
     padding: 0 $gutter-large;
-    @include s-screen {
+    @include m-screen {
       padding: 0 $gutter-small;
     }
   }
@@ -194,6 +194,9 @@
     padding: 20px;
     background: #fef7e5;
     text-align: center;
+    @include m-screen {
+      width: 60%;
+    }
     @include s-screen {
       padding: 10px;
       width: 100%;
@@ -211,6 +214,9 @@
     vertical-align: middle;
     width: 33.33%;
     text-align: left;
+    @include m-screen {
+      width: 40%;
+    }
     @include s-screen {
       display: block;
       width: 100%;
@@ -222,6 +228,9 @@
     text-align: left;
     width: fit-content;
     margin: 30px auto;
+    @include m-screen {
+      margin: 20px auto;
+    }
   }
 
   &__icon {
