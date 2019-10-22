@@ -36,7 +36,20 @@ export default class LPEffects extends EventsBase {
       'click .weight-loss__icon': 'toggleWeightLoss',
       'click .toggle-single-view': 'toggleSingleView', // Only ONE element is visible at one time. Use this toggle event for this element globally.
       'click .toggle-multiple-view': 'toggleMultipleView', // MULTIPLE element are visible at one time. Use this toggle event for this element globally.
+      'click .purchase-2__options': 'goldCapsulePurchaseSwap',
     }
+  }
+
+  goldCapsulePurchaseSwap(target) {
+    $('.purchase-2__options').each(function() { $(this).removeClass('selected') })
+    $(target).addClass('selected')
+    $("div[class*='option-'],p[class*='option-'],input[class*='option-']").each(function() { $(this).removeClass('active') })
+    let targetClasses = $(target).attr('class').split(/\s+/)
+    $.each(targetClasses, function(index, item) {
+      if(item.includes('option-')) {
+        $(`.${item}`).each(function() { $(this).addClass('active') })
+      }
+    })
   }
 
   toggleMultipleView(target) {
@@ -53,6 +66,7 @@ export default class LPEffects extends EventsBase {
       $(target).children().addClass('active');
     }
   }
+
   toggleSingleView(target) {
     if($(target).is('.active')) {
       $(target).removeClass('active');
@@ -67,6 +81,7 @@ export default class LPEffects extends EventsBase {
       $(target).parent().siblings().find('.toggle-single-view').children().removeClass('active');
     }
   }
+
   toggleWeightLoss(target) {
     if($(target).is('.active')) {
       $(target).removeClass('active');
@@ -76,6 +91,7 @@ export default class LPEffects extends EventsBase {
       $(target).siblings('.weight-loss__text').addClass('active');
     }
   }
+
   toggleHowItWorks(target) {
     if($(target).is('.active')) {
       $('.how-it-works .icon-learn-more').removeClass('active');
@@ -230,6 +246,7 @@ export default class LPEffects extends EventsBase {
     });
   }
 }
+
 $(".video-modal").click(function () {
   var theModal = $(this).data("target"),
       videoSRC = $(this).attr("data-video"),
