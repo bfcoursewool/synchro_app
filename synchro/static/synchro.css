@@ -258,7 +258,7 @@ html {
 html {
   font-size: 16px;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -4321,7 +4321,7 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px; }
   .carousel-indicators .active {
@@ -5664,16 +5664,19 @@ p {
 
 .benefits-2 {
   font-size: 0;
-  padding: 40px 60px; }
+  padding: 40px 60px 20px; }
   @media (max-width: 1599px) {
     .benefits-2 {
-      padding: 40px; } }
+      padding-left: 40px 40px 20px; } }
   @media (max-width: 1199px) {
     .benefits-2 {
-      padding-bottom: 20px; } }
+      padding: 40px 20px 0; } }
   @media (max-width: 854px) {
     .benefits-2 {
       padding: 20px; } }
+  @media (max-width: 680px) {
+    .benefits-2 {
+      padding: 20px 0; } }
   .benefits-2__copy {
     width: 25%;
     display: inline-block;
@@ -5682,9 +5685,6 @@ p {
     @media (max-width: 1199px) {
       .benefits-2__copy {
         width: 50%; } }
-    @media (max-width: 1199px) {
-      .benefits-2__copy {
-        padding: 20px 0 0; } }
     @media (max-width: 680px) {
       .benefits-2__copy {
         width: 100%;
@@ -5860,17 +5860,89 @@ p {
     transition: 0.3s ease-in-out all; }
 
 .technology-2 {
+  background: url("https://cdn.besynchro.com/gold/capsules/technology-bg.jpg");
+  padding: 60px 40px 60px 60px;
+  margin: 20px;
+  font-size: 0;
+  background-size: cover; }
+  @media (max-width: 1199px) {
+    .technology-2 {
+      padding: 40px 40px 20px;
+      text-align: center; } }
+  @media (max-width: 854px) {
+    .technology-2 {
+      padding: 40px; } }
+  @media (max-width: 680px) {
+    .technology-2 {
+      margin: 0 0 20px;
+      padding: 40px 20px 20px; } }
+  .technology-2__image {
+    width: 100%;
+    max-width: 260px; }
+    @media (max-width: 1199px) {
+      .technology-2__image {
+        margin-bottom: 30px; } }
+  .technology-2__content {
+    display: inline-block;
+    width: calc(100% - 260px);
+    vertical-align: middle;
+    padding-left: 60px; }
+    @media (max-width: 1199px) {
+      .technology-2__content {
+        width: 100%;
+        padding: 0; } }
+  .technology-2__header {
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    @media (max-width: 767px) {
+      .technology-2__header {
+        font-size: 35px; } }
+  .technology-2__subheader {
+    font-weight: 500;
+    font-size: 25px;
+    opacity: 0.5; }
+  .technology-2__tech {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 40px; }
+    @media (max-width: 767px) {
+      .technology-2__tech {
+        display: block; } }
+  .technology-2__extraction, .technology-2__liposomal, .technology-2__pepper {
+    width: 30%; }
+    @media (max-width: 767px) {
+      .technology-2__extraction, .technology-2__liposomal, .technology-2__pepper {
+        width: 100%;
+        margin-top: 40px; } }
+    .technology-2__extraction img, .technology-2__liposomal img, .technology-2__pepper img {
+      width: 100px; }
+  .technology-2__extraction {
+    padding: 0; }
+  .technology-2__title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: initial;
+    margin: 15px 0 10px; }
+  .technology-2__copy {
+    font-weight: 500;
+    font-size: 26px;
+    opacity: 0.5;
+    line-height: initial; }
+
+.technology-3 {
   background: linear-gradient(0deg, #F3EEE7 15%, #FAF7F3 15%);
   margin: 0 20px 20px;
   padding: 60px;
   text-align: center; }
   @media (max-width: 1199px) {
-    .technology-2 {
+    .technology-3 {
       margin: 0; } }
   @media (max-width: 767px) {
-    .technology-2 {
+    .technology-3 {
       padding: 40px 20px; } }
-  .technology-2__header {
+  .technology-3__header {
     max-width: 700px;
     font-weight: 700;
     font-size: 50px;
@@ -5878,44 +5950,44 @@ p {
     letter-spacing: 1px;
     margin: 0 auto; }
     @media (max-width: 1199px) {
-      .technology-2__header {
+      .technology-3__header {
         font-size: 45px; } }
     @media (max-width: 854px) {
-      .technology-2__header {
+      .technology-3__header {
         font-size: 40px; } }
     @media (max-width: 767px) {
-      .technology-2__header {
+      .technology-3__header {
         font-size: 35px; } }
-  .technology-2__subheader {
+  .technology-3__subheader {
     max-width: 680px;
     font-weight: 500;
     font-size: 30px;
     opacity: 0.5;
     margin: 30px auto 0; }
     @media (max-width: 1199px) {
-      .technology-2__subheader {
+      .technology-3__subheader {
         font-size: 27px; } }
     @media (max-width: 854px) {
-      .technology-2__subheader {
+      .technology-3__subheader {
         font-size: 24px; } }
     @media (max-width: 767px) {
-      .technology-2__subheader {
+      .technology-3__subheader {
         font-size: 22px;
         margin: 20px auto; } }
-  .technology-2__liposomal {
+  .technology-3__liposomal {
     width: 400px;
     text-align: right;
     right: 322px;
     top: 62px; }
     @media (max-width: 1199px) {
-      .technology-2__liposomal {
+      .technology-3__liposomal {
         width: 250px;
         right: 248px;
         top: 48px; } }
     @media (max-width: 767px) {
-      .technology-2__liposomal {
+      .technology-3__liposomal {
         text-align: center; } }
-    .technology-2__liposomal img {
+    .technology-3__liposomal img {
       position: absolute;
       margin-left: 30px;
       -webkit-animation: cw-rotation 6s infinite ease-in-out;
@@ -5931,22 +6003,22 @@ p {
   to {
     transform: rotate(360deg); } }
       @media (max-width: 767px) {
-        .technology-2__liposomal img {
+        .technology-3__liposomal img {
           position: initial; } }
-  .technology-2__pepper {
+  .technology-3__pepper {
     width: 400px;
     text-align: left;
     left: 356px;
     top: -25px; }
     @media (max-width: 1199px) {
-      .technology-2__pepper {
+      .technology-3__pepper {
         width: 250px;
         left: 280px;
         top: -13px; } }
     @media (max-width: 767px) {
-      .technology-2__pepper {
+      .technology-3__pepper {
         text-align: center; } }
-    .technology-2__pepper img {
+    .technology-3__pepper img {
       position: absolute;
       right: 100%;
       margin-right: 30px;
@@ -5963,13 +6035,13 @@ p {
   to {
     transform: rotate(0deg); } }
       @media (max-width: 767px) {
-        .technology-2__pepper img {
+        .technology-3__pepper img {
           position: initial; } }
-  .technology-2__extraction {
+  .technology-3__extraction {
     max-width: 700px;
     text-align: center;
     top: -79px; }
-    .technology-2__extraction img {
+    .technology-3__extraction img {
       margin-bottom: 20px;
       -webkit-animation: cw-rotation 6s infinite ease-in-out;
       -moz-animation: cw-rotation 6s infinite ease-in-out;
@@ -5983,39 +6055,39 @@ p {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
-  .technology-2__extraction, .technology-2__liposomal, .technology-2__pepper {
+  .technology-3__extraction, .technology-3__liposomal, .technology-3__pepper {
     margin: 0 auto;
     position: relative; }
     @media (max-width: 767px) {
-      .technology-2__extraction, .technology-2__liposomal, .technology-2__pepper {
+      .technology-3__extraction, .technology-3__liposomal, .technology-3__pepper {
         position: initial; } }
-    .technology-2__extraction img, .technology-2__liposomal img, .technology-2__pepper img {
+    .technology-3__extraction img, .technology-3__liposomal img, .technology-3__pepper img {
       height: 120px; }
       @media (max-width: 767px) {
-        .technology-2__extraction img, .technology-2__liposomal img, .technology-2__pepper img {
+        .technology-3__extraction img, .technology-3__liposomal img, .technology-3__pepper img {
           height: 100px;
           margin: 20px; } }
-  .technology-2__title {
+  .technology-3__title {
     font-weight: 700;
     font-size: 40px;
     line-height: initial;
     margin-bottom: 10px; }
     @media (max-width: 1199px) {
-      .technology-2__title {
+      .technology-3__title {
         font-size: 30px; } }
-  .technology-2__copy {
+  .technology-3__copy {
     font-weight: 500;
     font-size: 30px;
     opacity: 0.7;
     line-height: initial; }
     @media (max-width: 1199px) {
-      .technology-2__copy {
+      .technology-3__copy {
         font-size: 24px; } }
-  .technology-2__image {
+  .technology-3__image {
     max-width: 430px;
     margin: 0 auto; }
     @media (max-width: 767px) {
-      .technology-2__image {
+      .technology-3__image {
         margin-top: 40px;
         max-width: 90%; } }
 
@@ -6118,7 +6190,7 @@ p {
   padding-top: 60px;
   text-align: center;
   font-size: 0; }
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     .ingredients-2 {
       padding-top: 40px; } }
   .ingredients-2__title {
@@ -6131,7 +6203,7 @@ p {
   .ingredients-2__details {
     font-size: 0;
     padding: 0 60px; }
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
       .ingredients-2__details {
         padding: 0 20px; } }
   .ingredients-2__item-box {
@@ -6169,6 +6241,9 @@ p {
     padding: 20px;
     background: #fef7e5;
     text-align: center; }
+    @media (max-width: 1199px) {
+      .ingredients-2__facts {
+        width: 60%; } }
     @media (max-width: 767px) {
       .ingredients-2__facts {
         padding: 10px;
@@ -6182,6 +6257,9 @@ p {
     vertical-align: middle;
     width: 33.33%;
     text-align: left; }
+    @media (max-width: 1199px) {
+      .ingredients-2__icons {
+        width: 40%; } }
     @media (max-width: 767px) {
       .ingredients-2__icons {
         display: block;
@@ -6191,6 +6269,9 @@ p {
     text-align: left;
     width: fit-content;
     margin: 30px auto; }
+    @media (max-width: 1199px) {
+      .ingredients-2__icon-box {
+        margin: 20px auto; } }
   .ingredients-2__icon {
     display: inline-block;
     width: 60px;
@@ -7376,12 +7457,13 @@ input:checked + .accordion-horizontal__inner-box {
   .rating-new__stars {
     display: inline-block;
     background: #ffffff;
-    padding: 10px 30px 5px;
+    padding: 10px 25px;
     border-radius: 50px;
+    font-size: 0;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05); }
     .rating-new__stars #rating-new__star {
       height: 32px;
-      margin: 0 2px; }
+      margin: 0 4px; }
       @media (max-width: 767px) {
         .rating-new__stars #rating-new__star {
           height: 28px; } }
@@ -7503,6 +7585,9 @@ input:checked + .accordion-horizontal__inner-box {
   padding: 60px 0;
   -webkit-animation: slide 60s linear infinite;
   text-align: center; }
+  @media (max-width: 1199px) {
+    .instagram-slider {
+      padding: 40px 0; } }
   @media (max-width: 854px) {
     .instagram-slider {
       padding: 40px 20px; } }
@@ -7856,9 +7941,40 @@ input:checked + .accordion-horizontal__inner-box {
 .gold-capsules a.anchor {
   top: -60px; }
 
-@media (max-width: 767px) {
-  .gold-capsules .atf__copy {
-    padding: 30px 20px; } }
+.gold-capsules .atf__video {
+  width: 40%; }
+
+.gold-capsules .atf__copy {
+  font-size: 0;
+  padding: 30px 0 30px 40px; }
+  @media (max-width: 767px) {
+    .gold-capsules .atf__copy {
+      padding: 30px 20px; } }
+
+.gold-capsules .atf__content {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle; }
+  @media (max-width: 1599px) {
+    .gold-capsules .atf__content {
+      width: 70%; } }
+  @media (max-width: 680px) {
+    .gold-capsules .atf__content {
+      width: 100%; } }
+
+.gold-capsules .atf__hero-image {
+  width: 40%;
+  display: inline-block;
+  padding-left: 20px; }
+  @media (max-width: 1599px) {
+    .gold-capsules .atf__hero-image {
+      width: 30%; } }
+  @media (max-width: 680px) {
+    .gold-capsules .atf__hero-image {
+      padding: 20px 0 0;
+      width: 100%; } }
+  .gold-capsules .atf__hero-image img {
+    max-width: 250px; }
 
 .gold-capsules .atf__header {
   font-size: 60px;
@@ -7874,10 +7990,13 @@ input:checked + .accordion-horizontal__inner-box {
       font-size: 30px; } }
 
 .gold-capsules .hero-cta {
+  background: linear-gradient(0deg, #ffffff 35%, #F3EEE7 35%);
   padding: 40px 60px 60px;
+  margin-top: 20px;
   text-align: center; }
   @media (max-width: 767px) {
     .gold-capsules .hero-cta {
+      background: linear-gradient(0deg, #faf7f3 35%, #F3EEE7 35%);
       padding: 20px 20px 40px; } }
   .gold-capsules .hero-cta__header {
     font-weight: 700;
@@ -7890,14 +8009,10 @@ input:checked + .accordion-horizontal__inner-box {
     width: 100%;
     max-width: 450px;
     display: block;
-    margin: 0 auto 60px; }
-    @media (max-width: 767px) {
-      .gold-capsules .hero-cta img {
-        margin-bottom: 40px; } }
+    margin: 0 auto 40px; }
   .gold-capsules .hero-cta .a--cta {
     font-size: 18px;
     padding: 20px 35px;
-    margin-bottom: 10px;
     background-color: #39447C;
     border-radius: 40px; }
 
@@ -7905,6 +8020,9 @@ input:checked + .accordion-horizontal__inner-box {
   background: #f4f4f5;
   padding: 60px 60px 20px;
   font-size: 0; }
+  @media (max-width: 1199px) {
+    .gold-capsules .research {
+      padding: 40px 20px 0; } }
   @media (max-width: 767px) {
     .gold-capsules .research {
       display: none; } }
@@ -7914,7 +8032,8 @@ input:checked + .accordion-horizontal__inner-box {
     opacity: 0.6;
     text-align: center;
     max-width: 800px;
-    margin: 0 auto 25px; }
+    margin: 0 auto 25px;
+    padding: 0 40px; }
   .gold-capsules .research__point {
     width: 50%;
     display: inline-block;
@@ -7924,6 +8043,9 @@ input:checked + .accordion-horizontal__inner-box {
     font-weight: 700;
     font-size: 50px;
     line-height: initial; }
+    @media (max-width: 1199px) {
+      .gold-capsules .research__header {
+        font-size: 40px; } }
   .gold-capsules .research__copy {
     font-weight: 500;
     font-size: 24px;
@@ -7931,14 +8053,19 @@ input:checked + .accordion-horizontal__inner-box {
 
 .gold-capsules .references {
   text-align: center; }
+  @media (max-width: 1199px) {
+    .gold-capsules .references {
+      padding-bottom: 20px; } }
   .gold-capsules .references__title {
     padding-top: 60px;
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 20px; }
+    @media (max-width: 1199px) {
+      .gold-capsules .references__title {
+        padding-top: 40px; } }
     @media (max-width: 767px) {
       .gold-capsules .references__title {
-        padding-top: 0;
         font-size: 25px; } }
 
 .genesis-lp .a--cta {
