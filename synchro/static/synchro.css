@@ -5861,7 +5861,7 @@ p {
 
 .technology-2 {
   background: url("https://cdn.besynchro.com/gold/capsules/technology-bg.jpg");
-  padding: 60px;
+  padding: 60px 40px 60px 60px;
   margin: 20px;
   font-size: 0;
   background-size: cover; }
@@ -5878,13 +5878,13 @@ p {
       padding: 40px 20px 20px; } }
   .technology-2__image {
     width: 100%;
-    max-width: 300px; }
+    max-width: 260px; }
     @media (max-width: 1199px) {
       .technology-2__image {
         margin-bottom: 30px; } }
   .technology-2__content {
     display: inline-block;
-    width: calc(100% - 300px);
+    width: calc(100% - 260px);
     vertical-align: middle;
     padding-left: 60px; }
     @media (max-width: 1199px) {
@@ -7978,7 +7978,7 @@ input:checked + .accordion-horizontal__inner-box {
       padding: 20px 0 0;
       width: 100%; } }
   .gold-capsules .atf__hero-image img {
-    max-width: 280px; }
+    max-width: 250px; }
 
 .gold-capsules .atf__header {
   font-size: 60px;

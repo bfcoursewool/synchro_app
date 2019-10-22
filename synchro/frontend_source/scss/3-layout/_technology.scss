@@ -128,7 +128,7 @@
 
 .technology-2 {
   background: url("https://cdn.besynchro.com/gold/capsules/technology-bg.jpg");
-  padding: $gutter-large;
+  padding: $gutter-large $gutter-medium $gutter-large $gutter-large;
   margin: $gutter-small;
   font-size: 0;
   background-size: cover;
@@ -146,7 +146,7 @@
 
   &__image {
     width: 100%;
-    max-width: 300px;
+    max-width: 260px;
     @include m-screen {
       margin-bottom: 30px;
     }
@@ -154,7 +154,7 @@
 
   &__content {
     display: inline-block;
-    width: calc(100% - 300px);
+    width: calc(100% - 260px);
     vertical-align: middle;
     padding-left: $gutter-large;
     @include m-screen {
