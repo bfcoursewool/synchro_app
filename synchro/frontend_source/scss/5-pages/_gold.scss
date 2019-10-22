@@ -415,10 +415,6 @@
       @include s-screen {
         padding: 30px $gutter-small;
       }
-      @include xs-screen {
-        height: 800px;
-        overflow: hidden;
-      }
     }
 
     &__content {

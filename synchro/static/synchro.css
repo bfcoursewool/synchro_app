@@ -7950,10 +7950,6 @@ input:checked + .accordion-horizontal__inner-box {
   @media (max-width: 767px) {
     .gold-capsules .atf__copy {
       padding: 30px 20px; } }
-  @media (max-width: 680px) {
-    .gold-capsules .atf__copy {
-      height: 800px;
-      overflow: hidden; } }
 
 .gold-capsules .atf__content {
   width: 50%;
