@@ -4904,7 +4904,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   from {
     background-position: 0 0; }
   to {
-    background-position: -1000px 0; } }
+    background-position: -300000px 0; } }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -6460,6 +6460,9 @@ p {
   .purchase-2__images {
     width: 50%;
     padding: 40px 60px; }
+    @media (max-width: 1199px) {
+      .purchase-2__images {
+        padding: 40px; } }
     @media (max-width: 854px) {
       .purchase-2__images {
         width: 100%;
@@ -6501,25 +6504,29 @@ p {
   .purchase-2__details {
     width: 50%;
     padding: 40px 60px; }
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
+      .purchase-2__details {
+        padding: 40px; } }
+    @media (max-width: 854px) {
       .purchase-2__details {
         width: 100%;
         text-align: center;
-        padding: 20px 0 10px;
+        padding: 20px 0;
         background: #FAF7F3; } }
   .purchase-2__name {
     font-weight: 500;
     font-size: 22px;
     opacity: 0.5; }
-    @media (max-width: 767px) {
+    @media (max-width: 854px) {
       .purchase-2__name {
         font-size: 20px;
         margin: 0 20px 10px; } }
   .purchase-2__quantity {
     font-weight: 700;
     font-size: 35px;
-    display: none; }
-    @media (max-width: 767px) {
+    display: none;
+    line-height: initial; }
+    @media (max-width: 854px) {
       .purchase-2__quantity {
         font-size: 24px;
         margin: 10px 20px; } }
@@ -6527,25 +6534,24 @@ p {
     width: 100%;
     height: 2px;
     background: #ffffff;
-    margin: 20px 0; }
-    @media (max-width: 767px) {
+    margin: 10px 0; }
+    @media (max-width: 854px) {
       .purchase-2__hr {
         display: none; } }
   .purchase-2__price-box {
     display: none; }
-    @media (max-width: 767px) {
+    @media (max-width: 854px) {
       .purchase-2__price-box {
         margin: 0 20px; } }
   .purchase-2__price {
     font-weight: 700;
     font-size: 25px;
     display: inline-block;
-    margin: 0 10px 0 0;
+    margin: 10px 10px 10px 0;
     vertical-align: middle; }
     @media (max-width: 767px) {
       .purchase-2__price {
-        display: block;
-        margin: 10px 0; } }
+        display: block; } }
     .purchase-2__price span {
       color: #B2B2B2;
       text-decoration: line-through;
@@ -6557,7 +6563,7 @@ p {
     letter-spacing: 1px;
     text-transform: uppercase;
     display: inline-block;
-    margin: 0;
+    margin: 10px 0;
     vertical-align: middle; }
     .purchase-2__offer span {
       background: #76BB73;
@@ -6570,39 +6576,41 @@ p {
     font-weight: 700;
     font-size: 20px;
     padding: 10px 35px;
-    margin-top: 30px;
+    margin: 10px 0 20px;
     background-color: #39447C;
     border-radius: 40px;
     text-align: center; }
-    @media (max-width: 767px) {
-      .purchase-2 .a--cta {
-        margin: 15px 0; } }
   .purchase-2__options-title {
     font-weight: 500;
-    font-size: 24px; }
+    font-size: 22px; }
     @media (max-width: 767px) {
       .purchase-2__options-title {
         font-size: 20px;
         margin: 0; } }
   .purchase-2__options {
-    background: #ffffff;
-    padding: 10px;
-    margin: 10px 0; }
+    margin-top: 20px;
+    cursor: pointer; }
     @media (max-width: 767px) {
       .purchase-2__options {
         margin: 10px 0 0; } }
     .purchase-2__options img {
       width: 80px;
+      background: #ffffff;
       display: inline-block;
-      vertical-align: middle; }
+      vertical-align: middle;
+      padding: 10px;
+      border-radius: 25px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); }
+      .purchase-2__options img:hover {
+        box-shadow: none; }
   .purchase-2__options-details {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px; }
+    margin-left: 20px;
+    text-align: left; }
     @media (max-width: 767px) {
       .purchase-2__options-details {
-        margin: 0;
-        text-align: left; } }
+        margin-left: 15px; } }
   .purchase-2__options-quantity {
     font-weight: 700;
     font-size: 22px;
@@ -7583,7 +7591,7 @@ input:checked + .accordion-horizontal__inner-box {
   background: url("https://cdn.besynchro.com/gold/capsules/testimonial-bg%402x.png") repeat 0 0;
   background-size: contain;
   padding: 60px 0;
-  -webkit-animation: slide 60s linear infinite;
+  -webkit-animation: slide 10000s linear infinite;
   text-align: center; }
   @media (max-width: 1199px) {
     .instagram-slider {
