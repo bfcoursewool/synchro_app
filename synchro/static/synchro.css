@@ -8089,6 +8089,9 @@ input:checked + .accordion-horizontal__inner-box {
       .gold-capsules .references__title {
         font-size: 25px; } }
 
+.genesis-lp .main-header {
+  background: #ffffff; }
+
 .genesis-lp .a--cta {
   background: #5da8a6; }
 
@@ -8131,10 +8134,16 @@ input:checked + .accordion-horizontal__inner-box {
   max-width: 1600px;
   margin: 0 auto; }
   .genesis-lp .benefits__icon {
-    height: 80px; }
+    height: 100px; }
     @media (max-width: 767px) {
       .genesis-lp .benefits__icon {
         height: 60px; } }
+  .genesis-lp .benefits__header {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: initial;
+    text-transform: none;
+    letter-spacing: 0; }
   .genesis-lp .benefits__point {
     margin-bottom: 25px; }
     @media (max-width: 1199px) {
@@ -8210,19 +8219,16 @@ input:checked + .accordion-horizontal__inner-box {
   text-align: center;
   background: url("https://cdn.besynchro.com/genesis/v2-0/bg-pattern-genesis.jpg") center;
   background-size: cover;
-  padding: 60px; }
-  @media (max-width: 854px) {
-    .genesis-lp .facts__genesis {
-      padding: 40px; } }
+  padding: 40px; }
   @media (max-width: 767px) {
     .genesis-lp .facts__genesis {
       padding: 20px; } }
   .genesis-lp .facts__genesis img {
-    max-height: 685px;
+    max-height: 500px;
     max-width: 100%; }
 
 .genesis-lp .directions__genesis {
-  padding: 60px 60px 0; }
+  padding: 60px; }
   @media (max-width: 1199px) {
     .genesis-lp .directions__genesis {
       padding: 20px 20px 0; } }

@@ -1,4 +1,8 @@
 .genesis-lp {
+  .main-header {
+    background: $color-ivory;
+  }
+
   .a--cta {
     background: $color-genesis;
   }
@@ -50,10 +54,18 @@
     margin: 0 auto;
 
     &__icon {
-      height: 80px;
+      height: 100px;
       @include s-screen {
         height: 60px;
       }
+    }
+
+    &__header {
+      font-weight: $font-demi;
+      font-size: 24px;
+      line-height: initial;
+      text-transform: none;
+      letter-spacing: 0;
     }
 
     &__point {
@@ -150,16 +162,13 @@
       text-align: center;
       background: url("https://cdn.besynchro.com/genesis/v2-0/bg-pattern-genesis.jpg") center;
       background-size: cover;
-      padding: $gutter-large;
-      @include sm-screen {
-        padding: $gutter-medium;
-      }
+      padding: $gutter-medium;
       @include s-screen {
         padding: $gutter-small;
       }
 
       img {
-        max-height: 685px;
+        max-height: 500px;
         max-width: 100%;
       }
     }
@@ -167,7 +176,7 @@
 
   .directions {
     &__genesis {
-      padding: $gutter-large $gutter-large 0;
+      padding: $gutter-large;
       @include m-screen {
         padding: $gutter-small $gutter-small 0;
       }
