@@ -7641,7 +7641,7 @@ input:checked + .accordion-horizontal__inner-box {
       .instagram-slider__name {
         font-size: 20px; } }
   .instagram-slider__quote {
-    margin: 20px 0 15px;
+    margin: 15px 0;
     line-height: initial;
     font-weight: 600;
     font-size: 34px; }
@@ -7977,7 +7977,7 @@ input:checked + .accordion-horizontal__inner-box {
       width: 100%; } }
 
 .gold-capsules .atf__hero-image {
-  background: url("https://cdn.besynchro.com/gold/capsules/product-tiles-gold-cap%402x.png");
+  background-image: url("https://cdn.besynchro.com/gold/capsules/product-tiles-gold-cap%402x.png");
   display: table-cell;
   background-size: cover;
   width: 25%; }
@@ -10112,5 +10112,10 @@ svg.external {
   }
 }
 */
+.go010-01 .atf__hero-image {
+  background-image: url("https://cdn.besynchro.com/experiments/go010-gold-OG-product-tiles%402x.png"); }
+
+.go010-01 .instagram-slider {
+  background-image: url("https://cdn.besynchro.com/experiments/go010-technology-bg.jpg"); }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
