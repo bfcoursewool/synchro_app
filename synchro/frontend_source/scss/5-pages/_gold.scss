@@ -405,44 +405,51 @@
   }
 
   .atf {
+    @include sm-screen {
+      display: block;
+    }
+
     &__video {
-      width: 40%;
+      overflow: hidden;
+      width: 25%;
+      transition: all 0.3s ease-in-out;
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-video%402x.jpg");
+      background-position: center;
+
+      &:hover {
+        width: 50%;
+      }
     }
 
     &__copy {
       font-size: 0;
-      padding: 30px 0 30px 40px;
+      padding: 30px $gutter-medium;
       @include s-screen {
         padding: 30px $gutter-small;
       }
     }
 
     &__content {
-      width: 50%;
       display: inline-block;
       vertical-align: middle;
-      @include l-screen {
-        width: 70%;
-      }
       @include xs-screen {
         width: 100%;
       }
     }
 
     &__hero-image {
-      width: 40%;
-      display: inline-block;
-      padding-left: 20px;
-      @include l-screen {
-        width: 30%;
+      background: url("https://cdn.besynchro.com/gold/capsules/product-tiles-gold-cap%402x.png");
+      display: table-cell;
+      background-size: cover;
+      width: 25%;
+      @include sm-screen {
+        height: 200px;
+        width: 100%;
+        display: block;
       }
       @include xs-screen {
         padding: 20px 0 0;
         width: 100%;
-      }
-
-      img {
-        max-width: 250px;
       }
     }
 
@@ -458,6 +465,14 @@
       font-size: 35px;
       @include s-screen {
         font-size: 30px;
+      }
+    }
+
+    &__video-mobile {
+      @include sm-screen {
+        margin: 20px;
+        border-radius: 20px;
+        overflow: hidden;
       }
     }
   }

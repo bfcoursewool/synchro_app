@@ -7625,9 +7625,9 @@ input:checked + .accordion-horizontal__inner-box {
         display: block; } }
   .instagram-slider__profile img {
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 22px;
     vertical-align: middle;
     margin-right: 15px; }
   .instagram-slider__name {
@@ -7641,10 +7641,10 @@ input:checked + .accordion-horizontal__inner-box {
       .instagram-slider__name {
         font-size: 20px; } }
   .instagram-slider__quote {
-    margin: 15px 0;
+    margin: 20px 0 15px;
     line-height: initial;
     font-weight: 600;
-    font-size: 35px; }
+    font-size: 34px; }
     @media (max-width: 854px) {
       .instagram-slider__quote {
         font-size: 26px; } }
@@ -7949,40 +7949,47 @@ input:checked + .accordion-horizontal__inner-box {
 .gold-capsules a.anchor {
   top: -60px; }
 
+@media (max-width: 854px) {
+  .gold-capsules .atf {
+    display: block; } }
+
 .gold-capsules .atf__video {
-  width: 40%; }
+  overflow: hidden;
+  width: 25%;
+  transition: all 0.3s ease-in-out;
+  background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-video%402x.jpg");
+  background-position: center; }
+  .gold-capsules .atf__video:hover {
+    width: 50%; }
 
 .gold-capsules .atf__copy {
   font-size: 0;
-  padding: 30px 0 30px 40px; }
+  padding: 30px 40px; }
   @media (max-width: 767px) {
     .gold-capsules .atf__copy {
       padding: 30px 20px; } }
 
 .gold-capsules .atf__content {
-  width: 50%;
   display: inline-block;
   vertical-align: middle; }
-  @media (max-width: 1599px) {
-    .gold-capsules .atf__content {
-      width: 70%; } }
   @media (max-width: 680px) {
     .gold-capsules .atf__content {
       width: 100%; } }
 
 .gold-capsules .atf__hero-image {
-  width: 40%;
-  display: inline-block;
-  padding-left: 20px; }
-  @media (max-width: 1599px) {
+  background: url("https://cdn.besynchro.com/gold/capsules/product-tiles-gold-cap%402x.png");
+  display: table-cell;
+  background-size: cover;
+  width: 25%; }
+  @media (max-width: 854px) {
     .gold-capsules .atf__hero-image {
-      width: 30%; } }
+      height: 200px;
+      width: 100%;
+      display: block; } }
   @media (max-width: 680px) {
     .gold-capsules .atf__hero-image {
       padding: 20px 0 0;
       width: 100%; } }
-  .gold-capsules .atf__hero-image img {
-    max-width: 250px; }
 
 .gold-capsules .atf__header {
   font-size: 60px;
@@ -7996,6 +8003,12 @@ input:checked + .accordion-horizontal__inner-box {
   @media (max-width: 767px) {
     .gold-capsules .atf__subheader {
       font-size: 30px; } }
+
+@media (max-width: 854px) {
+  .gold-capsules .atf__video-mobile {
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden; } }
 
 .gold-capsules .hero-cta {
   background: linear-gradient(0deg, #ffffff 35%, #F3EEE7 35%);
