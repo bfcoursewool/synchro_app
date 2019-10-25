@@ -5220,7 +5220,8 @@ body {
   color: #000000;
   margin: 0 auto;
   max-width: 2000px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden; }
 
 a {
   text-decoration: none;
@@ -5930,6 +5931,19 @@ p {
     font-size: 26px;
     opacity: 0.5;
     line-height: initial; }
+  .technology-2 .a--cta {
+    display: none; }
+    @media (max-width: 767px) {
+      .technology-2 .a--cta {
+        display: inline-block;
+        font-size: 18px;
+        padding: 20px 35px;
+        margin: 20px 0 0;
+        background-color: #39447C;
+        border-radius: 40px; } }
+    @media (max-width: 680px) {
+      .technology-2 .a--cta {
+        margin: 20px 0 15px; } }
 
 .technology-3 {
   background: linear-gradient(0deg, #F3EEE7 15%, #FAF7F3 15%);
@@ -6235,8 +6249,11 @@ p {
     font-weight: 500;
     font-size: 24px;
     opacity: 0.5; }
+  .ingredients-2__info {
+    display: table;
+    width: 100%; }
   .ingredients-2__facts {
-    display: inline-block;
+    display: table-cell;
     width: 66.66%;
     padding: 20px;
     background: #fef7e5;
@@ -6253,7 +6270,8 @@ p {
       max-height: 500px;
       max-width: 100%; }
   .ingredients-2__icons {
-    display: inline-block;
+    display: table-cell;
+    background: #fafafa;
     vertical-align: middle;
     width: 33.33%;
     text-align: left; }
@@ -7460,7 +7478,6 @@ input:checked + .accordion-horizontal__inner-box {
       content: "200+"; }
 
 .rating-new {
-  margin: 20px 0;
   text-align: center; }
   .rating-new__stars {
     display: inline-block;
@@ -7964,7 +7981,7 @@ input:checked + .accordion-horizontal__inner-box {
 
 .gold-capsules .atf__copy {
   font-size: 0;
-  padding: 30px 40px; }
+  padding: 40px; }
   @media (max-width: 767px) {
     .gold-capsules .atf__copy {
       padding: 30px 20px; } }
@@ -7993,22 +8010,29 @@ input:checked + .accordion-horizontal__inner-box {
 
 .gold-capsules .atf__header {
   font-size: 60px;
-  font-weight: 700; }
+  font-weight: 700;
+  margin: 20px 0; }
   @media (max-width: 767px) {
     .gold-capsules .atf__header {
-      font-size: 45px; } }
+      margin: 10px 0;
+      font-size: 40px; } }
 
 .gold-capsules .atf__subheader {
-  font-size: 35px; }
+  font-size: 35px;
+  margin: 20px auto; }
   @media (max-width: 767px) {
     .gold-capsules .atf__subheader {
-      font-size: 30px; } }
+      margin-top: 10px;
+      font-size: 28px; } }
 
 @media (max-width: 854px) {
   .gold-capsules .atf__video-mobile {
     margin: 20px;
     border-radius: 20px;
     overflow: hidden; } }
+
+.gold-capsules .atf .a--cta {
+  margin: 0; }
 
 .gold-capsules .hero-cta {
   background: linear-gradient(0deg, #ffffff 35%, #F3EEE7 35%);
@@ -10119,7 +10143,20 @@ svg.external {
 }
 */
 .go010-01 .atf__hero-image {
-  background-image: url("https://cdn.besynchro.com/experiments/go010-gold-OG-product-tiles%402x.png"); }
+  background-image: url("https://cdn.besynchro.com/experiments/go010-gold-OG-product-atf%402x.jpg");
+  background-position: center; }
+
+.go010-01 .atf .a--cta {
+  background-color: #743e3e;
+  border-radius: 8px;
+  box-shadow: 0 3px 0 0 #fff;
+  position: relative;
+  top: -3px; }
+  .go010-01 .atf .a--cta:hover {
+    opacity: 1; }
+  .go010-01 .atf .a--cta:active {
+    top: 0;
+    box-shadow: none; }
 
 .go010-01 .instagram-slider {
   background-image: url("https://cdn.besynchro.com/experiments/go010-technology-bg.jpg"); }

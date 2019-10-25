@@ -423,7 +423,7 @@
 
     &__copy {
       font-size: 0;
-      padding: 30px $gutter-medium;
+      padding: $gutter-medium;
       @include s-screen {
         padding: 30px $gutter-small;
       }
@@ -456,15 +456,19 @@
     &__header {
       font-size: 60px;
       font-weight: $font-bold;
+      margin: $gutter-small 0;
       @include s-screen {
-        font-size: 45px;
+        margin: 10px 0;
+        font-size: 40px;
       }
     }
 
     &__subheader {
       font-size: 35px;
+      margin: $gutter-small auto;
       @include s-screen {
-        font-size: 30px;
+        margin-top: 10px;
+        font-size: 28px;
       }
     }
 
@@ -474,6 +478,10 @@
         border-radius: 20px;
         overflow: hidden;
       }
+    }
+
+    .a--cta {
+      margin: 0;
     }
   }
 

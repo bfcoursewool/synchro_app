@@ -219,6 +219,21 @@
     opacity: 0.5;
     line-height: initial;
   }
+
+  .a--cta {
+    display: none;
+    @include s-screen {
+      display: inline-block;
+      font-size: 18px;
+      padding: 20px 35px;
+      margin: 20px 0 0;
+      background-color: #39447C;
+      border-radius: 40px;
+    }
+    @include xs-screen {
+    margin: 20px 0 15px;
+  }
+  }
 }
 
 .technology-3 {
