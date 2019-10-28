@@ -1,4 +1,8 @@
 .genesis-lp {
+  .main-header {
+    background: $color-ivory;
+  }
+
   .a--cta {
     background: $color-genesis;
   }
@@ -13,34 +17,82 @@
   }
 
   .atf {
-    &.bg-full-width {
-      background-image: url("https://cdn.besynchro.com/genesis/v2-0/atf-image-genesis.jpg");
-      max-height: none;
+    display: table;
+    width: 100%;
+    min-height: 75vh;
+
+    &__copy {
+      width: 50%;
+      display: table-cell;
+      background-image: linear-gradient(90deg, #5da8a6, #67cecb);
+      text-align: center;
+      padding: $gutter-small $gutter-medium $gutter-medium;
+      vertical-align: middle;
       @include sm-screen {
-        background-image: url("https://cdn.besynchro.com/genesis/v2-0/atf-image-small-genesis.jpg");
-        background-position: center;
-        min-height: 580px;
+        width: 100%;
+        display: block;
+      }
+      @include s-screen {
+        padding: 30px $gutter-small;
       }
     }
 
+    &__content {
+      display: inline-block;
+    }
+
     &__header {
-      transform: translate(-100%, -50%);
-      max-width: 550px;
-      font-size: 50px;
-      @include m-screen {
-        transform: translate(0, -50%);
-        max-width: 50%;
-        left: 5%;
-      }
-      @include sm-screen {
-        position: initial;
-        transform: none;
-        padding-top: 70px;
+      position: initial;
+      transform: none;
+      font-size: 60px;
+      letter-spacing: 1.5px;
+      color: $color-ivory;
+      width: auto;
+      max-width: 600px;
+      line-height: initial;
+      font-weight: $font-bold;
+      margin: $gutter-small 0;
+      @include s-screen {
+        max-width: 440px;
+        margin: 10px 0;
         font-size: 40px;
-        max-width: none;
+      }
+    }
+
+    &__subheader {
+      font-size: 35px;
+      color: $color-ivory;
+      margin: $gutter-small auto;
+      line-height: 1.4;
+      max-width: 450px;
+      @include s-screen {
+        margin-top: 10px;
+        font-size: 28px;
+      }
+    }
+
+    .a--cta {
+      font-size: 18px;
+      padding: 16px 35px;
+      margin: 0;
+      background-color: #073130;
+      border-radius: 40px;
+    }
+
+    &__hero-image {
+      background-image: url("https://cdn.besynchro.com/genesis/v3-0/atf-genesis%402x.png");
+      display: table-cell;
+      background-size: cover;
+      width: 25%;
+      background-position: center;
+      @include sm-screen {
+        height: 200px;
+        width: 100%;
+        display: block;
       }
       @include xs-screen {
-        max-width: 370px;
+        padding: 20px 0 0;
+        width: 100%;
       }
     }
   }
@@ -48,16 +100,28 @@
   .benefits {
     max-width: 1600px;
     margin: 0 auto;
+    padding: $gutter-medium $gutter-medium $gutter-small;
+    @include s-screen {
+      padding: $gutter-medium $gutter-small $gutter-small;
+    }
 
     &__icon {
-      height: 80px;
+      height: 100px;
       @include s-screen {
-        height: 60px;
+        height: 70px;
       }
     }
 
+    &__header {
+      font-weight: $font-demi;
+      font-size: 24px;
+      line-height: initial;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+
     &__point {
-      margin-bottom: 25px;
+      margin-bottom: 0;
       @include m-screen {
         width: 25%;
       }
@@ -145,29 +209,52 @@
     }
   }
 
+  .ingredients-2 {
+    &__item-box {
+      width: 50%;
+      @include s-screen {
+        width: 100%;
+      }
+    }
+
+    &__facts {
+      background: url("https://cdn.besynchro.com/genesis/v2-0/bg-pattern-genesis.jpg") center;
+    }
+  }
+
   .facts {
     &__genesis {
       text-align: center;
       background: url("https://cdn.besynchro.com/genesis/v2-0/bg-pattern-genesis.jpg") center;
       background-size: cover;
-      padding: $gutter-large;
-      @include sm-screen {
-        padding: $gutter-medium;
-      }
+      padding: $gutter-medium;
       @include s-screen {
         padding: $gutter-small;
       }
 
       img {
-        max-height: 685px;
+        max-height: 500px;
         max-width: 100%;
       }
     }
   }
 
+  .instagram-slider {
+    &__profile {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &__quote {
+      font-size: 29px;
+    }
+  }
+
   .directions {
     &__genesis {
-      padding: $gutter-large $gutter-large 0;
+      padding: $gutter-large;
       @include m-screen {
         padding: $gutter-small $gutter-small 0;
       }

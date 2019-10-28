@@ -290,7 +290,7 @@
     }
   }
 }
-@mixin horizontal-slide ($speed: 60s) {
+@mixin horizontal-slide ($speed: 10000s) {
   -webkit-animation: slide $speed linear infinite;
 }
 @-webkit-keyframes slide {
@@ -299,6 +299,6 @@
   }
 
   to {
-    background-position: -1000px 0;
+    background-position: -300000px 0;
   }
 }

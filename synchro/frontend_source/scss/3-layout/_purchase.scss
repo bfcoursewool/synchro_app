@@ -187,6 +187,9 @@
   &__images {
     width: 50%;
     padding: $gutter-medium $gutter-large;
+    @include m-screen {
+      padding: $gutter-medium;
+    }
     @include sm-screen {
       width: 100%;
       padding: $gutter-small;
@@ -246,10 +249,13 @@
   &__details {
     width: 50%;
     padding: $gutter-medium $gutter-large;
-    @include s-screen {
+    @include m-screen {
+      padding: $gutter-medium;
+    }
+    @include sm-screen {
       width: 100%;
       text-align: center;
-      padding: $gutter-small 0 10px;
+      padding: $gutter-small 0;
       background: #FAF7F3;
     }
   }
@@ -258,7 +264,7 @@
     font-weight: $font-medium;
     font-size: 22px;
     opacity: 0.5;
-    @include s-screen {
+    @include sm-screen {
       font-size: 20px;
       margin: 0 $gutter-small 10px;
     }
@@ -268,7 +274,8 @@
     font-weight: $font-bold;
     font-size: 35px;
     display: none;
-    @include s-screen {
+    line-height: initial;
+    @include sm-screen {
       font-size: 24px;
       margin: 10px $gutter-small;
     }
@@ -278,15 +285,15 @@
     width: 100%;
     height: 2px;
     background: $color-ivory;
-    margin: 20px 0;
-    @include s-screen {
+    margin: 10px 0;
+    @include sm-screen {
       display: none;
     }
   }
 
   &__price-box {
     display: none;
-    @include s-screen {
+    @include sm-screen {
       margin: 0 $gutter-small;
     }
   }
@@ -295,11 +302,10 @@
     font-weight: $font-bold;
     font-size: 25px;
     display: inline-block;
-    margin: 0 10px 0 0;
+    margin: 10px 10px 10px 0;
     vertical-align: middle;
     @include s-screen {
       display: block;
-      margin: 10px 0;
     }
 
     span {
@@ -316,7 +322,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     display: inline-block;
-    margin: 0;
+    margin: 10px 0;
     vertical-align: middle;
 
     span {
@@ -333,18 +339,15 @@
     font-weight: $font-bold;
     font-size: 20px;
     padding: 10px 35px;
-    margin-top: 30px;
+    margin: 10px 0 20px;
     background-color: #39447C;
     border-radius: 40px;
     text-align: center;
-    @include s-screen {
-      margin: 15px 0;
-    }
   }
 
   &__options-title {
     font-weight: $font-medium;
-    font-size: 24px;
+    font-size: 22px;
     @include s-screen {
       font-size: 20px;
       margin: 0;
@@ -352,27 +355,34 @@
   }
 
   &__options {
-    background: $color-ivory;
-    padding: 10px;
-    margin: 10px 0;
+    margin-top: 20px;
+    cursor: pointer;
     @include s-screen {
       margin: 10px 0 0;
     }
 
     img {
       width: 80px;
+      background: $color-ivory;
       display: inline-block;
       vertical-align: middle;
+      padding: 10px;
+      border-radius: 25px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+
+      &:hover {
+        box-shadow: none;
+      }
     }
   }
 
   &__options-details {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: $gutter-small;
+    text-align: left;
     @include s-screen {
-      margin: 0;
-      text-align: left;
+      margin-left: 15px;
     }
   }
 

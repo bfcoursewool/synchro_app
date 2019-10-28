@@ -1,1 +1,31 @@
 // STYLES FOR ONGOING EXPERIMENTS/TESTS
+
+.go010-01 {
+  .atf {
+    &__hero-image {
+      background-image: url("https://cdn.besynchro.com/experiments/go010-gold-OG-product-atf%402x.jpg");
+      background-position: center;
+    }
+
+    .a--cta {
+      background-color: #743e3e;
+      border-radius: 8px;
+      box-shadow: 0 3px 0 0 #fff;
+      position: relative;
+      top: -3px;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:active {
+        top: 0;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .instagram-slider {
+    background-image: url("https://cdn.besynchro.com/experiments/go010-technology-bg.jpg");
+  }
+}

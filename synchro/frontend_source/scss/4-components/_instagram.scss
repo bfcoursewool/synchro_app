@@ -132,9 +132,9 @@
   &__profile {
     img {
       display: inline-block;
-      width: 30px;
-      height: 30px;
-      border-radius: 15px;
+      width: 40px;
+      height: 40px;
+      border-radius: 22px;
       vertical-align: middle;
       margin-right: 15px;
     }
@@ -156,7 +156,7 @@
     margin: 15px 0;
     line-height: initial;
     font-weight: $font-demi;
-    font-size: 35px;
+    font-size: 34px;
     @include sm-screen {
       font-size: 26px;
     }
