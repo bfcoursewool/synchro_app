@@ -43,11 +43,13 @@ export default class LPEffects extends EventsBase {
   goldCapsulePurchaseSwap(target) {
     $('.purchase-2__options').each(function() { $(this).removeClass('selected') })
     $(target).addClass('selected')
-    $("div[class*='option-'],p[class*='option-'],input[class*='option-']").each(function() { $(this).removeClass('active') })
+    $("div[class*='option-'],p[class*='option-']").each(function() { $(this).removeClass('active') })
+    $("input[class*='option-']").each(function() { $(this).prop('checked', false) })
     let targetClasses = $(target).attr('class').split(/\s+/)
     $.each(targetClasses, function(index, item) {
       if(item.includes('option-')) {
-        $(`.${item}`).each(function() { $(this).addClass('active') })
+        $(`div[class*='${item}'],p[class*='${item}']`).each(function() { $(this).addClass('active') })
+        $(`input[class*='${item}']`).prop('checked', true)
       }
     })
   }
