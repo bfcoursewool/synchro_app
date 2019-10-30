@@ -10238,7 +10238,23 @@ svg.external {
     .go010-01 .benefits-2__copy:nth-child(3) {
       display: inline-block; } }
 
+.go010-01 .purchase-2 .yotpo {
+  display: inline-block !important; }
+  .go010-01 .purchase-2 .yotpo .text-m {
+    font-family: "futura-pt", "Open Sans", sans-serif !important;
+    line-height: 25px !important;
+    font-size: 16px !important;
+    margin-left: 15px !important;
+    opacity: 0.5 !important;
+    font-weight: 500 !important; }
+
+.go010-01 .purchase-2 .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-star {
+  font-size: 25px !important; }
+
 .go010-01 .instagram-slider {
   background-image: url("https://cdn.besynchro.com/experiments/go010-technology-bg.jpg"); }
 
-/*# sourceMappingURL=synchro.css.map*/
+.go010-01 .synchro-review {
+  padding-top: 40px; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

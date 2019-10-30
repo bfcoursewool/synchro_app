@@ -42,7 +42,30 @@
     }
   }
 
+  .purchase-2 {
+    .yotpo {
+      display: inline-block !important;
+
+      .text-m {
+        font-family: $font-primary !important;
+        line-height: 25px !important;
+        font-size: 16px !important;
+        margin-left: 15px !important;
+        opacity: 0.5 !important;
+        font-weight: $font-medium !important;
+      }
+    }
+
+    .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-star {
+      font-size: 25px !important;
+    }
+  }
+
   .instagram-slider {
     background-image: url("https://cdn.besynchro.com/experiments/go010-technology-bg.jpg");
+  }
+
+  .synchro-review {
+    padding-top: $gutter-medium;
   }
 }
