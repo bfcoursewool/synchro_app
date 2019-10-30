@@ -7700,6 +7700,8 @@ input:checked + .accordion-horizontal__inner-box {
     background: #eca846;
     color: white;
     display: none; }
+  .gold-lp .main-header.pseudo {
+    display: none; }
   .gold-lp .main-header.floated .a--cta {
     display: block; }
   .gold-lp .main-header__content {
