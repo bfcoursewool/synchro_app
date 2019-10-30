@@ -56,7 +56,8 @@
       }
     }
 
-    .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-star {
+    .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-star,
+    .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-half-star {
       font-size: 25px !important;
     }
   }
@@ -65,7 +66,7 @@
     background-image: url("https://cdn.besynchro.com/experiments/go010-technology-bg.jpg");
   }
 
-  .synchro-review {
+  .synchro-reviews {
     padding-top: $gutter-medium;
   }
 }
