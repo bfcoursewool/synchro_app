@@ -8056,7 +8056,7 @@ input:checked + .accordion-horizontal__inner-box {
   @media (max-width: 767px) {
     .gold-capsules .hero-cta {
       background: linear-gradient(0deg, #faf7f3 35%, #F3EEE7 35%);
-      padding: 20px 20px 40px; } }
+      padding: 40px 20px 40px; } }
   .gold-capsules .hero-cta__header {
     font-weight: 700;
     font-size: 50px;

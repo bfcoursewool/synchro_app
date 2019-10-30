@@ -514,7 +514,7 @@
     text-align: center;
     @include s-screen {
       background: linear-gradient(0deg, #faf7f3 35%, #F3EEE7 35%);
-      padding: $gutter-small $gutter-small $gutter-medium;
+      padding: $gutter-medium $gutter-small $gutter-medium;
     }
 
     &__header {
