@@ -250,7 +250,7 @@
     width: 50%;
     padding: $gutter-medium $gutter-large;
     @include m-screen {
-      padding: $gutter-medium;
+      padding: $gutter-medium 30px;
     }
     @include sm-screen {
       width: 100%;
@@ -355,10 +355,9 @@
   }
 
   &__options {
-    margin-top: 20px;
     cursor: pointer;
     @include s-screen {
-      margin: 20px;
+      margin: 0 20px;
     }
 
     img {
@@ -369,6 +368,7 @@
       padding: 10px;
       border-radius: 25px;
       box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+      margin: 10px 0;
 
       &:hover {
         box-shadow: none;
@@ -381,8 +381,12 @@
     vertical-align: middle;
     margin-left: $gutter-small;
     text-align: left;
+    @include m-screen {
+    margin-left: 10px;
+    }
     @include s-screen {
       margin-left: 15px;
+      text-align: center;
     }
   }
 
