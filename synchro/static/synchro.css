@@ -6623,7 +6623,7 @@ p {
     cursor: pointer; }
     @media (max-width: 767px) {
       .purchase-2__options {
-        margin: 10px 0 0; } }
+        margin: 20px; } }
     .purchase-2__options img {
       width: 80px;
       background: #ffffff;
