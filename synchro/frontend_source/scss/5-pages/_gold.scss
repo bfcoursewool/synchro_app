@@ -413,7 +413,7 @@
       overflow: hidden;
       width: 25%;
       transition: all 0.3s ease-in-out;
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-video%402x.jpg");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-video%402x.jpg");
       background-position: center;
 
       &:hover {
@@ -457,6 +457,7 @@
       font-size: 60px;
       font-weight: $font-bold;
       margin: $gutter-small 0;
+      letter-spacing: 0;
       @include s-screen {
         margin: 10px 0;
         font-size: 40px;
@@ -482,6 +483,21 @@
 
     .a--cta {
       margin: 0;
+    }
+  }
+
+  .faq {
+    &__title {
+      padding-top: $gutter-large;
+      font-weight: $font-bold;
+      font-size: 30px;
+      margin-bottom: 40px;
+      @include m-screen {
+        padding-top: $gutter-medium;
+      }
+      @include s-screen {
+        font-size: 25px;
+      }
     }
   }
 
@@ -549,11 +565,8 @@
 
     &__header {
       font-weight: $font-bold;
-      font-size: 50px;
+      font-size: 40px;
       line-height: initial;
-      @include m-screen {
-        font-size: 40px;
-      }
     }
 
     &__copy {

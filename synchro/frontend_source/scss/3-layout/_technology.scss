@@ -150,6 +150,9 @@
     @include m-screen {
       margin-bottom: 30px;
     }
+    @include s-screen {
+      max-width: 220px;
+    }
   }
 
   &__content {
@@ -177,6 +180,7 @@
     font-weight: $font-medium;
     font-size: 25px;
     opacity: 0.5;
+    color: #7F7F7F;
   }
 
   &__tech {
@@ -231,8 +235,8 @@
       border-radius: 40px;
     }
     @include xs-screen {
-    margin: 20px 0 15px;
-  }
+      margin: 20px 0 15px;
+    }
   }
 }
 

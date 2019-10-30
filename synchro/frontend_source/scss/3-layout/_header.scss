@@ -151,6 +151,12 @@
     &.pseudo {
       position: relative;
       visibility: hidden;
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
+      @include s-screen {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
     }
 
     &.floated {
@@ -233,11 +239,11 @@
       &__item {
         font-size: 18px;
         padding-right: 40px;
+        font-weight: $font-medium;
+        -webkit-font-smoothing: antialiased;
+        opacity: 0.5;
         @include m-screen {
-          padding-right: 20px;
-        }
-        @include sm-screen {
-          padding-right: 15px;
+          padding-right: 30px;
         }
         @include s-screen {
           display: block;
@@ -246,7 +252,7 @@
         }
 
         &:hover {
-          color: $color-gold;
+          color: #329DC3;
           transition: all 0.2s ease;
         }
       }
