@@ -5908,7 +5908,8 @@ p {
     font-weight: 700;
     font-size: 50px;
     text-transform: uppercase;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    margin-bottom: 20px; }
     @media (max-width: 767px) {
       .technology-2__header {
         font-size: 35px; } }
