@@ -8394,6 +8394,8 @@ input:checked + .accordion-horizontal__inner-box {
 
 .ketomanna-lp .main-header {
   position: initial; }
+  .ketomanna-lp .main-header.pseudo {
+    display: none; }
   .ketomanna-lp .main-header .a--cta {
     display: none; }
   .ketomanna-lp .main-header__content {
