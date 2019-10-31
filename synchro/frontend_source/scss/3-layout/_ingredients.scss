@@ -172,9 +172,7 @@
   &__header {
     font-weight: $font-bold;
     font-size: 30px;
-    @include s-screen {
-      margin: 20px 0;
-    }
+    margin: 20px 0;
 
     span {
       opacity: 0.5;
