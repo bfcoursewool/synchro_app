@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
   <head>
 
     {% block head %}
@@ -22,7 +21,7 @@
     <!-- Google Font - Open Sans -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <!-- Font - Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/aeb70e78d0.js" crossorigin="anonymous"></script>
 
     {% if kENV == 'production' %}
     <script type="text/javascript">
@@ -105,10 +104,6 @@
     </script>
     <!-- End Visual Website Optimizer Asynchronous Code -->
 
-    <!-- Bing Ads UET Javascript Tag -->
-    <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5858604"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5858604&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
-    <!-- Bing Ads UET Javascript Tag End -->
-
     <!-- Pinterest Tag -->
     <script>
     !function(e){if(!window.pintrk){window.pintrk = function () {
@@ -150,10 +145,10 @@
 
     {% endblock %}
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
-
     <script>
      var sd = 'https://synchrolife.ositracker.com';
      var resource = document.createElement('script');
@@ -176,6 +171,11 @@
     <script src="https://config.gorgias.io/production/3RBN0xMpRO749GJP/chat/z8QbV2PLbK2ogePy.js" defer></script>
     </div>
     <!-- Gorgias Chat Widget End -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
   </body>
 </html>
