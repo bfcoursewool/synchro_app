@@ -2,45 +2,11 @@
   overflow-x: hidden;
 
   .a--cta {
-    position: relative;
-    background: #073130 !important;
-    border-radius: 6px !important;
-    box-shadow: 0 3px 0 0 #fff;
-    top: 0;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    &:active {
-      top: 3px;
-      box-shadow: none;
-    }
-  }
-
-  a.anchor {
-    top: -60px;
+    background: #073130;
   }
 
   .main-navigation__item:nth-child(2) {
     display: none;
-  }
-
-  .main-header {
-    background: $color-ivory;
-  }
-
-  .a--cta {
-    background: $color-genesis;
-  }
-
-  .top-offer-bar {
-    background: $color-genesis;
-
-    .a--cta {
-      background: $color-ebony;
-      color: $color-ivory;
-    }
   }
 
   .atf {
@@ -96,14 +62,6 @@
         margin-top: 10px;
         font-size: 28px;
       }
-    }
-
-    .a--cta {
-      font-size: 18px;
-      padding: 16px 35px;
-      margin: 0;
-      background-color: #073130;
-      border-radius: 40px;
     }
 
     &__hero-image {

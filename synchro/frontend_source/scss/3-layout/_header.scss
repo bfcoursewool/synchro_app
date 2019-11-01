@@ -156,18 +156,14 @@
         }
 
         &:hover {
-          color: #329DC3;
+          opacity: 0.8;
           transition: all 0.2s ease;
         }
       }
 
-      .a--cta {
-        background: #39447C;
-        border-radius: 30px;
-        font-size: 14px;
-        color: #FFFFFF;
-        letter-spacing: 0.88px;
+      &__cta {
         padding: 10px 20px;
+        font-size: 14px;
       }
     }
   }
