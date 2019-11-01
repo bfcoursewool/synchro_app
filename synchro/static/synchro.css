@@ -5460,6 +5460,69 @@ p {
       .atf__header {
         font-size: 40px; } }
 
+.genesis-lp .atf {
+  display: table;
+  width: 100%;
+  height: 75vh;
+  max-height: 650px; }
+  .genesis-lp .atf__copy {
+    width: 60%;
+    display: table-cell;
+    background-image: linear-gradient(90deg, #5da8a6, #67cecb);
+    text-align: center;
+    padding: 20px 40px 40px;
+    vertical-align: middle; }
+    @media (max-width: 854px) {
+      .genesis-lp .atf__copy {
+        width: 100%;
+        display: block; } }
+    @media (max-width: 767px) {
+      .genesis-lp .atf__copy {
+        padding: 30px 20px; } }
+  .genesis-lp .atf__content {
+    display: inline-block; }
+  .genesis-lp .atf__header {
+    position: initial;
+    transform: none;
+    font-size: 60px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    width: auto;
+    max-width: 600px;
+    line-height: initial;
+    font-weight: 700;
+    margin: 20px 0; }
+    @media (max-width: 767px) {
+      .genesis-lp .atf__header {
+        max-width: 440px;
+        margin: 10px 0;
+        font-size: 40px; } }
+  .genesis-lp .atf__subheader {
+    font-size: 35px;
+    color: #ffffff;
+    margin: 20px auto;
+    line-height: 1.4;
+    max-width: 450px; }
+    @media (max-width: 767px) {
+      .genesis-lp .atf__subheader {
+        margin-top: 10px;
+        font-size: 28px; } }
+  .genesis-lp .atf__hero-image {
+    background-image: url("https://cdn.besynchro.com/genesis/v3-0/atf-genesis%402x.png");
+    display: table-cell;
+    background-size: cover;
+    width: 40%;
+    background-position: center; }
+    @media (max-width: 854px) {
+      .genesis-lp .atf__hero-image {
+        height: 200px;
+        width: 100%;
+        display: block; } }
+    @media (max-width: 680px) {
+      .genesis-lp .atf__hero-image {
+        padding: 20px 0 0;
+        width: 100%; } }
+
 .atf-v2 {
   text-align: center; }
   .atf-v2 .synchro-logo-square {
@@ -5485,15 +5548,6 @@ p {
     margin: 0; }
   .atf-v2 .a--cta {
     margin: 30px 0 10px; }
-
-.down-arrow {
-  opacity: 0;
-  width: 19px;
-  transition: opacity 0.75s ease-in-out, bottom 0.75s ease-in-out;
-  margin: 20px; }
-  .down-arrow.animate-in {
-    bottom: 70px;
-    opacity: 1; }
 
 .claim-icons {
   padding: 30px 0;
@@ -8023,67 +8077,6 @@ input:checked + .accordion-horizontal__inner-box {
     background: #073130; }
   .genesis-lp .main-navigation__item:nth-child(2) {
     display: none; }
-  .genesis-lp .atf {
-    display: table;
-    width: 100%;
-    min-height: 75vh; }
-    .genesis-lp .atf__copy {
-      width: 60%;
-      display: table-cell;
-      background-image: linear-gradient(90deg, #5da8a6, #67cecb);
-      text-align: center;
-      padding: 20px 40px 40px;
-      vertical-align: middle; }
-      @media (max-width: 854px) {
-        .genesis-lp .atf__copy {
-          width: 100%;
-          display: block; } }
-      @media (max-width: 767px) {
-        .genesis-lp .atf__copy {
-          padding: 30px 20px; } }
-    .genesis-lp .atf__content {
-      display: inline-block; }
-    .genesis-lp .atf__header {
-      position: initial;
-      transform: none;
-      font-size: 60px;
-      letter-spacing: 1.5px;
-      color: #ffffff;
-      width: auto;
-      max-width: 600px;
-      line-height: initial;
-      font-weight: 700;
-      margin: 20px 0; }
-      @media (max-width: 767px) {
-        .genesis-lp .atf__header {
-          max-width: 440px;
-          margin: 10px 0;
-          font-size: 40px; } }
-    .genesis-lp .atf__subheader {
-      font-size: 35px;
-      color: #ffffff;
-      margin: 20px auto;
-      line-height: 1.4;
-      max-width: 450px; }
-      @media (max-width: 767px) {
-        .genesis-lp .atf__subheader {
-          margin-top: 10px;
-          font-size: 28px; } }
-    .genesis-lp .atf__hero-image {
-      background-image: url("https://cdn.besynchro.com/genesis/v3-0/atf-genesis%402x.png");
-      display: table-cell;
-      background-size: cover;
-      width: 40%;
-      background-position: center; }
-      @media (max-width: 854px) {
-        .genesis-lp .atf__hero-image {
-          height: 200px;
-          width: 100%;
-          display: block; } }
-      @media (max-width: 680px) {
-        .genesis-lp .atf__hero-image {
-          padding: 20px 0 0;
-          width: 100%; } }
   .genesis-lp .benefits {
     max-width: 1600px;
     margin: 0 auto;
