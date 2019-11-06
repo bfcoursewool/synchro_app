@@ -224,6 +224,7 @@
       @include sm-screen {
         left: -100%;
         top: 60px;
+        bottom: 0;
         padding: 10px;
         position: fixed;
         background: $color-ebony;

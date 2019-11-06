@@ -5485,6 +5485,7 @@ p {
       .shopify-header-container .shopify-header .main-navigation {
         left: -100%;
         top: 60px;
+        bottom: 0;
         padding: 10px;
         position: fixed;
         background: #000000;
@@ -10329,7 +10330,7 @@ svg.external {
   background-size: cover; }
   @media (max-width: 767px) {
     .prelaunch__thankyou-image {
-      margin-top: 20px;
+      margin-top: 30px;
       background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-mobile.jpg"); } }
 
 .go010-01 .a--cta {
