@@ -10224,6 +10224,19 @@ svg.external {
   @media (max-width: 767px) {
     .prelaunch__body {
       padding: 40px 0; } }
+  .prelaunch__body .klaviyo-form-LqvMbF .Hrxru {
+    font-family: "futura-pt", "Open Sans", sans-serif !important;
+    border-width: 2px !important;
+    border-radius: 6px !important;
+    text-align: center !important;
+    padding: 0 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important; }
+  .prelaunch__body .klaviyo-form-LqvMbF .jzEpAp {
+    font-family: "futura-pt", "Open Sans", sans-serif !important;
+    padding: 17px 30px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important; }
 
 .prelaunch__body-icon {
   display: none; }
