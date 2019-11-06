@@ -168,3 +168,129 @@
     }
   }
 }
+
+.shopify-header-container {
+  .shopify-header {
+    padding: 50px 30px;
+    font-size: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: $color-ivory;
+    z-index: $header-z-index;
+    @include sm-screen {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      padding: 0 20px;
+    }
+
+    &.pseudo {
+      display: none;
+      @include sm-screen {
+        visibility: hidden;
+        height: 60px;
+        position: relative;
+        display: block;
+      }
+    }
+
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      align-items: center;
+      @include sm-screen {
+        grid-template-columns: 1fr 3fr 1fr;
+        justify-items: center;
+      }
+    }
+
+    &__logo {
+      @include sm-screen {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        background: $color-ivory;
+        grid-column-start: 2;
+      }
+
+      .synchro-logo {
+        height: 20px;
+      }
+    }
+
+    .main-navigation {
+      justify-self: right;
+      @include sm-screen {
+        left: -100%;
+        top: 60px;
+        padding: 10px;
+        position: fixed;
+        background: $color-ebony;
+        color: $color-ivory;
+        text-align: center;
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        z-index: -1;
+      }
+
+      &.expanded {
+        @include sm-screen {
+          left: 0;
+        }
+      }
+
+      &__hamburger {
+        display: none;
+        @include sm-screen {
+          display: block;
+          cursor: pointer;
+          justify-self: left;
+        }
+
+        &.expanded {
+          .main-navigation__stack:first-child {
+            transform: rotateZ(45deg);
+            transform-origin: 8px 3px;
+          }
+
+          .main-navigation__stack:nth-child(2) {
+            display: none;
+          }
+
+          .main-navigation__stack:last-child {
+            transform: rotateZ(-45deg);
+            transform-origin: 7px -1px;
+          }
+        }
+      }
+
+      &__stack {
+        background-color: $color-ebony;
+        height: 3px;
+        width: 25px;
+        margin: 5px 0;
+        transition: 0.2s;
+      }
+
+      &__item {
+        font-size: 18px;
+        padding-left: 40px;
+        @include sm-screen {
+          font-size: 19px;
+          display: block;
+          margin: 20px auto;
+          padding: 0;
+        }
+
+        &:hover {
+          color: #989999;
+          transition: all 0.2s ease;
+        }
+      }
+    }
+  }
+}

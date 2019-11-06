@@ -241,6 +241,25 @@ endpoint_info_dict = {
       }
     }
   },
+  ##Pre-launch
+  'km-be-the-first': {
+    # KM Flavors Pre-Launch Opt-In
+    'v0': {
+      'template': 'landing_pages/pre-launch/km-flavors/opt-in/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    }
+  },
+  'km-thank-you': {
+    # KM Flavors Pre-Launch Thank-You
+    'v0': {
+      'template': 'landing_pages/pre-launch/km-flavors/thank-you/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    }
+  },
   ## Experiments
   'km009': {
     # Test Variant 1
