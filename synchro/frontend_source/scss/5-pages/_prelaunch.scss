@@ -123,7 +123,7 @@
   &__thankyou-header {
     font-weight: $font-bold;
     font-size: 55px;
-    margin: 0 20px;
+    margin: 0 $gutter-medium;
     color: #4A4948;
     line-height: normal;
     @include s-screen {
