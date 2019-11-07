@@ -10278,15 +10278,16 @@ svg.external {
       background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-lifestyle-mobile.jpg"); } }
 
 .prelaunch__thankyou-atf {
-  height: 333px;
+  height: 370px;
   position: relative;
   background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf.jpg");
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   text-align: center;
-  padding-top: 60px; }
+  padding-top: 80px; }
   @media (max-width: 767px) {
     .prelaunch__thankyou-atf {
+      background-position: bottom;
       height: 330px;
       padding-top: 30px;
       background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf-mobile.jpg"); } }

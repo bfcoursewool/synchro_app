@@ -105,14 +105,15 @@
   }
 
   &__thankyou-atf {
-    height: 333px;
+    height: 370px;
     position: relative;
     background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf.jpg");
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 80px;
     @include s-screen {
+      background-position: bottom;
       height: 330px;
       padding-top: 30px;
       background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf-mobile.jpg");
