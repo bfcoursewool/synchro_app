@@ -8,6 +8,19 @@
     padding: 0 $gutter-small 30px;
   }
 
+  &__title {
+    padding-top: $gutter-large;
+    font-weight: $font-bold;
+    font-size: 30px;
+    margin-bottom: 40px;
+    @include m-screen {
+      padding-top: $gutter-medium;
+    }
+    @include s-screen {
+      font-size: 25px;
+    }
+  }
+
   &__card {
     width: 33.33%;
     display: inline-block;

@@ -289,23 +289,12 @@
   }
 
   .rating {
-    &__stars {
-      #rating__star {
-        height: 30px;
-        margin: 0 2px;
-      }
-    }
-
     &__icon {
       fill: #39447C;
     }
 
     &__count {
-      font-weight: $font-demi;
       color: #39447C;
-      text-align: center;
-      opacity: 1;
-      margin: 5px 0 20px;
 
       &:before {
         content: "1350+ 5-Star";
@@ -492,21 +481,6 @@
     }
   }
 
-  .faq {
-    &__title {
-      padding-top: $gutter-large;
-      font-weight: $font-bold;
-      font-size: 30px;
-      margin-bottom: 40px;
-      @include m-screen {
-        padding-top: $gutter-medium;
-      }
-      @include s-screen {
-        font-size: 25px;
-      }
-    }
-  }
-
   .hero-cta {
     background: linear-gradient(0deg, #ffffff 35%, #F3EEE7 35%);
     padding: $gutter-medium $gutter-large $gutter-large;
@@ -514,7 +488,7 @@
     text-align: center;
     @include s-screen {
       background: linear-gradient(0deg, #faf7f3 35%, #F3EEE7 35%);
-      padding: $gutter-medium $gutter-small $gutter-medium;
+      padding: $gutter-medium $gutter-small;
     }
 
     &__header {

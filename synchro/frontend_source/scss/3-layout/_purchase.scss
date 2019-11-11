@@ -281,6 +281,24 @@
     }
   }
 
+  .yotpo {
+    display: inline-block !important;
+
+    .text-m {
+      font-family: $font-primary !important;
+      line-height: 25px !important;
+      font-size: 16px !important;
+      margin-left: 15px !important;
+      opacity: 0.5 !important;
+      font-weight: $font-medium !important;
+    }
+  }
+
+  .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-half-star,
+  .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-star {
+    font-size: 25px !important;
+  }
+
   &__hr {
     width: 100%;
     height: 2px;
@@ -382,7 +400,7 @@
     margin-left: $gutter-small;
     text-align: left;
     @include m-screen {
-    margin-left: 10px;
+      margin-left: 10px;
     }
     @include s-screen {
       margin-left: 15px;
