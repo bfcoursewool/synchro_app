@@ -261,29 +261,6 @@ endpoint_info_dict = {
     }
   },
   ## Experiments
-  'km009': {
-    # Test Variant 1
-    'v1': {
-      'template': 'landing_pages/experiments/km009/v1/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Test Variant 2
-    'v2': {
-      'template': 'landing_pages/experiments/km009/v2/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Test Variant 3
-    'v3': {
-      'template': 'landing_pages/experiments/km009/v3/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
   'go010': {
     # Test Variant 1
     'v1': {
