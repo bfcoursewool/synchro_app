@@ -10227,7 +10227,8 @@ svg.external {
       padding: 0 !important;
       font-size: 18px !important;
       font-weight: 500 !important; }
-    .prelaunch__body .klaviyo-form-LqvMbF .jzEpAp {
+    .prelaunch__body .klaviyo-form-LqvMbF .jzEpAp,
+    .prelaunch__body .klaviyo-form-LqvMbF .cbBUUG {
       font-family: "futura-pt", "Open Sans", sans-serif !important;
       padding: 17px 30px !important;
       font-size: 18px !important;
@@ -10265,7 +10266,7 @@ svg.external {
   @media (max-width: 767px) {
     .prelaunch__body-image {
       margin: 20px 0;
-      height: 300px;
+      height: 850px;
       background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-lifestyle-mobile.jpg"); } }
 
 .prelaunch__thankyou-atf {
@@ -10350,4 +10351,4 @@ svg.external {
 .go010-01 .synchro-reviews {
   padding-top: 40px; }
 
-/*# sourceMappingURL=synchro.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
