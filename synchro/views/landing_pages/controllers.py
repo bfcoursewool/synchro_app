@@ -260,6 +260,25 @@ endpoint_info_dict = {
       }
     }
   },
+  ##Presale
+  'bf-be-the-first': {
+    # BFCM 2019 Presale Opt-In
+    'v0': {
+      'template': 'landing_pages/pre-launch/bfcm-2019/opt-in/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    }
+  },
+  'bf-thank-you': {
+    # BFCM 2019 Presale Thank-You
+    'v0': {
+      'template': 'landing_pages/pre-launch/bfcm-2019/thank-you/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    }
+  },
   ## Experiments
   'go010': {
     # Test Variant 1

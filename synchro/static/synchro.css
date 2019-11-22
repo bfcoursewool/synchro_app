@@ -10217,22 +10217,6 @@ svg.external {
   @media (max-width: 767px) {
     .prelaunch__body {
       padding: 20px 0; } }
-  .prelaunch__body .klaviyo-form-LqvMbF {
-    padding: 0 20px; }
-    .prelaunch__body .klaviyo-form-LqvMbF .Hrxru {
-      font-family: "futura-pt", "Open Sans", sans-serif !important;
-      border-width: 2px !important;
-      border-radius: 6px !important;
-      text-align: center !important;
-      padding: 0 !important;
-      font-size: 18px !important;
-      font-weight: 500 !important; }
-    .prelaunch__body .klaviyo-form-LqvMbF .jzEpAp,
-    .prelaunch__body .klaviyo-form-LqvMbF .cbBUUG {
-      font-family: "futura-pt", "Open Sans", sans-serif !important;
-      padding: 17px 30px !important;
-      font-size: 18px !important;
-      font-weight: 600 !important; }
 
 .prelaunch__body-copy {
   font-size: 30px;
@@ -10318,6 +10302,40 @@ svg.external {
     .prelaunch__thankyou-image {
       margin-top: 30px;
       background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-mobile.jpg"); } }
+
+.prelaunch.km-flavors .klaviyo-form-LqvMbF {
+  padding: 0 20px; }
+  .prelaunch.km-flavors .klaviyo-form-LqvMbF .Hrxru {
+    font-family: "futura-pt", "Open Sans", sans-serif !important;
+    border-width: 2px !important;
+    border-radius: 6px !important;
+    text-align: center !important;
+    padding: 0 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important; }
+  .prelaunch.km-flavors .klaviyo-form-LqvMbF .cbBUUG,
+  .prelaunch.km-flavors .klaviyo-form-LqvMbF .jzEpAp {
+    font-family: "futura-pt", "Open Sans", sans-serif !important;
+    padding: 17px 30px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important; }
+
+.prelaunch.bfcm-2019 .klaviyo-form-KkE8Ty {
+  padding: 0 20px; }
+  .prelaunch.bfcm-2019 .klaviyo-form-KkE8Ty .Hrxru {
+    font-family: "futura-pt", "Open Sans", sans-serif !important;
+    border-width: 2px !important;
+    border-radius: 6px !important;
+    text-align: center !important;
+    padding: 0 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important; }
+  .prelaunch.bfcm-2019 .klaviyo-form-KkE8Ty .cbBUUG,
+  .prelaunch.bfcm-2019 .klaviyo-form-KkE8Ty .jzEpAp {
+    font-family: "futura-pt", "Open Sans", sans-serif !important;
+    padding: 17px 30px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important; }
 
 .go010-01 .a--cta {
   position: relative;
