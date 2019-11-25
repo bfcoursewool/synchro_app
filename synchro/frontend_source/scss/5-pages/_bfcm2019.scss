@@ -1,0 +1,194 @@
+.bfcm-2019 {
+  .opt-in {
+    &__body {
+      background-image: url("https://cdn.besynchro.com/general/bf2019/bf-optin-bg-desktop.jpg");
+      background-position: bottom;
+      background-size: cover;
+      text-align: center;
+      @include s-screen {
+        background: #FBF7F4;
+      }
+    }
+
+    &__atf {
+      padding: $gutter-large $gutter-medium 190px;
+      @include s-screen {
+        padding: $gutter-medium $gutter-small;
+      }
+    }
+
+    &__header-secondary {
+      font-weight: $font-demi;
+      font-size: 50px;
+      letter-spacing: 0.07em;
+      margin: 0 auto;
+      color: #639A85;
+      width: fit-content;
+      line-height: normal;
+      text-transform: uppercase;
+      @include sm-screen {
+        font-size: 40px;
+      }
+      @include s-screen {
+        font-size: 30px;
+      }
+
+      &:after,
+      &:before {
+        content: '';
+        display: block;
+        height: 6px;
+        width: 100%;
+        background-color: #639A85;
+        @include sm-screen {
+          height: 4px;
+        }
+      }
+    }
+
+    &__header-primary {
+      -webkit-text-stroke: 3px #639A85;
+      font-weight: $font-bold;
+      font-size: 80px;
+      line-height: normal;
+      color: $color-ivory;
+      color: rgba(0,0,0,0);
+      letter-spacing: 0.06em;
+      text-align: center;
+      margin: 15px auto;
+      text-transform: uppercase;
+      max-width: 800px;
+      @include sm-screen {
+        max-width: 500px;
+        -webkit-text-stroke: 2px #639A85;
+        font-size: 60px;
+      }
+      @include s-screen {
+        font-size: 50px;
+      }
+      @include xs-screen {
+        font-size: 45px;
+      }
+    }
+
+    &__header-image {
+      display: none;
+      @include s-screen {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &__text {
+      opacity: 0.7;
+      font-weight: $font-medium;
+      font-size: 24px;
+      line-height: 1.5;
+      max-width: 450px;
+      margin: 0 auto 30px;
+    }
+  }
+
+  .klaviyo-form-KkE8Ty {
+    padding: 0 20px;
+
+    .eGSYIe {
+      font-family: $font-primary !important;
+      border-width: 2px !important;
+      border-radius: 6px !important;
+      text-align: center !important;
+      padding: 0 !important;
+      font-size: 18px !important;
+      font-weight: $font-medium !important;
+      background-color: rgba(255, 255, 255, 0) !important;
+    }
+
+    .fYiQlB,
+    .jFMELL {
+      font-family: $font-primary !important;
+      padding: 17px 30px !important;
+      font-size: 18px !important;
+      font-weight: $font-demi !important;
+    }
+  }
+
+  &__thankyou-atf {
+    background-image: url("https://cdn.besynchro.com/general/bf2019/bf-ty-bg-desktop.jpg");
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+    padding: 150px $gutter-medium 240px;
+    @include s-screen {
+      background: #FBF7F4;
+      padding: 40px $gutter-small;
+    }
+  }
+
+  &__thankyou-header-image {
+    display: none;
+    @include s-screen {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__thankyou-header {
+    font-weight: $font-demi;
+    font-size: 50px;
+    letter-spacing: 0.07em;
+    margin: 0 auto;
+    color: #639A85;
+    line-height: normal;
+    text-transform: uppercase;
+    max-width: 400px;
+    @include sm-screen {
+      font-size: 40px;
+    }
+
+    &:after,
+    &:before {
+      content: '';
+      display: block;
+      height: 6px;
+      width: 100%;
+      background-color: #639A85;
+      @include sm-screen {
+        height: 4px;
+      }
+    }
+  }
+
+  &__thankyou {
+    padding-top: $gutter-medium;
+    text-align: center;
+  }
+
+  &__thankyou-copy {
+    opacity: 0.7;
+    font-weight: $font-medium;
+    max-width: 800px;
+    margin: 0 auto 1em;
+    font-size: 24px;
+    line-height: 1.5;
+    padding: 0 $gutter-small;
+  }
+
+  &__thankyou-cta {
+    padding: $gutter-small 0;
+  }
+
+  .a--cta {
+    background-color: #C18870;
+  }
+
+  &__thankyou-image {
+    height: 630px;
+    background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-desktop.jpg");
+    background-position: top;
+    background-size: cover;
+    @include s-screen {
+      margin-top: 30px;
+      background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-mobile.jpg");
+    }
+  }
+}

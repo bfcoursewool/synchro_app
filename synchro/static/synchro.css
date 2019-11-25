@@ -10320,22 +10320,171 @@ svg.external {
     font-size: 18px !important;
     font-weight: 600 !important; }
 
-.prelaunch.bfcm-2019 .klaviyo-form-KkE8Ty {
+.bfcm-2019 .opt-in__body {
+  background-image: url("https://cdn.besynchro.com/general/bf2019/bf-optin-bg-desktop.jpg");
+  background-position: bottom;
+  background-size: cover;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .bfcm-2019 .opt-in__body {
+      background: #FBF7F4; } }
+
+.bfcm-2019 .opt-in__atf {
+  padding: 60px 40px 190px; }
+  @media (max-width: 767px) {
+    .bfcm-2019 .opt-in__atf {
+      padding: 40px 20px; } }
+
+.bfcm-2019 .opt-in__header-secondary {
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: 0.07em;
+  margin: 0 auto;
+  color: #639A85;
+  width: fit-content;
+  line-height: normal;
+  text-transform: uppercase; }
+  @media (max-width: 854px) {
+    .bfcm-2019 .opt-in__header-secondary {
+      font-size: 40px; } }
+  @media (max-width: 767px) {
+    .bfcm-2019 .opt-in__header-secondary {
+      font-size: 30px; } }
+  .bfcm-2019 .opt-in__header-secondary:after, .bfcm-2019 .opt-in__header-secondary:before {
+    content: '';
+    display: block;
+    height: 6px;
+    width: 100%;
+    background-color: #639A85; }
+    @media (max-width: 854px) {
+      .bfcm-2019 .opt-in__header-secondary:after, .bfcm-2019 .opt-in__header-secondary:before {
+        height: 4px; } }
+
+.bfcm-2019 .opt-in__header-primary {
+  -webkit-text-stroke: 3px #639A85;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: normal;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0);
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin: 15px auto;
+  text-transform: uppercase;
+  max-width: 800px; }
+  @media (max-width: 854px) {
+    .bfcm-2019 .opt-in__header-primary {
+      max-width: 500px;
+      -webkit-text-stroke: 2px #639A85;
+      font-size: 60px; } }
+  @media (max-width: 767px) {
+    .bfcm-2019 .opt-in__header-primary {
+      font-size: 50px; } }
+  @media (max-width: 680px) {
+    .bfcm-2019 .opt-in__header-primary {
+      font-size: 45px; } }
+
+.bfcm-2019 .opt-in__header-image {
+  display: none; }
+  @media (max-width: 767px) {
+    .bfcm-2019 .opt-in__header-image {
+      display: block;
+      width: 100%; } }
+
+.bfcm-2019 .opt-in__text {
+  opacity: 0.7;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  max-width: 450px;
+  margin: 0 auto 30px; }
+
+.bfcm-2019 .klaviyo-form-KkE8Ty {
   padding: 0 20px; }
-  .prelaunch.bfcm-2019 .klaviyo-form-KkE8Ty .Hrxru {
+  .bfcm-2019 .klaviyo-form-KkE8Ty .eGSYIe {
     font-family: "futura-pt", "Open Sans", sans-serif !important;
     border-width: 2px !important;
     border-radius: 6px !important;
     text-align: center !important;
     padding: 0 !important;
     font-size: 18px !important;
-    font-weight: 500 !important; }
-  .prelaunch.bfcm-2019 .klaviyo-form-KkE8Ty .cbBUUG,
-  .prelaunch.bfcm-2019 .klaviyo-form-KkE8Ty .jzEpAp {
+    font-weight: 500 !important;
+    background-color: rgba(255, 255, 255, 0) !important; }
+  .bfcm-2019 .klaviyo-form-KkE8Ty .fYiQlB,
+  .bfcm-2019 .klaviyo-form-KkE8Ty .jFMELL {
     font-family: "futura-pt", "Open Sans", sans-serif !important;
     padding: 17px 30px !important;
     font-size: 18px !important;
     font-weight: 600 !important; }
+
+.bfcm-2019__thankyou-atf {
+  background-image: url("https://cdn.besynchro.com/general/bf2019/bf-ty-bg-desktop.jpg");
+  background-position: bottom;
+  background-size: cover;
+  text-align: center;
+  padding: 150px 40px 240px; }
+  @media (max-width: 767px) {
+    .bfcm-2019__thankyou-atf {
+      background: #FBF7F4;
+      padding: 40px 20px; } }
+
+.bfcm-2019__thankyou-header-image {
+  display: none; }
+  @media (max-width: 767px) {
+    .bfcm-2019__thankyou-header-image {
+      display: block;
+      width: 100%; } }
+
+.bfcm-2019__thankyou-header {
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: 0.07em;
+  margin: 0 auto;
+  color: #639A85;
+  line-height: normal;
+  text-transform: uppercase;
+  max-width: 400px; }
+  @media (max-width: 854px) {
+    .bfcm-2019__thankyou-header {
+      font-size: 40px; } }
+  .bfcm-2019__thankyou-header:after, .bfcm-2019__thankyou-header:before {
+    content: '';
+    display: block;
+    height: 6px;
+    width: 100%;
+    background-color: #639A85; }
+    @media (max-width: 854px) {
+      .bfcm-2019__thankyou-header:after, .bfcm-2019__thankyou-header:before {
+        height: 4px; } }
+
+.bfcm-2019__thankyou {
+  padding-top: 40px;
+  text-align: center; }
+
+.bfcm-2019__thankyou-copy {
+  opacity: 0.7;
+  font-weight: 500;
+  max-width: 800px;
+  margin: 0 auto 1em;
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 0 20px; }
+
+.bfcm-2019__thankyou-cta {
+  padding: 20px 0; }
+
+.bfcm-2019 .a--cta {
+  background-color: #C18870; }
+
+.bfcm-2019__thankyou-image {
+  height: 630px;
+  background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-desktop.jpg");
+  background-position: top;
+  background-size: cover; }
+  @media (max-width: 767px) {
+    .bfcm-2019__thankyou-image {
+      margin-top: 30px;
+      background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-mobile.jpg"); } }
 
 .go010-01 .a--cta {
   position: relative;
