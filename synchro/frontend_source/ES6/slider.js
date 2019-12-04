@@ -11,7 +11,7 @@ export default (selector) => {
       arrows: false
     });
     $(selector).on('afterChange', (event, slick, currentSlide, nextSlide) => {
-      let speed = $(slick.$slides[currentSlide]).data('time')
+      let speed = $(slick.$slides[currentSlide]).find('.slide').data('time')
       $(selector).slick('slickSetOption', 'autoplaySpeed', speed)
     })
   }
