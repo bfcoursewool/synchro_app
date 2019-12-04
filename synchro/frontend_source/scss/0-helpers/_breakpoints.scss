@@ -1,0 +1,35 @@
+@mixin retina {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
+  }
+}
+@mixin xs-screen {
+  @media (max-width: 680px) {
+    @content;
+  }
+}
+@mixin s-screen {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin sm-screen {
+  @media (max-width: 854px) {
+    @content;
+  }
+}
+@mixin m-screen {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin l-screen {
+  @media (max-width: 1599px) {
+    @content;
+  }
+}
+@mixin xl-screen {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}

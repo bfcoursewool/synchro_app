@@ -1,0 +1,108 @@
+@mixin animate-flash($speed: 1s, $start-opacity: 1, $mid-opacity: 0.8) {
+  -webkit-animation: flash $speed infinite;
+  -moz-animation: flash $speed infinite;
+  -o-animation: flash $speed infinite;
+  animation: flash $speed infinite;
+  @-webkit-keyframes flash {
+    0% {
+      opacity: $start-opacity;
+    }
+
+    50% {
+      opacity: $mid-opacity;
+    }
+
+    100% {
+      opacity: $start-opacity;
+    }
+  }
+  @-moz-keyframes flash {
+    0% {
+      opacity: $start-opacity;
+    }
+
+    50% {
+      opacity: $mid-opacity;
+    }
+
+    100% {
+      opacity: $start-opacity;
+    }
+  }
+  @-o-keyframes flash {
+    0% {
+      opacity: $start-opacity;
+    }
+
+    50% {
+      opacity: $mid-opacity;
+    }
+
+    100% {
+      opacity: $start-opacity;
+    }
+  }
+  @keyframes flash {
+    0% {
+      opacity: $start-opacity;
+    }
+
+    50% {
+      opacity: $mid-opacity;
+    }
+
+    100% {
+      opacity: $start-opacity;
+    }
+  }
+}
+@mixin rotate-cw ($speed: 6s) {
+  -webkit-animation: cw-rotation $speed infinite ease-in-out;
+  -moz-animation: cw-rotation $speed infinite ease-in-out;
+  -o-animation: cw-rotation $speed infinite ease-in-out;
+  animation: cw-rotation $speed infinite ease-in-out;
+  @keyframes cw-rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+@mixin rotate-ccw ($speed: 6s) {
+  -webkit-animation: ccw-rotation $speed infinite ease-in-out;
+  -moz-animation: ccw-rotation $speed infinite ease-in-out;
+  -o-animation: ccw-rotation $speed infinite ease-in-out;
+  animation: ccw-rotation $speed infinite ease-in-out;
+  @keyframes ccw-rotation {
+    0% {
+      transform: rotate(360deg);
+    }
+
+    25% {
+      transform: rotate(360deg);
+    }
+
+    to {
+      transform: rotate(0deg);
+    }
+  }
+}
+@mixin horizontal-slide ($speed: 10000s) {
+  -webkit-animation: slide $speed linear infinite;
+}
+@-webkit-keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -300000px 0;
+  }
+}

@@ -1,0 +1,165 @@
+.prelaunch {
+  &__atf {
+    height: 400px;
+    position: relative;
+    background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px;
+    @include s-screen {
+      height: 360px;
+      padding-top: 25px;
+      background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf-mobile.jpg");
+    }
+  }
+
+  &__atf-copy {
+    font-weight: $font-bold;
+    font-size: 55px;
+    margin: 0;
+    color: #4A4948;
+    line-height: normal;
+    @include s-screen {
+      font-size: 36px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    span {
+      color: #D65667;
+      opacity: 1;
+      display: block;
+      @include s-screen {
+        display: initial;
+      }
+    }
+  }
+
+  &__body {
+    padding: $gutter-medium 0;
+    text-align: center;
+    @include s-screen {
+      padding: $gutter-small 0;
+    }
+  }
+
+  &__body-copy {
+    font-size: 30px;
+    line-height: 1.5;
+    max-width: 750px;
+    margin: $gutter-medium auto 0;
+    @include s-screen {
+      font-size: 28px;
+      margin: $gutter-small $gutter-small 0;
+    }
+  }
+
+  &__body-signup {
+    font-weight: $font-medium;
+    opacity: 0.6;
+    font-size: 22px;
+    color: #4D4D4D;
+    margin: 0 $gutter-small 30px;
+    @include s-screen {
+      margin-bottom: $gutter-small;
+    }
+  }
+
+  .a--cta {
+    background: #D65667;
+  }
+
+  &__body-image {
+    height: 400px;
+    background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-lifestyle.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: $gutter-medium 0;
+    @include s-screen {
+      margin: $gutter-small 0;
+      height: 850px;
+      background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-lifestyle-mobile.jpg");
+    }
+  }
+
+  &__thankyou-atf {
+    height: 370px;
+    position: relative;
+    background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 80px;
+    @include s-screen {
+      background-position: bottom;
+      height: 330px;
+      padding-top: 30px;
+      background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf-mobile.jpg");
+    }
+  }
+
+  &__thankyou-header {
+    font-weight: $font-bold;
+    font-size: 55px;
+    margin: 0 $gutter-medium;
+    color: #4A4948;
+    line-height: normal;
+    @include s-screen {
+      font-size: 40px;
+    }
+  }
+
+  &__thankyou {
+    padding-top: $gutter-medium;
+    text-align: center;
+  }
+
+  &__thankyou-copy {
+    font-weight: $font-medium;
+    max-width: 800px;
+    margin: 0 auto 1em;
+    font-size: 24px;
+    line-height: 1.5;
+    padding: 0 $gutter-small;
+  }
+
+  &__thankyou-cta {
+    padding: $gutter-small 0;
+  }
+
+  &__thankyou-image {
+    height: 630px;
+    background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-desktop.jpg");
+    background-position: top;
+    background-size: cover;
+    @include s-screen {
+      margin-top: 30px;
+      background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-mobile.jpg");
+    }
+  }
+
+  &.km-flavors {
+    .klaviyo-form-LqvMbF {
+      padding: 0 20px;
+
+      .Hrxru {
+        font-family: $font-primary !important;
+        border-width: 2px !important;
+        border-radius: 6px !important;
+        text-align: center !important;
+        padding: 0 !important;
+        font-size: 18px !important;
+        font-weight: $font-medium !important;
+      }
+
+      .cbBUUG,
+      .jzEpAp {
+        font-family: $font-primary !important;
+        padding: 17px 30px !important;
+        font-size: 18px !important;
+        font-weight: $font-demi !important;
+      }
+    }
+  }
+}

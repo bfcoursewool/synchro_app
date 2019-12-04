@@ -241,30 +241,45 @@ endpoint_info_dict = {
       }
     }
   },
-  ## Experiments
-  'km009': {
-    # Test Variant 1
-    'v1': {
-      'template': 'landing_pages/experiments/km009/v1/0-index.html',
+  ##Pre-launch
+  'km-be-the-first': {
+    # KM Flavors Pre-Launch Opt-In
+    'v0': {
+      'template': 'landing_pages/pre-launch/km-flavors/opt-in/0-index.html',
       'template_vars': {
-        'is_variant': True,
+        'is_variant': False,
       }
-    },
-    # Test Variant 2
-    'v2': {
-      'template': 'landing_pages/experiments/km009/v2/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Test Variant 3
-    'v3': {
-      'template': 'landing_pages/experiments/km009/v3/0-index.html',
+    }
+  },
+  'km-thank-you': {
+    # KM Flavors Pre-Launch Thank-You
+    'v0': {
+      'template': 'landing_pages/pre-launch/km-flavors/thank-you/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     }
   },
+  ##Presale
+  'bf-be-the-first': {
+    # BFCM 2019 Presale Opt-In
+    'v0': {
+      'template': 'landing_pages/pre-launch/bfcm-2019/opt-in/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    }
+  },
+  'bf-thank-you': {
+    # BFCM 2019 Presale Thank-You
+    'v0': {
+      'template': 'landing_pages/pre-launch/bfcm-2019/thank-you/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    }
+  },
+  ## Experiments
   'go010': {
     # Test Variant 1
     'v1': {

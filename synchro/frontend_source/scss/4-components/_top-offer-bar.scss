@@ -49,5 +49,12 @@
   .a--cta {
     padding: 10px 20px;
     vertical-align: middle;
+    font-size: 14px;
+    border-radius: 0;
+    box-shadow: none;
+
+    &:active {
+      top: 0;
+    }
   }
 }

@@ -17,7 +17,7 @@ export default class LPEffects extends EventsBase {
 
   events() {
     return {
-      'click .main-navigation__mobile': 'toggleNav',
+      'click .main-navigation__hamburger': 'toggleNav',
       'click .main-navigation__item': 'toggleNav',
       'click .main-navigation__cta': 'toggleNav',
       'click .vjs-big-play-button': 'hideBenefitsText',
@@ -129,8 +129,10 @@ export default class LPEffects extends EventsBase {
   toggleNav() {
     if($('.main-navigation').is('.expanded')) {
       $('.main-navigation').removeClass('expanded');
+      $('.main-navigation__hamburger').removeClass('expanded');
     } else {
       $('.main-navigation').addClass('expanded');
+      $('.main-navigation__hamburger').addClass('expanded');
     }
   }
 

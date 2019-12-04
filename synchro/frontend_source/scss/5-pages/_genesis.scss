@@ -1,106 +1,18 @@
 .genesis-lp {
-  .main-header {
-    background: $color-ivory;
-  }
+  overflow-x: hidden;
 
   .a--cta {
-    background: $color-genesis;
+    background: #D65667;
   }
 
-  .top-offer-bar {
-    background: $color-genesis;
-
-    .a--cta {
-      background: $color-ebony;
-      color: $color-ivory;
-    }
-  }
-
-  .atf {
-    display: table;
-    width: 100%;
-    min-height: 75vh;
-
-    &__copy {
-      width: 50%;
-      display: table-cell;
-      background-image: linear-gradient(90deg, #5da8a6, #67cecb);
-      text-align: center;
-      padding: $gutter-small $gutter-medium $gutter-medium;
-      vertical-align: middle;
-      @include sm-screen {
-        width: 100%;
-        display: block;
-      }
-      @include s-screen {
-        padding: 30px $gutter-small;
-      }
-    }
-
-    &__content {
-      display: inline-block;
-    }
-
-    &__header {
-      position: initial;
-      transform: none;
-      font-size: 60px;
-      letter-spacing: 1.5px;
-      color: $color-ivory;
-      width: auto;
-      max-width: 600px;
-      line-height: initial;
-      font-weight: $font-bold;
-      margin: $gutter-small 0;
-      @include s-screen {
-        max-width: 440px;
-        margin: 10px 0;
-        font-size: 40px;
-      }
-    }
-
-    &__subheader {
-      font-size: 35px;
-      color: $color-ivory;
-      margin: $gutter-small auto;
-      line-height: 1.4;
-      max-width: 450px;
-      @include s-screen {
-        margin-top: 10px;
-        font-size: 28px;
-      }
-    }
-
-    .a--cta {
-      font-size: 18px;
-      padding: 16px 35px;
-      margin: 0;
-      background-color: #073130;
-      border-radius: 40px;
-    }
-
-    &__hero-image {
-      background-image: url("https://cdn.besynchro.com/genesis/v3-0/atf-genesis%402x.png");
-      display: table-cell;
-      background-size: cover;
-      width: 25%;
-      background-position: center;
-      @include sm-screen {
-        height: 200px;
-        width: 100%;
-        display: block;
-      }
-      @include xs-screen {
-        padding: 20px 0 0;
-        width: 100%;
-      }
-    }
+  .main-navigation__item:nth-child(2) {
+    display: none;
   }
 
   .benefits {
     max-width: 1600px;
     margin: 0 auto;
-    padding: $gutter-medium $gutter-medium $gutter-small;
+    padding: $gutter-large $gutter-medium $gutter-small;
     @include s-screen {
       padding: $gutter-medium $gutter-small $gutter-small;
     }
@@ -128,6 +40,35 @@
       @include sm-screen {
         width: 50%;
       }
+    }
+
+    &__intro {
+      background: #FAF7F3;
+      padding: $gutter-large $gutter-large $gutter-medium;
+      text-align: center;
+      margin: $gutter-small;
+      @include m-screen {
+        padding: $gutter-medium $gutter-medium $gutter-small;
+      }
+      @include s-screen {
+        padding: $gutter-small $gutter-small 0;
+        margin: 0;
+        overflow: auto;
+      }
+
+      .p--text {
+        font-weight: $font-medium;
+        font-size: 24px;
+        opacity: 0.5;
+        max-width: 750px;
+      }
+    }
+
+    &__intro-headline {
+      font-size: 30px;
+      font-weight: $font-demi;
+      max-width: 750px;
+      margin: 0 auto;
     }
   }
 
@@ -158,35 +99,6 @@
       padding: 0 $gutter-large $gutter-large;
       @include s-screen {
         padding: 0 $gutter-small $gutter-large;
-      }
-
-      &-keystone-img {
-        display: inline-block;
-        width: 50%;
-        vertical-align: middle;
-        padding: $gutter-large;
-        @include m-screen {
-          display: block;
-          width: auto;
-          max-width: 70%;
-          margin: 0 auto;
-          padding: $gutter-medium;
-          @include s-screen {
-            max-width: 100%;
-            padding: $gutter-small;
-          }
-        }
-      }
-
-      &-keystone {
-        display: inline-block;
-        width: 50%;
-        text-align: left;
-        vertical-align: middle;
-        @include m-screen {
-          width: 100%;
-          text-align: center;
-        }
       }
 
       &-details {
@@ -240,6 +152,8 @@
   }
 
   .instagram-slider {
+    background-image: url("https://cdn.besynchro.com/genesis/v3-0/genesis-insta-bg%402x.png");
+
     &__profile {
       img {
         width: 30px;
@@ -248,7 +162,7 @@
     }
 
     &__quote {
-      font-size: 29px;
+      font-size: 25px;
     }
   }
 
@@ -256,11 +170,11 @@
     &__genesis {
       padding: $gutter-large;
       @include m-screen {
-        padding: $gutter-small $gutter-small 0;
+        padding: $gutter-small;
       }
 
       &-wrapper {
-        background: $color-silver-light;
+        background: #FAF7F3;
         text-align: center;
         font-size: 0;
         max-width: 1200px;
@@ -279,13 +193,13 @@
           width: 100%;
         }
         @include s-screen {
-          padding: 0 $gutter-small;
+          padding: 0 $gutter-small $gutter-medium;
         }
       }
 
       &-image-box {
         width: 50%;
-        background: url("https://cdn.besynchro.com/genesis/v2-0/directions-genesis.jpg") center;
+        background: url("https://cdn.besynchro.com/genesis/v3-0/directions-genesis@2x.jpg") center;
         display: inline-block;
         background-size: cover;
         @include sm-screen {
@@ -322,6 +236,23 @@
       background-color: #C4CBDD;
       background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-bag.png");
       background-image: url("https://cdn.besynchro.com/genesis/v2-0/genesis-bag.png"), linear-gradient(90deg, #C4CBDD, #C0E3DF);
+    }
+  }
+
+  .synchro-reviews {
+    padding-top: $gutter-medium;
+  }
+
+  .faq {
+    .icon-toggle-more {
+      background: $color-genesis;
+    }
+
+    .footnote {
+      font-size: 15px;
+      max-width: 750px;
+      font-weight: $font-medium;
+      opacity: 0.5;
     }
   }
 }

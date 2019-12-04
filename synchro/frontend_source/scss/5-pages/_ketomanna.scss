@@ -23,6 +23,10 @@
   .main-header {
     position: initial;
 
+    &.pseudo {
+      display: none;
+    }
+
     .a--cta {
       display: none;
     }
@@ -108,20 +112,17 @@
       margin: 10px 5px;
     }
 
-    .rating__stars #rating__star {
-      height: 26px;
-    }
+    .rating {
+      &__icon {
+        fill: #39447c;
+      }
 
-    .rating__icon {
-      fill: #39447c;
-    }
+      &__count {
+        color: #39447C;
 
-    .rating__count {
-      font-style: italic;
-      font-weight: 600;
-
-      &:before {
-        content: "370+ 5 star";
+        &:before {
+          content: "370+ 5 star";
+        }
       }
     }
 
@@ -284,12 +285,6 @@
 
   .instagram {
     background-image: linear-gradient(90deg, #ded5c4, #e6c1c8);
-
-    &__user {
-      .p--text {
-        font-size: 18px;
-      }
-    }
   }
 
   .purchase {
