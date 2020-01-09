@@ -5220,8 +5220,7 @@ body {
   color: #000000;
   margin: 0 auto;
   max-width: 2000px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow-x: hidden; }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
 
 a {
   text-decoration: none;
@@ -5318,97 +5317,9 @@ p {
 .header {
   padding: 20px;
   font-size: 0;
-<<<<<<< HEAD
-  transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
-  -moz-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
-  /* FF 4 */
-  -webkit-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
-  /* Safari & Chrome */
-  -o-transition: all ease-in-out 0.5s, padding ease-in-out 0.5s;
-  /* Opera */ }
-  .main-header-container .main-header.floated {
-    background: #ffffff;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-    padding-top: 10px;
-    padding-bottom: 10px; }
-  .main-header-container .main-header.pseudo {
-    position: relative;
-    visibility: hidden; }
-  .main-header-container .main-header__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center; }
-  .main-header-container .main-header__logo {
-    grid-column-start: 2; }
-    .main-header-container .main-header__logo .synchro-logo {
-      height: 20px;
-      fill: #000000;
-      transition: fill ease-in-out 0.5s; }
-  .main-header-container .main-header a {
-    margin-left: auto; }
-    @media (max-width: 767px) {
-      .main-header-container .main-header a {
-        margin-right: 10px; } }
-  .main-header-container .main-header .main-navigation {
-    display: inline-block;
-    float: right;
-    margin: 12px 0; }
-    @media (max-width: 854px) {
-      .main-header-container .main-header .main-navigation {
-        display: block;
-        visibility: hidden;
-        opacity: 0;
-        position: fixed;
-        background: rgba(240, 240, 240, 0.9);
-        text-align: left;
-        margin-top: 10px;
-        transition: all 0.35s ease-in-out;
-        -moz-transition: all 0.35s ease-in-out;
-        -webkit-transition: all 0.35s ease-in-out;
-        -o-transition: all 0.35s ease-in-out; } }
-    @media (max-width: 767px) {
-      .main-header-container .main-header .main-navigation {
-        left: 0;
-        transform: translate(-100%); } }
-    @media (max-width: 854px) {
-      .main-header-container .main-header .main-navigation.expanded {
-        visibility: visible;
-        opacity: 1; } }
-    @media (max-width: 767px) {
-      .main-header-container .main-header .main-navigation.expanded {
-        transform: translate(0); } }
-    .main-header-container .main-header .main-navigation__mobile {
-      cursor: pointer;
-      width: 22px;
-      height: 35px;
-      margin-right: 30px;
-      outline: 0; }
-    .main-header-container .main-header .main-navigation__hamburger {
-      background-color: #3f3f3f;
-      height: 3px;
-      margin: 4px 0; }
-    .main-header-container .main-header .main-navigation__item {
-      font-size: 12px;
-      font-weight: bold;
-      padding-right: 20px;
-      text-transform: uppercase;
-      font-family: "futura-pt", "Open Sans", sans-serif;
-      letter-spacing: 0.08em;
-      text-decoration: none; }
-      @media (max-width: 854px) {
-        .main-header-container .main-header .main-navigation__item {
-          display: block;
-          padding: 16px 20px;
-          border-top: 1px solid #ffffff; } }
-      .main-header-container .main-header .main-navigation__item:hover {
-        color: #5DA8A6;
-        transition: all 0.2s ease; }
-=======
   text-align: center; }
   .header__logo .synchro-logo {
     height: 20px; }
->>>>>>> 48514862406090e41d3e3f2472a155a3d8f8e6c0
 
 .expanded-header-container .expanded-header {
   max-width: 2000px;
@@ -6682,11 +6593,7 @@ p {
     padding: 40px 60px; }
     @media (max-width: 1199px) {
       .purchase-2__details {
-<<<<<<< HEAD
-        padding: 40px; } }
-=======
         padding: 40px 30px; } }
->>>>>>> 48514862406090e41d3e3f2472a155a3d8f8e6c0
     @media (max-width: 854px) {
       .purchase-2__details {
         width: 100%;
@@ -6780,10 +6687,6 @@ p {
         font-size: 20px;
         margin: 0; } }
   .purchase-2__options {
-<<<<<<< HEAD
-    margin-top: 20px;
-=======
->>>>>>> 48514862406090e41d3e3f2472a155a3d8f8e6c0
     cursor: pointer; }
     @media (max-width: 767px) {
       .purchase-2__options {
@@ -6795,12 +6698,8 @@ p {
       vertical-align: middle;
       padding: 10px;
       border-radius: 25px;
-<<<<<<< HEAD
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); }
-=======
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
       margin: 10px 0; }
->>>>>>> 48514862406090e41d3e3f2472a155a3d8f8e6c0
       .purchase-2__options img:hover {
         box-shadow: none; }
   .purchase-2__options-details {
@@ -6808,11 +6707,6 @@ p {
     vertical-align: middle;
     margin-left: 20px;
     text-align: left; }
-<<<<<<< HEAD
-    @media (max-width: 767px) {
-      .purchase-2__options-details {
-        margin-left: 15px; } }
-=======
     @media (max-width: 1199px) {
       .purchase-2__options-details {
         margin-left: 10px; } }
@@ -6820,7 +6714,6 @@ p {
       .purchase-2__options-details {
         margin-left: 15px;
         text-align: center; } }
->>>>>>> 48514862406090e41d3e3f2472a155a3d8f8e6c0
   .purchase-2__options-quantity {
     font-weight: 700;
     font-size: 22px;
@@ -8141,11 +8034,7 @@ input:checked + .accordion-horizontal__inner-box {
   overflow: hidden;
   width: 25%;
   transition: all 0.3s ease-in-out;
-<<<<<<< HEAD
-  background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-video%402x.jpg");
-=======
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-video%402x.jpg");
->>>>>>> 48514862406090e41d3e3f2472a155a3d8f8e6c0
   background-position: center; }
   .gold-capsules .atf__video:hover {
     width: 50%; }
@@ -8182,12 +8071,8 @@ input:checked + .accordion-horizontal__inner-box {
 .gold-capsules .atf__header {
   font-size: 60px;
   font-weight: 700;
-<<<<<<< HEAD
-  margin: 20px 0; }
-=======
   margin: 20px 0;
   letter-spacing: 0; }
->>>>>>> 48514862406090e41d3e3f2472a155a3d8f8e6c0
   @media (max-width: 767px) {
     .gold-capsules .atf__header {
       margin: 10px 0;
@@ -8236,266 +8121,11 @@ input:checked + .accordion-horizontal__inner-box {
     padding: 20px 35px;
     background-color: #39447C;
     border-radius: 40px; }
-<<<<<<< HEAD
 
 .gold-capsules .research {
   background: #f4f4f5;
   padding: 60px 60px 20px;
   font-size: 0; }
-  @media (max-width: 1199px) {
-    .gold-capsules .research {
-      padding: 40px 20px 0; } }
-  @media (max-width: 767px) {
-    .gold-capsules .research {
-      display: none; } }
-  .gold-capsules .research__intro {
-    font-weight: 600;
-    font-size: 30px;
-    opacity: 0.6;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 25px;
-    padding: 0 40px; }
-  .gold-capsules .research__point {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 25px 40px; }
-  .gold-capsules .research__header {
-    font-weight: 700;
-    font-size: 50px;
-    line-height: initial; }
-    @media (max-width: 1199px) {
-      .gold-capsules .research__header {
-        font-size: 40px; } }
-  .gold-capsules .research__copy {
-    font-weight: 500;
-    font-size: 24px;
-    opacity: 0.5; }
-
-.gold-capsules .references {
-  text-align: center; }
-  @media (max-width: 1199px) {
-    .gold-capsules .references {
-      padding-bottom: 20px; } }
-  .gold-capsules .references__title {
-    padding-top: 60px;
-    font-weight: 700;
-    font-size: 30px;
-    margin-bottom: 20px; }
-    @media (max-width: 1199px) {
-      .gold-capsules .references__title {
-        padding-top: 40px; } }
-    @media (max-width: 767px) {
-      .gold-capsules .references__title {
-        font-size: 25px; } }
-
-.genesis-lp .main-header {
-  background: #ffffff; }
-
-.genesis-lp .a--cta {
-  background: #5da8a6; }
-
-.genesis-lp .top-offer-bar {
-  background: #5da8a6; }
-  .genesis-lp .top-offer-bar .a--cta {
-    background: #000000;
-    color: #ffffff; }
-
-.genesis-lp .atf {
-  display: table;
-  width: 100%;
-  min-height: 75vh; }
-  .genesis-lp .atf__copy {
-    width: 50%;
-    display: table-cell;
-    background-image: linear-gradient(90deg, #5da8a6, #67cecb);
-    text-align: center;
-    padding: 20px 40px 40px;
-    vertical-align: middle; }
-    @media (max-width: 854px) {
-      .genesis-lp .atf__copy {
-        width: 100%;
-        display: block; } }
-    @media (max-width: 767px) {
-      .genesis-lp .atf__copy {
-        padding: 30px 20px; } }
-  .genesis-lp .atf__content {
-    display: inline-block; }
-  .genesis-lp .atf__header {
-    position: initial;
-    transform: none;
-    font-size: 60px;
-    letter-spacing: 1.5px;
-    color: #ffffff;
-    width: auto;
-    max-width: 600px;
-    line-height: initial;
-    font-weight: 700;
-    margin: 20px 0; }
-    @media (max-width: 767px) {
-      .genesis-lp .atf__header {
-        max-width: 440px;
-        margin: 10px 0;
-        font-size: 40px; } }
-  .genesis-lp .atf__subheader {
-    font-size: 35px;
-    color: #ffffff;
-    margin: 20px auto;
-    line-height: 1.4;
-    max-width: 450px; }
-    @media (max-width: 767px) {
-      .genesis-lp .atf__subheader {
-        margin-top: 10px;
-        font-size: 28px; } }
-  .genesis-lp .atf .a--cta {
-    font-size: 18px;
-    padding: 16px 35px;
-    margin: 0;
-    background-color: #073130;
-    border-radius: 40px; }
-  .genesis-lp .atf__hero-image {
-    background-image: url("https://cdn.besynchro.com/genesis/v3-0/atf-genesis%402x.png");
-    display: table-cell;
-    background-size: cover;
-    width: 25%;
-    background-position: center; }
-    @media (max-width: 854px) {
-      .genesis-lp .atf__hero-image {
-        height: 200px;
-        width: 100%;
-        display: block; } }
-    @media (max-width: 680px) {
-      .genesis-lp .atf__hero-image {
-        padding: 20px 0 0;
-        width: 100%; } }
-
-.genesis-lp .benefits {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 40px 40px 20px; }
-  @media (max-width: 767px) {
-    .genesis-lp .benefits {
-      padding: 40px 20px 20px; } }
-  .genesis-lp .benefits__icon {
-    height: 100px; }
-    @media (max-width: 767px) {
-      .genesis-lp .benefits__icon {
-        height: 70px; } }
-  .genesis-lp .benefits__header {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: initial;
-    text-transform: none;
-    letter-spacing: 0; }
-  .genesis-lp .benefits__point {
-    margin-bottom: 0; }
-    @media (max-width: 1199px) {
-      .genesis-lp .benefits__point {
-        width: 25%; } }
-    @media (max-width: 854px) {
-      .genesis-lp .benefits__point {
-        width: 50%; } }
-
-.genesis-lp .ingredients__icons {
-  background: #5da8a6; }
-
-.genesis-lp .ingredients__icon-box {
-  width: 20%; }
-  @media (max-width: 680px) {
-    .genesis-lp .ingredients__icon-box {
-      width: 50%; } }
-
-.genesis-lp .ingredients__item-box {
-  width: 50%; }
-  @media (min-width: 1600px) {
-    .genesis-lp .ingredients__item-box {
-      width: 33.33%; } }
-  @media (max-width: 1199px) {
-    .genesis-lp .ingredients__item-box {
-      width: 100%; } }
-
-.genesis-lp .ingredients__genesis {
-  font-size: 0;
-  padding: 0 60px 60px; }
-  @media (max-width: 767px) {
-    .genesis-lp .ingredients__genesis {
-      padding: 0 20px 60px; } }
-  .genesis-lp .ingredients__genesis-keystone-img {
-    display: inline-block;
-    width: 50%;
-    vertical-align: middle;
-    padding: 60px; }
-    @media (max-width: 1199px) {
-      .genesis-lp .ingredients__genesis-keystone-img {
-        display: block;
-        width: auto;
-        max-width: 70%;
-        margin: 0 auto;
-        padding: 40px; } }
-  @media (max-width: 1199px) and (max-width: 767px) {
-    .genesis-lp .ingredients__genesis-keystone-img {
-      max-width: 100%;
-      padding: 20px; } }
-  .genesis-lp .ingredients__genesis-keystone {
-    display: inline-block;
-    width: 50%;
-    text-align: left;
-    vertical-align: middle; }
-    @media (max-width: 1199px) {
-      .genesis-lp .ingredients__genesis-keystone {
-        width: 100%;
-        text-align: center; } }
-  .genesis-lp .ingredients__genesis-details {
-    box-shadow: 5px 5px 0 #404040;
-    margin: 40px 0;
-    border: 2px solid #404040; }
-  .genesis-lp .ingredients__genesis-info {
-    display: inline-block;
-    width: 50%;
-    padding: 0 40px;
-    text-align: left;
-    border-right: 2px solid #404040; }
-    .genesis-lp .ingredients__genesis-info:last-child {
-      border: none; }
-
-.genesis-lp .ingredients-2__item-box {
-  width: 50%; }
-  @media (max-width: 767px) {
-    .genesis-lp .ingredients-2__item-box {
-      width: 100%; } }
-
-.genesis-lp .ingredients-2__facts {
-  background: url("https://cdn.besynchro.com/genesis/v2-0/bg-pattern-genesis.jpg") center; }
-
-.genesis-lp .facts__genesis {
-  text-align: center;
-  background: url("https://cdn.besynchro.com/genesis/v2-0/bg-pattern-genesis.jpg") center;
-  background-size: cover;
-  padding: 40px; }
-  @media (max-width: 767px) {
-    .genesis-lp .facts__genesis {
-      padding: 20px; } }
-  .genesis-lp .facts__genesis img {
-    max-height: 500px;
-    max-width: 100%; }
-
-.genesis-lp .instagram-slider__profile img {
-  width: 30px;
-  height: 30px; }
-
-.genesis-lp .instagram-slider__quote {
-  font-size: 29px; }
-
-.genesis-lp .directions__genesis {
-  padding: 60px; }
-=======
-
-.gold-capsules .research {
-  background: #f4f4f5;
-  padding: 60px 60px 20px;
-  font-size: 0; }
->>>>>>> 48514862406090e41d3e3f2472a155a3d8f8e6c0
   @media (max-width: 1199px) {
     .gold-capsules .research {
       padding: 40px 20px 0; } }
@@ -9177,15 +8807,14 @@ input:checked + .accordion-horizontal__inner-box {
 .keto-cleanse a.anchor {
   top: -35px; }
 
-@media (max-width: 680px) {
+.keto-cleanse .top-offer-bar {
+  background: #D4C6BE;
+  color: #5C5652; }
   .keto-cleanse .top-offer-bar .a--cta {
-    display: none; } }
-
-.keto-cleanse .top-offer-bar .a--cta {
-  background: #000000; }
+    display: none; }
 
 .keto-cleanse .a--cta {
-  background: #5da8a6;
+  background: #429197;
   color: #ffffff; }
 
 .keto-cleanse .icon-learn-more__circle {
@@ -9304,7 +8933,7 @@ input:checked + .accordion-horizontal__inner-box {
 
 .keto-cleanse .kcp-intro {
   text-align: center;
-  padding: 0 60px 60px; }
+  padding: 60px; }
   @media (max-width: 767px) {
     .keto-cleanse .kcp-intro {
       padding: 0 20px 40px; } }
@@ -9373,25 +9002,31 @@ input:checked + .accordion-horizontal__inner-box {
       .keto-cleanse .kcp-intro__text {
         font-size: 24px;
         margin: 20px; } }
-  .keto-cleanse .kcp-intro__video {
-    display: block;
-    margin: 0 auto 80px;
+  .keto-cleanse .kcp-intro__screens {
     width: 100%;
-    max-width: 650px; }
-    @media (max-width: 767px) {
-      .keto-cleanse .kcp-intro__video {
-        margin-bottom: 40px; } }
-    .keto-cleanse .kcp-intro__video .iframe-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0; }
-    .keto-cleanse .kcp-intro__video .iframe-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
+    max-width: 900px;
+    display: block;
+    margin: 50px auto; }
+
+.keto-cleanse .kcp-video {
+  display: block;
+  margin: 60px auto;
+  width: 100%;
+  max-width: 800px; }
+  @media (max-width: 767px) {
+    .keto-cleanse .kcp-video {
+      margin: 20px auto; } }
+  .keto-cleanse .kcp-video .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0; }
+  .keto-cleanse .kcp-video .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 .keto-cleanse .how-it-works {
   text-align: center;
@@ -10310,6 +9945,113 @@ input:checked + .accordion-horizontal__inner-box {
     .keto-cleanse.kcp-weekly.week-3 .atf-kcp {
       background-image: url("https://cdn.besynchro.com/keto-cleanse/v1-0/kcp-week-3-atf-mobile%402x.jpg"); } }
 
+.keto-cleanse .atf {
+  display: table;
+  width: 100%; }
+  .keto-cleanse .atf__copy {
+    width: 50%;
+    display: table-cell;
+    background: #F8F3F0;
+    text-align: center;
+    padding: 0 40px 100px; }
+    @media (max-width: 1199px) {
+      .keto-cleanse .atf__copy {
+        padding-bottom: 40px; } }
+    @media (max-width: 854px) {
+      .keto-cleanse .atf__copy {
+        width: 100%;
+        display: block;
+        padding: 0 20px 40px; } }
+  .keto-cleanse .atf__content {
+    display: inline-block; }
+  .keto-cleanse .atf__icon {
+    display: block;
+    margin: 80px auto 0; }
+    @media (max-width: 1199px) {
+      .keto-cleanse .atf__icon {
+        margin-top: 20px; } }
+  .keto-cleanse .atf__header {
+    position: initial;
+    color: #429197;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: initial;
+    width: 100%;
+    margin: 20px 0;
+    transform: none; }
+    @media (max-width: 854px) {
+      .keto-cleanse .atf__header {
+        margin-top: 10px; } }
+    .keto-cleanse .atf__header span {
+      font-weight: 500;
+      font-size: 70px;
+      letter-spacing: 5px;
+      display: block;
+      background: #ffffff;
+      padding: 0 20px;
+      margin-top: 20px; }
+      @media (max-width: 854px) {
+        .keto-cleanse .atf__header span {
+          font-size: 50px;
+          margin-top: 10px;
+          padding: 10px 20px; } }
+  .keto-cleanse .atf__subheader {
+    font-size: 24px;
+    color: #5C5652;
+    margin: 30px auto;
+    line-height: 1.4; }
+    @media (max-width: 854px) {
+      .keto-cleanse .atf__subheader {
+        margin: 20px auto; } }
+  .keto-cleanse .atf__hero-image {
+    background-image: url("https://cdn.besynchro.com/keto-cleanse/v2-0/kcp-atf-image.jpg");
+    display: table-cell;
+    background-size: cover;
+    width: 50%;
+    background-position: center; }
+    @media (max-width: 854px) {
+      .keto-cleanse .atf__hero-image {
+        height: 300px;
+        width: 100%;
+        display: block;
+        background-position: bottom; } }
+
+.keto-cleanse .instagram-slider {
+  padding: 60px 40px; }
+  @media (max-width: 767px) {
+    .keto-cleanse .instagram-slider {
+      padding: 40px 20px; } }
+  .keto-cleanse .instagram-slider__post {
+    padding: 0;
+    display: table;
+    margin: 0 auto;
+    max-width: 1000px; }
+    @media (max-width: 767px) {
+      .keto-cleanse .instagram-slider__post {
+        display: block; } }
+  .keto-cleanse .instagram-slider__image {
+    width: 40%;
+    background-image: url("https://cdn.besynchro.com/keto-cleanse/v2-0/kcp-review-1.png");
+    display: table-cell;
+    background-size: cover;
+    background-position: center; }
+    @media (max-width: 767px) {
+      .keto-cleanse .instagram-slider__image {
+        width: 100%;
+        padding-top: 70%;
+        display: block; } }
+  .keto-cleanse .instagram-slider__content {
+    width: 60%;
+    padding: 30px 40px;
+    display: table-cell; }
+  .keto-cleanse .instagram-slider__stars {
+    margin: 15px 0 20px; }
+  .keto-cleanse .instagram-slider__quote {
+    margin: 0;
+    font-size: 25px; }
+
 /* .bg-full-width {
   background-image: url('https://cdn.besynchro.com/cognos/assets-hero-3.jpg');
   background-attachment: fixed;
@@ -10548,26 +10290,6 @@ svg.external {
   }
 }
 */
-<<<<<<< HEAD
-.go010-01 .atf__hero-image {
-  background-image: url("https://cdn.besynchro.com/experiments/go010-gold-OG-product-atf%402x.jpg");
-  background-position: center; }
-
-.go010-01 .atf .a--cta {
-  background-color: #743e3e;
-  border-radius: 8px;
-  box-shadow: 0 3px 0 0 #fff;
-  position: relative;
-  top: -3px; }
-  .go010-01 .atf .a--cta:hover {
-    opacity: 1; }
-  .go010-01 .atf .a--cta:active {
-    top: 0;
-    box-shadow: none; }
-
-.go010-01 .instagram-slider {
-  background-image: url("https://cdn.besynchro.com/experiments/go010-technology-bg.jpg"); }
-=======
 .prelaunch__atf {
   height: 400px;
   position: relative;
@@ -10907,6 +10629,5 @@ svg.external {
 
 .go010-01 .synchro-reviews {
   padding-top: 40px; }
->>>>>>> 48514862406090e41d3e3f2472a155a3d8f8e6c0
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
