@@ -9366,6 +9366,20 @@ input:checked + .accordion-horizontal__inner-box {
       font-size: 12px;
       color: #5d9ca2;
       margin-right: 5px; }
+  .keto-cleanse .purchase .yotpo {
+    display: inline-block !important;
+    margin: 20px 0 0 !important; }
+    .keto-cleanse .purchase .yotpo .text-m {
+      font-family: "futura-pt", "Open Sans", sans-serif !important;
+      line-height: 25px !important;
+      font-size: 16px !important;
+      margin-left: 15px !important;
+      opacity: 0.5 !important;
+      font-weight: 500 !important; }
+  .keto-cleanse .purchase .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-empty-star,
+  .keto-cleanse .purchase .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-half-star,
+  .keto-cleanse .purchase .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-star {
+    font-size: 25px !important; }
   .keto-cleanse .purchase__pricing {
     background: #F8F3F0;
     width: 200px;
