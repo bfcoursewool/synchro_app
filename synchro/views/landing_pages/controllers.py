@@ -46,6 +46,20 @@ endpoint_info_dict = {
         'is_variant': False,
       }
     },
+    # Gold Capsules Presale Opt In LP (NEW)
+    'be-the-first': {
+      'template': 'landing_pages/pre-launch/gold-capsules/opt-in/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
+    # Gold Capsules Presale Thank You LP (NEW)
+    'thank-you': {
+      'template': 'landing_pages/pre-launch/gold-capsules/thank-you/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
     # Gold LP for Paid Facebook/Instagram Traffic
     'fb': {
       'template': 'landing_pages/gold-og/v1-0-paid-a/0-index.html',
@@ -236,54 +250,6 @@ endpoint_info_dict = {
     },
     'keto-cleanse-program-3': {
       'template': 'landing_pages/keto-cleanse/week-3/v1-0/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
-  ##Pre-launch
-  'km-be-the-first': {
-    # KM Flavors Pre-Launch Opt-In
-    'v0': {
-      'template': 'landing_pages/pre-launch/km-flavors/opt-in/0-index.html',
-      'template_vars': {
-        'is_variant': False,
-      }
-    }
-  },
-  'km-thank-you': {
-    # KM Flavors Pre-Launch Thank-You
-    'v0': {
-      'template': 'landing_pages/pre-launch/km-flavors/thank-you/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
-  ##Presale
-  'bf-be-the-first': {
-    # BFCM 2019 Presale Opt-In
-    'v0': {
-      'template': 'landing_pages/pre-launch/bfcm-2019/opt-in/0-index.html',
-      'template_vars': {
-        'is_variant': False,
-      }
-    }
-  },
-  'bf-thank-you': {
-    # BFCM 2019 Presale Thank-You
-    'v0': {
-      'template': 'landing_pages/pre-launch/bfcm-2019/thank-you/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
-  ## Experiments
-  'go010': {
-    # Test Variant 1
-    'v1': {
-      'template': 'landing_pages/experiments/go010/v1/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
