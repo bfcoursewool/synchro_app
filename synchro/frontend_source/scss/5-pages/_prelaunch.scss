@@ -1,12 +1,15 @@
 .prelaunch {
+  .logo-square {
+    width: 100px;
+    height: 100px;
+  }
+
   &__atf {
-    height: 400px;
-    position: relative;
-    background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf.jpg");
+    background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf-desktop.jpg");
     background-position: center;
     background-size: cover;
     text-align: center;
-    padding-top: 50px;
+    overflow: auto;
     @include s-screen {
       height: 360px;
       padding-top: 25px;
@@ -14,40 +17,69 @@
     }
   }
 
-  &__atf-copy {
+  &__atf-header {
+    width: 600px;
+    font-size: 60px;
     font-weight: $font-bold;
-    font-size: 55px;
-    margin: 0;
-    color: #4A4948;
+    margin: $gutter-large auto $gutter-medium;
     line-height: normal;
-    @include s-screen {
-      font-size: 36px;
-      max-width: 400px;
-      margin: 0 auto;
-    }
-
+    // @include s-screen {
+    //   font-size: 36px;
+    //   max-width: 400px;
+    //   margin: 0 auto;
+    // }
     span {
-      color: #D65667;
-      opacity: 1;
-      display: block;
-      @include s-screen {
-        display: initial;
-      }
+      font-style: oblique;
+      // @include s-screen {
+      //   display: initial;
+      // }
     }
+  }
+
+  &__atf-date {
+    font-weight: $font-demi;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-top: 4px solid $color-gold;
+    border-bottom: 4px solid $color-gold;
+    width: fit-content;
+    padding: 7px 15px;
+    margin: 0 auto;
+  }
+
+  &__atf-subheader {
+    width: 470px;
+    font-weight: $font-medium;
+    font-size: 30px;
+    color: #666666;
+    margin: 40px auto 70px;
+    line-height: normal;
   }
 
   &__body {
     padding: $gutter-medium 0;
     text-align: center;
-    @include s-screen {
-      padding: $gutter-small 0;
-    }
+    // @include s-screen {
+    //   padding: $gutter-small 0;
+    // }
+  }
+
+  &__body-signup {
+    font-weight: $font-medium;
+    font-size: 24px;
+    color: #666666;
+    margin: 0 $gutter-small 30px;
+    // @include s-screen {
+    //   margin-bottom: $gutter-small;
+    // }
   }
 
   &__body-copy {
     font-size: 30px;
+    font-weight: $font-medium;
     line-height: 1.5;
-    max-width: 750px;
+    max-width: 700px;
     margin: $gutter-medium auto 0;
     @include s-screen {
       font-size: 28px;
@@ -55,32 +87,38 @@
     }
   }
 
-  &__body-signup {
-    font-weight: $font-medium;
-    opacity: 0.6;
-    font-size: 22px;
-    color: #4D4D4D;
-    margin: 0 $gutter-small 30px;
-    @include s-screen {
-      margin-bottom: $gutter-small;
-    }
-  }
-
   .a--cta {
     background: #D65667;
   }
 
-  &__body-image {
-    height: 400px;
-    background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-lifestyle.jpg");
+  &__body-images {
+    font-size: 0;
+    padding: 0 25px;
+  }
+
+  &__body-image-1,
+  &__body-image-2 {
+    display: inline-block;
+    border: 5px solid $color-ivory;
+    height: 650px;
     background-position: center;
     background-size: cover;
     margin: $gutter-medium 0;
     @include s-screen {
       margin: $gutter-small 0;
       height: 850px;
-      background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-lifestyle-mobile.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-image-2.jpg");
     }
+  }
+
+  &__body-image-1 {
+    width: 65%;
+    background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-image-1.jpg");
+  }
+
+  &__body-image-2 {
+    width: 35%;
+    background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-image-2.jpg");
   }
 
   &__thankyou-atf {
@@ -139,11 +177,11 @@
     }
   }
 
-  &.km-flavors {
-    .klaviyo-form-LqvMbF {
+  &.gold-capsules {
+    .klaviyo-form-HiE3eW {
       padding: 0 20px;
 
-      .Hrxru {
+      .iezRMI {
         font-family: $font-primary !important;
         border-width: 2px !important;
         border-radius: 6px !important;
@@ -153,8 +191,8 @@
         font-weight: $font-medium !important;
       }
 
-      .cbBUUG,
-      .jzEpAp {
+      .kZaGfF,
+      .bnicNd {
         font-family: $font-primary !important;
         padding: 17px 30px !important;
         font-size: 18px !important;
