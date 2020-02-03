@@ -134,8 +134,8 @@
 
   &__title {
     font-weight: $font-bold;
-    font-size: 50px;
-    margin-bottom: 30px;
+    font-size: 35px;
+    margin-bottom: $gutter-medium;
     @include s-screen {
       font-size: 35px;
     }
@@ -171,7 +171,7 @@
 
   &__header {
     font-weight: $font-bold;
-    font-size: 30px;
+    font-size: 25px;
     margin: 20px 0;
 
     span {
@@ -184,6 +184,7 @@
     font-weight: $font-medium;
     font-size: 24px;
     opacity: 0.5;
+    line-height: initial;
   }
 
   &__info {

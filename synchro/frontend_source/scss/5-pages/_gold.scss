@@ -396,7 +396,10 @@
 
 .gold-capsules {
   a.anchor {
-    top: -60px;
+    top: -100px;
+    @include s-screen {
+      top: -40px;
+    }
   }
 
   .atf {
@@ -419,6 +422,7 @@
     &__copy {
       font-size: 0;
       padding: $gutter-medium;
+      text-align: center;
       @include s-screen {
         padding: 30px $gutter-small;
       }
@@ -438,7 +442,7 @@
       background-size: cover;
       width: 25%;
       @include sm-screen {
-        height: 200px;
+        height: 300px;
         width: 100%;
         display: block;
       }
@@ -454,7 +458,7 @@
       margin: $gutter-small 0;
       letter-spacing: 0;
       @include s-screen {
-        margin: 10px 0;
+        margin: 10px auto;
         font-size: 40px;
       }
     }
@@ -493,7 +497,7 @@
 
     &__header {
       font-weight: $font-bold;
-      font-size: 50px;
+      font-size: 45px;
       margin: 30px 0;
       @include s-screen {
         font-size: 40px;
@@ -505,13 +509,6 @@
       max-width: 450px;
       display: block;
       margin: 0 auto $gutter-medium;
-    }
-
-    .a--cta {
-      font-size: 18px;
-      padding: 20px 35px;
-      background-color: #39447C;
-      border-radius: 40px;
     }
   }
 
@@ -528,7 +525,7 @@
 
     &__intro {
       font-weight: $font-demi;
-      font-size: 30px;
+      font-size: 25px;
       opacity: 0.6;
       text-align: center;
       max-width: 800px;
@@ -545,13 +542,13 @@
 
     &__header {
       font-weight: $font-bold;
-      font-size: 40px;
+      font-size: 30px;
       line-height: initial;
     }
 
     &__copy {
       font-weight: $font-medium;
-      font-size: 24px;
+      font-size: 22px;
       opacity: 0.5;
     }
   }
@@ -565,7 +562,7 @@
     &__title {
       padding-top: $gutter-large;
       font-weight: $font-bold;
-      font-size: 30px;
+      font-size: 35px;
       margin-bottom: 20px;
       @include m-screen {
         padding-top: $gutter-medium;

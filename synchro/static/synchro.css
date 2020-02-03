@@ -5774,7 +5774,7 @@ p {
       opacity: 0.5; }
   .benefits-2__title {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     line-height: initial; }
 
 .intro {
@@ -5963,7 +5963,7 @@ p {
         padding: 0; } }
   .technology-2__header {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 20px; }
@@ -5973,7 +5973,6 @@ p {
   .technology-2__subheader {
     font-weight: 500;
     font-size: 25px;
-    opacity: 0.5;
     color: #7F7F7F; }
   .technology-2__tech {
     justify-content: space-between;
@@ -5989,17 +5988,17 @@ p {
         width: 100%;
         margin-top: 40px; } }
     .technology-2__extraction img, .technology-2__liposomal img, .technology-2__pepper img {
-      width: 100px; }
+      width: 80px; }
   .technology-2__extraction {
     padding: 0; }
   .technology-2__title {
     font-weight: 700;
-    font-size: 34px;
+    font-size: 28px;
     line-height: initial;
     margin: 15px 0 10px; }
   .technology-2__copy {
     font-weight: 500;
-    font-size: 26px;
+    font-size: 24px;
     opacity: 0.5;
     line-height: initial; }
   .technology-2 .a--cta {
@@ -6280,8 +6279,8 @@ p {
       padding-top: 40px; } }
   .ingredients-2__title {
     font-weight: 700;
-    font-size: 50px;
-    margin-bottom: 30px; }
+    font-size: 35px;
+    margin-bottom: 40px; }
     @media (max-width: 767px) {
       .ingredients-2__title {
         font-size: 35px; } }
@@ -6309,7 +6308,7 @@ p {
         width: 300px; } }
   .ingredients-2__header {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     margin: 20px 0; }
     .ingredients-2__header span {
       opacity: 0.5;
@@ -6317,7 +6316,8 @@ p {
   .ingredients-2__copy {
     font-weight: 500;
     font-size: 24px;
-    opacity: 0.5; }
+    opacity: 0.5;
+    line-height: initial; }
   .ingredients-2__info {
     display: table;
     width: 100%; }
@@ -6766,7 +6766,7 @@ p {
   .faq__title {
     padding-top: 60px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 40px; }
     @media (max-width: 1199px) {
       .faq__title {
@@ -7571,7 +7571,7 @@ input:checked + .accordion-horizontal__inner-box {
     font-size: 0;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05); }
     .rating-new__stars #rating-new__star {
-      height: 32px;
+      height: 30px;
       margin: 0 4px; }
       @media (max-width: 767px) {
         .rating-new__stars #rating-new__star {
@@ -8025,7 +8025,10 @@ input:checked + .accordion-horizontal__inner-box {
   content: none; }
 
 .gold-capsules a.anchor {
-  top: -60px; }
+  top: -100px; }
+  @media (max-width: 767px) {
+    .gold-capsules a.anchor {
+      top: -40px; } }
 
 @media (max-width: 854px) {
   .gold-capsules .atf {
@@ -8042,7 +8045,8 @@ input:checked + .accordion-horizontal__inner-box {
 
 .gold-capsules .atf__copy {
   font-size: 0;
-  padding: 40px; }
+  padding: 40px;
+  text-align: center; }
   @media (max-width: 767px) {
     .gold-capsules .atf__copy {
       padding: 30px 20px; } }
@@ -8061,7 +8065,7 @@ input:checked + .accordion-horizontal__inner-box {
   width: 25%; }
   @media (max-width: 854px) {
     .gold-capsules .atf__hero-image {
-      height: 200px;
+      height: 300px;
       width: 100%;
       display: block; } }
   @media (max-width: 680px) {
@@ -8076,7 +8080,7 @@ input:checked + .accordion-horizontal__inner-box {
   letter-spacing: 0; }
   @media (max-width: 767px) {
     .gold-capsules .atf__header {
-      margin: 10px 0;
+      margin: 10px auto;
       font-size: 40px; } }
 
 .gold-capsules .atf__subheader {
@@ -8107,7 +8111,7 @@ input:checked + .accordion-horizontal__inner-box {
       padding: 40px 20px; } }
   .gold-capsules .hero-cta__header {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 45px;
     margin: 30px 0; }
     @media (max-width: 767px) {
       .gold-capsules .hero-cta__header {
@@ -8117,11 +8121,6 @@ input:checked + .accordion-horizontal__inner-box {
     max-width: 450px;
     display: block;
     margin: 0 auto 40px; }
-  .gold-capsules .hero-cta .a--cta {
-    font-size: 18px;
-    padding: 20px 35px;
-    background-color: #39447C;
-    border-radius: 40px; }
 
 .gold-capsules .research {
   background: #f4f4f5;
@@ -8135,7 +8134,7 @@ input:checked + .accordion-horizontal__inner-box {
       display: none; } }
   .gold-capsules .research__intro {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 25px;
     opacity: 0.6;
     text-align: center;
     max-width: 800px;
@@ -8148,11 +8147,11 @@ input:checked + .accordion-horizontal__inner-box {
     padding: 25px 40px; }
   .gold-capsules .research__header {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
     line-height: initial; }
   .gold-capsules .research__copy {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     opacity: 0.5; }
 
 .gold-capsules .references {
@@ -8163,7 +8162,7 @@ input:checked + .accordion-horizontal__inner-box {
   .gold-capsules .references__title {
     padding-top: 60px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 20px; }
     @media (max-width: 1199px) {
       .gold-capsules .references__title {
@@ -10365,36 +10364,59 @@ svg.external {
       margin-top: 30px;
       background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-mobile.jpg"); } }
 
-.go010-01 .a--cta {
+.go011-01 .expanded-header-container .expanded-header {
+  top: 40px; }
+  @media (max-width: 767px) {
+    .go011-01 .expanded-header-container .expanded-header {
+      position: initial; } }
+  @media (max-width: 767px) {
+    .go011-01 .expanded-header-container .expanded-header.pseudo {
+      display: none; } }
+  @media (max-width: 767px) {
+    .go011-01 .expanded-header-container .expanded-header .main-navigation__hamburger {
+      display: none; } }
+
+.go011-01 .a--cta {
   position: relative;
   background: #329DC3 !important;
   border-radius: 6px !important;
   box-shadow: 0 3px 0 0 #fff;
   top: 0; }
-  .go010-01 .a--cta:hover {
+  .go011-01 .a--cta:hover {
     opacity: 1; }
-  .go010-01 .a--cta:active {
+  .go011-01 .a--cta:active {
     top: 3px;
     box-shadow: none; }
 
-.go010-01 .atf__hero-image {
+.go011-01 .atf__hero-image {
   background-image: url("https://cdn.besynchro.com/experiments/go010-gold-OG-product-atf%402x.jpg");
   background-position: center; }
 
 @media (max-width: 767px) {
-  .go010-01 .benefits-2__copy:first-child {
+  .go011-01 .benefits-2__copy:first-child {
     display: none; } }
 
-.go010-01 .benefits-2__copy:nth-child(3) {
+.go011-01 .benefits-2__copy:nth-child(3) {
   display: none; }
   @media (max-width: 767px) {
-    .go010-01 .benefits-2__copy:nth-child(3) {
+    .go011-01 .benefits-2__copy:nth-child(3) {
       display: inline-block; } }
 
-.go010-01 .instagram-slider {
-  background-image: url("https://cdn.besynchro.com/experiments/go010-technology-bg.jpg"); }
+.go011-01 .instagram {
+  padding-top: 60px; }
+  @media (max-width: 1199px) {
+    .go011-01 .instagram {
+      padding-top: 40px; } }
+  .go011-01 .instagram__title {
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 60px;
+    text-align: center; }
+    @media (max-width: 1199px) {
+      .go011-01 .instagram__title {
+        margin-bottom: 40px; } }
 
-.go010-01 .synchro-reviews {
+.go011-01 .synchro-reviews {
   padding-top: 40px; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

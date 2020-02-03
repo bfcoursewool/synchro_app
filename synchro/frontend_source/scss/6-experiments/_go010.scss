@@ -1,0 +1,52 @@
+@import '../synchro';
+
+.go010-01 {
+  .a--cta {
+    position: relative;
+    background: #329DC3 !important;
+    border-radius: 6px !important;
+    box-shadow: 0 3px 0 0 #fff;
+    top: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      top: 3px;
+      box-shadow: none;
+    }
+  }
+
+  .atf {
+    &__hero-image {
+      background-image: url("https://cdn.besynchro.com/experiments/go010-gold-OG-product-atf%402x.jpg");
+      background-position: center;
+    }
+  }
+
+  .benefits-2 {
+    &__copy {
+      &:first-child {
+        @include s-screen {
+          display: none;
+        }
+      }
+
+      &:nth-child(3) {
+        display: none;
+        @include s-screen {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .instagram-slider {
+    background-image: url("https://cdn.besynchro.com/experiments/go010-technology-bg.jpg");
+  }
+
+  .synchro-reviews {
+    padding-top: $gutter-medium;
+  }
+}

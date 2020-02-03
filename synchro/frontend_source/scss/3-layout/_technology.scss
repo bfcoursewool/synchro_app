@@ -168,7 +168,7 @@
 
   &__header {
     font-weight: $font-bold;
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 20px;
@@ -180,7 +180,6 @@
   &__subheader {
     font-weight: $font-medium;
     font-size: 25px;
-    opacity: 0.5;
     color: #7F7F7F;
   }
 
@@ -203,7 +202,7 @@
     }
 
     img {
-      width: 100px;
+      width: 80px;
     }
   }
 
@@ -213,14 +212,14 @@
 
   &__title {
     font-weight: $font-bold;
-    font-size: 34px;
+    font-size: 28px;
     line-height: initial;
     margin: 15px 0 10px;
   }
 
   &__copy {
     font-weight: $font-medium;
-    font-size: 26px;
+    font-size: 24px;
     opacity: 0.5;
     line-height: initial;
   }

@@ -254,6 +254,16 @@ endpoint_info_dict = {
         'is_variant': True,
       }
     }
+  },
+  ## Experiments
+  'go011': {
+    # Test Variant 1
+    'v1': {
+      'template': 'landing_pages/experiments/go011/v1/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    }
   }
 }
 
