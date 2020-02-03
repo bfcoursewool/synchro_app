@@ -10014,13 +10014,20 @@ svg.external {
 .prelaunch .logo-square {
   width: 100px;
   height: 100px; }
+  @media (max-width: 854px) {
+    .prelaunch .logo-square {
+      width: 80px;
+      height: 80px; } }
 
 .prelaunch__atf {
   background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf-desktop.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;
-  overflow: auto; }
+  padding-bottom: 70px; }
+  @media (max-width: 854px) {
+    .prelaunch__atf {
+      padding-bottom: 40px; } }
   @media (max-width: 767px) {
     .prelaunch__atf {
       height: 360px;
@@ -10033,6 +10040,10 @@ svg.external {
   font-weight: 700;
   margin: 60px auto 40px;
   line-height: normal; }
+  @media (max-width: 854px) {
+    .prelaunch__atf-header {
+      font-size: 50px;
+      margin: 40px auto; } }
   .prelaunch__atf-header span {
     font-style: oblique; }
 
@@ -10046,14 +10057,20 @@ svg.external {
   width: fit-content;
   padding: 7px 15px;
   margin: 0 auto; }
+  @media (max-width: 854px) {
+    .prelaunch__atf-date {
+      font-size: 22px; } }
 
 .prelaunch__atf-subheader {
   width: 470px;
   font-weight: 500;
   font-size: 30px;
   color: #666666;
-  margin: 40px auto 70px;
+  margin: 40px auto 0;
   line-height: normal; }
+  @media (max-width: 854px) {
+    .prelaunch__atf-subheader {
+      font-size: 26px; } }
 
 .prelaunch__body {
   padding: 40px 0;
@@ -10064,6 +10081,9 @@ svg.external {
   font-size: 24px;
   color: #666666;
   margin: 0 20px 30px; }
+  @media (max-width: 854px) {
+    .prelaunch__body-signup {
+      font-size: 20px; } }
 
 .prelaunch__body-copy {
   font-size: 30px;
@@ -10071,6 +10091,9 @@ svg.external {
   line-height: 1.5;
   max-width: 700px;
   margin: 40px auto 0; }
+  @media (max-width: 854px) {
+    .prelaunch__body-copy {
+      font-size: 25px; } }
   @media (max-width: 767px) {
     .prelaunch__body-copy {
       font-size: 28px;
@@ -10089,7 +10112,10 @@ svg.external {
   height: 650px;
   background-position: center;
   background-size: cover;
-  margin: 40px 0; }
+  margin: 30px 0; }
+  @media (max-width: 854px) {
+    .prelaunch__body-image-1, .prelaunch__body-image-2 {
+      height: 450px; } }
   @media (max-width: 767px) {
     .prelaunch__body-image-1, .prelaunch__body-image-2 {
       margin: 20px 0;
@@ -10155,21 +10181,23 @@ svg.external {
       background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-mobile.jpg"); } }
 
 .prelaunch.gold-capsules .klaviyo-form-HiE3eW {
-  padding: 0 20px; }
-  .prelaunch.gold-capsules .klaviyo-form-HiE3eW .iezRMI {
+  padding: 0 20px;
+  width: 600px;
+  margin: 0 auto; }
+  .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bWFXXf {
     font-family: "futura-pt", "Open Sans", sans-serif !important;
-    border-width: 2px !important;
     border-radius: 6px !important;
     text-align: center !important;
     padding: 0 !important;
     font-size: 18px !important;
     font-weight: 500 !important; }
-  .prelaunch.gold-capsules .klaviyo-form-HiE3eW .kZaGfF,
-  .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bnicNd {
+  .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bnicNd,
+  .prelaunch.gold-capsules .klaviyo-form-HiE3eW .kZaGfF {
     font-family: "futura-pt", "Open Sans", sans-serif !important;
-    padding: 17px 30px !important;
+    padding: 0 30px !important;
     font-size: 18px !important;
-    font-weight: 600 !important; }
+    font-weight: 600 !important;
+    height: 60px !important; }
 
 .bfcm-2019 .opt-in__body {
   background-image: url("https://cdn.besynchro.com/general/bf2019/bf-optin-bg-desktop.jpg");
