@@ -14,18 +14,25 @@
     background-size: cover;
     text-align: center;
     padding-bottom: 70px;
-    @include sm-screen {
-      padding-bottom: $gutter-medium;
-    }
     @include s-screen {
-      height: 360px;
-      padding-top: 25px;
-      background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf-mobile.jpg");
+      padding: 0 $gutter-small;
+      background: #E5E5E4;
+    }
+  }
+
+  &__atf-mobile {
+    display: none;
+    @include s-screen {
+      display: block;
+      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf-desktop.jpg");
+      background-position: top;
+      background-size: cover;
+      height: 350px;
     }
   }
 
   &__atf-header {
-    width: 600px;
+    max-width: 600px;
     font-size: 60px;
     font-weight: $font-bold;
     margin: $gutter-large auto $gutter-medium;
@@ -33,6 +40,11 @@
     @include sm-screen {
       font-size: 50px;
       margin: $gutter-medium auto;
+    }
+    @include s-screen {
+      max-width: 450px;
+      font-size: 38px;
+      margin: 30px auto;
     }
 
     span {
@@ -59,13 +71,14 @@
   }
 
   &__atf-subheader {
-    width: 470px;
+    max-width: 470px;
     font-weight: $font-medium;
     font-size: 30px;
     color: #666666;
     margin: 40px auto 0;
     line-height: normal;
     @include sm-screen {
+      margin-top: 30px;
       font-size: 26px;
     }
   }
@@ -73,9 +86,9 @@
   &__body {
     padding: $gutter-medium 0;
     text-align: center;
-    // @include s-screen {
-    //   padding: $gutter-small 0;
-    // }
+    @include s-screen {
+      padding: 30px 0;
+    }
   }
 
   &__body-signup {
@@ -86,33 +99,33 @@
     @include sm-screen {
       font-size: 20px;
     }
-    // @include s-screen {
-    //   margin-bottom: $gutter-small;
-    // }
   }
 
   &__body-copy {
     font-size: 30px;
     font-weight: $font-medium;
     line-height: 1.5;
-    max-width: 700px;
+    max-width: 720px;
     margin: $gutter-medium auto 0;
     @include sm-screen {
       font-size: 25px;
     }
     @include s-screen {
-      font-size: 28px;
-      margin: $gutter-small $gutter-small 0;
+      font-size: 22px;
+      margin: 30px 30px 0;
     }
   }
 
   .a--cta {
-    background: #D65667;
+    background: $color-gold;
   }
 
   &__body-images {
     font-size: 0;
     padding: 0 25px;
+    @include s-screen {
+      padding: 0;
+    }
   }
 
   &__body-image-1,
@@ -123,86 +136,97 @@
     background-position: center;
     background-size: cover;
     margin: 30px 0;
-    @include sm-screen {
+    @include m-screen {
       height: 450px;
     }
     @include s-screen {
-      margin: $gutter-small 0;
-      height: 850px;
-      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-image-2.jpg");
+      border: none;
+      height: 300px;
     }
   }
 
   &__body-image-1 {
     width: 65%;
     background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-image-1.jpg");
+    @include s-screen {
+      width: 100%;
+    }
   }
 
   &__body-image-2 {
     width: 35%;
     background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-image-2.jpg");
+    @include s-screen {
+      display: none;
+    }
   }
 
   &__thankyou-atf {
-    height: 370px;
+    height: 615px;
     position: relative;
-    background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf.jpg");
+    background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf-desktop.jpg");
     background-position: center;
     background-size: cover;
     text-align: center;
-    padding-top: 80px;
+    margin: 0 30px;
     @include s-screen {
-      background-position: bottom;
-      height: 330px;
-      padding-top: 30px;
+      margin: 0;
+      height: 400px;
       background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf-mobile.jpg");
     }
   }
 
   &__thankyou-header {
     font-weight: $font-bold;
-    font-size: 55px;
-    margin: 0 $gutter-medium;
-    color: #4A4948;
-    line-height: normal;
+    font-size: 60px;
+    margin: 0;
+    color: $color-ivory;
+    line-height: 1.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
     @include s-screen {
-      font-size: 40px;
+      font-size: 50px;
+    }
+
+    span {
+      display: block;
+      @include s-screen {
+        display: initial;
+      }
     }
   }
 
   &__thankyou {
-    padding-top: $gutter-medium;
+    padding: $gutter-medium $gutter-small;
     text-align: center;
+    @include s-screen {
+      padding: 30px $gutter-small;
+    }
   }
 
   &__thankyou-copy {
     font-weight: $font-medium;
     max-width: 800px;
     margin: 0 auto 1em;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 1.5;
-    padding: 0 $gutter-small;
-  }
-
-  &__thankyou-cta {
-    padding: $gutter-small 0;
-  }
-
-  &__thankyou-image {
-    height: 630px;
-    background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-desktop.jpg");
-    background-position: top;
-    background-size: cover;
+    @include m-screen {
+      max-width: 650px;
+      font-size: 26px;
+    }
     @include s-screen {
-      margin-top: 30px;
-      background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-mobile.jpg");
+      max-width: 500px;
+      font-size: 20px;
     }
   }
 
   &.gold-capsules {
     .klaviyo-form-HiE3eW {
       padding: 0 20px;
-      width: 600px;
+      max-width: 600px;
       margin: 0 auto;
 
       .bWFXXf {

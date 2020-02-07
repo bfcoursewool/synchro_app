@@ -10024,17 +10024,23 @@ svg.external {
   background-size: cover;
   text-align: center;
   padding-bottom: 70px; }
-  @media (max-width: 854px) {
-    .prelaunch__atf {
-      padding-bottom: 40px; } }
   @media (max-width: 767px) {
     .prelaunch__atf {
-      height: 360px;
-      padding-top: 25px;
-      background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf-mobile.jpg"); } }
+      padding: 0 20px;
+      background: #E5E5E4; } }
+
+.prelaunch__atf-mobile {
+  display: none; }
+  @media (max-width: 767px) {
+    .prelaunch__atf-mobile {
+      display: block;
+      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf-desktop.jpg");
+      background-position: top;
+      background-size: cover;
+      height: 350px; } }
 
 .prelaunch__atf-header {
-  width: 600px;
+  max-width: 600px;
   font-size: 60px;
   font-weight: 700;
   margin: 60px auto 40px;
@@ -10043,6 +10049,11 @@ svg.external {
     .prelaunch__atf-header {
       font-size: 50px;
       margin: 40px auto; } }
+  @media (max-width: 767px) {
+    .prelaunch__atf-header {
+      max-width: 450px;
+      font-size: 38px;
+      margin: 30px auto; } }
   .prelaunch__atf-header span {
     font-style: oblique; }
 
@@ -10061,7 +10072,7 @@ svg.external {
       font-size: 22px; } }
 
 .prelaunch__atf-subheader {
-  width: 470px;
+  max-width: 470px;
   font-weight: 500;
   font-size: 30px;
   color: #666666;
@@ -10069,11 +10080,15 @@ svg.external {
   line-height: normal; }
   @media (max-width: 854px) {
     .prelaunch__atf-subheader {
+      margin-top: 30px;
       font-size: 26px; } }
 
 .prelaunch__body {
   padding: 40px 0;
   text-align: center; }
+  @media (max-width: 767px) {
+    .prelaunch__body {
+      padding: 30px 0; } }
 
 .prelaunch__body-signup {
   font-weight: 500;
@@ -10088,22 +10103,25 @@ svg.external {
   font-size: 30px;
   font-weight: 500;
   line-height: 1.5;
-  max-width: 700px;
+  max-width: 720px;
   margin: 40px auto 0; }
   @media (max-width: 854px) {
     .prelaunch__body-copy {
       font-size: 25px; } }
   @media (max-width: 767px) {
     .prelaunch__body-copy {
-      font-size: 28px;
-      margin: 20px 20px 0; } }
+      font-size: 22px;
+      margin: 30px 30px 0; } }
 
 .prelaunch .a--cta {
-  background: #D65667; }
+  background: #eca846; }
 
 .prelaunch__body-images {
   font-size: 0;
   padding: 0 25px; }
+  @media (max-width: 767px) {
+    .prelaunch__body-images {
+      padding: 0; } }
 
 .prelaunch__body-image-1, .prelaunch__body-image-2 {
   display: inline-block;
@@ -10112,76 +10130,87 @@ svg.external {
   background-position: center;
   background-size: cover;
   margin: 30px 0; }
-  @media (max-width: 854px) {
+  @media (max-width: 1199px) {
     .prelaunch__body-image-1, .prelaunch__body-image-2 {
       height: 450px; } }
   @media (max-width: 767px) {
     .prelaunch__body-image-1, .prelaunch__body-image-2 {
-      margin: 20px 0;
-      height: 850px;
-      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-image-2.jpg"); } }
+      border: none;
+      height: 300px; } }
 
 .prelaunch__body-image-1 {
   width: 65%;
   background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-image-1.jpg"); }
+  @media (max-width: 767px) {
+    .prelaunch__body-image-1 {
+      width: 100%; } }
 
 .prelaunch__body-image-2 {
   width: 35%;
   background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-image-2.jpg"); }
+  @media (max-width: 767px) {
+    .prelaunch__body-image-2 {
+      display: none; } }
 
 .prelaunch__thankyou-atf {
-  height: 370px;
+  height: 615px;
   position: relative;
-  background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf.jpg");
+  background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf-desktop.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding-top: 80px; }
+  margin: 0 30px; }
   @media (max-width: 767px) {
     .prelaunch__thankyou-atf {
-      background-position: bottom;
-      height: 330px;
-      padding-top: 30px;
+      margin: 0;
+      height: 400px;
       background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf-mobile.jpg"); } }
 
 .prelaunch__thankyou-header {
   font-weight: 700;
-  font-size: 55px;
-  margin: 0 40px;
-  color: #4A4948;
-  line-height: normal; }
+  font-size: 60px;
+  margin: 0;
+  color: #ffffff;
+  line-height: 1.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content; }
   @media (max-width: 767px) {
     .prelaunch__thankyou-header {
-      font-size: 40px; } }
+      font-size: 50px; } }
+  .prelaunch__thankyou-header span {
+    display: block; }
+    @media (max-width: 767px) {
+      .prelaunch__thankyou-header span {
+        display: initial; } }
 
 .prelaunch__thankyou {
-  padding-top: 40px;
+  padding: 40px 20px;
   text-align: center; }
+  @media (max-width: 767px) {
+    .prelaunch__thankyou {
+      padding: 30px 20px; } }
 
 .prelaunch__thankyou-copy {
   font-weight: 500;
   max-width: 800px;
   margin: 0 auto 1em;
-  font-size: 24px;
-  line-height: 1.5;
-  padding: 0 20px; }
-
-.prelaunch__thankyou-cta {
-  padding: 20px 0; }
-
-.prelaunch__thankyou-image {
-  height: 630px;
-  background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-desktop.jpg");
-  background-position: top;
-  background-size: cover; }
+  font-size: 30px;
+  line-height: 1.5; }
+  @media (max-width: 1199px) {
+    .prelaunch__thankyou-copy {
+      max-width: 650px;
+      font-size: 26px; } }
   @media (max-width: 767px) {
-    .prelaunch__thankyou-image {
-      margin-top: 30px;
-      background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-mobile.jpg"); } }
+    .prelaunch__thankyou-copy {
+      max-width: 500px;
+      font-size: 20px; } }
 
 .prelaunch.gold-capsules .klaviyo-form-HiE3eW {
   padding: 0 20px;
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto; }
   .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bWFXXf {
     font-family: "futura-pt", "Open Sans", sans-serif !important;
