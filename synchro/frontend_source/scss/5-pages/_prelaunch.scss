@@ -13,10 +13,10 @@
     background-position: center;
     background-size: cover;
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: $gutter-medium;
     @include s-screen {
-      padding: 0 $gutter-small;
-      background: #E5E5E4;
+      padding: 0 $gutter-small 30px;
+      background: #F1F1F0;
     }
   }
 
@@ -24,22 +24,23 @@
     display: none;
     @include s-screen {
       display: block;
-      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf-desktop.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf-mobile.jpg");
       background-position: top;
       background-size: cover;
-      height: 350px;
+      padding-top: 75%;
+      margin-top: 30px;
     }
   }
 
   &__atf-header {
     max-width: 600px;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: $font-bold;
-    margin: $gutter-large auto $gutter-medium;
+    margin: 30px auto $gutter-medium;
     line-height: normal;
     @include sm-screen {
       font-size: 50px;
-      margin: $gutter-medium auto;
+      margin: $gutter-medium auto 20px;
     }
     @include s-screen {
       max-width: 450px;
@@ -57,7 +58,7 @@
 
   &__atf-date {
     font-weight: $font-demi;
-    font-size: 26px;
+    font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     border-top: 4px solid $color-gold;
@@ -73,18 +74,18 @@
   &__atf-subheader {
     max-width: 470px;
     font-weight: $font-medium;
-    font-size: 30px;
+    font-size: 26px;
     color: #666666;
-    margin: 40px auto 0;
+    margin: 30px auto 0;
     line-height: normal;
     @include sm-screen {
       margin-top: 30px;
-      font-size: 26px;
+      font-size: 24px;
     }
   }
 
   &__body {
-    padding: $gutter-medium 0;
+    padding: 30px 0;
     text-align: center;
     @include s-screen {
       padding: 30px 0;
@@ -93,16 +94,16 @@
 
   &__body-signup {
     font-weight: $font-medium;
-    font-size: 24px;
+    font-size: 22px;
     color: #666666;
-    margin: 0 $gutter-small 30px;
+    margin: 0 $gutter-small $gutter-small;
     @include sm-screen {
       font-size: 20px;
     }
   }
 
   &__body-copy {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: $font-medium;
     line-height: 1.5;
     max-width: 720px;
@@ -112,7 +113,7 @@
     }
     @include s-screen {
       font-size: 22px;
-      margin: 30px 30px 0;
+      margin: 30px $gutter-small 0;
     }
   }
 
@@ -135,7 +136,7 @@
     height: 650px;
     background-position: center;
     background-size: cover;
-    margin: 30px 0;
+    margin: 30px 0 $gutter-small;
     @include m-screen {
       height: 450px;
     }
@@ -162,9 +163,9 @@
   }
 
   &__thankyou-atf {
-    height: 615px;
+    height: 500px;
     position: relative;
-    background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf-desktop.jpg");
+    background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf-ty-desktop.jpg");
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -172,13 +173,13 @@
     @include s-screen {
       margin: 0;
       height: 400px;
-      background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-prelaunch-atf-mobile.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf-ty-mobile.jpg");
     }
   }
 
   &__thankyou-header {
     font-weight: $font-bold;
-    font-size: 60px;
+    font-size: 55px;
     margin: 0;
     color: $color-ivory;
     line-height: 1.5;
@@ -188,6 +189,7 @@
     transform: translate(-50%, -50%);
     width: fit-content;
     @include s-screen {
+      padding: $gutter-small;
       font-size: 50px;
     }
 
@@ -211,7 +213,7 @@
     font-weight: $font-medium;
     max-width: 800px;
     margin: 0 auto 1em;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 1.5;
     @include m-screen {
       max-width: 650px;
@@ -224,6 +226,8 @@
   }
 
   &.gold-capsules {
+    .klaviyo-form-HLQ8cK,
+    .klaviyo-form-HLWnhf,
     .klaviyo-form-HiE3eW {
       padding: 0 20px;
       max-width: 600px;
@@ -236,6 +240,9 @@
         padding: 0 !important;
         font-size: 18px !important;
         font-weight: $font-medium !important;
+        @include s-screen {
+          height: 50px !important;
+        }
       }
 
       .bnicNd,
@@ -245,6 +252,10 @@
         font-size: 18px !important;
         font-weight: $font-demi !important;
         height: 60px !important;
+        @include s-screen {
+        padding: 0 20px !important;
+          height: 50px !important;
+        }
       }
     }
   }
