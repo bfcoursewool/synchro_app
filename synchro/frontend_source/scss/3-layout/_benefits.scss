@@ -89,9 +89,9 @@
 
 .benefits-2 {
   font-size: 0;
-  padding: $gutter-medium $gutter-large $gutter-small;
+  padding: $gutter-medium $gutter-medium $gutter-small;
   @include l-screen {
-    padding: $gutter-medium $gutter-medium $gutter-small;
+    padding: $gutter-medium $gutter-small $gutter-small;
   }
   @include m-screen {
     padding: $gutter-medium $gutter-small 0;
@@ -108,6 +108,7 @@
     display: inline-block;
     padding: 20px 20px 0;
     vertical-align: top;
+    text-align: center;
     @include m-screen {
       width: 50%;
     }
@@ -118,15 +119,7 @@
   }
 
   &__image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 100px;
-    @include xs-screen {
-      width: 250px;
-      height: 250px;
-      border-radius: 125px;
-    }
+    width: 100%;
   }
 
   &__text {

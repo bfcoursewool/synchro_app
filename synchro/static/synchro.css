@@ -5731,10 +5731,10 @@ p {
 
 .benefits-2 {
   font-size: 0;
-  padding: 40px 60px 20px; }
+  padding: 40px 40px 20px; }
   @media (max-width: 1599px) {
     .benefits-2 {
-      padding: 40px 40px 20px; } }
+      padding: 40px 20px 20px; } }
   @media (max-width: 1199px) {
     .benefits-2 {
       padding: 40px 20px 0; } }
@@ -5748,7 +5748,8 @@ p {
     width: 25%;
     display: inline-block;
     padding: 20px 20px 0;
-    vertical-align: top; }
+    vertical-align: top;
+    text-align: center; }
     @media (max-width: 1199px) {
       .benefits-2__copy {
         width: 50%; } }
@@ -5757,15 +5758,7 @@ p {
         width: 100%;
         text-align: center; } }
   .benefits-2__image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 100px; }
-    @media (max-width: 680px) {
-      .benefits-2__image {
-        width: 250px;
-        height: 250px;
-        border-radius: 125px; } }
+    width: 100%; }
   .benefits-2__text {
     margin-top: 30px; }
     .benefits-2__text .p--text {
@@ -7990,30 +7983,30 @@ input:checked + .accordion-horizontal__inner-box {
   .gold-lp .purchase .option-1 {
     background-color: #eda267;
     background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png");
-    background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png"), linear-gradient(90deg, #eda267, #edbe67); }
+    background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg1.png"), linear-gradient(90deg, #F3B37E, #F2C97F); }
   .gold-lp .purchase .option-2 {
     background-color: #eda267;
     background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png");
-    background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png"), linear-gradient(90deg, #eda267, #edbe67); }
+    background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg2.png"), linear-gradient(90deg, #F3B37E, #F2C97F); }
   .gold-lp .purchase .option-3 {
     background-color: #eda267;
     background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png");
-    background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png"), linear-gradient(90deg, #eda267, #edbe67); }
+    background-image: url("https://cdn.besynchro.com/gold/v2-0/gold-lg4.png"), linear-gradient(90deg, #F3B37E, #F2C97F); }
 
 .gold-og .purchase .option-1 {
   background-color: #eda267;
   background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png");
-  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png"), linear-gradient(90deg, #eda267, #edbe67); }
+  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og1.png"), linear-gradient(90deg, #F3B37E, #F2C97F); }
 
 .gold-og .purchase .option-2 {
   background-color: #eda267;
   background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png");
-  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png"), linear-gradient(90deg, #eda267, #edbe67); }
+  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og2.png"), linear-gradient(90deg, #F3B37E, #F2C97F); }
 
 .gold-og .purchase .option-3 {
   background-color: #eda267;
   background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png");
-  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png"), linear-gradient(90deg, #eda267, #edbe67); }
+  background-image: url("https://cdn.besynchro.com/gold/og-v1-0/gold-og4.png"), linear-gradient(90deg, #F3B37E, #F2C97F); }
 
 .gold-adwords .technology__tabs-desktop {
   padding-bottom: 60px; }
@@ -9519,9 +9512,6 @@ input:checked + .accordion-horizontal__inner-box {
 .keto-cleanse .benefits-2__icon {
   height: 90px; }
 
-.keto-cleanse .benefits-2__copy {
-  text-align: center; }
-
 .keto-cleanse .kcp-intro {
   text-align: center;
   padding: 40px 0 50px; }
@@ -10417,59 +10407,57 @@ svg.external {
       margin-top: 30px;
       background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-mobile.jpg"); } }
 
-.go011-01 .expanded-header-container .expanded-header {
-  top: 40px; }
-  @media (max-width: 767px) {
-    .go011-01 .expanded-header-container .expanded-header {
-      position: initial; } }
-  @media (max-width: 767px) {
-    .go011-01 .expanded-header-container .expanded-header.pseudo {
-      display: none; } }
-  @media (max-width: 767px) {
-    .go011-01 .expanded-header-container .expanded-header .main-navigation__hamburger {
-      display: none; } }
+.go012-01 a.anchor {
+  top: -35px; }
 
-.go011-01 .a--cta {
-  position: relative;
-  background: #329DC3 !important;
-  border-radius: 6px !important;
-  box-shadow: 0 3px 0 0 #fff;
-  top: 0; }
-  .go011-01 .a--cta:hover {
+.go012-01 .a--cta {
+  border-radius: 0; }
+  .go012-01 .a--cta:hover {
     opacity: 1; }
-  .go011-01 .a--cta:active {
-    top: 3px;
-    box-shadow: none; }
 
-.go011-01 .atf__hero-image {
+.go012-01 .atf__hero-image {
   background-image: url("https://cdn.besynchro.com/experiments/go010-gold-OG-product-atf%402x.jpg");
   background-position: center; }
 
-@media (max-width: 767px) {
-  .go011-01 .benefits-2__copy:first-child {
-    display: none; } }
+.go012-01 .benefits__point {
+  margin: 0; }
 
-.go011-01 .benefits-2__copy:nth-child(3) {
-  display: none; }
-  @media (max-width: 767px) {
-    .go011-01 .benefits-2__copy:nth-child(3) {
-      display: inline-block; } }
+.go012-01 .ingredients__icons {
+  background-image: linear-gradient(90deg, #F3B37E, #F2C97F); }
 
-.go011-01 .instagram {
+.go012-01 .ingredients__icon-box .p--text {
+  color: #ffffff;
+  font-weight: 600; }
+
+.go012-01 .instagram {
   padding-top: 60px; }
   @media (max-width: 1199px) {
-    .go011-01 .instagram {
+    .go012-01 .instagram {
       padding-top: 40px; } }
-  .go011-01 .instagram__title {
+  .go012-01 .instagram__title {
     font-weight: 700;
     font-size: 35px;
     margin-bottom: 60px;
     text-align: center; }
     @media (max-width: 1199px) {
-      .go011-01 .instagram__title {
+      .go012-01 .instagram__title {
         margin-bottom: 40px; } }
 
-.go011-01 .synchro-reviews {
+.go012-01 .purchase {
+  padding-top: 60px; }
+  @media (max-width: 1199px) {
+    .go012-01 .purchase {
+      padding-top: 40px; } }
+  .go012-01 .purchase__title {
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 60px;
+    text-align: center; }
+    @media (max-width: 1199px) {
+      .go012-01 .purchase__title {
+        margin-bottom: 40px; } }
+
+.go012-01 .synchro-reviews {
   padding-top: 40px; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
