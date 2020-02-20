@@ -225,6 +225,81 @@
     }
   }
 
+  &__thankyou-articles {
+    font-size: 0;
+  }
+
+  &__thankyou-article {
+    display: inline-block;
+    width: 18%;
+    margin: $gutter-small 1% 0;
+    text-align: left;
+    vertical-align: top;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    @include m-screen {
+      width: 31%;
+      margin-bottom: $gutter-small;
+    }
+    @include sm-screen {
+      width: 48%;
+    }
+    @include s-screen {
+      width: 98%;
+      margin-bottom: $gutter-small;
+    }
+  }
+
+  &__thankyou-article-image1,
+  &__thankyou-article-image2,
+  &__thankyou-article-image3,
+  &__thankyou-article-image4,
+  &__thankyou-article-image5 {
+    padding-top: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    @include s-screen {
+      padding-top: 66%;
+    }
+  }
+
+  &__thankyou-article-image1 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC02956_1024x1024.jpg?v=1560246600");
+  }
+
+  &__thankyou-article-image2 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/DSC02982_1024x1024.jpg?v=1560172162");
+  }
+
+  &__thankyou-article-image3 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/brooke-lark-500141-unsplash_1024x1024.jpg?v=1559303575");
+  }
+
+  &__thankyou-article-image4 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/25688467_l_grande.jpg?v=1493800061");
+  }
+
+  &__thankyou-article-image5 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0155/0195/files/mj-background-labs-coats-2_1024x1024.png?10821567287518890392");
+  }
+
+  &__thankyou-article-copy {
+    padding: 15px $gutter-small;
+  }
+
+  &__thankyou-article-title {
+    font-weight: $font-bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  &__thankyou-article-cta {
+    font-weight: $font-demi;
+    font-size: 18px;
+    color: $color-genesis;
+    margin: 0;
+  }
+
   &.gold-capsules {
     .klaviyo-form-HLQ8cK,
     .klaviyo-form-HLWnhf,
@@ -253,7 +328,7 @@
         font-weight: $font-demi !important;
         height: 60px !important;
         @include s-screen {
-        padding: 0 20px !important;
+          padding: 0 20px !important;
           height: 50px !important;
         }
       }
