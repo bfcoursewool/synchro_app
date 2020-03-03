@@ -320,6 +320,30 @@
         @include s-screen {
           height: 50px !important;
         }
+
+        &::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+            font-family: $font-primary !important;
+            font-size: 18px !important;
+        }
+
+        &::-moz-placeholder {
+          /* Firefox 19+ */
+            font-family: $font-primary !important;
+            font-size: 18px !important;
+        }
+
+        &:-ms-input-placeholder {
+          /* IE 10+ */
+            font-family: $font-primary !important;
+            font-size: 18px !important;
+        }
+
+        &:-moz-placeholder {
+          /* Firefox 18- */
+            font-family: $font-primary !important;
+            font-size: 18px !important;
+        }
       }
 
       .bnicNd,

@@ -10285,6 +10285,30 @@ svg.external {
       .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bWFXXf,
       .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bWFXXf {
         height: 50px !important; } }
+    .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bWFXXf::-webkit-input-placeholder,
+    .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bWFXXf::-webkit-input-placeholder,
+    .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bWFXXf::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      font-family: "futura-pt", "Open Sans", sans-serif !important;
+      font-size: 18px !important; }
+    .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bWFXXf::-moz-placeholder,
+    .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bWFXXf::-moz-placeholder,
+    .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bWFXXf::-moz-placeholder {
+      /* Firefox 19+ */
+      font-family: "futura-pt", "Open Sans", sans-serif !important;
+      font-size: 18px !important; }
+    .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bWFXXf:-ms-input-placeholder,
+    .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bWFXXf:-ms-input-placeholder,
+    .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bWFXXf:-ms-input-placeholder {
+      /* IE 10+ */
+      font-family: "futura-pt", "Open Sans", sans-serif !important;
+      font-size: 18px !important; }
+    .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bWFXXf:-moz-placeholder,
+    .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bWFXXf:-moz-placeholder,
+    .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bWFXXf:-moz-placeholder {
+      /* Firefox 18- */
+      font-family: "futura-pt", "Open Sans", sans-serif !important;
+      font-size: 18px !important; }
   .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bnicNd,
   .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .kZaGfF,
   .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bnicNd,
