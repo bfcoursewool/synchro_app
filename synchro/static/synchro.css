@@ -10013,17 +10013,22 @@ svg.external {
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding-bottom: 40px; }
-  @media (max-width: 767px) {
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
+  background-color: #f0efed; }
+  @media (max-width: 680px) {
     .prelaunch__atf {
-      padding: 0 20px 30px; } }
+      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf1-mobile.jpg");
+      background-size: 480px;
+      background-position: bottom;
+      padding: 0 20px 160px; } }
 
 .prelaunch__atf-mobile {
   display: none; }
   @media (max-width: 767px) {
     .prelaunch__atf-mobile {
       display: block;
-      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf-mobile.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-body-mobile.jpg");
       background-position: top;
       background-size: cover;
       padding-top: 75%;
@@ -10043,7 +10048,7 @@ svg.external {
     .prelaunch__atf-header {
       max-width: 450px;
       font-size: 33px;
-      margin: 20px auto 25px; } }
+      margin: 20px auto; } }
   .prelaunch__atf-header span {
     font-style: oblique; }
 
@@ -10071,7 +10076,7 @@ svg.external {
   @media (max-width: 854px) {
     .prelaunch__atf-subheader {
       max-width: 450px;
-      margin-top: 25px;
+      margin-top: 20px;
       font-size: 24px; } }
 
 .prelaunch__body {
@@ -10264,7 +10269,7 @@ svg.external {
 .prelaunch.gold-capsules .klaviyo-form-HLWnhf,
 .prelaunch.gold-capsules .klaviyo-form-HiE3eW {
   padding: 0 20px;
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto; }
   .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bWFXXf,
   .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bWFXXf,
@@ -10287,10 +10292,10 @@ svg.external {
   .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bnicNd,
   .prelaunch.gold-capsules .klaviyo-form-HiE3eW .kZaGfF {
     font-family: "futura-pt", "Open Sans", sans-serif !important;
-    padding: 0 30px !important;
+    padding: 0 25px !important;
     font-size: 18px !important;
     font-weight: 600 !important;
-    height: 60px !important; }
+    height: 50px !important; }
     @media (max-width: 767px) {
       .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bnicNd,
       .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .kZaGfF,
@@ -10298,8 +10303,7 @@ svg.external {
       .prelaunch.gold-capsules .klaviyo-form-HLWnhf .kZaGfF,
       .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bnicNd,
       .prelaunch.gold-capsules .klaviyo-form-HiE3eW .kZaGfF {
-        padding: 0 20px !important;
-        height: 50px !important; } }
+        padding: 0 20px !important; } }
 
 .bfcm-2019 .opt-in__body {
   background-image: url("https://cdn.besynchro.com/general/bf2019/bf-optin-bg-desktop.jpg");

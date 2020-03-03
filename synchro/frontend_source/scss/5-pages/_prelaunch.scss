@@ -13,9 +13,14 @@
     background-position: center;
     background-size: cover;
     text-align: center;
+    background-repeat: no-repeat;
     padding-bottom: $gutter-medium;
-    @include s-screen {
-      padding: 0 $gutter-small 30px;
+    background-color: #f0efed;
+    @include xs-screen {
+      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf1-mobile.jpg");
+      background-size: 480px;
+      background-position: bottom;
+      padding: 0 $gutter-small 160px;
     }
   }
 
@@ -23,7 +28,7 @@
     display: none;
     @include s-screen {
       display: block;
-      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf-mobile.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-body-mobile.jpg");
       background-position: top;
       background-size: cover;
       padding-top: 75%;
@@ -44,7 +49,7 @@
     @include s-screen {
       max-width: 450px;
       font-size: 33px;
-      margin: 20px auto 25px;
+      margin: 20px auto;
     }
 
     span {
@@ -76,7 +81,7 @@
     line-height: normal;
     @include sm-screen {
       max-width: 450px;
-      margin-top: 25px;
+      margin-top: $gutter-small;
       font-size: 24px;
     }
   }
@@ -302,7 +307,7 @@
     .klaviyo-form-HLWnhf,
     .klaviyo-form-HiE3eW {
       padding: 0 20px;
-      max-width: 600px;
+      max-width: 400px;
       margin: 0 auto;
 
       .bWFXXf {
@@ -320,13 +325,12 @@
       .bnicNd,
       .kZaGfF {
         font-family: $font-primary !important;
-        padding: 0 30px !important;
+        padding: 0 25px !important;
         font-size: 18px !important;
         font-weight: $font-demi !important;
-        height: 60px !important;
+        height: 50px !important;
         @include s-screen {
           padding: 0 20px !important;
-          height: 50px !important;
         }
       }
     }
