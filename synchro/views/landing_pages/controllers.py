@@ -34,7 +34,7 @@ endpoint_info_dict = {
     },
     # Gold Lemon Ginger LP for Organic Traffic (NEW)
     'lemon-ginger-turmeric-supplement': {
-      'template': 'landing_pages/gold-lg/v2-0/0-index.html',
+      'template': 'landing_pages/gold-og/v1-0/0-index.html',
       'template_vars': {
         'is_variant': False,
       }
