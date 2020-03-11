@@ -9964,10 +9964,10 @@ svg.external {
   background-color: #f0efed; }
   @media (max-width: 680px) {
     .prelaunch__atf {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf1-mobile.jpg");
-      background-size: 480px;
-      background-position: bottom;
-      padding: 0 20px 160px; } }
+      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf0-mobile.jpg");
+      background-size: 650px;
+      background-position: top;
+      padding: 0 20px 30px; } }
 
 .prelaunch__atf-mobile {
   display: none; }
@@ -9993,8 +9993,7 @@ svg.external {
   @media (max-width: 767px) {
     .prelaunch__atf-header {
       max-width: 450px;
-      font-size: 33px;
-      margin: 20px auto; } }
+      font-size: 33px; } }
   .prelaunch__atf-header span {
     font-style: oblique; }
 
@@ -10102,7 +10101,7 @@ svg.external {
   background-size: cover;
   text-align: center;
   margin: 0 30px; }
-  @media (max-width: 767px) {
+  @media (max-width: 854px) {
     .prelaunch__thankyou-atf {
       margin: 0;
       height: 400px;
@@ -10590,4 +10589,4 @@ svg.external {
       .go013-01 .superior__copy {
         font-size: 22px; } }
 
-/*# sourceMappingURL=synchro.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

@@ -17,10 +17,10 @@
     padding-bottom: $gutter-medium;
     background-color: #f0efed;
     @include xs-screen {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf1-mobile.jpg");
-      background-size: 480px;
-      background-position: bottom;
-      padding: 0 $gutter-small 160px;
+      background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf0-mobile.jpg");
+      background-size: 650px;
+      background-position: top;
+      padding: 0 $gutter-small 30px;
     }
   }
 
@@ -49,7 +49,6 @@
     @include s-screen {
       max-width: 450px;
       font-size: 33px;
-      margin: 20px auto;
     }
 
     span {
@@ -172,7 +171,7 @@
     background-size: cover;
     text-align: center;
     margin: 0 30px;
-    @include s-screen {
+    @include sm-screen {
       margin: 0;
       height: 400px;
       background-image: url("https://cdn.besynchro.com/gold/capsules/presale/gold-cap-atf-ty-mobile.jpg");
