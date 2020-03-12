@@ -10210,86 +10210,45 @@ svg.external {
   color: #5da8a6;
   margin: 0; }
 
-.prelaunch.gold-capsules .klaviyo-form-HLQ8cK,
-.prelaunch.gold-capsules .klaviyo-form-HLWnhf,
-.prelaunch.gold-capsules .klaviyo-form-HiE3eW {
+.prelaunch.gold-capsules .klaviyo-form {
   padding: 0 20px;
   max-width: 400px;
   margin: 0 auto; }
-  .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bWFXXf,
-  .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .gcwpTu,
-  .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bWFXXf,
-  .prelaunch.gold-capsules .klaviyo-form-HLWnhf .gcwpTu,
-  .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bWFXXf,
-  .prelaunch.gold-capsules .klaviyo-form-HiE3eW .gcwpTu {
+  .prelaunch.gold-capsules .klaviyo-form input {
     font-family: "futura-pt", "Open Sans", sans-serif !important;
     border-radius: 6px !important;
     text-align: center !important;
     padding: 0 !important;
     font-size: 18px !important;
-    font-weight: 500 !important; }
+    font-weight: 500 !important;
+    border-color: #b3b3b3 !important; }
     @media (max-width: 767px) {
-      .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bWFXXf,
-      .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .gcwpTu,
-      .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bWFXXf,
-      .prelaunch.gold-capsules .klaviyo-form-HLWnhf .gcwpTu,
-      .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bWFXXf,
-      .prelaunch.gold-capsules .klaviyo-form-HiE3eW .gcwpTu {
+      .prelaunch.gold-capsules .klaviyo-form input {
         height: 50px !important; } }
-    .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bWFXXf::-webkit-input-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .gcwpTu::-webkit-input-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bWFXXf::-webkit-input-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HLWnhf .gcwpTu::-webkit-input-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bWFXXf::-webkit-input-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HiE3eW .gcwpTu::-webkit-input-placeholder {
+    .prelaunch.gold-capsules .klaviyo-form input::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
       font-family: "futura-pt", "Open Sans", sans-serif !important;
       font-size: 18px !important; }
-    .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bWFXXf::-moz-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .gcwpTu::-moz-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bWFXXf::-moz-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HLWnhf .gcwpTu::-moz-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bWFXXf::-moz-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HiE3eW .gcwpTu::-moz-placeholder {
+    .prelaunch.gold-capsules .klaviyo-form input::-moz-placeholder {
       /* Firefox 19+ */
       font-family: "futura-pt", "Open Sans", sans-serif !important;
       font-size: 18px !important; }
-    .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bWFXXf:-ms-input-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .gcwpTu:-ms-input-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bWFXXf:-ms-input-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HLWnhf .gcwpTu:-ms-input-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bWFXXf:-ms-input-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HiE3eW .gcwpTu:-ms-input-placeholder {
+    .prelaunch.gold-capsules .klaviyo-form input:-ms-input-placeholder {
       /* IE 10+ */
       font-family: "futura-pt", "Open Sans", sans-serif !important;
       font-size: 18px !important; }
-    .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bWFXXf:-moz-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .gcwpTu:-moz-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bWFXXf:-moz-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HLWnhf .gcwpTu:-moz-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bWFXXf:-moz-placeholder,
-    .prelaunch.gold-capsules .klaviyo-form-HiE3eW .gcwpTu:-moz-placeholder {
+    .prelaunch.gold-capsules .klaviyo-form input:-moz-placeholder {
       /* Firefox 18- */
       font-family: "futura-pt", "Open Sans", sans-serif !important;
       font-size: 18px !important; }
-  .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bnicNd,
-  .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .kZaGfF,
-  .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bnicNd,
-  .prelaunch.gold-capsules .klaviyo-form-HLWnhf .kZaGfF,
-  .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bnicNd,
-  .prelaunch.gold-capsules .klaviyo-form-HiE3eW .kZaGfF {
+  .prelaunch.gold-capsules .klaviyo-form button {
     font-family: "futura-pt", "Open Sans", sans-serif !important;
     padding: 0 25px !important;
     font-size: 18px !important;
     font-weight: 600 !important;
     height: 50px !important; }
     @media (max-width: 767px) {
-      .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .bnicNd,
-      .prelaunch.gold-capsules .klaviyo-form-HLQ8cK .kZaGfF,
-      .prelaunch.gold-capsules .klaviyo-form-HLWnhf .bnicNd,
-      .prelaunch.gold-capsules .klaviyo-form-HLWnhf .kZaGfF,
-      .prelaunch.gold-capsules .klaviyo-form-HiE3eW .bnicNd,
-      .prelaunch.gold-capsules .klaviyo-form-HiE3eW .kZaGfF {
+      .prelaunch.gold-capsules .klaviyo-form button {
         padding: 0 20px !important; } }
 
 .bfcm-2019 .opt-in__body {
@@ -10589,4 +10548,4 @@ svg.external {
       .go013-01 .superior__copy {
         font-size: 22px; } }
 
-/*# sourceMappingURL=synchro.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
