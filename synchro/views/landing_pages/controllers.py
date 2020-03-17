@@ -46,6 +46,13 @@ endpoint_info_dict = {
         'is_variant': False,
       }
     },
+    # Gold Capsules LP with Susan Autoplay (NEW)
+    'turmeric-capsules-susan': {
+      'template': 'landing_pages/gold-capsules/susan/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
     # Gold Capsules Presale Opt In LP 1 (NEW)
     'be-the-first1': {
       'template': 'landing_pages/pre-launch/gold-capsules/opt-in1/0-index.html',
