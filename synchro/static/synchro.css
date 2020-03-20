@@ -8073,6 +8073,217 @@ input:checked + .accordion-horizontal__inner-box {
 .gold-capsules .atf__hero-image {
   background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg"); }
 
+.gold-capsules .benefits-slider {
+  height: 100vh;
+  text-align: center; }
+  .gold-capsules .benefits-slider__content {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%); }
+  .gold-capsules .benefits-slider__icons {
+    display: inline-block;
+    vertical-align: middle; }
+  .gold-capsules .benefits-slider__icon {
+    display: block;
+    margin: 30px 80px 30px 0;
+    opacity: 0.5;
+    position: relative; }
+    .gold-capsules .benefits-slider__icon::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      height: 2px;
+      width: 0;
+      background: #eca846;
+      transform: translate(15px, -1px);
+      transition: all ease-in-out 0.2s; }
+    .gold-capsules .benefits-slider__icon.active {
+      opacity: 1; }
+      .gold-capsules .benefits-slider__icon.active::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        height: 2px;
+        width: 50px;
+        background: #eca846;
+        transform: translate(15px, -1px); }
+    .gold-capsules .benefits-slider__icon:hover {
+      opacity: 1; }
+  .gold-capsules .benefits-slider__copy {
+    text-align: center;
+    display: none; }
+    .gold-capsules .benefits-slider__copy.active {
+      display: inline-block; }
+  .gold-capsules .benefits-slider__image1, .gold-capsules .benefits-slider__image2, .gold-capsules .benefits-slider__image3, .gold-capsules .benefits-slider__image4 {
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle; }
+  .gold-capsules .benefits-slider__image1 {
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg"); }
+  .gold-capsules .benefits-slider__image2 {
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg"); }
+  .gold-capsules .benefits-slider__image3 {
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg"); }
+  .gold-capsules .benefits-slider__image4 {
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg"); }
+  .gold-capsules .benefits-slider__text {
+    display: inline-block;
+    width: 500px;
+    vertical-align: middle;
+    margin-left: 50px;
+    text-align: left; }
+  .gold-capsules .benefits-slider__header {
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .gold-capsules .benefits-slider__title {
+    font-weight: 700;
+    font-size: 30px; }
+  .gold-capsules .benefits-slider .p--text {
+    opacity: 0.5;
+    font-weight: 500; }
+
+.gold-capsules .superior {
+  background-color: #F1DEC3;
+  margin: 40px; }
+  @media (max-width: 767px) {
+    .gold-capsules .superior {
+      margin: 0 0 20px; } }
+  .gold-capsules .superior__image {
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-tech-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 720px; }
+    @media (max-width: 1199px) {
+      .gold-capsules .superior__image {
+        background-position-x: 44%; } }
+    @media (max-width: 854px) {
+      .gold-capsules .superior__image {
+        background: none;
+        height: initial; } }
+  .gold-capsules .superior__image-mobile {
+    display: none; }
+    @media (max-width: 854px) {
+      .gold-capsules .superior__image-mobile {
+        display: block;
+        padding-top: 100%;
+        background-image: url("https://cdn.besynchro.com/experiments/why-gold-better-mobile%402x.jpg");
+        background-size: cover; } }
+  .gold-capsules .superior__title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 130px 40px 0;
+    max-width: 1280px; }
+    @media (max-width: 1199px) {
+      .gold-capsules .superior__title {
+        padding-top: 70px; } }
+    @media (max-width: 854px) {
+      .gold-capsules .superior__title {
+        background-color: #F2F1EE; } }
+    @media (max-width: 767px) {
+      .gold-capsules .superior__title {
+        padding: 40px 20px 0; } }
+  .gold-capsules .superior__header {
+    font-weight: 700;
+    font-size: 48px;
+    width: 50%;
+    margin-left: auto;
+    margin-bottom: 20px; }
+    @media (max-width: 1199px) {
+      .gold-capsules .superior__header {
+        width: 60%; } }
+    @media (max-width: 854px) {
+      .gold-capsules .superior__header {
+        font-size: 35px;
+        width: 100%; } }
+  .gold-capsules .superior__subheader {
+    font-weight: 500;
+    font-size: 28px;
+    color: #6F5D4A;
+    line-height: 1.5;
+    width: 50%;
+    margin-left: auto; }
+    @media (max-width: 1199px) {
+      .gold-capsules .superior__subheader {
+        width: 60%; } }
+    @media (max-width: 854px) {
+      .gold-capsules .superior__subheader {
+        font-size: 22px;
+        width: 100%;
+        margin: 0; } }
+  .gold-capsules .superior__points {
+    -moz-column-count: 2;
+    -moz-column-gap: 40px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 40px;
+    column-count: 2;
+    column-gap: 40px;
+    padding: 0 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+    background-color: #F1DEC3; }
+    @media (max-width: 1199px) {
+      .gold-capsules .superior__points {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1; } }
+    @media (max-width: 854px) {
+      .gold-capsules .superior__points {
+        position: initial;
+        padding-bottom: 40px; } }
+    @media (max-width: 767px) {
+      .gold-capsules .superior__points {
+        padding: 0 20px 20px; } }
+  .gold-capsules .superior__card-1, .gold-capsules .superior__card-2, .gold-capsules .superior__card-3, .gold-capsules .superior__card-4, .gold-capsules .superior__card-5 {
+    background: #ffffff;
+    display: inline-block;
+    padding: 40px 40px 25px;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: top left; }
+    @media (max-width: 1199px) {
+      .gold-capsules .superior__card-1, .gold-capsules .superior__card-2, .gold-capsules .superior__card-3, .gold-capsules .superior__card-4, .gold-capsules .superior__card-5 {
+        margin-bottom: 20px; } }
+    @media (max-width: 767px) {
+      .gold-capsules .superior__card-1, .gold-capsules .superior__card-2, .gold-capsules .superior__card-3, .gold-capsules .superior__card-4, .gold-capsules .superior__card-5 {
+        padding: 30px 20px 15px; } }
+  .gold-capsules .superior__card-1 {
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-tech-liposomal%402x.jpg"); }
+  .gold-capsules .superior__card-2 {
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-tech-turmeric%402x.jpg"); }
+  .gold-capsules .superior__card-3 {
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-tech-pepper%402x.jpg"); }
+  .gold-capsules .superior__card-4 {
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-tech-oil%402x.jpg"); }
+  .gold-capsules .superior__card-5 {
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-tech-sunflower%402x.jpg");
+    margin-bottom: 0; }
+  .gold-capsules .superior__point {
+    font-weight: 700;
+    font-size: 30px; }
+    @media (max-width: 767px) {
+      .gold-capsules .superior__point {
+        font-size: 26px; } }
+  .gold-capsules .superior__copy {
+    font-weight: 500;
+    font-size: 24px;
+    color: #655324; }
+    @media (max-width: 767px) {
+      .gold-capsules .superior__copy {
+        font-size: 22px; } }
+
 .gold-capsules .quality {
   padding: 40px;
   text-align: center; }
@@ -10530,4 +10741,4 @@ svg.external {
       .go013-01 .superior__copy {
         font-size: 22px; } }
 
-/*# sourceMappingURL=synchro.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
