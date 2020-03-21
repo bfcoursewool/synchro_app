@@ -8087,7 +8087,8 @@ input:checked + .accordion-horizontal__inner-box {
     display: block;
     margin: 30px 80px 30px 0;
     opacity: 0.5;
-    position: relative; }
+    position: relative;
+    transition: all ease-in-out 0.2s; }
     .gold-capsules .benefits-slider__icon::after {
       content: "";
       position: absolute;
@@ -8113,9 +8114,12 @@ input:checked + .accordion-horizontal__inner-box {
       opacity: 1; }
   .gold-capsules .benefits-slider__copy {
     text-align: center;
-    display: none; }
+    display: none;
+    transition: all ease-in-out 0.2s;
+    opacity: 0; }
     .gold-capsules .benefits-slider__copy.active {
-      display: inline-block; }
+      display: inline-block;
+      opacity: 1; }
   .gold-capsules .benefits-slider__image1, .gold-capsules .benefits-slider__image2, .gold-capsules .benefits-slider__image3, .gold-capsules .benefits-slider__image4 {
     display: inline-block;
     height: 400px;
@@ -8152,7 +8156,7 @@ input:checked + .accordion-horizontal__inner-box {
 
 .gold-capsules .superior {
   background-color: #F1DEC3;
-  margin: 40px; }
+  margin: 0 40px; }
   @media (max-width: 767px) {
     .gold-capsules .superior {
       margin: 0 0 20px; } }
@@ -8160,7 +8164,7 @@ input:checked + .accordion-horizontal__inner-box {
     background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-tech-bg.jpg");
     background-position: center;
     background-size: cover;
-    height: 720px; }
+    height: 650px; }
     @media (max-width: 1199px) {
       .gold-capsules .superior__image {
         background-position-x: 44%; } }
@@ -8179,7 +8183,7 @@ input:checked + .accordion-horizontal__inner-box {
   .gold-capsules .superior__title {
     text-align: center;
     margin: 0 auto;
-    padding: 130px 40px 0;
+    padding: 120px 40px 0;
     max-width: 1280px; }
     @media (max-width: 1199px) {
       .gold-capsules .superior__title {
@@ -8229,7 +8233,7 @@ input:checked + .accordion-horizontal__inner-box {
     max-width: 1280px;
     margin: 0 auto;
     position: relative;
-    top: -50px;
+    top: -60px;
     background-color: #F1DEC3; }
     @media (max-width: 1199px) {
       .gold-capsules .superior__points {
@@ -8279,13 +8283,13 @@ input:checked + .accordion-horizontal__inner-box {
   .gold-capsules .superior__copy {
     font-weight: 500;
     font-size: 24px;
-    color: #655324; }
+    color: #666666; }
     @media (max-width: 767px) {
       .gold-capsules .superior__copy {
         font-size: 22px; } }
 
 .gold-capsules .quality {
-  padding: 40px;
+  padding: 80px 40px;
   text-align: center; }
   .gold-capsules .quality__icon-box {
     display: inline-block;
@@ -8298,10 +8302,37 @@ input:checked + .accordion-horizontal__inner-box {
     margin: 25px 0 0;
     font-weight: 600; }
 
-.gold-capsules .ingredients-2 {
-  margin: 40px;
+.gold-capsules .ingredients-cap {
+  margin: 0 40px;
   background: #FAF7F3;
-  padding: 40px; }
+  padding: 60px 40px; }
+  .gold-capsules .ingredients-cap__details {
+    padding: 0; }
+  .gold-capsules .ingredients-cap__header {
+    line-height: normal; }
+  .gold-capsules .ingredients-cap__facts {
+    display: inline-block;
+    width: 40%;
+    margin: 0 20px;
+    background: none;
+    padding: 0;
+    max-width: 600px; }
+  .gold-capsules .ingredients-cap__facts-image {
+    background: #ffffff;
+    padding: 25px 30px; }
+  .gold-capsules .ingredients-cap__directions {
+    display: inline-block;
+    width: 30%;
+    margin: 0 20px;
+    vertical-align: top;
+    max-width: 375px; }
+  .gold-capsules .ingredients-cap__direction {
+    font-size: 22px;
+    background: #ffffff;
+    opacity: 0.8;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-weight: 500; }
 
 .genesis-lp {
   overflow-x: hidden; }

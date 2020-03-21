@@ -484,6 +484,7 @@
       margin: 30px 80px 30px 0;
       opacity: 0.5;
       position: relative;
+      transition: all ease-in-out 0.2s;
 
       &::after {
         content: "";
@@ -520,9 +521,12 @@
     &__copy {
       text-align: center;
       display: none;
+      transition: all ease-in-out 0.2s;
+      opacity: 0;
 
       &.active {
         display: inline-block;
+        opacity: 1;
       }
     }
 
@@ -583,7 +587,7 @@
 
   .superior {
     background-color: #F1DEC3;
-    margin: 40px;
+    margin: 0 $gutter-medium;
     @include s-screen {
       margin: 0 0 20px;
     }
@@ -592,7 +596,7 @@
       background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-tech-bg.jpg");
       background-position: center;
       background-size: cover;
-      height: 720px;
+      height: 650px;
       @include m-screen {
         background-position-x: 44%;
       }
@@ -615,7 +619,7 @@
     &__title {
       text-align: center;
       margin: 0 auto;
-      padding: 130px $gutter-medium 0;
+      padding: 120px $gutter-medium 0;
       max-width: 1280px;
       @include m-screen {
         padding-top: 70px;
@@ -671,7 +675,7 @@
       max-width: 1280px;
       margin: 0 auto;
       position: relative;
-      top: -50px;
+      top: -60px;
       background-color: #F1DEC3;
       @include m-screen {
         -moz-column-count: 1;
@@ -741,7 +745,7 @@
     &__copy {
       font-weight: $font-medium;
       font-size: 24px;
-      color: #655324;
+      color: #666666;
       @include s-screen {
         font-size: 22px;
       }
@@ -749,7 +753,7 @@
   }
 
   .quality {
-    padding: 40px;
+    padding: $gutter-medium*2 $gutter-medium;
     text-align: center;
 
     &__icon-box {
@@ -767,9 +771,48 @@
     }
   }
 
-  .ingredients-2 {
-    margin: $gutter-medium;
+  .ingredients-cap {
+    margin: 0 $gutter-medium;
     background: #FAF7F3;
-    padding: $gutter-medium;
+    padding: $gutter-large $gutter-medium;
+
+    &__details {
+      padding: 0;
+    }
+
+    &__header {
+      line-height: normal;
+    }
+
+    &__facts {
+      display: inline-block;
+      width: 40%;
+      margin: 0 $gutter-small;
+      background: none;
+      padding: 0;
+      max-width: 600px;
+    }
+
+    &__facts-image {
+      background: $color-ivory;
+      padding: 25px 30px;
+    }
+
+    &__directions {
+      display: inline-block;
+      width: 30%;
+      margin: 0 $gutter-small;
+      vertical-align: top;
+      max-width: 375px;
+    }
+
+    &__direction {
+      font-size: 22px;
+      background: $color-ivory;
+      opacity: 0.8;
+      padding: 20px 30px;
+      border-radius: 10px;
+      font-weight: $font-medium;
+    }
   }
 }
