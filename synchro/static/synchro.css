@@ -8302,31 +8302,31 @@ input:checked + .accordion-horizontal__inner-box {
     margin: 25px 0 0;
     font-weight: 600; }
 
-.gold-capsules .ingredients-cap {
+.gold-capsules .ingredients-2 {
   margin: 0 40px;
   background: #FAF7F3;
   padding: 60px 40px; }
-  .gold-capsules .ingredients-cap__details {
+  .gold-capsules .ingredients-2__details {
     padding: 0; }
-  .gold-capsules .ingredients-cap__header {
+  .gold-capsules .ingredients-2__header {
     line-height: normal; }
-  .gold-capsules .ingredients-cap__facts {
+  .gold-capsules .ingredients-2__facts {
     display: inline-block;
     width: 40%;
     margin: 0 20px;
     background: none;
     padding: 0;
     max-width: 600px; }
-  .gold-capsules .ingredients-cap__facts-image {
+  .gold-capsules .ingredients-2__facts-image {
     background: #ffffff;
     padding: 25px 30px; }
-  .gold-capsules .ingredients-cap__directions {
+  .gold-capsules .ingredients-2__directions {
     display: inline-block;
     width: 30%;
     margin: 0 20px;
     vertical-align: top;
     max-width: 375px; }
-  .gold-capsules .ingredients-cap__direction {
+  .gold-capsules .ingredients-2__direction {
     font-size: 22px;
     background: #ffffff;
     opacity: 0.8;
