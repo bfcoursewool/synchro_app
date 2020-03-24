@@ -1249,9 +1249,9 @@
     .a--cta {
       background-color: #eca846;
       border-radius: 6px;
-      padding: 17px 90px;
+      padding: 12px 80px;
       @include m-screen {
-        padding: 17px 60px;
+        padding: 12px 60px;
       }
       @include s-screen {
         width: 100%;

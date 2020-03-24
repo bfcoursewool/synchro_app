@@ -8677,10 +8677,10 @@ input:checked + .accordion-horizontal__inner-box {
   .gold-capsules .purchase-3 .a--cta {
     background-color: #eca846;
     border-radius: 6px;
-    padding: 17px 90px; }
+    padding: 12px 80px; }
     @media (max-width: 1199px) {
       .gold-capsules .purchase-3 .a--cta {
-        padding: 17px 60px; } }
+        padding: 12px 60px; } }
     @media (max-width: 767px) {
       .gold-capsules .purchase-3 .a--cta {
         width: 100%;
