@@ -28,6 +28,16 @@ p {
     margin: 40px auto;
   }
 }
+
+.p--title-new {
+  font-weight: $font-bold;
+  font-size: 35px;
+  text-align: center;
+  margin: 0;
+  @include s-screen {
+    font-size: 30px;
+  }
+}
 // Header
 
 .p--header {

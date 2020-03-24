@@ -96,7 +96,7 @@
       position: relative;
       width: 25%;
       display: table-cell;
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-video%402x.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-video%402x.jpg");
       background-size: cover;
       background-position: center;
       transition: all 0.3s ease-in-out;
@@ -117,11 +117,14 @@
       transform: translate(-50%,-50%);
       font-weight: $font-demi;
       font-size: 16px;
-      color: $color-ivory;
       letter-spacing: 1px;
+      line-height: 1.4;
+      padding: 20px 20px 15px;
       text-transform: uppercase;
-      background: none;
+      background: $color-ivory;
+      color: #675f5f;
       border: 0;
+      border-radius: 20px;
       outline: none;
       -webkit-appearance: button;
       -webkit-user-select: none;
@@ -134,10 +137,11 @@
         display: block;
         position: relative;
         left: 50%;
-        transform: translate(-26px, -15px);
-        border-top: 32px solid transparent;
-        border-left: 52px solid white;
-        border-bottom: 32px solid transparent;
+        transform: translateX(-18px);
+        border-top: 25px solid transparent;
+        border-left: 40px solid $color-gold;
+        border-bottom: 25px solid transparent;
+        margin-bottom: 15px;
       }
     }
 
@@ -442,13 +446,19 @@
 
     &__copy {
       background: #FAF7F3;
-      padding: $gutter-large;
+      padding: $gutter-large $gutter-medium;
+      @include s-screen {
+        padding: $gutter-medium $gutter-small;
+      }
     }
 
     &__header {
       color: $color-ebony;
       font-weight: $font-demi;
       max-width: 470px;
+      @include m-screen {
+        font-size: 53px;
+      }
     }
 
     &__subheader {
@@ -461,12 +471,104 @@
 
     &__hero-image {
       background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg");
+      @include s-screen {
+        padding-top: 66.66%;
+      }
+    }
+
+    &__video-mobile {
+      @include sm-screen {
+        margin: 0;
+        padding: $gutter-small;
+        background: #faf7f2;
+      }
+    }
+  }
+
+  .benefits-temp {
+    text-align: center;
+    padding: $gutter-large $gutter-medium $gutter-medium;
+    @include s-screen {
+      padding: $gutter-medium $gutter-small $gutter-small;
+    }
+
+    &__content {
+      max-width: 1400px;
+      margin: $gutter-medium auto 0;
+      font-size: 0;
+      @include sm-screen {
+        margin-top: $gutter-small;
+      }
+    }
+
+    &__icon {
+      margin-top: 30px;
+    }
+
+    &__copy {
+      display: inline-block;
+      width: 44%;
+      margin: $gutter-small 3% 0;
+      vertical-align: top;
+      @include sm-screen {
+        width: 100%;
+        margin: $gutter-medium 0 0;
+      }
+      @include s-screen {
+        margin-top: $gutter-small;
+      }
+    }
+
+    &__image1,
+    &__image2,
+    &__image3,
+    &__image4 {
+      padding-top: 50%;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      vertical-align: middle;
+    }
+
+    &__image1 {
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg");
+    }
+
+    &__image2 {
+      background-image: url("https://cdn.besynchro.com/experiments/go012-joint-health.jpg");
+    }
+
+    &__image3 {
+      background-image: url("https://cdn.besynchro.com/experiments/go012-brain-fog.jpg");
+    }
+
+    &__image4 {
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg");
+    }
+
+    &__header {
+      opacity: 0.5;
+      font-weight: $font-medium;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    &__title {
+      font-weight: $font-bold;
+      font-size: 30px;
     }
   }
 
   .benefits-slider {
     height: 100vh;
     text-align: center;
+    padding: $gutter-large;
+
+    .p--title-new {
+      position: relative;
+      top: 100px;
+    }
 
     &__content {
       top: 50%;
@@ -598,7 +700,7 @@
       background-size: cover;
       height: 650px;
       @include m-screen {
-        background-position-x: 44%;
+        background-position-x: 37%;
       }
       @include sm-screen {
         background: none;
@@ -611,7 +713,7 @@
       @include sm-screen {
         display: block;
         padding-top: 100%;
-        background-image: url("https://cdn.besynchro.com/experiments/why-gold-better-mobile%402x.jpg");
+        background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-tech-bg-mobile.jpg");
         background-size: cover;
       }
     }
@@ -622,13 +724,14 @@
       padding: 120px $gutter-medium 0;
       max-width: 1280px;
       @include m-screen {
-        padding-top: 70px;
+        padding-top: 100px;
       }
       @include sm-screen {
         background-color: #F2F1EE;
+        padding: $gutter-medium $gutter-small 0;
       }
       @include s-screen {
-        padding: $gutter-medium $gutter-small 0;
+        padding-top: $gutter-medium;
       }
     }
 
@@ -639,7 +742,7 @@
       margin-left: auto;
       margin-bottom: 20px;
       @include m-screen {
-        width: 60%;
+        font-size: 40px;
       }
       @include sm-screen {
         font-size: 35px;
@@ -654,9 +757,6 @@
       line-height: 1.5;
       width: 50%;
       margin-left: auto;
-      @include m-screen {
-        width: 60%;
-      }
       @include sm-screen {
         font-size: 22px;
         width: 100%;
@@ -678,15 +778,14 @@
       top: -60px;
       background-color: #F1DEC3;
       @include m-screen {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
+        column-gap: 20px;
+        padding: 0 $gutter-small;
       }
       @include sm-screen {
         position: initial;
-        padding-bottom: $gutter-medium;
-      }
-      @include s-screen {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
         padding: 0 $gutter-small $gutter-small;
       }
     }
@@ -753,14 +852,35 @@
   }
 
   .quality {
-    padding: $gutter-medium*2 $gutter-medium;
+    padding: $gutter-medium*2 0;
     text-align: center;
+    font-size: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    @include m-screen {
+      padding: $gutter-large $gutter-medium;
+    }
+    @include s-screen {
+      padding: $gutter-small $gutter-small $gutter-medium;
+    }
+
+    &__icons {
+      @include s-screen {
+        margin: 0 auto;
+        width: fit-content;
+      }
+    }
 
     &__icon-box {
       display: inline-block;
-      width: 15%;
-      margin: 0 20px;
+      width: 18%;
+      margin: 0 1%;
       vertical-align: top;
+      @include s-screen {
+        width: fit-content;
+        margin: $gutter-small 0;
+        display: block;
+      }
     }
 
     &__icon-text {
@@ -768,16 +888,43 @@
       text-transform: uppercase;
       margin: 25px 0 0;
       font-weight: $font-demi;
+      font-size: 16px;
+      @include s-screen {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 $gutter-small;
+      }
     }
   }
 
   .ingredients-2 {
     margin: 0 $gutter-medium;
     background: #FAF7F3;
-    padding: $gutter-large $gutter-medium;
+    padding: $gutter-large $gutter-small;
+    @include sm-screen {
+      padding: $gutter-medium $gutter-small;
+    }
+    @include s-screen {
+      margin: 0;
+    }
 
     &__details {
-      padding: 0;
+      max-width: 1400px;
+      padding: $gutter-medium 0;
+      margin: 0 auto;
+      @include sm-screen {
+        padding: $gutter-small 0;
+      }
+    }
+
+    &__item-box {
+      padding: $gutter-small $gutter-small 0;
+      @include m-screen {
+        width: 50%;
+      }
+      @include s-screen {
+        width: 100%;
+      }
     }
 
     &__header {
@@ -786,33 +933,316 @@
 
     &__facts {
       display: inline-block;
-      width: 40%;
-      margin: 0 $gutter-small;
+      width: 65%;
+      padding: 0 $gutter-small;
       background: none;
-      padding: 0;
       max-width: 600px;
+      @include sm-screen {
+        width: 100%;
+        margin-bottom: $gutter-medium;
+      }
+      @include s-screen {
+        padding: 0;
+      }
     }
 
     &__facts-image {
       background: $color-ivory;
       padding: 25px 30px;
+      margin-top: $gutter-medium;
+      @include s-screen {
+        padding: 15px;
+      }
     }
 
     &__directions {
       display: inline-block;
-      width: 30%;
-      margin: 0 $gutter-small;
+      width: 35%;
+      padding: 0 $gutter-small;
       vertical-align: top;
       max-width: 375px;
+      @include sm-screen {
+        width: 100%;
+      }
+      @include s-screen {
+        padding: 0;
+      }
     }
 
     &__direction {
       font-size: 22px;
       background: $color-ivory;
-      opacity: 0.8;
-      padding: 20px 30px;
+      padding: $gutter-small;
       border-radius: 10px;
+      margin-top: $gutter-medium;
       font-weight: $font-medium;
     }
+  }
+
+  .testimonials {
+    padding: $gutter-large $gutter-medium;
+    text-align: center;
+    @include m-screen {
+      padding: $gutter-large $gutter-small;
+    }
+    @include s-screen {
+      padding: $gutter-medium $gutter-small $gutter-small;
+    }
+
+    &__cards {
+      margin: $gutter-large auto 0;
+      max-width: 1400px;
+      @include s-screen {
+        margin-top: $gutter-medium;
+      }
+    }
+
+    &__card {
+      display: inline-block;
+      width: 29%;
+      margin: 0 2%;
+      padding: $gutter-small 30px 5px;
+      background: $color-silver-light;
+      border-radius: 10px;
+      vertical-align: top;
+      @include m-screen {
+        width: 31%;
+        margin: 0 1%;
+        padding: $gutter-small $gutter-small 5px;
+      }
+      @include sm-screen {
+        width: 47%;
+
+        &:last-child {
+          display: none;
+        }
+      }
+      @include s-screen {
+        width: 100%;
+        margin: 0 0 $gutter-small;
+        max-width: 400px;
+      }
+    }
+
+    &__headshot {
+      width: 100%;
+    }
+
+    &__quote {
+      font-weight: $font-medium;
+      font-size: 20px;
+      margin: $gutter-small 0;
+    }
+
+    &__review {}
+
+    &__name {
+      font-size: 18px;
+      color: #4D4D4D;
+      font-style: italic;
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .purchase-3 {
+    margin: 0 $gutter-medium;
+    background: #FAF7F3;
+    padding: $gutter-large $gutter-small $gutter-medium;
+    text-align: center;
+    font-size: 0;
+    @include m-screen {
+      margin: 0;
+    }
+    @include s-screen {
+      padding: $gutter-medium $gutter-small;
+    }
+
+    &__options {
+      margin: $gutter-large auto;
+      max-width: 1400px;
+      @include s-screen {
+        margin: $gutter-medium 0;
+      }
+    }
+
+    &__item {
+      display: inline-block;
+      width: 31%;
+      margin: 0 1%;
+      padding: $gutter-small 10px 30px;
+      border-radius: 10px;
+      vertical-align: top;
+      @include s-screen {
+        width: 48%;
+        margin: 0 1%;
+        padding: 10px;
+
+        &:first-child {
+          width: 98%;
+          margin-bottom: $gutter-small;
+        }
+      }
+
+      &.popular-item,
+      &.savings-item {
+        background: $color-ivory;
+        position: relative;
+
+        &:before {
+          position: absolute;
+          left: -34px;
+          top: 43px;
+          height: 24px;
+          background-size: 129px;
+          color: white;
+          font-size: 14px;
+          transform: rotate(-45deg);
+          text-transform: uppercase;
+          font-weight: $font-demi;
+          letter-spacing: 0.9px;
+          line-height: 24px;
+          border-left: 24px solid transparent;
+          border-right: 24px solid transparent;
+          border-bottom: 24px solid #F67979;
+          padding: 0 10px;
+        }
+      }
+
+      &.popular-item {
+        &:before {
+          content: "most popular";
+        }
+      }
+
+      &.savings-item {
+        &:before {
+          content: "most savings";
+        }
+      }
+    }
+
+    &__image {
+      background-size: 250px;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 250px;
+      @include s-screen {
+        background-size: 200px;
+        height: 200px;
+      }
+
+      &.option-1 {
+        background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-purchase-1.png");
+      }
+
+      &.option-2 {
+        background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-purchase-2.png");
+      }
+
+      &.option-3 {
+        background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-purchase-3.png");
+      }
+    }
+
+    &__quantity {
+      font-weight: $font-bold;
+      font-size: 25px;
+      margin-top: $gutter-small;
+      line-height: 1.5;
+      @include s-screen {
+        margin-top: 10px;
+      }
+
+      span {
+        @include m-screen {
+          display: block;
+          opacity: 0.5;
+
+          &:before {
+            display: none;
+          }
+        }
+        @include s-screen {
+          font-size: 21px;
+        }
+
+        &:before {
+          content: ' — ';
+        }
+      }
+    }
+
+    &__price {
+      font-weight: $font-bold;
+      font-size: 25px;
+      margin: $gutter-small 0;
+      letter-spacing: 0.4px;
+      @include sm-screen {
+        font-size: 21px;
+      }
+      @include s-screen {
+        margin-top: 10px;
+      }
+
+      span {
+        text-decoration: line-through;
+        color: #B2B2B2;
+        margin-right: 10px;
+        @include s-screen {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &__offer {
+      font-weight: $font-bold;
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: #76BB73;
+      color: $color-ivory;
+      padding: 4px 16px;
+      border-radius: 20px;
+      width: fit-content;
+      margin: 0 auto 30px;
+      @include s-screen {
+        margin-bottom: 20px;
+      }
+    }
+
+    .a--cta {
+      background-color: #eca846;
+      border-radius: 6px;
+      padding: 17px 90px;
+      @include m-screen {
+        padding: 17px 60px;
+      }
+      @include s-screen {
+        width: 100%;
+        padding: 12px 10px;
+      }
+    }
+
+    .payment__methods {
+      background: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .faq {
+    padding: $gutter-large $gutter-medium 30px;
+
+    &__cards {
+      margin: 50px auto 0;
+      max-width: 1400px;
+    }
+  }
+
+  .references {
+    padding: $gutter-large $gutter-medium $gutter-medium;
   }
 }
