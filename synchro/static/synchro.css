@@ -8082,13 +8082,23 @@ input:checked + .accordion-horizontal__inner-box {
   @media (max-width: 1199px) {
     .gold-capsules .atf__header {
       font-size: 53px; } }
+  @media (max-width: 767px) {
+    .gold-capsules .atf__header {
+      font-size: 40px; } }
 
 .gold-capsules .atf__subheader {
   color: #000000;
-  font-weight: 400;
+  font-weight: 500;
+  opacity: 0.6;
   max-width: 470px;
   font-size: 30px;
   margin-bottom: 30px; }
+  @media (max-width: 1199px) {
+    .gold-capsules .atf__subheader {
+      font-size: 28px; } }
+  @media (max-width: 767px) {
+    .gold-capsules .atf__subheader {
+      font-size: 26px; } }
 
 .gold-capsules .atf__hero-image {
   background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg"); }
@@ -8130,28 +8140,32 @@ input:checked + .accordion-horizontal__inner-box {
       .gold-capsules .benefits-temp__copy {
         margin-top: 20px; } }
   .gold-capsules .benefits-temp__image1, .gold-capsules .benefits-temp__image2, .gold-capsules .benefits-temp__image3, .gold-capsules .benefits-temp__image4 {
-    padding-top: 50%;
+    padding-top: 66.66%;
     width: 100%;
     background-size: cover;
     background-position: center;
     vertical-align: middle; }
   .gold-capsules .benefits-temp__image1 {
-    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg"); }
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-inflammation-fighting.jpg"); }
   .gold-capsules .benefits-temp__image2 {
-    background-image: url("https://cdn.besynchro.com/experiments/go012-joint-health.jpg"); }
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-joint-health.jpg"); }
   .gold-capsules .benefits-temp__image3 {
-    background-image: url("https://cdn.besynchro.com/experiments/go012-brain-fog.jpg"); }
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-brain-health.jpg"); }
   .gold-capsules .benefits-temp__image4 {
-    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg"); }
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-healing.jpg"); }
   .gold-capsules .benefits-temp__header {
     opacity: 0.5;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    margin: 20px 0; }
   .gold-capsules .benefits-temp__title {
     font-weight: 700;
     font-size: 30px; }
+  .gold-capsules .benefits-temp .p--text {
+    font-weight: 500;
+    opacity: 0.6; }
 
 .gold-capsules .benefits-slider {
   height: 100vh;
@@ -8294,8 +8308,8 @@ input:checked + .accordion-horizontal__inner-box {
         width: 100%; } }
   .gold-capsules .superior__subheader {
     font-weight: 500;
-    font-size: 28px;
-    color: #6F5D4A;
+    font-size: 26px;
+    color: #61584e;
     line-height: 1.5;
     width: 50%;
     margin-left: auto; }
@@ -8370,7 +8384,7 @@ input:checked + .accordion-horizontal__inner-box {
         font-size: 22px; } }
 
 .gold-capsules .quality {
-  padding: 80px 0;
+  padding: 80px 20px;
   text-align: center;
   font-size: 0;
   max-width: 1400px;
@@ -8431,9 +8445,17 @@ input:checked + .accordion-horizontal__inner-box {
         width: 50%; } }
     @media (max-width: 767px) {
       .gold-capsules .ingredients-2__item-box {
-        width: 100%; } }
+        padding: 20px 0 0;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto; } }
+  @media (max-width: 767px) {
+    .gold-capsules .ingredients-2__image {
+      width: 100%; } }
   .gold-capsules .ingredients-2__header {
     line-height: normal; }
+  .gold-capsules .ingredients-2__copy {
+    opacity: 0.6; }
   .gold-capsules .ingredients-2__facts {
     display: inline-block;
     width: 65%;
@@ -8446,7 +8468,8 @@ input:checked + .accordion-horizontal__inner-box {
         margin-bottom: 40px; } }
     @media (max-width: 767px) {
       .gold-capsules .ingredients-2__facts {
-        padding: 0; } }
+        padding: 0;
+        max-width: 500px; } }
   .gold-capsules .ingredients-2__facts-image {
     background: #ffffff;
     padding: 25px 30px;
@@ -8465,7 +8488,8 @@ input:checked + .accordion-horizontal__inner-box {
         width: 100%; } }
     @media (max-width: 767px) {
       .gold-capsules .ingredients-2__directions {
-        padding: 0; } }
+        padding: 0;
+        max-width: 500px; } }
   .gold-capsules .ingredients-2__direction {
     font-size: 22px;
     background: #ffffff;
@@ -8493,7 +8517,7 @@ input:checked + .accordion-horizontal__inner-box {
     display: inline-block;
     width: 29%;
     margin: 0 2%;
-    padding: 20px 30px 5px;
+    padding: 20px 20px 5px;
     background: #f4f4f5;
     border-radius: 10px;
     vertical-align: top; }
@@ -8511,13 +8535,15 @@ input:checked + .accordion-horizontal__inner-box {
       .gold-capsules .testimonials__card {
         width: 100%;
         margin: 0 0 20px;
-        max-width: 400px; } }
+        max-width: 400px; }
+        .gold-capsules .testimonials__card:last-child {
+          display: inline-block; } }
   .gold-capsules .testimonials__headshot {
     width: 100%; }
   .gold-capsules .testimonials__quote {
     font-weight: 500;
     font-size: 20px;
-    margin: 20px 0; }
+    margin: 20px 10px; }
   .gold-capsules .testimonials__name {
     font-size: 18px;
     color: #4D4D4D;
@@ -8666,12 +8692,21 @@ input:checked + .accordion-horizontal__inner-box {
 
 .gold-capsules .faq {
   padding: 60px 40px 30px; }
+  @media (max-width: 854px) {
+    .gold-capsules .faq {
+      padding: 40px 20px 10px; } }
   .gold-capsules .faq__cards {
-    margin: 50px auto 0;
+    margin: 60px auto 0;
     max-width: 1400px; }
+    @media (max-width: 854px) {
+      .gold-capsules .faq__cards {
+        margin-top: 40px; } }
 
 .gold-capsules .references {
   padding: 60px 40px 40px; }
+  @media (max-width: 854px) {
+    .gold-capsules .references {
+      padding: 40px 20px 20px; } }
 
 .genesis-lp {
   overflow-x: hidden; }

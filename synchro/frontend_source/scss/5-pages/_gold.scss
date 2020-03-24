@@ -459,14 +459,24 @@
       @include m-screen {
         font-size: 53px;
       }
+      @include s-screen {
+        font-size: 40px;
+      }
     }
 
     &__subheader {
       color: $color-ebony;
-      font-weight: $font-normal;
+      font-weight: $font-medium;
+      opacity: 0.6;
       max-width: 470px;
       font-size: 30px;
       margin-bottom: 30px;
+      @include m-screen {
+        font-size: 28px;
+      }
+      @include s-screen {
+        font-size: 26px;
+      }
     }
 
     &__hero-image {
@@ -523,7 +533,7 @@
     &__image2,
     &__image3,
     &__image4 {
-      padding-top: 50%;
+      padding-top: 66.66%;
       width: 100%;
       background-size: cover;
       background-position: center;
@@ -531,32 +541,38 @@
     }
 
     &__image1 {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-inflammation-fighting.jpg");
     }
 
     &__image2 {
-      background-image: url("https://cdn.besynchro.com/experiments/go012-joint-health.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-joint-health.jpg");
     }
 
     &__image3 {
-      background-image: url("https://cdn.besynchro.com/experiments/go012-brain-fog.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-brain-health.jpg");
     }
 
     &__image4 {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-healing.jpg");
     }
 
     &__header {
       opacity: 0.5;
-      font-weight: $font-medium;
+      font-weight: $font-demi;
       font-size: 16px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      margin: $gutter-small 0;
     }
 
     &__title {
       font-weight: $font-bold;
       font-size: 30px;
+    }
+
+    .p--text {
+      font-weight: $font-medium;
+      opacity: 0.6;
     }
   }
 
@@ -752,8 +768,8 @@
 
     &__subheader {
       font-weight: $font-medium;
-      font-size: 28px;
-      color: #6F5D4A;
+      font-size: 26px;
+      color: #61584e;
       line-height: 1.5;
       width: 50%;
       margin-left: auto;
@@ -852,7 +868,7 @@
   }
 
   .quality {
-    padding: $gutter-medium*2 0;
+    padding: $gutter-medium*2 $gutter-small;
     text-align: center;
     font-size: 0;
     max-width: 1400px;
@@ -923,12 +939,25 @@
         width: 50%;
       }
       @include s-screen {
+        padding: $gutter-small 0 0;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    }
+
+    &__image {
+      @include s-screen {
         width: 100%;
       }
     }
 
     &__header {
       line-height: normal;
+    }
+
+    &__copy {
+      opacity: 0.6;
     }
 
     &__facts {
@@ -943,6 +972,7 @@
       }
       @include s-screen {
         padding: 0;
+        max-width: 500px;
       }
     }
 
@@ -966,6 +996,7 @@
       }
       @include s-screen {
         padding: 0;
+        max-width: 500px;
       }
     }
 
@@ -1001,7 +1032,7 @@
       display: inline-block;
       width: 29%;
       margin: 0 2%;
-      padding: $gutter-small 30px 5px;
+      padding: $gutter-small $gutter-small 5px;
       background: $color-silver-light;
       border-radius: 10px;
       vertical-align: top;
@@ -1021,6 +1052,10 @@
         width: 100%;
         margin: 0 0 $gutter-small;
         max-width: 400px;
+
+        &:last-child {
+          display: inline-block;
+        }
       }
     }
 
@@ -1031,10 +1066,8 @@
     &__quote {
       font-weight: $font-medium;
       font-size: 20px;
-      margin: $gutter-small 0;
+      margin: $gutter-small 10px;
     }
-
-    &__review {}
 
     &__name {
       font-size: 18px;
@@ -1235,14 +1268,23 @@
 
   .faq {
     padding: $gutter-large $gutter-medium 30px;
+    @include sm-screen {
+      padding: $gutter-medium $gutter-small 10px;
+    }
 
     &__cards {
-      margin: 50px auto 0;
+      margin: $gutter-large auto 0;
       max-width: 1400px;
+      @include sm-screen {
+        margin-top: $gutter-medium;
+      }
     }
   }
 
   .references {
     padding: $gutter-large $gutter-medium $gutter-medium;
+    @include sm-screen {
+      padding: $gutter-medium $gutter-small $gutter-small;
+    }
   }
 }
