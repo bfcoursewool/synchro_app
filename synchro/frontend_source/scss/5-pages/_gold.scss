@@ -587,9 +587,8 @@
     }
 
     &__content {
-      top: 15%;
+      top: 200px;
       position: relative;
-      transform: translateY(-50%);
     }
 
     &__icons {
@@ -647,6 +646,7 @@
       display: inline-block;
       visibility: hidden;
       transition: all ease-in-out 0.2s;
+      margin-bottom: 200px;
       opacity: 0;
 
       &.active {
