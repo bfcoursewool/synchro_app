@@ -53,6 +53,20 @@ endpoint_info_dict = {
         'is_variant': False,
       }
     },
+    # Gold Capsules LP for Paid Facebook/Instagram Traffic
+    'turmeric-capsules-fb': {
+      'template': 'landing_pages/gold-capsules/v1-0-paid-a/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
+    # Gold Capsules LP for Retargeting Facebook/Instagram Traffic (NEW)
+    'turmeric-capsules-r': {
+      'template': 'landing_pages/gold-capsules/v1-0-paid-r/0-index.html',
+      'template_vars': {
+        'is_variant': False,
+      }
+    },
     # Gold Capsules Presale Opt In LP 1 (NEW)
     'be-the-first': {
       'template': 'landing_pages/pre-launch/gold-capsules/opt-in1/0-index.html',
