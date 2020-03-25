@@ -6,6 +6,11 @@ body {
   box-shadow: $shadow-white;
 }
 
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: inherit;

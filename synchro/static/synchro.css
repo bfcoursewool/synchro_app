@@ -258,7 +258,7 @@ html {
 html {
   font-size: 16px;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -4321,7 +4321,7 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     border: 1px solid #fff;
     border-radius: 10px; }
   .carousel-indicators .active {
@@ -5221,6 +5221,10 @@ body {
   margin: 0 auto;
   max-width: 2000px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
+.no-scroll {
+  height: 100%;
+  overflow: hidden; }
 
 a {
   text-decoration: none;
@@ -7806,7 +7810,7 @@ input:checked + .accordion-horizontal__inner-box {
       position: relative;
       width: 25%;
       display: table-cell;
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-video%402x.jpg");
+      background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5)), url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-video%402x.jpg");
       background-size: cover;
       background-position: center;
       transition: all 0.3s ease-in-out; }
@@ -8074,22 +8078,22 @@ input:checked + .accordion-horizontal__inner-box {
   background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg"); }
 
 .gold-capsules .benefits-slider {
-  height: 100vh;
+  height: 400vh;
   text-align: center; }
   .gold-capsules .benefits-slider__content {
-    top: 50%;
+    top: 15%;
     position: relative;
     transform: translateY(-50%); }
   .gold-capsules .benefits-slider__icons {
     display: inline-block;
     vertical-align: middle; }
-  .gold-capsules .benefits-slider__icon {
+  .gold-capsules .benefits-slider__icon1, .gold-capsules .benefits-slider__icon2, .gold-capsules .benefits-slider__icon3, .gold-capsules .benefits-slider__icon4 {
     display: block;
     margin: 30px 80px 30px 0;
     opacity: 0.5;
     position: relative;
     transition: all ease-in-out 0.2s; }
-    .gold-capsules .benefits-slider__icon::after {
+    .gold-capsules .benefits-slider__icon1::after, .gold-capsules .benefits-slider__icon2::after, .gold-capsules .benefits-slider__icon3::after, .gold-capsules .benefits-slider__icon4::after {
       content: "";
       position: absolute;
       top: 50%;
@@ -8099,9 +8103,9 @@ input:checked + .accordion-horizontal__inner-box {
       background: #eca846;
       transform: translate(15px, -1px);
       transition: all ease-in-out 0.2s; }
-    .gold-capsules .benefits-slider__icon.active {
+    .gold-capsules .benefits-slider__icon1.active, .gold-capsules .benefits-slider__icon2.active, .gold-capsules .benefits-slider__icon3.active, .gold-capsules .benefits-slider__icon4.active {
       opacity: 1; }
-      .gold-capsules .benefits-slider__icon.active::after {
+      .gold-capsules .benefits-slider__icon1.active::after, .gold-capsules .benefits-slider__icon2.active::after, .gold-capsules .benefits-slider__icon3.active::after, .gold-capsules .benefits-slider__icon4.active::after {
         content: "";
         position: absolute;
         top: 50%;
@@ -8110,15 +8114,16 @@ input:checked + .accordion-horizontal__inner-box {
         width: 50px;
         background: #eca846;
         transform: translate(15px, -1px); }
-    .gold-capsules .benefits-slider__icon:hover {
+    .gold-capsules .benefits-slider__icon1:hover, .gold-capsules .benefits-slider__icon2:hover, .gold-capsules .benefits-slider__icon3:hover, .gold-capsules .benefits-slider__icon4:hover {
       opacity: 1; }
-  .gold-capsules .benefits-slider__copy {
+  .gold-capsules .benefits-slider__copy1, .gold-capsules .benefits-slider__copy2, .gold-capsules .benefits-slider__copy3, .gold-capsules .benefits-slider__copy4 {
     text-align: center;
-    display: none;
+    display: inline-block;
+    visibility: hidden;
     transition: all ease-in-out 0.2s;
     opacity: 0; }
-    .gold-capsules .benefits-slider__copy.active {
-      display: inline-block;
+    .gold-capsules .benefits-slider__copy1.active, .gold-capsules .benefits-slider__copy2.active, .gold-capsules .benefits-slider__copy3.active, .gold-capsules .benefits-slider__copy4.active {
+      visibility: visible;
       opacity: 1; }
   .gold-capsules .benefits-slider__image1, .gold-capsules .benefits-slider__image2, .gold-capsules .benefits-slider__image3, .gold-capsules .benefits-slider__image4 {
     display: inline-block;
@@ -10521,7 +10526,7 @@ svg.external {
   font-size: 80px;
   line-height: normal;
   color: #ffffff;
-  color: rgba(0, 0, 0, 0);
+  color: transparent;
   letter-spacing: 0.06em;
   text-align: center;
   margin: 15px auto;

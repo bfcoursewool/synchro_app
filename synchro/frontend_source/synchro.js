@@ -10,6 +10,7 @@ import SVGLoader from './ES6/svg_loader';
 import Toggle from './ES6/toggle';
 import Tabs from './ES6/tabs';
 import Slider from './ES6/slider';
+import GoldCapBenefits from './ES6/goldCapBenefits';
 import { loadHeroImg } from './ES6/hero_image';
 // import susanEffects from './ES6/susan/effects'; "Disabling this for now so we can see if anything stops working... should be redudant."
 
@@ -22,9 +23,10 @@ const svgObj = new SVGLoader();
 const toggle = new Toggle();
 const tabs = new Tabs();
 const analyticsObj = new AnalyticsIntegration();
+const goldCapBenefits = new GoldCapBenefits();
 const slider = Slider('.slides');
 
-susanEffects();
+//susanEffects();
 
 $(document).ready(() => {
   gradientObj.startEffect();
