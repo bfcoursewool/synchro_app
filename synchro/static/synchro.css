@@ -8180,7 +8180,6 @@ input:checked + .accordion-horizontal__inner-box {
     z-index: -10;
     top: 350px;
     position: relative;
-    background-color: black;
     height: 1px; }
   .gold-capsules .benefits-slider .p--title-new {
     position: relative;
