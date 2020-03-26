@@ -8175,6 +8175,13 @@ input:checked + .accordion-horizontal__inner-box {
   height: 400vh;
   text-align: center;
   padding: 60px; }
+  .gold-capsules .benefits-slider .pin-trigger {
+    visibility: hidden;
+    z-index: -10;
+    top: 350px;
+    position: relative;
+    background-color: black;
+    height: 1px; }
   .gold-capsules .benefits-slider .p--title-new {
     position: relative;
     top: 100px; }
@@ -8215,13 +8222,12 @@ input:checked + .accordion-horizontal__inner-box {
       opacity: 1; }
   .gold-capsules .benefits-slider__copy1, .gold-capsules .benefits-slider__copy2, .gold-capsules .benefits-slider__copy3, .gold-capsules .benefits-slider__copy4 {
     text-align: center;
-    display: inline-block;
-    visibility: hidden;
+    display: none;
     transition: all ease-in-out 0.2s;
     margin-bottom: 200px;
     opacity: 0; }
     .gold-capsules .benefits-slider__copy1.active, .gold-capsules .benefits-slider__copy2.active, .gold-capsules .benefits-slider__copy3.active, .gold-capsules .benefits-slider__copy4.active {
-      visibility: visible;
+      display: inline-block;
       opacity: 1; }
   .gold-capsules .benefits-slider__image1, .gold-capsules .benefits-slider__image2, .gold-capsules .benefits-slider__image3, .gold-capsules .benefits-slider__image4 {
     display: inline-block;

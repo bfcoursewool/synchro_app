@@ -581,6 +581,15 @@
     text-align: center;
     padding: $gutter-large;
 
+    .pin-trigger {
+      visibility: hidden;
+      z-index: -10;
+      top: 350px;
+      position: relative;
+      background-color: black;
+      height: 1px;
+    }
+
     .p--title-new {
       position: relative;
       top: 100px;
@@ -643,14 +652,13 @@
     &__copy3,
     &__copy4 {
       text-align: center;
-      display: inline-block;
-      visibility: hidden;
+      display: none;
       transition: all ease-in-out 0.2s;
       margin-bottom: 200px;
       opacity: 0;
 
       &.active {
-        visibility: visible;
+        display: inline-block;
         opacity: 1;
       }
     }
