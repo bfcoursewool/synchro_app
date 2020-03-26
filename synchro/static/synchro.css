@@ -8286,8 +8286,6 @@ input:checked + .accordion-horizontal__inner-box {
         @media (max-width: 680px) {
           .gold-capsules .benefits-slider__icon1.active::after, .gold-capsules .benefits-slider__icon2.active::after, .gold-capsules .benefits-slider__icon3.active::after, .gold-capsules .benefits-slider__icon4.active::after {
             height: 20px; } }
-    .gold-capsules .benefits-slider__icon1:hover, .gold-capsules .benefits-slider__icon2:hover, .gold-capsules .benefits-slider__icon3:hover, .gold-capsules .benefits-slider__icon4:hover {
-      opacity: 1; }
   @media (max-width: 680px) {
     .gold-capsules .benefits-slider__copy0:after {
       font-family: "Font Awesome 5 Free";
