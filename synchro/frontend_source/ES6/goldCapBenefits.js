@@ -2,30 +2,34 @@ import EventsBase from './events_base';
 import ScrollMagic from 'scrollmagic';
 
 export default class GoldCapBenefits {
-  
+
   constructor() {
     this._controller = new ScrollMagic.Controller()
     $(() => {
-      let scene = new ScrollMagic.Scene({ triggerElement: '.pin-trigger', duration: 2300})
+      let scene = new ScrollMagic.Scene({ triggerElement: '.pin-trigger', duration: 2000})
                       .setPin('.pinned-section')
                       .addTo(this._controller)
                       .on('progress', (e) => {
-                        if(e.progress > 0 && e.progress <= .25) {
+                        if(e.progress > 0 && e.progress <= .2) {
+                          // copy0 & no-icon active
+                          this.removeActives()
+                          $('.benefits-slider__copy0').addClass('active')
+                        } else if(e.progress > .2 && e.progress <= .4) {
                           // copy1 & icon1 active
                           this.removeActives()
                           $('.benefits-slider__copy1').addClass('active')
                           $('.benefits-slider__icon1').addClass('active')
-                        } else if(e.progress > .25 && e.progress <= .5) {
+                        } else if(e.progress > .4 && e.progress <= .6) {
                           // copy2 & icon2 active
                           this.removeActives()
                           $('.benefits-slider__copy2').addClass('active')
                           $('.benefits-slider__icon2').addClass('active')
-                        } else if(e.progress > .5 && e.progress <= .75) {
+                        } else if(e.progress > .6 && e.progress <= .8) {
                           // copy3 & icon3 active
                           this.removeActives()
                           $('.benefits-slider__copy3').addClass('active')
                           $('.benefits-slider__icon3').addClass('active')
-                        } else if(e.progress > .75 && e.progress <= 1) {
+                        } else if(e.progress > .8 && e.progress <= 1) {
                           // copy 4 & icon4 active
                           this.removeActives()
                           $('.benefits-slider__copy4').addClass('active')

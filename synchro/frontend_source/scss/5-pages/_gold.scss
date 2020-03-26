@@ -577,31 +577,68 @@
   }
 
   .benefits-slider {
-    height: 400vh;
+    height: calc(2000px + 100vh);
     text-align: center;
-    padding: $gutter-large;
 
     .pin-trigger {
       visibility: hidden;
       z-index: -10;
-      top: 350px;
+      top: 50vh;
       position: relative;
       height: 1px;
     }
 
-    .p--title-new {
-      position: relative;
-      top: 100px;
-    }
-
     &__content {
-      top: 200px;
       position: relative;
+      height: 100vh;
+
+      &:after,
+      &:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f078";
+        position: absolute;
+        font-weight: 900;
+        color: $color-gold;
+        left: 50%;
+        transform: translateX(-50%);
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      &:before {
+        animation-name: scrolltop;
+      }
+      @keyframes scrolltop {
+        from {
+          top: 40px;
+        }
+
+        to {
+          top: 60px;
+        }
+      }
+
+      &:after {
+        animation-name: scrollbottom;
+      }
+      @keyframes scrollbottom {
+        from {
+          bottom: 60px;
+        }
+
+        to {
+          bottom: 40px;
+        }
+      }
     }
 
     &__icons {
       display: inline-block;
       vertical-align: middle;
+      position: relative;
+      top: 50vh;
+      transform: translateY(-50%);
     }
 
     &__icon1,
@@ -612,7 +649,7 @@
       margin: 30px 80px 30px 0;
       opacity: 0.5;
       position: relative;
-      transition: all ease-in-out 0.2s;
+      transition: all 0.5s ease 0s;
 
       &::after {
         content: "";
@@ -623,7 +660,7 @@
         width: 0;
         background: $color-gold;
         transform: translate(15px, -1px);
-        transition: all ease-in-out 0.2s;
+        transition: all 0.5s ease 0s;
       }
 
       &.active {
@@ -646,22 +683,25 @@
       }
     }
 
+    &__copy0,
     &__copy1,
     &__copy2,
     &__copy3,
     &__copy4 {
       text-align: center;
       display: none;
-      transition: all ease-in-out 0.2s;
-      margin-bottom: 200px;
-      opacity: 0;
+      transition: all 0.5s ease 0s;
+      position: relative;
+      top: 50vh;
+      transform: translateY(-50%);
 
       &.active {
         display: inline-block;
-        opacity: 1;
+        transition: all 0.5s ease 0s;
       }
     }
 
+    &__image0,
     &__image1,
     &__image2,
     &__image3,
@@ -674,20 +714,24 @@
       vertical-align: middle;
     }
 
+    &__image0 {
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-benefit-intro.jpg");
+    }
+
     &__image1 {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-inflammation-fighting.jpg");
     }
 
     &__image2 {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-joint-health.jpg");
     }
 
     &__image3 {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-brain-health.jpg");
     }
 
     &__image4 {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-healing.jpg");
     }
 
     &__text {
@@ -704,6 +748,11 @@
       font-size: 16px;
       text-transform: uppercase;
       letter-spacing: 1px;
+    }
+
+    &__intro {
+      font-weight: $font-bold;
+      font-size: 40px;
     }
 
     &__title {
