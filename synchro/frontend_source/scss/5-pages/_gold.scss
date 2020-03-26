@@ -800,8 +800,8 @@
 
     &__image0 {
       background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-benefit-intro.jpg");
-      background-size: contain;
       @include xs-screen {
+        background-size: contain;
         height: 40vh;
       }
     }

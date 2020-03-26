@@ -8340,10 +8340,10 @@ input:checked + .accordion-horizontal__inner-box {
         width: 100%;
         height: 30vh; } }
   .gold-capsules .benefits-slider__image0 {
-    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-benefit-intro.jpg");
-    background-size: contain; }
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-benefit-intro.jpg"); }
     @media (max-width: 680px) {
       .gold-capsules .benefits-slider__image0 {
+        background-size: contain;
         height: 40vh; } }
   .gold-capsules .benefits-slider__image1 {
     background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-inflammation-fighting.jpg"); }
