@@ -828,6 +828,7 @@
       vertical-align: middle;
       padding-left: 50px;
       text-align: left;
+      margin-bottom: -21px;
       @include m-screen {
         padding-left: $gutter-medium;
         width: 60%;
@@ -836,6 +837,7 @@
         width: 50%;
       }
       @include xs-screen {
+        margin-bottom: 0;
         width: 100%;
         padding: $gutter-small 0 0;
         text-align: center;
@@ -869,14 +871,14 @@
     }
 
     &__text-desktop {
-      @include m-screen {
+      @include sm-screen {
         display: none;
       }
     }
 
     &__text-mobile {
       display: none;
-      @include m-screen {
+      @include sm-screen {
         display: block;
       }
     }
