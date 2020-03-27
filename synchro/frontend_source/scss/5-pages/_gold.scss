@@ -578,7 +578,10 @@
 
   .benefits-slider {
     height: calc(2000px + 100vh);
-    text-align: center;
+    padding: 0 $gutter-medium;
+    @include s-screen {
+      padding: 0 $gutter-small;
+    }
 
     .pin-trigger {
       visibility: hidden;
@@ -589,17 +592,10 @@
     }
 
     &__content {
-      position: relative;
       height: 100vh;
-      @include m-screen {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      @include xs-screen {
-        display: block;
-        padding: $gutter-medium $gutter-small 0;
-      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:after,
       &:before {
@@ -645,44 +641,24 @@
       }
     }
 
-    &__icons {
-      display: inline-block;
-      vertical-align: middle;
-      position: relative;
-      top: 50vh;
-      transform: translateY(-50%);
-      @include m-screen {
-        position: initial;
-        transform: none;
-      }
-      @include xs-screen {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-      }
-    }
-
     &__icon1,
     &__icon2,
     &__icon3,
     &__icon4 {
-      display: block;
       margin: 30px 80px 30px 0;
       opacity: 0.5;
       position: relative;
       transition: all 0.5s ease 0s;
-      @include m-screen {
-        display: inline-block;
-        margin: 0 30px 80px;
-      }
-      @include xs-screen {
-        width: 20%;
-        max-width: 60px;
-        margin: 0 0 30px;
 
-        img {
-          width: 100%;
-        }
+      img {
+        width: 100%;
+      }
+      @include m-screen {
+        width: 50px;
+        margin-right: 50px;
+      }
+      @include s-screen {
+        margin-right: 30px;
       }
 
       &::after {
@@ -695,14 +671,10 @@
         background: $color-gold;
         transform: translate(15px, -1px);
         transition: all 0.5s ease 0s;
-        @include m-screen {
+        @include s-screen {
           left: 50%;
-          width: 2px;
-          height: 0;
           top: 100%;
-          transform: translate(-1px, 15px);
-        }
-        @include xs-screen {
+          height: 0;
           transform: translate(-1px, 0);
         }
       }
@@ -714,63 +686,51 @@
           width: 50px;
           height: 2px;
           @include m-screen {
-            height: 50px;
-            width: 2px;
+            width: 20px;
           }
-          @include xs-screen {
+          @include s-screen {
+            transition: height 1s ease 0s;
+            width: 2px;
             height: 20px;
           }
         }
       }
 
-      // &:hover {
-      //   opacity: 1;
-      // }
-    }
-
-    &__copy0 {
-      &:after {
-        @include xs-screen {
-          font-family: "Font Awesome 5 Free";
-          content: "\f078";
-          position: absolute;
-          font-weight: 900;
-          color: $color-gold;
-          left: 50%;
-          font-size: 16px;
-          transform: translateX(-50%);
-          animation-duration: 1s;
-          animation-iteration-count: infinite;
-          animation-direction: alternate;
-          animation-name: scrollbottom;
+      &:last-child {
+        &::after {
+          display: none;
         }
       }
     }
+
+    // &__copy0 {
+    //   &:after {
+    //     @include xs-screen {
+    //       font-family: "Font Awesome 5 Free";
+    //       content: "\f078";
+    //       position: absolute;
+    //       font-weight: 900;
+    //       color: $color-gold;
+    //       left: 50%;
+    //       font-size: 16px;
+    //       transform: translateX(-50%);
+    //       animation-duration: 1s;
+    //       animation-iteration-count: infinite;
+    //       animation-direction: alternate;
+    //       animation-name: scrollbottom;
+    //     }
+    //   }
+    // }
 
     &__copy0,
     &__copy1,
     &__copy2,
     &__copy3,
     &__copy4 {
-      text-align: center;
       display: none;
-      font-size: 0;
-      transition: all 0.5s ease 0s;
-      position: relative;
-      top: 50vh;
-      transform: translateY(-50%);
-      @include m-screen {
-        position: initial;
-        transform: none;
-        padding: 0 $gutter-medium;
-      }
-      @include xs-screen {
-        padding: 0;
-      }
 
       &.active {
         display: inline-block;
-        transition: all 0.5s ease 0s;
       }
     }
 
@@ -789,20 +749,23 @@
       @include m-screen {
         width: 40%;
       }
-      @include sm-screen {
-        width: 50%;
-      }
-      @include xs-screen {
+      @include s-screen {
         width: 100%;
         height: 30vh;
+      }
+      @include xs-screen {
+        height: 25vh;
       }
     }
 
     &__image0 {
       background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-benefit-intro.jpg");
-      @include xs-screen {
+      @include s-screen {
         background-size: contain;
         height: 40vh;
+      }
+      @include xs-screen {
+        background-size: cover;
       }
     }
 
@@ -824,23 +787,19 @@
 
     &__text {
       display: inline-block;
-      width: 500px;
+      width: 530px;
       vertical-align: middle;
-      padding-left: 50px;
+      padding-left: $gutter-medium;
       text-align: left;
       margin-bottom: -21px;
       @include m-screen {
-        padding-left: $gutter-medium;
-        width: 60%;
+        padding-left: 30px;
+        width: 59%;
       }
-      @include sm-screen {
-        width: 50%;
-      }
-      @include xs-screen {
+      @include s-screen {
         margin-bottom: 0;
         width: 100%;
         padding: $gutter-small 0 0;
-        text-align: center;
         max-width: 400px;
       }
     }
@@ -851,21 +810,25 @@
       font-size: 16px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      @include m-screen {
+        display: none;
+      }
     }
 
     &__intro {
       font-weight: $font-bold;
       font-size: 40px;
       margin-bottom: $gutter-small;
-      @include xs-screen {
+      @include s-screen {
         font-size: 30px;
+        text-align: center;
       }
     }
 
     &__title {
       font-weight: $font-bold;
       font-size: 30px;
-      @include xs-screen {
+      @include s-screen {
         font-size: 24px;
       }
     }

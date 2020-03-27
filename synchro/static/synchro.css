@@ -8173,7 +8173,10 @@ input:checked + .accordion-horizontal__inner-box {
 
 .gold-capsules .benefits-slider {
   height: calc(2000px + 100vh);
-  text-align: center; }
+  padding: 0 40px; }
+  @media (max-width: 767px) {
+    .gold-capsules .benefits-slider {
+      padding: 0 20px; } }
   .gold-capsules .benefits-slider .pin-trigger {
     visibility: hidden;
     z-index: -10;
@@ -8181,17 +8184,10 @@ input:checked + .accordion-horizontal__inner-box {
     position: relative;
     height: 1px; }
   .gold-capsules .benefits-slider__content {
-    position: relative;
-    height: 100vh; }
-    @media (max-width: 1199px) {
-      .gold-capsules .benefits-slider__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; } }
-    @media (max-width: 680px) {
-      .gold-capsules .benefits-slider__content {
-        display: block;
-        padding: 40px 20px 0; } }
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .gold-capsules .benefits-slider__content:after, .gold-capsules .benefits-slider__content:before {
       font-family: "Font Awesome 5 Free";
       content: "\F078";
@@ -8222,38 +8218,20 @@ input:checked + .accordion-horizontal__inner-box {
     bottom: 60px; }
   to {
     bottom: 40px; } }
-  .gold-capsules .benefits-slider__icons {
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    top: 50vh;
-    transform: translateY(-50%); }
-    @media (max-width: 1199px) {
-      .gold-capsules .benefits-slider__icons {
-        position: initial;
-        transform: none; } }
-    @media (max-width: 680px) {
-      .gold-capsules .benefits-slider__icons {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly; } }
   .gold-capsules .benefits-slider__icon1, .gold-capsules .benefits-slider__icon2, .gold-capsules .benefits-slider__icon3, .gold-capsules .benefits-slider__icon4 {
-    display: block;
     margin: 30px 80px 30px 0;
     opacity: 0.5;
     position: relative;
     transition: all 0.5s ease 0s; }
+    .gold-capsules .benefits-slider__icon1 img, .gold-capsules .benefits-slider__icon2 img, .gold-capsules .benefits-slider__icon3 img, .gold-capsules .benefits-slider__icon4 img {
+      width: 100%; }
     @media (max-width: 1199px) {
       .gold-capsules .benefits-slider__icon1, .gold-capsules .benefits-slider__icon2, .gold-capsules .benefits-slider__icon3, .gold-capsules .benefits-slider__icon4 {
-        display: inline-block;
-        margin: 0 30px 80px; } }
-    @media (max-width: 680px) {
+        width: 50px;
+        margin-right: 50px; } }
+    @media (max-width: 767px) {
       .gold-capsules .benefits-slider__icon1, .gold-capsules .benefits-slider__icon2, .gold-capsules .benefits-slider__icon3, .gold-capsules .benefits-slider__icon4 {
-        width: 20%;
-        max-width: 60px;
-        margin: 0 0 30px; }
-        .gold-capsules .benefits-slider__icon1 img, .gold-capsules .benefits-slider__icon2 img, .gold-capsules .benefits-slider__icon3 img, .gold-capsules .benefits-slider__icon4 img {
-          width: 100%; } }
+        margin-right: 30px; } }
     .gold-capsules .benefits-slider__icon1::after, .gold-capsules .benefits-slider__icon2::after, .gold-capsules .benefits-slider__icon3::after, .gold-capsules .benefits-slider__icon4::after {
       content: "";
       position: absolute;
@@ -8264,15 +8242,11 @@ input:checked + .accordion-horizontal__inner-box {
       background: #eca846;
       transform: translate(15px, -1px);
       transition: all 0.5s ease 0s; }
-      @media (max-width: 1199px) {
+      @media (max-width: 767px) {
         .gold-capsules .benefits-slider__icon1::after, .gold-capsules .benefits-slider__icon2::after, .gold-capsules .benefits-slider__icon3::after, .gold-capsules .benefits-slider__icon4::after {
           left: 50%;
-          width: 2px;
-          height: 0;
           top: 100%;
-          transform: translate(-1px, 15px); } }
-      @media (max-width: 680px) {
-        .gold-capsules .benefits-slider__icon1::after, .gold-capsules .benefits-slider__icon2::after, .gold-capsules .benefits-slider__icon3::after, .gold-capsules .benefits-slider__icon4::after {
+          height: 0;
           transform: translate(-1px, 0); } }
     .gold-capsules .benefits-slider__icon1.active, .gold-capsules .benefits-slider__icon2.active, .gold-capsules .benefits-slider__icon3.active, .gold-capsules .benefits-slider__icon4.active {
       opacity: 1; }
@@ -8281,44 +8255,18 @@ input:checked + .accordion-horizontal__inner-box {
         height: 2px; }
         @media (max-width: 1199px) {
           .gold-capsules .benefits-slider__icon1.active::after, .gold-capsules .benefits-slider__icon2.active::after, .gold-capsules .benefits-slider__icon3.active::after, .gold-capsules .benefits-slider__icon4.active::after {
-            height: 50px;
-            width: 2px; } }
-        @media (max-width: 680px) {
+            width: 20px; } }
+        @media (max-width: 767px) {
           .gold-capsules .benefits-slider__icon1.active::after, .gold-capsules .benefits-slider__icon2.active::after, .gold-capsules .benefits-slider__icon3.active::after, .gold-capsules .benefits-slider__icon4.active::after {
+            transition: height 1s ease 0s;
+            width: 2px;
             height: 20px; } }
-  @media (max-width: 680px) {
-    .gold-capsules .benefits-slider__copy0:after {
-      font-family: "Font Awesome 5 Free";
-      content: "\F078";
-      position: absolute;
-      font-weight: 900;
-      color: #eca846;
-      left: 50%;
-      font-size: 16px;
-      transform: translateX(-50%);
-      animation-duration: 1s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-name: scrollbottom; } }
+    .gold-capsules .benefits-slider__icon1:last-child::after, .gold-capsules .benefits-slider__icon2:last-child::after, .gold-capsules .benefits-slider__icon3:last-child::after, .gold-capsules .benefits-slider__icon4:last-child::after {
+      display: none; }
   .gold-capsules .benefits-slider__copy0, .gold-capsules .benefits-slider__copy1, .gold-capsules .benefits-slider__copy2, .gold-capsules .benefits-slider__copy3, .gold-capsules .benefits-slider__copy4 {
-    text-align: center;
-    display: none;
-    font-size: 0;
-    transition: all 0.5s ease 0s;
-    position: relative;
-    top: 50vh;
-    transform: translateY(-50%); }
-    @media (max-width: 1199px) {
-      .gold-capsules .benefits-slider__copy0, .gold-capsules .benefits-slider__copy1, .gold-capsules .benefits-slider__copy2, .gold-capsules .benefits-slider__copy3, .gold-capsules .benefits-slider__copy4 {
-        position: initial;
-        transform: none;
-        padding: 0 40px; } }
-    @media (max-width: 680px) {
-      .gold-capsules .benefits-slider__copy0, .gold-capsules .benefits-slider__copy1, .gold-capsules .benefits-slider__copy2, .gold-capsules .benefits-slider__copy3, .gold-capsules .benefits-slider__copy4 {
-        padding: 0; } }
+    display: none; }
     .gold-capsules .benefits-slider__copy0.active, .gold-capsules .benefits-slider__copy1.active, .gold-capsules .benefits-slider__copy2.active, .gold-capsules .benefits-slider__copy3.active, .gold-capsules .benefits-slider__copy4.active {
-      display: inline-block;
-      transition: all 0.5s ease 0s; }
+      display: inline-block; }
   .gold-capsules .benefits-slider__image0, .gold-capsules .benefits-slider__image1, .gold-capsules .benefits-slider__image2, .gold-capsules .benefits-slider__image3, .gold-capsules .benefits-slider__image4 {
     display: inline-block;
     height: 400px;
@@ -8330,19 +8278,22 @@ input:checked + .accordion-horizontal__inner-box {
     @media (max-width: 1199px) {
       .gold-capsules .benefits-slider__image0, .gold-capsules .benefits-slider__image1, .gold-capsules .benefits-slider__image2, .gold-capsules .benefits-slider__image3, .gold-capsules .benefits-slider__image4 {
         width: 40%; } }
-    @media (max-width: 854px) {
-      .gold-capsules .benefits-slider__image0, .gold-capsules .benefits-slider__image1, .gold-capsules .benefits-slider__image2, .gold-capsules .benefits-slider__image3, .gold-capsules .benefits-slider__image4 {
-        width: 50%; } }
-    @media (max-width: 680px) {
+    @media (max-width: 767px) {
       .gold-capsules .benefits-slider__image0, .gold-capsules .benefits-slider__image1, .gold-capsules .benefits-slider__image2, .gold-capsules .benefits-slider__image3, .gold-capsules .benefits-slider__image4 {
         width: 100%;
         height: 30vh; } }
+    @media (max-width: 680px) {
+      .gold-capsules .benefits-slider__image0, .gold-capsules .benefits-slider__image1, .gold-capsules .benefits-slider__image2, .gold-capsules .benefits-slider__image3, .gold-capsules .benefits-slider__image4 {
+        height: 25vh; } }
   .gold-capsules .benefits-slider__image0 {
     background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-benefit-intro.jpg"); }
-    @media (max-width: 680px) {
+    @media (max-width: 767px) {
       .gold-capsules .benefits-slider__image0 {
         background-size: contain;
         height: 40vh; } }
+    @media (max-width: 680px) {
+      .gold-capsules .benefits-slider__image0 {
+        background-size: cover; } }
   .gold-capsules .benefits-slider__image1 {
     background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-inflammation-fighting.jpg"); }
   .gold-capsules .benefits-slider__image2 {
@@ -8353,24 +8304,20 @@ input:checked + .accordion-horizontal__inner-box {
     background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-healing.jpg"); }
   .gold-capsules .benefits-slider__text {
     display: inline-block;
-    width: 500px;
+    width: 530px;
     vertical-align: middle;
-    padding-left: 50px;
+    padding-left: 40px;
     text-align: left;
     margin-bottom: -21px; }
     @media (max-width: 1199px) {
       .gold-capsules .benefits-slider__text {
-        padding-left: 40px;
-        width: 60%; } }
-    @media (max-width: 854px) {
-      .gold-capsules .benefits-slider__text {
-        width: 50%; } }
-    @media (max-width: 680px) {
+        padding-left: 30px;
+        width: 59%; } }
+    @media (max-width: 767px) {
       .gold-capsules .benefits-slider__text {
         margin-bottom: 0;
         width: 100%;
         padding: 20px 0 0;
-        text-align: center;
         max-width: 400px; } }
   .gold-capsules .benefits-slider__header {
     opacity: 0.5;
@@ -8378,17 +8325,21 @@ input:checked + .accordion-horizontal__inner-box {
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px; }
+    @media (max-width: 1199px) {
+      .gold-capsules .benefits-slider__header {
+        display: none; } }
   .gold-capsules .benefits-slider__intro {
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 20px; }
-    @media (max-width: 680px) {
+    @media (max-width: 767px) {
       .gold-capsules .benefits-slider__intro {
-        font-size: 30px; } }
+        font-size: 30px;
+        text-align: center; } }
   .gold-capsules .benefits-slider__title {
     font-weight: 700;
     font-size: 30px; }
-    @media (max-width: 680px) {
+    @media (max-width: 767px) {
       .gold-capsules .benefits-slider__title {
         font-size: 24px; } }
   @media (max-width: 854px) {
