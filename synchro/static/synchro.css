@@ -8256,7 +8256,8 @@ input:checked + .accordion-horizontal__inner-box {
       @media (max-width: 680px) {
         .gold-capsules .benefits-slider__icon1::after, .gold-capsules .benefits-slider__icon2::after, .gold-capsules .benefits-slider__icon3::after, .gold-capsules .benefits-slider__icon4::after {
           width: 1px;
-          height: 40px; } }
+          height: 40px;
+          transform: none; } }
     .gold-capsules .benefits-slider__icon1.active, .gold-capsules .benefits-slider__icon2.active, .gold-capsules .benefits-slider__icon3.active, .gold-capsules .benefits-slider__icon4.active {
       opacity: 1; }
       .gold-capsules .benefits-slider__icon1.active::after, .gold-capsules .benefits-slider__icon2.active::after, .gold-capsules .benefits-slider__icon3.active::after, .gold-capsules .benefits-slider__icon4.active::after {
