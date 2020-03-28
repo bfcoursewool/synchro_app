@@ -8234,7 +8234,7 @@ input:checked + .accordion-horizontal__inner-box {
         margin-right: 30px; } }
     @media (max-width: 680px) {
       .gold-capsules .benefits-slider__icon1, .gold-capsules .benefits-slider__icon2, .gold-capsules .benefits-slider__icon3, .gold-capsules .benefits-slider__icon4 {
-        margin: 40px 30px 40px 0;
+        margin: 40px 20px 40px 0;
         width: 40px; } }
     .gold-capsules .benefits-slider__icon1::after, .gold-capsules .benefits-slider__icon2::after, .gold-capsules .benefits-slider__icon3::after, .gold-capsules .benefits-slider__icon4::after {
       content: "";
@@ -8255,6 +8255,7 @@ input:checked + .accordion-horizontal__inner-box {
           transform: translate(-1px, 0); } }
       @media (max-width: 680px) {
         .gold-capsules .benefits-slider__icon1::after, .gold-capsules .benefits-slider__icon2::after, .gold-capsules .benefits-slider__icon3::after, .gold-capsules .benefits-slider__icon4::after {
+          width: 1px;
           height: 40px; } }
     .gold-capsules .benefits-slider__icon1.active, .gold-capsules .benefits-slider__icon2.active, .gold-capsules .benefits-slider__icon3.active, .gold-capsules .benefits-slider__icon4.active {
       opacity: 1; }
@@ -8271,6 +8272,7 @@ input:checked + .accordion-horizontal__inner-box {
             opacity: 0.5; } }
         @media (max-width: 680px) {
           .gold-capsules .benefits-slider__icon1.active::after, .gold-capsules .benefits-slider__icon2.active::after, .gold-capsules .benefits-slider__icon3.active::after, .gold-capsules .benefits-slider__icon4.active::after {
+            width: 1px;
             height: 40px; } }
     .gold-capsules .benefits-slider__icon1:last-child::after, .gold-capsules .benefits-slider__icon2:last-child::after, .gold-capsules .benefits-slider__icon3:last-child::after, .gold-capsules .benefits-slider__icon4:last-child::after {
       display: none; }
