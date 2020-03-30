@@ -447,8 +447,11 @@
     &__copy {
       background: #FAF7F3;
       padding: $gutter-large $gutter-medium;
+      @include sm-screen {
+        padding: $gutter-medium;
+      }
       @include s-screen {
-        padding: $gutter-medium $gutter-small;
+        padding: 30px $gutter-small 10px;
       }
     }
 
@@ -475,14 +478,25 @@
         font-size: 28px;
       }
       @include s-screen {
+        margin-bottom: $gutter-small;
         font-size: 26px;
       }
     }
 
     &__hero-image {
       background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-product%402x.jpg");
-      @include s-screen {
+      @include sm-screen {
+        display: none;
+      }
+    }
+
+    &__hero-image-mobile {
+      display: none;
+      @include sm-screen {
+        display: block;
+        background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-mobile%402x.jpg");
         padding-top: 66.66%;
+        background-size: contain;
       }
     }
 
