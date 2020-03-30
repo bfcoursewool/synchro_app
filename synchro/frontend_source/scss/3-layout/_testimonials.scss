@@ -1,0 +1,125 @@
+.synchro-reviews {
+  display: block;
+  text-align: center;
+  padding: 0 $gutter-large $gutter-large;
+  @include s-screen {
+    padding: 0 $gutter-small $gutter-small;
+  }
+}
+
+.testimonials-lp {
+  .testimonials-atf {
+    display: table;
+    width: 100%;
+    padding: 0 30px;
+
+    &__hero-image {
+      width: 50%;
+      display: table-cell;
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-video%402x.jpg");
+      background-size: cover;
+      background-position: center;
+      @include sm-screen {
+        display: block;
+      }
+    }
+
+    &__content {
+      width: 50%;
+      display: table-cell;
+      background: #FAF7F3;
+      text-align: center;
+      padding: $gutter-large;
+      @include sm-screen {
+        width: 100%;
+        display: block;
+      }
+      @include s-screen {
+        padding: 30px $gutter-small;
+      }
+    }
+
+    &__header {
+      font-weight: $font-demi;
+      font-size: 50px;
+      margin: 0 0 30px;
+    }
+
+    .rating-new {
+      margin: 30px 0;
+
+      &__stars {
+        padding: 0;
+      }
+
+      &__count {
+        display: none;
+      }
+    }
+  }
+
+  .testimonials-cards {
+    -moz-column-count: 3;
+    -moz-column-gap: 40px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 40px;
+    column-count: 3;
+    column-gap: 40px;
+    padding: $gutter-medium $gutter-medium 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+
+    &__single {
+      background: #FAF7F3;
+      margin-bottom: $gutter-medium;
+      padding-bottom: 30px;
+      -webkit-column-break-inside: avoid; /* Chrome, Safari */
+      page-break-inside: avoid; /* Theoretically FF 20+ */
+      break-inside: avoid-column; /* IE 11 */
+      display: table;
+    }
+
+    &__headshot {
+      width: 100%;
+    }
+
+    &__quote {
+      font-weight: $font-medium;
+      font-size: 20px;
+      margin: 30px;
+      line-height: 1.5;
+    }
+
+    &__name {
+      font-size: 18px;
+      color: #4D4D4D;
+      font-style: italic;
+      margin: $gutter-small 0 0;
+
+      span {
+        display: block;
+      }
+    }
+
+    &__video {
+      font-weight: $font-demi;
+      font-size: 16px;
+      color: $color-genesis;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      vertical-align: middle;
+      margin: $gutter-medium 0 0;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        border-top: 8px solid transparent;
+        border-left: 12px solid $color-genesis;
+        border-bottom: 8px solid transparent;
+        margin-right: 15px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

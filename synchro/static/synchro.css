@@ -6761,6 +6761,96 @@ p {
     .synchro-reviews {
       padding: 0 20px 20px; } }
 
+.testimonials-lp .testimonials-atf {
+  display: table;
+  width: 100%;
+  padding: 0 30px; }
+  .testimonials-lp .testimonials-atf__hero-image {
+    width: 50%;
+    display: table-cell;
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-video%402x.jpg");
+    background-size: cover;
+    background-position: center; }
+    @media (max-width: 854px) {
+      .testimonials-lp .testimonials-atf__hero-image {
+        display: block; } }
+  .testimonials-lp .testimonials-atf__content {
+    width: 50%;
+    display: table-cell;
+    background: #FAF7F3;
+    text-align: center;
+    padding: 60px; }
+    @media (max-width: 854px) {
+      .testimonials-lp .testimonials-atf__content {
+        width: 100%;
+        display: block; } }
+    @media (max-width: 767px) {
+      .testimonials-lp .testimonials-atf__content {
+        padding: 30px 20px; } }
+  .testimonials-lp .testimonials-atf__header {
+    font-weight: 600;
+    font-size: 50px;
+    margin: 0 0 30px; }
+  .testimonials-lp .testimonials-atf .rating-new {
+    margin: 30px 0; }
+    .testimonials-lp .testimonials-atf .rating-new__stars {
+      padding: 0; }
+    .testimonials-lp .testimonials-atf .rating-new__count {
+      display: none; }
+
+.testimonials-lp .testimonials-cards {
+  -moz-column-count: 3;
+  -moz-column-gap: 40px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 40px;
+  column-count: 3;
+  column-gap: 40px;
+  padding: 40px 40px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center; }
+  .testimonials-lp .testimonials-cards__single {
+    background: #FAF7F3;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    -webkit-column-break-inside: avoid;
+    /* Chrome, Safari */
+    page-break-inside: avoid;
+    /* Theoretically FF 20+ */
+    break-inside: avoid-column;
+    /* IE 11 */
+    display: table; }
+  .testimonials-lp .testimonials-cards__headshot {
+    width: 100%; }
+  .testimonials-lp .testimonials-cards__quote {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 30px;
+    line-height: 1.5; }
+  .testimonials-lp .testimonials-cards__name {
+    font-size: 18px;
+    color: #4D4D4D;
+    font-style: italic;
+    margin: 20px 0 0; }
+    .testimonials-lp .testimonials-cards__name span {
+      display: block; }
+  .testimonials-lp .testimonials-cards__video {
+    font-weight: 600;
+    font-size: 16px;
+    color: #5da8a6;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    vertical-align: middle;
+    margin: 40px 0 0; }
+    .testimonials-lp .testimonials-cards__video::before {
+      content: "";
+      display: inline-block;
+      border-top: 8px solid transparent;
+      border-left: 12px solid #5da8a6;
+      border-bottom: 8px solid transparent;
+      margin-right: 15px;
+      vertical-align: middle; }
+
 .faq {
   background: #f4f4f5;
   overflow: auto;
