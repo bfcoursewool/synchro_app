@@ -39,6 +39,27 @@ endpoint_info_dict = {
         'is_variant': True,
       }
     },
+    # Gold LP for Paid Facebook/Instagram Traffic
+    'fb': {
+      'template': 'landing_pages/gold-og/v1-0-paid-a/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    # Gold LP for Paid Adwords Traffic
+    'gg': {
+      'template': 'landing_pages/gold-og/v1-0-paid/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    # Gold LP for Retargeting Facebook/Instagram Traffic (NEW)
+    'r': {
+      'template': 'landing_pages/gold-og/v1-0-paid-r/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
     # Gold Capsules LP for Organic Traffic (NEW)
     'turmeric-capsules': {
       'template': 'landing_pages/gold-capsules/v1-0/0-index.html',
@@ -67,60 +88,46 @@ endpoint_info_dict = {
         'is_variant': True,
       }
     },
-    # Gold Capsules Presale Opt In LP 1 (NEW)
+    # Gold Capsules Presale Opt In LP Redirect(NEW)
     'be-the-first': {
-      'template': 'landing_pages/pre-launch/gold-capsules/opt-in1/0-index.html',
+      'template': 'landing_pages/gold-capsules/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
     # Gold Capsules Presale Opt In LP 1 (NEW)
     'be-the-first1': {
-      'template': 'landing_pages/pre-launch/gold-capsules/opt-in1/0-index.html',
+      'template': 'landing_pages/gold-capsules/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
     # Gold Capsules Presale Opt In LP 2 (NEW)
     'be-the-first2': {
-      'template': 'landing_pages/pre-launch/gold-capsules/opt-in2/0-index.html',
+      'template': 'landing_pages/gold-capsules/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
     # Gold Capsules Presale Opt In LP 3 (NEW)
     'be-the-first3': {
-      'template': 'landing_pages/pre-launch/gold-capsules/opt-in3/0-index.html',
+      'template': 'landing_pages/gold-capsules/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
     # Gold Capsules Presale Thank You LP (NEW)
     'thank-you': {
-      'template': 'landing_pages/pre-launch/gold-capsules/thank-you/0-index.html',
+      'template': 'landing_pages/gold-capsules/v1-0/0-index.html',
       'template_vars': {
         'is_variant': True,
       }
     },
-    # Gold LP for Paid Facebook/Instagram Traffic
-    'fb': {
-      'template': 'landing_pages/gold-og/v1-0-paid-a/0-index.html',
+    # Gold Customers Reviews (NEW)
+    'reviews': {
+      'template': 'landing_pages/reviews/gold-elixir/0-index.html',
       'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Gold LP for Paid Adwords Traffic
-    'gg': {
-      'template': 'landing_pages/gold-og/v1-0-paid/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Gold LP for Retargeting Facebook/Instagram Traffic (NEW)
-    'r': {
-      'template': 'landing_pages/gold-og/v1-0-paid-r/0-index.html',
-      'template_vars': {
-        'is_variant': True,
+        'is_variant': False,
       }
     }
   },
