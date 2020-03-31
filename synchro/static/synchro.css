@@ -8215,18 +8215,8 @@ input:checked + .accordion-horizontal__inner-box {
 .gold-adwords.no-wave .atf:after {
   content: none; }
 
-.gold-capsules a.anchor {
-  top: -40px; }
-
 .gold-capsules .top-offer-bar {
-  margin-top: 10px;
-  border-radius: 30px;
-  background: #76BB73;
-  max-width: 1920px;
-  width: calc(100% - 80px); }
-  @media (max-width: 767px) {
-    .gold-capsules .top-offer-bar {
-      width: calc(100% - 20px); } }
+  background: #76BB73; }
   .gold-capsules .top-offer-bar__text {
     font-weight: 600;
     font-size: 17px;
@@ -8978,19 +8968,26 @@ input:checked + .accordion-horizontal__inner-box {
       @media (max-width: 767px) {
         .gold-capsules .purchase-3__price span {
           font-size: 16px; } }
-  .gold-capsules .purchase-3__offer {
-    font-weight: 700;
+  .gold-capsules .purchase-3__offer, .gold-capsules .purchase-3__offer-extra {
+    font-weight: 600;
     font-size: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    width: fit-content; }
+  .gold-capsules .purchase-3__offer {
+    background: #f4f4f5;
+    color: #45a241;
+    padding: 4px 16px 3px;
+    border-radius: 20px 20px 0 0;
+    margin: 0 auto; }
+  .gold-capsules .purchase-3__offer-extra {
     background: #76BB73;
     color: #ffffff;
     padding: 4px 16px;
     border-radius: 20px;
-    width: fit-content;
     margin: 0 auto 30px; }
     @media (max-width: 767px) {
-      .gold-capsules .purchase-3__offer {
+      .gold-capsules .purchase-3__offer-extra {
         margin-bottom: 20px; } }
   .gold-capsules .purchase-3 .a--cta {
     background-color: #eca846;

@@ -414,19 +414,8 @@
 // STYLES FOR GOLD CAPSULES ONLY
 
 .gold-capsules {
-  a.anchor {
-    top: -40px;
-  }
-
   .top-offer-bar {
-    margin-top: 10px;
-    border-radius: 30px;
     background: #76BB73;
-    max-width: 1920px;
-    width: calc(100% - 80px);
-    @include s-screen {
-    width: calc(100% - 20px);
-    }
 
     &__text {
       font-weight: 600;
@@ -1434,16 +1423,28 @@
       }
     }
 
-    &__offer {
-      font-weight: $font-bold;
+    &__offer,
+    &__offer-extra {
+      font-weight: $font-demi;
       font-size: 16px;
       letter-spacing: 1px;
       text-transform: uppercase;
+      width: fit-content;
+    }
+
+    &__offer {
+      background: $color-silver-light;
+      color: #45a241;
+      padding: 4px 16px 3px;
+      border-radius: 20px 20px 0 0;
+      margin: 0 auto;
+    }
+
+    &__offer-extra {
       background: #76BB73;
       color: $color-ivory;
       padding: 4px 16px;
       border-radius: 20px;
-      width: fit-content;
       margin: 0 auto 30px;
       @include s-screen {
         margin-bottom: 20px;
