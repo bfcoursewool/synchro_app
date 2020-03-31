@@ -12,15 +12,26 @@
     display: table;
     width: 100%;
     padding: 0 30px;
+    @include m-screen {
+      display: block;
+      border-top: 1px solid $color-silver-light;
+    }
+    @include xs-screen {
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 0 $gutter-small;
+    }
 
     &__hero-image {
       width: 50%;
       display: table-cell;
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-atf-video%402x.jpg");
+      background-image: url("https://cdn.besynchro.com/reviews/gold-elixir/testimonial-susan.jpg");
       background-size: cover;
       background-position: center;
-      @include sm-screen {
+      @include xs-screen {
         display: block;
+        width: 100%;
+        padding-top: 83.33%;
       }
     }
 
@@ -29,12 +40,12 @@
       display: table-cell;
       background: #FAF7F3;
       text-align: center;
-      padding: $gutter-medium;
+      padding: $gutter-large $gutter-medium;
       @include m-screen {
-      padding: $gutter-medium $gutter-small;
+        padding: 10px $gutter-small $gutter-medium;
       }
-      @include s-screen {
-        padding: 30px $gutter-small;
+      @include sm-screen {
+        padding: 0 0 30px;
       }
     }
 
@@ -46,20 +57,45 @@
     &__header {
       font-weight: $font-demi;
       font-size: 50px;
-      margin: 0 30px 30px;
+      margin: 0 30px $gutter-medium;
       line-height: normal;
-    }
-
-    .rating-new {
-      margin: 30px 0;
-
-      &__stars {
-        padding: 0;
-      }
-
-      &__count {
+      @include m-screen {
         display: none;
       }
+    }
+
+    &__header-mobile {
+      display: none;
+      @include m-screen {
+        display: block;
+        font-weight: $font-demi;
+        font-size: 40px;
+        text-align: center;
+        margin: $gutter-large $gutter-small;
+      }
+      @include s-screen {
+        margin: $gutter-medium 0;
+      }
+      @include xs-screen {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .rating-new {
+    &__stars {
+      padding: 0;
+
+      #rating-new__star {
+        height: 28px;
+        @include s-screen {
+          height: 22px;
+        }
+      }
+    }
+
+    &__count {
+      display: none;
     }
   }
 
@@ -70,17 +106,41 @@
     -webkit-column-gap: 40px;
     column-count: 3;
     column-gap: 40px;
-    padding: $gutter-small $gutter-medium 0;
-    max-width: 1440px;
+    padding: $gutter-medium 30px $gutter-small;
+    max-width: 1420px;
     margin: 0 auto;
     text-align: center;
+    @include m-screen {
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+      padding: 30px 30px 0;
+    }
+    @include sm-screen {
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2;
+    }
+    @include xs-screen {
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      column-count: 1;
+      max-width: 420px;
+      padding: 0 $gutter-small;
+    }
 
     &__single {
       background: #FAF7F3;
-      margin: $gutter-small 0;
+      margin-bottom: $gutter-medium;
       padding-bottom: 30px;
-      display: inline-block;
       width: 100%;
+      display: inline-block;
+      -webkit-backface-visibility: hidden;
+      @include m-screen {
+        margin-bottom: 30px;
+      }
+      @include xs-screen {
+        margin-bottom: $gutter-small;
+      }
     }
 
     &__headshot {
@@ -90,15 +150,21 @@
     &__quote {
       font-weight: $font-medium;
       font-size: 20px;
-      margin: 30px;
+      margin: 30px 30px $gutter-small;
       line-height: 1.5;
+      @include m-screen {
+        margin: $gutter-small;
+      }
     }
 
     &__name {
       font-size: 18px;
       color: #4D4D4D;
       font-style: italic;
-      margin: $gutter-small 0 0;
+      margin: 10px 30px 0;
+      @include m-screen {
+        margin: 10px $gutter-small 0;
+      }
 
       span {
         display: block;
@@ -112,7 +178,14 @@
       text-transform: uppercase;
       letter-spacing: 0.8px;
       vertical-align: middle;
-      margin: $gutter-medium 0 0;
+      margin: $gutter-small $gutter-small 0;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      border: none;
+      outline: none;
+      background: none;
+      cursor: pointer;
 
       &::before {
         content: "";
@@ -123,6 +196,13 @@
         margin-right: 15px;
         vertical-align: middle;
       }
+    }
+  }
+
+  .purchase-3 {
+    margin-bottom: $gutter-medium !important;
+    @include m-screen {
+      margin-bottom: 0 !important;
     }
   }
 }
