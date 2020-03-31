@@ -6772,7 +6772,7 @@ p {
   @media (max-width: 680px) {
     .testimonials-lp .testimonials-atf {
       max-width: 420px;
-      margin: 0 auto;
+      margin: 0 auto 20px;
       padding: 0 20px; } }
   .testimonials-lp .testimonials-atf__hero-image {
     width: 50%;

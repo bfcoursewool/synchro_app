@@ -18,7 +18,7 @@
     }
     @include xs-screen {
       max-width: 420px;
-      margin: 0 auto;
+      margin: 0 auto $gutter-small;
       padding: 0 $gutter-small;
     }
 
