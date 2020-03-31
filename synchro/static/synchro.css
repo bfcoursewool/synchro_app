@@ -8139,7 +8139,27 @@ input:checked + .accordion-horizontal__inner-box {
   content: none; }
 
 .gold-capsules a.anchor {
-  top: 0; }
+  top: -40px; }
+
+.gold-capsules .top-offer-bar {
+  margin-top: 10px;
+  border-radius: 30px;
+  background: #76BB73;
+  max-width: 1920px;
+  width: calc(100% - 80px); }
+  @media (max-width: 767px) {
+    .gold-capsules .top-offer-bar {
+      width: calc(100% - 20px); } }
+  .gold-capsules .top-offer-bar__text {
+    font-weight: 600;
+    font-size: 17px;
+    color: #ffffff; }
+  .gold-capsules .top-offer-bar #timer {
+    background: #ffffff;
+    color: #45a241;
+    padding: 3px 10px;
+    margin-left: 5px;
+    border-radius: 3px; }
 
 .gold-capsules .rating-new__stars {
   background: none;
