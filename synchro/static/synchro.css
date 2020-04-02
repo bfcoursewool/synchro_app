@@ -8215,19 +8215,8 @@ input:checked + .accordion-horizontal__inner-box {
 .gold-adwords.no-wave .atf:after {
   content: none; }
 
-.gold-capsules .top-offer-bar {
-  background: #76BB73; }
-  .gold-capsules .top-offer-bar__text {
-    font-weight: 600;
-    font-size: 17px;
-    color: #ffffff;
-    margin: 7px 10px 6px; }
-  .gold-capsules .top-offer-bar #timer {
-    background: #ffffff;
-    color: #45a241;
-    padding: 3px 10px;
-    margin-left: 5px;
-    border-radius: 3px; }
+.gold-capsules a.anchor {
+  top: 0; }
 
 .gold-capsules .rating-new__stars {
   background: none;
@@ -8975,19 +8964,14 @@ input:checked + .accordion-horizontal__inner-box {
     text-transform: uppercase;
     width: fit-content; }
   .gold-capsules .purchase-3__offer {
-    background: #f4f4f5;
-    color: #404040;
-    padding: 4px 16px 3px;
-    border-radius: 20px 20px 0 0;
-    margin: 0 auto; }
-  .gold-capsules .purchase-3__offer-extra {
     background: #76BB73;
     color: #ffffff;
     padding: 4px 16px;
     border-radius: 20px;
+    margin: 0 auto;
     margin: 0 auto 30px; }
     @media (max-width: 767px) {
-      .gold-capsules .purchase-3__offer-extra {
+      .gold-capsules .purchase-3__offer {
         margin-bottom: 20px; } }
   .gold-capsules .purchase-3 .a--cta {
     background-color: #eca846;
