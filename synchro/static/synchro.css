@@ -8398,7 +8398,7 @@ input:checked + .accordion-horizontal__inner-box {
     bottom: 40px; } }
   .gold-capsules .benefits-slider__icon1, .gold-capsules .benefits-slider__icon2, .gold-capsules .benefits-slider__icon3, .gold-capsules .benefits-slider__icon4 {
     margin: 30px 80px 30px 0;
-    opacity: 0.5;
+    opacity: 0.3;
     position: relative;
     transition: all 0.5s ease 0s; }
     .gold-capsules .benefits-slider__icon1 img, .gold-capsules .benefits-slider__icon2 img, .gold-capsules .benefits-slider__icon3 img, .gold-capsules .benefits-slider__icon4 img {
@@ -8429,12 +8429,11 @@ input:checked + .accordion-horizontal__inner-box {
           left: 50%;
           top: 100%;
           width: 2px;
-          height: 30px;
+          height: 0;
           transform: translate(-1px, 0); } }
       @media (max-width: 680px) {
         .gold-capsules .benefits-slider__icon1::after, .gold-capsules .benefits-slider__icon2::after, .gold-capsules .benefits-slider__icon3::after, .gold-capsules .benefits-slider__icon4::after {
           width: 1px;
-          height: 40px;
           transform: none; } }
     .gold-capsules .benefits-slider__icon1.active, .gold-capsules .benefits-slider__icon2.active, .gold-capsules .benefits-slider__icon3.active, .gold-capsules .benefits-slider__icon4.active {
       opacity: 1; }
@@ -8447,14 +8446,21 @@ input:checked + .accordion-horizontal__inner-box {
         @media (max-width: 767px) {
           .gold-capsules .benefits-slider__icon1.active::after, .gold-capsules .benefits-slider__icon2.active::after, .gold-capsules .benefits-slider__icon3.active::after, .gold-capsules .benefits-slider__icon4.active::after {
             width: 2px;
-            height: 30px;
-            opacity: 0.5; } }
+            height: 0; } }
         @media (max-width: 680px) {
           .gold-capsules .benefits-slider__icon1.active::after, .gold-capsules .benefits-slider__icon2.active::after, .gold-capsules .benefits-slider__icon3.active::after, .gold-capsules .benefits-slider__icon4.active::after {
-            width: 1px;
-            height: 40px; } }
-    .gold-capsules .benefits-slider__icon1:last-child::after, .gold-capsules .benefits-slider__icon2:last-child::after, .gold-capsules .benefits-slider__icon3:last-child::after, .gold-capsules .benefits-slider__icon4:last-child::after {
-      display: none; }
+            width: 1px; } }
+    .gold-capsules .benefits-slider__icon1.visited, .gold-capsules .benefits-slider__icon2.visited, .gold-capsules .benefits-slider__icon3.visited, .gold-capsules .benefits-slider__icon4.visited {
+      opacity: 1; }
+      @media (max-width: 767px) {
+        .gold-capsules .benefits-slider__icon1.visited::after, .gold-capsules .benefits-slider__icon2.visited::after, .gold-capsules .benefits-slider__icon3.visited::after, .gold-capsules .benefits-slider__icon4.visited::after {
+          height: 30px; } }
+      @media (max-width: 680px) {
+        .gold-capsules .benefits-slider__icon1.visited::after, .gold-capsules .benefits-slider__icon2.visited::after, .gold-capsules .benefits-slider__icon3.visited::after, .gold-capsules .benefits-slider__icon4.visited::after {
+          height: 40px; } }
+    @media (max-width: 767px) {
+      .gold-capsules .benefits-slider__icon1:last-child::after, .gold-capsules .benefits-slider__icon2:last-child::after, .gold-capsules .benefits-slider__icon3:last-child::after, .gold-capsules .benefits-slider__icon4:last-child::after {
+        display: none; } }
   .gold-capsules .benefits-slider__copy0, .gold-capsules .benefits-slider__copy1, .gold-capsules .benefits-slider__copy2, .gold-capsules .benefits-slider__copy3, .gold-capsules .benefits-slider__copy4 {
     display: none; }
     .gold-capsules .benefits-slider__copy0.active, .gold-capsules .benefits-slider__copy1.active, .gold-capsules .benefits-slider__copy2.active, .gold-capsules .benefits-slider__copy3.active, .gold-capsules .benefits-slider__copy4.active {
@@ -8968,7 +8974,6 @@ input:checked + .accordion-horizontal__inner-box {
     color: #ffffff;
     padding: 4px 16px;
     border-radius: 20px;
-    margin: 0 auto;
     margin: 0 auto 30px; }
     @media (max-width: 767px) {
       .gold-capsules .purchase-3__offer {

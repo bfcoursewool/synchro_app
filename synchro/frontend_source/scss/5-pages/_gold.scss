@@ -660,7 +660,7 @@
     &__icon3,
     &__icon4 {
       margin: 30px 80px 30px 0;
-      opacity: 0.5;
+      opacity: 0.3;
       position: relative;
       transition: all 0.5s ease 0s;
 
@@ -693,12 +693,11 @@
           left: 50%;
           top: 100%;
           width: 2px;
-          height: 30px;
+          height: 0;
           transform: translate(-1px, 0);
         }
         @include xs-screen {
           width: 1px;
-          height: 40px;
           transform: none;
         }
       }
@@ -714,19 +713,32 @@
           }
           @include s-screen {
             width: 2px;
-            height: 30px;
-            opacity: 0.5;
+            height: 0;
           }
           @include xs-screen {
             width: 1px;
+          }
+        }
+      }
+
+      &.visited {
+        opacity: 1;
+
+        &::after {
+          @include s-screen {
+            height: 30px;
+          }
+          @include xs-screen {
             height: 40px;
           }
         }
       }
 
       &:last-child {
-        &::after {
-          display: none;
+        @include s-screen {
+          &::after {
+            display: none;
+          }
         }
       }
     }
@@ -1422,7 +1434,6 @@
       color: $color-ivory;
       padding: 4px 16px;
       border-radius: 20px;
-      margin: 0 auto;
       margin: 0 auto 30px;
       @include s-screen {
         margin-bottom: 20px;
