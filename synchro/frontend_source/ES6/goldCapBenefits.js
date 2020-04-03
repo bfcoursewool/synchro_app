@@ -6,6 +6,8 @@ export default class GoldCapBenefits {
   constructor() {
     this._controller = new ScrollMagic.Controller()
     $(() => {
+      let triggerElement = $('.pin-trigger')
+      if(triggerElement.length == 0) { return }
       let scene = new ScrollMagic.Scene({ triggerElement: '.pin-trigger', duration: 2000})
                       .setPin('.pinned-section')
                       .addTo(this._controller)
