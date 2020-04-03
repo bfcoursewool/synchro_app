@@ -1,0 +1,167 @@
+@import '../synchro';
+
+.go013-01 {
+  .superior {
+    background-color: #F1DEC3;
+    margin: 40px;
+    @include s-screen {
+      margin: 0 0 20px;
+    }
+
+    &__image {
+      background-image: url("https://cdn.besynchro.com/experiments/why-gold-better%402x.jpg");
+      background-position: center;
+      background-size: cover;
+      height: 720px;
+      @include m-screen {
+        background-position-x: 44%;
+      }
+      @include sm-screen {
+        background: none;
+        height: initial;
+      }
+    }
+
+    &__image-mobile {
+      display: none;
+      @include sm-screen {
+        display: block;
+        padding-top: 100%;
+        background-image: url("https://cdn.besynchro.com/experiments/why-gold-better-mobile%402x.jpg");
+        background-size: cover;
+      }
+    }
+
+    &__title {
+      text-align: center;
+      margin: 0 auto;
+      padding: 130px $gutter-medium 0;
+      max-width: 1280px;
+      @include m-screen {
+        padding-top: 70px;
+      }
+      @include sm-screen {
+        background-color: #F2F1EE;
+      }
+      @include s-screen {
+        padding: $gutter-medium $gutter-small 0;
+      }
+    }
+
+    &__header {
+      font-weight: $font-bold;
+      font-size: 48px;
+      width: 50%;
+      margin-left: auto;
+      margin-bottom: 20px;
+      @include m-screen {
+        width: 60%;
+      }
+      @include sm-screen {
+        font-size: 35px;
+        width: 100%;
+      }
+    }
+
+    &__subheader {
+      font-weight: $font-medium;
+      font-size: 28px;
+      color: #6F5D4A;
+      line-height: 1.5;
+      width: 50%;
+      margin-left: auto;
+      @include m-screen {
+        width: 60%;
+      }
+      @include sm-screen {
+        font-size: 22px;
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    &__points {
+      -moz-column-count: 2;
+      -moz-column-gap: 40px;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 40px;
+      column-count: 2;
+      column-gap: 40px;
+      padding: 0 $gutter-medium;
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+      top: -50px;
+      background-color: #F1DEC3;
+      @include m-screen {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+      }
+      @include sm-screen {
+        position: initial;
+        padding-bottom: $gutter-medium;
+      }
+      @include s-screen {
+        padding: 0 $gutter-small $gutter-small;
+      }
+    }
+
+    &__card-1,
+    &__card-2,
+    &__card-3,
+    &__card-4,
+    &__card-5 {
+      background: $color-ivory;
+      display: inline-block;
+      padding: 40px 40px 25px;
+      margin-bottom: 40px;
+      text-align: center;
+      line-height: 1.5;
+      @include m-screen {
+        margin-bottom: 20px;
+      }
+      @include s-screen {
+        padding: 30px 20px 15px;
+      }
+    }
+
+    &__card-1 {
+      border-left: 5px solid #5F76D9;
+    }
+
+    &__card-2 {
+      border-left: 5px solid #9B604C;
+    }
+
+    &__card-3 {
+      border-left: 5px solid #EDA834;
+    }
+
+    &__card-4 {
+      border-left: 5px solid #33C08F;
+    }
+
+    &__card-5 {
+      border-left: 5px solid #FF7A3E;
+      margin-bottom: 0;
+    }
+
+    &__point {
+      font-weight: $font-bold;
+      font-size: 30px;
+      @include s-screen {
+        font-size: 26px;
+      }
+    }
+
+    &__copy {
+      font-weight: $font-medium;
+      font-size: 24px;
+      color: #655324;
+      @include s-screen {
+        font-size: 22px;
+      }
+    }
+  }
+}
