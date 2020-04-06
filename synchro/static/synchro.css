@@ -11319,4 +11319,42 @@ svg.external {
       margin-top: 30px;
       background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-mobile.jpg"); } }
 
+.cap002-01 .floating-buy-button,
+.cap002-01 .pseudo-buy-button {
+  border-top: 1px solid #E9E2D9;
+  position: fixed;
+  width: 100%;
+  bottom: -100px;
+  max-width: 2000px;
+  text-align: center;
+  z-index: 1000;
+  background: #ffffff;
+  padding: 10px;
+  transition: all 0.5s ease-in-out; }
+  @media (max-width: 680px) {
+    .cap002-01 .floating-buy-button,
+    .cap002-01 .pseudo-buy-button {
+      padding: 15px 20px 25px; } }
+  .cap002-01 .floating-buy-button.show-buy-button,
+  .cap002-01 .pseudo-buy-button.show-buy-button {
+    bottom: 0; }
+  .cap002-01 .floating-buy-button .a--cta,
+  .cap002-01 .pseudo-buy-button .a--cta {
+    background: #eca846;
+    padding: 12px 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    letter-spacing: 0.05em; }
+    @media (max-width: 680px) {
+      .cap002-01 .floating-buy-button .a--cta,
+      .cap002-01 .pseudo-buy-button .a--cta {
+        width: 100%; } }
+  .cap002-01 .floating-buy-button .pseudo-buy-button,
+  .cap002-01 .pseudo-buy-button .pseudo-buy-button {
+    position: relative;
+    visibility: hidden; }
+
+.cap002-01 .benefits-slider__content:after {
+  display: none; }
+
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

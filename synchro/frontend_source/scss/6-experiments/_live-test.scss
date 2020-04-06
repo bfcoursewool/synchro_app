@@ -1,3 +1,46 @@
 // STYLES FOR ONGOING EXPERIMENTS/TESTS
 
-.cap002-01 {}
+.cap002-01 {
+  .floating-buy-button,
+  .pseudo-buy-button {
+    border-top: 1px solid #E9E2D9;
+    position: fixed;
+    width: 100%;
+    bottom: -100px;
+    max-width: 2000px;
+    text-align: center;
+    z-index: 1000;
+    background: $color-ivory;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    @include xs-screen {
+      padding: 15px 20px 25px;
+    }
+
+    &.show-buy-button {
+      bottom: 0;
+    }
+
+    .a--cta {
+      background: $color-gold;
+      padding: 12px 40px;
+      border-radius: 6px;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      @include xs-screen {
+        width: 100%;
+      }
+    }
+
+    .pseudo-buy-button {
+      position: relative;
+      visibility: hidden;
+    }
+  }
+
+  .benefits-slider__content:after {
+    display: none;
+  }
+}
+
+.cap002-02 {}
