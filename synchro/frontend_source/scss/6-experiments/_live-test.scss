@@ -58,6 +58,9 @@
     overflow: auto;
     padding: 0 15px;
     -ms-overflow-style: none;
+    @include xs-screen {
+      padding: 5px 15px;
+    }
 
     &.show-purchase-options {
       bottom: 0;

@@ -11371,6 +11371,9 @@ svg.external {
   overflow: auto;
   padding: 0 15px;
   -ms-overflow-style: none; }
+  @media (max-width: 680px) {
+    .cap002-02 .floating-purchase-options {
+      padding: 5px 15px; } }
   .cap002-02 .floating-purchase-options.show-purchase-options {
     bottom: 0; }
   .cap002-02 .floating-purchase-options::-webkit-scrollbar {
