@@ -5221,7 +5221,8 @@ body {
   color: #000000;
   margin: 0 auto;
   max-width: 2000px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-font-smoothing: antialiased; }
 
 .no-scroll {
   height: 100%;
@@ -5251,8 +5252,7 @@ h5,
 h6,
 p {
   font-family: "futura-pt", "Open Sans", sans-serif;
-  color: #000000;
-  -webkit-font-smoothing: antialiased; }
+  color: #000000; }
 
 .p--title {
   display: block;
@@ -11355,6 +11355,66 @@ svg.external {
     visibility: hidden; }
 
 .cap002-01 .benefits-slider__content:after {
+  display: none; }
+
+.cap002-02 .floating-purchase-options {
+  border-top: 1px solid #E9E2D9;
+  position: fixed;
+  width: 100%;
+  max-width: 2000px;
+  bottom: -100px;
+  text-align: center;
+  z-index: 1000;
+  background: #ffffff;
+  transition: all 0.5s ease-in-out;
+  white-space: nowrap;
+  overflow: auto;
+  padding: 0 15px;
+  -ms-overflow-style: none; }
+  .cap002-02 .floating-purchase-options.show-purchase-options {
+    bottom: 0; }
+  .cap002-02 .floating-purchase-options::-webkit-scrollbar {
+    display: none; }
+  .cap002-02 .floating-purchase-options__item {
+    display: inline-block;
+    margin: 10px 5px;
+    background: #FAF7F3;
+    border: 1px solid #E9E2D9;
+    border-radius: 10px;
+    padding: 5px 15px 5px 20px; }
+  .cap002-02 .floating-purchase-options__image {
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle; }
+  .cap002-02 .floating-purchase-options__details {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px; }
+  .cap002-02 .floating-purchase-options__quantity {
+    font-weight: 700;
+    font-size: 15px; }
+  .cap002-02 .floating-purchase-options__price {
+    font-weight: 700;
+    font-size: 18px;
+    color: #eca846; }
+  .cap002-02 .floating-purchase-options .a--cta {
+    background: #eca846;
+    vertical-align: middle;
+    padding: 9px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    margin-left: 10px; }
+    @media (max-width: 854px) {
+      .cap002-02 .floating-purchase-options .a--cta {
+        display: none; } }
+
+.cap002-02 .pseudo-purchase-options {
+  height: 93px;
+  position: relative;
+  visibility: hidden; }
+
+.cap002-02 .benefits-slider__content:after {
   display: none; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
