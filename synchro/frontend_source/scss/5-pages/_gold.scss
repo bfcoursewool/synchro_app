@@ -458,7 +458,7 @@
     &__header {
       color: $color-ebony;
       font-weight: $font-demi;
-      max-width: 470px;
+      max-width: 500px;
       @include m-screen {
         font-size: 53px;
       }
@@ -471,7 +471,7 @@
       color: $color-ebony;
       font-weight: $font-medium;
       opacity: 0.6;
-      max-width: 470px;
+      max-width: 500px;
       font-size: 30px;
       margin-bottom: 30px;
       @include m-screen {
@@ -506,87 +506,6 @@
         padding: $gutter-small;
         background: #faf7f2;
       }
-    }
-  }
-
-  .benefits-temp {
-    text-align: center;
-    padding: $gutter-large $gutter-medium $gutter-medium;
-    @include s-screen {
-      padding: $gutter-medium $gutter-small $gutter-small;
-    }
-
-    &__content {
-      max-width: 1400px;
-      margin: $gutter-medium auto 0;
-      font-size: 0;
-      @include sm-screen {
-        margin-top: $gutter-small;
-      }
-    }
-
-    &__icon {
-      margin-top: 30px;
-    }
-
-    &__copy {
-      display: inline-block;
-      width: 44%;
-      margin: $gutter-small 3% 0;
-      vertical-align: top;
-      @include sm-screen {
-        width: 100%;
-        margin: $gutter-medium 0 0;
-      }
-      @include s-screen {
-        margin-top: $gutter-small;
-      }
-    }
-
-    &__image1,
-    &__image2,
-    &__image3,
-    &__image4 {
-      padding-top: 66.66%;
-      width: 100%;
-      background-size: cover;
-      background-position: center;
-      vertical-align: middle;
-    }
-
-    &__image1 {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-inflammation-fighting.jpg");
-    }
-
-    &__image2 {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-joint-health.jpg");
-    }
-
-    &__image3 {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-brain-health.jpg");
-    }
-
-    &__image4 {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-healing.jpg");
-    }
-
-    &__header {
-      opacity: 0.5;
-      font-weight: $font-demi;
-      font-size: 16px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin: $gutter-small 0;
-    }
-
-    &__title {
-      font-weight: $font-bold;
-      font-size: 30px;
-    }
-
-    .p--text {
-      font-weight: $font-medium;
-      opacity: 0.6;
     }
   }
 
@@ -742,24 +661,7 @@
         }
       }
     }
-    // &__copy0 {
-    //   &:after {
-    //     @include xs-screen {
-    //       font-family: "Font Awesome 5 Free";
-    //       content: "\f078";
-    //       position: absolute;
-    //       font-weight: 900;
-    //       color: $color-gold;
-    //       left: 50%;
-    //       font-size: 16px;
-    //       transform: translateX(-50%);
-    //       animation-duration: 1s;
-    //       animation-iteration-count: infinite;
-    //       animation-direction: alternate;
-    //       animation-name: scrollbottom;
-    //     }
-    //   }
-    // }
+
     &__copy0,
     &__copy1,
     &__copy2,
@@ -808,19 +710,19 @@
     }
 
     &__image1 {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-inflammation-fighting.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-healing.jpg");
     }
 
     &__image2 {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-joint-health.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-inflammation-fighting.jpg");
     }
 
     &__image3 {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-brain-health.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-joint-health.jpg");
     }
 
     &__image4 {
-      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-healing.jpg");
+      background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-brain-health.jpg");
     }
 
     &__text {

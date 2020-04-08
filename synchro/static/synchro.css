@@ -8250,7 +8250,7 @@ input:checked + .accordion-horizontal__inner-box {
 .gold-capsules .atf__header {
   color: #000000;
   font-weight: 600;
-  max-width: 470px; }
+  max-width: 500px; }
   @media (max-width: 1199px) {
     .gold-capsules .atf__header {
       font-size: 53px; } }
@@ -8262,7 +8262,7 @@ input:checked + .accordion-horizontal__inner-box {
   color: #000000;
   font-weight: 500;
   opacity: 0.6;
-  max-width: 470px;
+  max-width: 500px;
   font-size: 30px;
   margin-bottom: 30px; }
   @media (max-width: 1199px) {
@@ -8293,61 +8293,6 @@ input:checked + .accordion-horizontal__inner-box {
     margin: 0;
     padding: 20px;
     background: #faf7f2; } }
-
-.gold-capsules .benefits-temp {
-  text-align: center;
-  padding: 60px 40px 40px; }
-  @media (max-width: 767px) {
-    .gold-capsules .benefits-temp {
-      padding: 40px 20px 20px; } }
-  .gold-capsules .benefits-temp__content {
-    max-width: 1400px;
-    margin: 40px auto 0;
-    font-size: 0; }
-    @media (max-width: 854px) {
-      .gold-capsules .benefits-temp__content {
-        margin-top: 20px; } }
-  .gold-capsules .benefits-temp__icon {
-    margin-top: 30px; }
-  .gold-capsules .benefits-temp__copy {
-    display: inline-block;
-    width: 44%;
-    margin: 20px 3% 0;
-    vertical-align: top; }
-    @media (max-width: 854px) {
-      .gold-capsules .benefits-temp__copy {
-        width: 100%;
-        margin: 40px 0 0; } }
-    @media (max-width: 767px) {
-      .gold-capsules .benefits-temp__copy {
-        margin-top: 20px; } }
-  .gold-capsules .benefits-temp__image1, .gold-capsules .benefits-temp__image2, .gold-capsules .benefits-temp__image3, .gold-capsules .benefits-temp__image4 {
-    padding-top: 66.66%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    vertical-align: middle; }
-  .gold-capsules .benefits-temp__image1 {
-    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-inflammation-fighting.jpg"); }
-  .gold-capsules .benefits-temp__image2 {
-    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-joint-health.jpg"); }
-  .gold-capsules .benefits-temp__image3 {
-    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-brain-health.jpg"); }
-  .gold-capsules .benefits-temp__image4 {
-    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-healing.jpg"); }
-  .gold-capsules .benefits-temp__header {
-    opacity: 0.5;
-    font-weight: 600;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 20px 0; }
-  .gold-capsules .benefits-temp__title {
-    font-weight: 700;
-    font-size: 30px; }
-  .gold-capsules .benefits-temp .p--text {
-    font-weight: 500;
-    opacity: 0.6; }
 
 .gold-capsules .benefits-slider {
   height: calc(2000px + 100vh);
@@ -8493,13 +8438,13 @@ input:checked + .accordion-horizontal__inner-box {
       .gold-capsules .benefits-slider__image0 {
         background-size: cover; } }
   .gold-capsules .benefits-slider__image1 {
-    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-inflammation-fighting.jpg"); }
-  .gold-capsules .benefits-slider__image2 {
-    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-joint-health.jpg"); }
-  .gold-capsules .benefits-slider__image3 {
-    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-brain-health.jpg"); }
-  .gold-capsules .benefits-slider__image4 {
     background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-healing.jpg"); }
+  .gold-capsules .benefits-slider__image2 {
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-inflammation-fighting.jpg"); }
+  .gold-capsules .benefits-slider__image3 {
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-joint-health.jpg"); }
+  .gold-capsules .benefits-slider__image4 {
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-brain-health.jpg"); }
   .gold-capsules .benefits-slider__text {
     display: inline-block;
     width: 530px;
