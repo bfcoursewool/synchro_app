@@ -11294,10 +11294,10 @@ svg.external {
       .cap002-01 .floating-buy-button .a--cta,
       .cap002-01 .pseudo-buy-button .a--cta {
         width: 100%; } }
-  .cap002-01 .floating-buy-button .pseudo-buy-button,
-  .cap002-01 .pseudo-buy-button .pseudo-buy-button {
-    position: relative;
-    visibility: hidden; }
+
+.cap002-01 .pseudo-buy-button {
+  position: relative;
+  visibility: hidden; }
 
 .cap002-01 .benefits-slider__content:after {
   display: none; }
