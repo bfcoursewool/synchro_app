@@ -79,6 +79,12 @@
       padding: 5px 15px 5px 20px;
     }
 
+    &__item2 {
+      @include xs-screen {
+        display: none;
+      }
+    }
+
     &__image {
       height: 60px;
       display: inline-block;

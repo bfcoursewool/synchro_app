@@ -11330,6 +11330,9 @@ svg.external {
     border: 1px solid #E9E2D9;
     border-radius: 10px;
     padding: 5px 15px 5px 20px; }
+  @media (max-width: 680px) {
+    .cap002-02 .floating-purchase-options__item2 {
+      display: none; } }
   .cap002-02 .floating-purchase-options__image {
     height: 60px;
     display: inline-block;
