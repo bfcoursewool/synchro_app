@@ -11296,6 +11296,7 @@ svg.external {
         width: 100%; } }
 
 .cap002-01 .pseudo-buy-button {
+  bottom: 0;
   position: relative;
   visibility: hidden; }
 
