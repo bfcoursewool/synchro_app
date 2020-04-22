@@ -64,16 +64,13 @@ export default class GoldCapBenefits extends EventsBase {
     let id = classes[0].split('__')[1]
     let scrollOffset
     if(id == 'icon1') {
-      scrollOffset = 1200
+      scrollOffset = '.benefits-slider__anchor1'
     } else if(id == 'icon2') {
-      scrollOffset = 1500
+      scrollOffset = '.benefits-slider__anchor2'
     } else if(id == 'icon3') {
-      scrollOffset = 2000
+      scrollOffset = '.benefits-slider__anchor3'
     } else if(id == 'icon4') {
-      scrollOffset = 2300
-    }
-    if(this.mobileCheck()) {
-      scrollOffset += 500
+      scrollOffset = '.benefits-slider__anchor4'
     }
     this._controller.scrollTo(scrollOffset)
   }
