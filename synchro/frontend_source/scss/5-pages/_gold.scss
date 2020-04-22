@@ -516,19 +516,11 @@
       padding: 0 $gutter-small;
     }
 
-    &__anchor0,
     &__anchor1,
     &__anchor2,
     &__anchor3,
     &__anchor4 {
-      height: 1px;
-      width: 100%;
-      background: red;
       position: relative;
-    }
-
-    &__anchor0 {
-      top: 200px;
     }
 
     &__anchor1 {
@@ -613,6 +605,7 @@
       opacity: 0.3;
       position: relative;
       transition: all 0.5s ease 0s;
+      cursor: pointer;
 
       img {
         width: 100%;
