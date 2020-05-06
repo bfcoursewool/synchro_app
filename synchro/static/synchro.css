@@ -11380,4 +11380,26 @@ svg.external {
 .cap002-02 .benefits-slider__content:after {
   display: none; }
 
+.cap003-01 .top-offer-bar {
+  background: #FAF7F3; }
+  .cap003-01 .top-offer-bar__text {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7); }
+  .cap003-01 .top-offer-bar .a--cta {
+    background: #eca846;
+    margin: 5px 0;
+    border-radius: 4px;
+    padding: 7px 15px; }
+
+.cap003-01 .purchase-3__offer {
+  margin-bottom: 0; }
+
+.cap003-01 .purchase-3__shipping {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 10px auto 20px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

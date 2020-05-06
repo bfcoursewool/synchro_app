@@ -1,0 +1,35 @@
+{% extends "landing_pages/global/base.html" %}
+
+{% block title %} Synchro Gold Capsules | The World's Most Powerful Turmeric Supplement {% endblock %}
+
+{% block description %} Gold Liposomal Turmeric was created after years of research and development to give you the perfect tool for fighting inflammation and maximizing energy levels. See how much better you can feel with the world's most powerful turmeric supplement. {% endblock %}
+
+{% block head %}
+
+{{ super() }}
+
+<script> gtag('event', 'page_view', { 'send_to': 'AW-864481593', 'ecomm_prodid': '9748925129' }); </script>
+
+<!-- facebook pixel -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '495265410669440');
+    fbq('track', 'PageView', {
+      property: 'Synchro-Gold-Capsules'
+    });
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=495265410669440&ev=PageView&cd[property]=Synchro-Gold-Capsules&noscript=1" /></noscript>
+
+<link rel="canonical" href="https://gold.besynchro.com/">
+
+<!-- VideoJS - TODO: Why is there a weird line when I include this via fanstatic but not here??? -->
+<link href="https://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+{% endblock %}

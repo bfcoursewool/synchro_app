@@ -232,8 +232,25 @@ endpoint_info_dict = {
         'is_variant': True,
       }
     },
+    # Test Variant 2
     'v2': {
       'template': 'landing_pages/experiments/cap002/v2/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    }
+  },
+  'cap003': {
+    # Test Variant 1
+    'v1': {
+      'template': 'landing_pages/experiments/cap003/v1/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    # Test Variant 2
+    'v2': {
+      'template': 'landing_pages/experiments/cap003/v2/0-index.html',
       'template_vars': {
         'is_variant': True,
       }

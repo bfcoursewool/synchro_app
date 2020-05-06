@@ -133,3 +133,36 @@
     display: none;
   }
 }
+
+.cap003-01 {
+  .top-offer-bar {
+    background: #FAF7F3;
+
+    &__text {
+      font-weight: $font-demi;
+      color: rgba(0,0,0,0.7);
+    }
+
+    .a--cta {
+      background: $color-gold;
+      margin: 5px 0;
+      border-radius: 4px;
+      padding: 7px 15px;
+    }
+  }
+
+  .purchase-3 {
+    &__offer {
+      margin-bottom: 0;
+    }
+
+    &__shipping {
+      color: rgba(0,0,0,0.7);
+      margin: 10px auto 20px;
+      font-weight: $font-demi;
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+}
