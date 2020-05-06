@@ -8449,9 +8449,9 @@ input:checked + .accordion-horizontal__inner-box {
       .gold-capsules .benefits-slider__image0 {
         background-size: cover; } }
   .gold-capsules .benefits-slider__image1 {
-    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-healing.jpg"); }
-  .gold-capsules .benefits-slider__image2 {
     background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-inflammation-fighting.jpg"); }
+  .gold-capsules .benefits-slider__image2 {
+    background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-healing.jpg"); }
   .gold-capsules .benefits-slider__image3 {
     background-image: url("https://cdn.besynchro.com/gold/capsules/gold-cap-joint-health.jpg"); }
   .gold-capsules .benefits-slider__image4 {
