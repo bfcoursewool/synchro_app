@@ -223,6 +223,45 @@ endpoint_info_dict = {
       }
     }
   },
+  ## This subpath to be phased out once new subdomain is live
+  'keto': {
+    'v0': {
+      'template': 'landing_pages/keto-bundle/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    'keto-cleanse-program': {
+      'template': 'landing_pages/keto-cleanse/v1-0-paid/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    'keto-cleanse-program-home': {
+      'template': 'landing_pages/keto-cleanse/directory/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    'keto-cleanse-program-1': {
+      'template': 'landing_pages/keto-cleanse/week-1/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    'keto-cleanse-program-2': {
+      'template': 'landing_pages/keto-cleanse/week-2/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    },
+    'keto-cleanse-program-3': {
+      'template': 'landing_pages/keto-cleanse/week-3/v1-0/0-index.html',
+      'template_vars': {
+        'is_variant': True,
+      }
+    }
+  },
   ## Experiments
   'cap002': {
     # Test Variant 1
@@ -331,7 +370,7 @@ def landing_page(page, version, prod_category):
   ## This is just some random stuff to make our keto-cleanse-program page appear to be tracking
   ## users and assigning them a "participant_id". We just cookie them and make sure to tack the saved
   ## participant_id onto the URL they accessed... easy.
-  if 'home' in version or 'week-1' in version or 'week-2' in version or 'week-3' in version:
+  if 'keto-cleanse-program-' in version or 'home' in version or 'week-1' in version or 'week-2' in version or 'week-3' in version:
     url_participant_id = request.args.get('participant_id')
     if not url_participant_id:
       current_query_string = urlencode(request.args)
