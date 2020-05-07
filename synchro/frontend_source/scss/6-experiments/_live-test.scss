@@ -164,7 +164,7 @@
       letter-spacing: 1px;
       text-transform: uppercase;
 
-      i {
+      &.cap003-hide-mobile i {
         @include xs-screen {
           display: none;
         }
