@@ -136,7 +136,7 @@
 
 .cap003-01 {
   .top-offer-bar {
-    background: #FAF7F3;
+    background: $color-silver-light;
 
     &__text {
       font-weight: $font-demi;
@@ -158,11 +158,17 @@
 
     &__shipping {
       color: rgba(0,0,0,0.7);
-      margin: 10px auto 20px;
+      margin: 20px auto;
       font-weight: $font-demi;
       font-size: 16px;
       letter-spacing: 1px;
       text-transform: uppercase;
+
+      i {
+        @include xs-screen {
+          display: none;
+        }
+      }
     }
   }
 }
