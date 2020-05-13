@@ -7202,6 +7202,69 @@ p {
     .top-offer-bar .a--cta:active {
       top: 0; }
 
+.floating-purchase-options {
+  border-top: 1px solid #E9E2D9;
+  position: fixed;
+  width: 100%;
+  max-width: 2000px;
+  bottom: -100px;
+  text-align: center;
+  z-index: 1000;
+  background: #ffffff;
+  transition: all 0.5s ease-in-out;
+  white-space: nowrap;
+  overflow: auto;
+  padding: 0 15px;
+  -ms-overflow-style: none; }
+  @media (max-width: 680px) {
+    .floating-purchase-options {
+      padding: 5px 15px; } }
+  .floating-purchase-options.show-purchase-options {
+    bottom: 0; }
+  .floating-purchase-options::-webkit-scrollbar {
+    display: none; }
+  .floating-purchase-options__item {
+    display: inline-block;
+    margin: 10px 5px;
+    background: #FAF7F3;
+    border: 1px solid #E9E2D9;
+    border-radius: 10px;
+    padding: 5px 15px 5px 20px; }
+  @media (max-width: 680px) {
+    .floating-purchase-options__item2 {
+      display: none; } }
+  .floating-purchase-options__image {
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle; }
+  .floating-purchase-options__details {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px; }
+  .floating-purchase-options__quantity {
+    font-weight: 700;
+    font-size: 15px; }
+  .floating-purchase-options__price {
+    font-weight: 700;
+    font-size: 18px;
+    color: #eca846; }
+  .floating-purchase-options .a--cta {
+    background: #eca846;
+    vertical-align: middle;
+    padding: 9px 20px;
+    border-radius: 6px !important;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    margin-left: 10px; }
+    @media (max-width: 854px) {
+      .floating-purchase-options .a--cta {
+        display: none; } }
+
+.pseudo-purchase-options {
+  height: 93px;
+  position: relative;
+  visibility: hidden; }
+
 .a--cta {
   display: inline-block;
   -webkit-appearance: none;
@@ -8321,7 +8384,7 @@ input:checked + .accordion-horizontal__inner-box {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .gold-capsules .benefits-slider__content:after, .gold-capsules .benefits-slider__content:before {
+    .gold-capsules .benefits-slider__content:before {
       font-family: "Font Awesome 5 Free";
       content: "\F078";
       position: absolute;
@@ -8333,7 +8396,7 @@ input:checked + .accordion-horizontal__inner-box {
       animation-iteration-count: infinite;
       animation-direction: alternate; }
       @media (max-width: 680px) {
-        .gold-capsules .benefits-slider__content:after, .gold-capsules .benefits-slider__content:before {
+        .gold-capsules .benefits-slider__content:before {
           display: none; } }
     .gold-capsules .benefits-slider__content:before {
       animation-name: scrolltop; }
@@ -8343,14 +8406,6 @@ input:checked + .accordion-horizontal__inner-box {
     top: 40px; }
   to {
     top: 60px; } }
-    .gold-capsules .benefits-slider__content:after {
-      animation-name: scrollbottom; }
-
-@keyframes scrollbottom {
-  from {
-    bottom: 60px; }
-  to {
-    bottom: 40px; } }
   .gold-capsules .benefits-slider__icon1, .gold-capsules .benefits-slider__icon2, .gold-capsules .benefits-slider__icon3, .gold-capsules .benefits-slider__icon4 {
     margin: 30px 80px 30px 0;
     opacity: 0.3;
@@ -11274,111 +11329,6 @@ svg.external {
     .bfcm-2019__thankyou-image {
       margin-top: 30px;
       background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-mobile.jpg"); } }
-
-.cap002-01 .floating-buy-button,
-.cap002-01 .pseudo-buy-button {
-  border-top: 1px solid #E9E2D9;
-  position: fixed;
-  width: 100%;
-  bottom: -100px;
-  max-width: 2000px;
-  text-align: center;
-  z-index: 1000;
-  background: #ffffff;
-  padding: 10px;
-  transition: all 0.5s ease-in-out; }
-  @media (max-width: 680px) {
-    .cap002-01 .floating-buy-button,
-    .cap002-01 .pseudo-buy-button {
-      padding: 15px 20px 25px; } }
-  .cap002-01 .floating-buy-button.show-buy-button,
-  .cap002-01 .pseudo-buy-button.show-buy-button {
-    bottom: 0; }
-  .cap002-01 .floating-buy-button .a--cta,
-  .cap002-01 .pseudo-buy-button .a--cta {
-    background: #eca846;
-    padding: 12px 40px;
-    border-radius: 6px;
-    font-size: 16px;
-    letter-spacing: 0.05em; }
-    @media (max-width: 680px) {
-      .cap002-01 .floating-buy-button .a--cta,
-      .cap002-01 .pseudo-buy-button .a--cta {
-        width: 100%; } }
-
-.cap002-01 .pseudo-buy-button {
-  bottom: 0;
-  position: relative;
-  visibility: hidden; }
-
-.cap002-01 .benefits-slider__content:after {
-  display: none; }
-
-.cap002-02 .floating-purchase-options {
-  border-top: 1px solid #E9E2D9;
-  position: fixed;
-  width: 100%;
-  max-width: 2000px;
-  bottom: -100px;
-  text-align: center;
-  z-index: 1000;
-  background: #ffffff;
-  transition: all 0.5s ease-in-out;
-  white-space: nowrap;
-  overflow: auto;
-  padding: 0 15px;
-  -ms-overflow-style: none; }
-  @media (max-width: 680px) {
-    .cap002-02 .floating-purchase-options {
-      padding: 5px 15px; } }
-  .cap002-02 .floating-purchase-options.show-purchase-options {
-    bottom: 0; }
-  .cap002-02 .floating-purchase-options::-webkit-scrollbar {
-    display: none; }
-  .cap002-02 .floating-purchase-options__item {
-    display: inline-block;
-    margin: 10px 5px;
-    background: #FAF7F3;
-    border: 1px solid #E9E2D9;
-    border-radius: 10px;
-    padding: 5px 15px 5px 20px; }
-  @media (max-width: 680px) {
-    .cap002-02 .floating-purchase-options__item2 {
-      display: none; } }
-  .cap002-02 .floating-purchase-options__image {
-    height: 60px;
-    display: inline-block;
-    vertical-align: middle; }
-  .cap002-02 .floating-purchase-options__details {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px; }
-  .cap002-02 .floating-purchase-options__quantity {
-    font-weight: 700;
-    font-size: 15px; }
-  .cap002-02 .floating-purchase-options__price {
-    font-weight: 700;
-    font-size: 18px;
-    color: #eca846; }
-  .cap002-02 .floating-purchase-options .a--cta {
-    background: #eca846;
-    vertical-align: middle;
-    padding: 9px 20px;
-    border-radius: 6px;
-    font-size: 16px;
-    letter-spacing: 0.05em;
-    margin-left: 10px; }
-    @media (max-width: 854px) {
-      .cap002-02 .floating-purchase-options .a--cta {
-        display: none; } }
-
-.cap002-02 .pseudo-purchase-options {
-  height: 93px;
-  position: relative;
-  visibility: hidden; }
-
-.cap002-02 .benefits-slider__content:after {
-  display: none; }
 
 .cap003-01 .top-offer-bar {
   background: #f4f4f5; }

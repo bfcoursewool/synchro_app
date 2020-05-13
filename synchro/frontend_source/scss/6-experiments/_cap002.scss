@@ -1,0 +1,135 @@
+@import '../synchro';
+
+.cap002-01 {
+  .floating-buy-button,
+  .pseudo-buy-button {
+    border-top: 1px solid #E9E2D9;
+    position: fixed;
+    width: 100%;
+    bottom: -100px;
+    max-width: 2000px;
+    text-align: center;
+    z-index: 1000;
+    background: $color-ivory;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    @include xs-screen {
+      padding: 15px 20px 25px;
+    }
+
+    &.show-buy-button {
+      bottom: 0;
+    }
+
+    .a--cta {
+      background: $color-gold;
+      padding: 12px 40px;
+      border-radius: 6px;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      @include xs-screen {
+        width: 100%;
+      }
+    }
+  }
+
+  .pseudo-buy-button {
+    bottom: 0;
+    position: relative;
+    visibility: hidden;
+  }
+
+  .benefits-slider__content:after {
+    display: none;
+  }
+}
+
+.cap002-02 {
+  .floating-purchase-options {
+    border-top: 1px solid #E9E2D9;
+    position: fixed;
+    width: 100%;
+    max-width: 2000px;
+    bottom: -100px;
+    text-align: center;
+    z-index: 1000;
+    background: $color-ivory;
+    transition: all 0.5s ease-in-out;
+    white-space: nowrap;
+    overflow: auto;
+    padding: 0 15px;
+    -ms-overflow-style: none;
+    @include xs-screen {
+      padding: 5px 15px;
+    }
+
+    &.show-purchase-options {
+      bottom: 0;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__item {
+      display: inline-block;
+      margin: 10px 5px;
+      background: #FAF7F3;
+      border: 1px solid #E9E2D9;
+      border-radius: 10px;
+      padding: 5px 15px 5px 20px;
+    }
+
+    &__item2 {
+      @include xs-screen {
+        display: none;
+      }
+    }
+
+    &__image {
+      height: 60px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &__details {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+
+    &__quantity {
+      font-weight: $font-bold;
+      font-size: 15px;
+    }
+
+    &__price {
+      font-weight: $font-bold;
+      font-size: 18px;
+      color: $color-gold;
+    }
+
+    .a--cta {
+      background: $color-gold;
+      vertical-align: middle;
+      padding: 9px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      margin-left: 10px;
+      @include sm-screen {
+        display: none;
+      }
+    }
+  }
+
+  .pseudo-purchase-options {
+    height: 93px;
+    position: relative;
+    visibility: hidden;
+  }
+
+  .benefits-slider__content:after {
+    display: none;
+  }
+}
