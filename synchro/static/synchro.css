@@ -7231,21 +7231,6 @@ p {
     border-radius: 10px;
     padding: 5px 15px 5px 20px;
     position: relative; }
-  .floating-purchase-options__item2:before, .floating-purchase-options__item3:before {
-    content: '+ free shipping';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #76bb72;
-    padding: 2px 5px;
-    border-radius: 4px;
-    color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 11px;
-    letter-spacing: 0.5px;
-    line-height: 1; }
   @media (max-width: 680px) {
     .floating-purchase-options__item2 {
       display: none; } }
@@ -11356,6 +11341,22 @@ svg.external {
     margin: 5px 0;
     border-radius: 4px;
     padding: 7px 15px; }
+
+.cap003-01 .floating-purchase-options__item2:before, .cap003-01 .floating-purchase-options__item3:before {
+  content: '+ free shipping';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #76bb72;
+  padding: 2px 5px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  line-height: 1; }
 
 .cap003-01 .purchase-3__offer {
   margin-bottom: 0; }
