@@ -293,13 +293,6 @@ endpoint_info_dict = {
       'template_vars': {
         'is_variant': True,
       }
-    },
-    # Test Variant 3
-    'v3': {
-      'template': 'landing_pages/experiments/cap004/v3/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
     }
   },
   'cap005': {

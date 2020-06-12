@@ -11331,47 +11331,6 @@ svg.external {
       margin-top: 30px;
       background-image: url("https://cdn.besynchro.com/ketomanna/pre-launch/km-thankyou-image-mobile.jpg"); } }
 
-.cap003-01 .top-offer-bar {
-  background: #f4f4f5; }
-  .cap003-01 .top-offer-bar__text {
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.7); }
-  .cap003-01 .top-offer-bar .a--cta {
-    background: #eca846;
-    margin: 5px 0;
-    border-radius: 4px;
-    padding: 7px 15px; }
-
-.cap003-01 .floating-purchase-options__item2:before, .cap003-01 .floating-purchase-options__item3:before {
-  content: '+ free shipping';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #76bb72;
-  padding: 2px 5px;
-  border-radius: 4px;
-  color: white;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 0.5px;
-  line-height: 1; }
-
-.cap003-01 .purchase-3__offer {
-  margin-bottom: 0; }
-
-.cap003-01 .purchase-3__shipping {
-  color: rgba(0, 0, 0, 0.7);
-  margin: 20px auto;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 1px;
-  text-transform: uppercase; }
-  @media (max-width: 680px) {
-    .cap003-01 .purchase-3__shipping.cap003-hide-mobile i {
-      display: none; } }
-
 .cap004-01 .floating-purchase-options__item2:before, .cap004-01 .floating-purchase-options__item3:before {
   position: absolute;
   top: 0;
@@ -11399,10 +11358,6 @@ svg.external {
 
 @media (max-width: 680px) {
   .cap004-02 .floating-purchase-options__item2 {
-    display: inline-block; } }
-
-@media (max-width: 680px) {
-  .cap004-03 .floating-purchase-options__item2 {
     display: inline-block; } }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzeW5jaHJvLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
