@@ -11,7 +11,7 @@ import Toggle from './ES6/toggle';
 import Tabs from './ES6/tabs';
 import Slider from './ES6/slider';
 import GoldCapBenefits from './ES6/goldCapBenefits';
-import FloatingPurchaseOptions from './ES6/FloatingPurchaseOptions';
+import FloatingPurchaseOptions from './ES6/floatingPurchaseOptions';
 import Experiments from './ES6/experiments';
 import { loadHeroImg } from './ES6/hero_image';
 // import susanEffects from './ES6/susan/effects'; "Disabling this for now so we can see if anything stops working... should be redudant."
