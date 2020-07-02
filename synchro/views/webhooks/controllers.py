@@ -7,9 +7,8 @@ from flask import (
   request,
   render_template
 )
-from urlparse import urlparse, parse_qs
-from synchro.const import kSHOPIFY_WEBHOOK_SECRET
-from synchro.const_secrets import kRECHARGE_CLIENT_SECRET
+from urllib.parse import urlparse, parse_qs
+from synchro.const import kSHOPIFY_WEBHOOK_SECRET, kRECHARGE_CLIENT_SECRET
 from synchro.models.adwords_user import AdwordsUser
 
 webhook_handlers = Blueprint('webhook_handlers', __name__, url_prefix='/hooks')

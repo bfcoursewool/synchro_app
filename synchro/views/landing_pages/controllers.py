@@ -1,5 +1,4 @@
-from urlparse import urlparse
-from urllib import urlencode
+from urllib.parse import urlparse, urlencode
 import json
 from flask import (
   Blueprint,
@@ -333,15 +332,15 @@ def landing_page(page, version, prod_category):
     # Only do this whole page/version/category switcharoo for the old subdodmains... live.besynchro.com
     # should work basically exactly like the dev site.
     if subdomain != 'live':
-      if page is not 'none' and version is not 'v0':
+      if page != 'none' and version != 'v0':
         prod_category = subdomain
-      elif page is not 'none':
+      elif page != 'none':
         version = page
         page = subdomain
       else:
         page = subdomain
     else:
-      if page is 'none':
+      if page == 'none':
         return redirect('https://besynchro.com', code=301)
 
     ## Redirect to https if this isn't a health-checker request
