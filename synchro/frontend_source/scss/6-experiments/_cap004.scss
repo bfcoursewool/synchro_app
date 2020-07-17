@@ -1,0 +1,52 @@
+@import '../synchro';
+
+.cap004-01 {
+  .floating-purchase-options {
+    &__item2,
+    &__item3 {
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #71B8C4;
+        padding: 2px 5px;
+        border-radius: 4px;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: 0.5px;
+        line-height: 1;
+      }
+    }
+
+    &__item2 {
+      &:before {
+        content: '5% off';
+      }
+    }
+
+    &__item3 {
+      &:before {
+        content: '10% off';
+      }
+    }
+  }
+}
+
+.cap004-02 {
+  .floating-purchase-options {
+    &__item1 {
+      @include xs-screen {
+        display: none;
+      }
+    }
+
+    &__item2 {
+      @include xs-screen {
+        display: inline-block;
+      }
+    }
+  }
+}

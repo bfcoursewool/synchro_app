@@ -261,56 +261,8 @@ endpoint_info_dict = {
         'is_variant': True,
       }
     }
-  },
-  ## Experiments
-  'cap003': {
-    # Test Variant 1
-    'v1': {
-      'template': 'landing_pages/experiments/cap003/v1/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Test Variant 2
-    'v2': {
-      'template': 'landing_pages/experiments/cap003/v2/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
-  'cap004': {
-    # Test Variant 1
-    'v1': {
-      'template': 'landing_pages/experiments/cap004/v1/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Test Variant 2
-    'v2': {
-      'template': 'landing_pages/experiments/cap004/v2/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
-  },
-  'cap005': {
-    # Test Variant 1
-    'v1': {
-      'template': 'landing_pages/experiments/cap005/v1/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    },
-    # Test Variant 2
-    'v2': {
-      'template': 'landing_pages/experiments/cap005/v2/0-index.html',
-      'template_vars': {
-        'is_variant': True,
-      }
-    }
   }
+  ## Experiments
 }
 
 @landing_pages.route('/', defaults={'page': 'none', 'version': 'v0', 'prod_category': None})
