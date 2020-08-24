@@ -19,96 +19,6 @@ landing_pages = Blueprint('landing_pages', __name__)
 shopify_page_base = 'https://besynchro.com/pages/'
 
 endpoint_info_dict = {
-    'gold': {
-        # Base/Fallback Gold LP (never link directly to this version)
-        'v0': {
-            'template': 'landing_pages/gold-capsules/v1-0/0-index.html',
-            'template_vars': {
-                'redirect': True,
-                'is_variant': True,
-            }
-        },
-        # Gold Original LP for Organic
-        'original-turmeric-supplement': {
-            'template': 'landing_pages/gold-og/v1-0/0-index.html',
-            'template_vars': {
-                'redirect': True,
-                'is_variant': False,
-            }
-        },
-        # Gold Lemon Ginger LP for Organic
-        'lemon-ginger-turmeric-supplement': {
-            'template': 'landing_pages/gold-og/v1-0/0-index.html',
-            'template_vars': {
-                'redirect': True,
-                'is_variant': True,
-            }
-        },
-        # Gold LP for Paid (Facebook/Instagram)
-        'fb': {
-            'template': 'landing_pages/gold-og/v1-0-paid-a/0-index.html',
-            'template_vars': {
-                'redirect': True,
-                'is_variant': True,
-            }
-        },
-        # Gold LP for Paid (Adwords)
-        'gg': {
-            'template': 'landing_pages/gold-og/v1-0-paid/0-index.html',
-            'template_vars': {
-                'redirect': True,
-                'is_variant': True,
-            }
-        },
-        # Gold LP for Retargeting (Facebook/Instagram)
-        'r': {
-            'template': 'landing_pages/gold-og/v1-0-paid-r/0-index.html',
-            'template_vars': {
-                'redirect': True,
-                'is_variant': True,
-            }
-        },
-        # Gold Capsules LP for Organic
-        'turmeric-capsules': {
-            'template': 'landing_pages/gold-capsules/v1-0/0-index.html',
-            'template_vars': {
-                'redirect': True,
-                'is_variant': False,
-            }
-        },
-        # Gold Capsules LP with Susan Autoplay
-        'turmeric-capsules-susan': {
-            'template': 'landing_pages/gold-capsules/susan/0-index.html',
-            'template_vars': {
-                'redirect': True,
-                'is_variant': True,
-            }
-        },
-        # Gold Capsules LP for Paid (Facebook/Instagram)
-        'turmeric-capsules-fb': {
-            'template': 'landing_pages/gold-capsules/v1-0-paid-a/0-index.html',
-            'template_vars': {
-                'redirect': True,
-                'is_variant': True,
-            }
-        },
-        # Gold Capsules LP for Retargeting (Facebook/Instagram)
-        'turmeric-capsules-r': {
-            'template': 'landing_pages/gold-capsules/v1-0-paid-r/0-index.html',
-            'template_vars': {
-                'redirect': True,
-                'is_variant': True,
-            }
-        },
-        # Gold Customers Reviews
-        'reviews': {
-            'template': 'landing_pages/reviews/gold-elixir/0-index.html',
-            'template_vars': {
-                'redirect': True,
-                'is_variant': False,
-            }
-        }
-    },
     'genesis': {
         # Genesis LP for Organic
         'v0': {
@@ -349,8 +259,7 @@ def landing_page(page, version, prod_category):
             template_vars['is_variant'] = noindex
 
     if page == 'gold':
-        if template_vars.redirect:
-            return redirect(shopify_page_base + page + '/' + version)
+        return redirect(shopify_page_base + page + '-' + version, code=301)
 
     ## This is just some random stuff to make our keto-cleanse-program page appear to be tracking
     ## users and assigning them a "participant_id". We just cookie them and make sure to tack the saved
