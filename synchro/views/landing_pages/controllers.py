@@ -267,13 +267,14 @@ endpoint_info_dict = {
   ## Experiments
 }
 
+
 @landing_pages.route('/', defaults={'page': 'none', 'version': 'v0', 'prod_category': None})
 @landing_pages.route('/<page>/', defaults={'version': 'v0', 'prod_category': None})
 @landing_pages.route('/<page>/<version>', defaults={'prod_category': None})
 @landing_pages.route('/<prod_category>/<page>/<version>')
 def landing_page(page, version, prod_category):
   parsed_url = urlparse(request.url_root)
-  host = parsed_url[1].split(':')[0] # Don't care about port, if it's in the netloc
+  host = parsed_url[1].split(':')[0]  # Don't care about port, if it's in the netloc
   subdomain = host.split('.')[0]
 
   # Only set page to the parsed 'subdomain' in case it's actually letters.
@@ -325,7 +326,6 @@ def landing_page(page, version, prod_category):
     variant_default = True
     noindex = True
 
-
   # Assert that each version entry in the info_dict contains a template to render.
   # A failed assertion should happen only during development, so this helps ensure developer consistency.
   assert 'template' in endpoint_info_dict[page][version]
@@ -338,7 +338,7 @@ def landing_page(page, version, prod_category):
       template_vars['is_variant'] = noindex
 
   if page == 'gold':
-      return redirect(shopify_page_base + page + '-' + version, code=301)
+    return redirect(shopify_page_base + page + '-' + version, code=301)
 
   ## This is just some random stuff to make our keto-cleanse-program page appear to be tracking
   ## users and assigning them a "participant_id". We just cookie them and make sure to tack the saved
