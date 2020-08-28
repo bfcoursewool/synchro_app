@@ -337,8 +337,13 @@ def landing_page(page, version, prod_category):
     if variant_default:
       template_vars['is_variant'] = noindex
 
+  #redirect gold landing pages to landing pages hosed on shopify site
   if page == 'gold':
-    return redirect(shopify_page_base + page + '-' + version, code=301)
+    # this handles the base url which otherwise would go to `/gold-v0` instead of `/gold`
+    if version == 'v0':
+      return redirect(shopify_page_base + page, code=301)
+    else:
+      return redirect(shopify_page_base + page + '-' + version, code=301)
 
   ## This is just some random stuff to make our keto-cleanse-program page appear to be tracking
   ## users and assigning them a "participant_id". We just cookie them and make sure to tack the saved
